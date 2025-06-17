@@ -1,1 +1,92 @@
 # Optimization Agent
+
+📋 **Overall Project Documentation**: [Google Doc](https://docs.google.com/document/d/1ORWmq6GQMyoQZR7_b2S9Hs7l2A-e0Ce9f6EKy-pQ69Q/edit?tab=t.0#heading=h.4wbqtehjjc4)
+
+## Shopping Agent
+
+An AI-powered Etsy shopping agent that autonomously browses and analyzes products based on a given task and persona. The agent uses browser automation to search for products, analyze product pages, and make informed shopping decisions.
+
+## Quick Start
+
+```bash
+cd src
+python shopping_agent.py --task "buy a large, inflatable spider decoration for halloween"
+```
+
+## Setup
+
+1. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Configure API key**:
+   ```bash
+   echo "your-api-key-here" > src/keys/litellm.key
+   ```
+
+## Usage
+
+### Basic Usage
+
+```bash
+python shopping_agent.py --task "your shopping task here"
+```
+
+### All Parameters
+
+| Parameter | Default | Description |
+|-----------|---------|-------------|
+| `--task` | `"buy a large, inflatable spider decoration for halloween"` | The shopping task for the agent |
+| `--persona` | Michael (42yo marketing manager) | The persona for the agent |
+| `--manual` | False | Wait for user to press Enter after each agent action |
+| `--headless` | False | Run the browser in headless mode |
+| `--max-steps` | 10 | Maximum number of steps the agent will take |
+| `--debug-path` | `"debug_run"` | Path to save debug artifacts (screenshots, logs) |
+| `--width` | 1920 | Browser viewport width |
+| `--height` | 1080 | Browser viewport height |
+| `--n-products` | 3 | Number of products to analyze (-1 for all) |
+| `--model` | `"gpt-4o-mini"` | LLM model name (e.g., gpt-4o, gpt-4o-mini) |
+| `--temperature` | 0.7 | LLM sampling temperature (0-2) |
+| `--record-video` | False | Record browser session video (requires ffmpeg) |
+
+### Examples
+
+**Simple task**:
+```bash
+python shopping_agent.py --task "find a handmade ceramic mug"
+```
+
+**With custom persona**:
+```bash
+python shopping_agent.py --task "buy a birthday gift" --persona "Sarah, a 28-year-old graphic designer who loves minimalist design"
+```
+
+**Debug mode with manual control**:
+```bash
+python shopping_agent.py --task "find vintage jewelry" --manual --debug-path "my_debug_run"
+```
+
+**Headless mode with video recording**:
+```bash
+python shopping_agent.py --task "buy art supplies" --headless --record-video --max-steps 20
+```
+
+**Custom model and temperature**:
+```bash
+python shopping_agent.py --task "find a wedding gift" --model "gpt-4o" --temperature 0.3
+```
+
+## How It Works
+
+1. **Task Breakdown**: The agent breaks your shopping task into specific search queries
+2. **Product Discovery**: Searches Etsy and identifies relevant products
+3. **Product Analysis**: Analyzes each product page for pros/cons based on your persona
+4. **Memory Management**: Remembers analyzed products to avoid duplicates
+5. **Decision Making**: Uses LLM to choose the best products based on your criteria
+
+## Output
+
+- **Console**: Real-time progress and decision logs
+- **Debug Files**: Screenshots, JSON logs, and analysis data (if `--debug-path` specified)
+- **Video**: Session recording (if `--record-video` enabled)
