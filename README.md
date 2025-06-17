@@ -79,14 +79,38 @@ python shopping_agent.py --task "find a wedding gift" --model "gpt-4o" --tempera
 
 ## How It Works
 
-1. **Task Breakdown**: The agent breaks your shopping task into specific search queries
+1. **Task Breakdown**: Breaks your shopping task into specific search queries
 2. **Product Discovery**: Searches Etsy and identifies relevant products
-3. **Product Analysis**: Analyzes each product page for pros/cons based on your persona
-4. **Memory Management**: Remembers analyzed products to avoid duplicates
-5. **Decision Making**: Uses LLM to choose the best products based on your criteria
+3. **Visual Selection**: Uses screenshots + LLM to choose the most promising listings
+4. **Product Analysis**: Summarises pros/cons for each product page
+5. **Memory Management**: Remembers analysed products to avoid duplicates
+6. **Decision Making**: Generates the final purchase recommendation based on memory
 
 ## Output
 
 - **Console**: Real-time progress and decision logs
-- **Debug Files**: Screenshots, JSON logs, and analysis data (if `--debug-path` specified)
-- **Video**: Session recording (if `--record-video` enabled)
+- **Memory**: `_memory.json` with all analysed products & search history
+- **Final Decision**: `_final_purchase_decision.json` with the LLM's recommendation
+- **Debug Files**: Step-by-step JSON logs and screenshots (if `--debug-path` is set)
+- **Video**: `session.mp4` recording (if `--record-video` is enabled)
+
+## Key Features
+
+- **Task Decomposition**: Automatically breaks high-level shopping goals into smaller sub-tasks using an LLM.
+- **Visual Product Selection**: Captures screenshots of search results and lets a multimodal LLM decide which listing to open next.
+- **In-Depth Product Analysis**: Scrolls through product pages, extracts text & images, and asks the LLM to summarise pros, cons, and a short description.
+- **Long-Term Memory**: Stores analysed products and search queries to avoid duplicates and provide context for future decisions.
+- **Final Recommendation**: After exploring, the agent uses its memory to output a JSON purchase recommendation.
+- **Rich Debug Artefacts**: Saves JSON logs and annotated/plain screenshots for every step to the folder specified by `--debug-path`.
+- **Screen Recording (optional)**: Record the entire browser session to MP4 with `--record-video` (requires ffmpeg).
+- **Interactive Mode**: Add `--manual` to pause after every action so you can inspect what the agent is doing.
+
+### Prerequisites for Screen Recording
+
+The `--record-video` flag relies on **[ffmpeg](https://ffmpeg.org/)** being installed and available in your `PATH`. On macOS you can install it with Homebrew:
+
+```bash
+brew install ffmpeg
+```
+
+⚠️  `--record-video` and `--headless` cannot be used together – the script will exit with an error if both flags are supplied.
