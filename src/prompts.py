@@ -28,29 +28,56 @@ You will be provided with:
 - A screenshot of the webpage
 
 Rules:
-1. Do NOT select any product that is already in the memory of seen products.
+1. Do NOT select any product that is already in the seen products.
 2. Evaluate the new products based on how well they match the shopper's persona and shopping goal.
-3. If one product clearly stands out, return its index in the JSON format: {"reasoning": <reasoning>, "choice": <index>}.
-4. If no product matches the goal or all are already seen, return: {"reasoning": <reasoning>, "choice": null}.
+3. You can see the product in the screenshot, and in the product listing provided.
+4. If one product clearly stands out, return why it is desirable by the persona and not the other products along with its number in the JSON format: {"reasoning": <reasoning>, "choice": <number>}.
+5. If no product matches the goal or all are already seen, return the reason why and null: {"reasoning": <reasoning>, "choice": null}.
 
 Be precise. Your output must only be a valid JSON object.
 """.strip()
 
 # Prompt for analyzing a product page
 PRODUCT_ANALYSIS_PROMPT = """
-You are a customer analyzing a product. Based on the provided images from the product page, the persona of the customer, and the shopping goal, please analyze the product.
+You are a customer analyzing a product. Based on the provided images from the product page, the persona of the customer, and the shopping goal, please analyze the product. Analyze the product based on the persona and the shopping goal and NOT as a generic customer.
 
 Please provide your analysis in a JSON format with the following keys:
-- "product_name": A concise name for the product.
-- "pros": A list of reasons why this product is a good fit.
-- "cons": A list of reasons why this product might not be a good fit.
+- "pros": A list of reasons why this product is a good fit. As many pros as you can find.
+- "cons": A list of reasons why this product might not be a good fit. As many cons as you can find.
 - "summary": A brief summary of your overall opinion.
 
-Example Response:
+Example Response for a persona that is data-driven, luxury-loving, and buying a gift:
 {{
-    "product_name": "Personalized Wooden Chess Set",
-    "pros": ["Made of high-quality wood, which he would appreciate.", "Can be personalized with a name."],
-    "cons": ["A bit more expensive than I'd like.", "Shipping might take a while."],
-    "summary": "This is a good quality product for final purchase, but for me, it is a bit expensive. Also, I need this as a gift, so shipping delays are not ideal."
+    "pros": ["Made of high-quality wood, which aligns with my preference of luxury.", "Can be personalized with a name -- perfect for gift!"],
+    "cons": ["Shipping will take 2 days, that might be a problem for gifts.", "There are just 3 reviews for this product, and since I am data-driven, I want the product to have more reviews."],
+    "summary": "This is a good quality product for final purchase and I don't mind the price, but I need this as a gift, so shipping delays are not ideal. I also wish the product to have more reviews before I buy it."
 }}
+""".strip()
+
+# Prompt for the final purchase decision
+FINAL_DECISION_PROMPT = """
+You are a customer deciding what product(s) to buy.
+
+Inputs you will receive:
+- A persona describing you.
+- The overall shopping goal/task.
+- A list of products along with their pros, cons, and a short summary.
+
+Your job:
+1. Critically compare the products keeping in mind the persona and shopping goal.
+2. Decide which product(s) (one or more) you should buy.
+3. Provide a short, persuasive justification for each recommended product.
+4. If none of the products should be purchased, explain why and return an no recommendations.
+
+Return ONLY a valid JSON object with the following structure:
+{
+  "reasoning": "<explanation why you did and did not buy product>",
+  "recommendations": [
+    {
+      "product_name": "<name>",
+      "reasoning": "<short explanation>"
+    },
+    ...
+  ]
+}
 """.strip()

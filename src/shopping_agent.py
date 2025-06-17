@@ -1,4 +1,5 @@
 import asyncio
+from datetime import datetime
 import os
 import json
 import base64
@@ -6,7 +7,7 @@ import shutil
 import sys
 import subprocess
 from typing import Any, Dict, List, Optional
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, asdict, is_dataclass
 import click
 from langchain_core.language_models.chat_models import BaseChatModel
 from langchain_core.output_parsers import JsonOutputParser
@@ -35,6 +36,7 @@ from prompts import (
     SUBTASK_GENERATION_PROMPT,
     CHOICE_SYSTEM_PROMPT,
     PRODUCT_ANALYSIS_PROMPT,
+    FINAL_DECISION_PROMPT,
 )
 
 # Default task and persona for the agent
@@ -101,6 +103,7 @@ class EtsyShoppingAgent:
     controller: Controller = field(init=False, default_factory=Controller)
     llm: BaseChatModel = field(init=False)
     memory: MemoryModule = field(init=False, default_factory=MemoryModule)
+    current_product_name: Optional[str] = field(init=False, default=None)  # Store the current product being analyzed
 
     # Internal attribute: ffmpeg process
     _record_proc: Optional[subprocess.Popen] = field(init=False, default=None, repr=False)
@@ -195,7 +198,7 @@ class EtsyShoppingAgent:
         if self.debug_path and state.screenshot:
             os.makedirs(self.debug_path, exist_ok=True)
             # Save the highlighted screenshot (with bounding boxes) that comes from get_state_summary
-            image_path = os.path.join(self.debug_path, f"screenshot_with_boxes_step_{step}.png")
+            image_path = os.path.join(self.debug_path, f"screenshot_step_{step}_with_boxes.png")
             try:
                 with open(image_path, "wb") as f:
                     f.write(base64.b64decode(state.screenshot))
@@ -212,7 +215,7 @@ class EtsyShoppingAgent:
             plain_screenshot_b64 = await self.browser_session.take_screenshot()
 
             if self.debug_path and plain_screenshot_b64:
-                plain_image_path = os.path.join(self.debug_path, f"screenshot_plain_step_{step}.png")
+                plain_image_path = os.path.join(self.debug_path, f"screenshot_step_{step}_plain.png")
                 try:
                     with open(plain_image_path, "wb") as f:
                         f.write(base64.b64decode(plain_screenshot_b64))
@@ -237,7 +240,7 @@ class EtsyShoppingAgent:
             tuple[str, List[str]]: (full_page_text, list_of_viewport_screenshot_base64)
         """
         if not self.browser_session:
-            raise RuntimeError("Browser session not initialised – call run() first.")
+            raise RuntimeError("Browser session not initialised - call run() first.")
 
         screenshots: List[str] = []
         text_chunks: List[str] = []
@@ -316,7 +319,7 @@ class EtsyShoppingAgent:
         full_text = "\n".join(text_chunks)
         return full_text, screenshots
 
-    async def _analyze_product_page(self, state: BrowserStateSummary, current_goal: str, step: int) -> Optional[ProductMemory]:
+    async def _analyze_product_page(self, state: BrowserStateSummary, current_goal: str, step: int, product_name: Optional[str] = None) -> Optional[ProductMemory]:
         """Analyzes a product page and adds the product to memory."""
         print("   - On a product page. Analyzing product details.")
 
@@ -329,7 +332,7 @@ class EtsyShoppingAgent:
         parser = JsonOutputParser()
 
         system_prompt = PRODUCT_ANALYSIS_PROMPT
-        user_prompt_text = f"Persona: {self.persona}\nShopping Goal: {self.task}"
+        user_prompt_text = f"Persona: {self.persona}\nShopping Goal: {self.task}\nCurrent Date: {datetime.now().strftime('%B %d')}"
         image_payloads = [
             {
                 "type": "image_url",
@@ -348,7 +351,7 @@ class EtsyShoppingAgent:
             analysis_response = parser.parse(ai_message.content)
             
             product_memory = ProductMemory(
-                product_name=analysis_response.get("product_name", "Unknown Product"),
+                product_name=product_name,
                 url=state.url,
                 pros=analysis_response.get("pros", []),
                 cons=analysis_response.get("cons", []),
@@ -364,7 +367,7 @@ class EtsyShoppingAgent:
                 # Save scroll screenshots
                 scroll_image_paths = []
                 for idx, b64 in enumerate(screenshots_b64):
-                    img_path = os.path.join(self.debug_path, f"screenshot_scroll_step_{step}_{idx}.png")
+                    img_path = os.path.join(self.debug_path, f"screenshot_step_{step}_scroll_{idx}.png")
                     try:
                         with open(img_path, "wb") as f:
                             f.write(base64.b64decode(b64))
@@ -375,6 +378,7 @@ class EtsyShoppingAgent:
                 debug_info = {
                     "type": "product_analysis",
                     "input_url": state.url,
+                    "product_name": product_name,
                     "prompt": {
                         "system": system_prompt,
                         "user_text": user_prompt_text
@@ -427,7 +431,9 @@ class EtsyShoppingAgent:
                 'rtisement' not in element_text.lower() and
                 'original price' not in product_name and
                 'search for' not in product_name and
-                'sellers looking to' not in product_name
+                'sellers looking to' not in product_name and
+                'order soon' not in product_name and
+                'recommended categories' not in product_name
             ):
                 # print(f"   - Found product: {product_name}")
                 if not self.memory.is_product_in_memory(element_text):
@@ -442,17 +448,21 @@ class EtsyShoppingAgent:
             return None
 
         parser = JsonOutputParser()
+
+        def _parse_product_listings(product_listings: List[Dict[str, Any]]) -> str:
+            return "\n".join([f"{product['index']}. {product['text']}" for product in product_listings])
         
         system_prompt = CHOICE_SYSTEM_PROMPT
         user_prompt_text = f"""
 Persona: {self.persona}
+
 Shopping Goal: {current_goal}
 
 I have already seen these products:
 {self.memory.get_memory_summary_for_prompt()}
 
 Products:
-{json.dumps(product_listings, indent=2)}
+{_parse_product_listings(product_listings)}
 """.strip()
         messages = [
             SystemMessage(content=system_prompt),
@@ -590,11 +600,27 @@ Products:
             return {"go_to_url": GoToUrlAction(url="https://www.etsy.com/")}
 
         if "etsy.com/search" in state.url:
-            return await self._choose_product_from_search(state, current_goal, step)
+            action = await self._choose_product_from_search(state, current_goal, step)
+            # If _choose_product_from_search returns None, it means we should move to the next task
+            # Check if we've moved to the next task
+            if action is None and self.current_task_index < len(self.sub_tasks):
+                # We've completed the current task, check if there are more tasks
+                print(f"   - Completed task: {current_goal}")
+                print(f"   - Moving to next task: {self.sub_tasks[self.current_task_index]}")
+                # Clear search history for the new task to allow searching again
+                search_history_to_remove = f"searched_{self.sub_tasks[self.current_task_index]}"
+                if search_history_to_remove in self.history:
+                    self.history.remove(search_history_to_remove)
+                    print(f"   - Cleared search history for: {self.sub_tasks[self.current_task_index]}")
+                # Return to Etsy homepage to start the next search
+                return {"go_to_url": GoToUrlAction(url="https://www.etsy.com/")}
+            return action
 
         elif "etsy.com/listing" in state.url:
             # 1️⃣ Analyse the product first
-            await self._analyze_product_page(state, current_goal, step)
+            if self.current_product_name:
+                print(f"   - Analyzing product: {self.current_product_name}")
+            await self._analyze_product_page(state, current_goal, step, self.current_product_name)
 
             # 2️⃣ Keep track that we've looked at another item
             self.products_checked += 1
@@ -620,6 +646,74 @@ Products:
 
         print("   - No specific action decided.")
         return None
+
+    async def _make_final_purchase_decision(self):
+        """Use the LLM to decide which products to finally purchase based on memory."""
+        if not self.memory.products:
+            print("🤷 No products were analyzed, skipping final purchase decision.")
+            return
+
+        # Build a detailed list of products the agent has analyzed
+        product_descriptions = []
+        for idx, product in enumerate(self.memory.products, start=1):
+            pros = ", ".join(product.pros) if product.pros else "-"
+            cons = ", ".join(product.cons) if product.cons else "-"
+            summary = product.summary if product.summary else "-"
+            desc = (
+                f"{idx}. {product.product_name}\n"
+                f"URL: {product.url}\n"
+                f"Pros: {pros}\n"
+                f"Cons: {cons}\n"
+                f"Summary: {summary}"
+            )
+            product_descriptions.append(desc)
+
+        user_prompt_text = f"""
+Persona: {self.persona}
+
+Shopping Goal: {self.task}
+
+Here are the products that have been analyzed:
+{product_descriptions}
+""".strip()
+
+        messages = [
+            SystemMessage(content=FINAL_DECISION_PROMPT),
+            HumanMessage(content=user_prompt_text),
+        ]
+
+        print("🔮 Asking LLM for final purchase recommendations...")
+        try:
+            ai_message = await self.llm.ainvoke(messages)
+            response_content = ai_message.content.strip()
+            try:
+                decision_json = json.loads(response_content)
+            except json.JSONDecodeError:
+                # If the model returned something that isn't valid JSON, fall back to raw string
+                decision_json = {"raw_response": response_content}
+
+            print("💡 Final purchase decision:")
+            print(json.dumps(decision_json, indent=2))
+
+            if self.debug_path:
+                os.makedirs(self.debug_path, exist_ok=True)
+
+                debug_info = {
+                    "type": "final_purchase_decision",
+                    "prompt": {
+                        "system": FINAL_DECISION_PROMPT,
+                        "user_text": user_prompt_text,
+                    },
+                    "output": decision_json,
+                }
+
+                decision_path = os.path.join(self.debug_path, "_final_purchase_decision.json")
+                with open(decision_path, "w") as f:
+                    json.dump(debug_info, f, indent=2)
+                print(f"   - Final decision saved to {decision_path}")
+
+        except Exception as e:
+            print(f"   - An error occurred during final purchase decision making: {e}")
 
     async def run(self):
         """
@@ -658,7 +752,40 @@ Products:
             print("👀 Observing page state...")
             state = await self.browser_session.get_state_summary(cache_clickable_elements_hashes=True)
 
-            action_plan = await self._think(state, i + 1)
+            step = i + 1
+            action_plan = await self._think(state, step)
+
+            # Always write a generic debug file for every step so that debugging information is available even
+            # when the agent decides to take no action (i.e. `action_plan` is None).
+            if self.debug_path:
+                debug_file_path = os.path.join(self.debug_path, f"debug_step_{step}.json")
+
+                # Do not overwrite if some earlier logic (e.g. product analysis or choice) already produced a
+                # debug file for this step.
+                if not os.path.exists(debug_file_path):
+                    serializable_action_plan = None
+
+                    if action_plan is not None:
+                        serializable_action_plan = {}
+                        for k, v in action_plan.items():
+                            if is_dataclass(v):
+                                serializable_action_plan[k] = asdict(v)
+                            else:
+                                serializable_action_plan[k] = str(v)
+
+                    debug_info = {
+                        "type": "generic_action",
+                        "step": step,
+                        "url": state.url,
+                        "action_plan": serializable_action_plan,
+                    }
+
+                    try:
+                        with open(debug_file_path, "w") as f:
+                            json.dump(debug_info, f, indent=2)
+                        print(f"   - Saved generic action debug info to {debug_file_path}")
+                    except Exception as e:
+                        print(f"   - Failed to save generic action debug info: {e}")
 
             if action_plan:
                 print("🎬 Taking action...")
@@ -669,6 +796,8 @@ Products:
                 if "input_text" in action_plan:
                     actions_to_perform.append(Action(input_text=action_plan["input_text"]))
                     self.history.append(f"searched_{action_plan['search_query']}")
+                    # Keep track of search queries in memory
+                    self.memory.add_search_query(action_plan["search_query"])
                     print(f"   - Typing '{action_plan['input_text'].text}'")
                 if "send_keys" in action_plan:
                     actions_to_perform.append(Action(send_keys=action_plan["send_keys"]))
@@ -677,14 +806,17 @@ Products:
                     actions_to_perform.append(Action(click_element_by_index=action_plan["click_element_by_index"]))
                     if "product_name" in action_plan:
                         self.history.append(f"clicked_product_{action_plan['product_name']}")
+                        self.current_product_name = action_plan["product_name"]  # Store for analysis
                     print(f"   - Clicking element at index {action_plan['click_element_by_index'].index}")
                 if "open_tab" in action_plan:
                     actions_to_perform.append(Action(open_tab=action_plan["open_tab"]))
                     if "product_name" in action_plan:
                         self.history.append(f"clicked_product_{action_plan['product_name']}")
+                        self.current_product_name = action_plan["product_name"]  # Store for analysis
                     print(f"   - Opening new tab with {action_plan['open_tab'].url}")
                 if "close_tab" in action_plan:
                     actions_to_perform.append(Action(close_tab=action_plan["close_tab"]))
+                    self.current_product_name = None  # Clear after closing tab
                     print(f"   - Closing tab {action_plan['close_tab'].page_id}")
                 if "switch_tab" in action_plan:
                     actions_to_perform.append(Action(switch_tab=action_plan["switch_tab"]))
@@ -700,10 +832,27 @@ Products:
                 if self.manual:
                     input("Press Enter to continue...")
             else:
-                print("   - No action to take. Ending.")
-                break
+                print("   - No action to take. Continuing to next iteration to check for task transitions.")
+                # Don't break here - continue to next iteration to allow task transitions
+                # Only break if we've truly exhausted all options
+                if self.current_task_index >= len(self.sub_tasks):
+                    print("   - All sub-tasks completed. Ending.")
+                    break
+                await asyncio.sleep(1)  # Small delay before next iteration
 
         print("\n✅ Shopping agent finished.")
+
+        if self.debug_path:
+            memory_path = os.path.join(self.debug_path, "_memory.json")
+            try:
+                self.memory.save_to_json(memory_path)
+                print(f"🧠 Memory saved to {memory_path}")
+            except Exception as e:
+                print(f"   - Failed to save memory: {e}", file=sys.stderr)
+
+        # Decide on the final purchase based on the memory collected
+        await self._make_final_purchase_decision()
+
         await asyncio.sleep(5)
         if self.browser_session:
             await self.browser_session.stop()
@@ -814,6 +963,10 @@ Products:
 @click.option("--record-video", is_flag=True, help="Record the agent's browser session and save it to the debug path.")
 def cli(task, persona, manual, headless, max_steps, debug_path, width, height, n_products, model_name, temperature, record_video):
     """Runs the Etsy Shopping Agent."""
+    if headless and record_video:
+        print("Error: --headless and --record-video options cannot be used together.", file=sys.stderr)
+        sys.exit(1)
+        
     agent = EtsyShoppingAgent(
         task=task, 
         persona=persona, 
