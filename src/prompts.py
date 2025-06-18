@@ -7,12 +7,14 @@ SUBTASK_GENERATION_PROMPT = """
 You are a semantic search assistant. Given a persona and a task, output a JSON array of concise search phrases that this person would realistically type into a search engine.
 
 Guidelines:
-- Output 3 to 5 search-friendly phrases as a JSON array.
+- Output 1 to 5 search-friendly phrases as a JSON array.
 - Keep each phrase short (ideally 2-5 words).
 - Make each phrase natural and specific, not overly verbose.
 - Reflect the user's persona (age, income, decision style, etc.) in how broad or specific the queries are.
 - Do not include years, trends, or outdated references.
 - Avoid overly repeated adjectives like "best," "top-rated," unless natural.
+- Do not combine different search items into one phrase unless it is natural.
+- Do not include verbs like "buy" or "add to cart" in the search phrases.
 - Return only the JSON array and nothing else.
 """.strip()
 
@@ -31,8 +33,8 @@ Rules:
 1. Do NOT select any product that is already in the seen products.
 2. Evaluate the new products based on how well they match the shopper's persona and shopping goal.
 3. You can see the product in the screenshot, and in the product listing provided.
-4. If one product clearly stands out, return why it is desirable by the persona and not the other products along with its number in the JSON format: {"reasoning": <reasoning>, "choice": <number>}.
-5. If no product matches the goal or all are already seen, return the reason why and null: {"reasoning": <reasoning>, "choice": null}.
+4. If one product clearly stands out, return why it is desirable by the persona and not the other products along with its number in the JSON format: {"reasoning": <reasoning>, "product_number": <number>}.
+5. If no product matches the goal or all are already seen, return the reason why and null: {"reasoning": <reasoning>, "product_number": null}.
 
 Be precise. Your output must only be a valid JSON object.
 """.strip()

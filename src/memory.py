@@ -14,8 +14,8 @@ class ProductMemory:
 @dataclass
 class MemoryModule:
     """A module to remember which products have been seen and their analysis."""
-    products: List[ProductMemory] = field(default_factory=list)
     search_queries: List[str] = field(default_factory=list)
+    products: List[ProductMemory] = field(default_factory=list)
 
     def add_product(self, product: ProductMemory):
         """Adds a product to the memory, avoiding duplicates."""
@@ -38,8 +38,8 @@ class MemoryModule:
             return "No products have been viewed yet."
         
         summary_lines = []
-        for idx, product in enumerate(self.products):
-            summary_lines.append(f"{idx+1}. {product.product_name}")
+        for product in self.products:
+            summary_lines.append(f"- {product.product_name}")
             # if product.pros:
             #     summary_lines.append(f"  Pros: {', '.join(product.pros)}")
             # if product.cons:

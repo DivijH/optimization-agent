@@ -127,14 +127,11 @@ class EtsyShoppingAgent:
 
         # Initialize the language model with user-specified (or default) parameters
         self.llm = ChatOpenAI(temperature=self.temperature, model=self.model_name)
-        
         parser = JsonOutputParser()
-        
         prompt = ChatPromptTemplate.from_messages([
             ("system", SUBTASK_GENERATION_PROMPT),
             ("user", "PERSONA: {persona}\nTASK: {task}"),
         ])
-        
         chain = prompt | self.llm | parser
         
         try:
@@ -143,11 +140,19 @@ class EtsyShoppingAgent:
 
             if self.debug_path:
                 os.makedirs(self.debug_path, exist_ok=True)
+                formatted_prompt_messages = prompt.format_messages(persona=self.persona, task=self.task)
+
                 debug_info = {
                     "type": "subtask_generation",
-                    "prompt": [msg.prompt.template for msg in prompt.messages],
-                    "input": {"task": self.task},
-                    "output": raw_sub_tasks
+                    "prompt": [
+                        {
+                            "role": getattr(msg, "type", "unknown"),
+                            "content": getattr(msg, "content", str(msg)),
+                        }
+                        for msg in formatted_prompt_messages
+                    ],
+                    "input": {"task": self.task, "persona": self.persona},
+                    "output": raw_sub_tasks,
                 }
                 file_path = os.path.join(self.debug_path, "debug_step_0.json")
                 try:
@@ -161,7 +166,6 @@ class EtsyShoppingAgent:
             if isinstance(raw_sub_tasks, list):
                 sub_tasks_list = [str(item) for item in raw_sub_tasks]
             elif isinstance(raw_sub_tasks, dict):
-                # Try to find a list within the dictionary
                 for key, value in raw_sub_tasks.items():
                     if isinstance(value, list):
                         sub_tasks_list = [str(item) for item in value]
@@ -298,7 +302,7 @@ class EtsyShoppingAgent:
             # a real scroll action even when `pixels_below` is incorrectly reported as zero before any scrolling
             # has occurred (a behaviour observed on some dynamic product pages).
             if stop_at_bottom and pixels_below <= 0 and i > 0:
-                break  # Reached (or believe to have reached) the bottom of the page after scrolling
+                break
 
             # Perform smooth scroll roughly one viewport down (90 % of height to get some overlap)
             try:
@@ -328,7 +332,7 @@ class EtsyShoppingAgent:
             print("   - Already analyzed this product.")
             return None
 
-        _, screenshots_b64 = await self._scroll_and_collect(max_scrolls=15, stop_at_bottom=True, delay=0.2)
+        _, screenshots_b64 = await self._scroll_and_collect(max_scrolls=15, stop_at_bottom=True, delay=0.3)
         parser = JsonOutputParser()
 
         system_prompt = PRODUCT_ANALYSIS_PROMPT
@@ -361,10 +365,9 @@ class EtsyShoppingAgent:
             self.memory.add_product(product_memory)
             print(f"   - Added '{product_memory.product_name}' to memory.")
             
+            # Save scroll screenshots for debugging
             if self.debug_path:
                 os.makedirs(self.debug_path, exist_ok=True)
-
-                # Save scroll screenshots
                 scroll_image_paths = []
                 for idx, b64 in enumerate(screenshots_b64):
                     img_path = os.path.join(self.debug_path, f"screenshot_step_{step}_scroll_{idx}.png")
@@ -412,7 +415,6 @@ class EtsyShoppingAgent:
         # Get plain screenshot for model input
         plain_screenshot_b64 = None
         try:
-            # Remove existing highlights (if any) then take a fresh screenshot
             await self.browser_session.remove_highlights()
             plain_screenshot_b64 = await self.browser_session.take_screenshot()
         except Exception as e:
@@ -435,7 +437,6 @@ class EtsyShoppingAgent:
                 'order soon' not in product_name and
                 'recommended categories' not in product_name
             ):
-                # print(f"   - Found product: {product_name}")
                 if not self.memory.is_product_in_memory(element_text):
                     product_listings.append({
                         "index": index, 
@@ -448,9 +449,12 @@ class EtsyShoppingAgent:
             return None
 
         parser = JsonOutputParser()
-
-        def _parse_product_listings(product_listings: List[Dict[str, Any]]) -> str:
-            return "\n".join([f"{product['index']}. {product['text']}" for product in product_listings])
+        parsed_product_listings = "\n".join([f"{product['index']}. {product['text']}" for product in product_listings])
+        if len(parsed_product_listings) < 4:
+            # Sometimes, the website offers search recommendations, and not products.
+            # In this case, we scroll down to load more products.
+            print("   - Not enough products to choose from. Scrolling down to load more products.")
+            return {"scroll_down": ScrollAction(amount=None)}
         
         system_prompt = CHOICE_SYSTEM_PROMPT
         user_prompt_text = f"""
@@ -462,7 +466,7 @@ I have already seen these products:
 {self.memory.get_memory_summary_for_prompt()}
 
 Products:
-{_parse_product_listings(product_listings)}
+{parsed_product_listings}
 """.strip()
         messages = [
             SystemMessage(content=system_prompt),
@@ -478,7 +482,6 @@ Products:
         ]
 
         try:
-            # Invoke the model and parse the JSON response
             ai_message = await self.llm.ainvoke(messages)
             choice_response = parser.parse(ai_message.content)
 
@@ -504,17 +507,17 @@ Products:
                 except Exception as e:
                     print(f"   - Failed to save choice debug info: {e}")
             
-            chosen_index = choice_response.get("choice")
 
+            chosen_index = choice_response.get("product_number")
             if chosen_index is not None and isinstance(chosen_index, int):
-                if chosen_index in state.selector_map:
-                    print(f"   - LLM chose product with index {chosen_index}.")
+                # Find the corresponding listing details using the original index
+                chosen_listing = next((item for item in product_listings if item["index"] == chosen_index), None)
+                chosen_product_name = chosen_listing["product_name"] if chosen_listing else None
+
+                if chosen_index in state.selector_map and chosen_listing:
+                    print(f"   - LLM chose product with index {chosen_index}. Product name: {chosen_product_name}")
                     chosen_element = state.selector_map[chosen_index]
                     href = chosen_element.attributes.get("href") if hasattr(chosen_element, "attributes") else None
-
-                    # Find the corresponding listing details using the original index
-                    chosen_listing = next((item for item in product_listings if item["index"] == chosen_index), None)
-                    chosen_product_name = chosen_listing["product_name"] if chosen_listing else None
 
                     if href:
                         # Etsy often uses relative URLs (e.g. "/listing/123...") for product anchors. If the URL is
@@ -525,8 +528,7 @@ Products:
                         # Open the product in a new tab and immediately switch focus to it so we can analyse the product page next.
                         action_dict = {
                             "open_tab": OpenTabAction(url=href),
-                            # `-1` means the last tab that was just opened.
-                            "switch_tab": SwitchTabAction(page_id=-1),
+                            "switch_tab": SwitchTabAction(page_id=-1), # `-1` means the last tab that was just opened.
                         }
                         if chosen_product_name:
                             action_dict["product_name"] = chosen_product_name
@@ -534,9 +536,6 @@ Products:
                     else:
                         action_dict = {
                             "click_element_by_index": ClickElementAction(index=chosen_index, xpath=chosen_element.xpath),
-                            # After clicking a product listing that doesn't provide an explicit href, Etsy usually opens
-                            # the product in a new tab. Switch focus to the newest tab so subsequent logic sees the
-                            # correct URL.
                             "switch_tab": SwitchTabAction(page_id=-1),
                         }
                         if chosen_product_name:
@@ -554,13 +553,12 @@ Products:
 
     async def _choose_product_from_search(self, state: BrowserStateSummary, current_goal: str, step: int) -> Optional[Dict[str, Any]]:
         """
-        Uses an LLM to choose a product from a search results page, potentially with visual input.
+        Uses an LLM to choose a product from a search results page, with visual input.
         """
         if self.products_to_check != -1 and self.products_checked >= self.products_to_check:
             print("   - Desired number of products already checked on this page.")
             # Move to next subtask if any remaining
-            self.current_task_index += 1
-            self.products_checked = 0
+            self._advance_to_next_subtask()
             return None
 
         # Screenshot-based selection is now the only supported option for choosing products
@@ -581,8 +579,7 @@ Products:
 
         # Reached end of page and still nothing useful; move on
         print("   - Reached end of results without finding a suitable product.")
-        self.current_task_index += 1
-        self.products_checked = 0
+        self._advance_to_next_subtask()
         return None
 
     async def _think(self, state: BrowserStateSummary, step: int) -> Optional[Dict[str, Any]]:
@@ -591,7 +588,6 @@ Products:
         """
         print("🤔 Thinking...")
         print(f"   - Current URL: {state.url}")
-        print(f"   - Persona: {self.persona}")
         
         current_goal = self.sub_tasks[self.current_task_index]
         print(f"   - Current Subtask: {current_goal}")
@@ -604,15 +600,8 @@ Products:
             # If _choose_product_from_search returns None, it means we should move to the next task
             # Check if we've moved to the next task
             if action is None and self.current_task_index < len(self.sub_tasks):
-                # We've completed the current task, check if there are more tasks
                 print(f"   - Completed task: {current_goal}")
                 print(f"   - Moving to next task: {self.sub_tasks[self.current_task_index]}")
-                # Clear search history for the new task to allow searching again
-                search_history_to_remove = f"searched_{self.sub_tasks[self.current_task_index]}"
-                if search_history_to_remove in self.history:
-                    self.history.remove(search_history_to_remove)
-                    print(f"   - Cleared search history for: {self.sub_tasks[self.current_task_index]}")
-                # Return to Etsy homepage to start the next search
                 return {"go_to_url": GoToUrlAction(url="https://www.etsy.com/")}
             return action
 
@@ -654,19 +643,18 @@ Products:
             return
 
         # Build a detailed list of products the agent has analyzed
-        product_descriptions = []
+        product_descriptions = ''
         for idx, product in enumerate(self.memory.products, start=1):
-            pros = ", ".join(product.pros) if product.pros else "-"
-            cons = ", ".join(product.cons) if product.cons else "-"
+            pros = " ".join(product.pros) if product.pros else "-"
+            cons = " ".join(product.cons) if product.cons else "-"
             summary = product.summary if product.summary else "-"
             desc = (
-                f"{idx}. {product.product_name}\n"
-                f"URL: {product.url}\n"
+                f"{idx}. {product.product_name.title()}\n"
                 f"Pros: {pros}\n"
                 f"Cons: {cons}\n"
                 f"Summary: {summary}"
             )
-            product_descriptions.append(desc)
+            product_descriptions += desc + "\n\n"
 
         user_prompt_text = f"""
 Persona: {self.persona}
@@ -674,7 +662,7 @@ Persona: {self.persona}
 Shopping Goal: {self.task}
 
 Here are the products that have been analyzed:
-{product_descriptions}
+{product_descriptions.strip()}
 """.strip()
 
         messages = [
@@ -720,6 +708,46 @@ Here are the products that have been analyzed:
         Main agent workflow for online shopping on Etsy.
         """
         print("🚀 Starting Etsy shopping agent...")
+        # Monkey-patch BrowserSession._scroll_container once so that all future
+        # ScrollAction invocations use smooth scrolling instead of the default
+        # instant jump.  This ensures visual continuity for the end user when
+        # the agent scrolls search result pages.
+        if not getattr(BrowserSession, "_smooth_scroll_patched", False):
+            async def _smooth_scroll_container(self_bs, pixels: int) -> None:  # type: ignore
+                """Replacement for BrowserSession._scroll_container with smooth behaviour."""
+                SMART_SCROLL_JS_SMOOTH = """(dy) => {
+                    const bigEnough = el => el.clientHeight >= window.innerHeight * 0.5;
+                    const canScroll = el =>
+                        el &&
+                        /(auto|scroll|overlay)/.test(getComputedStyle(el).overflowY) &&
+                        el.scrollHeight > el.clientHeight &&
+                        bigEnough(el);
+
+                    let el = document.activeElement;
+                    while (el && !canScroll(el) && el !== document.body) el = el.parentElement;
+
+                    el = canScroll(el)
+                            ? el
+                            : [...document.querySelectorAll('*')].find(canScroll)
+                            || document.scrollingElement
+                            || document.documentElement;
+
+                    const opts = { top: dy, behavior: 'smooth' };
+                    if (el === document.scrollingElement ||
+                        el === document.documentElement ||
+                        el === document.body) {
+                        window.scrollBy(opts);
+                    } else {
+                        el.scrollBy(opts);
+                    }
+                }"""
+                page = await self_bs.get_current_page()
+                await page.evaluate(SMART_SCROLL_JS_SMOOTH, pixels)
+
+            # Apply the patch and mark as done to avoid double-patching
+            BrowserSession._scroll_container = _smooth_scroll_container  # type: ignore
+            BrowserSession._smooth_scroll_patched = True
+
         print(f"   - Task: {self.task}")
         print(f"   - Persona: {self.persona}")
 
@@ -796,7 +824,6 @@ Here are the products that have been analyzed:
                 if "input_text" in action_plan:
                     actions_to_perform.append(Action(input_text=action_plan["input_text"]))
                     self.history.append(f"searched_{action_plan['search_query']}")
-                    # Keep track of search queries in memory
                     self.memory.add_search_query(action_plan["search_query"])
                     print(f"   - Typing '{action_plan['input_text'].text}'")
                 if "send_keys" in action_plan:
@@ -833,8 +860,6 @@ Here are the products that have been analyzed:
                     input("Press Enter to continue...")
             else:
                 print("   - No action to take. Continuing to next iteration to check for task transitions.")
-                # Don't break here - continue to next iteration to allow task transitions
-                # Only break if we've truly exhausted all options
                 if self.current_task_index >= len(self.sub_tasks):
                     print("   - All sub-tasks completed. Ending.")
                     break
@@ -948,7 +973,24 @@ Here are the products that have been analyzed:
         finally:
             self._record_proc = None
 
+    def _advance_to_next_subtask(self):
+        """Advance to the next sub-task and reset per-task state.
+
+        This helper should be called every time the agent decides that the
+        current sub-task has been completed and it is time to start working on
+        the next one.  It takes care of incrementing the sub-task pointer and
+        clearing transient memory such as the `history` list (which tracks
+        viewed/search items) and the `products_checked` counter so that the
+        next sub-task starts with a clean slate.
+        """
+        # Move the pointer
+        self.current_task_index += 1
+        # Reset counters/histories that should not bleed over to the next task
+        self.history.clear()
+        self.products_checked = 0
+
 @click.command()
+@click.option("--config-file", type=click.Path(exists=True, dir_okay=False, readable=True), default=None, help="Path to a JSON file containing both 'task' and 'persona' keys. If provided, values in the file override --task/--persona options.")
 @click.option("--task", default=DEFAULT_TASK, help="The shopping task for the agent.")
 @click.option("--persona", default=DEFAULT_PERSONA, help="The persona for the agent.")
 @click.option("--manual", is_flag=True, help="Wait for user to press Enter after each agent action.")
@@ -961,11 +1003,37 @@ Here are the products that have been analyzed:
 @click.option("--model", "model_name", default="gpt-4o-mini", help="Model name to use (e.g. gpt-4o, gpt-4o-mini).")
 @click.option("--temperature", default=0.7, type=float, help="Sampling temperature for the language model (0-2).")
 @click.option("--record-video", is_flag=True, help="Record the agent's browser session and save it to the debug path.")
-def cli(task, persona, manual, headless, max_steps, debug_path, width, height, n_products, model_name, temperature, record_video):
+def cli(config_file, task, persona, manual, headless, max_steps, debug_path, width, height, n_products, model_name, temperature, record_video):
     """Runs the Etsy Shopping Agent."""
     if headless and record_video:
         print("Error: --headless and --record-video options cannot be used together.", file=sys.stderr)
         sys.exit(1)
+        
+    # If a config JSON file is provided, load task and persona from it
+    if config_file:
+        try:
+            with open(config_file, "r") as cf:
+                config_data = json.load(cf)
+
+            if not isinstance(config_data, dict):
+                raise ValueError("Config JSON must be an object with 'intent' and 'persona' keys.")
+
+            # Override task and persona if present in the JSON
+            if "intent" in config_data and isinstance(config_data["intent"], str):
+                task = config_data["intent"].strip()
+            else:
+                print("Error: 'intent' key missing or not a string in config file.", file=sys.stderr)
+                sys.exit(1)
+
+            if "persona" in config_data and isinstance(config_data["persona"], str):
+                persona = config_data["persona"].strip()
+            else:
+                print("Error: 'persona' key missing or not a string in config file.", file=sys.stderr)
+                sys.exit(1)
+
+        except Exception as e:
+            print(f"Error reading config file '{config_file}': {e}", file=sys.stderr)
+            sys.exit(1)
         
     agent = EtsyShoppingAgent(
         task=task, 
