@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is an accomplished and forward-thinking executive who has built a successful career in the technology industry. With a keen eye for innovation and a passion for strategic leadership, he has become a respected figure in his field, known for his ability to drive growth and inspire his teams.\n\nDemographics:\nAge: 41\nGender: Male\nEducation: Master's Degree in Computer Science\nProfession: Chief Technology Officer\nIncome: $120,000\n\nFinancial Situation:\nAs the Chief Technology Officer of a thriving tech company, David's income falls within the $94,001 to $1,000,000 range. He has cultivated a robust financial portfolio, diversifying his assets and making strategic investments to ensure long-term financial security. While he enjoys the occasional luxury purchase, David is primarily focused on building wealth and leaving a lasting legacy for his family.\n\nShopping Habits:\nDavid's shopping habits reflect his discerning and pragmatic nature. He values quality over quantity, carefully researching and selecting products that not only meet his needs but also align with his personal values. Whether it's a new piece of high-end tech or a well-crafted suit, David seeks out items that offer exceptional craftsmanship and lasting value.\n\nProfessional Life:\nAs the Chief Technology Officer, David is responsible for spearheading the technological vision and strategy of his organization. He excels at anticipating industry trends, identifying innovative solutions, and empowering his team to push the boundaries of what's possible. David's leadership style is characterized by a collaborative approach, open communication, and a commitment to continuous improvement.\n\nPersonal Life:\nOutside of his professional responsibilities, David maintains a well-balanced lifestyle. He is an avid outdoorsman, finding solace in activities such as hiking and fishing. Additionally, he is a devoted family man, dedicating time to quality time with his spouse and two children. David also serves on the board of directors for a local non-profit organization, using his expertise to make a positive impact on his community.",
+    "intent": "buy a set of trx bands for a home gym.",
+    "age": 41,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

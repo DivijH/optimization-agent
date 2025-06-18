@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a 56-year-old woman who has faced her fair share of challenges throughout her life. After a turbulent past, she has found solace in her role as a dedicated community volunteer, using her experiences to support and empower others in need.\n\nDemographics:\nAge: 56\nGender: Female\nEducation: High School Diploma\nProfession: Community Volunteer\nIncome: $18,000\n\nFinancial Situation:\nOlivia's income falls within the $0 to $30,000 range, as she relies primarily on a combination of social assistance, occasional part-time work, and the generosity of her community to make ends meet. Despite the financial constraints, she maintains a positive outlook and focuses her energy on the work she finds most meaningful.\n\nShopping Habits:\nOlivia is a savvy shopper, with a keen eye for finding hidden gems at thrift stores, garage sales, and community-based initiatives that support those in need. She values quality over quantity and takes pride in her ability to transform inexpensive items into stylish, functional pieces that align with her personal aesthetic.\n\nProfessional Life:\nAs a community volunteer, Olivia dedicates her time and energy to a variety of local organizations, from food banks and homeless shelters to youth programs and environmental initiatives. Her diverse range of experiences, coupled with her empathy and problem-solving skills, make her an invaluable asset to the organizations she supports.\n\nPersonal Style:\nOlivia's personal style reflects her practical and down-to-earth nature. She favors comfortable, versatile clothing that allows her to move freely and engage in her volunteer work. While her wardrobe may not be the latest fashion, Olivia takes pride in creating unique, personalized looks that showcase her creativity and resourcefulness.\n\nIn her free time, Olivia can often be found exploring local nature trails, attending community events, or spending quality time with the individuals she has helped through her volunteer work. Her resilience, compassion, and dedication to making a positive impact in the world are truly inspiring.",
+    "intent": "buy a wood puzzle switchplate.",
+    "age": 56,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

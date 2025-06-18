@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Margaret\n\nBackground:\nMargaret is a vibrant and experienced professional who has spent decades honing her skills in the field of human resources. With a wealth of knowledge and a keen understanding of people, she has become a trusted advisor and mentor to executives and employees alike.\n\nDemographics:\nAge: 60\nGender: Female\nEducation: Bachelor's Degree in Human Resources Management\nProfession: Human Resources Manager\nIncome: $65,000\n\nFinancial Situation:\nAs an experienced HR manager, Margaret's income falls within the $30,001 to $94,000 range. She has been diligent in her savings and investments over the years, and now enjoys a comfortable financial situation that allows her to balance prudent money management with the occasional indulgence.\n\nShopping Habits:\nMargaret approaches shopping with a refined and practical eye. She seeks out high-quality, timeless pieces that will complement her professional wardrobe and serve her well in the long run. While she is not averse to splurging on special occasion items, Margaret's overall shopping habits are characterized by a focus on value and longevity.\n\nProfessional Life:\nMargaret is a respected figure in her organization, known for her ability to navigate complex personnel issues with empathy, diplomacy, and sound judgment. She is passionate about fostering a positive and inclusive work culture, and takes great pride in developing and mentoring the next generation of HR professionals.\n\nPersonal Style:\nMargaret's personal style reflects her confidence and experience. She favors classic, well-tailored pieces that exude a sense of sophistication and authority, such as tailored blazers, crisp button-down shirts, and elegant slacks. Her accessory choices, such as statement necklaces and well-crafted handbags, add a touch of personal flair to her professional attire.",
+    "intent": "buy brown toddler thermals.",
+    "age": 60,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

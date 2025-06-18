@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sophia\n\nBackground:\nSophia is a resilient and ambitious young woman who is navigating the challenges of adulthood while maintaining a positive outlook. Despite facing financial hardships, she is determined to pave her own path and pursue her dreams.\n\nDemographics:\nAge: 19\nGender: Female\nEducation: High School Diploma\nProfession: Barista\nIncome: $26,000\n\nFinancial Situation:\nAs a barista, Sophia's income is modest, but she is diligent about managing her finances and finding ways to make ends meet. While she often has to be creative and resourceful, Sophia is driven to save what she can and explore avenues for increasing her earning potential.\n\nShopping Habits:\nSophia is a savvy shopper who seeks out thrift stores, secondhand shops, and online marketplaces to find affordable, high-quality items. She takes pride in her ability to curate a stylish wardrobe on a limited budget, often repurposing and upcycling pieces to give them a fresh, personalized look.\n\nProfessional Life:\nWhile her current role as a barista is not her ultimate career goal, Sophia approaches it with a strong work ethic and a willingness to learn. She is actively exploring educational opportunities and networking with professionals in her desired field, determined to gain the skills and experience necessary to pursue her aspirations.\n\nPersonal Style:\nSophia's personal style reflects her creative and independent spirit. She enjoys mixing and matching vintage and modern pieces, often incorporating bold colors, patterns, and accessories to express her unique flair. Comfort and affordability are important factors, but Sophia also takes joy in finding unique items that allow her to showcase her individual style.",
+    "intent": "buy a stranger things-themed necklace or bracelet.",
+    "age": 19,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

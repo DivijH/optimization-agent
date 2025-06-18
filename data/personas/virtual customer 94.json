@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a passionate young artist who recently graduated from art school. With a keen eye for design and a creative spirit, she is determined to build a career in the arts. Despite the financial challenges, Emily remains dedicated to honing her craft and exploring unconventional mediums to express her unique vision.\n\nDemographics:\nAge: 22\nGender: Female\nEducation: Bachelor's Degree in Fine Arts\nProfession: Artist\nIncome: $25,000\n\nFinancial Situation:\nAs a recent graduate, Emily's income is limited, but she manages her finances carefully. She relies on a combination of part-time jobs, art commissions, and freelance design work to support herself. Though money is tight, Emily is resourceful and finds ways to invest in the materials and tools she needs to create her art.\n\nShopping Habits:\nEmily takes a thoughtful and intentional approach to shopping. She seeks out secondhand stores, thrift shops, and online marketplaces to find unique, affordable items that align with her artistic aesthetic. She values sustainability and often repurposes or upcycles materials in her creative projects. Emily is selective with her purchases, focusing on essential items that will serve her well.\n\nProfessional Life:\nEmily's days are filled with a mix of part-time work, art commissions, and personal creative projects. She spends hours in her small studio space, experimenting with various mediums and techniques. Emily is dedicated to continuously improving her skills and finding new ways to express her artistic vision. She actively seeks out gallery exhibitions, art shows, and collaborative opportunities to showcase her work.\n\nPersonal Style:\nEmily's personal style is a reflection of her artistic sensibilities. She favors eclectic, bohemian-inspired pieces that allow her to express her creativity. Her wardrobe is a mix of secondhand finds, handmade garments, and vintage-inspired accessories. Emily is unafraid to take risks with her fashion choices, often pairing unexpected elements to create unique and eye-catching outfits.",
+    "intent": "buy a blesina neck roller.",
+    "age": 22,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sophia\n\nBackground:\nSophia is a savvy and driven business executive who has climbed the corporate ladder through her exceptional leadership skills and strategic vision. She is the Vice President of Marketing for a renowned international conglomerate, overseeing diverse portfolios and spearheading groundbreaking campaigns.\n\nDemographics:\nAge: 36\nGender: Female\nEducation: Master's Degree in Business Administration\nProfession: Vice President of Marketing\nIncome: $125,000\n\nFinancial Situation:\nSophia's lucrative executive position provides her with a substantial income, which she manages with a keen eye for investment and long-term financial planning. She is adept at balancing her personal and professional expenses, ensuring a comfortable lifestyle while also contributing to her retirement and investment portfolios.\n\nShopping Habits:\nAs a busy professional, Sophia values efficiency and quality in her shopping habits. She gravitates towards high-end, investment-worthy pieces that can seamlessly transition from the boardroom to social settings. However, Sophia is also mindful of her spending and seeks out opportunities to save, often taking advantage of exclusive sales, discounts, and loyalty programs.\n\nProfessional Life:\nSophia is a respected and influential figure in her industry, known for her strategic vision and innovative marketing approaches. She leads a dynamic team of marketing professionals, fostering a collaborative and results-driven environment. Sophia is also active in professional organizations, serving on industry boards and mentoring aspiring business leaders.\n\nPersonal Life:\nDespite her demanding career, Sophia maintains a healthy work-life balance, dedicating time to her passions and personal relationships. She is an avid traveler, taking advantage of her global connections to explore new destinations. Sophia also values charitable work, using her skills and resources to support causes she believes in, such as women's empowerment and sustainable business practices.",
+    "intent": "buy a gold-plated crucifix necklace for women",
+    "age": 36,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

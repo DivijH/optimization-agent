@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Eileen\n\nBackground:\nEileen is a retired teacher who has dedicated her life to nurturing young minds and inspiring a love of learning in her students. After decades of service, she now finds herself at a crossroads, exploring new ways to stay engaged and fulfilled during her golden years.\n\nDemographics:\nAge: 62\nGender: Female\nEducation: Bachelor's degree in Education\nProfession: Retired Teacher\nIncome: $23,000\n\nFinancial Situation:\nWith a modest pension and social security benefits, Eileen's financial situation is comfortable but limited. She is mindful of her spending and prioritizes her needs over wants, though she does enjoy the occasional treat or outing.\n\nShopping Habits:\nEileen's shopping habits are primarily influenced by her desire for value and practicality. She frequents thrift stores, garage sales, and online marketplaces in search of gently used items that can serve her needs. When making larger purchases, she carefully researches and compares options to ensure she's getting the best bang for her buck.\n\nProfessional Life:\nAlthough Eileen is no longer actively teaching, she maintains a deep connection to the education field. She volunteers at a local elementary school, tutoring students who need extra support and sharing her wealth of knowledge and experience. Eileen also serves on the board of a non-profit organization that provides educational resources to underprivileged communities.\n\nPersonal Style:\nEileen's personal style reflects her down-to-earth and practical nature. She favors comfortable, well-made clothing that allows her to move freely and engage in her various activities. Her wardrobe consists of classic pieces that can be mixed and matched, with the occasional touch of color or pattern to add a bit of personal flair.\n\nIn her free time, Eileen enjoys tending to her small garden, reading a good book, and attending community events. She is also an avid knitter, creating cozy sweaters and blankets for her loved ones.",
+    "intent": "buy termo underwear for kids",
+    "age": 62,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

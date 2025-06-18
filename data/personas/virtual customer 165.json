@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a seasoned entrepreneur and tech executive who has built and sold several successful technology companies over the past two decades. Known for his strategic vision and innovative mindset, he now focuses on angel investing and mentoring young entrepreneurs.\n\nDemographics:\nAge: 45\nGender: Male\nEducation: Bachelor's degree in Computer Science\nProfession: Entrepreneur, Angel Investor\nIncome: $175,000\n\nFinancial Situation:\nDavid's past entrepreneurial ventures have provided him with significant financial resources, allowing him to live comfortably and invest in new opportunities. He maintains a diverse portfolio, balancing high-risk, high-potential investments with more stable assets to ensure long-term financial security.\n\nShopping Habits:\nAs a tech-savvy individual, David is drawn to cutting-edge gadgets, innovative software, and premium consumer electronics. He enjoys researching and staying up-to-date on the latest technology trends, often making strategic purchases that align with his business interests. David also has a penchant for high-quality, timeless fashion that reflects his professional success.\n\nProfessional Life:\nIn his current role as an angel investor, David leverages his extensive industry experience to identify promising startups and provide mentorship and capital to help them grow. He is actively involved in the local tech community, sharing his expertise and network to support the next generation of entrepreneurs. David's reputation as a savvy investor and respected mentor precedes him.\n\nPersonal Style:\nDavid's personal style is a reflection of his professional success and refined taste. He favors well-tailored suits, designer casual wear, and luxury accessories. His appearance is polished and sophisticated, conveying an air of confidence and authority. David understands the importance of personal branding and how it can positively impact his business relationships and networking efforts.",
+    "intent": "buy a high-quality cycling mat for indoor training and bike maintenance.",
+    "age": 45,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

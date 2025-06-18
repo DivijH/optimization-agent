@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a highly motivated and driven young entrepreneur who started her own tech company at the age of 18. With a natural talent for coding and a keen business acumen, Olivia has managed to build a successful startup that is quickly gaining traction in the digital marketplace.\n\nDemographics:\nAge: 19\nGender: Female\nEducation: High school graduate\nProfession: Founder and CEO of a tech startup\nIncome: $150,000\n\nFinancial Situation:\nOlivia's startup has been thriving, allowing her to enjoy a comfortable financial situation. She is prudent with her spending, but also likes to treat herself occasionally, investing in high-quality technology and apparel.\n\nShopping Habits:\nOlivia enjoys shopping, but she is selective and prefers to buy items that align with her personal style and professional needs. She often shops online for convenience, but she also appreciates the in-store experience when she has the time.\n\nProfessional Life:\nAs the founder and CEO of her own tech startup, Olivia is constantly juggling a wide range of responsibilities. She oversees the company's operations, manages a team of developers, and works tirelessly to secure funding and partnerships. Her days are filled with meetings, coding sessions, and strategic planning.\n\nPersonal Style:\nOlivia has a sophisticated and modern personal style. She favors sleek, minimalist designs in neutral tones, such as black, gray, and white. She often wears blazers, skinny jeans, and stylish sneakers or ankle boots. Her appearance reflects her professional and ambitious nature.\n\nOlivia is a frequent flyer with Delta Airlines and wakes up at 7 am every day to tackle her jam-packed schedule. She lives in San Francisco, the heart of the tech industry.",
+    "intent": "buy a box of glowberry prime hydration sticks",
+    "age": 19,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

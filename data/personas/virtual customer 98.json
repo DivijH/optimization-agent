@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a seasoned financial advisor with over 30 years of experience in the industry. He has built a successful career by providing tailored investment strategies and financial guidance to his clients, helping them achieve their long-term financial goals.\n\nDemographics:\nAge: 57\nGender: Male\nEducation: Bachelor's Degree in Finance\nProfession: Financial Advisor\nIncome: $75,000\n\nFinancial Situation:\nDavid's steady income as a financial advisor, combined with his prudent financial management, has allowed him to accumulate a comfortable retirement nest egg. He enjoys a stable, upper-middle-class lifestyle and is able to indulge in some of his hobbies, such as golfing and traveling.\n\nShopping Habits:\nDavid takes a practical and measured approach to shopping, prioritizing quality and long-lasting products over trendy or impulsive purchases. He tends to shop at high-end department stores and specialty retailers for his business attire and personal needs, recognizing the importance of a professional and polished appearance.\n\nProfessional Life:\nAs a respected financial advisor, David is known for his analytical skills, attention to detail, and ability to effectively communicate complex financial concepts to his clients. He is constantly staying up-to-date on industry trends and regulations to ensure he provides the most accurate and relevant advice. His dedication to his craft and his clients has earned him a loyal customer base.\n\nPersonal Style:\nDavid's personal style reflects his professional demeanor and the need to maintain a polished appearance. He favors classic, well-fitted suits, dress shirts, and leather shoes, often in neutral tones and subdued patterns. His grooming is impeccable, and he takes pride in his appearance, understanding the importance of projecting a confident and trustworthy image.\n\nDavid is an avid reader of The Wall Street Journal and typically arrives at his office by 8 am each morning. He resides in a comfortable suburban neighborhood, where he enjoys his free time with his wife and two adult children.",
+    "intent": "buy a high-quality, heavy-duty dog pen for my home.",
+    "age": 57,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

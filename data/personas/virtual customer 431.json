@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a seasoned professional who has dedicated her career to making a positive impact on her community. After years of experience in the nonprofit sector, she has found her true calling as the executive director of a local organization that provides resources and support to underserved youth.\n\nDemographics:\nAge: 57\nGender: Female\nEducation: Master's Degree in Social Work\nProfession: Executive Director, Nonprofit Organization\nIncome: $63,000\n\nFinancial Situation:\nAs the head of a nonprofit organization, Sarah's income falls within the middle-income range. She has learned to carefully manage her finances, balancing her personal needs with the financial requirements of the organization she leads. While she may not have the same level of wealth as some of her corporate counterparts, Sarah finds great fulfillment in the work she does and the difference she makes in her community.\n\nShopping Habits:\nSarah takes a pragmatic approach to shopping, prioritizing quality and functionality over the latest trends. She frequents mid-range department stores and specialty shops that align with her professional and personal values. Sarah is conscious of her environmental impact and tries to support local businesses and sustainable brands when possible.\n\nProfessional Life:\nAs the executive director of a thriving nonprofit organization, Sarah plays a pivotal role in shaping the lives of the youth she serves. She oversees the organization's operations, secures funding, and leads a dedicated team of staff and volunteers. Sarah is a respected leader in her community, known for her strategic vision, her ability to inspire others, and her unwavering commitment to making a difference.\n\nPersonal Style:\nSarah's personal style reflects her professionalism and her desire for comfort. She favors classic, well-tailored pieces that convey a sense of authority and confidence. Her wardrobe is a mix of sleek, modern silhouettes and timeless, versatile separates that seamlessly transition from the office to after-work events. Sarah's style is a reflection of her role as a respected leader and her desire to project a polished, yet approachable, image.",
+    "intent": "buy a Brinkmann electric smoker.",
+    "age": 57,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

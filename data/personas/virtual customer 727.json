@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Robert\n\nBackground:\nRobert is a retired schoolteacher who has dedicated his life to educating and inspiring young minds. After over three decades of service, he now enjoys the leisurely pace of retirement, focusing on his hobbies and community involvement.\n\nDemographics:\nAge: 63\nGender: Male\nEducation: Master's Degree in Education\nProfession: Retired Schoolteacher\nIncome: $25,000\n\nFinancial Situation:\nWith a modest pension and social security benefits, Robert's income falls within the lower end of the financial spectrum. However, he has lived a frugal lifestyle, allowing him to maintain a comfortable standard of living and contribute to causes he cares about.\n\nShopping Habits:\nRobert's shopping habits reflect his practical and value-conscious approach to life. He prefers to purchase high-quality, durable goods that will last, often seeking out sales and discounts to maximize his budget. When it comes to discretionary spending, Robert enjoys browsing thrift stores and antique shops, searching for unique finds that hold sentimental value.\n\nProfessional Life:\nDuring his teaching career, Robert was known for his dedication to his students and his unwavering commitment to educational excellence. He took great pride in nurturing the intellectual and personal growth of the young people entrusted to his care, often going above and beyond to ensure their success. Now retired, Robert volunteers at a local literacy program, sharing his passion for learning with the community.\n\nPersonal Style:\nRobert's personal style is best described as classic and comfortable. He gravitates towards timeless, well-made clothing that prioritizes functionality and practicality, such as button-down shirts, khaki pants, and sturdy leather shoes. He values quality over quantity and takes pride in maintaining a neat and presentable appearance.\n\nIn his retirement, Robert enjoys pursuing his hobbies, which include woodworking, gardening, and playing chess with his longtime friends. He also remains an avid reader, constantly expanding his knowledge and finding inspiration in the written word. Robert's life is a testament to the enduring value of lifelong learning and community engagement.",
+    "intent": "buy a set of inflatable holiday ornaments.",
+    "age": 63,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

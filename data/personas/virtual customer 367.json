@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Matthew\n\nBackground:\nMatthew is a seasoned project manager who has worked in the construction industry for over two decades. With a keen eye for detail and a talent for coordinating complex projects, he has earned a reputation as a reliable and efficient problem-solver.\n\nDemographics:\nAge: 44\nGender: Male\nEducation: Bachelor's Degree in Civil Engineering\nProfession: Project Manager\nIncome: $72,000\n\nFinancial Situation:\nMatthew's steady income as a project manager allows him to live comfortably and provide for his family. He is financially responsible, ensuring that he saves for retirement and can handle unexpected expenses. While he is not extravagant in his spending, he does enjoy occasional splurges on outdoor gear and travel.\n\nShopping Habits:\nMatthew tends to be a practical shopper, focusing on quality and durability over trends. He prefers to shop in-person at specialty stores and outdoor outfitters, where he can find the right equipment and apparel for his active lifestyle. He is also a savvy online shopper, taking advantage of sales and reviews to make informed purchasing decisions.\n\nProfessional Life:\nAs a project manager, Matthew is responsible for overseeing the planning, execution, and delivery of large-scale construction projects. He excels at coordinating the various teams and subcontractors involved, ensuring that projects stay on schedule and within budget. Matthew's strong communication skills and ability to problem-solve under pressure make him a valuable asset to his company.\n\nPersonal Style:\nMatthew's personal style reflects his active lifestyle and practical nature. He often wears comfortable, durable clothing, such as rugged jeans, flannel shirts, and sturdy boots, that can withstand the demands of his work. He appreciates the functionality and performance of high-quality outdoor gear, which he incorporates into his everyday wardrobe.\n\nIn his free time, Matthew enjoys activities like camping, hiking, and mountain biking. He finds solace in the great outdoors and values the opportunity to disconnect from the stresses of work. Matthew is also an avid reader, often delving into non-fiction books on engineering, management, and personal development.",
+    "intent": "buy a high-quality zip line pulley for outdoor adventure activities.",
+    "age": 44,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

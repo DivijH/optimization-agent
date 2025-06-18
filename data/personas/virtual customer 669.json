@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a 20-year-old college student navigating the challenges of balancing his academic pursuits and part-time work. With a passion for technology and a keen interest in entrepreneurship, he is constantly exploring new opportunities to supplement his income and gain valuable experience.\n\nDemographics:\nAge: 20\nGender: Male\nEducation: Pursuing a Bachelor's Degree in Computer Science\nProfession: College Student, Part-time Retail Associate\nIncome: $22,000\n\nFinancial Situation:\nAs a college student, Ethan's financial situation is marked by limited resources and a need to budget carefully. While his part-time job at a local retail store provides a stable income, he is continuously searching for ways to increase his earnings, whether through freelance web development projects or participating in campus-based entrepreneurial initiatives.\n\nShopping Habits:\nEthan's shopping habits are primarily focused on finding affordable options that cater to his needs as a student. He frequents online marketplaces, discount retail chains, and secondhand stores to acquire the essential items he requires, such as textbooks, laptops, and affordable clothing. He is mindful of his spending and often researches products extensively to ensure he is getting the best value for his money.\n\nProfessional Life:\nIn addition to his academic pursuits, Ethan maintains a part-time job at a local retail store, where he has gained valuable customer service and problem-solving skills. He is actively involved in several student organizations, including the computer science club and the campus entrepreneurship club, where he explores his interests in technology and business development.\n\nPersonal Style:\nEthan's personal style reflects his pragmatic and budget-conscious approach to life. He favors comfortable, versatile clothing that allows him to transition seamlessly between his academic and professional commitments. His wardrobe consists of a mix of casual basics, such as jeans, t-shirts, and hoodies, along with a few investment pieces that he has carefully selected to last him throughout his college years.",
+    "intent": "buy a 12-pack of diet dr pepper",
+    "age": 20,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

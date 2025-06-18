@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Liam\n\nBackground:\nLiam is a passionate and ambitious young man who is navigating the early stages of his career. After completing his undergraduate degree, he has been exploring various job opportunities, eager to find a path that aligns with his interests and values.\n\nDemographics:\nAge: 23\nGender: Male\nEducation: Bachelor's Degree\nProfession: Aspiring Entrepreneur\nIncome: $18,000\n\nFinancial Situation:\nLiam's current income is modest, as he is still in the process of establishing himself professionally. He is resourceful and diligent in managing his finances, living frugally and prioritizing essential expenses. Despite the financial constraints, Liam is driven to save and invest in his future, with the ultimate goal of starting his own business.\n\nShopping Habits:\nLiam is mindful and prudent when it comes to his shopping habits. He seeks out sales, discounts, and secondhand options to stretch his limited budget. When making purchases, Liam carefully evaluates the quality and long-term value of the items, aiming to make smart, sustainable choices. He also enjoys browsing online marketplaces and thrift stores for unique and affordable finds.\n\nPersonal Life:\nIn his free time, Liam actively engages in volunteering and community service, finding fulfillment in making a positive impact. He is also an avid reader, with a particular interest in business, entrepreneurship, and personal development. Liam values his close-knit circle of friends, who offer support and encourage his entrepreneurial aspirations.\n\nPersonal Style:\nLiam's personal style reflects his practical and adaptable nature. He often sports a casual, versatile wardrobe, including well-fitting jeans, t-shirts, and comfortable yet polished footwear. He is mindful of the durability and functionality of his clothing choices, prioritizing items that can seamlessly transition between his various activities and responsibilities.",
+    "intent": "buy a small silver ash holder for necklace.",
+    "age": 23,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

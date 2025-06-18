@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Theresa\n\nBackground:\nTheresa is a passionate community organizer who has dedicated her life to advocating for the rights and well-being of marginalized communities. Despite facing financial challenges, she remains steadfast in her commitment to making a positive impact on the world around her.\n\nDemographics:\nAge: 36\nGender: Female\nEducation: High School Diploma\nProfession: Community Organizer\nIncome: $28,000\n\nFinancial Situation:\nTheresa's income as a community organizer is modest, but she has become adept at living within her means. She carefully budgets her resources, prioritizing the needs of her community over her own personal desires. Theresa often relies on grants, donations, and volunteer work to sustain her advocacy efforts, and she finds joy in the simple pleasures of life.\n\nShopping Habits:\nTheresa is a conscientious shopper, focused on purchasing ethically-sourced, sustainable products that align with her values. She frequents thrift stores, secondhand shops, and local artisanal markets, where she can find unique and affordable items that support her community. Theresa also values experiences over material possessions, investing in opportunities that allow her to connect with others and make a difference.\n\nPersonal Life:\nTheresa's personal life is deeply intertwined with her work as a community organizer. She is a dedicated volunteer, lending her time and energy to various social justice initiatives, from organizing food drives to leading workshops on community empowerment. In her rare moments of respite, Theresa finds solace in nature, drawing inspiration and rejuvenation from the beauty of the world around her.\n\nPersonal Style:\nTheresa's personal style reflects her down-to-earth and practical approach to life. She favors comfortable, versatile clothing that allows her to move freely and engage in her community work. Her wardrobe consists of a mix of secondhand finds, ethically-produced garments, and pieces that she has repurposed or customized to suit her needs. Theresa's style is often characterized by earthy tones, natural fabrics, and an effortless, lived-in aesthetic.",
+    "intent": "buy a solar camera filter that is affordable and environmentally-friendly.",
+    "age": 36,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

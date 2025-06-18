@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Chloe\n\nBackground:\nChloe is a passionate and driven young entrepreneur who has launched her own technology startup. With a keen eye for innovation and a desire to make a positive impact, she is determined to disrupt the status quo and create solutions that empower others.\n\nDemographics:\nAge: 22\nGender: Female\nEducation: Bachelor's degree in Computer Science\nProfession: Founder and CEO of a technology startup\nIncome: $125,000\n\nFinancial Situation:\nAs the founder and CEO of a successful startup, Chloe's income falls within the upper range, allowing her to live comfortably and reinvest in her business. She is financially savvy, closely managing her expenses and exploring strategic investment opportunities to fuel her company's growth.\n\nShopping Habits:\nChloe approaches shopping with a discerning eye, always seeking high-quality, durable products that align with her personal and professional values. She enjoys discovering unique, sustainable brands and supporting local businesses. While she is not afraid to splurge on occasional luxury items, she is mindful of her spending and prioritizes investments that contribute to her long-term goals.\n\nProfessional Life:\nChloe's entrepreneurial spirit and technical expertise have positioned her as a rising star in the tech industry. She leads a talented team of developers, designers, and marketing professionals, all of whom share her vision for creating innovative solutions that address pressing societal challenges. Chloe's unwavering dedication and strategic thinking have earned her the respect of her peers and the admiration of her clients.\n\nPersonal Style:\nChloe's personal style reflects her dynamic and forward-thinking personality. She favors versatile, high-quality pieces that can seamlessly transition from the office to social events. Her wardrobe consists of modern, minimalist designs that prioritize comfort and functionality, with the occasional bold statement piece that showcases her unique sense of style.\n\nIn her free time, Chloe enjoys exploring the latest advancements in technology, attending industry conferences, and networking with other entrepreneurs. She is also passionate about sustainable living and actively supports environmental initiatives in her local community.",
+    "intent": "buy an outdoor ashtray with lid.",
+    "age": 22,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

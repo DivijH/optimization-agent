@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a hardworking middle-manager who has slowly climbed the corporate ladder over the past 15 years. While he enjoys the stability and security of his job, he often finds himself longing for a more creative outlet and a chance to make a more direct impact on the world around him.\n\nDemographics:\nAge: 38\nGender: Male\nEducation: Bachelor's Degree in Business Administration\nProfession: Middle Manager at a mid-sized accounting firm\nIncome: $60,000\n\nFinancial Situation:\nDavid's steady income as a middle manager provides him with a comfortable financial situation. He is able to maintain a modest but comfortable lifestyle, save for the future, and occasionally indulge in recreational activities. However, he is mindful of his spending and tries to find a balance between enjoying the present and planning for the long term.\n\nShopping Habits:\nDavid's shopping habits tend to be practical and pragmatic. He favors well-made, durable clothing and household items that will stand the test of time. While he is not opposed to the occasional splurge on a high-quality item, he generally avoids impulse purchases and seeks out sales and discounts to maximize his budget.\n\nProfessional Life:\nIn his role as a middle manager, David is responsible for overseeing a team of accountants, ensuring that projects are completed on time and within budget. He takes pride in his ability to problem-solve and provide guidance to his team, but often feels that his creativity and critical thinking skills are underutilized in the corporate environment.\n\nPersonal Style:\nDavid's personal style is understated and professional, with a focus on classic, well-fitting pieces. He tends to favor neutral colors and clean lines, but occasionally adds a touch of personality with a patterned shirt or a stylish accessory. In his free time, he enjoys exploring his local community, attending art exhibits, and seeking out new restaurants and experiences that allow him to engage with his creative side.",
+    "intent": "buy a discreet outdoor ashtray with lid for smoking weed.",
+    "age": 38,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

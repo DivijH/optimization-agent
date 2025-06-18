@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a dedicated community organizer and activist who tirelessly advocates for social and environmental justice issues. She is deeply committed to amplifying the voices of marginalized communities and creating meaningful change at the grassroots level.\n\nDemographics:\nAge: 39\nGender: Female\nEducation: High school diploma\nProfession: Community Organizer\nIncome: $25,000\n\nFinancial Situation:\nAs a community organizer, Olivia's income is modest, but she is skilled at managing her limited resources and finding creative ways to stretch her budget. She supplements her income through various part-time jobs and freelance work, and she is adept at securing grants and donations to fund her community initiatives.\n\nShopping Habits:\nOlivia's shopping habits are heavily influenced by her values and commitment to ethical and sustainable consumerism. She prioritizes buying secondhand, locally sourced, and fair-trade products whenever possible. Olivia is a savvy shopper, taking advantage of thrift stores, garage sales, and online marketplaces to find unique and affordable items.\n\nProfessional Life:\nOlivia's workdays are filled with a diverse array of tasks, from organizing community meetings and rallies to writing grant proposals and coordinating volunteer efforts. She is a skilled communicator and networker, building strong relationships with local organizations, policymakers, and community members to drive positive change.\n\nPersonal Style:\nOlivia's personal style is a reflection of her practical and activist-oriented lifestyle. She favors comfortable, durable clothing that allows her to move freely and work efficiently, such as sturdy boots, loose-fitting pants, and breathable tops. Olivia also incorporates elements of her cultural heritage and personal beliefs into her style, often wearing vibrant, ethically-produced garments.",
+    "intent": "buy a high-quality, durable battle-grade light saber.",
+    "age": 39,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

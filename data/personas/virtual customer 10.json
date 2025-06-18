@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Samantha\n\nBackground:\nSamantha is a successful entrepreneur who founded a thriving tech startup. She is passionate about using technology to solve real-world problems and create positive social impact.\n\nDemographics:\nAge: 49\nGender: Female\nEducation: Bachelor's degree\nProfession: Founder and CEO of a tech startup\nIncome: $150,000\n\nFinancial Situation:\nSamantha's startup has become highly profitable, allowing her to live comfortably. She is financially savvy and enjoys investing in both her business and personal growth.\n\nShopping Habits:\nSamantha has a discerning eye for quality and seeks out products that are well-designed and built to last. She enjoys browsing high-end retail stores and online marketplaces, but is also mindful of her spending. Samantha values exceptional customer service and is willing to pay more for a superior shopping experience.\n\nProfessional Life:\nAs the CEO of her startup, Samantha wears many hats. She oversees the company's strategy, manages a team of talented engineers and business professionals, and regularly pitches to investors. Samantha is constantly seeking new opportunities to expand her business and make a bigger impact.\n\nPersonal Style:\nSamantha's personal style reflects her professional persona. She favors well-tailored, elegant outfits that convey her confidence and sophistication. She enjoys accessorizing with statement pieces, such as bold jewelry or a stylish handbag. Samantha prefers neutral colors like black, gray, and navy, which she finds to be versatile and timeless.\n\nSamantha loves to travel and often flies with Delta Airlines. She typically wakes up at 6:30 am every day to start her morning routine.\nSamantha lives in San Francisco.",
+    "intent": "buy a kids umbrella with a fun, whimsical design.",
+    "age": 49,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

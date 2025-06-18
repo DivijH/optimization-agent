@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a vibrant and ambitious young woman who is just beginning her journey into the professional world. With a passion for fashion and a keen eye for design, she is currently pursuing a degree in Fashion Merchandising, determined to turn her creative vision into a successful career.\n\nDemographics:\nAge: 18\nGender: Female\nEducation: Pursuing a Bachelor's degree in Fashion Merchandising\nProfession: Student\nIncome: $20,000 (part-time retail job and scholarships)\n\nFinancial Situation:\nAs a college student, Emily's financial situation is relatively modest. She relies on a combination of part-time work, scholarships, and financial support from her parents to cover her tuition, living expenses, and occasional indulgences. Despite the limited resources, Emily is diligent in budgeting and saving, with the goal of eventually becoming financially independent.\n\nShopping Habits:\nEmily's shopping habits reflect her passion for fashion and her desire to curate a unique, trendy wardrobe. She frequents thrift stores, vintage shops, and fast-fashion retailers, expertly mixing and matching pieces to create her signature style. While conscious of her budget, Emily is not afraid to invest in higher-quality, statement items that she can mix and match with her more affordable purchases.\n\nProfessional Life:\nAs a fashion merchandising student, Emily is dedicated to honing her skills in visual merchandising, trend forecasting, and product development. She has taken on several internships at local boutiques and fashion startups, gaining valuable hands-on experience and expanding her professional network.\n\nPersonal Style:\nEmily's personal style is a reflection of her creative spirit and youthful energy. She embraces bold colors, eclectic patterns, and unexpected silhouettes, often incorporating vintage and thrifted pieces into her outfits. Her style is ever-evolving, as she experiments with different looks and trends, constantly pushing the boundaries of her own fashion sensibilities.\n\nIn her free time, Emily can be found exploring the local thrift and vintage scene, attending fashion-related events, and curating her growing Instagram following. She is passionate about sustainability and often repurposes and upcycles items to reduce her environmental impact.",
+    "intent": "buy a usb dongle.",
+    "age": 18,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

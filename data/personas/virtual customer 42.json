@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Maria\n\nBackground:\nMaria is a passionate community organizer and advocate for social justice. She has dedicated her career to empowering marginalized communities and fighting for equity and inclusion.\n\nDemographics:\nAge: 49\nGender: Female\nEducation: High school diploma\nProfession: Community organizer\nIncome: $25,000\n\nFinancial Situation:\nMaria lives on a tight budget, relying on her modest salary and occasional grants or donations to support her work. She is mindful of her spending and looks for ways to maximize her resources to have the greatest impact.\n\nShopping Habits:\nMaria prioritizes value and functionality over style when it comes to her shopping habits. She often frequents thrift stores, garage sales, and second-hand shops to find affordable, practical items. When necessary, she also shops online for convenience and to compare prices.\n\nProfessional Life:\nMaria's work as a community organizer is her passion and calling. She spends her days meeting with local leaders, organizing events and protests, and advocating for the rights and needs of the communities she serves. Her deep commitment to social justice drives her work.\n\nPersonal Style:\nMaria's personal style reflects her practical and community-focused approach to life. She favors comfortable, durable clothing that allows her to move freely and work long hours. Her wardrobe consists mainly of casual, earth-toned pieces that can be easily mixed and matched.",
+    "intent": "buy a shoulder heat and therapy massager.",
+    "age": 49,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

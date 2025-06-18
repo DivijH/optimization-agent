@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Isabelle\n\nBackground:\nIsabelle is a creative freelancer who has found her calling in the world of independent artistry. Despite facing financial challenges, she has embraced a life of self-expression, pouring her heart and soul into her craft.\n\nDemographics:\nAge: 36\nGender: Female\nEducation: Associate's Degree in Fine Arts\nProfession: Freelance Artist\nIncome: $22,000\n\nFinancial Situation:\nIsabelle's income fluctuates as a freelance artist, but she has become adept at managing her limited resources. She supplements her creative endeavors with part-time gig work, often taking on odd jobs or commissions to make ends meet. Isabelle lives in a modest apartment and is mindful of her spending, prioritizing her artistic materials and tools over luxuries.\n\nShopping Habits:\nIsabelle is a self-proclaimed thrifting enthusiast, scouring second-hand stores, flea markets, and online platforms for unique and affordable finds. She takes great pride in repurposing and upcycling items, infusing them with her artistic flair. Isabelle also supports local artisans and small businesses, seeking out handmade and ethically-sourced products that align with her values.\n\nPersonal Life:\nIn her free time, Isabelle can be found in her makeshift studio, experimenting with various mediums and techniques. She draws inspiration from the natural world, often incorporating natural materials and organic forms into her work. Isabelle is also an active member of the local arts community, regularly attending exhibitions, workshops, and collaborative events.\n\nPersonal Style:\nIsabelle's personal style reflects her creative sensibilities and her commitment to sustainability. She favors comfortable, versatile garments that allow her to move freely and express herself, such as flowing dresses, oversized sweaters, and eclectic, one-of-a-kind accessories. Isabelle's look is often accented with bold, colorful pieces and handmade touches, mirroring the vibrant and imaginative nature of her artistic pursuits.",
+    "intent": "buy a large, inflatable Christmas tree decoration.",
+    "age": 36,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

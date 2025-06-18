@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jenna\n\nBackground:\nJenna is a passionate artist and freelance graphic designer. She has always been drawn to creative expression and finds joy in using her visual skills to bring her clients' visions to life.\n\nDemographics:\nAge: 37\nGender: Female\nEducation: Associate's Degree in Graphic Design\nProfession: Freelance Graphic Designer\nIncome: $22,000\n\nFinancial Situation:\nAs a freelancer, Jenna's income can be unpredictable, but she has learned to live frugally and manage her finances carefully. She is mindful of her spending and seeks out ways to supplement her income, such as selling her artwork or doing commissioned pieces.\n\nShopping Habits:\nJenna is a thrifty shopper who loves a good bargain. She frequents secondhand stores, thrift shops, and online marketplaces in search of unique, affordable items that she can incorporate into her personal style. She is also skilled at repurposing and upcycling found objects into one-of-a-kind creations.\n\nProfessional Life:\nJenna's work as a freelance graphic designer allows her the flexibility to pursue her artistic passions. She enjoys the challenge of translating her clients' ideas into visually compelling designs. Jenna often collaborates with local businesses and community organizations, using her skills to support causes she believes in.\n\nPersonal Style:\nJenna's personal style reflects her artistic sensibilities. She favors bohemian-inspired pieces, such as flowy dresses, vintage-inspired blouses, and artfully distressed denim. She loves to accessorize with handmade jewelry, scarves, and other unique items that add a touch of individuality to her look.",
+    "intent": "buy a 16 1/2 x 18 inch sink protector",
+    "age": 37,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

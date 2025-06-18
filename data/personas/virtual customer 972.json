@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a resilient and compassionate woman who has faced her fair share of life's challenges. Despite the financial constraints she navigates, Olivia remains determined to create a better future for herself and her young family.\n\nDemographics:\nAge: 40\nGender: Female\nEducation: High School Diploma\nProfession: Part-time Retail Associate\nIncome: $26,000\n\nFinancial Situation:\nOlivia's income, which falls within the $0 to $30,000 range, requires her to carefully manage her household expenses. She is diligent in budgeting her limited resources, prioritizing necessities such as rent, utilities, and groceries. While her financial situation is precarious, Olivia finds ways to stretch her budget and occasionally treat her family to small indulgences.\n\nShopping Habits:\nOlivia's shopping habits are guided by necessity and resourcefulness. She is a savvy shopper, utilizing coupons, sales, and discount stores to stretch her budget as far as possible. When making purchases, Olivia focuses on acquiring high-quality, durable items that will stand the test of time, rather than following the latest trends.\n\nProfessional Life:\nOlivia currently works as a part-time retail associate, providing her with a steady, albeit modest, income. While this position does not fully align with her long-term aspirations, Olivia remains dedicated to her work and strives to provide excellent customer service. In her free time, she is exploring educational opportunities that could lead to a more fulfilling career path.\n\nPersonal Life:\nOlivia's personal life is centered around her young family, which includes her partner and two children. She is a devoted mother, prioritizing her children's well-being and creating a nurturing, loving environment for them. Despite the financial challenges, Olivia finds joy in simple pleasures, such as family outings to the park, reading bedtime stories, and engaging in creative activities with her children.",
+    "intent": "buy a mens silver cross necklace.",
+    "age": 40,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

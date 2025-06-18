@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sophia\n\nBackground:\nSophia is a passionate educator who has dedicated her career to inspiring young minds. As a high school English teacher, she works tirelessly to cultivate a love of literature and critical thinking in her students.\n\nDemographics:\nAge: 49\nGender: Female\nEducation: Master's Degree in Education\nProfession: High School English Teacher\nIncome: $52,000\n\nFinancial Situation:\nSophia's income as a teacher allows her to maintain a comfortable, yet modest lifestyle. She is financially responsible, allocating a portion of her earnings towards retirement savings and paying off her student loans. Though her salary is not high, she finds joy in the small luxuries she can afford, such as attending the occasional art exhibit or theater performance.\n\nShopping Habits:\nSophia values quality over quantity when it comes to her shopping habits. She tends to invest in timeless, versatile pieces that can be mixed and matched to create a variety of outfits. She enjoys browsing independent boutiques and local shops, where she can discover unique items and support small businesses. Online, Sophia is selective in her purchases, often taking the time to research products and read reviews.\n\nProfessional Life:\nAs an experienced high school English teacher, Sophia is renowned for her dynamic teaching style and her ability to engage students. She takes great pride in her lesson planning, constantly seeking out new ways to make literature come alive in the classroom. Sophia is also an active member of her school's curriculum development team, contributing her expertise to ongoing educational initiatives.\n\nPersonal Style:\nSophia's personal style is classic and polished, with a touch of bohemian flair. She gravitates towards natural fabrics, earthy tones, and patterns that evoke a sense of warmth and creativity. Her wardrobe is a mix of timeless staples, such as crisp button-down shirts and tailored trousers, combined with more whimsical pieces like flowing maxi skirts and intricate scarves.\n\nIn her free time, Sophia can be found immersed in a good book, practicing her hand at watercolor painting, or exploring the local farmers' market in search of fresh, seasonal produce to incorporate into her home-cooked meals.",
+    "intent": "buy a silver iPhone 11 with wireless charging.",
+    "age": 49,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

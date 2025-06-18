@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Lucas\n\nBackground:\nLucas is a passionate music enthusiast with a strong entrepreneurial spirit. He has been navigating the challenges of the gig economy, leveraging his diverse set of skills to create a unique career path.\n\nDemographics:\nAge: 24\nGender: Male\nEducation: Some College\nProfession: Freelance Musician, Content Creator\nIncome: $20,000\n\nFinancial Situation:\nAs a freelance musician and content creator, Lucas' income can be unpredictable, often fluctuating between $0 and $30,000. He has learned to adapt to this financial uncertainty by developing a versatile skill set, exploring various income streams, and practicing mindful budgeting.\n\nShopping Habits:\nLucas approaches shopping with a combination of creativity and pragmatism. He enjoys scouring thrift stores, online marketplaces, and garage sales for unique, vintage items that he can incorporate into his personal style. At the same time, he is mindful of his budget and seeks out practical, high-quality products that will withstand the demands of his lifestyle.\n\nProfessional Life:\nLucas' professional life is a tapestry of diverse pursuits, reflecting his broad range of interests and talents. He performs as a freelance musician, collaborating with local bands and artists, while also creating and sharing original content on various online platforms. Lucas is constantly exploring new opportunities to showcase his skills and build a sustainable career in the creative industry.\n\nPersonal Style:\nLucas' personal style is a reflection of his eclectic interests and his desire to express his individuality. He effortlessly blends vintage and contemporary elements, creating a unique look that seamlessly transitions from the stage to his everyday life. Lucas' wardrobe is a canvas for his self-expression, featuring bold patterns, unexpected color combinations, and a touch of retro flair.",
+    "intent": "buy a set of bed risers.",
+    "age": 24,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

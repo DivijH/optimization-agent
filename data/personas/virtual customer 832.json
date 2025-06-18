@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Noah\n\nBackground:\nNoah is a driven and ambitious young professional who has quickly established himself as a rising star in the field of software engineering. With a keen intellect and a natural aptitude for problem-solving, he has carved out a niche for himself at a leading tech startup, where he works tirelessly to develop innovative solutions that push the boundaries of the industry.\n\nDemographics:\nAge: 23\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Software Engineer\nIncome: $58,000\n\nFinancial Situation:\nAs a software engineer, Noah's income falls comfortably within the $30,001 to $94,000 range. He has been diligent in managing his finances, setting aside a portion of his earnings for savings and investments while still enjoying the occasional splurge on the latest tech gadgets or a weekend getaway with friends.\n\nShopping Habits:\nNoah's shopping habits reflect his practical and efficient mindset. He tends to research products extensively before making purchases, seeking out high-quality, durable items that will serve him well in both his professional and personal life. While he enjoys the occasional indulgence, such as a new gaming laptop or a stylish pair of headphones, Noah is generally frugal and values functionality over luxury.\n\nPersonal Life:\nOutside of his demanding work schedule, Noah is an avid outdoor enthusiast, finding solace in activities like hiking, rock climbing, and mountain biking. He also has a deep appreciation for the arts, often attending local concerts, art exhibits, and independent film screenings. Noah values his close-knit group of friends, many of whom he has known since his college days, and he makes a conscious effort to maintain a healthy work-life balance.\n\nProfessional Life:\nAs a software engineer, Noah is constantly challenged to stay on the cutting edge of technological advancements. He thrives in the fast-paced, innovative environment of his workplace, where he collaborates with a diverse team of talented individuals to create groundbreaking software solutions. Noah's dedication, problem-solving skills, and ability to think outside the box have earned him the respect and admiration of his colleagues, and he is widely regarded as a rising star within the company.",
+    "intent": "buy a oupus solar generator.",
+    "age": 23,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

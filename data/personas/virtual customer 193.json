@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a 50-year-old man who has faced a series of setbacks in his life, leading him to struggle with financial instability. Despite his challenges, he remains determined to find purpose and meaning through his passions.\n\nDemographics:\nAge: 50\nGender: Male\nEducation: High school diploma\nProfession: Part-time Handyman\nIncome: $22,000\n\nFinancial Situation:\nDavid's income as a part-time handyman fluctuates, and he often has to rely on odd jobs and temporary work to make ends meet. He lives paycheck to paycheck and has limited savings, making it difficult to plan for the future or handle unexpected expenses.\n\nShopping Habits:\nDavid is cautious with his spending, focusing on essential items and necessities. He frequents thrift stores, second-hand shops, and discount retailers to find affordable clothing and household goods. When possible, he tries to repair or repurpose items to extend their lifespan and save money.\n\nProfessional Life:\nDavid's primary work involves handyman services, where he utilizes his diverse skill set to help homeowners with various maintenance and repair tasks. He enjoys the physical nature of the work and the sense of accomplishment he feels when he solves a problem. However, the lack of job security and unpredictable income can be a source of stress.\n\nPersonal Style:\nDavid's personal style is practical and functional, with a focus on comfort and durability. He typically wears durable work pants, t-shirts, and sturdy boots, often with a worn-in look that reflects his hands-on profession. He values quality over fashion and is more concerned with the functionality of his clothing than its appearance.\n\nIn his spare time, David indulges in his hobbies, which include woodworking and tinkering with old automobiles. These activities not only provide him with a creative outlet but also allow him to save money by repairing and repurposing items.",
+    "intent": "buy a tusk tire changer.",
+    "age": 50,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a 60-year-old retired factory worker who is looking to find fulfillment in his golden years. After decades of hard work on the assembly line, he is now seeking opportunities to stay active and engaged with his community.\n\nDemographics:\nAge: 60\nGender: Male\nEducation: High school graduate\nProfession: Retired factory worker\nIncome: $25,000\n\nFinancial Situation:\nDavid lives on a modest retirement pension and social security benefits, which provide him with a limited income. He is frugal and budget-conscious, focusing on essential expenses and finding ways to save where possible.\n\nShopping Habits:\nDavid is a practical shopper who seeks value for his money. He prefers to visit local stores and interact with sales assistants, as he values the personal touch and enjoys the social aspect of shopping. He is not swayed by trends or flashy marketing, instead prioritizing quality and durability.\n\nProfessional Life:\nDavid has been retired for five years, after working for the same manufacturing company for over three decades. He is now looking for ways to stay active and contribute to his community, whether through volunteer work or part-time employment.\n\nPersonal Style:\nDavid's personal style is functional and comfortable, with a preference for well-worn jeans, flannel shirts, and sturdy work boots. He values practicality over fashion and is often found in clothes that have served him well over the years.",
+    "intent": "buy a pair of futuro compression socks for men.",
+    "age": 60,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

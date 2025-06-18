@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: George\n\nBackground:\nGeorge is a seasoned marketing professional with over two decades of experience in the consumer packaged goods industry. He has worked his way up the corporate ladder, building a reputation for his strategic insights and ability to drive successful brand campaigns. George is known for his collaborative leadership style and his commitment to mentoring younger marketers.\n\nDemographics:\nAge: 59\nGender: Male\nEducation: Master's degree in Marketing\nProfession: Marketing Director\nIncome: $72,000\n\nFinancial Situation:\nGeorge has a comfortable financial standing, with a stable income and a focus on prudent financial management. He has accumulated a modest retirement savings and is able to enjoy some discretionary spending, but he also believes in the value of frugality and avoiding excessive debt.\n\nShopping Habits:\nGeorge takes a balanced approach to shopping, combining practical needs with occasional indulgences. He appreciates quality and durability, often investing in well-made, long-lasting products. At the same time, he enjoys browsing for the latest trends and innovations, particularly in the technology and home goods sectors.\n\nProfessional Life:\nAs a marketing director, George oversees a team of marketing professionals and collaborates closely with product development and sales departments. He is adept at developing integrated marketing campaigns that enhance brand visibility and drive consumer engagement. George is also actively involved in industry associations and serves as a mentor to up-and-coming marketers.\n\nPersonal Style:\nGeorge's personal style is a reflection of his professional persona - refined, polished, and understated. He favors classic menswear, such as well-fitted suits, crisp button-down shirts, and leather dress shoes. His wardrobe is a mix of formal and smart casual pieces that allow him to transition seamlessly between the office and social settings.",
+    "intent": "buy a pack of high-quality compression socks that provide support and comfort for travel and long flights.",
+    "age": 59,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: William\n\nBackground:\nWilliam is a 60-year-old man who has faced a series of challenging life events that have led him to a period of financial uncertainty. Despite these setbacks, he remains resilient and determined to find stability and purpose in the next chapter of his life.\n\nDemographics:\nAge: 60\nGender: Male\nEducation: High School Graduate\nProfession: Retired, Odd Jobs\nIncome: $22,000\n\nFinancial Situation:\nWilliam's financial situation is limited, with a fixed income from a small pension and occasional work as a handyman or landscaper. He has faced various health issues and medical expenses over the years, which have depleted his savings. William is carefully managing his limited funds to cover essential living costs and modest expenses.\n\nShopping Habits:\nWilliam is a frugal and pragmatic shopper, focusing on finding the most practical and cost-effective options for his needs. He frequents thrift stores, secondhand shops, and discount retailers to acquire affordable clothing, household items, and basic necessities. William is cautious about making large purchases and often researches prices and reviews before making any significant financial commitments.\n\nPersonal Life:\nAfter a lifetime of hard work, William is now enjoying a slower pace of life. He finds solace in simple pleasures, such as tending to his small vegetable garden, reading, and engaging with his close-knit community of neighbors and former colleagues. William values the connections he has built over the years and often relies on the support and generosity of his loved ones during challenging times.\n\nRetirement and Future Plans:\nAs William navigates the complexities of retirement on a limited budget, he is actively exploring ways to supplement his income and maintain a sense of purpose. He is considering taking on part-time work, volunteering, or pursuing hobbies that could potentially generate additional revenue. William's primary goal is to achieve a sense of financial stability and personal fulfillment in the years to come.",
+    "intent": "buy a pair of plus size compression tights.",
+    "age": 60,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

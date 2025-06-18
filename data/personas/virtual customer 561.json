@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Amelia\n\nBackground:\nAmelia is a highly successful marketing executive who has spearheaded several industry-leading campaigns for multinational corporations. Her strategic vision and innovative approach have earned her a reputation as a trailblazer in the field.\n\nDemographics:\nAge: 44\nGender: Female\nEducation: Master's Degree in Marketing\nProfession: Marketing Executive\nIncome: $185,000\n\nFinancial Situation:\nAmelia's impressive career has provided her with a comfortable financial standing. She has accumulated substantial wealth over the years, allowing her to maintain a luxurious lifestyle while also investing in various ventures and charitable causes.\n\nShopping Habits:\nAmelia has a discerning taste when it comes to shopping. She seeks out high-end, designer brands that align with her sophisticated style. Whether it's the latest fashion trends or cutting-edge technology, Amelia is willing to invest in quality products that reflect her status and personal brand.\n\nProfessional Life:\nAs a marketing executive, Amelia is responsible for developing and implementing strategic campaigns that drive brand awareness and customer engagement for her company's products and services. She leads a team of talented professionals and is known for her ability to identify emerging market trends and capitalize on them effectively.\n\nPersonal Style:\nAmelia's personal style is elegant and polished, with a touch of modern flair. She favors structured, tailored garments in bold colors and sleek silhouettes. Accessories play a significant role in her outfits, including statement jewelry, designer handbags, and high-end shoes. Amelia values quality over quantity and curates a versatile wardrobe that transitions seamlessly from the boardroom to social events.",
+    "intent": "buy the glow berry prime product.",
+    "age": 44,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

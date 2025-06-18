@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Marcus\n\nBackground:\nMarcus is a retired factory worker who is now navigating the challenges of living on a fixed income. After decades of physically demanding labor, he is seeking new ways to stay active and engaged in his local community.\n\nDemographics:\nAge: 59\nGender: Male\nEducation: High School Diploma\nProfession: Retired Factory Worker\nIncome: $22,000 (Retirement Pension and Social Security)\n\nFinancial Situation:\nWith a modest retirement income, Marcus is careful to stick to a tight budget to cover his essential expenses. He relies on government assistance programs and occasional side jobs to supplement his pension and Social Security benefits. Despite the financial constraints, he maintains a positive outlook and finds creative ways to make the most of his limited resources.\n\nShopping Habits:\nMarcus is a practical shopper who focuses on finding the best value for his money. He frequents thrift stores, garage sales, and discount retailers to score deals on necessary items, from clothing and household goods to groceries. When making bigger purchases, he thoroughly researches options to ensure he is getting the most bang for his buck.\n\nPersonal Life:\nIn his retirement, Marcus has found a new sense of freedom and purpose. He spends his days volunteering at a local food bank, where he helps to sort and distribute donated items to those in need. He also enjoys tinkering with small electronics and household repairs, finding satisfaction in breathing new life into old items.\n\nSocially, Marcus maintains a close-knit circle of friends from his former factory days. They often gather for potluck dinners, card games, and outdoor activities, providing a sense of community and camaraderie during this transitional phase of life.",
+    "intent": "buy a celtic cremation locket.",
+    "age": 59,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

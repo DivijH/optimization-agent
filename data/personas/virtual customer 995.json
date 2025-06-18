@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Evan\n\nBackground:\nEvan is a driven and ambitious 39-year-old man who works as a software developer for a mid-sized tech company in a bustling city. He is passionate about innovation and constantly seeks opportunities to expand his knowledge and skills.\n\nDemographics:\nAge: 39\nGender: Male\nEducation: Bachelor's degree in Computer Science\nProfession: Software Developer\nIncome: $70,000\n\nFinancial Situation:\nEvan's income as a software developer allows him to live a comfortable lifestyle, with the ability to save a portion of his earnings for the future. He is financially responsible, investing in his retirement and maintaining a healthy emergency fund, while also enjoying occasional splurges on electronics, travel, and hobbies.\n\nShopping Habits:\nEvan is an analytical shopper who thoroughly researches products and compares prices before making a purchase. He values efficiency, functionality, and quality, often opting for durable and high-performance items. While he is not driven by the latest trends, Evan enjoys exploring new technologies and gadgets that can enhance his productivity and personal interests.\n\nProfessional Life:\nAs a software developer, Evan is responsible for designing, coding, and testing complex applications that help his company's clients streamline their operations. He collaborates closely with cross-functional teams, bringing innovative solutions to the table and constantly seeking ways to improve existing systems.\n\nPersonal Style:\nEvan's personal style reflects his practical and technology-oriented mindset. He typically wears casual yet stylish attire, such as well-fitted jeans, button-down shirts, and comfortable sneakers. He values comfort and functionality in his clothing choices, but also appreciates the occasional touch of personal flair.",
+    "intent": "buy a pearl earring and necklace set for women.",
+    "age": 39,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a passionate and resilient individual who has faced numerous challenges throughout her life. Despite the financial constraints she faces, she remains determined to create a better future for herself and her family.\n\nDemographics:\nAge: 47\nGender: Female\nEducation: High School Diploma\nProfession: Freelance Graphic Designer\nIncome: $25,000\n\nFinancial Situation:\nAs a freelance graphic designer, Sarah's income fluctuates, and she often struggles to make ends meet. She is mindful of her spending and tries to find creative ways to save money, whether it's through budgeting, thrifting, or seeking out affordable housing options. Despite the financial pressures, Sarah remains hopeful and is committed to growing her freelance business.\n\nShopping Habits:\nDue to her limited income, Sarah is a conscientious shopper. She often scours thrift stores, garage sales, and online marketplaces for high-quality, gently used items that she can repurpose or upcycle. When making purchases, Sarah prioritizes essential needs and seeks out discounts, sales, and opportunities to save. She is resourceful and enjoys finding unique, one-of-a-kind items that reflect her personal style.\n\nProfessional Life:\nSarah's passion for graphic design has led her to pursue a freelance career, allowing her the flexibility to work on projects that inspire her. She is adept at using digital design tools and has a keen eye for color, layout, and typography. While the financial uncertainty of freelancing can be challenging, Sarah finds joy in the creative process and the opportunities to collaborate with a diverse range of clients.\n\nPersonal Style:\nSarah's personal style is a reflection of her resourcefulness and creativity. She enjoys mixing and matching vintage pieces with more contemporary items, often finding unique ways to repurpose and upcycle clothing. Her wardrobe is a mix of thrifted finds, handmade items, and well-loved pieces that she has collected over the years. Sarah values comfort and functionality, but she also takes pride in expressing her individuality through her fashion choices.",
+    "intent": "add Prime Hydration drink in light blue color to shopping cart.",
+    "age": 47,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

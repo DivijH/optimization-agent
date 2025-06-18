@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Maya\n\nBackground:\nMaya is a bright and ambitious young woman who is currently navigating the challenges of early adulthood. After graduating with a degree in fashion design, she has struggled to find a stable, well-paying job in her field. However, she remains determined to pursue her creative passions and carve out a fulfilling career path.\n\nDemographics:\nAge: 21\nGender: Female\nEducation: Bachelor's Degree in Fashion Design\nProfession: Freelance Fashion Designer\nIncome: $25,000\n\nFinancial Situation:\nAs a freelance fashion designer, Maya's income falls within the $0 to $30,000 range. She is careful with her spending, living in a modest apartment and relying on a mix of freelance work, part-time jobs, and occasional financial support from her family to make ends meet. While her financial situation is often uncertain, she is hopeful that her talent and dedication will eventually lead to greater success.\n\nShopping Habits:\nMaya's shopping habits reflect her limited budget and her strong sense of personal style. She frequents thrift stores, vintage shops, and online marketplaces to find unique, affordable pieces that she can incorporate into her wardrobe. She also enjoys DIY projects, repurposing and customizing items to create her own distinctive look.\n\nProfessional Life:\nAs a freelance fashion designer, Maya has a flexible and uncertain work schedule. She spends her time pitching design ideas to local brands, creating custom pieces for clients, and networking with industry contacts to expand her opportunities. Despite the challenges, she remains passionate about her craft and is constantly exploring new creative avenues to showcase her talent.\n\nPersonal Style:\nMaya's personal style is eclectic and ever-evolving, reflecting her creative spirit and her desire to express her individuality. She mixes vintage and thrifted pieces with contemporary trends, experimenting with bold colors, patterns, and silhouettes. Her look is often a reflection of her mood and the inspiration she draws from the world around her.\n\nIn her free time, Maya indulges in her love for art, photography, and music, attending local exhibitions and performances. She also volunteers at a community sewing workshop, sharing her skills and knowledge with aspiring designers.",
+    "intent": "buy a Nerf gun storage solution for organizing Nerf guns in my room.",
+    "age": 21,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

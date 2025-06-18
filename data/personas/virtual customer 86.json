@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Thomas\n\nBackground:\nThomas is a 62-year-old retired teacher who is now pursuing his lifelong passion for woodworking. After dedicating over three decades to educating the youth, he has embarked on a new chapter, crafting intricate furniture and home decor pieces in his cozy workshop.\n\nDemographics:\nAge: 62\nGender: Male\nEducation: Master's Degree in Education\nProfession: Retired Teacher, Woodworker\nIncome: $25,000 (Retirement Pension)\n\nFinancial Situation:\nWith a modest retirement pension, Thomas has adjusted his lifestyle to live within his means. He is financially stable, but not wealthy. He carefully budgets his income to cover his basic living expenses and invest in the necessary tools and materials for his woodworking projects.\n\nShopping Habits:\nThomas is a practical shopper, focusing on finding high-quality, durable items that will last. He enjoys browsing local hardware stores and online woodworking forums to discover new tools and techniques. While he is not opposed to splurging on a rare, handcrafted piece of wood, he is generally frugal in his everyday purchases.\n\nProfessional Life:\nAfter retiring from teaching, Thomas has found a newfound sense of purpose in his woodworking endeavors. He spends his days meticulously crafting one-of-a-kind furniture and decor, often taking on custom orders from local customers. He takes great pride in his work and finds solace in the process of creating something tangible with his own hands.\n\nPersonal Style:\nThomas's personal style is a reflection of his low-key and practical lifestyle. He favors comfortable, durable clothing, such as flannel shirts, sturdy jeans, and work boots. When not in his workshop, he can often be found in his favorite well-worn sweatpants and a cozy sweater.\n\nThomas is an early riser, usually starting his day around 6 am with a cup of strong coffee and a quick breakfast before heading to his workshop. He lives in a small, quaint town in upstate New York.",
+    "intent": "buy a 4K Blu-ray version of Stranger Things.",
+    "age": 62,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

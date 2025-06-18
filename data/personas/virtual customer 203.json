@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a passionate advocate for social and environmental causes. She dedicates her time and energy to volunteering with local non-profit organizations, working tirelessly to make a positive impact in her community.\n\nDemographics:\nAge: 42\nGender: Female\nEducation: High School Diploma\nProfession: Volunteer Coordinator\nIncome: $25,000\n\nFinancial Situation:\nAs a volunteer coordinator, Emily's income is modest, but she has learned to live frugally and prioritize her values over material possessions. She is resourceful and creative in finding ways to stretch her budget, often relying on secondhand stores, local farmer's markets, and community resources.\n\nShopping Habits:\nEmily's shopping habits are heavily influenced by her commitment to sustainability and ethical consumerism. She seeks out products from socially conscious brands, prioritizing fair trade, organic, and eco-friendly options. She also frequents thrift stores, local artisan markets, and online platforms that support independent makers and small businesses.\n\nProfessional Life:\nEmily's professional life is focused on her volunteer work, where she coordinates the efforts of a team of dedicated volunteers. She works closely with non-profit organizations to identify and address the needs of the local community, organizing events, fundraisers, and outreach programs.\n\nPersonal Style:\nEmily's personal style reflects her down-to-earth and eco-conscious approach to life. She favors comfortable, versatile clothing made from natural fibers, such as organic cotton, linen, and bamboo. Her wardrobe is a mix of secondhand finds, ethically-sourced basics, and unique pieces from local artisans.\n\nIn her free time, Emily engages in various outdoor activities, such as hiking, gardening, and cycling. She is an avid reader and enjoys attending local community events and workshops to further her knowledge and involvement in social and environmental initiatives.",
+    "intent": "buy a glow berry prime supplement from a reputable health and wellness retailer.",
+    "age": 42,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

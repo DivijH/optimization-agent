@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a passionate and driven urban planner who is dedicated to creating more sustainable and livable cities. With a keen eye for design and a deep understanding of urban dynamics, he works tirelessly to develop innovative solutions that improve the quality of life for his community.\n\nDemographics:\nAge: 38\nGender: Male\nEducation: Master's degree in Urban Planning\nProfession: Urban Planner\nIncome: $52,000\n\nFinancial Situation:\nAs an urban planner, Michael's income falls within the middle-range, allowing him to maintain a comfortable lifestyle while still being mindful of his spending. He prioritizes saving for the future, but also allocates funds towards continuing education and professional development opportunities that enhance his skills and expertise.\n\nShopping Habits:\nMichael's shopping habits reflect his commitment to sustainability and his desire to support local businesses. He frequents secondhand shops, artisanal markets, and eco-friendly retailers to find unique, high-quality items for his home and wardrobe. He also enjoys browsing online platforms that showcase innovative, socially conscious products.\n\nProfessional Life:\nIn his role as an urban planner, Michael collaborates with city officials, community organizations, and design professionals to develop comprehensive plans that address urban challenges. He is known for his ability to bridge the gap between technical expertise and community engagement, ensuring that the needs of all stakeholders are taken into account.\n\nPersonal Style:\nMichael's personal style is a blend of modern and classic, with a focus on comfort and functionality. He favors well-fitting, sustainable clothing that allows him to move freely throughout the city and maintain a professional appearance. His wardrobe includes a mix of tailored pieces, such as button-down shirts and chinos, and more casual, eco-friendly items like organic cotton t-shirts and recycled denim.",
+    "intent": "buy a male seat belt end.",
+    "age": 38,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

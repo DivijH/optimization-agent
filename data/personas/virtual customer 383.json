@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a vibrant and ambitious young woman who has discovered her passion for digital marketing. With a keen eye for trends and a natural talent for crafting captivating content, she has quickly established herself as a rising star in the fast-paced world of social media and online advertising.\n\nDemographics:\nAge: 20\nGender: Female\nEducation: Bachelor's Degree in Marketing\nProfession: Digital Marketing Specialist\nIncome: $45,000\n\nFinancial Situation:\nOlivia's income as a digital marketing specialist falls within the $30,001 to $94,000 range, providing her with a comfortable financial footing. She is mindful of her spending, allocating a portion of her earnings towards savings and investment, while also allowing herself to enjoy the occasional splurge on the latest tech gadgets or trendy fashion items.\n\nShopping Habits:\nOlivia's shopping habits reflect her youthful and tech-savvy lifestyle. She is an avid online shopper, taking advantage of e-commerce platforms and flash sales to curate a wardrobe that is both stylish and affordable. She also enjoys browsing through independent boutiques and local thrift stores, seeking out unique pieces that allow her to express her personal flair.\n\nProfessional Life:\nOlivia's role as a digital marketing specialist allows her to combine her creative talents with her analytical skills. She thrives on the fast-paced, ever-changing nature of the industry, constantly staying up-to-date with the latest algorithms, social media trends, and marketing strategies. Olivia's ability to craft captivating content and her knack for data-driven decision-making have earned her a reputation as a rising star within her organization.\n\nPersonal Style:\nOlivia's personal style is a reflection of her youthful energy and her passion for all things digital. She enjoys mixing high-street fashion with trendy, tech-inspired accessories, often pairing a sleek, midi-length dress with a pair of chunky, platform sneakers or a bold, graphic t-shirt with a tailored blazer. Olivia's wardrobe is a constantly evolving collection of pieces that allow her to experiment with different looks and express her creative flair.",
+    "intent": "add a blue, gender-neutral baby toy set for 6 to 12-month-old boys to cart",
+    "age": 20,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

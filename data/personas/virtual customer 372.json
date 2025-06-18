@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Lillian\n\nBackground:\nLillian is a dedicated and versatile professional who has navigated various career paths throughout her life. After taking a break to raise her family, she recently returned to the workforce and now works as an HR manager for a mid-sized company.\n\nDemographics:\nAge: 44\nGender: Female\nEducation: Master's Degree in Human Resources Management\nProfession: HR Manager\nIncome: $67,000\n\nFinancial Situation:\nAs an experienced HR manager, Lillian's income provides a comfortable, middle-class lifestyle. She has a good understanding of personal finance and has managed to build a modest retirement savings account, while also supporting her family's needs.\n\nShopping Habits:\nLillian takes a practical and value-oriented approach to shopping. She enjoys finding well-made, versatile pieces that can be mixed and matched for a variety of occasions. She's not one to follow the latest trends, but rather invests in timeless, high-quality items that will last. When possible, Lillian supports local businesses and sustainable brands.\n\nPersonal Life:\nOutside of work, Lillian is an active member of her community. She volunteers regularly at her children's school and is involved in a local gardening club, where she finds joy in tending to her small backyard oasis. Lillian also enjoys reading, hiking, and hosting occasional dinner parties for close friends and family.\n\nProfessional Life:\nAs an HR manager, Lillian is known for her excellent problem-solving skills, attention to detail, and empathetic approach to supporting her company's employees. She takes great pride in her work, continuously seeking ways to improve HR processes and foster a positive, productive work environment. Lillian is also a respected mentor, sharing her expertise with younger professionals.\n\nLillian's well-rounded life and her commitment to both her career and her community make her a well-rounded, admirable individual.",
+    "intent": "buy a set of high-quality trx straps.",
+    "age": 44,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

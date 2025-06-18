@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Natalie\n\nBackground:\nNatalie is a freelance graphic designer who has been navigating the gig economy for the past decade. She has a strong creative eye and a passion for bringing visually engaging designs to her clients, but struggles to find steady work and maintain a consistent income.\n\nDemographics:\nAge: 48\nGender: Female\nEducation: Bachelor's degree in Graphic Design\nProfession: Freelance Graphic Designer\nIncome: $20,000\n\nFinancial Situation:\nNatalie's income as a freelancer is unpredictable, and she often has to dip into her savings to cover her basic living expenses. She is always on the lookout for new clients and projects, but the feast-or-famine nature of freelance work makes it challenging to plan for the future.\n\nShopping Habits:\nNatalie tries to be mindful of her spending, opting for secondhand or discounted items when possible. She enjoys browsing thrift stores and online marketplaces for unique finds that she can incorporate into her personal style. When she does need to make a larger purchase, she takes the time to research and compare options to ensure she's getting the best value.\n\nProfessional Life:\nNatalie's days are a mix of creative work, client communication, and administrative tasks. She spends a lot of time networking and pitching her services to potential clients, as well as managing her own brand and online presence. Despite the ups and downs, she finds great fulfillment in the work she does and the freedom of being her own boss.\n\nPersonal Style:\nNatalie has a eclectic, bohemian style that reflects her creative spirit. She loves vibrant colors, patterns, and accessories that add personality to her outfits. She often shops at thrift stores and vintage shops to find one-of-a-kind pieces that she can mix and match. Comfort is also important to Natalie, as she needs to be able to move freely during her workday.",
+    "intent": "add a lava rock necklace to cart",
+    "age": 48,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

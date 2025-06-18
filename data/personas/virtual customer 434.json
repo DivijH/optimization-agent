@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: James\n\nBackground:\nJames is a dedicated and experienced educator who has spent the majority of his professional life shaping the minds of young learners. With a deep passion for inspiring and empowering students, he has held various teaching and administrative roles in the public school system.\n\nDemographics:\nAge: 53\nGender: Male\nEducation: Master's degree in Education\nProfession: High School Principal\nIncome: $71,000\n\nFinancial Situation:\nAs a seasoned educator, James has a comfortable, yet modest, financial standing. While his income may not be at the highest echelons, he has learned to live within his means and prioritize financial stability. He allocates a portion of his earnings towards retirement savings, while also ensuring he can provide for his family's needs and occasional leisure activities.\n\nShopping Habits:\nJames takes a practical and thoughtful approach to his shopping habits. He values quality and durability over trends, often investing in well-made, long-lasting products that serve his needs. When making purchases, James conducts thorough research, comparing prices and reviews to find the best value. He enjoys supporting local businesses and independent retailers when possible.\n\nProfessional Life:\nJames' professional life is defined by his unwavering commitment to education and his desire to make a positive impact on the lives of his students. As a high school principal, he oversees the daily operations of the school, while also spearheading innovative initiatives that foster academic excellence and personal growth. James is highly respected by his colleagues and the community for his strong leadership, his dedication to student success, and his ability to navigate the complexities of the education system.\n\nPersonal Life:\nOutside of his professional responsibilities, James finds joy in his family life. He is a devoted husband and father, cherishing the time he spends with his spouse and two teenage children. James is an avid reader, with a particular interest in history and literature, and he enjoys engaging in thought-provoking discussions with friends and colleagues. He also maintains an active lifestyle, regularly participating in outdoor activities and community service projects.",
+    "intent": "add \"da vinci eggnogg\" to cart",
+    "age": 53,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a 44-year-old interior designer who runs her own small, but thriving, design studio. She is passionate about creating beautiful and functional living spaces that reflect her clients' unique styles and needs.\n\nDemographics:\nAge: 44\nGender: Female\nEducation: Bachelor's degree in Interior Design\nProfession: Interior Designer\nIncome: $58,000\n\nFinancial Situation:\nAs the owner of her design studio, Olivia's income fluctuates throughout the year, but she has managed to maintain a comfortable financial situation. She is diligent about budgeting and saving, ensuring she has a buffer for slower periods.\n\nShopping Habits:\nOlivia has a keen eye for design and high-quality products. She enjoys browsing furniture showrooms, home decor stores, and online marketplaces to discover unique pieces that she can incorporate into her client projects. While she is willing to invest in certain statement items, she also looks for ways to balance her spending by sourcing more affordable, yet stylish, accents and accessories.\n\nProfessional Life:\nAs the owner of her design studio, Olivia is responsible for all aspects of the business, from meeting with clients and drafting design plans to overseeing project timelines and budgets. She takes great pride in her work and is committed to delivering exceptional results that exceed her clients' expectations.\n\nPersonal Style:\nOlivia's personal style reflects her design aesthetic, which is a blend of modern and timeless elements. She gravitates towards neutral color palettes, clean lines, and natural materials, but isn't afraid to incorporate pops of color and bold patterns when the occasion calls for it. Her wardrobe is a mix of high-end designer pieces and more affordable, but stylish, staple items.",
+    "intent": "buy rubber flooring for a shed.",
+    "age": 44,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

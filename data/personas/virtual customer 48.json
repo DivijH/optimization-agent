@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Samantha\n\nBackground:\nSamantha is a successful business executive who has risen through the ranks to become the Chief Financial Officer of a large multinational corporation. Her extensive financial expertise and strategic decision-making skills have been instrumental in driving the company's growth and profitability.\n\nDemographics:\n\nAge: 45\nGender: Female\nEducation: Master's degree in Finance\nProfession: Chief Financial Officer\nIncome: $150,000\n\nFinancial Situation:\nSamantha has a comfortable financial standing, with a substantial income and a diverse investment portfolio. She is prudent with her spending, but also enjoys the occasional luxury purchase, such as designer handbags or a premium vacation.\n\nShopping Habits:\nSamantha has a refined and discerning taste when it comes to shopping. She prefers high-quality, well-crafted products that reflect her professional status and personal style. While she is not afraid to invest in premium items, she also seeks value and is willing to research and compare options to find the best deal.\n\nProfessional Life:\nAs the CFO, Samantha is responsible for overseeing the company's financial operations, analyzing data, and making strategic decisions that impact the organization's bottom line. She is known for her analytical mind, attention to detail, and ability to navigate complex financial landscapes.\n\nPersonal Style:\nSamantha has a polished and sophisticated personal style, often wearing tailored suits, elegant dresses, and stylish accessories. She takes pride in her appearance and believes that dressing well reflects her professionalism and competence.",
+    "intent": "buy a high-quality bottle of aged, single-malt whiskey.",
+    "age": 45,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a passionate social worker who dedicates her career to making a positive impact on her local community. Despite facing financial challenges, she finds immense fulfillment in her work, driven by a deep desire to help those in need.\n\nDemographics:\nAge: 39\nGender: Female\nEducation: Bachelor's degree in Social Work\nProfession: Social Worker\nIncome: $28,000\n\nFinancial Situation:\nAs a social worker, Olivia's income falls within the lower end of the spectrum, requiring her to carefully manage her finances. She lives frugally, prioritizing her necessary expenses and seeking ways to stretch her limited budget. Despite the financial constraints, Olivia remains positive and focused on her mission to make a difference.\n\nShopping Habits:\nOlivia is a mindful shopper, often seeking out secondhand stores, thrift shops, and online marketplaces to find affordable, high-quality items. She values sustainability and tries to minimize her environmental impact through her purchasing decisions. When making larger purchases, Olivia thoroughly researches options to ensure she is getting the best value for her money.\n\nProfessional Life:\nIn her role as a social worker, Olivia works tirelessly to provide support and resources to individuals and families in her community who are facing various challenges, such as poverty, homelessness, and mental health issues. She collaborates closely with other social service organizations and advocates for policy changes that can improve the lives of those she serves.\n\nPersonal Style:\nOlivia's personal style reflects her practical and down-to-earth nature. She typically wears comfortable, versatile clothing that allows her to move easily during her workday, such as casual dresses, blouses, and slacks. She prefers neutral colors and simple, classic designs that can be easily mixed and matched.\n\nOlivia lives in a modest apartment, where she enjoys tending to her small indoor garden and hosting movie nights with her close-knit group of friends. In her free time, she volunteers at a local food bank and participates in community-based initiatives focused on social justice and environmental sustainability.",
+    "intent": "buy a boys' hammer.",
+    "age": 39,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

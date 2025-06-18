@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a passionate and determined young woman who has faced her fair share of challenges in life. After a difficult upbringing, she is now working tirelessly to build a better future for herself and her young family.\n\nDemographics:\nAge: 33\nGender: Female\nEducation: High school diploma\nProfession: Retail Associate\nIncome: $22,000\n\nFinancial Situation:\nWith an annual income within the $0 to $30,000 range, Olivia operates on a tight budget. She is diligent in managing her finances, prioritizing essential expenses such as rent, utilities, and childcare. Despite the financial constraints, Olivia is committed to providing a stable and nurturing environment for her family.\n\nShopping Habits:\nOlivia's shopping habits are primarily driven by necessity and value. She carefully plans her purchases, seeking out sales, discounts, and second-hand options whenever possible. She is skilled at stretching her limited resources, often finding creative ways to meet her family's needs without sacrificing quality.\n\nProfessional Life:\nOlivia works as a retail associate, providing customer service and assisting customers with their purchases. Although the job can be demanding at times, she finds satisfaction in helping others and takes pride in her work. Olivia aspires to one day advance within the company or explore different career paths that offer more stability and growth potential.\n\nPersonal Style:\nOlivia's personal style reflects her practical and budget-conscious approach to life. She favors comfortable, durable clothing that can withstand the demands of her daily routine. She often relies on versatile basics, such as jeans, t-shirts, and lightweight sweaters, which she can mix and match to create different outfits.\n\nIn her free time, Olivia enjoys engaging in low-cost activities with her family, such as visiting local parks, attending community events, and exploring nature. She is passionate about creating cherished memories and instilling positive values in her children.",
+    "intent": "add the National Geographic Mega Magic Set to my cart.",
+    "age": 33,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

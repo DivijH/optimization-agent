@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Dylan\n\nBackground:\nDylan is a driven and ambitious young man with a passion for technology and entrepreneurship. He has recently graduated from a prestigious university and is eager to make his mark in the fast-paced world of startups.\n\nDemographics:\nAge: 18\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Junior Software Engineer\nIncome: $45,000\n\nFinancial Situation:\nWith an income in the $30,001 to $94,000 range, Dylan has a solid financial foundation to build upon. He is financially responsible, setting aside a portion of his earnings for savings and investment while also enjoying occasional leisure activities.\n\nShopping Habits:\nDylan's shopping habits reflect his practical and efficiency-driven mindset. He tends to research products extensively, seeking out the best value and functionality. While he enjoys the occasional tech gadget or stylish piece of clothing, Dylan is not driven by impulse or the latest trends. He prioritizes quality and longevity in his purchases.\n\nProfessional Life:\nAs a junior software engineer at a rapidly growing startup, Dylan is responsible for developing and maintaining innovative technology solutions. He is a quick learner, constantly seeking to expand his skillset, and is often praised for his attention to detail and problem-solving abilities. Dylan's passion for his work, combined with his strong work ethic, has made him a valuable asset to his team.\n\nPersonal Life:\nOutside of work, Dylan enjoys exploring his creative side through coding side projects and participating in hackathons. He is also an avid reader, with a particular interest in business and entrepreneurship. In his free time, Dylan likes to stay active, whether it's hitting the gym or going on hikes with his friends. He is known for his calm and level-headed demeanor, which serves him well in both his personal and professional endeavors.",
+    "intent": "buy an airsoft pistol.",
+    "age": 18,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

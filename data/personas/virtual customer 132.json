@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Thomas\n\nBackground:\nThomas is a passionate creative who has been navigating the challenges of building a successful freelance career. With a degree in fine arts, he has found his niche in graphic design, working with a variety of clients to bring their visions to life.\n\nDemographics:\nAge: 27\nGender: Male\nEducation: Bachelor's Degree in Fine Arts\nProfession: Freelance Graphic Designer\nIncome: $22,000\n\nFinancial Situation:\nAs a freelancer, Thomas' income can fluctuate, but he manages to maintain a modest lifestyle. He is mindful of his spending and often seeks out ways to save money, whether it's through thrifting, DIY projects, or negotiating with service providers.\n\nShopping Habits:\nThomas has a keen eye for unique and affordable finds. He enjoys browsing thrift stores, vintage shops, and online marketplaces for one-of-a-kind items that he can integrate into his personal style. When it comes to essential purchases, he prioritizes quality and functionality over trends.\n\nProfessional Life:\nThomas' freelance work allows him to exercise his creativity and work on a diverse range of projects. He is constantly seeking new opportunities, networking with other creatives, and honing his design skills to stay ahead of the curve. Thomas takes great pride in his work and strives to deliver exceptional results for his clients.\n\nPersonal Style:\nThomas' personal style reflects his artistic sensibilities and his desire to express his individuality. He enjoys mixing vintage and contemporary pieces, often pairing thrifted items with well-made, timeless basics. His wardrobe is a reflection of his eclectic interests and his commitment to sustainable and ethical fashion.",
+    "intent": "buy a modern, minimalist ashtray for men.",
+    "age": 27,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

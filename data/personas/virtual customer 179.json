@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ava\n\nBackground:\nAva is a passionate social justice advocate who is currently working as a community organizer for a local non-profit. Despite facing financial challenges, she remains dedicated to making a positive impact in her community and advocating for underserved populations.\n\nDemographics:\nAge: 26\nGender: Female\nEducation: Bachelor's Degree in Political Science\nProfession: Community Organizer\nIncome: $23,000\n\nFinancial Situation:\nAs a community organizer, Ava's income is on the lower end, but she is resourceful and adept at living within her means. She relies on a mix of public assistance, grants, and modest personal savings to cover her basic expenses, leaving little room for luxuries.\n\nShopping Habits:\nAva is a mindful and intentional shopper, prioritizing ethical and sustainable brands whenever possible. She enjoys scouring thrift stores, secondhand shops, and online marketplaces for unique and affordable finds that align with her personal values. When it comes to necessities, she carefully researches products to ensure she is getting the best value for her limited budget.\n\nPersonal Life:\nIn her spare time, Ava is an avid reader and enjoys exploring the great outdoors through hiking, camping, and other outdoor activities. She is also involved in various community organizations and volunteer initiatives, where she finds a sense of purpose and connection. Ava values her close-knit circle of friends, who share her passion for social justice and provide emotional support.\n\nProfessional Life:\nAs a community organizer, Ava works tirelessly to advocate for the rights and needs of marginalized communities. She organizes events, mobilizes volunteers, and partners with local government and non-profit organizations to create positive change. Ava is known for her unwavering commitment, her innovative problem-solving skills, and her ability to inspire and empower others.\n\nDespite the financial challenges, Ava remains dedicated to her work and is determined to continue making a difference in her community. She is constantly seeking out new opportunities to expand her reach and create a more equitable and inclusive society.",
+    "intent": "buy a 750-piece dog-themed puzzle.",
+    "age": 26,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

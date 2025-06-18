@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a seasoned executive who has built a successful career in the financial services industry. With his sharp analytical skills and strategic vision, he has risen through the ranks to become the Chief Investment Officer at a leading wealth management firm.\n\nDemographics:\nAge: 47\nGender: Male\nEducation: Master's degree in Finance\nProfession: Chief Investment Officer\nIncome: $235,000\n\nFinancial Situation:\nAs a high-earning executive, Michael has a substantial income and a diversified investment portfolio. He is financially savvy and takes a proactive approach to managing his wealth, seeking out opportunities to grow his assets while maintaining a prudent risk profile.\n\nShopping Habits:\nMichael's shopping habits reflect his professional status and refined personal style. He enjoys browsing high-end stores and online marketplaces for quality products and services that align with his discerning tastes. While he is not afraid to invest in premium items, he also values efficiency and practicality in his purchasing decisions.\n\nProfessional Life:\nAs the Chief Investment Officer, Michael is responsible for overseeing the firm's investment strategies, asset allocation, and portfolio management. He works closely with a team of analysts and investment professionals to identify opportunities and mitigate risks, with the goal of delivering consistent returns for the firm's clients.\n\nPersonal Style:\nMichael's personal style is sophisticated and polished, with a preference for tailored suits, designer dress shirts, and luxury accessories. He takes pride in his appearance and believes that dressing well helps to project an image of competence and success. At the same time, Michael also enjoys the occasional casual look, opting for high-end athleisure wear when the occasion calls for it.",
+    "intent": "buy 2 boxes of grits from Whole Foods.",
+    "age": 47,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Robert\n\nBackground:\nRobert is a middle-aged software engineer working for a prominent tech company in Silicon Valley. He has extensive experience in the industry and is known for his innovative problem-solving skills and ability to lead cross-functional teams.\n\nDemographics:\nAge: 45\nGender: Male\nEducation: Bachelor's degree in Computer Science\nProfession: Software Engineer\nIncome: $72,000\n\nFinancial Situation:\nRobert earns a comfortable salary that allows him to maintain a stable lifestyle. He is prudent with his spending and consistently contributes to his retirement savings. While he enjoys the occasional splurge, he is mindful of budgeting and prioritizes financial security.\n\nShopping Habits:\nRobert prefers efficiency and practicality when it comes to shopping. He often researches products online before making purchases, looking for the best value and quality. He is not swayed by the latest trends and instead focuses on items that will serve him well in the long term. Robert values convenience and will opt for online shopping when possible.\n\nProfessional Life:\nAs a seasoned software engineer, Robert is highly respected by his colleagues and often sought after for his technical expertise. He enjoys the collaborative nature of his work and takes pride in mentoring junior team members. Robert is always eager to learn and stay up-to-date with the latest industry developments.\n\nPersonal Style:\nRobert's personal style is understated and comfortable. He typically wears casual but well-fitting attire, such as button-down shirts, khakis, and comfortable shoes. He prefers neutral colors and classic designs that can be easily mixed and matched. Robert values functionality and practicality in his wardrobe choices.",
+    "intent": "buy a 12-pack of rock star sugar free grape energy drink.",
+    "age": 45,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

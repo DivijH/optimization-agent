@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Marisa\n\nBackground:\nMarisa is a seasoned marketing executive in the technology industry. With over two decades of experience, she has honed her skills in strategic marketing, brand management, and digital campaigns. Marisa is known for her innovative approach to problem-solving and her ability to translate complex technical concepts into engaging marketing narratives.\n\nDemographics:\nAge: 53\nGender: Female\nEducation: Bachelor's degree in Marketing\nProfession: Marketing Executive\nIncome: $70,000\n\nFinancial Situation:\nAs a successful marketing executive, Marisa enjoys a comfortable financial situation. She has a stable income and has been diligent in her savings and investments, allowing her to maintain a balanced lifestyle.\n\nShopping Habits:\nMarisa takes a practical yet stylish approach to her shopping habits. She values quality over quantity and is willing to invest in timeless pieces that will last. When shopping, Marisa is a strategic shopper, researching products and brands to ensure she is making informed decisions. She enjoys the occasional splurge on high-end items that she knows will complement her professional wardrobe.\n\nProfessional Life:\nMarisa is a respected leader in her field, known for her ability to drive impactful marketing campaigns that translate to tangible business results. She is a strategic thinker who excels at collaborating with cross-functional teams to develop and execute comprehensive marketing strategies. Marisa is also passionate about mentoring and developing the next generation of marketing professionals.\n\nPersonal Style:\nMarisa has a refined and polished personal style that reflects her professional success. She favors classic silhouettes and neutral color palettes, with the occasional pop of color or bold accessory to add a touch of personality. Marisa is mindful of her appearance and takes pride in presenting a well-put-together image, both in and out of the office.",
+    "intent": "buy a high-quality HDMI splitter with 1 input and 2 outputs.",
+    "age": 53,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

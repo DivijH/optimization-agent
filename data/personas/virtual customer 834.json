@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a dedicated social worker who has spent the past 15 years advocating for underserved communities. Her unwavering commitment to making a positive difference in the lives of others has been the driving force behind her career.\n\nDemographics:\nAge: 40\nGender: Female\nEducation: Bachelor's Degree in Social Work\nProfession: Social Worker\nIncome: $28,000\n\nFinancial Situation:\nAs a social worker, Emily's income is modest, but she has developed a disciplined approach to managing her finances. She lives within her means, carefully budgeting her expenses to ensure she can cover her basic needs and contribute to the causes she supports. While she doesn't have substantial savings, Emily is content with her simple lifestyle and finds fulfillment in the impact of her work.\n\nShopping Habits:\nEmily's shopping habits reflect her practical and value-conscious mindset. She gravitates towards affordable, high-quality essentials that will last, often scouring thrift stores and secondhand shops for unique finds. When it comes to larger purchases, she researches thoroughly to ensure she is making informed decisions that align with her budget and personal values.\n\nProfessional Life:\nIn her role as a social worker, Emily is a tireless champion for the rights and well-being of her clients. She is known for her empathy, resourcefulness, and ability to navigate complex bureaucratic systems to secure the necessary support and services. Her colleagues admire her dedication and the genuine care she demonstrates towards the individuals and families she serves.\n\nPersonal Style:\nEmily's personal style is a reflection of her practical and down-to-earth nature. She favors comfortable, versatile clothing that allows her to move freely and focus on her work. While she appreciates the value of quality, her wardrobe is primarily composed of affordable, ethically-sourced basics that she can mix and match to create a professional yet approachable look.\n\nIn her free time, Emily enjoys engaging in activities that nourish her mind and spirit, such as volunteering at local community centers, practicing yoga, and exploring the outdoors. She finds great joy in small moments of connection and the positive impact she can make in the lives of those she serves.",
+    "intent": "buy a small, metal bullet-shaped ashtray.",
+    "age": 40,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a young and ambitious individual who is just starting to navigate the professional world. Despite the challenges of finding her footing, she remains optimistic and determined to create a fulfilling life for herself.\n\nDemographics:\nAge: 25\nGender: Female\nEducation: High School Diploma\nProfession: Retail Associate\nIncome: $25,000\n\nFinancial Situation:\nAs a retail associate, Olivia's income falls within the $0 to $30,000 range. She is mindful of her limited financial resources and strives to manage her expenses carefully, prioritizing necessities while also setting aside small amounts for savings and occasional indulgences.\n\nShopping Habits:\nOlivia approaches shopping with a mix of practicality and a desire to express her personal style. She seeks out affordable, trendy clothing and accessories that allow her to experiment with different looks without breaking the bank. While she may occasionally splurge on a statement piece, Olivia is generally cautious in her spending, often looking for sales and discounts to maximize her budget.\n\nPersonal Life:\nOutside of work, Olivia enjoys exploring her creative pursuits, such as painting and photography. She also values spending time with her close-knit group of friends, engaging in activities that allow her to unwind and recharge. Olivia is actively working on building a balanced lifestyle, balancing her career aspirations with her personal interests and social connections.\n\nPersonal Style:\nOlivia's personal style reflects her youthful energy and evolving sense of self. She enjoys experimenting with fashion, mixing and matching affordable pieces to create stylish outfits that reflect her personality. Her wardrobe is a blend of trendy, budget-friendly items and a few well-chosen, quality pieces that she has invested in to build a versatile and enduring collection.",
+    "intent": "buy a crosscut sled rails.",
+    "age": 25,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

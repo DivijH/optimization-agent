@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Aisha\n\nBackground:\nAisha is a driven and ambitious young woman who has established a successful career in the tech industry. She combines her technical expertise with a passion for innovation and a keen eye for emerging market trends.\n\nDemographics:\nAge: 26\nGender: Female\nEducation: Bachelor's Degree in Computer Science\nProfession: Product Manager at a leading technology company\nIncome: $120,000\n\nFinancial Situation:\nAs a product manager at a prominent tech company, Aisha enjoys a comfortable and stable income. She is financially savvy, managing her money prudently and investing in her future through a diversified portfolio. While Aisha maintains a high standard of living, she also actively contributes to charitable organizations that align with her values.\n\nShopping Habits:\nAisha's shopping habits reflect her practical yet stylish approach to life. She invests in high-quality, long-lasting items that complement her professional wardrobe, but she also enjoys the occasional indulgence, such as a designer handbag or a piece of statement jewelry. Aisha is a conscious consumer, prioritizing sustainable and ethical brands whenever possible.\n\nPersonal Life:\nOutside of her demanding career, Aisha is an avid learner who is constantly seeking new challenges and opportunities for growth. She is an active participant in her local tech community, attending industry events, mentoring aspiring professionals, and volunteering her time to promote STEM education. Aisha also enjoys exploring her creative side through hobbies like photography and painting.\n\nPersonal Style:\nAisha's personal style is a reflection of her professional persona and her affinity for modern, minimalist aesthetics. She favors well-tailored, versatile pieces that can seamlessly transition from the office to after-work events. Aisha's wardrobe features a mix of sleek, contemporary designs and timeless, high-quality essentials, showcasing her refined yet approachable sense of style.",
+    "intent": "buy a small, wall-mounted mailbox.",
+    "age": 26,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

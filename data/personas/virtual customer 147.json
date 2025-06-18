@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Liam\n\nBackground:\nLiam is a passionate environmentalist working as a sustainability consultant for a mid-sized firm. He is driven to help organizations implement eco-friendly practices and reduce their carbon footprint.\n\nDemographics:\nAge: 23\nGender: Male\nEducation: Bachelor's Degree in Environmental Science\nProfession: Sustainability Consultant\nIncome: $45,000\n\nFinancial Situation:\nAs a young professional, Liam is building his financial stability. He lives frugally, prioritizing saving and investing in sustainable causes over material indulgences. Liam carefully budgets his expenses, focusing on necessities and experiences that align with his environmental values.\n\nShopping Habits:\nLiam is a conscientious consumer, seeking out ethically-sourced, eco-friendly products whenever possible. He avoids fast fashion and disposable goods, instead investing in high-quality, durable items that will last. Liam is an avid thrifter and frequents local secondhand stores and online marketplaces for unique finds.\n\nProfessional Life:\nIn his role as a sustainability consultant, Liam works closely with clients to assess their environmental impact and develop strategies for sustainability. He is passionate about driving change and enjoys the challenge of finding innovative solutions to complex problems. Liam is constantly learning and staying up-to-date with the latest sustainable technologies and best practices.\n\nPersonal Style:\nLiam's personal style reflects his environmental ethos. He gravitates towards minimalist, versatile clothing made from organic or recycled materials. His wardrobe consists of neutral-toned basics, complemented by the occasional pop of color or repurposed accessory. Liam values comfort and functionality, but also takes pride in expressing his personal values through his sartorial choices.",
+    "intent": "buy a high-quality miter saw dust vacuum to reduce cleanup time and environmental impact when using a miter saw.",
+    "age": 23,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

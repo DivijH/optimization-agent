@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a passionate environmental activist and freelance graphic designer. Despite his modest income, he is dedicated to using his creative talents to promote sustainability and raise awareness about pressing environmental issues.\n\nDemographics:\nAge: 34\nGender: Male\nEducation: Bachelor's Degree in Graphic Design\nProfession: Freelance Graphic Designer, Environmental Activist\nIncome: $27,000\n\nFinancial Situation:\nAs a freelance graphic designer, Michael's income fluctuates, but he is able to maintain a modest lifestyle by living frugally and prioritizing his passions over material possessions. He is mindful of his spending and often seeks out affordable, eco-friendly alternatives when making purchases.\n\nShopping Habits:\nMichael is a conscientious consumer who prioritizes sustainability and ethical practices. He frequently shops at secondhand stores, thrift shops, and online marketplaces to find unique, affordable items that align with his environmental values. When it comes to larger purchases, such as electronics or home furnishings, he conducts extensive research to ensure he is making informed decisions.\n\nProfessional Life:\nIn addition to his freelance graphic design work, Michael is actively involved in various local environmental organizations. He volunteers his design skills to create impactful campaigns and materials that advocate for sustainable practices and raise awareness about environmental issues. Michael's dedication to his craft and his commitment to making a positive impact inspires those around him.\n\nPersonal Style:\nMichael's personal style reflects his eco-conscious and creative personality. He favors comfortable, versatile clothing that allows him to move freely and express his individuality. His wardrobe consists of a mix of thrifted, vintage-inspired pieces and sustainable, ethically-sourced garments. Michael's style is a blend of casual and quirky, with a focus on functionality and self-expression.\n\nIn his free time, Michael enjoys exploring the great outdoors, whether hiking in local parks or participating in beach cleanups. He finds solace in connecting with nature and engaging in activities that promote environmental stewardship.",
+    "intent": "buy a disco ball that is eco-friendly and made from recycled materials.",
+    "age": 34,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

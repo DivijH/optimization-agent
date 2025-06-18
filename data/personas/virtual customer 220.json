@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a bright and ambitious 20-year-old woman who is currently navigating the transition from college to the workforce. She is determined to establish financial independence and take control of her future, despite the challenges she faces.\n\nDemographics:\nAge: 20\nGender: Female\nEducation: Pursuing a bachelor's degree\nProfession: Student with part-time jobs\nIncome: $15,000\n\nFinancial Situation:\nAs a college student, Olivia's income is limited to part-time jobs and occasional financial assistance from her parents. She is conscious of her spending and strives to balance her limited funds between tuition, living expenses, and personal needs.\n\nShopping Habits:\nOlivia is a savvy and budget-conscious shopper. She scours online marketplaces, secondhand stores, and discount retailers to find affordable yet stylish clothing and household items. Olivia is not swayed by trends and instead focuses on building a versatile wardrobe that can mix and match. She is also an avid user of coupons and loyalty programs to maximize her savings.\n\nPersonal Life:\nOlivia is determined to make the most of her college experience and actively engages in extracurricular activities, such as volunteering and student organizations. She values building a strong support network of friends and mentors who can provide guidance and encouragement as she navigates the uncertainties of early adulthood.\n\nProfessional Aspirations:\nWhile Olivia's current financial situation is limited, she has a clear vision for her future. She is passionate about pursuing a career in a field that aligns with her interests and values, such as social work or environmental sustainability. Olivia is proactively exploring internships, networking opportunities, and educational resources to lay the foundation for her long-term career goals.",
+    "intent": "buy a pair of Sigvaris compression socks for men with 15-20 mmhg compression.",
+    "age": 20,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

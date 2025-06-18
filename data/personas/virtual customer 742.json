@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a resilient and determined woman who has faced her fair share of life's challenges. After a series of setbacks, she is now working tirelessly to regain her financial footing and secure a more stable future.\n\nDemographics:\nAge: 53\nGender: Female\nEducation: High School Diploma\nProfession: Part-Time Retail Associate\nIncome: $28,000\n\nFinancial Situation:\nOlivia's income as a part-time retail associate falls within the range of $0 to $30,000. While her salary is modest, she has developed a keen eye for budgeting and finding ways to stretch her limited resources. She is diligently working to pay off past debts and save up for unexpected expenses.\n\nShopping Habits:\nOlivia's shopping habits are a balance of necessity and mindfulness. She frequents thrift stores, discount retailers, and online marketplaces to find affordable, quality items for herself and her household. When making purchases, she focuses on finding long-lasting, versatile pieces that will serve her well in the long run.\n\nProfessional Life:\nIn her part-time retail position, Olivia takes pride in providing excellent customer service and building relationships with her regular customers. She finds fulfillment in the interactions and the sense of community, even as she continues to seek out more stable, higher-paying employment opportunities.\n\nPersonal Style:\nOlivia's personal style reflects her practical and pragmatic approach to life. She gravitates towards comfortable, durable clothing that allows her to move freely throughout her workday. Her wardrobe consists of a mix of classic pieces and more casual, everyday wear, often complemented by affordable accessories that add a touch of personal flair.\n\nIn her free time, Olivia enjoys pursuing her creative hobbies, such as gardening and quilting. She finds solace in these activities, which provide a sense of accomplishment and respite from the stresses of daily life. Olivia is also an active member of her local community, volunteering at a food bank and attending neighborhood events.",
+    "intent": "buy small, decorative belt buckles to accessorize dolls.",
+    "age": 53,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

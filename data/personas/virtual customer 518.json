@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Carlos\n\nBackground:\nCarlos is a passionate advocate for the rights of migrant workers. After years of working in low-wage jobs himself, he has dedicated his time and energy to organizing community-based initiatives that provide support and resources to marginalized populations.\n\nDemographics:\nAge: 52\nGender: Male\nEducation: High school diploma\nProfession: Community Organizer\nIncome: $18,000\n\nFinancial Situation:\nCarlos lives on a modest income, relying on a combination of part-time work, community stipends, and occasional donations to sustain his advocacy efforts. Despite his limited financial resources, he is skilled at budgeting and finding creative ways to stretch his budget to meet the needs of the communities he serves.\n\nShopping Habits:\nCarlos is a savvy shopper who prioritizes value and functionality over brand names or trends. He frequents thrift stores, community swap meets, and online platforms that offer affordable, pre-owned items. When making purchases, he focuses on products that will have a long-lasting impact and align with his values of sustainability and social responsibility.\n\nProfessional Life:\nAs a community organizer, Carlos spends his days coordinating and participating in various initiatives aimed at improving the lives of migrant workers and their families. This includes organizing legal aid clinics, food pantry distributions, and educational workshops. He works closely with local nonprofits and grassroots organizations to amplify the voices of the marginalized communities he serves.\n\nPersonal Life:\nIn his free time, Carlos enjoys engaging with the local community, whether it's attending cultural events, participating in sports leagues, or simply spending time with his network of fellow activists. He finds solace and inspiration in the connections he has built and the collective impact they have on the lives of those around them.",
+    "intent": "buy a spongebob halloween inflatable.",
+    "age": 52,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

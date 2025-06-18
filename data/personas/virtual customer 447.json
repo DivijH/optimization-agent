@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Brandon\n\nBackground:\nBrandon is a rising entrepreneur with a keen eye for identifying emerging market trends. At just 20 years old, he has already founded a successful tech startup, leveraging his technical expertise and innovative mindset to disrupt the industry.\n\nDemographics:\nAge: 20\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Founder and CEO of a tech startup\nIncome: $150,000\n\nFinancial Situation:\nBrandon's entrepreneurial success has propelled him into a comfortable financial position, with an income that falls within the $94,001 to $1,000,000 range. He is diligent in managing his finances, investing a significant portion of his earnings into his business and personal wealth-building strategies.\n\nShopping Habits:\nAs a young, ambitious entrepreneur, Brandon's shopping habits reflect his drive and pursuit of excellence. He invests in high-quality, cutting-edge technology and gadgets that aid in his work and personal life. When making larger purchases, such as luxury vehicles or premium electronics, Brandon conducts thorough research to ensure he is getting the best value for his money.\n\nProfessional Life:\nAt the helm of his tech startup, Brandon's leadership and visionary thinking have been instrumental in the company's rapid growth. He oversees all aspects of the business, from product development to strategic partnerships, constantly seeking new opportunities to expand and innovate. Brandon's ability to think outside the box and his adaptability to changing market conditions have made him a rising star in the industry.\n\nPersonal Style:\nBrandon's personal style is a blend of modern sophistication and a touch of youthful flair. He favors well-tailored, contemporary clothing, such as slim-fit suits, crisp button-down shirts, and sleek leather shoes. When off-duty, he enjoys incorporating casual elements, like designer t-shirts and distressed jeans, to maintain a polished yet relaxed appearance.\n\nIn his free time, Brandon enjoys indulging in his passion for travel, exploring new destinations and immersing himself in diverse cultures. He is also an avid reader, constantly seeking to expand his knowledge and gain new perspectives to inform his entrepreneurial endeavors.",
+    "intent": "buy diamond gems.",
+    "age": 20,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

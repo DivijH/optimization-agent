@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a driven and ambitious young woman who has quickly established herself as a rising star in the tech industry. With a keen analytical mind and a passion for innovation, she has carved out a successful career as a software engineer at a leading tech company.\n\nDemographics:\nAge: 18\nGender: Female\nEducation: Bachelor's Degree in Computer Science\nProfession: Software Engineer\nIncome: $120,000\n\nFinancial Situation:\nAs a highly skilled and in-demand software engineer, Olivia's income falls within the $94,001 to $1,000,000 range. She is financially savvy, meticulously managing her budget and investments to ensure a secure financial future. While her income allows her to enjoy a comfortable lifestyle, Olivia is mindful of her spending and prioritizes long-term financial stability.\n\nShopping Habits:\nOlivia's shopping habits reflect her practical and forward-thinking mindset. She invests in high-quality, durable items that will last, and she is particularly discerning when it comes to technology and tools that can enhance her work productivity. She enjoys browsing online marketplaces and tech-focused stores to discover the latest innovative products, always seeking to stay ahead of the curve.\n\nProfessional Life:\nOlivia's exceptional technical skills, problem-solving abilities, and innovative thinking have made her a valuable asset to her company. She thrives on tackling complex challenges and collaborating with cross-functional teams to develop cutting-edge software solutions. Olivia's dedication and strong work ethic have earned her the respect of her colleagues and the admiration of her industry peers.\n\nPersonal Life:\nOutside of work, Olivia maintains a well-rounded lifestyle. She is an avid reader, with a particular interest in emerging technologies and their societal impact. In her free time, she enjoys hiking, rock climbing, and exploring the great outdoors, finding balance and inspiration in nature. Olivia is also actively involved in various tech-focused community initiatives, mentoring aspiring young programmers and advocating for greater diversity and inclusion in the industry.",
+    "intent": "buy a high-quality, technical ski onesie.",
+    "age": 18,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

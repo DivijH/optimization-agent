@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a passionate outdoor enthusiast and environmental advocate. He has dedicated his career to promoting sustainable practices and raising awareness about the importance of protecting natural habitats.\n\nDemographics:\nAge: 36\nGender: Male\nEducation: Bachelor's Degree in Environmental Science\nProfession: Park Ranger\nIncome: $42,000\n\nFinancial Situation:\nWith his income as a park ranger, Michael is able to maintain a comfortable lifestyle while prioritizing his environmental initiatives. He is financially responsible, saving a portion of his earnings to support conservation efforts and fund his outdoor adventures.\n\nShopping Habits:\nMichael's shopping habits are heavily influenced by his environmental values. He seeks out sustainable, eco-friendly products and supports local businesses that share his commitment to sustainability. He avoids fast fashion and single-use plastics, instead opting for durable, long-lasting gear and equipment for his outdoor activities.\n\nProfessional Life:\nAs a park ranger, Michael is responsible for maintaining and preserving the natural beauty of the local state park. He leads educational programs, organizes community clean-up events, and advocates for the protection of local wildlife and habitats. Michael's enthusiasm and expertise inspire visitors to appreciate the importance of environmental conservation.\n\nPersonal Style:\nMichael's personal style reflects his active, outdoor-oriented lifestyle. He favors practical, high-performance clothing made from breathable, moisture-wicking materials. His wardrobe consists of durable hiking boots, quick-dry shirts and pants, and weatherproof jackets. Michael also incorporates sustainable, locally-sourced accessories, such as hand-carved wooden bracelets or upcycled backpacks.\n\nIn his free time, Michael can be found hiking, camping, or volunteering with local environmental organizations. He is an avid reader on topics related to ecology and conservation, and he enjoys leading outdoor educational workshops for the community.",
+    "intent": "buy a toddler-sized driving wheel toy.",
+    "age": 36,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Samuel\n\nBackground:\nSamuel is a college student, pursuing a degree in business administration with a minor in marketing. He is driven, ambitious, and passionate about developing innovative solutions that can make a positive impact in the business world.\n\nDemographics:\nAge: 19\nGender: Male\nEducation: College student, pursuing a degree in Business Administration\nProfession: Student\nIncome: $48,000 (part-time job and scholarships)\n\nFinancial Situation:\nSamuel is financially responsible, managing his part-time job income and scholarships to cover his tuition, living expenses, and other necessary costs. He is diligent about budgeting and saving, with the goal of graduating debt-free and positioning himself for a successful career.\n\nShopping Habits:\nSamuel adopts a balanced approach to shopping, seeking a mix of quality and value. He researches products extensively, comparing prices and reviews to ensure he is making informed decisions. While he enjoys the occasional splurge on items he deems worthwhile, Samuel is generally mindful of his spending and prioritizes saving for the future.\n\nProfessional Life:\nAs a business student, Samuel is actively involved in various extracurricular activities, such as the university's entrepreneurship club and marketing organization. He relishes the opportunity to collaborate with his peers, apply his classroom knowledge to real-world scenarios, and develop valuable skills that will enhance his career prospects.\n\nPersonal Style:\nSamuel's personal style reflects his pragmatic and goal-oriented mindset. He typically wears a combination of casual and business-casual attire, such as well-fitted shirts, chinos, and polished shoes. He appreciates clean lines, neutral tones, and classic silhouettes that convey a sense of professionalism and maturity.\n\nIn his free time, Samuel enjoys staying physically active, whether it's playing intramural sports or working out at the gym. He also volunteers at a local non-profit organization, where he can apply his business acumen to support the community.",
+    "intent": "buy the popeil pocket fisherman.",
+    "age": 19,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

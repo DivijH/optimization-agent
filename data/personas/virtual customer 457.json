@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a seasoned marketing executive who has spent the past two decades honing his skills in the fast-paced world of advertising. With a sharp analytical mind and a keen eye for trends, he has helped numerous companies navigate the ever-evolving landscape of digital marketing and brand strategy.\n\nDemographics:\nAge: 41\nGender: Male\nEducation: Master's Degree in Business Administration\nProfession: Marketing Executive\nIncome: $125,000\n\nFinancial Situation:\nMichael's successful career as a marketing executive has afforded him a comfortable lifestyle and the ability to save for the future. While he enjoys the occasional luxury purchase, he is primarily focused on building wealth through sound investments and diversifying his portfolio. Michael takes a measured approach to his finances, prioritizing long-term financial security over short-term gratification.\n\nShopping Habits:\nWhen it comes to shopping, Michael is a discerning consumer who values quality and functionality over superficial trends. He takes the time to research and evaluate his purchases, seeking out products that will not only meet his needs but also stand the test of time. Michael also appreciates the convenience of online shopping, though he is selective in the brands and retailers he chooses to support.\n\nProfessional Life:\nAs a marketing executive, Michael's days are filled with a dynamic mix of strategic planning, data analysis, and creative problem-solving. He thrives on the challenge of developing and executing successful marketing campaigns that drive growth and brand awareness for his clients. Michael's leadership style is characterized by a collaborative approach, as he values the insights and contributions of his team members.\n\nPersonal Life:\nOutside of work, Michael enjoys a balanced lifestyle that allows him to pursue his diverse interests. He is an avid reader, often delving into the latest business and marketing publications, as well as a keen outdoorsman who finds solace in hiking and fly-fishing. Michael is also a devoted family man, dedicating quality time to his wife and two children, sharing his passions and instilling in them the importance of work-life balance.",
+    "intent": "add to cart a BMW M Sport umbrella",
+    "age": 41,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

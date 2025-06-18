@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Liam\n\nBackground:\nLiam is a 25-year-old aspiring artist who is passionate about exploring his creative potential. He is currently working part-time jobs to support himself while pursuing his dream of becoming a successful painter.\n\nDemographics:\nAge: 25\nGender: Male\nEducation: High school graduate\nProfession: Part-time worker, aspiring artist\nIncome: $20,000\n\nFinancial Situation:\nLiam's income from his part-time jobs is modest, but he is able to cover his basic living expenses and devote some funds to his artistic pursuits. He is resourceful and adept at finding affordable ways to purchase art supplies and fund his creative projects.\n\nShopping Habits:\nLiam is a mindful shopper who seeks out secondhand or discounted items to stretch his limited budget. He enjoys browsing thrift stores, garage sales, and online marketplaces for unique finds that he can incorporate into his art or daily life. He values quality over quantity and is willing to invest in high-quality materials for his artwork.\n\nProfessional Life:\nLiam currently works a few part-time jobs, such as waitressing and dog walking, to support himself financially while dedicating time to his artistic pursuits. He spends his free time painting, experimenting with different mediums, and networking with other artists in his local community.\n\nPersonal Style:\nLiam's personal style reflects his creative spirit and bohemian sensibilities. He often wears vintage-inspired clothing, eclectic accessories, and comfortable, casual attire that allows him to move freely and focus on his art. He is not concerned with following the latest trends, but rather seeks to express his individuality through his choice of clothing and personal expression.\n\nLiam lives in a small, cozy studio apartment in a vibrant, artsy neighborhood and enjoys attending local art exhibitions and open mic nights in his free time.",
+    "intent": "buy a men's silver cross pendant.",
+    "age": 25,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a seasoned finance professional who has built a successful career in the banking industry. With over 25 years of experience, he has developed a deep understanding of the financial market and is known for his analytical prowess and strategic decision-making.\n\nDemographics:\nAge: 55\nGender: Male\nEducation: Master's Degree in Finance\nProfession: Senior Financial Analyst\nIncome: $75,000\n\nFinancial Situation:\nMichael's steady income and prudent financial management have allowed him to build a comfortable nest egg for retirement. He is actively involved in managing his investment portfolio and regularly contributes to his retirement accounts. While he enjoys the occasional splurge, Michael is generally fiscally responsible and values financial security.\n\nShopping Habits:\nMichael's shopping habits reflect his practical and discerning nature. He is a meticulous shopper, thoroughly researching products and comparing prices to ensure he is getting the best value. When making major purchases, such as electronics or household appliances, he prioritizes quality and longevity over short-term trends.\n\nProfessional Life:\nAs a senior financial analyst, Michael is responsible for analyzing market trends, evaluating investment opportunities, and providing strategic recommendations to the bank's executive team. He is highly respected for his analytical skills, attention to detail, and ability to navigate complex financial landscapes.\n\nPersonal Life:\nIn his free time, Michael enjoys pursuing his lifelong passion for outdoor activities, such as hiking, fishing, and birdwatching. He finds solace in spending time in nature and disconnecting from the demands of his professional life. Michael also dedicates time to volunteering with a local financial literacy program, sharing his expertise with the community.",
+    "intent": "buy a pistol.",
+    "age": 55,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

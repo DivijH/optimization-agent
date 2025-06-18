@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Aidan\n\nBackground:\nAidan is a passionate creative professional working in the entertainment industry. He is an aspiring filmmaker who is driven to tell compelling stories that resonate with diverse audiences.\n\nDemographics:\nAge: 20\nGender: Male\nEducation: Associate's degree in Film Production\nProfession: Film Production Assistant\nIncome: $55,000\n\nFinancial Situation:\nAs a young professional, Aidan has a moderate income that allows him to live comfortably in the city while also pursuing his creative passions. He is mindful of his spending and aims to save a portion of his earnings to invest in his future filmmaking projects.\n\nShopping Habits:\nAidan enjoys shopping for items that reflect his artistic sensibilities and lifestyle. He is drawn to unique, independent brands that offer a range of stylish yet practical clothing, accessories, and gadgets. He also values sustainability and seeks out eco-friendly products whenever possible.\n\nProfessional Life:\nAidan works as a production assistant for a local film studio, where he gains hands-on experience in various aspects of the filmmaking process. He is dedicated to honing his skills and making connections within the industry, with the ultimate goal of directing his own short films and eventually feature-length projects.\n\nPersonal Style:\nAidan's personal style is a blend of urban chic and creative flair. He favors well-fitted, minimalist clothing in neutral tones, paired with statement accessories like stylish eyewear and distinctive footwear. He takes pride in his appearance, as he believes it reflects his artistic sensibilities and professional aspirations.\n\nAidan is an avid reader and enjoys exploring the latest trends in independent cinema. He typically wakes up at 8 am to start his day, which often includes a morning meditation practice before heading to the studio.",
+    "intent": "add a 14-karat gold necklace with a delicate chain to cart.",
+    "age": 20,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

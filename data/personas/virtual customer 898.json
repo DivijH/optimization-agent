@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jake\n\nBackground:\nJake is a young, aspiring artist who is navigating the challenges of establishing himself in the competitive art world. Despite the financial constraints he faces, he is driven by a deep passion for his craft and a desire to make a meaningful impact through his work.\n\nDemographics:\nAge: 26\nGender: Male\nEducation: Associate's Degree in Fine Arts\nProfession: Freelance Artist\nIncome: $25,000\n\nFinancial Situation:\nAs a freelance artist, Jake's income fluctuates, often falling within the lower income range. He carefully manages his budget, prioritizing his art supplies and living expenses while seeking out additional income streams, such as part-time jobs or commissions, to supplement his artistic pursuits.\n\nShopping Habits:\nJake adopts a resourceful approach to shopping, seeking out thrift stores, online marketplaces, and discounted art supplies to stretch his limited budget. He values quality over quantity, investing in durable, versatile items that can be incorporated into his personal style and artistic practice. When possible, Jake also supports local, independent businesses and eco-friendly brands that align with his values.\n\nProfessional Life:\nAs a freelance artist, Jake's days are filled with a diverse array of tasks, from creating commissioned pieces and applying for gallery exhibitions to networking with fellow artists and seeking out new opportunities. He is constantly honing his skills, experimenting with different mediums, and seeking to push the boundaries of his artistic expression.\n\nPersonal Style:\nJake's personal style reflects his creative spirit and his desire for self-expression. He favors a mix of thrifted and vintage pieces, often repurposing and customizing them to create a unique, eclectic look. His wardrobe includes items such as distressed denim, oversized sweaters, and statement accessories that he uses to showcase his individuality.\n\nIn his free time, Jake immerses himself in the local art scene, attending gallery openings, artist talks, and workshops to network with like-minded individuals and stay inspired. He also dedicates time to personal projects, working on paintings, sculptures, or multimedia installations that allow him to explore his artistic vision.",
+    "intent": "buy a sturdy, high-quality brush guard for my truck to protect the front end while off-roading.",
+    "age": 26,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

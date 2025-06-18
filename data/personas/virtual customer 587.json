@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Marjorie\n\nBackground:\nMarjorie is a retired elementary school teacher who has dedicated her life to educating and inspiring young minds. Although she no longer works, she remains actively involved in her community, volunteering her time and expertise to various local organizations.\n\nDemographics:\nAge: 60\nGender: Female\nEducation: Bachelor's Degree in Education\nProfession: Retired Elementary School Teacher\nIncome: $20,000\n\nFinancial Situation:\nMarjorie's income primarily consists of her modest retirement pension and Social Security benefits, which provide her with a relatively stable, though limited, financial standing. Despite her modest means, she has learned to live within her budget and find joy in the simple pleasures of life.\n\nShopping Habits:\nMarjorie is a savvy and practical shopper who prioritizes value and functionality over trends or impulse purchases. She frequents thrift stores, garage sales, and discount retailers to find gently used or deeply discounted items that meet her needs. Marjorie also enjoys browsing local farmers' markets and craft fairs to support small businesses in her community.\n\nProfessional Life:\nDuring her teaching career, Marjorie was known for her unwavering dedication to her students and her ability to create engaging, hands-on learning experiences. Even in retirement, she continues to volunteer at local schools, offering tutoring services and sharing her expertise with new generations of teachers. Marjorie also serves on the board of a non-profit organization that provides educational resources to underprivileged families.\n\nPersonal Style:\nMarjorie's personal style is characterized by comfort, practicality, and a touch of timeless elegance. She gravitates towards classic, well-made pieces that can be mixed and matched, creating versatile outfits for her day-to-day activities. Marjorie's wardrobe is a blend of comfortable, breathable fabrics and tailored, flattering silhouettes that allow her to move freely and express her sense of style.",
+    "intent": "buy pretzel salt from a discount store or local farmers' market.",
+    "age": 60,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

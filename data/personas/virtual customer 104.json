@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a passionate artist and freelancer living in a vibrant city. She has always been drawn to creative pursuits and has found fulfillment in exploring various mediums, from painting to photography.\n\nDemographics:\nAge: 30\nGender: Female\nEducation: Bachelor's degree in Fine Arts\nProfession: Freelance artist\nIncome: $25,000\n\nFinancial Situation:\nAs a freelance artist, Emily's income can fluctuate, but she has learned to budget carefully and live within her means. She takes on a variety of projects, from commissioned artwork to teaching art classes, to supplement her income. While money is tight at times, Emily is determined to prioritize her creative passions.\n\nShopping Habits:\nEmily is a mindful shopper, often seeking out sustainable, ethical, and locally sourced products. She frequents independent art supply stores, thrift shops, and online marketplaces to find unique and affordable items that align with her values. When making larger purchases, she takes the time to research and compare options to ensure she is getting the best value.\n\nPersonal Life:\nIn her free time, Emily loves to explore the city's vibrant art scene, attending gallery openings, and connecting with fellow creatives. She also enjoys spending time in nature, finding inspiration for her work. Emily's passion for art and commitment to community involvement are central to her identity and how she navigates her life.",
+    "intent": "add crosscut sled rails to shopping cart",
+    "age": 30,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Charles\n\nBackground:\nCharles is a retired civil servant who dedicated his career to serving his local community. Although he no longer holds a formal job, he remains active and engaged, using his wealth of knowledge and experience to volunteer with various non-profit organizations.\n\nDemographics:\nAge: 64\nGender: Male\nEducation: High School Diploma\nProfession: Retired Civil Servant\nIncome: $24,000\n\nFinancial Situation:\nAs a retired civil servant, Charles' primary income consists of a modest pension and Social Security benefits, placing him in the $0 to $30,000 income range. While his financial resources are limited, he has learned to live within his means and find joy in the simple pleasures of life.\n\nShopping Habits:\nCharles is a practical and frugal shopper, prioritizing value and functionality over trends or impulse purchases. He frequents thrift stores, discount retailers, and community yard sales to find affordable, high-quality items that meet his needs. Charles also enjoys supporting local businesses by purchasing products and services from his community.\n\nProfessional Life:\nThroughout his career, Charles was known for his dedication, attention to detail, and commitment to serving the public. Even in retirement, he continues to make a difference by volunteering with organizations that address the needs of his local community, such as food banks, senior centers, and community development initiatives.\n\nPersonal Style:\nCharles' personal style is comfortable and unpretentious, reflecting his modest lifestyle and practical nature. He favors durable, well-made clothing that is easy to care for and allows him to move freely as he engages in his various volunteer activities. Charles' wardrobe consists of classic pieces, such as button-down shirts, comfortable slacks, and sturdy, supportive shoes.\n\nIn his free time, Charles enjoys activities that keep him physically and mentally active, such as gardening, reading, and participating in local community clubs and organizations. He takes great pride in staying informed about current events and sharing his insights with others.",
+    "intent": "buy the law and order svu season 17 dvd.",
+    "age": 64,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

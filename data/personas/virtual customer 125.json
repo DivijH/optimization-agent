@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: James\n\nBackground:\nJames is a passionate freelance graphic designer who is dedicated to creating visually striking and impactful designs for a variety of clients.\n\nDemographics:\nAge: 39\nGender: Male\nEducation: Associate's Degree in Graphic Design\nProfession: Freelance Graphic Designer\nIncome: $25,000\n\nFinancial Situation:\nAs a freelancer, James' income can fluctuate, but he has learned to budget carefully and maintain a modest lifestyle. He is diligent about setting aside funds for periods of lower work and occasionally supplements his income with part-time jobs.\n\nShopping Habits:\nJames enjoys finding unique and creative pieces to incorporate into his wardrobe and home decor. He often shops at thrift stores, vintage shops, and online marketplaces to discover one-of-a-kind items. He values functionality and quality over brand names and is always on the lookout for new and innovative design products.\n\nProfessional Life:\nJames' creative talents and eye for design have allowed him to build a diverse portfolio of freelance work. He works with a range of clients, from small local businesses to larger organizations, crafting visuals that help them effectively communicate their brand and messaging. James is constantly honing his skills and staying up-to-date with the latest design trends and software.\n\nPersonal Style:\nJames' personal style reflects his artistic sensibilities. He enjoys mixing vintage and contemporary pieces, often pairing classic denim or chinos with bold graphic tees or unique statement pieces. He is not afraid to experiment with color, pattern, and unconventional silhouettes. James' hairstyle is also a reflection of his creative flair, often featuring a stylish, intentionally disheveled look.\n\nIn his free time, James can be found exploring local art galleries, attending design-focused meetups, or tinkering with his camera to capture the world around him. He is also an avid reader, with a particular interest in design history and theory.",
+    "intent": "buy a set of colorful, high-quality buttons with mathematical symbols or patterns.",
+    "age": 39,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a seasoned entrepreneur who has built a successful tech startup from the ground up. With a sharp business acumen and a passion for innovation, he has navigated the industry's challenges and emerged as a respected leader in his field.\n\nDemographics:\nAge: 31\nGender: Male\nEducation: Master's Degree in Computer Science\nProfession: Founder and CEO, Tech Startup\nIncome: $250,000\n\nFinancial Situation:\nAs the CEO of a thriving tech company, Michael's income falls within the $94,001 to $1,000,000 range. He has a comfortable financial standing, allowing him to invest in both his business and personal well-being. While fiscally responsible, Michael also enjoys the occasional luxury, such as high-end gadgets, exclusive experiences, and strategic real estate investments.\n\nShopping Habits:\nMichael approaches shopping with a discerning eye, seeking out products and services that not only meet his needs but also reflect his values and ambitions. He is drawn to innovative, cutting-edge technologies that can enhance his productivity and lifestyle. Michael also has a penchant for designer fashion and curates his wardrobe with a focus on quality, timelessness, and personal style.\n\nProfessional Life:\nLeading his tech startup, Michael is at the forefront of industry disruption. He possesses a keen strategic mind, adeptly navigating the complexities of the rapidly evolving digital landscape. Michael's ability to identify emerging trends, solve complex problems, and foster a dynamic, collaborative team has been instrumental to his company's success.\n\nPersonal Style:\nMichael's personal style is a reflection of his professional prowess and sophisticated taste. He favors well-tailored suits, crisp shirts, and polished leather shoes for formal occasions, while opting for a more casual-chic aesthetic of slim-fit jeans, cashmere sweaters, and designer sneakers in his day-to-day life. Michael's sartorial choices exude an air of confidence and understated elegance.",
+    "intent": "buy a high-quality, technologically advanced mouse trap game.",
+    "age": 31,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a passionate social worker who has dedicated her career to helping underprivileged communities. Despite facing financial challenges, she remains committed to making a positive impact and advocating for those in need.\n\nDemographics:\nAge: 42\nGender: Female\nEducation: Bachelor's Degree in Social Work\nProfession: Social Worker\nIncome: $28,000\n\nFinancial Situation:\nAs a social worker, Olivia's income is modest, but she has learned to live within her means. She carefully budgets her expenses, prioritizing necessities and allocating what she can to pay off student loans and support her family. While Olivia's financial situation is tight, she finds joy in the work she does and the difference she makes in her community.\n\nShopping Habits:\nOlivia is a mindful shopper, focused on finding practical and affordable items that will last. She frequents secondhand stores, thrift shops, and online marketplaces to discover unique and sustainable items. Olivia is also an avid DIYer, repurposing and upcycling items to create personalized, one-of-a-kind pieces.\n\nProfessional Life:\nOlivia's work as a social worker is more than just a job; it's a calling. She tirelessly advocates for her clients, connecting them with resources and support services to help improve their quality of life. Olivia's compassionate nature and deep understanding of the challenges facing her community make her an invaluable asset to the social services organization she works for.\n\nPersonal Style:\nOlivia's personal style reflects her practical and down-to-earth approach to life. She favors comfortable, yet stylish clothing that allows her to move freely and easily throughout her busy days. Olivia often incorporates vintage and thrifted pieces into her wardrobe, adding a touch of individuality and personal flair. She values functionality and sustainability in her clothing choices, seeking out garments that will stand the test of time.",
+    "intent": "buy a durable, high-quality baking oven rack.",
+    "age": 42,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Henry\n\nBackground:\nHenry is a retired veteran who has found a new purpose in life as a community advocate. After serving in the military for over two decades, he now dedicates his time and expertise to supporting local organizations that provide essential services to the underserved populations in his city.\n\nDemographics:\nAge: 64\nGender: Male\nEducation: High School Diploma, Veteran\nProfession: Retired, Community Advocate\nIncome: $54,000\n\nFinancial Situation:\nWith a stable pension and investment income, Henry's annual earnings fall within the $30,001 to $94,000 range. He has learned to live frugally and is able to allocate a portion of his resources towards his philanthropic endeavors, while also maintaining a comfortable lifestyle.\n\nShopping Habits:\nHenry's shopping habits are practical and focused on long-term value. He prefers to purchase durable, well-made products that will stand the test of time, often seeking out sales and discounts at local hardware stores, home improvement outlets, and thrift shops. When making larger purchases, he thoroughly researches his options to ensure he is getting the best possible quality and price.\n\nPersonal Life:\nIn his retirement, Henry has found a renewed sense of purpose through his involvement in the community. He volunteers regularly at a local food bank, coordinates neighborhood clean-up efforts, and serves on the board of directors for a community center that provides educational and recreational programs for underserved youth. His dedication to making a positive impact in the lives of others is a testament to his strong sense of civic duty.\n\nPersonal Style:\nHenry's personal style reflects his practical and down-to-earth nature. He favors comfortable, casual clothing, often opting for well-fitting jeans, sturdy work boots, and reliable, weather-appropriate outerwear. He places a high value on functionality and durability, ensuring that his wardrobe can withstand the demands of his active lifestyle and community involvement.",
+    "intent": "buy a Traxxas Slash body.",
+    "age": 64,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

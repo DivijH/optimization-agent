@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a driven and ambitious young professional who is making her mark in the rapidly-evolving tech industry. As a software engineer at a leading tech startup, she is passionate about using her technical skills to develop innovative solutions that have a positive impact on people's lives.\n\nDemographics:\nAge: 21\nGender: Female\nEducation: Bachelor's Degree in Computer Science\nProfession: Software Engineer\nIncome: $72,000\n\nFinancial Situation:\nDespite her young age, Emily has already established a solid financial footing. Her income as a software engineer, coupled with her prudent spending habits, allows her to save a significant portion of her earnings. She is diligently working towards her long-term goals, which include purchasing a home and building a diverse investment portfolio.\n\nShopping Habits:\nEmily is a pragmatic shopper who values quality and functionality over trends. She conducts thorough research before making purchases, seeking out products that offer the best value for her money. While she enjoys the occasional splurge on tech gadgets or activewear that aligns with her active lifestyle, she is generally mindful of her spending and prioritizes saving for the future.\n\nProfessional Life:\nAs a software engineer, Emily is at the forefront of developing cutting-edge technologies that are transforming various industries. She thrives in a fast-paced, collaborative environment, where she can utilize her analytical problem-solving skills and creative problem-solving abilities to create innovative solutions. Emily's dedication and technical expertise have earned her the respect of her colleagues and the admiration of her peers.\n\nPersonal Style:\nEmily's personal style reflects her modern, tech-savvy sensibilities. She favors a minimalist, clean-cut aesthetic, often opting for well-fitting, high-quality apparel that is both comfortable and stylish. Her wardrobe includes a mix of classic pieces, such as tailored pants and button-down shirts, as well as more casual, athleisure-inspired items that complement her active lifestyle.",
+    "intent": "buy an elf flex kit.",
+    "age": 21,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

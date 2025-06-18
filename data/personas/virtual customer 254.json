@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a passionate artist and freelance graphic designer, navigating the challenges of building a sustainable creative career. Despite her limited financial resources, she remains determined to pursue her artistic vision and make a positive impact through her work.\n\nDemographics:\nAge: 27\nGender: Female\nEducation: Bachelor's degree in Graphic Design\nProfession: Freelance Graphic Designer\nIncome: $22,000\n\nFinancial Situation:\nAs a freelance graphic designer, Sarah's income fluctuates based on the availability of projects and clients. She lives modestly, often relying on part-time work, government assistance, and the support of her close-knit community to make ends meet. Despite the financial constraints, Sarah is resourceful and prioritizes investing in the tools and software needed to maintain her creative practice.\n\nShopping Habits:\nSarah is a conscientious shopper, focused on finding affordable yet quality materials and supplies for her design work. She frequents local art supply stores, thrift shops, and online marketplaces to source unique and sustainable items. When it comes to personal purchases, Sarah tends to be more selective, investing in essential clothing and household items that will last.\n\nPersonal Life:\nIn her free time, Sarah immerses herself in the local art scene, attending exhibitions, workshops, and networking events to connect with fellow creatives. She finds solace in her artistic pursuits, whether it's experimenting with new mediums or working on personal projects that allow her to express her unique perspective. Sarah's resilience and passion for her craft inspire those around her, and she hopes to one day turn her freelance work into a thriving, self-sustaining creative business.",
+    "intent": "buy a pair of compression stockings.",
+    "age": 27,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

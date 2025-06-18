@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a dedicated stay-at-home parent who has taken a break from her career to focus on raising her two young children. With a strong sense of purpose and a nurturing spirit, she is committed to providing a loving and supportive environment for her family.\n\nDemographics:\nAge: 41\nGender: Female\nEducation: High School Diploma\nProfession: Stay-at-Home Parent\nIncome: $25,000 (from part-time freelance work and government assistance)\n\nFinancial Situation:\nAs a stay-at-home parent with a limited income, Sarah has learned to carefully manage her family's finances. She budgets meticulously, prioritizing essential expenses and seeking out ways to save money, such as couponing and shopping secondhand. Despite the financial challenges, Sarah is determined to create a stable and secure home for her children.\n\nShopping Habits:\nSarah's shopping habits reflect her resourcefulness and commitment to her family's well-being. She scours thrift stores, garage sales, and online marketplaces for gently used, high-quality items that can be repurposed or passed down to her children. When making purchases, Sarah focuses on finding the best value and prioritizes practical, long-lasting items over impulse buys or trends.\n\nPersonal Life:\nIn her free time, Sarah finds joy in volunteering at her children's school and participating in local community events. She is an active member of a support group for stay-at-home parents, where she shares insights, seeks advice, and builds a network of like-minded individuals. Sarah also nurtures her own interests, such as gardening, reading, and practicing mindfulness, as a way to maintain a sense of personal fulfillment.\n\nPersonal Style:\nSarah's personal style is a reflection of her practical and family-oriented lifestyle. She favors comfortable, durable clothing that can withstand the demands of childcare, such as well-fitting jeans, T-shirts, and versatile sweaters. Her wardrobe is a mix of hand-me-downs, secondhand finds, and occasional purchases from budget-friendly retailers.",
+    "intent": "add a navy blue nike fanny pack to cart",
+    "age": 41,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

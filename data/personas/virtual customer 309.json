@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a passionate social entrepreneur dedicated to creating sustainable solutions that address pressing environmental and social issues. She has built a successful non-profit organization that empowers marginalized communities to take an active role in driving local change.\n\nDemographics:\nAge: 35\nGender: Female\nEducation: Bachelor's degree in Environmental Studies\nProfession: Social Entrepreneur\nIncome: $62,000\n\nFinancial Situation:\nAs the founder and executive director of her non-profit organization, Emily's income falls within the $30,001 to $94,000 range. She is financially responsible, carefully managing her organization's resources and her personal finances to ensure the continued growth and impact of her initiatives.\n\nShopping Habits:\nEmily's shopping habits are guided by her commitment to sustainability and ethical consumerism. She seeks out products and brands that align with her values, prioritizing eco-friendly, Fair Trade, and locally-sourced items. She frequents specialized thrift stores, sustainable marketplaces, and online platforms that connect her with socially conscious small businesses.\n\nProfessional Life:\nEmily's days are filled with a dynamic blend of administrative tasks, community outreach, and strategic planning. She works closely with her team to identify pressing issues, secure funding, and implement innovative programs that create meaningful change. Her passion for environmental and social justice drives her to tirelessly advocate for her cause and inspire others to join her in the pursuit of a more equitable and sustainable world.\n\nPersonal Style:\nEmily's personal style reflects her holistic approach to life, blending functionality, comfort, and a touch of bohemian flair. She favors natural fabrics, earth-toned palettes, and versatile pieces that can seamlessly transition between her professional duties and her active involvement in the community. Emily's wardrobe choices are a manifestation of her commitment to mindful living and her desire to lead by example.",
+    "intent": "buy a pack of dried shrimp for cooking Thai cuisine.",
+    "age": 35,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

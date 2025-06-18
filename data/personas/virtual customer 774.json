@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a seasoned entrepreneur who has built a successful small business from the ground up. With a keen eye for innovation and a relentless work ethic, he has navigated the challenges of the ever-changing market landscape, continuously adapting and diversifying his company's offerings to stay ahead of the curve.\n\nDemographics:\nAge: 55\nGender: Male\nEducation: Bachelor's degree in Business Administration\nProfession: Small Business Owner\nIncome: $135,000\n\nFinancial Situation:\nMichael's hard work and strategic planning have paid off, allowing him to maintain a comfortable and secure financial standing. While he is not extravagant in his spending, he is able to enjoy the fruits of his labor, investing in occasional luxuries and ensuring a stable future for himself and his family.\n\nShopping Habits:\nAs a successful business owner, Michael has a discerning eye for quality and value. He is selective in his purchases, focusing on durable, high-performing products that enhance his professional and personal life. Whether it's the latest technology for his office or a premium outdoor gear for his adventurous hobbies, Michael seeks out products that offer longevity and efficiency.\n\nProfessional Life:\nMichael's entrepreneurial spirit has driven him to build a thriving small business that caters to a niche market. He takes great pride in fostering a collaborative and innovative work environment, empowering his employees to contribute their unique skills and perspectives. Constantly on the lookout for new opportunities, Michael remains agile and adaptable, ensuring his company's continued success.\n\nPersonal Style:\nMichael's personal style reflects his refined yet approachable sensibilities. He favors well-tailored, classic garments that exude a sense of sophistication and confidence, such as crisp button-down shirts, tailored slacks, and polished leather shoes. However, he is not afraid to experiment with bolder, more modern accents, such as a stylish timepiece or a statement accessory, adding a touch of personal flair to his overall look.",
+    "intent": "buy prize balls capsules",
+    "age": 55,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

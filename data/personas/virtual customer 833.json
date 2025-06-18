@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a passionate and creative young woman who is just starting her journey into the professional world. With a vibrant personality and a deep curiosity about the world around her, she is determined to forge her own path and make her mark.\n\nDemographics:\nAge: 18\nGender: Female\nEducation: High School Diploma\nProfession: Retail Sales Associate\nIncome: $25,000\n\nFinancial Situation:\nAs a retail sales associate, Emily's income falls within the $0 to $30,000 range. While her current financial situation is modest, she is diligently saving and managing her money, with the goal of one day pursuing her dream of starting her own small business.\n\nShopping Habits:\nEmily's shopping habits reflect her desire to balance affordability and self-expression. She enjoys scouring thrift stores and online marketplaces for unique, one-of-a-kind pieces that allow her to showcase her personal style. At the same time, she is mindful of her budget and often seeks out sales and discounts to maximize her shopping dollars.\n\nProfessional Life:\nIn her role as a retail sales associate, Emily takes pride in providing exceptional customer service and creating a welcoming environment for her customers. She is constantly learning and expanding her knowledge of the products and services offered by the company, and her enthusiastic and helpful nature has earned her the respect of her colleagues and the appreciation of her customers.\n\nPersonal Style:\nEmily's personal style is a reflection of her vibrant and eclectic personality. She loves to experiment with different fashion trends, mixing and matching vintage finds with contemporary pieces to create her own signature look. From bold prints and bright colors to edgy accessories and playful patterns, Emily's wardrobe is a canvas for her self-expression.\n\nIn her free time, Emily indulges in her creative passions, experimenting with various art mediums and pursuing her dream of one day starting a small, locally-sourced jewelry business. She is also an avid reader and enjoys exploring the rich cultural tapestry of her community through local events and independent bookstores.",
+    "intent": "buy the TRX Home Suspension Training Kit.",
+    "age": 18,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

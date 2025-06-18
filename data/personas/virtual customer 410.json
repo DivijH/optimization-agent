@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a dedicated educator who has spent the majority of his career working to inspire and empower the next generation. With a deep commitment to social equity and inclusive teaching practices, he has found fulfillment in his role as a high school history teacher.\n\nDemographics:\nAge: 50\nGender: Male\nEducation: Master's degree in Education\nProfession: High School History Teacher\nIncome: $55,000\n\nFinancial Situation:\nAs a public school teacher, David's income is stable and comfortable, allowing him to live modestly and save for the future. He is mindful of his spending and prioritizes experiences over material possessions, often investing in professional development opportunities and contributing to his retirement plan.\n\nShopping Habits:\nDavid approaches shopping with a practical and considered mindset. He gravitates towards high-quality, long-lasting items that align with his values, such as supporting local businesses and purchasing sustainably-sourced products. When making larger purchases, he researches thoroughly to ensure he is getting the best value. David also enjoys thrifting and repurposing items, finding joy in the challenge of transforming found objects.\n\nPersonal Life:\nOutside of the classroom, David is an active member of his community, volunteering with local youth organizations and serving on the school district's diversity and inclusion committee. He is passionate about history and often leads educational field trips and guest lectures to share his knowledge with the broader community. In his free time, David enjoys hiking, reading, and spending quality time with his family.",
+    "intent": "buy a risen style# xrdp1436 product.",
+    "age": 50,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

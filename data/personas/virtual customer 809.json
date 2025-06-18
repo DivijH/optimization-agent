@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sophia\n\nBackground:\nSophia is a compassionate and creative individual who has found her calling in the nonprofit sector. After several years of working in various volunteer and part-time roles, she has recently taken on a full-time position at a local community organization, where she is dedicated to making a meaningful impact on the lives of those in need.\n\nDemographics:\nAge: 34\nGender: Female\nEducation: Bachelor's Degree in Social Work\nProfession: Program Coordinator at a Nonprofit Organization\nIncome: $28,000\n\nFinancial Situation:\nAs a program coordinator at a nonprofit organization, Sophia's income falls within the lower-income range. However, she approaches her finances with a mindset of resourcefulness and prioritization. While her budget is tight, Sophia is adept at finding creative ways to stretch her resources and allocate her funds towards the causes and experiences that are most important to her.\n\nShopping Habits:\nSophia's shopping habits are largely influenced by her commitment to sustainability and social responsibility. She actively seeks out ethical and eco-friendly brands, often opting for secondhand or upcycled items whenever possible. When making purchases, Sophia carefully considers the long-term impact and value of her choices, prioritizing quality over quantity.\n\nProfessional Life:\nIn her role as a program coordinator at the nonprofit organization, Sophia is responsible for managing various community-based initiatives and outreach programs. Her compassionate nature, strong organizational skills, and genuine dedication to the organization's mission have made her an invaluable asset to the team. Sophia takes great pride in her work, finding immense satisfaction in the positive change she helps to facilitate.\n\nPersonal Life:\nOutside of her professional commitments, Sophia maintains a well-rounded lifestyle that allows her to nurture her creative passions and engage with her local community. She is an avid volunteer, dedicating her time and talents to various charitable causes. In her free time, Sophia enjoys exploring her artistic side through activities like painting, pottery, and photography, often finding inspiration in the beauty of the natural world.",
+    "intent": "buy nurse accessories for work including a stethoscope, pens, and a badge reel.",
+    "age": 34,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

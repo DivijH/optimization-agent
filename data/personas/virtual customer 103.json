@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Steven\n\nBackground:\nSteven is a successful business executive who has climbed the corporate ladder through his strong leadership skills and strategic vision. He currently holds a prominent position at a large multinational corporation, where he drives innovation and oversees major projects.\n\nDemographics:\nAge: 54\nGender: Male\nEducation: Master's degree in Business Administration\nProfession: Business Executive\nIncome: $150,000\n\nFinancial Situation:\nWith his impressive corporate salary, Steven enjoys a comfortable and financially secure lifestyle. He is able to save a significant portion of his income while still indulging in luxury purchases and investments. Steven takes a proactive approach to managing his wealth, working closely with financial advisors to ensure his long-term financial stability.\n\nShopping Habits:\nAs a busy executive, Steven values efficiency and convenience when it comes to shopping. He often relies on online platforms and personal shopping services to acquire high-quality, tailored items for both his professional and personal needs. Steven is not afraid to invest in premium products and experiences that align with his discerning tastes.\n\nProfessional Life:\nSteven's professional life is marked by his exceptional leadership skills and strategic decision-making. He is responsible for guiding his company's vision and overseeing the successful implementation of major initiatives. Steven is known for his ability to inspire his team, foster collaboration, and drive the organization towards its ambitious goals.\n\nPersonal Style:\nSteven's personal style reflects his refined and sophisticated tastes. He favors well-tailored suits, luxury watches, and polished leather shoes, projecting an air of authority and confidence. While his wardrobe is primarily focused on professional attire, Steven enjoys incorporating subtle personal touches, such as bold-colored ties or unique cufflinks, to express his individuality.",
+    "intent": "buy a hair washing station for the sink at home.",
+    "age": 54,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

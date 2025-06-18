@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Cameron\n\nBackground:\nCameron is a driven and ambitious young professional who has carved out a successful career in the tech industry. With a keen analytical mind and a passion for innovation, he has quickly risen through the ranks, securing a lucrative position that allows him to pursue his entrepreneurial dreams on the side.\n\nDemographics:\nAge: 27\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Software Engineer\nIncome: $78,000\n\nFinancial Situation:\nCameron's income as a software engineer provides him with a comfortable financial cushion, allowing him to invest in his personal and professional development. He is diligent about saving a portion of his earnings, ensuring he has the resources to pursue his entrepreneurial ventures and maintain a stable financial footing.\n\nShopping Habits:\nWhile Cameron values quality and functionality, he is not driven by the latest trends or status symbols. He takes a practical and pragmatic approach to his purchases, researching products thoroughly to find the best balance of performance and value. Cameron enjoys the occasional tech gadget or high-quality apparel, but he is mindful of not overspending.\n\nProfessional Life:\nIn his role as a software engineer, Cameron leverages his technical expertise and problem-solving skills to develop cutting-edge applications and infrastructure for a leading tech company. He thrives in the fast-paced, collaborative environment, constantly seeking opportunities to learn and grow. On the side, he is working on a startup idea, using his coding abilities and entrepreneurial mindset to bring his vision to life.\n\nPersonal Style:\nCameron's personal style reflects his active, technology-driven lifestyle. He favors comfortable, versatile clothing that allows him to transition seamlessly between his professional and personal pursuits. His wardrobe consists of well-fitted t-shirts, casual button-downs, chinos, and a selection of high-quality, performance-oriented outerwear and footwear. Cameron's style is understated yet polished, emphasizing function and practicality without sacrificing a sense of personal flair.",
+    "intent": "buy a baby head protector backpack.",
+    "age": 27,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

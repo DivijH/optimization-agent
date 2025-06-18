@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a resilient and resourceful individual who has faced his fair share of challenges, but remains determined to find purpose and fulfillment in his daily life. Despite his modest income, he continues to explore ways to contribute to his local community and maintain a positive outlook.\n\nDemographics:\nAge: 52\nGender: Male\nEducation: High School Diploma\nProfession: Part-Time Handyman, Volunteer\nIncome: $25,000\n\nFinancial Situation:\nWith a limited income from his part-time handyman work, David carefully manages his finances to cover his basic needs. He has developed frugal habits, such as seeking out discounts, buying in bulk, and relying on community resources when possible. While he may not have significant disposable income, he finds joy in small acts of generosity and in supporting local businesses and initiatives.\n\nShopping Habits:\nDavid is a pragmatic shopper who focuses on functional and durable items. He frequents secondhand stores, garage sales, and online marketplaces to find affordable yet high-quality tools, household goods, and clothing. He takes pride in his ability to repair and repurpose items, extending their lifespan and minimizing waste.\n\nProfessional Life:\nIn addition to his part-time handyman work, David dedicates a substantial amount of his time to volunteering in his community. He has become involved with various local organizations, lending his practical skills and a helping hand to initiatives that support the elderly, the homeless, and those in need. His desire to make a positive impact in the lives of others is a driving force in his life.\n\nPersonal Style:\nDavid's personal style is practical and comfortable, reflecting his active lifestyle and commitment to sustainability. He favors durable, well-worn clothing that can withstand the demands of his handyman work and volunteer activities. His wardrobe consists of sturdy jeans, work boots, and comfortable t-shirts, often complemented by a trusty flannel or a reliable jacket.",
+    "intent": "buy a cardboard character that looks like patrick.",
+    "age": 52,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

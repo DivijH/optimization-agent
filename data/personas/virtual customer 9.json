@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Josephine\n\nBackground:\nJosephine is a successful entrepreneur who founded her own technology consulting firm over 30 years ago. She is well-respected in the industry and has a passion for mentoring young professionals and investing in innovative startups.\n\nDemographics:\n\nAge: 63\nGender: Female \nEducation: Bachelor's degree\nProfession: Entrepreneur, Business Owner\nIncome: $310,000\n\nFinancial Situation:\nJosephine has amassed significant wealth through her business ventures over the years. She maintains a comfortable lifestyle and enjoys the financial freedom to travel, pursue hobbies, and contribute to causes she cares about.\n\nShopping Habits:\nJosephine appreciates quality and craftsmanship when shopping. She enjoys browsing high-end retail stores and boutiques, but also values efficiency and is happy to shop online for convenience. She is willing to invest in timeless, well-made items that will last.\n\nProfessional Life:\nAs the founder and CEO of her consulting firm, Josephine oversees a team of experts and maintains close relationships with her clients. She dedicates much of her time to strategic decision-making, mentoring, and networking within her industry. Josephine also serves on the boards of several nonprofit organizations.\n\nPersonal Style:\nJosephine has a classic, polished sense of style. She favors tailored, sophisticated clothing in neutral tones and elegant silhouettes. She enjoys accessorizing with statement jewelry and luxurious handbags. Josephine prioritizes comfort and practicality, but also wants to maintain a professional, put-together appearance.",
+    "intent": "buy high-quality compression stockings in navy blue, knee-high length, and medical-grade compression level.",
+    "age": 63,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a 60-year-old man who has faced numerous challenges throughout his life, but has remained resilient and determined to make the most of his golden years. After a series of job losses and health issues, Michael has found himself navigating a new chapter of his life with limited financial resources.\n\nDemographics:\nAge: 60\nGender: Male\nEducation: High School Diploma\nProfession: Retired\nIncome: $20,000\n\nFinancial Situation:\nMichael's financial situation is modest, as he relies primarily on a combination of Social Security benefits, occasional odd jobs, and the support of his adult children. Despite his limited income, he has learned to live frugally and prioritize his essential expenses. Budgeting and finding ways to stretch his limited resources have become a daily routine for Michael.\n\nShopping Habits:\nMichael is a cautious and pragmatic shopper, focusing on finding the most affordable options for his basic needs. He frequents discount stores, secondhand shops, and online marketplaces to find the best deals on clothing, household items, and necessities. While he occasionally splurges on small treats or activities that bring him joy, Michael is mindful of his budget and avoids unnecessary purchases.\n\nPersonal Life:\nMichael finds solace and purpose in his close relationships with his family and the local community. He is a devoted grandfather who delights in spending time with his grandchildren, sharing stories, and imparting his wisdom. In his free time, Michael enjoys low-cost activities such as volunteering at a local food bank, taking walks in the park, and participating in community events. He finds fulfillment in staying active and engaged, despite the financial constraints he faces.",
+    "intent": "buy a set of affordable Halloween fake teeth.",
+    "age": 60,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

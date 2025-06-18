@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emma\n\nBackground:\nEmma is a recent college graduate who is navigating the early stages of her professional journey. With a degree in marketing, she is eager to apply her knowledge and skills in a dynamic work environment. While she may not have extensive industry experience yet, Emma is brimming with enthusiasm and a willingness to learn and grow.\n\nDemographics:\nAge: 22\nGender: Female\nEducation: Bachelor's Degree in Marketing\nProfession: Marketing Coordinator\nIncome: $28,000\n\nFinancial Situation:\nAs a young professional starting out, Emma's income is modest, but she is diligent in managing her finances. She lives within her means, prioritizing necessities and gradually building up her savings. Emma is mindful of her spending and seeks ways to maximize her budget, often exploring bargains and sales to stretch her dollar.\n\nShopping Habits:\nEmma's shopping habits reflect her desire to maintain a professional image while staying within her limited budget. She carefully curates her wardrobe, mixing affordable, high-quality basics with occasional trendy pieces from fast-fashion retailers. Emma enjoys browsing online and in-store, taking advantage of student discounts and loyalty programs to make the most of her shopping experiences.\n\nProfessional Life:\nIn her role as a marketing coordinator, Emma is eager to contribute her fresh perspective and innovative ideas. She is a quick learner, constantly seeking opportunities to expand her skills and knowledge. Emma's colleagues appreciate her enthusiasm, attention to detail, and willingness to take on new challenges, which have earned her a reputation as a valuable team player.\n\nPersonal Style:\nEmma's personal style is youthful and polished, striking a balance between professionalism and personal expression. She gravitates towards well-fitted, versatile pieces that can be dressed up or down, allowing her to transition seamlessly from the office to social events. Emma's accessory choices, such as her statement jewelry and trendy handbags, add a touch of personality to her otherwise classic look.",
+    "intent": "buy a pink airsoft gun.",
+    "age": 22,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

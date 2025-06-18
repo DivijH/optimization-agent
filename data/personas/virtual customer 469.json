@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sophia\n\nBackground:\nSophia is a 40-year-old single mother who has faced significant challenges in recent years. After a difficult divorce, she is navigating the complexities of supporting her family on a limited income while pursuing her passion for art and community engagement.\n\nDemographics:\nAge: 40\nGender: Female\nEducation: High School Diploma\nProfession: Part-time Retail Associate\nIncome: $21,000\n\nFinancial Situation:\nSophia's financial situation is precarious, as she relies on a combination of part-time work, child support, and government assistance to cover her family's basic needs. She carefully budgets her limited resources, prioritizing essentials like rent, utilities, and her children's well-being. Sophia is determined to find ways to supplement her income, such as selling her handmade artwork and crafts.\n\nShopping Habits:\nOut of necessity, Sophia is a savvy and resourceful shopper. She frequents thrift stores, discount retailers, and online marketplaces to find affordable, high-quality items for her family. Sophia also takes advantage of coupons, loyalty programs, and seasonal sales to maximize her budget. When possible, she tries to support local businesses and artisans, aligning her purchases with her values.\n\nPersonal Life:\nDespite the challenges she faces, Sophia remains resilient and optimistic. In her free time, she finds solace in her artistic pursuits, such as painting, pottery, and jewelry making. Sophia also actively volunteers at her children's school and the local community center, where she can connect with like-minded individuals and give back to her community.\n\nProfessional Life:\nSophia's part-time retail job provides a stable, though limited, source of income. She appreciates the flexibility and social interaction it offers, but her true passion lies in her artistic endeavors. Sophia dreams of one day turning her creative hobbies into a sustainable small business, allowing her to pursue her creative interests while providing for her family.",
+    "intent": "buy a set of trx bands for a home gym.",
+    "age": 40,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

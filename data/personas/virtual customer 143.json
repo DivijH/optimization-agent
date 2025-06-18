@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a dedicated IT professional who has built a successful career in the tech industry. Despite the demands of his job, he maintains a healthy work-life balance, finding joy in outdoor activities and spending quality time with his family.\n\nDemographics:\nAge: 40\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: IT Manager\nIncome: $70,000\n\nFinancial Situation:\nWith a steady income from his IT management position, Michael is financially stable and able to comfortably provide for his family. He diligently saves a portion of his earnings for future goals, such as his children's education and retirement. Michael enjoys the occasional splurge on outdoor gear and tech gadgets, but he is generally mindful of his spending.\n\nShopping Habits:\nMichael prefers to research products thoroughly before making purchases, often reading reviews and comparing prices online. He values quality and durability, particularly when it comes to items he uses for his outdoor hobbies, such as hiking and camping. While he is willing to invest in premium products, Michael also enjoys finding great deals at sporting goods stores and online marketplaces.\n\nPersonal Style:\nMichael's personal style reflects his active lifestyle and pragmatic approach to life. He typically wears casual, comfortable clothing, such as t-shirts, cargo pants, and sturdy hiking boots. When not in his work attire, Michael can often be found in activewear, ready to tackle his next outdoor adventure.\n\nPersonal Life:\nOutside of work, Michael is an avid outdoorsman, enjoying activities like hiking, mountain biking, and rock climbing. He also values family time, often planning weekend getaways and camping trips with his wife and two young children. Michael finds balance in his life by making time for his hobbies and prioritizing quality time with his loved ones.",
+    "intent": "buy a silverware rest for table setting.",
+    "age": 40,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

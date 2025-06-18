@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Robert\n\nBackground:\nRobert is a lifelong learner and avid reader who has pursued a diverse range of interests and experiences over the course of his life. Though his income has fluctuated, he has remained committed to living a fulfilling and purpose-driven life.\n\nDemographics:\nAge: 55\nGender: Male\nEducation: High School Diploma\nProfession: Freelance Writer and Tutor\nIncome: $25,000\n\nFinancial Situation:\nRobert's income as a freelance writer and tutor is modest, but he has developed a disciplined approach to budgeting and saving. He lives a relatively frugal lifestyle, prioritizing experiences and personal growth over material possessions. While he may not have accumulated significant wealth, Robert has found contentment in his ability to maintain financial stability and independence.\n\nShopping Habits:\nRobert's shopping habits reflect his practical and minimalist approach to life. He tends to focus on purchasing high-quality, long-lasting items that serve a specific purpose, whether it's a reliable pair of shoes, a well-crafted notebook, or a treasured book. He often seeks out secondhand or vintage items, valuing the character and history they possess.\n\nProfessional Life:\nRobert's professional path has been characterized by a diverse range of pursuits, from freelance writing and tutoring to part-time employment in the service industry. While his income may be modest, he derives great satisfaction from the variety of work he engages in and the opportunity to share his knowledge and expertise with others.\n\nPersonal Style:\nRobert's personal style is low-key and practical, with a touch of eclectic flair. He favors comfortable, well-worn clothing that reflects his laid-back attitude and love of timeless, functional design. His wardrobe consists of classic button-down shirts, sturdy jeans, and comfortable, well-maintained shoes.\n\nLeisure Activities:\nIn his free time, Robert indulges in a diverse range of hobbies and interests. He is an avid reader, with a particular fondness for classic literature, philosophy, and history. He also enjoys engaging in intellectual discussions and sharing his knowledge with others, whether it's through tutoring sessions or informal gatherings.",
+    "intent": "buy a high-quality, vintage-inspired iron belt buckle for men.",
+    "age": 55,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Julia\n\nBackground:\nJulia is a passionate artist who has dedicated her life to expressing her creativity through various mediums. After years of financial struggles, she has found a balance between her artistic pursuits and a part-time job that provides her with a modest income.\n\nDemographics:\nAge: 48\nGender: Female\nEducation: High School Diploma\nProfession: Part-time Retail Worker, Artist\nIncome: $25,000\n\nFinancial Situation:\nJulia's income is limited, as she prioritizes her artistic endeavors over a higher-paying career. She has learned to live within her means, carefully budgeting her expenses and finding creative ways to stretch her resources. Despite the financial challenges, she remains determined to maintain her artistic lifestyle.\n\nShopping Habits:\nJulia is a thrifty shopper who loves to scour secondhand stores, flea markets, and garage sales for unique and affordable finds. She takes pride in her ability to repurpose and upcycle items, turning them into one-of-a-kind pieces. Julia is mindful of her environmental impact and tries to avoid fast fashion, opting for quality, long-lasting items.\n\nProfessional Life:\nIn addition to her artistic pursuits, Julia works part-time at a local retail store. This job provides her with a steady, albeit modest, income to cover her basic living expenses, allowing her to devote more time to her creative work. She finds fulfillment in her artwork, which she shares through local art shows and online platforms.\n\nPersonal Style:\nJulia's personal style is a reflection of her artistic sensibilities and her desire for comfort. She favors flowing, bohemian-inspired pieces that allow her to express her creativity. She often incorporates recycled or repurposed materials into her wardrobe, creating unique and eclectic outfits. Her style is a blend of practicality and self-expression.\n\nJulia is a frequent user of public transportation and enjoys exploring local thrift stores and flea markets on the weekends. She typically wakes up at 8 AM to start her day.\n\nJulia lives in a small apartment in a vibrant, artist-friendly neighborhood.",
+    "intent": "buy a box of colorful sprinkles for baking and decorating cakes and cookies.",
+    "age": 48,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

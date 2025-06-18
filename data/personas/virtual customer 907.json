@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Alex\n\nBackground:\nAlex is a resilient and resourceful individual who has faced numerous challenges in his life, but has remained steadfast in his pursuit of personal growth and fulfillment. Despite his limited financial means, he has found creative ways to make a positive impact in his community and pursue his passions.\n\nDemographics:\nAge: 37\nGender: Male\nEducation: High School Diploma\nProfession: Part-Time Handyman\nIncome: $25,000\n\nFinancial Situation:\nAs a part-time handyman, Alex's income falls within the $0 to $30,000 range. He carefully manages his limited resources, prioritizing necessities and finding ways to stretch his budget. While his financial situation is challenging, Alex remains resilient and optimistic, focusing on the small joys and opportunities that come his way.\n\nShopping Habits:\nAlex's shopping habits reflect his practical and resourceful approach to life. He frequents thrift stores, secondhand shops, and discount retailers, searching for quality items at affordable prices. When possible, he prefers to repair or repurpose existing items rather than purchasing new ones. Alex values functionality, durability, and sustainability in his purchases, seeking out products that will serve him well for the long term.\n\nProfessional Life:\nTo supplement his income, Alex works as a part-time handyman, utilizing his diverse skillset to assist homeowners and small businesses with various repair and maintenance tasks. He takes pride in his work and enjoys the sense of accomplishment that comes with solving problems and helping others. Alex's dedication and reliability have earned him a reputation as a trusted and reliable professional in his community.\n\nPersonal Life:\nIn his personal life, Alex is an avid outdoorsman, finding solace and fulfillment in activities such as hiking, camping, and fishing. He has a deep appreciation for nature and seeks to minimize his environmental impact. Additionally, Alex is an active volunteer at a local community center, where he mentors young adults and helps organize community events. His passion for making a difference and supporting those around him is a driving force in his life.",
+    "intent": "buy a white gold scapular.",
+    "age": 37,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

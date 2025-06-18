@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jacob\n\nBackground:\nJacob is a 42-year-old artist and freelance graphic designer struggling to make ends meet. Despite his passion for creative expression, he has faced financial difficulties throughout his career, often relying on side jobs and gig work to supplement his income.\n\nDemographics:\nAge: 42\nGender: Male\nEducation: Associate's Degree in Graphic Design\nProfession: Artist, Freelance Graphic Designer\nIncome: $18,000\n\nFinancial Situation:\nJacob's financial situation is precarious, with periods of feast and famine due to the unpredictable nature of freelance work. He is often behind on bills and has limited savings, making it challenging to plan for the future. However, he finds solace in the freedom and creative fulfillment his work provides.\n\nShopping Habits:\nJacob's shopping habits are primarily focused on finding the most affordable options to stretch his limited budget. He frequents thrift stores, online marketplaces, and discount art supply retailers to acquire the materials he needs for his projects. When possible, he will repurpose or upcycle items to reduce his spending.\n\nProfessional Life:\nAs a freelance graphic designer and artist, Jacob's professional life is characterized by a constant search for new clients and projects. He maintains a diverse portfolio, showcasing his skills in branding, web design, and commissioned artwork. While he enjoys the flexibility of his work, the unpredictable nature of his income is a constant source of stress.\n\nPersonal Style:\nJacob's personal style reflects his artistic sensibilities and laid-back personality. He often wears thrifted or vintage-inspired clothing, mixing eclectic pieces with classic staples. His wardrobe includes a mix of comfortable, versatile items that allow him to move freely and express his creativity through his appearance.",
+    "intent": "buy a Milwaukee M12 12V Cordless Jigsaw.",
+    "age": 42,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

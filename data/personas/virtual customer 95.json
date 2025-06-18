@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Chloe\n\nBackground:\nChloe is a passionate artist and freelance graphic designer. She uses her creative talents to develop visually stunning designs for various clients, ranging from small local businesses to larger organizations.\n\nDemographics:\nAge: 28\nGender: Female\nEducation: Associate's degree in Graphic Design\nProfession: Freelance Graphic Designer\nIncome: $28,000\n\nFinancial Situation:\nAs a freelancer, Chloe's income can fluctuate, but she manages her finances carefully to maintain a comfortable lifestyle. She is diligent about budgeting and saving, knowing that her income can be unpredictable at times.\n\nShopping Habits:\nChloe is a conscious consumer, seeking out ethical and sustainable brands whenever possible. She enjoys browsing local thrift stores and vintage shops for unique, one-of-a-kind items that she can incorporate into her wardrobe and home decor. When making larger purchases, Chloe takes the time to research and compare options to ensure she's getting the best value.\n\nProfessional Life:\nChloe's workdays are filled with a variety of creative projects, from designing eye-catching logos to crafting visually appealing marketing materials. She thrives on the freedom and flexibility of freelancing, allowing her to take on projects that align with her personal interests and values.\n\nPersonal Style:\nChloe's personal style reflects her artistic sensibilities. She often mixes vintage and modern elements, pairing thrifted finds with contemporary basics. Her wardrobe is a vibrant mix of colorful patterns, eclectic accessories, and comfortable, sustainable fabrics.\n\nIn her free time, Chloe enjoys exploring local art galleries, attending live music events, and immersing herself in the creative community of her city. She finds inspiration in the world around her and is constantly exploring new ways to express her unique perspective through her work.",
+    "intent": "buy a white or gray silicone sink protector to prevent scratches and protect my sink from damage.",
+    "age": 28,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

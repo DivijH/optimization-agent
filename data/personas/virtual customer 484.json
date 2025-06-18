@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a rising star in the world of finance, having recently been promoted to the position of Vice President at a prestigious investment firm. With a keen eye for market trends and a knack for strategic decision-making, he has quickly established himself as a valuable asset to his company.\n\nDemographics:\nAge: 34\nGender: Male\nEducation: Master's Degree in Finance\nProfession: Vice President, Investment Firm\nIncome: $175,000\n\nFinancial Situation:\nDavid's lucrative position as a Vice President has afforded him a comfortable and financially secure lifestyle. He actively manages his investment portfolio, diversifying his assets to ensure long-term growth and stability. David is also mindful of his future, regularly contributing to his retirement savings plan.\n\nShopping Habits:\nAs a successful professional, David values quality and craftsmanship when it comes to his purchases. He frequents high-end retailers and boutiques, carefully curating his wardrobe and personal belongings to reflect his refined taste. David also enjoys the occasional splurge on luxury items, such as a new timepiece or a premium automobile.\n\nProfessional Life:\nIn his role as Vice President, David is responsible for overseeing a team of analysts, identifying investment opportunities, and making strategic recommendations to the firm's clients. He thrives on the fast-paced, high-stakes nature of the financial industry and is constantly seeking ways to stay ahead of the curve.\n\nPersonal Style:\nDavid's personal style is a reflection of his professional success and sophisticated sensibilities. He favors well-tailored suits, designer dress shirts, and polished dress shoes, creating a visual representation of his refined and confident persona. In his off-hours, David enjoys incorporating more casual elements, such as high-quality denim and sleek, modern accessories, into his wardrobe.",
+    "intent": "buy a metal bandanna slider.",
+    "age": 34,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

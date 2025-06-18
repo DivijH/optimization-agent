@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jenna\n\nBackground:\nJenna is a driven and ambitious young professional who is rapidly making a name for herself in the tech industry. With a keen eye for innovation and a passion for problem-solving, she has quickly climbed the corporate ladder, securing a high-level position at a prominent tech startup.\n\nDemographics:\nAge: 21\nGender: Female\nEducation: Bachelor's degree in Computer Science\nProfession: Product Manager\nIncome: $120,000\n\nFinancial Situation:\nDespite her young age, Jenna has a solid financial foundation. Her impressive income as a product manager allows her to live comfortably and invest in her future. She is disciplined with her spending, allocating a significant portion of her earnings towards savings and retirement accounts.\n\nShopping Habits:\nJenna's shopping habits reflect her pragmatic and forward-thinking approach to life. She invests in high-quality, durable products that complement her active lifestyle and professional image. While she is not averse to splurging on occasional luxury items, Jenna prioritizes functionality and long-term value over fleeting trends.\n\nProfessional Life:\nAs a product manager, Jenna is responsible for overseeing the development and launch of innovative tech products. She excels at bridging the gap between engineering, design, and marketing, ensuring that the end-user experience is seamless and engaging. Jenna's analytical mind, coupled with her exceptional communication skills, make her an invaluable asset to her team.\n\nPersonal Style:\nJenna's personal style is a reflection of her professional persona - polished, modern, and efficient. She favors sleek, minimalist designs in neutral tones that can be easily mixed and matched. Jenna's wardrobe is a carefully curated collection of versatile pieces that allow her to transition effortlessly from the office to social events.",
+    "intent": "buy a child proof light switch cover.",
+    "age": 21,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

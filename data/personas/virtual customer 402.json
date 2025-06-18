@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a driven and ambitious marketing professional who has quickly climbed the corporate ladder. She is passionate about using her skills to help businesses reach their full potential and connect with their target audiences.\n\nDemographics:\nAge: 30\nGender: Female\nEducation: Bachelor's Degree in Marketing\nProfession: Marketing Manager\nIncome: $63,000\n\nFinancial Situation:\nWith a steady income as a marketing manager, Olivia is financially stable and able to live comfortably. She is mindful of her spending and saves a portion of her earnings for future investments and personal goals.\n\nShopping Habits:\nOlivia has a keen eye for quality and trends. She enjoys shopping at mid-range retail stores and online marketplaces, where she can find a balance between fashion and practicality. She invests in versatile, high-quality pieces that can be mixed and matched for both work and leisure.\n\nProfessional Life:\nOlivia is a rising star in the marketing industry. She consistently exceeds her targets and is known for her creativity, strategic thinking, and ability to lead cross-functional teams. Her colleagues admire her dedication and willingness to take on challenging projects.\n\nPersonal Style:\nOlivia's personal style reflects her professional persona - polished, modern, and sophisticated. She gravitates towards well-tailored workwear, such as structured blazers, sleek trousers, and elegant blouses. During her free time, she enjoys experimenting with trendy, but still sophisticated, casual looks.\n\nIn her personal life, Olivia is an avid traveler and fitness enthusiast. She uses her disposable income to fund her adventures and maintain a healthy lifestyle, believing that a balance between work and personal pursuits is key to her overall well-being.",
+    "intent": "buy a spider web garland.",
+    "age": 30,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

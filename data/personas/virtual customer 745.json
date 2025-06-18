@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Gillian\n\nBackground:\nGillian is a resilient and resourceful woman who has faced numerous challenges in her life, but has remained determined to improve her circumstances. After a series of setbacks, she is now focused on rebuilding her financial stability and finding fulfillment in her later years.\n\nDemographics:\nAge: 50\nGender: Female\nEducation: High School Diploma\nProfession: Part-Time Retail Associate\nIncome: $25,000\n\nFinancial Situation:\nGillian's financial situation is modest, as she earns a limited income from her part-time retail job. She has faced periods of unemployment and financial hardship in the past, which has made it difficult for her to build substantial savings. However, Gillian is diligent in her budgeting and tries to prioritize essential expenses while finding ways to stretch her limited resources.\n\nShopping Habits:\nGillian approaches shopping with a practical and frugal mindset. She is an avid bargain hunter, often scouring thrift stores, garage sales, and discount retailers for gently used or deeply discounted items. When making purchases, Gillian is selective and focused on obtaining the best value for her money, prioritizing basic necessities and practical items over luxury or non-essential goods.\n\nPersonal Life:\nGillian has faced her fair share of personal challenges, including the loss of her spouse and ongoing health concerns. Despite these obstacles, she remains resilient and finds joy in the simple pleasures of life. Gillian enjoys engaging in low-cost hobbies, such as gardening, reading, and spending time with her grandchildren. She is also an active member of her local community, volunteering at a food bank and participating in neighborhood events.\n\nPersonal Style:\nGillian's personal style reflects her practical and down-to-earth approach to life. She favors comfortable, durable clothing that is easy to care for and can be mixed and matched to create versatile outfits. Gillian's wardrobe consists mainly of casual separates, such as jeans, t-shirts, and sweaters, often in neutral or muted tones. She values functionality over high fashion and is more concerned with finding affordable, well-fitting garments that can withstand the demands of her daily life.",
+    "intent": "buy a pair of Ted Hose compression stockings.",
+    "age": 50,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

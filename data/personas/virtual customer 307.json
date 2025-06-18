@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a driven and ambitious young professional navigating the early stages of his career. With a degree in business administration, he is determined to make a meaningful impact in the corporate world.\n\nDemographics:\nAge: 21\nGender: Male\nEducation: Bachelor's Degree in Business Administration\nProfession: Junior Financial Analyst\nIncome: $45,000\n\nFinancial Situation:\nAs a recent college graduate, Ethan is still establishing his financial footing. He earns a comfortable entry-level salary, which he diligently manages to cover his living expenses, student loan payments, and contributions to his savings. While he is mindful of his spending, Ethan is not afraid to invest in experiences and opportunities that will further his professional development.\n\nShopping Habits:\nEthan's shopping habits reflect his pragmatic and goal-oriented mindset. He researches products extensively, seeking out high-quality, durable items that will serve him well in both his personal and professional life. When making larger purchases, such as electronics or furniture, Ethan compares prices and reviews to ensure he is getting the best value. He also enjoys discovering unique finds at local boutiques and secondhand stores.\n\nProfessional Life:\nAs a junior financial analyst, Ethan's role involves analyzing data, preparing reports, and contributing to strategic decision-making. He thrives in the fast-paced, collaborative environment of his workplace and is always eager to take on new challenges. Ethan is determined to prove his worth and climb the corporate ladder, with aspirations of one day managing his own team.\n\nPersonal Style:\nEthan's personal style reflects his professional aspirations and youthful energy. He favors well-fitting, contemporary menswear, such as tailored slacks, button-down shirts, and slim-cut suits. When not in his formal attire, Ethan opts for stylish, yet comfortable, casual wear, often incorporating trendy streetwear elements.\n\nIn his free time, Ethan enjoys staying active, whether it's hitting the gym, playing pickup basketball, or exploring the city's vibrant cultural scene. He is also an avid reader, constantly expanding his knowledge on topics related to finance, technology, and personal development.",
+    "intent": "buy an electric palm massage tool.",
+    "age": 21,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

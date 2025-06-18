@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Samantha\n\nBackground:\nSamantha is a driven and ambitious young woman who has quickly climbed the corporate ladder to become a successful marketing executive. With a keen understanding of consumer behavior and a knack for developing innovative campaigns, she has played a pivotal role in driving growth and revenue for the e-commerce startup she works for.\n\nDemographics:\nAge: 26\nGender: Female\nEducation: Master's Degree in Marketing\nProfession: Marketing Manager at a Successful E-Commerce Startup\nIncome: $110,000\n\nFinancial Situation:\nSamantha's impressive income as a marketing manager at the rapidly growing e-commerce startup has allowed her to achieve a comfortable and financially secure lifestyle. She is diligent about managing her finances, investing in a diverse portfolio, and planning for her long-term financial goals.\n\nShopping Habits:\nAs a marketing professional, Samantha is highly attuned to the latest trends and consumer preferences. She enjoys discovering new, cutting-edge brands and products, both for personal use and to stay informed about the competitive landscape. While she is willing to invest in high-quality, durable items, Samantha also values sustainability and often seeks out eco-friendly and ethically-sourced products.\n\nProfessional Life:\nSamantha's role as a marketing manager at the e-commerce startup is fast-paced and demanding, but she thrives under the pressure. She spearheads the development of targeted, data-driven marketing campaigns that drive customer acquisition and retention. Samantha is known for her analytical problem-solving skills, her ability to think outside the box, and her excellent leadership abilities.\n\nPersonal Style:\nSamantha's personal style reflects her professional success and her passion for design. She maintains a polished, sophisticated look, often wearing well-tailored, contemporary pieces that seamlessly transition from the office to social events. Samantha has a keen eye for detail and accessorizes her outfits with statement jewelry, sleek handbags, and high-quality footwear.",
+    "intent": "buy a toy machete",
+    "age": 26,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

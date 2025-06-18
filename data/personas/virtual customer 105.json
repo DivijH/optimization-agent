@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a seasoned financial advisor who has spent the last two decades helping individuals and families plan for their financial futures. With his extensive knowledge of investment strategies and tax planning, he is known for his ability to provide comprehensive and tailored solutions to his clients.\n\nDemographics:\nAge: 61\nGender: Male\nEducation: Master's Degree in Finance\nProfession: Financial Advisor\nIncome: $80,000\n\nFinancial Situation:\nDavid has built a comfortable financial portfolio through his own prudent investing and saving habits. He is mindful of his expenses and enjoys a stable, middle-class lifestyle.\n\nShopping Habits:\nAs a financial professional, David is cautious with his spending and values quality over quantity. He prefers to shop at reputable retailers and does extensive research before making major purchases. David is not swayed by the latest trends and instead looks for classic, durable items that will last.\n\nProfessional Life:\nDavid takes great pride in his work as a financial advisor. He is dedicated to staying up-to-date with the latest industry trends and regulations to ensure he can provide his clients with the most current and accurate guidance. His meticulous attention to detail and personalized approach have earned him a loyal client base.\n\nPersonal Style:\nDavid's personal style is conservative and professional. He typically wears well-fitting suits, dress shirts, and polished leather shoes. He prefers neutral, muted colors and avoids flashy or ostentatious fashion choices. David's appearance reflects his trustworthy and reliable persona.\n\nDavid is a frequent flyer with Delta Airlines and wakes up at 6:30 am every morning. He lives in Chicago, Illinois.",
+    "intent": "buy a high-quality football visor from a reputable brand.",
+    "age": 61,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

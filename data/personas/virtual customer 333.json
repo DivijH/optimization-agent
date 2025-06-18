@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: James\n\nBackground:\nJames is a seasoned IT professional who has dedicated his career to helping businesses streamline their technology infrastructure and improve operational efficiency. With over two decades of experience in the industry, he has developed a deep understanding of emerging technologies and how to best leverage them to drive organizational success.\n\nDemographics:\nAge: 52\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: IT Manager\nIncome: $70,000\n\nFinancial Situation:\nJames' steady income and prudent financial management have allowed him to accumulate a comfortable nest egg over the years. He is conscientious about his spending, prioritizing long-term financial security over short-term indulgences. While he enjoys the occasional splurge, such as a weekend getaway or a new piece of technology, James is primarily focused on building wealth through smart investments and responsible saving.\n\nShopping Habits:\nAs a technology enthusiast, James closely follows the latest advancements in consumer electronics and computing devices. When it comes to personal purchases, he takes the time to research products, read reviews, and ensure that he is making an informed decision. James is particularly drawn to functional, well-designed items that offer a balance of performance and value.\n\nProfessional Life:\nIn his role as IT Manager, James is responsible for overseeing the technology infrastructure and supporting the day-to-day operational needs of the organization. He works closely with the executive team to identify strategic technology initiatives that can drive business growth and improve efficiency. James is known for his problem-solving skills, attention to detail, and ability to effectively communicate technical concepts to non-technical stakeholders.\n\nPersonal Style:\nJames' personal style is a reflection of his pragmatic and professional approach to life. He favors classic, well-fitted clothing that exudes an air of sophistication and reliability. While he is not one to follow the latest fashion trends, James takes pride in maintaining a polished and put-together appearance, both in and out of the office.",
+    "intent": "buy a high-quality pumpkin carving kit with a variety of tools and templates.",
+    "age": 52,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

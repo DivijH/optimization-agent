@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a passionate artist and part-time freelance graphic designer who is navigating the challenges of building a sustainable creative career. Despite the financial uncertainties, he remains dedicated to his craft, constantly exploring new mediums and artistic expressions.\n\nDemographics:\nAge: 39\nGender: Male\nEducation: Associate's Degree in Graphic Design\nProfession: Freelance Graphic Designer\nIncome: $25,000\n\nFinancial Situation:\nAs a freelance artist, Ethan's income can be inconsistent, often fluctuating with the availability of client projects. He has learned to budget carefully, prioritizing his basic needs and finding creative ways to supplement his earnings, such as selling his artwork at local markets or participating in community art exhibitions.\n\nShopping Habits:\nEthan's shopping habits reflect his artistic sensibilities and his desire to minimize waste. He often scours thrift stores, garage sales, and online marketplaces for unique, vintage, or repurposed items that can be incorporated into his artwork or daily life. When making purchases, he is mindful of his budget and seeks out quality, long-lasting products that align with his eco-conscious values.\n\nProfessional Life:\nEthan's days are filled with a combination of client work, personal creative projects, and networking with other artists and designers. He thrives on the freedom and flexibility of his freelance lifestyle, but he also recognizes the inherent challenges, such as the need to constantly seek out new opportunities and manage his own workload.\n\nPersonal Style:\nEthan's personal style reflects his artistic sensibilities and his eclectic interests. He often combines vintage and thrifted pieces with contemporary, artfully distressed garments. His wardrobe is a canvas for self-expression, featuring bold patterns, unique textures, and unexpected color combinations. Ethan's style is a reflection of his creative spirit and his desire to stand out from the mainstream.\n\nIn his free time, Ethan enjoys exploring the local art scene, participating in community workshops, and experimenting with new artistic mediums, such as printmaking or mixed media. He finds inspiration in nature, vintage aesthetics, and the vibrant energy of the city.",
+    "intent": "buy a gothic-style cross choker necklace.",
+    "age": 39,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

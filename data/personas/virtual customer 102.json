@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a passionate freelance graphic designer who has carved out a niche for himself in the creative industry. Despite facing financial challenges, he remains committed to his craft, constantly seeking new opportunities to showcase his talent and build his portfolio.\n\nDemographics:\nAge: 38\nGender: Male\nEducation: Associate's Degree in Graphic Design\nProfession: Freelance Graphic Designer\nIncome: $25,000\n\nFinancial Situation:\nAs a freelance designer, Michael's income can be inconsistent, leading to periods of financial instability. He has learned to manage his resources carefully, living modestly and prioritizing his essential expenses. While he is not affluent, Michael is determined to find ways to grow his business and improve his financial standing.\n\nShopping Habits:\nMichael's shopping habits reflect his budget-conscious mindset. He often searches for deals and discounts, frequenting thrift stores and online marketplaces to find affordable yet high-quality art supplies and equipment. When it comes to personal purchases, he focuses on essential items and avoids unnecessary indulgences.\n\nProfessional Life:\nMichael's days are filled with a mix of client work, networking, and personal design projects. He is constantly hustling to secure new clients and maintain a steady flow of income, while also dedicating time to honing his skills and exploring new creative avenues. Despite the challenges, Michael finds immense satisfaction in the work he does and the freedom it affords him.\n\nPersonal Style:\nMichael's personal style is a balance of practicality and creativity. He tends to favor comfortable, functional clothing, such as t-shirts, jeans, and comfortable sneakers. However, he also enjoys incorporating unique, vintage, or handmade pieces that showcase his artistic sensibilities and individuality.",
+    "intent": "buy a massage lotion for sore muscles.",
+    "age": 38,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Liam\n\nBackground:\nLiam is a passionate and driven young man who has faced his fair share of adversity. Despite the challenges he has encountered, he remains determined to forge his own path and create a brighter future for himself.\n\nDemographics:\nAge: 24\nGender: Male\nEducation: High school diploma\nProfession: Aspiring Musician\nIncome: $23,000\n\nFinancial Situation:\nLiam's income falls within the range of $0 to $30,000, which presents financial constraints in his daily life. He carefully budgets his limited resources, prioritizing his artistic pursuits and basic necessities. While he may not have a high-paying job, Liam finds fulfillment in his passion for music and the creative freedom it affords him.\n\nShopping Habits:\nLiam's shopping habits are primarily focused on finding affordable and practical options that allow him to invest in the equipment and materials needed for his musical endeavors. He regularly scours thrift stores, online secondhand marketplaces, and local music shops to acquire the instruments, recording gear, and other supplies that fuel his creative process. Mindful of his budget, Liam is strategic in his purchases, seeking out discounts and sales whenever possible.\n\nProfessional Life:\nAs an aspiring musician, Liam's days are filled with a variety of tasks, from writing and rehearsing original compositions to networking with other artists and seeking out performance opportunities. His passion for music drives him to constantly hone his skills and explore new creative avenues, despite the financial challenges he faces. Liam's dedication and resilience in the face of adversity have become the hallmarks of his professional journey.\n\nPersonal Style:\nLiam's personal style reflects his artistic and individualistic nature. He favors a mix of vintage and contemporary pieces, often thrifting or repurposing items to create his own unique look. His wardrobe consists of comfortable, versatile clothing that allows him to move freely and express his creative flair, such as well-worn t-shirts, distressed denim, and eclectic accessories. Liam's style is a reflection of his unconventional mindset and his desire to forge his own path, unbound by societal expectations.",
+    "intent": "buy two fresh lobster tails for a home-cooked seafood dinner.",
+    "age": 24,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

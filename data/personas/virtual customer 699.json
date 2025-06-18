@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a resilient woman who has faced various personal and financial challenges throughout her life. Despite the ups and downs, she has remained determined to pursue her passion for the arts and find fulfillment in her creative endeavors.\n\nDemographics:\nAge: 48\nGender: Female\nEducation: High school diploma\nProfession: Part-time artist and freelance graphic designer\nIncome: $25,000\n\nFinancial Situation:\nOlivia's income as a part-time artist and freelance graphic designer is modest, often fluctuating from month to month. She has learned to navigate her limited financial resources carefully, prioritizing her essential expenses and finding creative ways to supplement her income, such as selling her artwork online and participating in local art shows.\n\nShopping Habits:\nOlivia's shopping habits are characterized by mindfulness and resourcefulness. She often shops at thrift stores, garage sales, and online marketplaces to find unique, affordable items that spark her creative inspiration. When it comes to art supplies and equipment, Olivia invests in quality materials that will last, carefully researching and comparing options to get the best value.\n\nProfessional Life:\nOlivia's professional life is a delicate balance between her artistic pursuits and her freelance design work. She takes on graphic design projects that allow her to utilize her creative skills and earn a supplementary income, while dedicating as much time as possible to her own artistic endeavors, such as painting, sculpting, and photography.\n\nPersonal Style:\nOlivia's personal style reflects her bohemian and eclectic sensibilities. She enjoys mixing and matching vintage finds, handmade pieces, and sustainable, ethically-sourced clothing. Her wardrobe is a reflection of her creative spirit, with an emphasis on comfortable, versatile pieces that can be dressed up or down depending on the occasion.\n\nIn her free time, Olivia can be found in her home studio, immersed in her latest artistic project. She draws inspiration from nature, her life experiences, and the works of fellow artists. Olivia also actively engages with the local art community, participating in workshops, art walks, and exhibitions to connect with like-minded creatives and share her unique perspective.",
+    "intent": "buy a simple, homemade birthday cake from a local bakery.",
+    "age": 48,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

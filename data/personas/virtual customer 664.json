@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Martin\n\nBackground:\nMartin is a seasoned executive with over 25 years of experience in the telecommunications industry. He has spent his career steadily climbing the corporate ladder, currently serving as the regional vice president for a leading telecommunications company.\n\nDemographics:\nAge: 57\nGender: Male\nEducation: Bachelor's degree in Business Administration\nProfession: Regional Vice President, Telecommunications Company\nIncome: $82,000\n\nFinancial Situation:\nAs a well-established executive, Martin's income falls within the $30,001 to $94,000 range. He has built a comfortable financial foundation, allowing him to enjoy a stable lifestyle while also contributing to his retirement savings and investing in various opportunities.\n\nShopping Habits:\nMartin's shopping habits reflect his professional status and experience. He values quality and durability when it comes to his purchases, often investing in high-end business attire, technology, and home furnishings. He is selective and discerning, taking the time to research and compare options to ensure he is making informed decisions.\n\nPersonal Life:\nOutside of his demanding career, Martin is an active member of his community, serving on the board of directors for a local non-profit organization that provides support services to underserved populations. He is also a passionate golfer, spending his weekends on the course with colleagues and friends.\n\nMartin's personal style is refined and polished, mirroring his professional persona. He favors well-tailored suits, crisp dress shirts, and classic accessories that exude an air of authority and success. In his free time, he enjoys reading industry-related publications and attending executive networking events to stay ahead of the curve in the ever-evolving telecommunications landscape.",
+    "intent": "buy a cordless wand vibrator.",
+    "age": 57,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

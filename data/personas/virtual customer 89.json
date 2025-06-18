@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a young, ambitious professional who recently launched his own digital marketing agency. With a keen eye for emerging trends and a strong entrepreneurial spirit, he has quickly established his company as a rising star in the competitive industry.\n\nDemographics:\nAge: 24\nGender: Male\nEducation: Bachelor's degree in Marketing\nProfession: Founder and CEO, Digital Marketing Agency\nIncome: $65,000\n\nFinancial Situation:\nAs the founder of a growing startup, Ethan's income falls within the $30,001 to $94,000 range. He is financially responsible, putting aside a portion of his earnings for investments and future business expansion. While not extravagant, he enjoys the occasional splurge on technology, fitness, and travel.\n\nShopping Habits:\nEthan has a discerning eye for quality and functionality when it comes to his shopping habits. He prioritizes practical, high-performance products that enhance his productivity and lifestyle, such as the latest laptops, smartphones, and athleisure wear. He seeks value and is willing to research and compare options to find the best deals.\n\nProfessional Life:\nRunning his own digital marketing agency, Ethan is at the forefront of the rapidly evolving industry. He is a strategic thinker, constantly exploring new marketing techniques and technologies to help his clients achieve their goals. Ethan's strong leadership skills and ability to foster a collaborative team environment have been instrumental to the agency's success.\n\nPersonal Style:\nEthan's personal style reflects his active, modern lifestyle. He favors a casual-chic aesthetic, often wearing slim-fit jeans, well-fitting t-shirts, and stylish sneakers. He also incorporates the occasional statement piece, such as a leather jacket or a bold-patterned shirt, to add a touch of personality to his look.",
+    "intent": "buy a high-quality, stainless steel collapsible colander.",
+    "age": 24,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

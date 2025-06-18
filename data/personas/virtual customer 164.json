@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a passionate environmentalist who has dedicated his life to raising awareness and promoting sustainable practices within his local community. Despite facing financial challenges, he remains steadfast in his commitment to the cause, working tirelessly to organize community events and initiatives.\n\nDemographics:\nAge: 38\nGender: Male\nEducation: Bachelor's Degree in Environmental Studies\nProfession: Environmental Activist\nIncome: $18,000\n\nFinancial Situation:\nEthan's income is primarily derived from various part-time jobs and freelance work, as well as occasional grants and donations to support his environmental activism. He lives a modest lifestyle, prioritizing his environmental efforts over material possessions. Ethan is skilled at finding ways to stretch his limited resources and rarely indulges in unnecessary spending.\n\nShopping Habits:\nEthan is a conscious consumer, focusing on purchasing eco-friendly, sustainable products whenever possible. He frequents thrift stores, local markets, and online secondhand platforms to find affordable, gently used items that align with his values. Ethan is not swayed by trends or flashy advertising, instead relying on thorough research to make informed purchasing decisions.\n\nPersonal Life:\nIn his free time, Ethan can be found organizing community cleanups, hosting educational workshops, or participating in local environmental advocacy efforts. He is an avid reader, with a deep understanding of environmental science and policy. Ethan also enjoys spending time in nature, finding solace and inspiration in the natural world.\n\nPersonal Style:\nEthan's personal style reflects his commitment to sustainability. He primarily wears comfortable, practical clothing, such as canvas pants, organic cotton t-shirts, and durable, eco-friendly footwear. He values functionality and longevity over fashion trends, and he often incorporates secondhand or upcycled items into his wardrobe. Ethan's appearance is a reflection of his environmental consciousness and his desire to lead by example.",
+    "intent": "add a Fiskars extendable tree pruner to my cart.",
+    "age": 38,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

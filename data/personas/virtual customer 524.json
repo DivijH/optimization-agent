@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jillian\n\nBackground:\nJillian is a resilient and creative individual who has faced her share of challenges throughout her life. Despite the ups and downs, she has remained determined to pursue her passion for art and community involvement.\n\nDemographics:\nAge: 52\nGender: Female\nEducation: High School Diploma\nProfession: Part-Time Retail Associate, Freelance Artist\nIncome: $25,000\n\nFinancial Situation:\nJillian's income from her part-time retail job and freelance art commissions provides her with a modest, yet sufficient, means of supporting herself. She is adept at budgeting her expenses and finding creative ways to stretch her limited resources, often relying on thrift stores, secondhand markets, and local community resources.\n\nShopping Habits:\nJillian's shopping habits are characterized by a focus on functionality, sustainability, and affordability. She takes pride in her ability to find unique, one-of-a-kind items at thrift stores and flea markets, and enjoys the thrill of the hunt. When it comes to art supplies and materials, Jillian is willing to invest in quality products that will enhance her creative process.\n\nProfessional Life:\nIn addition to her part-time retail job, Jillian pursues her passion for art through various freelance projects and local community initiatives. She is a skilled painter, working primarily with acrylics and mixed media, and often draws inspiration from the natural world and her own personal experiences. Jillian's artwork has been featured in small local galleries and community art shows, earning her a modest but dedicated following.\n\nPersonal Style:\nJillian's personal style is a reflection of her artistic sensibilities and her commitment to sustainability. Her wardrobe is a eclectic mix of vintage finds, thrifted pieces, and handmade garments that showcase her unique style and individuality. Jillian often incorporates elements of her own artwork into her clothing, such as hand-painted accessories or custom-designed t-shirts.\n\nIn her free time, Jillian can be found volunteering at a local community center, where she teaches art classes to underprivileged children. She also enjoys spending time outdoors, hiking in nearby nature preserves and finding inspiration for her next creative project.",
+    "intent": "buy a Glock 17 G5 pistol in caliber .43.",
+    "age": 52,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

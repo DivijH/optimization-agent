@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Gabrielle\n\nBackground:\nGabrielle is a young, ambitious entrepreneur who launched her own tech startup after graduating from university. She is passionate about using innovative technology to solve global challenges and empower underserved communities.\n\nDemographics:\nAge: 23\nGender: Female\nEducation: Bachelor's degree in Computer Science\nProfession: Founder and CEO of a tech startup\nIncome: $120,000\n\nFinancial Situation:\nAs the founder and CEO of a successful tech startup, Gabrielle enjoys a comfortable, high-income lifestyle. She is financially savvy, investing a portion of her earnings into her company's growth, as well as her personal retirement and investment portfolio.\n\nShopping Habits:\nGabrielle has a practical yet stylish approach to shopping. She invests in quality, long-lasting items that align with her professional and personal values. She enjoys browsing online for the latest tech gadgets and innovative products, but also supports local businesses and sustainable brands when possible.\n\nProfessional Life:\nGabrielle is a driven and visionary leader, constantly pushing the boundaries of what's possible in the tech industry. She has assembled a talented team of developers, designers, and business strategists to help bring her company's cutting-edge solutions to market. Gabrielle is actively involved in the startup ecosystem, networking, and seeking new opportunities for growth and investment.\n\nPersonal Style:\nGabrielle's personal style reflects her dynamic and forward-thinking personality. She favors modern, minimalist designs in neutral tones, often paired with statement pieces or accessories that add a touch of personal flair. Gabrielle values comfort and practicality, but she is also conscious of projecting a polished, professional image.\n\nIn her free time, Gabrielle enjoys exploring the latest technological advancements, attending industry events, and volunteering with organizations that provide coding education to underserved youth.",
+    "intent": "buy a high-quality, durable elliptical machine for home use.",
+    "age": 23,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

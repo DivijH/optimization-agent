@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a dedicated social worker who has spent the past two decades advocating for the rights and well-being of vulnerable individuals in her community. With a deep empathy and a passion for making a difference, she has found great fulfillment in her career.\n\nDemographics:\nAge: 49\nGender: Female\nEducation: Master's degree in Social Work\nProfession: Social Worker\nIncome: $48,000\n\nFinancial Situation:\nAs a social worker, Emily's income falls within the range of $30,001 to $94,000. While not a high-paying profession, she is able to maintain a comfortable lifestyle and provide for her family. Emily is mindful of her spending, prioritizing essentials and setting aside funds for unexpected expenses and professional development opportunities.\n\nShopping Habits:\nEmily is a thoughtful shopper who values quality and functionality over trends. She often shops for practical, durable items that will last. When it comes to clothing, she prefers well-made pieces that can be easily mixed and matched for a versatile wardrobe. Emily also enjoys supporting local businesses and seeks out ethical, sustainable options when possible.\n\nProfessional Life:\nEmily's days are filled with a mix of casework, advocacy, and community outreach. She works tirelessly to connect individuals and families with the resources and support they need to improve their circumstances. Emily's dedication and empathy have earned her the respect of her colleagues and the undying gratitude of her clients.\n\nPersonal Style:\nEmily's personal style reflects her practical and approachable nature. She typically wears comfortable, professional attire, such as button-down shirts, cardigans, and slacks. Her color palette tends to be muted, with pops of color that add a touch of personality. Emily values comfort and functionality, ensuring that her clothing allows her to move freely and focus on her work.",
+    "intent": "buy a high-quality slide projector for professional presentations.",
+    "age": 49,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

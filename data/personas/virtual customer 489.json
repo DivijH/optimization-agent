@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Chloe\n\nBackground:\nChloe is a vibrant, creative soul who is just starting to find her footing in the professional world. After graduating from college with a degree in art, she is currently exploring various opportunities to turn her passion for design and visual expression into a fulfilling career.\n\nDemographics:\nAge: 21\nGender: Female\nEducation: Bachelor's Degree in Art\nProfession: Freelance Graphic Designer, Barista\nIncome: $22,000\n\nFinancial Situation:\nAs a recent college graduate, Chloe's income falls within the $0 to $30,000 range. While she is financially independent, she is still learning to manage her money wisely, balancing the demands of rent, bills, and student loan payments with her creative pursuits. Chloe is diligent about budgeting and saving when possible, with the goal of one day starting her own design studio.\n\nShopping Habits:\nChloe's shopping habits reflect her youthful, eclectic style and her desire to support local, independent businesses. She enjoys browsing thrift stores, vintage shops, and online marketplaces for unique, one-of-a-kind items that allow her to express her personal flair. Chloe also tries to be mindful of the environmental and ethical impact of her purchases, looking for sustainable, ethically-sourced products when possible.\n\nProfessional Life:\nIn addition to her freelance graphic design work, Chloe supplements her income by working as a barista at a local specialty coffee shop. She finds fulfillment in both of these roles, as they allow her to utilize her creative talents while also interacting with a diverse range of people in her community. Chloe is continuously seeking out new opportunities to learn, grow, and expand her professional portfolio.\n\nPersonal Style:\nChloe's personal style is a reflection of her vibrant, artistic spirit. She gravitates towards bold, colorful prints, unique silhouettes, and vintage-inspired pieces that showcase her individuality. Chloe also enjoys experimenting with her hairstyles and makeup, often incorporating whimsical, unconventional elements to complete her look.\n\nIn her free time, Chloe can be found exploring local art galleries, attending live music events, or immersed in a sketchbook, dreaming up her next creative project.",
+    "intent": "buy vintage view master reels for kids",
+    "age": 21,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

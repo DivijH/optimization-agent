@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a driven and ambitious young professional who has rapidly climbed the corporate ladder. With a sharp intellect and a knack for strategic thinking, she has established herself as a rising star in her industry, quickly earning the respect and admiration of her peers.\n\nDemographics:\nAge: 19\nGender: Female\nEducation: Bachelor's Degree in Business Administration\nProfession: Associate Product Manager at a Tech Startup\nIncome: $110,000\n\nFinancial Situation:\nAt just 19 years old, Emily enjoys a substantial income that places her in a comfortable financial position. Her impressive salary has allowed her to establish financial independence and the ability to invest in her future, whether it's saving for long-term goals or exploring opportunities for personal and professional development.\n\nShopping Habits:\nEmily's shopping habits reflect her dynamic lifestyle and high earning potential. She is selective in her purchases, often investing in high-quality, versatile pieces that can transition seamlessly from the office to social settings. From designer handbags to the latest tech gadgets, Emily's shopping choices are a reflection of her discerning taste and desire to project a polished, successful image.\n\nProfessional Life:\nAs an associate product manager at a thriving tech startup, Emily is responsible for driving the development and launch of innovative products. She is a strategic thinker with a keen eye for market trends and customer needs, consistently delivering outstanding results that have propelled her career forward at a rapid pace.\n\nPersonal Style:\nEmily's personal style is a blend of professionalism and contemporary elegance. She favors clean-cut, tailored silhouettes, often incorporating high-end designer pieces into her wardrobe. Her attention to detail and desire to project a confident, put-together image are evident in her sartorial choices.",
+    "intent": "buy a pair of thigh high anti embolism stockings.",
+    "age": 19,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

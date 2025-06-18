@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a resilient 25-year-old woman who has faced her fair share of challenges, including financial instability and the need to support herself independently. Despite these obstacles, she remains determined to build a fulfilling life and pursue her passions.\n\nDemographics:\nAge: 25\nGender: Female\nEducation: High School Diploma\nProfession: Freelance Graphic Designer\nIncome: $25,000\n\nFinancial Situation:\nAs a freelance graphic designer, Olivia's income falls within the $0 to $30,000 range. She has learned to navigate the ups and downs of a freelance lifestyle, carefully budgeting her earnings to cover essential expenses while also saving when possible. Olivia is resourceful and often finds creative ways to supplement her income through side gigs and freelance opportunities.\n\nShopping Habits:\nOlivia is a savvy shopper, utilizing a mix of online marketplaces, thrift stores, and local shops to find affordable yet stylish options. She enjoys the thrill of the hunt and takes pride in her ability to find unique, high-quality items at bargain prices. Olivia is mindful of her spending and often researches purchases to ensure she is getting the best value for her money.\n\nPersonal Style:\nOlivia's personal style is a reflection of her artistic and independent spirit. She effortlessly blends vintage, bohemian, and contemporary elements, creating eclectic outfits that showcase her creativity and individuality. Olivia takes pleasure in mixing and matching thrifted pieces with affordable, on-trend accessories to express her unique flair.\n\nPersonal Life:\nIn her personal life, Olivia is passionate about pursuing her creative interests, such as graphic design, photography, and painting. She finds joy in these activities, which not only serve as sources of income but also provide a sense of fulfillment and self-expression. Olivia is also deeply committed to environmental and social causes, often volunteering her time and skills to support local initiatives.\n\nDespite the financial challenges she faces, Olivia remains optimistic and resilient. She believes in the power of determination and hard work, and she is constantly exploring new opportunities to grow both professionally and personally.",
+    "intent": "buy a set of elegant hair accessories inspired by ballerina styles.",
+    "age": 25,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

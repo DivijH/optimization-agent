@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a passionate and driven marketing professional who has built a successful career navigating the ever-evolving landscape of digital media and content creation. With a keen eye for trends and a knack for crafting engaging campaigns, she has become a respected leader within her industry.\n\nDemographics:\nAge: 32\nGender: Female\nEducation: Bachelor's Degree in Marketing\nProfession: Marketing Manager\nIncome: $65,000\n\nFinancial Situation:\nSarah's steady income as a marketing manager, combined with her prudent financial management, allows her to maintain a comfortable lifestyle. She is mindful of her spending, prioritizing experiences and investments that align with her personal and professional goals.\n\nShopping Habits:\nSarah's shopping habits reflect her discerning taste and desire for quality over quantity. She enjoys browsing high-end online marketplaces and boutiques, seeking out unique, premium products that complement her modern and stylish aesthetic. She is also conscious of supporting sustainable and ethical brands.\n\nProfessional Life:\nSarah's professional life is marked by her strategic mindset and adaptability. As a marketing manager, she is responsible for developing and implementing innovative digital marketing campaigns that drive customer engagement and brand growth. She thrives on the challenges of her fast-paced industry and is constantly seeking opportunities to learn and expand her skills.\n\nPersonal Style:\nSarah's personal style is a blend of sophistication and effortlessness. She gravitates towards minimalist, timeless pieces that exude confidence and elegance, often incorporating trendy elements to keep her looks fresh and on-point. Her wardrobe features a mix of high-quality basics and statement pieces that reflect her passion for fashion.\n\nIn her free time, Sarah enjoys exploring the vibrant culinary scene in her city, attending art exhibits and cultural events, and practicing yoga to maintain a balanced lifestyle. She is an avid reader and podcast listener, constantly seeking new sources of inspiration and knowledge.",
+    "intent": "buy a high-quality solar filter for my telescope.",
+    "age": 32,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

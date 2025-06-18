@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jacqueline\n\nBackground:\nJacqueline is a seasoned marketing executive who has spent over two decades honing her skills in the industry. She is currently the Vice President of Marketing at a mid-sized tech company, where she is responsible for crafting and executing strategic marketing campaigns to drive customer acquisition and brand awareness.\n\nDemographics:\nAge: 55\nGender: Female\nEducation: Bachelor's Degree in Marketing\nProfession: Vice President of Marketing\nIncome: $80,000\n\nFinancial Situation:\nJacqueline is financially comfortable, having steadily climbed the corporate ladder over the years. She is disciplined with her spending and makes sure to save for retirement while also allowing herself the occasional indulgence, such as a luxury vacation or dining at high-end restaurants.\n\nShopping Habits:\nJacqueline enjoys shopping, but she is selective and focused. She tends to prioritize quality over quantity and is willing to invest in timeless, well-made pieces that will last. She often shops at upscale department stores or specialty boutiques, where she can find unique and stylish items that reflect her sophisticated taste.\n\nProfessional Life:\nJacqueline is a driven and strategic thinker, known for her ability to lead cross-functional teams and deliver results. She is constantly staying on top of industry trends and emerging marketing technologies, always looking for ways to stay ahead of the competition. Her extensive experience and expertise make her a valuable asset to her company.\n\nPersonal Style:\nJacqueline has a classic, polished look that exudes confidence and professionalism. She favors high-quality, tailored clothing in neutral tones, such as black, gray, and navy, which she often accessorizes with statement jewelry or a bold scarf. She takes pride in her appearance and sees it as an extension of her personal brand.",
+    "intent": "buy a high-quality, 60-minute relaxing massage at an upscale spa.",
+    "age": 55,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

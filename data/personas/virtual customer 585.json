@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a passionate artist and freelance graphic designer. She has a natural talent for visual storytelling and a keen eye for aesthetics. Although she has faced financial challenges in pursuing her creative dreams, Emily remains driven and optimistic about the future.\n\nDemographics:\nAge: 27\nGender: Female\nEducation: Associate's Degree in Graphic Design\nProfession: Freelance Graphic Designer\nIncome: $22,000\n\nFinancial Situation:\nAs a freelance graphic designer, Emily's income can be inconsistent, fluctuating based on the number of projects she secures. She is careful with her spending and often has to prioritize her basic needs over luxuries. Despite the financial obstacles, Emily is dedicated to growing her design business and finding ways to be self-sufficient.\n\nShopping Habits:\nEmily's shopping habits are pragmatic and budget-conscious. She tends to look for sales, discounts, and secondhand options when making purchases. When it comes to art supplies and design software, she is willing to invest in high-quality tools that will support her work. However, for everyday items, Emily seeks out affordable and functional alternatives.\n\nProfessional Life:\nAs a freelance graphic designer, Emily's days are filled with a diverse array of tasks, from meeting with clients and pitching new projects to designing digital assets and managing her online portfolio. She thrives in the flexibility and creative freedom of her work, but she also faces the challenges of finding steady work and negotiating fair rates.\n\nPersonal Style:\nEmily's personal style reflects her artistic sensibilities and commitment to sustainability. She favors vintage and thrifted pieces, as well as comfortable, versatile clothing that allows her to move freely while working. Her wardrobe is a mix of eclectic patterns, bold colors, and utilitarian pieces that capture her unique, expressive personality.",
+    "intent": "buy a 10-inch table saw.",
+    "age": 27,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

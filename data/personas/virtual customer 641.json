@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Carter\n\nBackground:\nCarter is a 20-year-old aspiring musician who is currently navigating the early stages of his career. He is passionate about songwriting and performing, and he is determined to make his mark on the local music scene.\n\nDemographics:\nAge: 20\nGender: Male\nEducation: High school graduate\nProfession: Aspiring Musician\nIncome: $15,000\n\nFinancial Situation:\nAs a young artist starting out, Carter's income is limited, primarily consisting of occasional gig work and part-time jobs to support his musical pursuits. He is resourceful and frugal, carefully managing his finances to ensure he can invest in the equipment and materials needed to create and perform his music.\n\nShopping Habits:\nCarter is selective and budget-conscious when it comes to his shopping habits. He scours thrift stores, online marketplaces, and local music shops to find affordable, high-quality instruments and gear. When it comes to personal items, he tends to prioritize functionality and versatility, opting for versatile, durable clothing that can withstand the demands of his lifestyle.\n\nProfessional Life:\nCarter's days are filled with a combination of songwriting, rehearsing with his band, and searching for performance opportunities in the local music scene. He is constantly honing his craft, experimenting with new sounds, and networking with other aspiring artists. Carter's ultimate goal is to secure a record deal and embark on a successful music career.\n\nPersonal Style:\nCarter's personal style reflects his artistic sensibilities and his desire for comfort and practicality. He favors casual, relaxed clothing that allows him to move freely during his musical performances. His wardrobe consists of vintage t-shirts, worn-in jeans, and comfortable, well-worn sneakers. Carter's look is a blend of effortless cool and a touch of bohemian flair.\n\nCarter resides in a small, shared apartment in the heart of the city's vibrant music district, where he can easily access local venues and connect with other creatives.",
+    "intent": "buy a portable bluetooth speaker for playing music from my phone.",
+    "age": 20,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

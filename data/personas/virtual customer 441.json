@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Robert\n\nBackground:\nRobert is a seasoned executive with over two decades of experience in the financial services industry. He currently serves as the Chief Financial Officer for a prominent investment management firm, where he is known for his strategic acumen, financial expertise, and strong leadership skills.\n\nDemographics:\nAge: 51\nGender: Male\nEducation: Master's Degree in Finance\nProfession: Chief Financial Officer\nIncome: $275,000\n\nFinancial Situation:\nRobert's high-level position and extensive experience have afforded him a substantial income, allowing him to maintain a comfortable lifestyle and pursue his financial goals. He is a savvy investor, actively managing a diverse portfolio of stocks, bonds, and real estate to grow his wealth over the long term.\n\nShopping Habits:\nRobert adopts a measured and pragmatic approach to shopping, prioritizing quality and functionality over trends or impulse purchases. He is drawn to well-crafted, classic pieces that can be incorporated into his professional wardrobe and personal attire. Robert takes advantage of sales and discounts, but also invests in high-end items that he deems worthy of the cost.\n\nProfessional Life:\nAs the Chief Financial Officer, Robert is responsible for overseeing the firm's financial operations, including budgeting, forecasting, and risk management. He plays a crucial role in shaping the company's strategic direction, providing insightful analysis and recommendations to the executive team. Robert's ability to navigate complex financial landscapes and make sound decisions has earned him the respect of his colleagues and industry peers.\n\nPersonal Style:\nRobert's personal style reflects his refined and sophisticated persona. He favors well-tailored suits, crisp dress shirts, and polished leather shoes for his professional attire. In his leisure time, Robert gravitates towards classic, understated pieces that exude a timeless elegance, such as cashmere sweaters, tailored chinos, and fine leather accessories.\n\nRobert resides in a luxurious penthouse apartment in the heart of a thriving financial district, where he enjoys indulging in fine dining and cultural events. He is an avid art collector and often attends exclusive gallery openings and auction houses.",
+    "intent": "buy a bottle of KSI's Lemonade Prime drink.",
+    "age": 51,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

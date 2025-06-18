@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Phillip\n\nBackground:\nPhillip is a seasoned entrepreneur who has built a successful small business in the hospitality industry. With years of experience under his belt, he has developed a keen eye for identifying market opportunities and implementing innovative strategies to drive growth.\n\nDemographics:\nAge: 53\nGender: Male\nEducation: Bachelor's Degree in Business Administration\nProfession: Small Business Owner\nIncome: $130,000\n\nFinancial Situation:\nPhillip's small business has provided him with a comfortable, upper-middle-class income. He has accumulated substantial savings over the years and is able to invest in various assets, including real estate and stocks. While he maintains a high standard of living, Phillip is also mindful of his spending and believes in the value of prudent financial management.\n\nShopping Habits:\nPhillip enjoys shopping and taking advantage of quality products, but he is also a discerning consumer. He tends to research purchases thoroughly, seeking out the best value and longevity. When it comes to personal items, Phillip has a preference for classic, well-made pieces that will stand the test of time. He also supports local businesses and artisans when possible.\n\nProfessional Life:\nAs the owner of a successful boutique hotel, Phillip is deeply involved in all aspects of the business, from overseeing daily operations to spearheading strategic initiatives. He places a strong emphasis on providing exceptional customer service and cultivating a unique, memorable experience for his guests. Phillip's leadership and entrepreneurial spirit have been instrumental in the continued growth and success of his enterprise.\n\nPersonal Life:\nIn his free time, Phillip enjoys exploring new culinary experiences, traveling to discover unique destinations, and engaging in outdoor activities such as hiking and cycling. He is also an active member of his local community, serving on the board of a non-profit organization that supports small businesses and entrepreneurs.",
+    "intent": "buy a set of bed risers to elevate the height of Phillip's bed.",
+    "age": 53,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

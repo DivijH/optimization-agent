@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a rising star in the world of finance, having quickly climbed the corporate ladder to become a successful investment banker. His keen analytical skills, combined with a knack for strategic decision-making, have made him a valuable asset to his firm and a respected figure in the industry.\n\nDemographics:\nAge: 29\nGender: Male\nEducation: Master's Degree in Finance\nProfession: Investment Banker\nIncome: $110,000\n\nFinancial Situation:\nWith a lucrative income in the high-six-figure range, David enjoys a comfortable lifestyle. He has been prudent with his money, investing a significant portion of his earnings in a diversified portfolio to secure his long-term financial stability. While he can afford luxury goods and experiences, David maintains a balanced approach, focusing on quality over quantity.\n\nShopping Habits:\nDavid's shopping habits reflect his professional status and personal interests. He is often on the lookout for high-end, well-crafted products that not only serve their purpose but also showcase his refined taste. Whether it's a tailored suit, a premium watch, or the latest tech gadget, David takes the time to research and make informed purchasing decisions.\n\nProfessional Life:\nAs an investment banker, David's role involves analyzing financial data, identifying investment opportunities, and advising clients on complex financial strategies. He thrives in the fast-paced, dynamic environment of the finance industry, constantly seeking to stay ahead of the curve by staying abreast of market trends and industry developments.\n\nPersonal Style:\nDavid's personal style is a reflection of his professional success and sophisticated sensibilities. He favors well-fitting, classic menswear pieces, such as crisp shirts, tailored trousers, and polished leather shoes. However, he also enjoys incorporating subtle, stylish touches, like a designer timepiece or a bold-patterned tie, to add a touch of personal flair to his appearance.",
+    "intent": "buy a high-quality, stainless steel European-style can opener.",
+    "age": 29,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

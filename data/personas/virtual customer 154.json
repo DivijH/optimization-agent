@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a passionate advocate for social and environmental causes. She works as a nonprofit administrator, dedicated to driving positive change in her local community.\n\nDemographics:\nAge: 25\nGender: Female\nEducation: Bachelor's degree in Sociology\nProfession: Nonprofit Administrator\nIncome: $28,000\n\nFinancial Situation:\nAs a nonprofit employee, Sarah's income is modest, but she is resourceful in managing her finances. She lives frugally, prioritizing her values and causes over material possessions. She is skilled at finding creative ways to make the most of her limited budget.\n\nShopping Habits:\nSarah is a conscious consumer who prioritizes ethical and sustainable purchasing decisions. She seeks out secondhand stores, thrift shops, and local artisanal markets to find unique, affordable, and environmentally-friendly items. She also enjoys making her own clothes and crafts when possible.\n\nProfessional Life:\nIn her role as a nonprofit administrator, Sarah wears many hats, from fundraising and event planning to program coordination and volunteer management. She is deeply passionate about the organization's mission and works tirelessly to drive positive change in her community.\n\nPersonal Style:\nSarah's personal style reflects her eco-conscious and socially aware values. She favors comfortable, practical clothing that allows her to move freely and be active in her daily life. She often incorporates vintage and secondhand pieces, as well as locally sourced and handmade items, into her wardrobe.\n\nSarah lives in a modest apartment in a city neighborhood and relies on public transportation to get around. She is an avid cyclist and enjoys exploring the city on her bike.",
+    "intent": "buy a 12-pack of root beer soda",
+    "age": 25,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

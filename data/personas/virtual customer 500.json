@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Evelyn\n\nBackground:\nEvelyn is a driven and ambitious college student, eager to explore the world and make her mark. With a keen intellect and a passion for social justice, she is pursuing a degree in political science, aspiring to become a policymaker and champion for positive change.\n\nDemographics:\nAge: 19\nGender: Female\nEducation: Junior, Bachelor's Degree in Political Science\nProfession: Student\nIncome: $35,000 (part-time job and scholarships)\n\nFinancial Situation:\nEvelyn's financial situation is comfortable, thanks to a combination of part-time employment, scholarships, and financial support from her parents. She is mindful of her spending and actively saves a portion of her income, with the goal of funding her future education and establishing financial independence.\n\nShopping Habits:\nAs a college student, Evelyn's shopping habits reflect her practical and budget-conscious mindset. She often seeks out sales, student discounts, and secondhand stores to find affordable yet stylish clothing and essentials. Evelyn also enjoys thrifting and upcycling, finding creative ways to give new life to pre-loved items.\n\nPersonal Life:\nOutside of her studies, Evelyn is actively involved in various campus organizations and community initiatives. She volunteers regularly at a local homeless shelter, coordinates voter registration drives, and participates in political debates and discussions. Evelyn is passionate about environmental sustainability and enjoys outdoor activities like hiking and cycling. She also values her close-knit group of friends, often hosting movie nights and study sessions in her dorm.",
+    "intent": "add a massaging mattress pad to cart",
+    "age": 19,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

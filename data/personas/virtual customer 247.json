@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Lucas\n\nBackground:\nLucas is a rising star in the world of finance, having recently landed a coveted position at a prestigious investment firm. With his sharp analytical skills and strategic mindset, he is quickly making a name for himself in the industry.\n\nDemographics:\nAge: 25\nGender: Male\nEducation: Master's Degree in Finance\nProfession: Investment Analyst\nIncome: $110,000\n\nFinancial Situation:\nAs a successful young professional, Lucas enjoys a comfortable financial standing. His lucrative position at the investment firm, combined with his prudent spending habits and strategic investments, allow him to maintain a high quality of life while also building his wealth for the future.\n\nShopping Habits:\nLucas is a discerning shopper who values quality and functionality over flashy trends. He takes a thoughtful approach to his purchases, conducting thorough research to ensure he is making informed decisions. While he is willing to invest in high-end items that will stand the test of time, he also seeks out well-made, affordable alternatives that align with his personal style.\n\nProfessional Life:\nLucas is a rising star in the world of finance, having quickly established himself as a valuable asset to his employer. He is known for his analytical prowess, his ability to identify promising investment opportunities, and his exceptional communication skills. Lucas is dedicated to his work and is driven to continue climbing the corporate ladder, all while maintaining a healthy work-life balance.\n\nPersonal Style:\nLucas' personal style reflects his professional persona \u2013 polished, sophisticated, and understated. He favors classic menswear pieces, such as well-fitted suits, crisp button-down shirts, and leather dress shoes. However, he also enjoys incorporating more casual elements, like slim-fit chinos and tailored blazers, to create a versatile look that seamlessly transitions between the office and social settings.",
+    "intent": "buy a classic, gold-tone coach necklace.",
+    "age": 25,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

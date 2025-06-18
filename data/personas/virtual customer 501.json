@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ava\n\nBackground:\nAva is a dedicated and hardworking single mother who has carved out a successful career as a graphic designer. After navigating the challenges of balancing work and family responsibilities, she has found a fulfilling work-life balance that allows her to thrive in both aspects of her life.\n\nDemographics:\nAge: 42\nGender: Female\nEducation: Bachelor's Degree in Graphic Design\nProfession: Graphic Designer\nIncome: $65,000\n\nFinancial Situation:\nAs a mid-career graphic designer, Ava enjoys a comfortable income that allows her to provide for herself and her child. She is financially savvy, setting aside a portion of her earnings for her child's education and her own retirement. While she is mindful of her spending, Ava also allocates funds for occasional family vacations and activities that enrich their lives.\n\nShopping Habits:\nAva's shopping habits reflect her practical and resourceful nature. She tends to invest in high-quality, versatile items that can be mixed and matched to create a variety of outfits. Ava also enjoys scouring thrift stores and online marketplaces for unique finds that complement her artistic sensibilities. When making larger purchases, she carefully researches and compares options to ensure she is getting the best value for her money.\n\nPersonal Life:\nAva is a devoted and nurturing mother who prioritizes spending quality time with her child. After a long day at work, she enjoys engaging in creative hobbies, such as painting or photography, to unwind and recharge. Ava is also an active member of her local community, volunteering at her child's school and participating in neighborhood events.\n\nPersonal Style:\nAva's personal style can be described as a blend of practicality and creativity. She favors comfortable, yet stylish clothing that allows her to move freely and express her artistic flair. Ava's wardrobe consists of well-fitting pants, blouses, and dresses in a mix of neutral and vibrant colors. She often accessorizes with statement jewelry or scarves to add a touch of personal touch to her outfits.",
+    "intent": "buy a graphic design software for professional use.",
+    "age": 42,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

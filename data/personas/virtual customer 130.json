@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a seasoned project manager working in the renewable energy industry. With over a decade of experience, he has dedicated his career to driving sustainable solutions and supporting the transition towards a greener future.\n\nDemographics:\nAge: 41\nGender: Male\nEducation: Bachelor's degree in Engineering\nProfession: Project Manager, Renewable Energy Company\nIncome: $75,000\n\nFinancial Situation:\nDavid's stable income as a project manager allows him to maintain a comfortable lifestyle while also contributing to his retirement savings and investments. He is financially responsible and aims to strike a balance between enjoying the present and securing his long-term financial well-being.\n\nShopping Habits:\nDavid's shopping habits are practical and focused. He prioritizes quality over quantity, investing in durable, long-lasting products that align with his eco-conscious values. He enjoys researching the latest green technologies and sustainable consumer goods, often seeking out niche brands and local businesses that share his environmental ethos.\n\nProfessional Life:\nDavid is known for his meticulous planning, excellent communication skills, and ability to navigate complex projects. In his role as a project manager, he oversees the implementation of large-scale renewable energy initiatives, ensuring they are executed efficiently and with a keen eye for sustainability.\n\nPersonal Style:\nDavid's personal style reflects his active, outdoor-oriented lifestyle. He favors comfortable yet stylish clothing, often opting for versatile, performance-driven pieces that can seamlessly transition from the office to the hiking trail. David is an avid supporter of ethical and sustainable fashion, frequently purchasing from brands that prioritize environmental and social responsibility.\n\nIn his free time, David can be found exploring the great outdoors, whether hiking, cycling, or camping with his family. He is also an active volunteer in his local community, lending his expertise to environmental conservation efforts and educational programs.",
+    "intent": "buy a high-quality track saw for woodworking projects.",
+    "age": 41,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

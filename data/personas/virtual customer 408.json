@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Susan\n\nBackground:\nSusan is a seasoned marketing executive who has dedicated her career to building successful campaigns for some of the most recognizable brands in the consumer goods industry. With her strategic vision and keen understanding of consumer behavior, she has helped propel numerous products to the forefront of their respective markets.\n\nDemographics:\nAge: 55\nGender: Female\nEducation: Master's Degree in Marketing\nProfession: Vice President of Marketing\nIncome: $125,000\n\nFinancial Situation:\nWith her extensive experience and executive-level position, Susan has built a substantial net worth over the years. She is financially secure and able to enjoy a comfortable lifestyle, though she remains prudent in her spending. Susan invests a portion of her income in various financial vehicles, including real estate and a diversified stock portfolio.\n\nShopping Habits:\nSusan's shopping habits reflect her sophisticated tastes and her desire to maintain a polished, professional image. She gravitates towards high-end, timeless fashion pieces that can be easily incorporated into her wardrobe. When shopping, Susan prioritizes quality over quantity, investing in well-crafted garments and accessories that will stand the test of time.\n\nProfessional Life:\nAs the Vice President of Marketing, Susan is responsible for overseeing the development and implementation of marketing strategies for her company's product portfolio. She is a strategic thinker with a keen eye for emerging trends and consumer insights. Susan takes pride in her ability to lead her team and drive innovative campaigns that resonate with their target audience.\n\nPersonal Style:\nSusan's personal style is elegant and refined, with a touch of understated sophistication. She favors tailored blazers, well-fitted trousers, and silk blouses that project an air of confidence and authority. Off-duty, Susan enjoys more casual attire, such as well-cut dresses and chic separates, which she often accessorizes with statement jewelry or a signature designer handbag.",
+    "intent": "buy an inflatable holiday ornament for home decor.",
+    "age": 55,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

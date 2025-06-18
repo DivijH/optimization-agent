@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a mid-career professional working as a marketing manager at a technology startup in San Francisco. He is passionate about using data-driven strategies to drive growth and innovation for the company.\n\nDemographics:\nAge: 42\nGender: Male\nEducation: Bachelor's degree in Business Administration\nProfession: Marketing Manager\nIncome: $75,000\n\nFinancial Situation:\nMichael has a comfortable income that allows him to maintain a decent standard of living in the expensive San Francisco Bay Area. He is financially responsible, saving a portion of his earnings for retirement and emergencies, while also enjoying occasional leisure activities and travel.\n\nShopping Habits:\nMichael prefers to shop online for convenience, but he also enjoys the occasional trip to the mall or specialty stores to browse for new products. He tends to research items thoroughly before making a purchase, looking for quality, functionality, and value. Michael values efficiency and is not influenced by trends or impulse buys.\n\nProfessional Life:\nAs a marketing manager, Michael is responsible for developing and implementing marketing strategies to promote the startup's products and services. He collaborates closely with the product, sales, and design teams to ensure a cohesive brand experience. Michael is always looking for ways to optimize marketing campaigns and stay ahead of industry trends.\n\nPersonal Style:\nMichael has a casual, yet professional style. He often wears button-down shirts, chinos, and leather shoes to the office. On weekends, he enjoys wearing comfortable, sporty attire for outdoor activities like hiking or cycling. Michael tends to gravitate towards neutral colors and classic, versatile pieces that can be mixed and matched.",
+    "intent": "buy a large, inflatable spider decoration for halloween",
+    "age": 42,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a passionate and ambitious young woman recently graduated from college. She is driven to forge her own path and make a meaningful impact on the world around her. With a degree in environmental science, she is committed to finding a career that aligns with her values and allows her to contribute to sustainable solutions.\n\nDemographics:\nAge: 22\nGender: Female\nEducation: Bachelor's Degree in Environmental Science\nProfession: Freelance Sustainability Consultant\nIncome: $23,000\n\nFinancial Situation:\nAs a freelance sustainability consultant, Emily's income falls within the $0 to $30,000 range. She is fiscally responsible, budgeting carefully to cover her essential expenses and prioritizing investments in her professional development. While her financial situation is modest, Emily is confident in her ability to grow her income as she gains more experience and builds a diverse client base.\n\nShopping Habits:\nEmily's shopping habits reflect her commitment to sustainability and ethical consumption. She seeks out ethically-sourced, eco-friendly products and often shops at secondhand stores, thrift shops, and local artisanal markets. When making larger purchases, she thoroughly researches her options to find the most sustainable and cost-effective solutions.\n\nProfessional Life:\nEmily's days are filled with a variety of tasks as a freelance sustainability consultant. She works with clients to assess their environmental impact, develop tailored sustainability strategies, and implement practical solutions. She is passionate about her work and continuously educates herself on the latest trends, technologies, and best practices in the field of sustainability.\n\nPersonal Style:\nEmily's personal style is a reflection of her environmental values and her active, outdoor-oriented lifestyle. She favors organic, natural-fiber clothing, often pairing versatile pieces like organic cotton tops, hemp-blend trousers, and comfortable, ethically-sourced footwear. Emily accessorizes with handcrafted jewelry, recycled-material bags, and sustainable beauty products. Her overall look is casual yet intentional, emphasizing functionality and sustainability.",
+    "intent": "buy a USB dongle for wireless computer connectivity.",
+    "age": 22,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

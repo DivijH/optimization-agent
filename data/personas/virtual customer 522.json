@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Vivian\n\nBackground:\nVivian is a seasoned professional who has dedicated her career to the field of education. After teaching at the high school level for over two decades, she has recently transitioned into a administrative role, serving as the Vice Principal of a prestigious private school.\n\nDemographics:\nAge: 62\nGender: Female\nEducation: Master's Degree in Education\nProfession: Vice Principal at a Private School\nIncome: $55,000\n\nFinancial Situation:\nAs a long-time educator, Vivian's income falls within the $30,001 to $94,000 range. While she is not considered wealthy, she has managed her finances carefully, maintaining a comfortable standard of living and contributing to a modest retirement savings plan. Vivian is mindful of her spending and seeks value in her purchases.\n\nShopping Habits:\nVivian's shopping habits reflect her practical and sensible approach to life. She prioritizes functionality and quality over the latest trends, often opting for timeless, durable items that will serve her needs for years to come. When making larger purchases, such as household appliances or electronics, Vivian conducts thorough research to ensure she is getting the best value for her money.\n\nProfessional Life:\nAs the Vice Principal, Vivian plays a crucial role in shaping the academic and social environment of the school. She is responsible for overseeing curriculum development, teacher supervision, and student affairs. Vivian is known for her strong organizational skills, her ability to address complex issues, and her unwavering commitment to providing the best possible educational experience for her students.\n\nPersonal Style:\nVivian's personal style is classic and understated, reflecting her professional role and practical mindset. She favors well-made, versatile pieces, such as crisp button-down shirts, tailored slacks, and comfortable yet polished footwear. While she is not averse to the occasional stylish accessory, Vivian's primary focus is on comfort and functionality.\n\nIn her free time, Vivian enjoys engaging in intellectual pursuits, such as reading literary classics, attending local theater productions, and discussing thought-provoking topics with her colleagues and friends. She is also an avid gardener, finding solace in the tranquility of her backyard oasis.",
+    "intent": "buy a high-quality electric palm massage tool.",
+    "age": 62,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

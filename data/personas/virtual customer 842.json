@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a creative freelancer who has found fulfillment in pursuing his passions outside of traditional employment. With a diverse skill set that spans graphic design, photography, and web development, he has carved out a unique career path that allows him to work on various projects and collaborate with a wide range of clients.\n\nDemographics:\nAge: 34\nGender: Male\nEducation: Associate's Degree in Fine Arts\nProfession: Freelance Creative\nIncome: $25,000\n\nFinancial Situation:\nAs a freelance creative, David's income falls within the $0 to $30,000 range. While he may not have the financial security of a full-time job, he has learned to manage his finances carefully, prioritizing his needs and investing in the tools and resources required to maintain his creative practice. David is resourceful and finds ways to supplement his income, such as selling his artwork or offering workshops and tutorials.\n\nShopping Habits:\nDavid's shopping habits reflect his creative lifestyle and the need to stay up-to-date with the latest design trends and technologies. He is strategic in his purchases, often scouring second-hand stores, online marketplaces, and sales to find the best deals on art supplies, camera equipment, and software. When making larger investments, such as a new laptop or camera, he researches extensively to ensure he is getting the most value for his money.\n\nPersonal Life:\nIn his free time, David immerses himself in various creative pursuits, from painting and photography to exploring new design software and techniques. He is an active member of the local art community, participating in exhibitions, networking events, and collaborating with other creatives. David values the freedom and flexibility of his lifestyle, which allows him to maintain a healthy work-life balance and pursue his passions.\n\nProfessional Life:\nAs a freelance creative, David has the opportunity to work on a diverse range of projects, from branding and web design to event photography and content creation. He thrives on the challenge of finding innovative solutions to his clients' needs and takes pride in delivering high-quality work. David's adaptability, attention to detail, and commitment to customer satisfaction have earned him a loyal client base and a reputation as a reliable and talented freelancer.",
+    "intent": "buy a drink dispenser.",
+    "age": 34,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

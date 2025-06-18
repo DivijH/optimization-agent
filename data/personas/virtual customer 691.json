@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a seasoned professional who has carved out a successful career in the field of marketing. With over a decade of experience under his belt, he has developed a keen understanding of consumer behavior and a knack for crafting effective campaigns that resonate with his target audiences.\n\nDemographics:\nAge: 40\nGender: Male\nEducation: Bachelor's Degree in Marketing\nProfession: Marketing Manager\nIncome: $65,000\n\nFinancial Situation:\nAs a marketing manager, David's income falls within the $30,001 to $94,000 range. He has built a comfortable financial foundation, allowing him to maintain a decent standard of living while also contributing to his retirement savings and occasional splurges on personal passions.\n\nShopping Habits:\nDavid approaches shopping with a balance of practicality and indulgence. While he is mindful of his spending and seeks out value-driven purchases, he also allows himself to indulge in high-quality products and experiences that bring him joy. David enjoys browsing through local specialty stores, online marketplaces, and occasional trips to the mall to discover new finds.\n\nProfessional Life:\nIn his role as a marketing manager, David is responsible for developing and implementing comprehensive marketing strategies for his company's products and services. He collaborates closely with cross-functional teams, leveraging his analytical skills and creative flair to ensure the company's marketing initiatives are engaging, effective, and aligned with broader business goals.\n\nPersonal Style:\nDavid's personal style reflects his confidence and sophistication. He favors timeless, well-tailored pieces that exude a sense of effortless cool. His wardrobe is a mix of high-quality, contemporary menswear, including tailored suits, crisp button-down shirts, and stylish accessories. When off-duty, David opts for more casual yet still polished attire, such as well-fitting jeans, versatile tops, and comfortable yet stylish footwear.\n\nIn his free time, David indulges in his passion for travel, exploring new destinations and immersing himself in diverse cultures. He is also an avid reader, constantly expanding his knowledge on marketing trends, leadership, and personal development.",
+    "intent": "buy a mini dry shampoo travel size.",
+    "age": 40,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

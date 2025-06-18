@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Devin\n\nBackground:\nDevin is a successful tech entrepreneur who has founded and sold multiple startups in the past decade. He is known for his innovative thinking and ability to identify emerging market opportunities.\n\nDemographics:\nAge: 30\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Founder and CEO of a technology startup\nIncome: $120,000\n\nFinancial Situation:\nDevin's income as a tech CEO places him in a comfortable financial position. He has accumulated significant wealth from his previous business ventures and is able to invest in a diverse portfolio of assets, including real estate and venture capital.\n\nShopping Habits:\nDevin's shopping habits reflect his high-income lifestyle. He enjoys browsing luxury goods and is willing to invest in premium products that align with his personal interests and aesthetic preferences. He often shops at upscale boutiques and online luxury retailers, and he frequently indulges in the latest tech gadgets and devices.\n\nProfessional Life:\nAs the founder and CEO of a growing technology startup, Devin's days are filled with a range of responsibilities, from strategic decision-making to hands-on product development. He is a visionary leader who inspires his team and constantly seeks to push the boundaries of what is possible in the tech industry.\n\nPersonal Style:\nDevin's personal style is a blend of sophisticated and casual. He favors well-tailored suits and dress shirts for formal business meetings, but he also enjoys wearing more relaxed attire, such as designer jeans and stylish sneakers, when the occasion calls for it. He takes pride in his appearance and sees it as a reflection of his personal brand and success.",
+    "intent": "buy the new 2023 Kindle Paperwhite e-reader.",
+    "age": 30,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

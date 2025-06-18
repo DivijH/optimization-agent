@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: George\n\nBackground:\nGeorge is a seasoned entrepreneur who has built a successful small business over the past two decades. With a keen eye for opportunity and a knack for problem-solving, he has navigated the ups and downs of the business world, adapting to changing market conditions and always striving to stay ahead of the curve.\n\nDemographics:\nAge: 58\nGender: Male\nEducation: Bachelor's Degree in Business Administration\nProfession: Small Business Owner\nIncome: $65,000\n\nFinancial Situation:\nWhile not wealthy by traditional standards, George's steady income from his small business has allowed him to maintain a comfortable lifestyle and save for retirement. He is prudent with his spending, prioritizing investments in his company's growth and equipment over ostentatious purchases. George takes pride in his ability to provide for his family and ensure their financial security.\n\nShopping Habits:\nGeorge's shopping habits reflect his practical and no-nonsense approach to life. He values quality and durability over trends or flashiness, often seeking out reliable, high-performing products that will stand the test of time. When making major purchases, he thoroughly researches options and is not afraid to negotiate to get the best deal.\n\nProfessional Life:\nAs the owner of a successful small business, George's days are filled with a diverse array of responsibilities, from managing employees and overseeing operations to exploring new market opportunities and ensuring regulatory compliance. He thrives on the challenges and problem-solving required to keep his company competitive and profitable. George's leadership style is characterized by a combination of clear communication, delegation, and a willingness to roll up his sleeves and get his hands dirty when necessary.\n\nPersonal Life:\nIn his personal life, George is a devoted family man, spending quality time with his wife and two grown children. He enjoys the simple pleasures of life, such as tending to his well-manicured garden, hosting backyard barbecues, and taking annual fishing trips with his closest friends. George also volunteers his time and expertise to a local small business association, mentoring aspiring entrepreneurs and sharing the lessons he has learned over the course of his career.",
+    "intent": "add \"Lion of Judah\" urn necklace to cart",
+    "age": 58,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

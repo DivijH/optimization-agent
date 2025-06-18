@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a passionate social worker who has dedicated her career to helping underprivileged communities. She works tirelessly to connect individuals and families with the resources and support they need to improve their quality of life.\n\nDemographics:\nAge: 39\nGender: Female\nEducation: Master's Degree in Social Work\nProfession: Social Worker\nIncome: $65,000\n\nFinancial Situation:\nEmily's income, while not extravagant, allows her to live comfortably and meet her financial obligations. She is mindful of her spending and prioritizes saving for unexpected expenses and future goals. Despite her modest means, Emily finds fulfillment in her work and the positive impact she makes on the lives of her clients.\n\nShopping Habits:\nEmily's shopping habits reflect her practical and environmentally-conscious mindset. She prefers to purchase high-quality, durable items that will last, often seeking out secondhand or ethically-sourced products. When it comes to clothing, Emily values comfort and functionality over trends, building a versatile wardrobe that can be easily mixed and matched.\n\nProfessional Life:\nAs a social worker, Emily works closely with individuals and families to assess their needs and connect them with the appropriate resources and services. She is known for her empathetic approach, excellent communication skills, and tireless advocacy on behalf of her clients. Emily also volunteers with local non-profit organizations, further expanding her impact in the community.\n\nPersonal Style:\nEmily's personal style is casual and comfortable, with a focus on natural fabrics and earth-toned colors. She enjoys mixing and matching pieces from sustainable brands, often accentuating her outfits with handmade accessories or vintage finds. Her style reflects her down-to-earth personality and her commitment to living an eco-friendly lifestyle.\n\nEmily resides in a small, close-knit community in the Pacific Northwest, where she actively participates in local initiatives and enjoys spending time outdoors, hiking, and exploring the natural beauty of her surroundings.",
+    "intent": "buy a high-quality, durable electric handheld mixer.",
+    "age": 39,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

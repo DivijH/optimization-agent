@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a successful entrepreneur who has built a thriving tech startup from the ground up. With a keen eye for innovation and a relentless drive, he has navigated the challenges of the tech industry and emerged as a respected leader in his field.\n\nDemographics:\nAge: 41\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Co-Founder and CEO, Tech Startup\nIncome: $185,000\n\nFinancial Situation:\nAs the co-founder and CEO of a rapidly growing tech startup, Michael's income falls within the $94,001 to $1,000,000 range. He has amassed a substantial personal wealth, which he strategically invests in various ventures, including real estate and angel funding for promising startups.\n\nShopping Habits:\nMichael's shopping habits reflect his entrepreneurial mindset and his appreciation for quality and innovation. He seeks out the latest technology, gadgets, and high-performance equipment to keep his business and personal life running efficiently. He also has a penchant for luxury apparel, automobiles, and home furnishings, carefully curating his purchases to maintain a polished and sophisticated image.\n\nPersonal Life:\nOutside of his demanding work, Michael is an avid outdoorsman, finding solace in activities such as hiking, rock climbing, and mountain biking. He is also a passionate philanthropist, dedicating a portion of his time and resources to supporting organizations that promote STEM education and entrepreneurship within underserved communities.\n\nPersonal Style:\nMichael's personal style exudes a blend of professionalism and rugged sophistication. He favors well-tailored suits, designer dress shirts, and refined accessories for his business engagements, while also embracing more casual, performance-oriented attire for his outdoor pursuits. Michael's sartorial choices reflect his adaptability and his ability to transition seamlessly between various aspects of his multifaceted life.",
+    "intent": "buy a clear pouch for travel.",
+    "age": 41,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

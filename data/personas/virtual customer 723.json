@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Robert\n\nBackground:\nRobert is a retired engineer who has dedicated his life to innovation and problem-solving. After a successful career in the aerospace industry, he has turned his attention to more personal pursuits, using his technical expertise to tackle local community issues.\n\nDemographics:\nAge: 62\nGender: Male\nEducation: Bachelor's Degree in Mechanical Engineering\nProfession: Retired Engineer\nIncome: $65,000\n\nFinancial Situation:\nWith a comfortable retirement income and a lifetime of prudent financial planning, Robert is in a stable financial position. He is able to enjoy his golden years without major financial constraints, while also setting aside funds to support his various community initiatives.\n\nShopping Habits:\nRobert's shopping habits reflect his practical and efficient nature. He tends to invest in high-quality, long-lasting products that align with his values and needs. When making purchases, he conducts thorough research to ensure he is getting the best value and functionality for his money.\n\nPersonal Life:\nIn retirement, Robert has found a renewed sense of purpose by applying his problem-solving skills to community-based projects. He volunteers his time and expertise to local organizations, working on initiatives that address sustainable energy, urban infrastructure, and accessibility for the elderly. Robert also enjoys outdoor activities, such as hiking and gardening, and dedicates time to personal hobbies, like woodworking and amateur radio.\n\nProfessional Life:\nDuring his career, Robert was known for his innovative thinking and collaborative approach. He excelled at leading cross-functional teams and developing cutting-edge technologies for the aerospace industry. Now in retirement, Robert continues to lend his expertise to various community endeavors, sharing his knowledge and mentoring younger professionals.",
+    "intent": "buy a high-quality, cordless battery-powered skill saw for home improvement projects.",
+    "age": 62,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emma\n\nBackground:\nEmma is a young, ambitious graphic designer working at a dynamic marketing agency. With a keen eye for visual aesthetics and a passion for problem-solving, she is constantly pushing the boundaries of her craft to create innovative and captivating designs.\n\nDemographics:\nAge: 23\nGender: Female\nEducation: Bachelor's degree in Graphic Design\nProfession: Graphic Designer\nIncome: $52,000\n\nFinancial Situation:\nAs a recent college graduate, Emma is still establishing her financial footing, but her steady income as a graphic designer allows her to live comfortably and save for the future. She is mindful of her spending, prioritizing experiences and investments over material possessions.\n\nShopping Habits:\nEmma's shopping habits reflect her creative and eco-conscious mindset. She enjoys browsing local boutiques and independent designers, often seeking unique and sustainable products that align with her personal values. When making larger purchases, she meticulously researches options to ensure she is making informed decisions.\n\nProfessional Life:\nEmma thrives in the dynamic and collaborative environment of her marketing agency. She relishes the opportunity to work on a diverse range of projects, from branding and web design to social media campaigns. Her innovative approach and adaptability have made her a valuable asset to the team.\n\nPersonal Style:\nEmma's personal style is a blend of modern minimalism and bohemian flair. She gravitates towards clean lines, neutral tones, and natural fabrics, often accenting her outfits with statement pieces that showcase her creative sensibilities. Emma's style is a reflection of her desire to express her individuality while maintaining a polished and professional appearance.\n\nIn her free time, Emma indulges in her artistic hobbies, such as painting and photography. She is an avid reader and enjoys exploring the local art scene in her city. Emma's zest for life and her commitment to personal growth make her a dynamic and inspiring individual.",
+    "intent": "buy a pack of hydroxyapatite dental floss.",
+    "age": 23,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

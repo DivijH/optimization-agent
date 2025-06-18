@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Alex\n\nBackground:\nAlex is a passionate young artist who is currently pursuing his creative dreams while working part-time jobs to make ends meet. Despite the financial challenges, he remains determined to hone his craft and eventually make a living through his art.\n\nDemographics:\nAge: 19\nGender: Male\nEducation: High School Diploma\nProfession: Artist (part-time jobs for income)\nIncome: $18,000\n\nFinancial Situation:\nAs a young artist, Alex's income is limited, but he has learned to live frugally and prioritize his artistic pursuits. He relies on a combination of part-time jobs, small commissions, and occasional financial support from his family to cover his basic expenses, leaving little room for luxuries.\n\nShopping Habits:\nAlex is mindful and selective when it comes to shopping. He frequents secondhand stores, thrift shops, and online marketplaces in search of affordable, unique items that align with his artistic sensibilities. When making purchases, he focuses on quality over quantity, investing in durable and versatile pieces that can be incorporated into his creative projects.\n\nPersonal Life:\nIn his free time, Alex dedicates himself to his artistic passions, experimenting with various mediums such as painting, sketching, and photography. He finds inspiration in the world around him, often exploring his local community and seeking out new experiences. Alex values his close-knit group of artist friends, who provide emotional support and creative collaboration.\n\nProfessional Life:\nAs an aspiring artist, Alex is driven and determined to hone his skills and establish himself in the local art scene. He spends his evenings and weekends creating new works, attending art exhibitions, and networking with other creatives. Despite the financial challenges, Alex remains optimistic and believes that his dedication and passion will eventually lead to success.",
+    "intent": "buy a backdrop frame for art displays.",
+    "age": 19,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

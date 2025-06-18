@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a passionate and driven college student, balancing her studies with a part-time job to support herself. Despite the challenges of juggling work and academics, she is determined to pave her own path and make the most of her university experience.\n\nDemographics:\nAge: 21\nGender: Female\nEducation: Junior, Bachelor's Degree\nProfession: Part-time Retail Associate\nIncome: $25,000\n\nFinancial Situation:\nAs a college student, Olivia's income is limited to her part-time job earnings, which she carefully manages to cover her basic living expenses and tuition. While she doesn't have significant savings or investments, Olivia is mindful of her spending and aims to maintain a healthy financial balance.\n\nShopping Habits:\nOlivia's shopping habits are guided by her limited budget and desire to find affordable, yet stylish options. She frequents thrift stores, online marketplaces, and fast-fashion retailers to update her wardrobe and indulge in the occasional treat. Olivia is always on the lookout for sales, discounts, and opportunities to stretch her dollars further.\n\nProfessional Life:\nOlivia works part-time as a retail associate, where she gains valuable customer service experience and earns a steady income to support her studies. Despite the demanding schedule, she remains committed to her academic pursuits, maintaining a strong GPA and actively participating in campus organizations.\n\nPersonal Style:\nOlivia's personal style reflects her eclectic taste and creative flair. She effortlessly mixes and matches pieces from various sources, often incorporating vintage or thrifted items with trendy fast-fashion finds. Olivia's style is a blend of comfort and self-expression, as she seeks to showcase her individuality through her clothing choices.\n\nIn her free time, Olivia enjoys exploring local thrift stores, attending campus events, and spending quality time with her close-knit group of friends. She is an avid reader, often immersing herself in novels that provide a welcome respite from her hectic schedule.",
+    "intent": "buy a 4-inch fillet knife.",
+    "age": 21,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

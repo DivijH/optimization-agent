@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a dynamic and ambitious 29-year-old woman who has carved out a successful career in the field of digital marketing. With a keen understanding of consumer behavior and a knack for strategic planning, she has rapidly climbed the corporate ladder, becoming a sought-after leader in her industry.\n\nDemographics:\nAge: 29\nGender: Female\nEducation: Master's Degree in Digital Marketing\nProfession: Digital Marketing Director\nIncome: $115,000\n\nFinancial Situation:\nEmily's substantial income as a digital marketing director allows her to live comfortably and pursue her personal and professional goals with financial security. She carefully manages her finances, balancing investments, savings, and occasional luxury purchases that align with her values and lifestyle.\n\nShopping Habits:\nEmily approaches shopping with a discerning eye, seeking out high-quality, innovative products that enhance her personal and professional life. She is drawn to brands that prioritize sustainability, ethical practices, and cutting-edge design. While Emily is willing to invest in premium items, she also takes advantage of sales and promotions to maximize her purchasing power.\n\nProfessional Life:\nEmily's role as a digital marketing director is a true passion, as she thrives on the constantly evolving landscape of digital media and consumer engagement. She is known for her strategic vision, data-driven decision-making, and the ability to inspire and empower her team. Emily is a respected leader within her organization, consistently delivering exceptional results and driving the company's digital transformation.\n\nPersonal Style:\nEmily's personal style is a reflection of her dynamic and sophisticated personality. She favors sleek, tailored silhouettes and high-end designer pieces that seamlessly blend fashion and function. Whether it's a well-cut blazer, a statement accessory, or a subtle touch of color, Emily's wardrobe emanates a sense of confidence and effortless elegance.",
+    "intent": "buy a bluey-themed keepy uppy balloon toy for a 5-year-old child.",
+    "age": 29,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Constance\n\nBackground:\nConstance is a vibrant and experienced professional who has carved out a successful second career after retiring from her previous corporate role. With a wealth of knowledge and a keen eye for detail, she now runs a thriving small business as an interior design consultant, helping clients create beautiful and functional living spaces.\n\nDemographics:\nAge: 62\nGender: Female\nEducation: Bachelor's Degree in Art History\nProfession: Interior Design Consultant\nIncome: $55,000\n\nFinancial Situation:\nConstance's income as an interior design consultant falls within the $30,001 to $94,000 range. She has cultivated a strong financial foundation over the course of her career, allowing her to enjoy a comfortable lifestyle while also contributing to her retirement savings and pursuing her entrepreneurial ventures.\n\nShopping Habits:\nConstance's shopping habits reflect her refined aesthetic and appreciation for quality craftsmanship. She frequents high-end design showrooms, antique stores, and specialty boutiques in search of unique and timeless pieces that can elevate her clients' spaces. While she is selective in her purchases, Constance also enjoys the occasional splurge on statement home decor items that inspire her and align with her design vision.\n\nProfessional Life:\nAs an interior design consultant, Constance leverages her extensive experience and creative flair to transform her clients' living and working environments. She takes a collaborative approach, working closely with her clients to understand their needs, preferences, and lifestyle, and then crafting customized design solutions that seamlessly blend form and function. Constance's attention to detail, problem-solving skills, and ability to stay current with industry trends have earned her a reputation as a trusted and sought-after design professional.\n\nPersonal Life:\nOutside of her thriving design business, Constance is an active member of her local community. She volunteers regularly at a nonprofit organization that provides arts education to underprivileged youth, sharing her passion for creativity and design. In her leisure time, Constance enjoys attending art exhibitions, taking cooking classes, and exploring new restaurants and cafes with her close-knit group of friends.",
+    "intent": "add john grisham movies dvd to cart",
+    "age": 62,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

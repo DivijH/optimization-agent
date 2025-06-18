@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a passionate high school history teacher who is dedicated to inspiring his students' interest in the past and its relevance to the present.\n\nDemographics:\nAge: 44\nGender: Male\nEducation: Master's degree in History Education\nProfession: High School History Teacher\nIncome: $55,000\n\nFinancial Situation:\nAs a public sector employee, Michael's income falls within the middle range, allowing him a comfortable but not extravagant lifestyle. He is mindful of his spending and maintains a balanced budget, prioritizing saving for retirement and occasional travel opportunities.\n\nShopping Habits:\nMichael tends to be a practical and thoughtful shopper. He values quality over quantity and often researches purchases to ensure he is getting the best value. He enjoys browsing secondhand shops and thrift stores for unique finds that can be repurposed or incorporated into his wardrobe.\n\nProfessional Life:\nMichael's love for history and passion for education fuel his dedication to his teaching career. He continuously seeks ways to engage his students, incorporating interactive lessons, field trips, and collaborative projects into his curriculum. His colleagues admire his enthusiasm and innovative teaching methods.\n\nPersonal Style:\nMichael's personal style reflects his scholarly and approachable personality. He typically wears button-down shirts, sweaters, and well-fitted slacks, often accessorized with a tweed jacket or a bowtie. He values comfort and practicality in his everyday attire, but he also enjoys adding a touch of personality through unique vintage or locally-sourced pieces.\n\nIn his free time, Michael enjoys exploring local museums, attending community theater performances, and hiking in the nearby state parks. He is also an avid reader, often immersing himself in historical biographies and classic literature.",
+    "intent": "buy a set of fillable glass containers for storing and organizing items in the kitchen or home office.",
+    "age": 44,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

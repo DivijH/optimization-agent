@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a rising star in the non-profit sector, using her skills and passion to drive positive change in her community. With a deep commitment to social justice and environmental sustainability, she has dedicated her career to making a tangible difference in the lives of those around her.\n\nDemographics:\nAge: 23\nGender: Female\nEducation: Bachelor's degree in Environmental Studies\nProfession: Program Coordinator at a non-profit organization\nIncome: $45,000\n\nFinancial Situation:\nEmily's income as a program coordinator allows her to live comfortably, though she is mindful of her spending and prioritizes saving for the future. She is disciplined with her budgeting, allocating funds towards rent, student loan payments, and occasional travel opportunities.\n\nShopping Habits:\nEmily's shopping habits reflect her values and lifestyle. She prefers to buy from ethical, sustainable brands and seeks out second-hand or thrifted items whenever possible. When making purchases, she carefully considers the impact on the environment and local community.\n\nProfessional Life:\nIn her role as a program coordinator, Emily works tirelessly to implement impactful initiatives that address pressing social and environmental issues. She collaborates with a diverse team of passionate individuals, leveraging their collective expertise to drive meaningful change.\n\nPersonal Style:\nEmily's personal style is a reflection of her eco-conscious and socially aware mindset. She gravitates towards comfortable, versatile clothing that is both practical and stylish. Her wardrobe consists of organic cotton basics, recycled denim, and ethically sourced accessories. She takes pride in expressing her values through her sartorial choices.\n\nIn her free time, Emily volunteers at a local community garden, engages in outdoor activities like hiking and cycling, and actively participates in social and political advocacy campaigns that align with her beliefs.",
+    "intent": "buy a pair of Jobst zipper compression socks for women.",
+    "age": 23,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

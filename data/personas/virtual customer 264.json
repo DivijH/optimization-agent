@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jasmine\n\nBackground:\nJasmine is a dedicated and compassionate social worker who has committed her career to making a positive impact in her local community. Despite facing financial challenges, she remains driven to support those in need and advocate for greater social services and resources.\n\nDemographics:\nAge: 37\nGender: Female\nEducation: Bachelor's Degree in Social Work\nProfession: Social Worker\nIncome: $28,000\n\nFinancial Situation:\nJasmine's income as a social worker falls within the $0 to $30,000 range, which can pose financial constraints. She carefully budgets her earnings to cover essential living expenses, such as rent, utilities, and transportation. While her income is modest, Jasmine is resourceful and finds ways to stretch her dollars, often seeking out discounts, coupons, and opportunities to save.\n\nShopping Habits:\nJasmine's shopping habits reflect her practical and budget-conscious approach to life. She tends to prioritize functional and durable items over luxury or trendy purchases. When shopping, Jasmine often seeks out secondhand stores, thrift shops, and sales to find affordable options that meet her needs. She is mindful of her spending and avoids impulse purchases, focusing instead on essential items and occasional treats.\n\nProfessional Life:\nAs a social worker, Jasmine's days are filled with a variety of tasks, from meeting with clients and advocating for their needs to coordinating with community organizations and government agencies. She is deeply passionate about her work and finds great fulfillment in advocating for marginalized individuals and families. Jasmine's empathetic nature and problem-solving skills make her an invaluable asset to the social services team.\n\nPersonal Life:\nOutside of her professional duties, Jasmine is an active volunteer in her community. She devotes her free time to various non-profit organizations, lending her time and skills to initiatives that support the well-being of her local residents. Jasmine also enjoys spending quality time with her close-knit family, finding joy in simple pleasures like cooking shared meals and engaging in outdoor activities.",
+    "intent": "buy a durable, high-quality ashtray for men.",
+    "age": 37,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

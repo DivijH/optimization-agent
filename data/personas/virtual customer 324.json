@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a dedicated mid-level manager at a technology company, where he has honed his skills in project management and team leadership. With a keen eye for detail and a passion for problem-solving, he has become an invaluable asset to his organization.\n\nDemographics:\nAge: 43\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Project Manager, Technology Company\nIncome: $67,000\n\nFinancial Situation:\nDavid's steady income and disciplined approach to budgeting have allowed him to maintain a comfortable lifestyle. While he is not extravagant in his spending, he enjoys the occasional indulgence, such as treating himself to a new technology gadget or a weekend getaway.\n\nShopping Habits:\nDavid's shopping habits are practical and well-researched. He takes the time to compare options and seek out the best value, whether he's purchasing new work attire or upgrading his home entertainment system. He also tries to support local businesses and sustainable brands whenever possible.\n\nProfessional Life:\nIn his role as a project manager, David is responsible for overseeing the development and implementation of complex technology solutions. He excels at coordinating cross-functional teams, managing timelines, and ensuring the successful delivery of projects. David's strong communication skills and ability to navigate challenging situations have made him a respected leader within his organization.\n\nPersonal Style:\nDavid's personal style reflects his professional persona \u2013 neat, polished, and understated. He favors well-fitting business casual attire, often pairing crisp button-down shirts with chino pants or dark-wash jeans. He takes pride in his appearance and ensures his wardrobe is a seamless extension of his professional identity.\n\nIn his free time, David enjoys a variety of hobbies, including hiking, photography, and tinkering with the latest tech gadgets. He is also an avid reader, with a particular interest in non-fiction works on technology, business, and personal development.",
+    "intent": "buy a halloween driveway arch decoration.",
+    "age": 43,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

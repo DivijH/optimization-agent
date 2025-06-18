@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: James\n\nBackground:\nJames is a successful entrepreneur and angel investor based in San Francisco. He has founded several tech startups over the past two decades, leading to a lucrative career in the venture capital industry. James is known for his keen eye for identifying promising technologies and innovative business models.\n\nDemographics:\nAge: 44\nGender: Male\nEducation: Bachelor's degree in Computer Science\nProfession: Entrepreneur, Angel Investor\nIncome: $150,000\n\nFinancial Situation:\nJames has amassed significant wealth through his entrepreneurial ventures and investments. He maintains a comfortable lifestyle, with a focus on diversifying his assets and exploring new financial opportunities.\n\nShopping Habits:\nJames enjoys browsing for the latest gadgets, cutting-edge technology, and premium lifestyle products. He often shops online for convenience and to stay ahead of the curve. However, he is also selective and discerning, seeking high-quality items that align with his personal preferences and business interests.\n\nProfessional Life:\nJames divides his time between managing his investment portfolio, mentoring young entrepreneurs, and exploring new business ideas. He is constantly on the lookout for innovative technologies and promising startups to support. His vast network and industry expertise make him a valuable asset in the tech community.\n\nPersonal Style:\nJames has a refined, yet contemporary personal style. He favors well-tailored suits, high-end casual wear, and premium accessories. He takes pride in his appearance and believes that a polished look reflects his professionalism and success.",
+    "intent": "buy three 3-foot water bags.",
+    "age": 44,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

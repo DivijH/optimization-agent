@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a driven and ambitious 21-year-old who recently graduated from college with a degree in business administration. She is eager to apply her skills and knowledge in the corporate world, and has landed a promising entry-level position at a marketing agency.\n\nDemographics:\nAge: 21\nGender: Female\nEducation: Bachelor's Degree in Business Administration\nProfession: Marketing Coordinator\nIncome: $45,000\n\nFinancial Situation:\nWith her new job, Emily has a comfortable income that allows her to live independently and save for the future. She is financially responsible, budgeting her money wisely and making strategic investments.\n\nShopping Habits:\nEmily enjoys shopping, but she is selective in her purchases. She tends to invest in high-quality, versatile pieces that she can mix and match to create a variety of outfits. She regularly visits both online and brick-and-mortar stores to find the best deals on clothing, accessories, and home goods.\n\nProfessional Life:\nIn her role as a marketing coordinator, Emily is responsible for developing and implementing marketing campaigns for the agency's clients. She thrives in a fast-paced, collaborative environment and is constantly looking for ways to contribute to the team's success.\n\nPersonal Style:\nEmily's personal style is polished and professional, with a touch of modern flair. She enjoys wearing well-fitted blazers, blouses, and trousers, as well as stylish dresses and skirts. She also has a penchant for statement accessories, such as bold jewelry and designer handbags.",
+    "intent": "buy a stylish, modern watch.",
+    "age": 21,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

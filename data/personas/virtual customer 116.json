@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a 45-year-old marketing manager at a growing tech startup. She has a passion for innovative solutions and enjoys the fast-paced, collaborative environment of the tech industry.\n\nDemographics:\nAge: 45\nGender: Female\nEducation: Bachelor's degree in Marketing\nProfession: Marketing Manager\nIncome: $67,000\n\nFinancial Situation:\nWith a steady income as a marketing manager, Emily is able to maintain a comfortable financial situation. She is a diligent saver, contributing regularly to her retirement account and emergency fund. While she enjoys the occasional splurge, she is generally fiscally responsible.\n\nShopping Habits:\nEmily's shopping habits reflect her combination of practicality and style. She enjoys browsing online and in-person stores for the latest tech gadgets, trendy fashion items, and high-quality home goods. She seeks out deals and sales but is also willing to invest in products that she perceives as valuable and long-lasting.\n\nProfessional Life:\nAs a marketing manager, Emily is responsible for developing and executing integrated marketing strategies to promote the startup's innovative products. She collaborates closely with the product team, data analysts, and the executive leadership to ensure the company's marketing campaigns are effective and aligned with the overall business objectives.\n\nPersonal Style:\nEmily's personal style is a mix of casual and chic. She often opts for stylish, yet comfortable outfits that reflect her active lifestyle and creative sensibilities. She enjoys experimenting with the latest fashion trends but also has a few go-to staple pieces that she can rely on for everyday wear.",
+    "intent": "buy an h-wave therapy machine.",
+    "age": 45,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

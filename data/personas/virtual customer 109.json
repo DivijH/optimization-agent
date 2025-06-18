@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a seasoned technology entrepreneur who has built and sold multiple successful startups. With a keen eye for emerging trends and a passion for innovation, he is now focusing his efforts on investing in and mentoring the next generation of tech pioneers.\n\nDemographics:\nAge: 50\nGender: Male\nEducation: Master's Degree in Computer Science\nProfession: Angel Investor and Startup Advisor\nIncome: $165,000\n\nFinancial Situation:\nMichael's past business ventures and savvy investments have placed him in a comfortable financial position, with an income that falls within the $94,001 to $1,000,000 range. He carefully manages his portfolio, diversifying his assets to ensure long-term financial stability.\n\nShopping Habits:\nAs a successful entrepreneur, Michael values quality over quantity when it comes to his personal purchases. He gravitates towards high-end, durable products that reflect his sophisticated style. While he is not afraid to splurge on items that bring him joy, he also believes in the importance of giving back and regularly donates to various philanthropic causes.\n\nProfessional Life:\nMichael's days are filled with a mix of activities, from evaluating promising startup pitches to providing strategic advice to the founders of the companies he has invested in. He takes pride in mentoring young entrepreneurs, sharing his wealth of knowledge and experience to help them navigate the challenges of building a successful business.\n\nPersonal Style:\nMichael's personal style is elegant and understated, with a preference for well-tailored suits and classic accessories. He values comfort and functionality, but always maintains a polished appearance that commands respect. Michael's attention to detail and appreciation for craftsmanship are evident in his wardrobe choices.",
+    "intent": "buy a 2lb bag of coarse grain salt.",
+    "age": 50,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

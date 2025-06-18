@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jared\n\nBackground:\nJared is a passionate and driven young man who is navigating the early stages of his professional journey. With a keen interest in sustainability and a strong desire to make a positive impact, he is exploring various opportunities to align his work with his values.\n\nDemographics:\nAge: 22\nGender: Male\nEducation: Bachelor's degree in Environmental Science\nProfession: Freelance sustainability consultant\nIncome: $20,000\n\nFinancial Situation:\nAs a freelancer, Jared's income can be variable, but he has learned to manage his finances carefully. He lives a simple lifestyle, prioritizing experiences and sustainable purchases over material possessions. Jared is mindful of his spending and actively seeks out ways to save, such as by cooking at home and using public transportation.\n\nShopping Habits:\nJared is a conscious consumer who prioritizes ethical and environmentally-friendly brands. He frequents local thrift stores, secondhand shops, and online platforms that specialize in sustainable fashion and products. When making larger purchases, he thoroughly researches options to ensure he is supporting businesses aligned with his values.\n\nPersonal Life:\nIn his personal life, Jared is actively involved in local environmental organizations and volunteer initiatives. He finds joy in outdoor activities, such as hiking and cycling, and enjoys attending community events that promote sustainability and social consciousness. Jared values building meaningful connections with like-minded individuals and is always eager to learn from others.\n\nProfessional Aspirations:\nJared's ultimate goal is to establish a career that allows him to contribute to the fight against climate change and environmental degradation. He is currently working as a freelance sustainability consultant, providing guidance and solutions to individuals and businesses interested in adopting more eco-friendly practices. Jared is continuously exploring opportunities to expand his skillset and make a tangible difference in his community.",
+    "intent": "buy a mam powder for hair.",
+    "age": 22,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

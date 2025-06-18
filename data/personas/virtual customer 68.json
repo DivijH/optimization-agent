@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a seasoned marketing executive with over two decades of experience in the consumer goods industry. He is a strategic thinker who has a proven track record of driving brand growth and innovation.\n\nDemographics:\nAge: 54\nGender: Male\nEducation: Master's degree in Business Administration\nProfession: Marketing Executive\nIncome: $72,000\n\nFinancial Situation:\nMichael has a comfortable financial situation, with a stable income and modest savings. He is prudent with his spending and aims to maintain a balanced lifestyle, allocating funds towards both necessary expenses and occasional leisure activities.\n\nShopping Habits:\nMichael has a practical approach to shopping, focusing on quality, functionality, and value. He prefers to invest in timeless, well-made items that will last, rather than chasing the latest trends. He enjoys browsing both online and in-store, taking the time to research and compare products before making a purchase.\n\nProfessional Life:\nAs a senior marketing executive, Michael is responsible for developing and implementing strategic marketing plans for his company's portfolio of products. He collaborates closely with cross-functional teams, including product development, sales, and finance, to ensure his campaigns align with the broader business objectives.\n\nPersonal Style:\nMichael's personal style reflects his professional persona \u2013 polished and understated. He favors classic menswear pieces, such as tailored suits, dress shirts, and leather dress shoes. He also enjoys casual attire, often opting for well-fitted, high-quality casual wear for weekends and off-work activities.\n\nMichael is a frequent flyer with United Airlines and typically wakes up at 6 AM to start his day. He resides in Chicago.",
+    "intent": "buy an air conditioner with built-in UV lights for mold prevention.",
+    "age": 54,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

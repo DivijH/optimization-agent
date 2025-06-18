@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Elise\n\nBackground:\nElise is a recent college graduate who is currently exploring different career paths while working part-time jobs to make ends meet. She is passionate about social justice and environmental sustainability, and is dedicated to finding a career that aligns with her values.\n\nDemographics:\nAge: 26\nGender: Female\nEducation: Bachelor's degree in Environmental Studies\nProfession: Part-time retail worker, freelance writer\nIncome: $23,000\n\nFinancial Situation:\nAs a young professional navigating the job market, Elise's income is modest, but she is adept at budgeting and living within her means. She is conscious of her spending and looks for ways to save, such as cooking at home and taking advantage of student discounts.\n\nShopping Habits:\nElise is a conscious consumer who prioritizes ethical and sustainable brands. She is drawn to secondhand stores, thrift shops, and online marketplaces where she can find unique, high-quality items at affordable prices. Elise also enjoys DIY projects and repurposing items to reduce waste.\n\nPersonal Life:\nIn her free time, Elise is actively involved in local environmental advocacy groups, where she helps organize community cleanups, educational workshops, and activism campaigns. She is passionate about raising awareness and inspiring others to adopt more eco-friendly lifestyles.\n\nElise is an avid reader and nature enthusiast. She enjoys hiking, camping, and exploring the great outdoors. She finds solace in these activities and uses them as a way to recharge and reconnect with her values.",
+    "intent": "buy the complete series DVD set of Victorious.",
+    "age": 26,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

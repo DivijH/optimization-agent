@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a young, ambitious individual who is navigating the early stages of his career. Despite facing financial challenges, he remains optimistic and determined to build a better future for himself.\n\nDemographics:\nAge: 25\nGender: Male\nEducation: High School Diploma\nProfession: Part-Time Retail Associate\nIncome: $22,000\n\nFinancial Situation:\nEthan's income as a part-time retail associate falls within the $0 to $30,000 range, requiring him to carefully manage his limited budget. He is diligent in prioritizing his essential expenses, such as rent, utilities, and groceries. Although money is tight, Ethan is committed to saving what he can and exploring ways to increase his earning potential.\n\nShopping Habits:\nEthan's shopping habits are primarily driven by necessity and affordability. He frequents discount stores, thrift shops, and online marketplaces to find the best deals on clothing, household items, and other necessities. Whenever possible, Ethan looks for opportunities to stretch his budget, such as taking advantage of sales, using coupons, or seeking out secondhand goods.\n\nProfessional Life:\nIn his part-time role as a retail associate, Ethan provides friendly customer service and assists with various store operations. While the work is not his ultimate career goal, he sees it as a stepping stone to build experience and financial stability. Ethan is actively exploring other job opportunities and educational programs that could help him advance his professional aspirations.\n\nPersonal Life:\nOutside of work, Ethan enjoys engaging in low-cost hobbies and activities that provide him with a sense of fulfillment. He volunteers at a local community center, where he helps with various youth programs and outreach initiatives. Ethan also values spending time with his close-knit group of friends, often organizing budget-friendly gatherings and sharing meals.",
+    "intent": "buy a set of glass baking pans.",
+    "age": 25,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

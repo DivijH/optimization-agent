@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a successful small business owner who has built a thriving online boutique. With a keen eye for design and a passion for supporting local artisans, she has carved out a unique niche in the competitive world of e-commerce.\n\nDemographics:\nAge: 32\nGender: Female\nEducation: Bachelor's Degree in Fashion Design\nProfession: Small Business Owner\nIncome: $125,000\n\nFinancial Situation:\nEmily's business has been steadily growing, allowing her to enjoy a comfortable lifestyle. She is financially savvy, reinvesting a portion of her profits back into the company while also setting aside funds for personal savings and investments.\n\nShopping Habits:\nAs the owner of a boutique, Emily has a deep appreciation for high-quality, artisanal products. She enjoys discovering and curating unique items from independent designers and makers, both for her business and her personal wardrobe. Emily is selective in her purchases, seeking out pieces that align with her brand's aesthetic and her own personal style.\n\nProfessional Life:\nRunning her online boutique is Emily's primary focus, and she takes great pride in the curation and presentation of her offerings. She works closely with a small team to manage all aspects of the business, from product sourcing and website management to marketing and customer service. Emily is constantly on the lookout for new trends and market opportunities to help her business grow.\n\nPersonal Style:\nEmily's personal style reflects her love for fashion and design. She has a refined, minimalist aesthetic, favoring clean lines, neutral tones, and natural fabrics. Her wardrobe is a blend of classic pieces and more avant-garde, statement-making items that showcase her creativity and individuality.\n\nIn her free time, Emily enjoys exploring new art galleries, attending design conferences, and supporting local artisan markets. She is committed to sustainable and ethical fashion practices, both in her business and her personal life.",
+    "intent": "buy a pair of wide calf compression socks.",
+    "age": 32,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a dedicated IT manager who has spent the past two decades honing his technical skills and leading his team to success. With a deep understanding of the ever-evolving digital landscape, he takes great pride in ensuring his organization's technology infrastructure is secure and efficient.\n\nDemographics:\nAge: 54\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: IT Manager\nIncome: $72,000\n\nFinancial Situation:\nAs an IT manager, Michael's income falls within the range of $30,001 to $94,000. He has a comfortable lifestyle, with a steady paycheck and the ability to save for his future. While not extravagant, Michael is able to provide for his family and enjoy his hobbies without financial strain.\n\nShopping Habits:\nMichael is a practical shopper who values quality and functionality over trends. He thoroughly researches products before making purchases, comparing features and reviews to ensure he is getting the best value. When possible, Michael prefers to shop at specialty tech stores or online marketplaces to find the latest gadgets and software.\n\nProfessional Life:\nMichael's role as an IT manager involves overseeing a team of technicians, coordinating system upgrades, and troubleshooting complex issues. He is a natural problem-solver, constantly seeking innovative solutions to improve his organization's technological capabilities. Michael takes great pride in his ability to optimize workflows and enhance productivity through the strategic implementation of new technology.\n\nPersonal Style:\nMichael's personal style is a reflection of his professional demeanor \u2013 neat, organized, and practical. He typically wears button-down shirts, slacks, and dress shoes, maintaining a polished appearance that commands respect in the workplace. While not overly fashion-conscious, Michael understands the importance of projecting a professional image.",
+    "intent": "buy a chucky's bride inflatable.",
+    "age": 54,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

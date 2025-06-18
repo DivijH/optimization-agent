@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Nathan\n\nBackground:\nNathan is a driven and ambitious young man, eager to forge his own path in the world. With a passion for technology and a knack for innovation, he has set his sights on turning his entrepreneurial dreams into reality.\n\nDemographics:\nAge: 19\nGender: Male\nEducation: Associate's Degree in Computer Science\nProfession: Freelance Software Developer\nIncome: $45,000\n\nFinancial Situation:\nAs a freelance software developer, Nathan's income falls within the $30,001 to $94,000 range. He is financially responsible, setting aside a portion of his earnings to invest in his start-up ideas and build a solid financial foundation for the future.\n\nShopping Habits:\nNathan's shopping habits reflect his tech-savvy and practical nature. He is an informed consumer, researching products thoroughly before making purchases and seeking out the best value for his money. While he is not afraid to splurge on the latest gadgets and tools that will enhance his work, he also maintains a disciplined approach to his spending.\n\nProfessional Life:\nNathan's professional life is a whirlwind of activity, as he juggles multiple freelance projects and works tirelessly to develop his own start-up concept. He thrives on the challenge of problem-solving, constantly seeking new ways to leverage technology to create innovative solutions. Nathan's entrepreneurial spirit and strong work ethic have earned him a reputation as a rising star in the tech industry.\n\nPersonal Life:\nIn his personal life, Nathan is an avid learner, constantly seeking out new skills and knowledge to expand his capabilities. He is an active member of local technology meetup groups, where he can network with like-minded individuals and stay up-to-date on the latest industry trends. When he's not immersed in his work, Nathan enjoys outdoor activities, such as hiking and mountain biking, as a way to recharge and find balance in his life.",
+    "intent": "buy a micro turbine generator.",
+    "age": 19,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

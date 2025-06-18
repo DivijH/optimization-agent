@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Mia\n\nBackground:\nMia is a passionate advocate for social justice and environmental conservation. After years of working in the non-profit sector, she has recently decided to focus her efforts on community outreach and grassroots organizing.\n\nDemographics:\nAge: 49\nGender: Female\nEducation: High school diploma\nProfession: Community Organizer\nIncome: $25,000\n\nFinancial Situation:\nMia's income falls within the lower range, as she has prioritized her commitment to social and environmental causes over higher-earning opportunities. She is resourceful and adept at finding creative ways to stretch her budget, often relying on second-hand goods, DIY projects, and community-based sharing initiatives.\n\nShopping Habits:\nMia approaches shopping with a keen eye for ethical and sustainable options. She prefers to support local businesses, thrift stores, and initiatives that align with her values. When making purchases, Mia considers the environmental and social impact of her choices, prioritizing products that are eco-friendly, fair-trade, or manufactured using ethical labor practices.\n\nProfessional Life:\nAs a community organizer, Mia dedicates her time and energy to mobilizing grassroots movements that address pressing social and environmental issues. She is skilled at networking, event planning, and facilitating workshops that empower individuals to take action. Mia's work often involves collaborating with diverse stakeholders, including non-profit organizations, community leaders, and government agencies.\n\nPersonal Style:\nMia's personal style reflects her down-to-earth and environmentally-conscious approach to life. She often wears comfortable, practical clothing that allows her to move freely during her community outreach activities. Mia favors natural fabrics, vintage pieces, and secondhand items that have been given new life. She accessorizes with handmade jewelry, recycled materials, and bold, statement pieces that capture her personal flair.\n\nIn her free time, Mia enjoys spending time in nature, volunteering at local urban farms, and attending community events that promote sustainability and social justice. She is an avid reader and a passionate public speaker, using her platform to inspire and empower others to create positive change.",
+    "intent": "buy a sensory bin for educational and developmental activities.",
+    "age": 49,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

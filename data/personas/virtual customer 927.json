@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Nate\n\nBackground:\nNate is a 23-year-old man who is navigating the challenges of transitioning from college to the workforce. Despite facing financial difficulties, he remains optimistic and driven to find his path to success.\n\nDemographics:\nAge: 23\nGender: Male\nEducation: Bachelor's degree\nProfession: Freelance Graphic Designer\nIncome: $22,000\n\nFinancial Situation:\nAs a recent college graduate, Nate's income is currently limited to the sporadic freelance design work he secures. He lives frugally, often relying on gig economy jobs and the occasional support from his parents to cover his basic expenses. Nate is committed to building a sustainable career in the creative industry, but he is also realistic about the challenges he faces in establishing financial stability.\n\nShopping Habits:\nNate's shopping habits are heavily influenced by his limited budget. He frequents thrift stores, discount retailers, and online marketplaces to find affordable, high-quality items. When making purchases, he prioritizes functionality and versatility over the latest trends. Nate is also an avid user of coupon apps and money-saving strategies to maximize his purchasing power.\n\nProfessional Life:\nNate's passion for design and visual storytelling drives his pursuit of a career in the creative field. He has a strong portfolio showcasing his skills in graphic design, web design, and photography. While he continues to build his freelance clientele, Nate is also actively networking, attending industry events, and exploring entry-level positions at design agencies and startups.\n\nPersonal Style:\nNate's personal style reflects his practical and budget-conscious approach to life. He favors comfortable, casual clothing that allows him to move freely and express his creative sensibilities. He often mixes thrifted or secondhand items with well-made essentials, creating a unique and eclectic look that aligns with his artistic interests.\n\nIn his free time, Nate enjoys exploring the local art scene, experimenting with new design software, and engaging in outdoor activities like hiking and photography. He remains optimistic about his future and is committed to finding ways to turn his passion for design into a sustainable career.",
+    "intent": "add lotus energy concentrate to cart",
+    "age": 23,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

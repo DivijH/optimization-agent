@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Mia\n\nBackground:\nMia is a passionate artist and freelance graphic designer who has chosen to prioritize her creative pursuits over a traditional career path. With a keen eye for design and a unique artistic vision, she has carved out a niche for herself in the competitive world of freelance work.\n\nDemographics:\nAge: 36\nGender: Female\nEducation: Associate's Degree in Graphic Design\nProfession: Freelance Graphic Designer\nIncome: $24,000\n\nFinancial Situation:\nAs a freelance artist, Mia's income can be variable and unpredictable at times. She has learned to live frugally, budgeting her earnings carefully to cover her basic living expenses while also setting aside funds for art supplies and professional development. Despite the financial challenges, Mia is committed to her passion and finds great fulfillment in her work.\n\nShopping Habits:\nMia is a mindful shopper, focusing on quality over quantity. She frequents secondhand stores, thrift shops, and online marketplaces to find unique, affordable items that align with her artistic sensibilities. When making larger purchases, Mia is diligent in her research, seeking out sustainable and ethically-produced products whenever possible.\n\nProfessional Life:\nMia's primary focus is on her freelance graphic design work, which allows her to collaborate with a diverse range of clients on a wide array of projects. She takes great pride in her ability to bring her clients' visions to life, often incorporating her own artistic flair and unique design aesthetic. In her free time, Mia also explores personal creative projects, such as painting, illustration, and experimental digital art.\n\nPersonal Style:\nMia's personal style reflects her artistic sensibilities and her commitment to sustainability. She has a fondness for vintage and upcycled clothing, often repurposing thrifted items into one-of-a-kind outfits. Her wardrobe is a blend of eclectic, bohemian pieces and more minimalist, classic silhouettes that showcase her creative flair.\n\nIn her free time, Mia enjoys exploring local art galleries, attending community art events, and finding inspiration in the natural world. Her passion for design and her dedication to her craft fuel her drive to continuously grow and evolve as an artist.",
+    "intent": "buy a KODS leaf blower.",
+    "age": 36,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

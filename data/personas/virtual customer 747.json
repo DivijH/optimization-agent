@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a seasoned marketing professional who has spent the past two decades building her career in the dynamic and ever-evolving field of advertising. With a keen understanding of consumer behavior and a talent for crafting impactful campaigns, she has helped numerous brands establish a strong presence in the marketplace.\n\nDemographics:\nAge: 50\nGender: Female\nEducation: Bachelor's degree in Marketing\nProfession: Marketing Director\nIncome: $80,000\n\nFinancial Situation:\nAs a marketing director, Sarah's income falls within the mid-range, providing her with a comfortable and stable financial situation. She has been diligent in her savings and investment strategies, ensuring a secure financial future for herself and her family.\n\nShopping Habits:\nSarah approaches shopping with a discerning eye, balancing her personal style with practical considerations. She enjoys discovering unique and high-quality items that complement her professional wardrobe, often seeking out boutique stores and online retailers that offer a curated selection. However, she is also mindful of her budget and seeks to find the right balance between quality and value.\n\nProfessional Life:\nSarah's professional life is marked by her exceptional leadership and strategic thinking. She has a deep understanding of the marketing landscape and is adept at identifying emerging trends and opportunities. As a director, she is responsible for guiding her team, developing innovative campaigns, and ensuring the success of her client's marketing initiatives.\n\nPersonal Style:\nSarah's personal style reflects her sophisticated and polished persona. She favors classic silhouettes and neutral color palettes, often incorporating designer pieces and timeless accessories to create a look that exudes confidence and refinement. Her wardrobe is a harmonious blend of comfortable yet chic pieces that seamlessly transition from the office to after-work events.\n\nIn her free time, Sarah enjoys indulging in her passion for travel, exploring new destinations and immersing herself in diverse cultural experiences. She also finds solace in the serenity of her garden, where she can unwind and recharge after a busy workweek.",
+    "intent": "buy a large, high-quality projector screen suitable for home theater or office use.",
+    "age": 50,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

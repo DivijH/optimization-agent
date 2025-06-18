@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a passionate environmentalist and sustainability consultant. He has dedicated his career to helping businesses and organizations implement eco-friendly practices and reduce their carbon footprint. With a deep understanding of the latest green technologies and a knack for creative problem-solving, Michael is a driving force in the push for a more sustainable future.\n\nDemographics:\nAge: 30\nGender: Male\nEducation: Master's Degree in Environmental Science\nProfession: Sustainability Consultant\nIncome: $60,000\n\nFinancial Situation:\nWhile not a high-earner, Michael is financially responsible and lives within his means. He is disciplined about budgeting and saving, with the goal of eventually purchasing a home and investing in renewable energy projects. Michael is also mindful of his spending and seeks out affordable, eco-conscious alternatives when making purchases.\n\nShopping Habits:\nAs a sustainability advocate, Michael is a conscious consumer who prioritizes ethical and environmentally-friendly products. He frequents local farmers markets, thrift stores, and sustainable retail outlets in search of high-quality, durable goods that align with his values. Michael is also an avid online shopper, relying on reviews and certifications to guide his purchasing decisions.\n\nHobbies and Interests:\nIn his free time, Michael can be found exploring the great outdoors, whether it's hiking, cycling, or kayaking. He is an active member of several environmental organizations and volunteers regularly, participating in beach cleanups, tree-planting initiatives, and community garden projects. Michael also enjoys reading about the latest advancements in renewable energy and sustainability research.\n\nPersonal Style:\nMichael's personal style reflects his commitment to sustainability and his active lifestyle. He favors comfortable, practical clothing that is easy to move in, such as organic cotton t-shirts, recycled polyester pants, and sturdy hiking boots. Michael also enjoys incorporating sustainable accessories, like a bamboo-framed backpack or a reusable water bottle, into his everyday ensemble.",
+    "intent": "buy a nose ring made from sustainable materials.",
+    "age": 30,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

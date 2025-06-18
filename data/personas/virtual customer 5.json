@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a software engineer at a mid-sized technology company. He has a passion for developing innovative solutions that improve people's lives. With over 15 years of experience in the industry, Michael is known for his technical expertise and ability to lead cross-functional teams.\n\nDemographics:\nAge: 40\nGender: Male\nEducation: Bachelor's degree in Computer Science\nProfession: Software Engineer\nIncome: $75,000\n\nFinancial Situation:\nMichael earns a comfortable income that allows him to cover his living expenses and save for the future. He is financially responsible, maintaining a balanced budget and investing in retirement accounts.\n\nShopping Habits:\nMichael tends to be a pragmatic shopper, focusing on quality and functionality over flashiness. He researches products thoroughly before making purchases and often waits for sales or discounts to get the best value. He prefers online shopping for its convenience but also enjoys the occasional in-store experience.\n\nProfessional Life:\nAs a senior software engineer, Michael is respected by his colleagues for his technical expertise and problem-solving skills. He takes on challenging projects and mentors junior members of the team. Outside of work, he stays up-to-date with the latest industry trends and attends professional events to network and expand his knowledge.\n\nPersonal Style:\nMichael's personal style reflects his practical nature. He favors comfortable, versatile clothing that he can wear both in the office and during his leisure activities. He typically gravitates towards neutral tones and classic silhouettes, with the occasional splash of color or a stylish accessory.\nMichael is an avid hiker and enjoys exploring the outdoors on the weekends. He is also a fan of Spotify and listens to a wide range of music genres.\nMichael lives in Seattle.",
+    "intent": "buy a glow berry prime product.",
+    "age": 40,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

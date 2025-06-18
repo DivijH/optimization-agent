@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Julia\n\nBackground:\nJulia is a seasoned professional who has built an impressive career as a management consultant. With her sharp analytical skills and keen strategic vision, she has navigated the complexities of the corporate world, helping a diverse range of clients achieve their business objectives.\n\nDemographics:\nAge: 58\nGender: Female\nEducation: Master's Degree in Business Administration\nProfession: Management Consultant\nIncome: $145,000\n\nFinancial Situation:\nAs a successful management consultant, Julia's income falls within the range of $94,001 to $1,000,000. She has accumulated substantial savings and investments over the course of her career, allowing her to live comfortably and enjoy a certain level of financial independence.\n\nShopping Habits:\nJulia approaches shopping with a discerning eye, seeking out high-quality, timeless pieces that complement her professional image. She frequents upscale department stores and boutiques, investing in well-crafted suits, elegant dresses, and sophisticated accessories that convey her refined taste and expertise.\n\nProfessional Life:\nJulia's career as a management consultant is the cornerstone of her professional identity. She is known for her ability to analyze complex business challenges, develop innovative strategies, and guide her clients through transformative change. Her expertise and track record of success have earned her the respect of her peers and the loyalty of her clients.\n\nPersonal Style:\nJulia's personal style exudes confidence and authority. She favors structured, tailored silhouettes, such as pencil skirts, tailored blazers, and sleek sheath dresses. She accessorizes with statement jewelry, designer handbags, and high-quality leather shoes, creating a polished and sophisticated look that reflects her professional stature.\n\nIn her personal life, Julia enjoys pursuing a range of cultural and intellectual activities, such as attending art exhibitions, engaging in book discussions, and exploring new restaurants in her local community. She values work-life balance and makes time for self-care, whether it's practicing yoga or planning annual trips to explore new destinations.",
+    "intent": "buy a high-quality bello2 office accessory.",
+    "age": 58,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

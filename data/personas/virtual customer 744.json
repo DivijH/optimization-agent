@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Chloe\n\nBackground:\nChloe is a driven and creative individual who has forged a successful career in the marketing industry. With a keen eye for trends and a knack for crafting compelling campaigns, she has risen through the ranks to become a respected marketing strategist at a leading advertising agency.\n\nDemographics:\nAge: 35\nGender: Female\nEducation: Bachelor's Degree in Marketing\nProfession: Marketing Strategist\nIncome: $55,000\n\nFinancial Situation:\nChloe's steady income as a marketing strategist allows her to maintain a comfortable lifestyle, with the ability to save for both short-term and long-term financial goals. She is mindful of her spending and strives to strike a balance between enjoying the fruits of her labor and building a secure financial future.\n\nShopping Habits:\nChloe's shopping habits reflect her creative sensibilities and her desire to stay on top of the latest trends. She enjoys exploring both high-street and independent fashion retailers, seeking out unique pieces that complement her personal style. While she is selective in her purchases, Chloe is not afraid to invest in quality items that she knows will stand the test of time.\n\nPersonal Style:\nChloe's personal style is a blend of contemporary chic and artistic flair. She gravitates towards fashion-forward ensembles that showcase her trendy yet sophisticated aesthetic, often incorporating bold colors, playful prints, and statement accessories. Chloe's wardrobe serves as an extension of her creative personality, allowing her to express her individuality both in and out of the workplace.\n\nLeisure Pursuits:\nIn her free time, Chloe indulges in her passions for art, music, and cultural exploration. She can often be found visiting local galleries, attending live performances, or immersing herself in the vibrant culinary scene of her city. Chloe values experiences over material possessions and is always on the lookout for opportunities to expand her horizons and cultivate new creative inspirations.",
+    "intent": "buy a pair of knee high compression support stockings for women, with 8-15 mmHg compression, in Chloe's preferred size and color.",
+    "age": 35,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

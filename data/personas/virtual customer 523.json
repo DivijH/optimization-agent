@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Robert\n\nBackground:\nRobert is a retired public sector worker who has dedicated his life to serving his community. After spending over three decades in various government roles, he now enjoys the freedom of retirement, focusing his energy on volunteer work and exploring his lifelong passions.\n\nDemographics:\nAge: 64\nGender: Male\nEducation: Bachelor's Degree in Public Administration\nProfession: Retired Government Employee, Volunteer\nIncome: $52,000\n\nFinancial Situation:\nRobert's retirement income, combined with his prudent financial management over the years, allows him to live comfortably while still having the flexibility to pursue his volunteer work and personal interests. He is financially secure, with a mix of pension, savings, and investments that provide a steady stream of income.\n\nShopping Habits:\nRobert's shopping habits reflect his practical and down-to-earth approach to life. He values quality and durability over trendiness, often seeking out reliable, well-made products that will stand the test of time. When making larger purchases, Robert is diligent in his research, comparing options and seeking out the best value for his money.\n\nPersonal Life:\nIn his retirement, Robert has embraced a more relaxed and fulfilling lifestyle. He enjoys spending time with his grandchildren, sharing his knowledge and experiences with the younger generation. An avid gardener, Robert takes great pride in cultivating a lush and vibrant outdoor space at his home, where he can find solace and connect with nature.\n\nCommunity Involvement:\nGiving back to the community is a driving force in Robert's life. He volunteers regularly at a local food bank, where he utilizes his organizational skills and attention to detail to ensure smooth operations. Robert also serves on the board of a non-profit organization that provides affordable housing solutions, using his expertise in public administration to guide the organization's strategic initiatives.",
+    "intent": "buy a realistic-looking halloween fake hand.",
+    "age": 64,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

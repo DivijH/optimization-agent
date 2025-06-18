@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a young, ambitious individual who is navigating the complexities of finding his path in life. Despite facing financial challenges, he remains determined to explore his varied interests and discover his true passion.\n\nDemographics:\nAge: 21\nGender: Male\nEducation: High School Diploma\nProfession: Freelance Graphic Designer\nIncome: $25,000\n\nFinancial Situation:\nAs a freelance graphic designer, Ethan's income fluctuates, often falling within the $0 to $30,000 range. He has learned to budget carefully, prioritizing his essential expenses while seeking creative ways to supplement his income, such as taking on odd jobs or participating in online gig work.\n\nShopping Habits:\nEthan's shopping habits reflect his desire to find unique and affordable items that align with his evolving personal style. He enjoys browsing online marketplaces, local thrift stores, and secondhand shops, where he can discover one-of-a-kind pieces that inspire his creative endeavors. Ethan is also mindful of supporting small, independent businesses when making purchases.\n\nProfessional Life:\nEthan's professional life is characterized by a constant search for creative fulfillment and opportunities to showcase his graphic design skills. He takes on a variety of freelance projects, from designing logos and branding materials to creating digital illustrations and layouts. Ethan is actively building his portfolio, networking within the design community, and exploring ways to turn his passion into a sustainable career.\n\nPersonal Style:\nEthan's personal style is a reflection of his youthful energy and eclectic interests. He enjoys experimenting with different fashion trends, blending vintage finds with contemporary elements to create a distinctive look. His wardrobe is a canvas for self-expression, featuring bold colors, playful patterns, and unexpected accessories that showcase his creative flair.",
+    "intent": "buy a sound butyo speaker",
+    "age": 21,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

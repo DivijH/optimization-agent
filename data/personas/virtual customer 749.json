@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a passionate environmental advocate who has dedicated her career to promoting sustainable practices and raising awareness about climate change. She works as a program manager for a non-profit organization focused on renewable energy initiatives.\n\nDemographics:\nAge: 39\nGender: Female\nEducation: Master's degree in Environmental Science\nProfession: Program Manager\nIncome: $58,000\n\nFinancial Situation:\nEmily's income as a program manager allows her to maintain a comfortable, yet modest, lifestyle. She is careful with her spending, prioritizing experiences and investments that align with her values over material possessions. Emily allocates a significant portion of her income towards savings and ethical investments that support environmental causes.\n\nShopping Habits:\nEmily is a conscious consumer, taking the time to research and evaluate her purchases based on their environmental impact and ethical production. She frequents local thrift stores, sustainable clothing brands, and zero-waste grocery shops to minimize her carbon footprint. When making larger purchases, Emily seeks out energy-efficient appliances and eco-friendly home goods.\n\nPersonal Life:\nIn her free time, Emily is an active member of her local community, volunteering at community gardens, organizing beach cleanups, and participating in environmental advocacy events. She enjoys spending time outdoors, hiking, and exploring the natural wonders of her region. Emily is also an avid reader, with a particular interest in books on environmental science, sustainable living, and social justice.\n\nProfessional Life:\nAs a program manager for a non-profit focused on renewable energy, Emily plays a crucial role in coordinating educational outreach, fundraising initiatives, and community engagement programs. Her passion for environmental conservation and her strong organizational skills have made her an invaluable asset to the organization. Emily is constantly seeking new ways to amplify her impact and inspire others to adopt more sustainable practices.",
+    "intent": "buy a sustainable, energy-efficient toaster with a removable crumb tray for easy cleaning.",
+    "age": 39,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

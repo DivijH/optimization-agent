@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a dedicated and hardworking professional who has carved out a successful career as a software engineer. With a deep passion for technology and a constant drive to stay ahead of the curve, he has become a valuable asset to the engineering team at a leading tech company.\n\nDemographics:\nAge: 46\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Senior Software Engineer\nIncome: $78,000\n\nFinancial Situation:\nAs a senior software engineer, Michael's income falls within the $30,001 to $94,000 range. He has built a strong financial foundation over the years, balancing prudent savings and strategic investments with the occasional indulgence. Michael is cautious with his spending, prioritizing financial stability and the ability to support his family.\n\nShopping Habits:\nMichael's shopping habits reflect his practical and efficient nature. He tends to gravitate towards technology, gadgets, and household items that offer functionality, reliability, and value. While he appreciates quality, Michael is not swayed by the latest trends or high-end brands. He often researches products extensively before making purchases, ensuring that he is getting the best bang for his buck.\n\nProfessional Life:\nIn his role as a senior software engineer, Michael is responsible for leading the development of complex software systems and mentoring junior members of the engineering team. He is known for his technical expertise, problem-solving skills, and ability to collaborate effectively with cross-functional teams. Michael's dedication to continuous learning and his adaptability to emerging technologies have earned him the respect of his colleagues and the trust of his clients.\n\nPersonal Interests:\nOutside of work, Michael is an avid outdoor enthusiast. He enjoys hiking, camping, and exploring the natural wonders of the Pacific Northwest. In his free time, he also indulges in his love for tinkering and building projects, often working on home improvement tasks or experimenting with new technologies. Michael values work-life balance and makes time for family activities, such as coaching his son's Little League baseball team and attending his daughter's dance recitals.",
+    "intent": "buy the iphone 11 with wireless charging capabilities.",
+    "age": 46,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

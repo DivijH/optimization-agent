@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Robert\n\nBackground:\nRobert is a successful entrepreneur who has built a thriving technology company over the past 20 years. With a keen business acumen and a passion for innovation, he has led his company to the forefront of the industry, constantly exploring new opportunities and pushing the boundaries of what's possible.\n\nDemographics:\nAge: 48\nGender: Male\nEducation: Bachelor's degree in Computer Science\nProfession: Entrepreneur, CEO of a technology company\nIncome: $250,000\n\nFinancial Situation:\nRobert's substantial income from his business ventures allows him to live comfortably and invest in various financial instruments. He is financially savvy and aims to grow his wealth through strategic investments and smart financial planning.\n\nShopping Habits:\nRobert appreciates quality and is willing to pay a premium for products and services that align with his high standards. He enjoys browsing through luxury stores and online marketplaces, but he also values efficiency and convenience. Robert often relies on recommendations from his network and industry experts to guide his purchasing decisions.\n\nProfessional Life:\nAs the CEO of a thriving technology company, Robert spends a significant amount of time overseeing operations, strategizing for the future, and networking with industry leaders. He is constantly seeking new opportunities to expand his business and stay ahead of the competition.\n\nPersonal Style:\nRobert's personal style reflects his success and professional status. He favors well-tailored suits, designer shirts, and polished leather shoes. He also enjoys the occasional casual look, opting for high-end athleisure wear when the occasion calls for it. Robert values quality over quantity and is willing to invest in pieces that will last.",
+    "intent": "buy a premium, high-quality stand-up aerial photography rig.",
+    "age": 48,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

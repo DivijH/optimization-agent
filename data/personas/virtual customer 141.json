@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a 46-year-old man who has faced a series of challenges in his life, leading him to rely on various social assistance programs to make ends meet. Despite his financial struggles, he maintains a positive outlook and is dedicated to finding purpose and fulfillment through his hobbies and community involvement.\n\nDemographics:\nAge: 46\nGender: Male\nEducation: High School Diploma\nProfession: Unemployed\nIncome: $18,000 (from social assistance and part-time work)\n\nFinancial Situation:\nDavid's income primarily comes from government assistance programs and occasional part-time work. He lives modestly, focusing on covering his basic needs and occasionally treating himself to small recreational expenses. Budgeting is a constant concern, but he has developed strategies to make the most of his limited resources.\n\nShopping Habits:\nDavid is a conscientious shopper who prioritizes value and necessity over impulse purchases. He often visits thrift stores, discount retailers, and online marketplaces to find affordable items that meet his needs. When making larger purchases, he extensively researches to ensure he is getting the best deal possible.\n\nProfessional Life:\nDue to a series of setbacks, including health issues and job losses, David currently finds himself unemployed. He is actively seeking work but has faced challenges in the job market. In the meantime, he volunteers at a local community center, drawing satisfaction from his ability to contribute and connect with others.\n\nPersonal Style:\nDavid's personal style reflects his practical and down-to-earth nature. He favors comfortable, durable clothing that can withstand the wear and tear of his daily activities. His wardrobe consists of well-worn jeans, t-shirts, and sturdy shoes. He takes pride in his appearance but is not driven by the latest trends or flashy fashions.",
+    "intent": "buy a handheld massager for skin care purposes.",
+    "age": 46,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

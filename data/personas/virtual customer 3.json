@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Natalie\n\nBackground:\nNatalie is an accomplished entrepreneur who founded a successful technology startup in the finance industry. With a keen eye for innovation and a drive to solve complex problems, she has led her company to rapid growth and expansion, making it a leader in the field.\n\nDemographics:\nAge: 33\nGender: Female\nEducation: Bachelor's degree in Computer Science\nProfession: Founder and CEO of a technology startup\nIncome: $450,000\n\nFinancial Situation:\nNatalie's income from her thriving startup allows her to live comfortably and invest in both her business and personal endeavors. She is financially savvy and makes strategic decisions to ensure the long-term success of her company.\n\nShopping Habits:\nAs a busy executive, Natalie values efficiency and convenience when it comes to shopping. She prefers to shop online for most of her needs, taking advantage of the vast selection and time-saving benefits. However, she also enjoys the occasional in-person shopping experience, seeking out unique and high-quality items that reflect her personal style.\n\nProfessional Life:\nNatalie's days are filled with a range of responsibilities, from overseeing the day-to-day operations of her startup to networking with industry leaders and exploring new business opportunities. She is a hands-on leader who is deeply involved in all aspects of her company's growth and development.\n\nPersonal Style:\nNatalie's personal style is a reflection of her confidence and success. She often opts for sophisticated and stylish attire, such as well-tailored blazers and dresses, that convey a sense of authority and professionalism. She also enjoys incorporating bold accessories and statement pieces to add a touch of personality to her look.\nNatalie prefers to fly with Delta Airlines and typically wakes up at 7am every day. \nNatalie lives in San Francisco.",
+    "intent": "buy a high-quality glass baking dish set for my kitchen.",
+    "age": 33,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a young, dynamic professional who has recently embarked on a fulfilling career in the non-profit sector. Driven by a deep passion for social justice and environmental sustainability, she has dedicated her talents to making a positive impact on her local community.\n\nDemographics:\nAge: 25\nGender: Female\nEducation: Bachelor's Degree in Environmental Studies\nProfession: Sustainability Coordinator\nIncome: $47,000\n\nFinancial Situation:\nWhile Emily's income as a sustainability coordinator may not be the highest, she has a keen understanding of budgeting and money management. She lives within her means, prioritizing her financial goals, such as saving for a down payment on a home and contributing to her retirement accounts.\n\nShopping Habits:\nEmily's shopping habits reflect her eco-conscious values and commitment to sustainable living. She actively seeks out ethical, environmentally-friendly brands and shops secondhand when possible. She takes pride in curating a wardrobe and home decor that align with her personal beliefs.\n\nProfessional Life:\nIn her role as a sustainability coordinator, Emily works closely with local businesses and community organizations to develop and implement sustainable practices. She is passionate about driving change, often taking on extra projects and proactively identifying opportunities for improvement. Her creativity and problem-solving skills are highly valued by her colleagues.\n\nPersonal Style:\nEmily's personal style is a reflection of her laid-back, yet stylish personality. She favors comfortable, versatile pieces, such as organic cotton tees, eco-friendly denim, and statement accessories crafted from sustainable materials. Her look is often accented with a touch of bohemian flair, showcasing her connection to nature and commitment to ethical living.",
+    "intent": "buy a set of eco-friendly, high-quality inflatable products from Jason's Inflatables.",
+    "age": 25,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a successful entrepreneur who has built a thriving technology startup from the ground up. With his innovative mindset, strategic vision, and relentless work ethic, he has transformed his initial concept into a rapidly growing business that is disrupting the industry.\n\nDemographics:\nAge: 49\nGender: Male\nEducation: Master's Degree in Computer Science\nProfession: Entrepreneur, CEO of a Technology Startup\nIncome: $450,000\n\nFinancial Situation:\nMichael's entrepreneurial success has afforded him a comfortable and financially secure lifestyle. He reinvests a significant portion of his earnings back into his company to fuel its growth, but he also allocates funds towards personal investments and charitable endeavors that align with his values.\n\nShopping Habits:\nAs a busy executive, Michael values efficiency and convenience when it comes to his shopping habits. He often relies on online platforms and personalized delivery services to streamline his purchases, whether it's business attire, the latest tech gadgets, or high-quality home goods. However, he also enjoys the occasional in-person shopping experience, particularly when it comes to selecting fine timepieces or investing in unique, artisanal products that reflect his sophisticated tastes.\n\nProfessional Life:\nMichael's days are filled with a constant stream of meetings, negotiations, and strategic planning as he navigates the demands of running a fast-paced technology startup. He is a visionary leader who inspires his team with his unwavering commitment to innovation and excellence. Michael is a lifelong learner, regularly attending industry conferences and seeking out mentorship opportunities to stay ahead of the curve.\n\nPersonal Style:\nMichael's personal style is a blend of professionalism and personal flair. He favors well-tailored suits, crisp dress shirts, and polished leather shoes for his day-to-day business engagements. However, he also enjoys incorporating more casual, yet stylish, elements into his wardrobe, such as designer jeans, sleek sports watches, and modern, minimalist accessories that reflect his sophisticated sensibilities.",
+    "intent": "buy a pair of plus size compression tights.",
+    "age": 49,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

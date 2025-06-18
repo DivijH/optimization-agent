@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a passionate and resourceful young man who is navigating the early stages of his career. Despite facing financial challenges, he remains determined to pursue his dreams and make a positive impact on the world around him.\n\nDemographics:\nAge: 20\nGender: Male\nEducation: High School Diploma\nProfession: Retail Sales Associate\nIncome: $22,000\n\nFinancial Situation:\nAs a retail sales associate, Ethan's income falls on the lower end of the spectrum, but he is adept at budgeting and finding creative ways to make the most of his limited resources. He is diligent about saving what he can and seeking out opportunities to increase his earnings.\n\nShopping Habits:\nEthan is a mindful shopper who prioritizes value and functionality over trends or status symbols. He enjoys scouring thrift stores, online marketplaces, and discount retailers for unique finds that align with his personal style and budget. Ethan is always on the lookout for sales and promotions that can help him stretch his dollars further.\n\nProfessional Life:\nWhile his current retail position may not be his ultimate career goal, Ethan approaches it with a positive attitude and a strong work ethic. He is constantly seeking opportunities to learn and grow, whether it's through on-the-job training, online courses, or networking with professionals in his desired field.\n\nPersonal Style:\nEthan's personal style reflects his practical and resourceful nature. He favors a mix of casual and versatile pieces, often opting for well-fitted jeans, t-shirts, and hoodies that can be easily mixed and matched. He takes pride in finding affordable yet stylish items that allow him to express his individuality.",
+    "intent": "buy a pokemon puzzle 2000 game.",
+    "age": 20,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emma\n\nBackground:\nEmma is a driven and ambitious young professional who recently landed her dream job as a marketing coordinator for a growing tech startup. With a keen eye for design and a flair for creative problem-solving, she is quickly making a name for herself in the fast-paced world of digital marketing.\n\nDemographics:\nAge: 24\nGender: Female\nEducation: Bachelor's degree in Marketing\nProfession: Marketing Coordinator\nIncome: $42,000\n\nFinancial Situation:\nAs a young professional, Emma's income falls within the $30,001 to $94,000 range. She is financially responsible, setting aside a portion of her paycheck for savings and investments. While she enjoys the occasional splurge, Emma is mindful of her spending and prioritizes building a strong financial foundation for her future.\n\nShopping Habits:\nEmma's shopping habits reflect her desire for both quality and style. She seeks out versatile, well-made pieces that can be mixed and matched to create a variety of looks. Emma enjoys discovering unique items from local boutiques and independent designers, but she also takes advantage of online sales and flash deals to expand her wardrobe on a budget.\n\nPersonal Life:\nOutside of work, Emma is an active and socially conscious individual. She volunteers regularly at a local animal shelter, and she is passionate about environmental sustainability, often researching ways to reduce her carbon footprint. In her free time, Emma enjoys attending art exhibitions, trying new restaurants, and exploring the vibrant city she calls home.\n\nEmma's ambitious nature and drive for personal growth are evident in her commitment to continued learning. She regularly attends industry events and workshops to expand her marketing skillset, staying ahead of the latest trends and strategies. With her positive attitude and determination, Emma is poised for continued success in her burgeoning career.",
+    "intent": "buy a men's anchor chain necklace.",
+    "age": 24,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

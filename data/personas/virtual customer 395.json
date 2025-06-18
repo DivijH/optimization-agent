@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a passionate nonprofit professional who has dedicated her career to making a positive impact on her local community. With a deep understanding of social issues and a talent for strategic program development, she currently serves as the Program Manager for a thriving nonprofit organization.\n\nDemographics:\nAge: 42\nGender: Female\nEducation: Master's Degree in Public Administration\nProfession: Program Manager, Nonprofit Organization\nIncome: $65,000\n\nFinancial Situation:\nAs a mid-career nonprofit professional, Emily's income falls within the $30,001 to $94,000 range. While she is mindful of her spending, she also allocates a portion of her earnings to support the causes she cares about through charitable donations and volunteer work. Emily maintains a modest lifestyle, prioritizing financial stability and the ability to contribute to her community.\n\nShopping Habits:\nEmily's shopping habits reflect her values and interests. She tends to prioritize ethical, sustainable, and socially conscious brands, often seeking out products that align with her commitment to making a positive impact. When making purchases, she takes the time to research and compare options, ensuring she is making informed decisions that support her personal and professional goals.\n\nProfessional Life:\nIn her role as the Program Manager, Emily oversees the development and implementation of impactful community initiatives that address pressing social issues. She thrives on the challenge of navigating complex challenges and finding creative solutions that empower those in need. Her ability to collaborate with diverse stakeholders and her skill in program management have earned her the respect of her colleagues and the appreciation of the communities she serves.\n\nPersonal Style:\nEmily's personal style is a reflection of her professional and personal values. She favors comfortable, practical attire that allows her to move freely and efficiently, often incorporating sustainable and ethical fashion choices into her wardrobe. Her style is characterized by a mix of classic, versatile pieces and more trend-driven items that express her individuality and passion for social good.",
+    "intent": "buy a 25th anniversary pendant.",
+    "age": 42,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

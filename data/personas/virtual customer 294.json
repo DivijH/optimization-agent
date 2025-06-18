@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a 43-year-old woman who has faced a series of personal and financial challenges over the past few years. After a difficult divorce and the loss of her job, she has been working hard to rebuild her life and regain her financial stability.\n\nDemographics:\nAge: 43\nGender: Female\nEducation: High School Graduate\nProfession: Part-Time Retail Associate\nIncome: $25,000\n\nFinancial Situation:\nEmily's current financial situation is challenging, as she struggles to make ends meet on her limited income. She has been diligently budgeting and seeking out additional sources of income, such as part-time work and government assistance, to cover her basic expenses.\n\nShopping Habits:\nGiven her limited budget, Emily has become an expert at finding bargains and stretching her dollars. She frequents thrift stores, discount retailers, and online marketplaces to search for gently used items and take advantage of sales and promotions. She is also skilled at repurposing and upcycling items to extend their lifespan.\n\nProfessional Life:\nAfter losing her previous full-time job, Emily has been working part-time as a retail associate. While the income is not as stable or high as she would like, the job provides her with a sense of purpose and a chance to interact with people. She is actively seeking out additional job opportunities that could offer her more financial security and opportunities for growth.\n\nPersonal Style:\nEmily's personal style is practical and functional, reflecting her current financial constraints. She tends to favor comfortable, durable clothing that allows her to move easily and perform her job duties. Her wardrobe consists mainly of casual tops, jeans, and comfortable shoes, with the occasional addition of a statement accessory or thrifted piece to add a touch of personal style.\n\nIn her free time, Emily enjoys engaging in creative hobbies, such as knitting and gardening, which not only provide her with a sense of fulfillment but also allow her to save money by making or growing her own items.",
+    "intent": "buy a whiskey smoker kit with torch.",
+    "age": 43,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

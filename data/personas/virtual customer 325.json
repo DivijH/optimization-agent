@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emma\n\nBackground:\nEmma is a recent college graduate, eager to establish herself in the professional world. With a degree in communication studies, she is passionate about using her skills to create meaningful connections and drive positive change.\n\nDemographics:\nAge: 23\nGender: Female\nEducation: Bachelor's Degree in Communication Studies\nProfession: Entry-Level Marketing Coordinator\nIncome: $28,000\n\nFinancial Situation:\nAs a recent graduate, Emma's current income falls within the $0 to $30,000 range. She is diligently managing her finances, balancing her living expenses with a modest lifestyle and setting aside funds for her future goals.\n\nShopping Habits:\nEmma approaches her shopping with a blend of practicality and personal expression. She is mindful of her budget, often seeking out sales and bargains, while also investing in quality essentials that will last. When shopping, Emma gravitates towards versatile, trend-conscious pieces that can be mixed and matched to create a variety of outfits.\n\nProfessional Life:\nIn her role as a marketing coordinator, Emma applies her strong communication skills and creative flair to support her organization's marketing initiatives. She is eager to learn, constantly seeking opportunities to expand her knowledge and contribute to the team's success. Emma's positive attitude and adaptability have already made her a valuable asset to her employer.\n\nPersonal Interests:\nOutside of work, Emma enjoys exploring the vibrant cultural scene of her city. She frequently attends local art exhibitions, live music performances, and community events, finding inspiration and fulfillment in the diverse artistic expression around her. Emma also volunteers her time to support causes she cares about, further enriching her personal and professional growth.",
+    "intent": "buy a baby head protector backpack.",
+    "age": 23,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

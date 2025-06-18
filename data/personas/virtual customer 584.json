@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Harold\n\nBackground:\nHarold is a semi-retired accountant who has gradually transitioned into a consulting role, leveraging his extensive financial expertise to help small businesses and startups navigate the complexities of tax planning and compliance. Though no longer working full-time, Harold remains active and engaged, seeking to impart his knowledge and experience to the next generation of entrepreneurs.\n\nDemographics:\nAge: 63\nGender: Male\nEducation: Bachelor's Degree in Accounting\nProfession: Financial Consultant\nIncome: $62,000\n\nFinancial Situation:\nWith a comfortable semi-retirement income, Harold has been able to maintain a stable financial footing. He has accumulated modest savings and investments over the course of his career, allowing him to enjoy a reasonable degree of financial security. While not as affluent as some of his peers, Harold is able to cover his essential expenses and occasional discretionary purchases without significant financial strain.\n\nShopping Habits:\nHarold's shopping habits reflect his practical and pragmatic approach to life. He tends to favor well-made, durable products that provide good value for his money, often seeking out sales and discounts to stretch his budget. While he is not opposed to the occasional indulgence, such as a new suit or a high-quality piece of furniture, Harold generally prioritizes functionality and longevity over the latest trends.\n\nPersonal Life:\nIn his semi-retired state, Harold has embraced a more balanced lifestyle, devoting time to his hobbies and personal interests. He is an avid reader, with a particular fondness for historical non-fiction, and he enjoys attending local cultural events and performances. Harold also takes pride in maintaining an active role in his community, volunteering with a local financial literacy program and serving on the board of his neighborhood association.\n\nPersonal Style:\nHarold's personal style is classic and understated, with a focus on timeless, well-tailored pieces. He favors neutral-toned suits and dress shirts, often complemented by a neatly knotted tie and a polished pair of leather shoes. When not in his professional attire, Harold gravitates towards comfortable, well-fitting casual wear, such as crisp button-down shirts and well-fitting slacks.",
+    "intent": "buy a plastic orb to wear on my head.",
+    "age": 63,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

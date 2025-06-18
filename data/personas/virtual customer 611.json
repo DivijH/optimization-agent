@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a dedicated educator who has spent the past 25 years sharing his passion for history with students. As a high school history teacher, he has inspired countless young minds, fostering a deeper understanding and appreciation for the past.\n\nDemographics:\nAge: 50\nGender: Male\nEducation: Master's Degree in History\nProfession: High School History Teacher\nIncome: $58,000\n\nFinancial Situation:\nWhile Michael's income as a teacher falls within the range of $30,001 to $94,000, he has learned to live comfortably within his means. He is mindful of his spending and has managed to save a portion of his earnings for retirement and unexpected expenses.\n\nShopping Habits:\nMichael's shopping habits reflect his practical and value-oriented approach to life. He prefers well-made, durable products that will last, often taking the time to research and compare options to ensure he is getting the best quality for his money. When it comes to clothing, he gravitates towards classic, timeless pieces that can be easily incorporated into his everyday wardrobe.\n\nProfessional Life:\nAs a high school history teacher, Michael takes great pride in his work, constantly seeking new and engaging ways to bring the past to life for his students. He is known for his dynamic lectures, thought-provoking discussions, and innovative teaching methods that challenge his students to think critically and develop a deeper understanding of historical events and their significance.\n\nPersonal Style:\nMichael's personal style is understated and comfortable, often opting for well-fitting slacks, button-down shirts, and polished leather shoes. While he appreciates the occasional sartorial splurge, such as a well-tailored suit or a high-quality timepiece, he is generally more focused on functionality and longevity rather than following the latest fashion trends.\n\nIn his free time, Michael enjoys exploring local historical sites, attending lectures and exhibitions, and immersing himself in the latest non-fiction books on topics that pique his interest. He also relishes the opportunity to travel, both domestically and internationally, to experience different cultures and expand his understanding of the world.",
+    "intent": "Buy a lotus energy concentrate supplement.",
+    "age": 50,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

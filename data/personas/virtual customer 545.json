@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a driven and ambitious entrepreneur who has built a thriving marketing consultancy from the ground up. With over two decades of experience in the industry, she has become a respected authority, advising a diverse range of clients on effective branding and marketing strategies.\n\nDemographics:\nAge: 46\nGender: Female\nEducation: Bachelor's Degree in Business Administration\nProfession: Founder and CEO, Marketing Consultancy\nIncome: $175,000\n\nFinancial Situation:\nSarah's successful entrepreneurial venture has afforded her a comfortable and secure financial standing. She has built a diversified investment portfolio and is able to maintain a lifestyle that balances work, personal interests, and philanthropic endeavors.\n\nShopping Habits:\nSarah's shopping habits reflect her professional status and refined taste. She enjoys visiting high-end boutiques and luxury department stores, curating a wardrobe that exudes confidence and sophistication. However, she also values quality over quantity and is selective in her purchases, often investing in timeless pieces that can be incorporated into her professional and personal wardrobe.\n\nProfessional Life:\nAs the founder and CEO of her marketing consultancy, Sarah has established a reputation for delivering exceptional results for her clients. She is known for her strategic acumen, creative problem-solving skills, and ability to navigate the ever-evolving marketing landscape. Sarah takes pride in mentoring her team and fostering a collaborative, innovative work environment.\n\nPersonal Style:\nSarah's personal style is understated yet elegant, blending classic silhouettes with contemporary touches. She favors well-tailored dresses, blazers, and trousers that convey a sense of authority and professionalism. Accessorizing with carefully selected pieces, such as statement jewelry or luxurious handbags, Sarah's overall look is polished and refined.\n\nIn her free time, Sarah enjoys indulging in her passions for art, literature, and global travel. She is an active supporter of local non-profit organizations, using her business acumen and resources to drive positive change in her community.",
+    "intent": "buy a 3-pack of Redmond Real Salt.",
+    "age": 46,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

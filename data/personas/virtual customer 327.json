@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a passionate environmentalist who has dedicated his later years to advocating for sustainable living and eco-friendly practices. Although his income is limited, he finds great fulfillment in his role as a community organizer and educator, working tirelessly to inspire others to reduce their carbon footprint and live more mindfully.\n\nDemographics:\nAge: 52\nGender: Male\nEducation: High School Graduate\nProfession: Environmental Activist\nIncome: $22,000\n\nFinancial Situation:\nAs a community activist, Michael's income is modest, relying on a combination of part-time work, donations, and occasional grants to support his environmental initiatives. He has learned to live frugally, prioritizing his advocacy work over material possessions. Michael is financially disciplined, focusing his limited resources on the causes he cares about most.\n\nShopping Habits:\nMichael's shopping habits are heavily influenced by his environmental values. He avoids consumer culture, opting instead to buy secondhand, repurpose items, and support local, eco-conscious businesses. When making purchases, Michael carefully considers the environmental impact of the products he buys, preferring sustainable, ethically sourced, and long-lasting goods.\n\nPersonal Style:\nMichael's personal style reflects his eco-friendly lifestyle and his commitment to minimizing his environmental footprint. He favors comfortable, practical clothing made from natural fibers, often thrifted or handmade. Michael's look is a blend of casual, functional attire and the occasional statement piece that aligns with his environmental advocacy efforts.",
+    "intent": "buy a balloon arch strip.",
+    "age": 52,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a dedicated community organizer who has spent the majority of his career advocating for marginalized communities and pushing for social and economic justice. Despite facing financial challenges, he remains committed to his life's work, finding fulfillment in the impact he has on the lives of those he serves.\n\nDemographics:\nAge: 48\nGender: Male\nEducation: Some college\nProfession: Community Organizer\nIncome: $25,000\n\nFinancial Situation:\nDavid's income falls within the $0 to $30,000 range, placing him in a lower-income bracket. He relies on a combination of government assistance, part-time work, and donations to sustain himself and the non-profit organization he co-founded. Despite the financial constraints, David is resourceful and focuses on stretching his limited resources to support his community initiatives.\n\nShopping Habits:\nDavid's shopping habits are heavily influenced by his commitment to ethical and sustainable living. He seeks out secondhand stores, thrift shops, and local artisans to find affordable, high-quality items that align with his values. When making purchases, he prioritizes products that are eco-friendly, support small businesses, or contribute to the well-being of marginalized communities.\n\nPersonal Style:\nDavid's personal style reflects his down-to-earth and practical approach to life. He favors comfortable, durable clothing that can withstand the demands of his active lifestyle. His wardrobe consists primarily of casual, versatile pieces, such as jeans, t-shirts, and sturdy boots. David values function over fashion and aims to present a relatable, approachable image to the communities he serves.",
+    "intent": "buy a colorful, sustainable balloon arch decoration for a community event.",
+    "age": 48,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

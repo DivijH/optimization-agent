@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jamal\n\nBackground:\nJamal is a 33-year-old man who has faced numerous challenges throughout his life, but has remained resilient and determined to create a brighter future for himself. Despite the obstacles he has encountered, Jamal continues to search for opportunities that will allow him to achieve financial stability and personal fulfillment.\n\nDemographics:\nAge: 33\nGender: Male\nEducation: High school diploma\nProfession: Unemployed\nIncome: $20,000\n\nFinancial Situation:\nJamal's financial situation is precarious, as he has been in and out of temporary, low-wage jobs for the past several years. He relies on a combination of government assistance, occasional odd jobs, and the support of his extended family to make ends meet. Jamal is acutely aware of the need to find a more reliable source of income, and he is actively exploring education and training programs that could help him secure a stable job.\n\nShopping Habits:\nOut of necessity, Jamal is a highly frugal shopper, focusing on finding the lowest possible prices for essential items such as clothing, groceries, and household goods. He frequents discount stores, thrift shops, and online marketplaces, always on the lookout for the best deals. Jamal values quality and durability, but his limited budget often forces him to prioritize affordability over brand or style.\n\nPersonal Life:\nJamal finds solace and motivation in his close-knit family and community. He is a dedicated father who deeply cares for his young children, and he draws strength from their love and support. In his free time, Jamal engages in activities that are either free or low-cost, such as volunteering at a local youth center, playing basketball with friends, and attending community events. He is committed to breaking the cycle of financial instability and providing a better future for his family.",
+    "intent": "buy an EMF protection necklace on a reputable online marketplace for under $50.",
+    "age": 33,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

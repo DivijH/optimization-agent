@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sophia\n\nBackground:\nSophia is an art teacher at a local high school, where she inspires students to explore their creative potential. With a deep appreciation for the arts, she is passionate about sharing her knowledge and fostering an engaging learning environment.\n\nDemographics:\nAge: 40\nGender: Female\nEducation: Master's degree in Fine Arts Education\nProfession: High School Art Teacher\nIncome: $58,000\n\nFinancial Situation:\nSophia's income as an art teacher allows her to live comfortably, with enough savings to afford occasional travel and indulge in her artistic hobbies. She is mindful of her spending and prioritizes experiences over material possessions.\n\nShopping Habits:\nSophia enjoys browsing local art supply stores and independent boutiques for unique, high-quality items that complement her personal style. She takes her time when making purchases, often seeking out ethically-sourced or sustainable products. Sophia values functionality and durability in her purchases.\n\nPersonal Style:\nSophia's personal style is eclectic and reflective of her artistic sensibilities. She often wears flowing, colorful dresses or skirts paired with comfortable, well-made blouses and cardigans. Sophia accessorizes with handcrafted jewelry, scarves, and bags that showcase the work of local artisans.\n\nSophia is a frequent traveler and often flies with Delta Airlines. She wakes up at 6 am each morning to prepare for her day and enjoys a cup of herbal tea before heading to work. Sophia resides in a vibrant urban neighborhood in Portland, Oregon.",
+    "intent": "add a set of 3 TSA-approved travel size containers to cart.",
+    "age": 40,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

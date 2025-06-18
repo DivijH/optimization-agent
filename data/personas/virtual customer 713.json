@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: John\n\nBackground:\nJohn is a retired educator who has dedicated his life to advocating for inclusive and equitable access to quality education. After decades of teaching and mentoring young minds, he now focuses his energy on volunteer work and various community initiatives.\n\nDemographics:\nAge: 60\nGender: Male\nEducation: Master's degree in Education\nProfession: Retired Teacher\nIncome: $25,000\n\nFinancial Situation:\nAs a retiree living on a fixed income, John's financial resources are limited. However, he has developed a frugal lifestyle, prioritizing his essential needs and making the most of his retirement benefits and pension. Despite his modest means, he finds joy in supporting local charities and contributing to educational programs for underprivileged youth.\n\nShopping Habits:\nJohn's shopping habits are practical and intentional. He frequents thrift stores, secondhand shops, and discount retailers in search of high-quality, affordable items. When making larger purchases, he thoroughly researches options to ensure he is getting the best value for his money. Sustainability and ethical production are also important factors in his purchasing decisions.\n\nPersonal Style:\nJohn's personal style is comfortable and unassuming, focused on functionality and longevity. He favors classic, well-fitting pieces that can be easily mixed and matched, such as button-down shirts, khakis, and sturdy shoes. His wardrobe is a reflection of his pragmatic nature and his desire to invest in durable, timeless items.\n\nLeisure Activities:\nIn his retirement, John remains actively engaged with his community. He volunteers at a local elementary school, tutoring underprivileged students and sharing his wealth of educational expertise. Additionally, he is an avid reader and enjoys engaging in lively discussions at the neighborhood book club. John also finds solace in gardening, tending to his small but vibrant backyard oasis.",
+    "intent": "buy a silver EMF protection necklace.",
+    "age": 60,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

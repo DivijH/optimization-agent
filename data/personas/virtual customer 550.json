@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jasmine\n\nBackground:\nJasmine is a resilient single mother who is navigating the challenges of balancing work, personal life, and raising her young child. Despite financial difficulties, she is determined to provide a nurturing and stable environment for her family.\n\nDemographics:\nAge: 39\nGender: Female\nEducation: High School Diploma\nProfession: Part-time Retail Associate\nIncome: $22,000\n\nFinancial Situation:\nAs a part-time retail associate, Jasmine's income is limited, and she often struggles to make ends meet. She carefully budgets her finances, prioritizing essential expenses like rent, utilities, and her child's needs. Managing on a tight budget requires creativity and resourcefulness, but Jasmine is committed to ensuring her family's well-being.\n\nShopping Habits:\nJasmine is a practical shopper, focusing on finding the best value for her money. She frequents discount stores, thrift shops, and online marketplaces to find affordable necessities for her household. When making larger purchases, she takes the time to compare prices and seek out sales or discounts to maximize her limited resources.\n\nPersonal Life:\nDespite the challenges she faces, Jasmine finds joy and purpose in her role as a mother. She cherishes the time she spends with her child, engaging in simple yet meaningful activities like reading, playing at the park, and sharing home-cooked meals. Jasmine's resilience and determination to provide a loving and nurturing environment for her family are the driving forces in her life.",
+    "intent": "buy picture props for home decor.",
+    "age": 39,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

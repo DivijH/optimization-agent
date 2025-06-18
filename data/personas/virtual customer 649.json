@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Lucas\n\nBackground:\nLucas is a creative problem-solver who has carved out a unique career path in the world of sustainability and renewable energy. With a deep passion for the environment and a knack for innovative thinking, he has found success in developing sustainable solutions for both individuals and businesses.\n\nDemographics:\nAge: 28\nGender: Male\nEducation: Bachelor's Degree in Environmental Science\nProfession: Sustainability Consultant\nIncome: $68,000\n\nFinancial Situation:\nLucas' income as a sustainability consultant provides him with a comfortable, yet modest, financial situation. He is mindful of his spending and prioritizes saving for his long-term goals, which include investing in renewable energy projects and potentially starting his own sustainable business venture. While he is not extravagant, Lucas enjoys the occasional splurge on eco-friendly home goods and outdoor gear.\n\nShopping Habits:\nLucas is a conscientious consumer who places a strong emphasis on sustainability and ethical practices. He researches products thoroughly, seeking out brands that align with his values and commitment to environmental stewardship. When making purchases, Lucas prioritizes durability, energy efficiency, and recyclability, often opting for secondhand or refurbished items when possible.\n\nPersonal Style:\nLucas' personal style reflects his eco-conscious lifestyle and his appreciation for minimalist design. He favors natural fabrics, earth-toned colors, and functional silhouettes that seamlessly integrate into his active, environmentally-focused daily routine. Whether he's attending a client meeting or spending time outdoors, Lucas' wardrobe choices demonstrate his commitment to living a sustainable life.\n\nPersonal Life:\nOutside of his professional pursuits, Lucas is an avid outdoorsman and a passionate advocate for environmental causes. He enjoys activities like hiking, cycling, and camping, using these experiences to further his understanding of the natural world. Lucas is also actively involved in local sustainability initiatives, volunteering his time and expertise to help build a more eco-friendly community.",
+    "intent": "buy a small, sustainable makeup bag made from recycled or eco-friendly materials.",
+    "age": 28,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

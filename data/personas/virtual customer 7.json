@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jada\n\nBackground:\nJada is a passionate artist who dedicates her time to creating vibrant, expressive paintings. Despite facing financial challenges, she finds joy and fulfillment in her artistic pursuits, hoping to one day turn her passion into a sustainable career.\n\nDemographics:\nAge: 36\nGender: Female\nEducation: High School Diploma\nProfession: Artist\nIncome: $25,000\n\nFinancial Situation:\nJada's income as an independent artist fluctuates, often leaving her with limited financial resources. She carefully manages her budget, prioritizing art supplies and necessities over luxuries. Saving money is a constant struggle, but she remains determined to continue her artistic journey.\n\nShopping Habits:\nJada is a thrifty shopper, scouring secondhand stores and online marketplaces for unique finds that she can incorporate into her art or use in her daily life. She values quality over quantity and takes her time to curate her purchases, seeking items that align with her artistic sensibilities.\n\nProfessional Life:\nJada's days are filled with painting, sketching, and experimenting with various mediums. She dedicates herself fully to her art, spending long hours in her small studio space. Networking with fellow artists and seeking out exhibition opportunities are crucial parts of her professional pursuits.\n\nPersonal Style:\nJada embraces a bohemian, free-spirited aesthetic, often wearing loose, comfortable clothing that allows her to move freely while painting. She has a penchant for vibrant colors and patterns, which she believes reflect the vibrancy of her artistic expression. On occasion, she incorporates unique, handcrafted accessories into her outfits.",
+    "intent": "buy a christmas centerpiece made of a crate.",
+    "age": 36,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

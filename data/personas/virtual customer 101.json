@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a successful entrepreneur who has built a thriving software company from the ground up. With over 20 years of experience in the tech industry, he has developed a keen eye for emerging trends and a talent for identifying profitable business opportunities.\n\nDemographics:\nAge: 56\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Founder and CEO of a software company\nIncome: $120,000\n\nFinancial Situation:\nDavid's entrepreneurial ventures have earned him a comfortable, six-figure income. He is financially savvy and has diversified his investments, ensuring a secure financial future. While he enjoys the occasional luxury purchase, David is primarily focused on reinvesting his profits back into his business and philanthropic endeavors.\n\nShopping Habits:\nAs a busy executive, David prefers the convenience of online shopping for his personal needs. He is willing to pay a premium for high-quality, durable products that align with his lifestyle and values. When making larger purchases, such as electronics or home furnishings, David conducts thorough research to ensure he is getting the best value.\n\nProfessional Life:\nDavid's role as the founder and CEO of a successful software company demands a wide range of skills, from strategic planning to team management. He takes pride in fostering a collaborative and innovative work environment, empowering his employees to contribute to the company's growth and success.\n\nPersonal Style:\nDavid's personal style reflects his professional status and active lifestyle. He gravitates towards well-tailored, classic menswear, such as crisp dress shirts, tailored slacks, and polished leather shoes. When not in business attire, David opts for comfortable yet stylish athleisure wear, often incorporating technical fabrics and modern silhouettes.\n\nDavid is an avid outdoorsman, enjoying activities like hiking, mountain biking, and skiing. He is also a board member for a local technology-focused nonprofit organization. David resides in Seattle, Washington.",
+    "intent": "add a click together play mat to my cart",
+    "age": 56,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

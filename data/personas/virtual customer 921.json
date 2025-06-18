@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Samantha\n\nBackground:\nSamantha is a vibrant and accomplished woman who has dedicated her career to empowering others. With a wealth of experience in the nonprofit sector, she has spent the past two decades leading initiatives that address social inequalities and provide vital resources to underserved communities.\n\nDemographics:\nAge: 61\nGender: Female\nEducation: Master's Degree in Social Work\nProfession: Executive Director, Non-Profit Organization\nIncome: $60,000\n\nFinancial Situation:\nSamantha's income as the Executive Director of a non-profit organization falls within the $30,001 to $94,000 range. While her salary is not extravagant, she has managed her finances carefully, maintaining a balanced budget and contributing to a comfortable retirement fund.\n\nShopping Habits:\nSamantha takes a mindful approach to shopping, prioritizing quality and sustainability over fleeting trends. She enjoys scouring thrift stores and secondhand shops for unique, one-of-a-kind items that complement her personal style. When making larger purchases, Samantha thoroughly researches her options to ensure she is investing in products that will stand the test of time.\n\nProfessional Life:\nIn her role as Executive Director, Samantha leverages her extensive experience in the non-profit sector to drive positive change. She is a skilled communicator and collaborator, working closely with her team, community partners, and stakeholders to identify and address the most pressing needs. Samantha's unwavering commitment to social justice and her ability to navigate complex funding landscapes have been instrumental in the growth and success of the organization.\n\nPersonal Style:\nSamantha's personal style reflects her vibrant and expressive nature. She gravitates towards colorful, eclectic ensembles that blend vintage and contemporary elements, often incorporating bold patterns, textured fabrics, and statement jewelry. Her wardrobe is a reflection of her creative spirit and her desire to express her individuality.\n\nIn her free time, Samantha enjoys exploring local art galleries, attending live music performances, and engaging in outdoor activities such as hiking and gardening. She is an avid reader and a passionate advocate for environmental sustainability, incorporating eco-friendly practices into her daily life.",
+    "intent": "buy a led angel necklace.",
+    "age": 61,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

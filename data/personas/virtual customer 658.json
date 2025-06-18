@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: George\n\nBackground:\nGeorge is a retired civil engineer who has dedicated his life to improving infrastructure and public transportation systems. After a long and successful career, he now enjoys the freedom of retirement, focusing on his passion for outdoor activities and community service.\n\nDemographics:\nAge: 60\nGender: Male\nEducation: Bachelor's Degree in Civil Engineering\nProfession: Retired Civil Engineer\nIncome: $55,000\n\nFinancial Situation:\nGeorge's financial situation is comfortable thanks to a combination of his pension, retirement savings, and occasional consulting work. He is mindful of his spending and maintains a balanced budget, allocating funds for leisure activities, travel, and charitable donations. George also enjoys investing in local businesses and startups that align with his values.\n\nShopping Habits:\nAs a seasoned consumer, George is a discerning shopper. He tends to research products thoroughly before making purchases, seeking out high-quality, durable items that will stand the test of time. George also enjoys browsing thrift stores, antique shops, and online marketplaces, where he can find unique and meaningful items to add to his collection.\n\nPersonal Life:\nIn retirement, George has embraced a more active and adventurous lifestyle. He is an avid hiker, cyclist, and kayaker, often exploring the local parks and nature preserves. Additionally, George volunteers his time and expertise to various community organizations, contributing to infrastructure projects and advocacy efforts.\n\nProfessional Life:\nThough officially retired, George remains engaged in his field, occasionally serving as a consultant on specialized projects. He takes pride in his legacy, having overseen the planning and construction of several landmark transportation initiatives that have improved the lives of countless citizens. George also mentors young engineers, sharing his wealth of knowledge and experience.",
+    "intent": "buy a high-quality popcorn maker that can produce large batches for entertaining guests.",
+    "age": 60,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a dynamic and versatile marketing manager who has carved out a successful career in the non-profit sector. With over a decade of experience, she has developed a deep understanding of how to leverage marketing strategies to drive positive social impact and raise awareness for important causes.\n\nDemographics:\nAge: 43\nGender: Female\nEducation: Bachelor's degree in Marketing\nProfession: Marketing Manager\nIncome: $68,000\n\nFinancial Situation:\nWhile Sarah's income falls within the $30,001 to $94,000 range, she is mindful of her spending and tries to maintain a comfortable yet modest lifestyle. She allocates a portion of her earnings towards savings and investments, with the goal of building financial security and potentially starting her own non-profit organization in the future.\n\nShopping Habits:\nAs a marketing professional, Sarah is attuned to trends and the value of brand reputation. However, she prioritizes functionality and practicality over luxury when it comes to her personal shopping habits. She enjoys finding unique, ethically-sourced products that align with her values and support small businesses or social enterprises.\n\nProfessional Life:\nIn her role as a marketing manager for a prominent non-profit organization, Sarah is responsible for crafting and executing strategic marketing campaigns that raise awareness, drive donations, and promote the organization's initiatives. She works closely with the executive team to ensure the organization's messaging and branding resonate with its target audience.\n\nPersonal Style:\nSarah's personal style reflects her professional persona and her commitment to sustainability. She favors minimalist, versatile pieces in muted tones, often mixing high-quality basics with statement accessories. Her wardrobe includes a mix of comfortable, yet polished clothing that allows her to transition seamlessly between work and leisure activities.",
+    "intent": "buy a high-quality iron anvil for home workshop use.",
+    "age": 43,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

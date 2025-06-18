@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a retired schoolteacher who has dedicated her life to educating and inspiring young minds. After over three decades in the classroom, she now finds herself navigating the joys and challenges of retirement, seeking new ways to stay active and engaged.\n\nDemographics:\nAge: 62\nGender: Female\nEducation: Bachelor's Degree in Elementary Education\nProfession: Retired Schoolteacher\nIncome: $25,000\n\nFinancial Situation:\nWith a modest pension and Social Security benefits, Sarah's income during retirement is limited. She has learned to live frugally, carefully budgeting her expenses and relying on her savings to supplement her fixed income. While she may not have a lot of disposable income, Sarah remains content and focuses on finding joy in the simpler things in life.\n\nShopping Habits:\nAs a lifelong thrifty shopper, Sarah has honed her skills in finding great deals and bargains. She enjoys visiting local thrift stores, garage sales, and secondhand shops to uncover hidden gems. Sarah takes pride in her ability to stretch her limited budget and create a comfortable home environment without overspending.\n\nPersonal Style:\nSarah's personal style reflects her practical and down-to-earth nature. She favors comfortable, easy-to-wear clothing, such as loose-fitting blouses, sensible slacks, and sturdy walking shoes. While her wardrobe may not be the height of fashion, Sarah values quality and durability in her clothing choices. She also has a fondness for classic, timeless pieces that can be mixed and matched for versatility.\n\nLeisure Activities:\nIn her retirement, Sarah has embraced a more relaxed pace of life. She enjoys spending time in her garden, tending to her flowers and vegetables. She also volunteers at the local library, assisting with shelving books and organizing community events. Additionally, Sarah participates in a weekly book club, where she can engage in lively discussions and connect with like-minded individuals.",
+    "intent": "buy a small, affordable dog halloween inflatable decoration.",
+    "age": 62,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

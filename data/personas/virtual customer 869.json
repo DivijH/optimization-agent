@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a 50-year-old man who has faced a series of setbacks in his life, leading him to a period of financial instability. Despite the challenges he has encountered, he remains determined to find his footing and rebuild his life.\n\nDemographics:\nAge: 50\nGender: Male\nEducation: High School Diploma\nProfession: Part-time Delivery Driver\nIncome: $22,000\n\nFinancial Situation:\nWith a limited income from his part-time delivery driver job, David struggles to make ends meet. He lives frugally, carefully budgeting his expenses and relying on government assistance programs to help cover basic necessities. While his financial situation is precarious, David is committed to gradually improving his circumstances and regaining his financial independence.\n\nShopping Habits:\nDavid's shopping habits are primarily focused on necessity rather than luxury. He seeks out the most affordable options for essential items, such as groceries, clothing, and household supplies. Thrift stores, secondhand shops, and discount retailers have become his go-to destinations for making the most of his limited budget. David rarely indulges in non-essential purchases, prioritizing the need to save what little he can.\n\nPersonal Style:\nDavid's personal style reflects his practical and utilitarian approach to life. He favors comfortable, durable clothing that can withstand the demands of his job, such as sturdy work boots, khaki pants, and simple t-shirts. While he may not be at the forefront of fashion trends, David aims to present a neat and well-kept appearance, taking pride in his ability to stretch his limited resources as far as possible.\n\nProfessional Life:\nAs a part-time delivery driver, David's professional life provides a steady, albeit modest, source of income. He takes pride in his work, ensuring that packages are delivered on time and with care. Despite the physical demands of the job, David finds a sense of purpose in providing a valuable service to the community.\n\nIn his free time, David finds solace in simple pleasures, such as tinkering with small household repairs or taking long walks in the park. He remains hopeful that with perseverance and determination, he will be able to regain his financial footing and create a more secure future for himself.",
+    "intent": "buy a name puzzle for $15 or less.",
+    "age": 50,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

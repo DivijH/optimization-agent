@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jada\n\nBackground:\nJada is a passionate social worker dedicated to empowering underprivileged communities. She has worked tirelessly to advocate for the rights of marginalized individuals and develop innovative programs to address social inequalities.\n\nDemographics:\nAge: 31\nGender: Female\nEducation: Master's degree in Social Work\nProfession: Social Worker\nIncome: $55,000\n\nFinancial Situation:\nWhile Jada's income as a social worker is not the highest, she is financially responsible and lives within her means. She is able to save a portion of her income each month and maintains a modest lifestyle, prioritizing her work and community involvement over material possessions.\n\nShopping Habits:\nJada is a conscientious shopper, focusing on quality over quantity. She tends to invest in durable, long-lasting items that align with her values, such as ethically-produced clothing and sustainable household goods. When possible, she supports local businesses and social enterprises.\n\nProfessional Life:\nJada's work as a social worker is more than just a job \u2013 it is a calling. She is deeply committed to advocating for marginalized communities and developing programs that address systemic barriers to social and economic mobility. Her passion and dedication have earned her the respect of her colleagues and the communities she serves.\n\nPersonal Style:\nJada's personal style reflects her down-to-earth and practical nature. She favors comfortable, versatile clothing that allows her to move freely and focus on her work. Her wardrobe includes a mix of casual and professional pieces, often in muted tones and natural fabrics. Simplicity and functionality are key considerations in her fashion choices.",
+    "intent": "buy a tandem bicycle.",
+    "age": 31,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

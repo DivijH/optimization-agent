@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Liam\n\nBackground:\nLiam is a young, aspiring musician who is currently navigating the challenges of establishing his career in the competitive music industry. Despite facing financial setbacks, he remains determined to pursue his passion and share his talents with the world.\n\nDemographics:\nAge: 32\nGender: Male\nEducation: High School Diploma\nProfession: Musician (part-time)\nIncome: $22,000\n\nFinancial Situation:\nLiam's primary income comes from a part-time job at a local music store, where he earns an hourly wage. While this job provides him with a modest income, the majority of his earnings are reinvested into his music career, including the cost of studio time, equipment, and travel to performances. He lives frugally, often relying on the generosity of friends and family to help cover his basic living expenses.\n\nShopping Habits:\nLiam is resourceful and budget-conscious when it comes to shopping. He frequents thrift stores, garage sales, and online marketplaces to find affordable musical instruments, gear, and other necessities. He is skilled at repurposing and repairing items, maximizing the value of his limited financial resources.\n\nProfessional Life:\nLiam's primary focus is on his music career, which he pursues with unwavering dedication. He performs at local venues, collaborates with other musicians, and continuously works on honing his songwriting and instrumental skills. While he dreams of a breakthrough that would propel him to greater success, he remains grounded and realistic about the challenges of the industry.\n\nPersonal Style:\nLiam's personal style reflects his artistic sensibilities and bohemian spirit. He favors comfortable, eclectic clothing that allows him to express his individuality, such as vintage t-shirts, ripped jeans, and quirky accessories. His appearance is a reflection of his passion for music and his commitment to living authentically.",
+    "intent": "buy a used 92 gmc sonoma radio and installation kit.",
+    "age": 32,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

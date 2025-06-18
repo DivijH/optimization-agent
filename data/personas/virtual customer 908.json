@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a seasoned professional who has dedicated his career to public service. After a successful tenure in local government, he is now embarking on a new chapter as a small business owner, leveraging his expertise and connections to create positive change in his community.\n\nDemographics:\nAge: 57\nGender: Male\nEducation: Master's Degree in Public Administration\nProfession: Small Business Owner, Former Local Government Official\nIncome: $65,000\n\nFinancial Situation:\nWith his steady income from the small business and his previous experience in government, David is financially stable. He has prudently managed his finances, enabling him to maintain a comfortable lifestyle while also setting aside funds for future investments and charitable endeavors.\n\nShopping Habits:\nDavid takes a measured approach to his shopping, prioritizing quality and practicality over impulse purchases. He researches products thoroughly, often seeking out recommendations from trusted sources. While he is willing to invest in durable, high-quality items, he also maintains a keen eye for value and seeks out sales or discounts when appropriate.\n\nProfessional Life:\nDavid's professional journey has been marked by his dedication to public service and his desire to make a positive impact on his community. As a former local government official, he developed a deep understanding of the challenges facing his town and the importance of collaborative, sustainable solutions. Now, as a small business owner, he is leveraging his expertise to create employment opportunities and support local economic development.\n\nPersonal Life:\nIn his personal life, David is an active member of his community, participating in various civic organizations and volunteer initiatives. He enjoys spending time with his family, including his spouse and adult children, and relishes the opportunity to impart his wisdom and experiences to the next generation. David's well-rounded approach to life, combining his professional accomplishments with a strong commitment to community, reflects his lifelong dedication to making a meaningful difference.",
+    "intent": "buy an 8-quart Instant Pot with multiple cooking functions for home use.",
+    "age": 57,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a seasoned marketing professional who has built a successful career navigating the ever-changing landscape of the industry. With over 15 years of experience, she has developed a keen understanding of consumer behavior and a talent for crafting impactful campaigns that resonate with her target audiences.\n\nDemographics:\nAge: 45\nGender: Female\nEducation: Bachelor's Degree in Marketing\nProfession: Marketing Manager\nIncome: $65,000\n\nFinancial Situation:\nSarah's steady income and prudent financial management have allowed her to establish a comfortable financial foundation. While she enjoys the occasional splurge, she is generally fiscally responsible and prioritizes saving for her long-term goals, including a comfortable retirement.\n\nShopping Habits:\nSarah's shopping habits reflect her practical and discerning nature. She is a thoughtful shopper, carefully considering the quality, functionality, and longevity of the products she purchases. She is not swayed by the latest trends, but rather seeks out items that will provide lasting value and complement her personal style.\n\nProfessional Life:\nAs a marketing manager, Sarah is responsible for overseeing the development and implementation of comprehensive marketing strategies for her organization. She excels at identifying market trends, analyzing consumer data, and crafting campaigns that effectively communicate her client's brand message. Sarah is highly respected by her team for her strategic thinking, attention to detail, and ability to navigate the complexities of the marketing industry.\n\nPersonal Life:\nOutside of her professional obligations, Sarah enjoys a well-balanced lifestyle. She dedicates time to her hobbies, which include gardening, reading, and exploring the local art scene. Sarah also places a strong emphasis on maintaining a healthy work-life balance, regularly engaging in activities that help her recharge and rejuvenate. Additionally, she is an active member of her community, volunteering with a local nonprofit organization that supports small businesses.",
+    "intent": "buy a princess and the frog-inspired necklace or pendant.",
+    "age": 45,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

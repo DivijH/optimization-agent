@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a passionate and ambitious young woman who has faced her fair share of challenges in life. Despite navigating periods of instability and financial uncertainty, she remains determined to pursue her dreams and create a better future for herself.\n\nDemographics:\nAge: 31\nGender: Female\nEducation: High School Diploma\nProfession: Freelance Graphic Designer, Part-time Barista\nIncome: $24,000\n\nFinancial Situation:\nEmily's income fluctuates as she balances her freelance graphic design work and part-time job as a barista. While her financial resources are limited, she has developed a knack for budgeting and finding creative ways to stretch her dollars. Emily is constantly on the lookout for ways to supplement her income, whether through additional design commissions or exploring new entrepreneurial opportunities.\n\nShopping Habits:\nEmily is a savvy and resourceful shopper, prioritizing value and functionality over flashy brand names. She frequently visits thrift stores, online marketplaces, and local flea markets to find unique and affordable items for her wardrobe and home. Emily also enjoys upcycling and repurposing found objects, finding joy in the challenge of transforming something old into something new and beautiful.\n\nProfessional Life:\nEmily's professional life is a tapestry of her creative passions and her need to maintain financial stability. As a freelance graphic designer, she works tirelessly to cultivate a diverse client base and create visually stunning designs that capture her clients' visions. In addition, her part-time job as a barista provides a steady source of income and the opportunity to interact with a diverse range of people, which she finds both rewarding and inspiring.\n\nPersonal Style:\nEmily's personal style is a reflection of her eclectic and independent spirit. She embraces bold colors, patterns, and vintage-inspired pieces that allow her to express her creativity and individuality. Her wardrobe is a mix of thrifted finds, handmade items, and a few carefully selected investment pieces that she knows will last. Emily's style is both practical and visually striking, mirroring her multifaceted approach to life.",
+    "intent": "buy a spiderman themed bowling ball.",
+    "age": 31,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

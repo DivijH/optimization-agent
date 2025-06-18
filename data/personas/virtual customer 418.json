@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Chloe\n\nBackground:\nChloe is a dynamic and driven young entrepreneur who is making waves in the tech startup scene. With a keen eye for innovation and a passion for problem-solving, she has launched a successful software company that is quickly gaining traction in the industry.\n\nDemographics:\nAge: 22\nGender: Female\nEducation: Bachelor's Degree in Computer Science\nProfession: Founder and CEO of a Tech Startup\nIncome: $130,000\n\nFinancial Situation:\nAs the founder and CEO of a thriving tech startup, Chloe's income falls within the $94,001 to $1,000,000 range. She is financially savvy, reinvesting a significant portion of her earnings back into the business to fuel its growth. Chloe also maintains a healthy personal savings account, ensuring her long-term financial security.\n\nShopping Habits:\nChloe's shopping habits reflect her entrepreneurial mindset. While she enjoys indulging in high-quality, stylish items that align with her professional image, she is also mindful of her spending. She carefully researches purchases and seeks out deals and discounts, ensuring that her money is well-spent.\n\nProfessional Life:\nChloe's days are filled with a whirlwind of activity as she navigates the demands of running a startup. From overseeing product development to managing a team of talented individuals, her responsibilities are diverse and ever-evolving. Chloe thrives on the challenge, constantly pushing the boundaries of what is possible and positioning her company at the forefront of the industry.\n\nPersonal Style:\nChloe's personal style is a reflection of her progressive and innovative mindset. She favors modern, streamlined pieces that project a sense of professionalism and confidence. Her wardrobe is a mix of well-tailored suits, chic separates, and statement accessories that seamlessly transition from the office to social events.",
+    "intent": "buy a high-quality, non-slip cycling mat for home exercise and yoga.",
+    "age": 22,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

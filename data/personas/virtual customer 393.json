@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a hardworking, blue-collar worker who has faced his fair share of challenges in life. Despite the ups and downs, he remains determined to provide for his family and improve his financial situation.\n\nDemographics:\nAge: 36\nGender: Male\nEducation: High School Diploma\nProfession: Factory Worker\nIncome: $28,000\n\nFinancial Situation:\nMichael's income as a factory worker, while stable, is modest. He often struggles to make ends meet and has had to make tough decisions about budgeting and prioritizing expenses. However, he is committed to saving what he can and is hopeful about the possibility of a better future.\n\nShopping Habits:\nMichael tends to be a practical and frugal shopper, focusing on finding the best deals and value for his money. He frequents discount stores, thrift shops, and big-box retailers to stretch his limited budget. While he may not always have the latest fashions or gadgets, Michael values functionality and durability over trendiness.\n\nProfessional Life:\nAs a factory worker, Michael takes pride in the hard work he puts in each day. He is a reliable and diligent employee, known for his attention to detail and his ability to work as part of a team. While he may not have the glamour or prestige of a corporate job, Michael finds satisfaction in the tangible results of his labor.\n\nPersonal Style:\nMichael's personal style is practical and modest, reflecting his blue-collar background. He typically wears durable, comfortable clothing, such as jeans, t-shirts, and work boots. He prioritizes functionality over fashion and is more concerned with ensuring his attire is suitable for the demands of his job than keeping up with the latest trends.\n\nMichael is a devoted family man, and his free time is often spent engaging in activities with his wife and two young children. He enjoys the simple pleasures in life, such as barbecuing in the backyard or taking his family on occasional weekend trips to local parks or museums.",
+    "intent": "buy a 6-quart Instant Pot pressure cooker.",
+    "age": 36,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

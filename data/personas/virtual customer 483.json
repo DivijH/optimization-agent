@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Damian\n\nBackground:\nDamian is a successful entrepreneur with a keen eye for emerging markets and innovative business strategies. After years of honing his skills in the corporate world, he decided to strike out on his own, founding a thriving tech startup that has quickly become a leader in its industry.\n\nDemographics:\nAge: 34\nGender: Male\nEducation: Master's Degree in Business Administration\nProfession: Founder and CEO of a Tech Startup\nIncome: $125,000\n\nFinancial Situation:\nDamian's entrepreneurial ventures have afforded him a comfortable financial standing, with an annual income well within the $94,001 to $1,000,000 range. He is financially savvy, investing a significant portion of his earnings into the growth and development of his company, while also maintaining a diversified portfolio to ensure long-term stability.\n\nShopping Habits:\nDamian's shopping habits reflect his pragmatic yet innovative approach to life. He seeks out high-quality, durable products that will stand the test of time, often opting for premium brands and technologies that align with his personal values and professional needs. However, he is also not afraid to take risks and try out new, cutting-edge products that could give his business a competitive edge.\n\nProfessional Life:\nAs the founder and CEO of a thriving tech startup, Damian's days are filled with a dynamic mix of strategic planning, team management, and hands-on problem-solving. His keen analytical skills, coupled with his ability to think outside the box, have been instrumental in driving his company's rapid growth and success. Damian is a visionary leader who inspires his team to push the boundaries of what's possible.\n\nPersonal Style:\nDamian's personal style is a reflection of his professional persona \u2013 polished, modern, and always up-to-date. He favors well-tailored suits, crisp button-down shirts, and sleek, minimalist accessories. However, he also enjoys incorporating elements of his entrepreneurial spirit into his wardrobe, such as bold, statement-making ties or innovative, tech-infused garments that showcase his passion for innovation.",
+    "intent": "buy a kids diner order pad",
+    "age": 34,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

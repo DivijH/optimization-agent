@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sophia\n\nBackground:\nSophia is a dynamic and ambitious young professional who has found success in the world of venture capital. With a keen eye for promising startups and a talent for strategic investment, she has quickly risen through the ranks to become a respected partner at a prestigious VC firm.\n\nDemographics:\nAge: 29\nGender: Female\nEducation: Master's Degree in Business Administration\nProfession: Venture Capitalist\nIncome: $365,000\n\nFinancial Situation:\nAs a successful venture capitalist, Sophia enjoys a comfortable and stable financial situation. Her income falls within the $94,001 to $1,000,000 range, allowing her to maintain a high standard of living while also investing in her personal and professional growth.\n\nShopping Habits:\nSophia's shopping habits reflect her sophisticated tastes and her desire to project a polished, professional image. She frequents high-end boutiques and luxury department stores, carefully selecting pieces that demonstrate her discerning eye and her commitment to quality. While she is not afraid to invest in premium products, Sophia also appreciates a good value and is adept at finding the best deals.\n\nProfessional Life:\nSophia's professional life is centered around her passion for identifying and nurturing promising startups. As a partner at a leading venture capital firm, she is responsible for evaluating investment opportunities, providing strategic guidance to founders, and leveraging her extensive network to facilitate connections and open doors for the companies she supports.\n\nPersonal Style:\nSophia's personal style is a reflection of her confidence and her commitment to professionalism. She favors tailored, high-end pieces that accentuate her figure and convey an air of sophistication. Her wardrobe is a curated collection of designer dresses, well-fitted blazers, and elegant accessories that seamlessly transition from boardroom to social events.\n\nIn her free time, Sophia is an avid reader, staying up-to-date on the latest trends and innovations in the technology and startup landscape. She also enjoys attending industry events, networking with fellow investors, and mentoring aspiring entrepreneurs.",
+    "intent": "buy a Harry Potter wand.",
+    "age": 29,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a passionate artist and freelance illustrator. After a series of unfulfilling office jobs, she decided to pursue her creative passions and become a self-employed artist.\n\nDemographics:\nAge: 32\nGender: Female\nEducation: Associate's Degree in Fine Arts\nProfession: Freelance Illustrator\nIncome: $22,000\n\nFinancial Situation:\nAs a freelance artist, Olivia's income can be unpredictable, but she has learned to budget carefully and live within her means. She is frugal in her everyday spending, but enjoys treating herself to art supplies and occasional trips to local galleries.\n\nShopping Habits:\nOlivia is a resourceful shopper who loves to find unique, one-of-a-kind items. She frequents thrift stores, flea markets, and local artisan markets, where she can discover affordable, vintage, and handmade treasures. She also supports independent artists and small businesses when possible.\n\nProfessional Life:\nOlivia's freelance illustration work allows her to be creative and flexible, but it also requires her to be proactive in seeking out clients and managing her own workload. She is constantly honing her skills, experimenting with new mediums, and networking with fellow creatives to find new opportunities.\n\nPersonal Style:\nOlivia's personal style is eclectic and reflects her artistic sensibilities. She enjoys mixing vintage and secondhand finds with modern, sustainable pieces. Her wardrobe is a colorful, whimsical blend of patterns, textures, and silhouettes that express her vibrant, free-spirited personality.",
+    "intent": "buy a durable, stainless steel iced tea dispenser with a large capacity and easy-to-use spigot.",
+    "age": 32,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

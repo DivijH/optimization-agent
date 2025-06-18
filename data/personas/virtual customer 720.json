@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a promising young professional working in the tech industry. With a keen interest in emerging technologies and a passion for innovation, he has quickly risen through the ranks, leveraging his analytical skills and creative problem-solving abilities to make significant contributions to his company.\n\nDemographics:\nAge: 25\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Software Engineer\nIncome: $60,000\n\nFinancial Situation:\nEthan's steady income as a software engineer provides him with a comfortable financial standing, allowing him to save for future goals and investments. He is mindful of his spending, prioritizing experiences and personal growth over material possessions.\n\nShopping Habits:\nEthan's shopping habits reflect his tech-savvy and environmentally conscious mindset. He seeks out products that are technologically advanced, efficient, and ethically sourced. He enjoys browsing online marketplaces and reading reviews to find the best value for his money, often opting for high-quality, durable items that align with his lifestyle.\n\nProfessional Life:\nEthan's professional life is marked by his innovative thinking and collaborative spirit. He thrives in a fast-paced, dynamic work environment, where he can contribute his technical expertise and problem-solving skills to develop cutting-edge software solutions. Ethan is highly respected by his colleagues for his ability to think outside the box and his willingness to take on challenging projects.\n\nPersonal Style:\nEthan's personal style is a reflection of his active, health-conscious lifestyle. He favors functional, yet stylish clothing that allows him to seamlessly transition between his work and personal activities. He appreciates minimalist design and high-performance fabrics, often investing in versatile pieces that can be mixed and matched to create a variety of looks.",
+    "intent": "buy a pair of cute compression socks.",
+    "age": 25,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

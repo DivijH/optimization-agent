@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a software engineer at a growing tech startup. He has over 15 years of experience in the industry and is known for his strong problem-solving skills and his ability to create elegant, scalable code.\n\nDemographics:\nAge: 41\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Software Engineer\nIncome: $55,000\n\nFinancial Situation:\nDavid's income as a software engineer provides him with a comfortable financial situation. He is disciplined with his spending, setting aside a portion of his earnings for savings and investments, while also allowing himself to enjoy occasional splurges, such as upgrading his home entertainment system or taking a weekend getaway.\n\nShopping Habits:\nAs a tech-savvy individual, David tends to be an early adopter of the latest gadgets and software. He enjoys browsing online tech forums and blogs to stay up-to-date on industry trends and new product releases. When making purchases, he is willing to invest in high-quality, durable items that will enhance his productivity and personal entertainment.\n\nProfessional Life:\nDavid thrives in a fast-paced, innovative work environment. He takes pride in his ability to tackle complex technical challenges and is always eager to learn new programming languages and methodologies. He values collaboration and enjoys working with cross-functional teams to deliver cutting-edge software solutions.\n\nPersonal Style:\nDavid's personal style reflects his practical and efficient nature. He typically wears casual, comfortable clothing that allows him to focus on his work, such as well-fitting jeans, t-shirts, and sneakers. However, he also enjoys the occasional opportunity to dress up, incorporating stylish button-down shirts and blazers into his wardrobe.",
+    "intent": "buy a 12-pack of Sprite Cranberry.",
+    "age": 41,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

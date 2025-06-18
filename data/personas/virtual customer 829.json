@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Samantha\n\nBackground:\nSamantha is a driven and ambitious 29-year-old woman who has carved out a successful career in the fashion industry. After completing her degree in Fashion Merchandising, she has steadily climbed the ranks, recently securing a management position at a popular retail chain.\n\nDemographics:\nAge: 29\nGender: Female\nEducation: Bachelor's Degree in Fashion Merchandising\nProfession: Retail Store Manager\nIncome: $50,000\n\nFinancial Situation:\nWith her income falling within the $30,001 to $94,000 range, Samantha is financially stable and independent. She has developed a keen understanding of budgeting and prioritizing her expenses, allowing her to save a portion of her earnings while still enjoying the occasional indulgence, such as splurging on the latest fashion trends or treating herself to a weekend getaway.\n\nShopping Habits:\nSamantha's shopping habits are a reflection of her passion for fashion and her desire to stay ahead of the curve. She is an avid follower of industry trends and often visits high-end department stores, boutiques, and online retailers to discover the latest styles. However, she also values quality and longevity, investing in well-made pieces that can be incorporated into her wardrobe for years to come.\n\nPersonal Life:\nIn her personal life, Samantha is an active member of her local community, volunteering her time and expertise to various fashion-related philanthropic initiatives. She is a strong believer in the power of mentorship and regularly dedicates time to supporting and empowering aspiring fashion professionals. Samantha's social circle is diverse, consisting of fellow industry peers, fashion enthusiasts, and individuals from various other backgrounds who share her passion for design and creativity.",
+    "intent": "buy swing extender straps to add length to the straps on my dresses and tops.",
+    "age": 29,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

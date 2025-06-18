@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Serena\n\nBackground:\nSerena is a dynamic and ambitious young professional who has quickly made a name for herself in the competitive world of finance. With a keen intellect and a drive to succeed, she has rapidly climbed the ranks to become a respected investment analyst at a prestigious firm.\n\nDemographics:\nAge: 29\nGender: Female\nEducation: Master's degree in Finance\nProfession: Investment Analyst\nIncome: $150,000\n\nFinancial Situation:\nSerena's income as an investment analyst places her in a comfortable financial position, allowing her to enjoy a lifestyle that reflects her success. She is a disciplined saver, investing a significant portion of her earnings to secure her long-term financial goals, while also indulging in occasional luxuries.\n\nShopping Habits:\nSerena approaches shopping with a discerning eye, seeking out high-quality, investment-worthy pieces that will elevate her professional wardrobe. She has a penchant for designer labels and carefully curates her closet, balancing practical workwear with stylish statement pieces that capture her sophisticated personal aesthetic.\n\nProfessional Life:\nSerena is a rising star in the finance industry, known for her sharp analytical skills, strategic thinking, and ability to navigate complex financial markets. Her keen eye for detail and her commitment to delivering exceptional results have earned her the respect of her colleagues and clients alike. Serena is also actively involved in her firm's diversity and inclusion initiatives, using her platform to mentor and support other young professionals.\n\nPersonal Style:\nSerena's personal style reflects her confident and polished persona. She favors sleek, tailored pieces that exude an air of effortless elegance, such as well-fitted blazers, crisp button-down shirts, and expertly-cut trousers. Serena accessorizes with delicate jewelry, statement handbags, and high-quality leather shoes, creating a refined and sophisticated look that complements her professional role.",
+    "intent": "buy different sized dog nail clippers.",
+    "age": 29,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

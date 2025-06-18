@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a 32-year-old marketing manager at a mid-sized advertising agency. With a strong creative flair and a strategic mindset, he has been instrumental in crafting successful campaigns for the agency's diverse range of clients.\n\nDemographics:\nAge: 32\nGender: Male\nEducation: Bachelor's Degree\nProfession: Marketing Manager\nIncome: $65,000\n\nFinancial Situation:\nEthan's income as a marketing manager provides him with a comfortable financial standing. He diligently manages his budget, allocating funds towards savings, investments, and occasional indulgences that align with his interests and lifestyle.\n\nShopping Habits:\nEthan's shopping habits reflect his desire for quality and practicality. He frequents specialty retail stores, online marketplaces, and occasional high-end outlets to curate a versatile wardrobe that blends professional attire with casual, stylish pieces. Ethan values products that offer a balance of form and function.\n\nPersonal Life:\nOutside of work, Ethan is an avid outdoor enthusiast. He enjoys hiking, cycling, and exploring new travel destinations, which he funds through careful financial planning and budgeting. Ethan also dedicates time to his passion for photography, capturing the beauty of the natural world.\n\nProfessional Life:\nIn his role as a marketing manager, Ethan collaborates closely with his team to develop innovative campaigns that resonate with a diverse client base. He is known for his analytical approach, strategic thinking, and ability to effectively communicate complex ideas. Ethan's strong leadership skills and creative vision have contributed to the agency's continued success.",
+    "intent": "buy a cubic zirconia necklace.",
+    "age": 32,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

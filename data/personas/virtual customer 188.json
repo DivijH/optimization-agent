@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a determined single mother who has faced numerous challenges in her life, but her unwavering spirit and dedication to providing for her family have kept her going. She is currently pursuing her dream of owning a small business while juggling multiple part-time jobs to make ends meet.\n\nDemographics:\nAge: 41\nGender: Female\nEducation: High school diploma\nProfession: Part-time jobs, small business owner\nIncome: $25,000\n\nFinancial Situation:\nWith a limited income from her part-time jobs and the fledgling small business, Olivia is constantly navigating the financial complexities of supporting herself and her child. She is resourceful and adept at budgeting, often relying on government assistance programs and community resources to supplement her income. Despite the financial strain, Olivia remains determined to build a better life for her family.\n\nShopping Habits:\nOlivia is a savvy shopper, always on the lookout for the best deals and discounts. She frequents thrift stores, discount retailers, and online marketplaces to find affordable, high-quality items for her family. Olivia is skilled at stretching her budget and finding creative ways to save money, whether it's through coupon clipping, bulk purchasing, or upcycling.\n\nPersonal Life:\nOlivia's primary focus is providing a stable and nurturing environment for her child. She treasures the time they spend together, whether it's playing at the park, reading bedtime stories, or baking homemade treats. Olivia's resilience and optimism inspire those around her, and she finds joy in the small moments that make her family's life meaningful.",
+    "intent": "buy a affordable, durable airsoft gun.",
+    "age": 41,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

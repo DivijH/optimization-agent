@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Robert\n\nBackground:\nRobert is a successful entrepreneur who has built a thriving small business over the past three decades. With a keen eye for emerging trends and a knack for strategic decision-making, he has navigated the ups and downs of the market, leading his company to consistent growth and profitability.\n\nDemographics:\nAge: 60\nGender: Male\nEducation: Bachelor's Degree in Business Administration\nProfession: Small Business Owner\nIncome: $120,000\n\nFinancial Situation:\nRobert's hard work and business acumen have paid off, allowing him to achieve a comfortable financial standing. He has accumulated substantial savings and investments, which provide a steady stream of passive income to complement his business earnings. While he maintains a high-end lifestyle, Robert is also mindful of his spending and focuses on making prudent financial decisions.\n\nShopping Habits:\nAs a seasoned businessman, Robert takes a pragmatic approach to shopping. He values quality and functionality over flashy trends, often investing in durable, high-performance products that will serve him well in the long run. When making larger purchases, Robert conducts thorough research, seeking out the best deals and comparing options across various retailers and online marketplaces.\n\nPersonal Style:\nRobert's personal style reflects his professional success and refined taste. He typically wears tailored suits, crisp dress shirts, and polished leather shoes, exuding an air of confidence and sophistication. However, he also enjoys casual comfort, often opting for well-fitting jeans, button-down shirts, and comfortable loafers when not in a formal business setting.\n\nLeisure Activities:\nIn his free time, Robert indulges in his passion for golf, frequently hitting the links with his business associates and close friends. He also enjoys traveling, both for leisure and to explore new business opportunities. Robert takes pride in maintaining a healthy work-life balance, finding joy in spending quality time with his family and engaging in philanthropic endeavors.",
+    "intent": "buy a kids diner order pad.",
+    "age": 60,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a driven and ambitious young woman who has carved out a successful career in the tech industry. With a keen eye for innovation and a passion for problem-solving, she has quickly risen through the ranks, establishing herself as a respected leader and innovator in her field.\n\nDemographics:\nAge: 28\nGender: Female\nEducation: Bachelor's Degree in Computer Science\nProfession: Software Engineer\nIncome: $67,000\n\nFinancial Situation:\nOlivia's steady income as a software engineer allows her to maintain a comfortable and secure financial situation. She is diligent in her budgeting and savings, setting aside a portion of her earnings for both short-term goals and long-term investments.\n\nShopping Habits:\nWhile Olivia values quality and functionality in her purchases, she is also mindful of her spending. She tends to shop at a mix of high-end and mid-range retailers, carefully researching products and comparing prices to ensure she is getting the best value. She is particularly drawn to technology-related purchases, such as the latest gadgets and software.\n\nProfessional Life:\nOlivia is a rising star in her company, known for her innovative thinking and her ability to lead cross-functional teams. She is constantly seeking out new challenges and opportunities to grow her skills, frequently attending industry events and conferences to stay informed on the latest trends and developments.\n\nPersonal Style:\nOlivia's personal style reflects her professional persona, with a focus on sleek, modern, and versatile pieces. She favors well-tailored clothing in neutral tones, such as blazers, dress pants, and crisp button-down shirts. However, she is not afraid to incorporate pops of color or bold accessories to express her creativity and individuality.\n\nIn her free time, Olivia enjoys exploring the latest advancements in technology, attending tech-related meetups, and volunteering her skills to local non-profit organizations. She is also an avid reader, with a particular interest in science fiction and futurism.",
+    "intent": "buy a HDMI to USB adapter.",
+    "age": 28,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

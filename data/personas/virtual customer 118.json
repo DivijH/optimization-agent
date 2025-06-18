@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a passionate community organizer who has dedicated her career to advocating for social justice and environmental sustainability. She is known for her tireless efforts in mobilizing her local community to create positive change.\n\nDemographics:\nAge: 52\nGender: Female\nEducation: Master's degree in Public Policy\nProfession: Community Organizer\nIncome: $58,000\n\nFinancial Situation:\nEmily's income allows her to maintain a comfortable lifestyle while prioritizing her various community initiatives. She is financially responsible, allocating a portion of her earnings to support local nonprofits and her personal savings.\n\nShopping Habits:\nEmily values sustainability and ethical consumption. She prefers to shop at local, independently owned businesses and supports brands that align with her environmental and social values. She carefully researches products and often seeks out secondhand or recycled items. Emily is willing to pay a premium for high-quality, long-lasting goods that reduce her environmental impact.\n\nProfessional Life:\nAs a community organizer, Emily works tirelessly to address pressing social and environmental issues in her city. She leads grassroots campaigns, organizes community events, and collaborates with local government and nonprofit organizations to drive meaningful change. Emily's strong leadership skills and passion for social justice inspire others to get involved and make a difference.\n\nPersonal Style:\nEmily's personal style reflects her commitment to sustainability and social consciousness. She gravitates towards comfortable, versatile clothing made from organic, fair-trade materials. Her wardrobe consists of well-fitting, earth-toned pieces that can be easily layered and accessorized. Emily values functionality and practicality, but she also enjoys incorporating unique, handmade items that showcase local artisanship.",
+    "intent": "buy a pair of high-quality, sustainable compression stockings that provide support and style.",
+    "age": 52,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

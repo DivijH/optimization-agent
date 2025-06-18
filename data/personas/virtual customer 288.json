@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Lucas\n\nBackground:\nLucas is a young, aspiring musician who is pursuing his passion for creating and performing music. Despite facing financial challenges, he remains determined to make his mark in the local music scene.\n\nDemographics:\nAge: 24\nGender: Male\nEducation: High School Diploma\nProfession: Musician (Part-time)\nIncome: $18,000\n\nFinancial Situation:\nAs a part-time musician, Lucas's income is limited, but he is resourceful and finds ways to make ends meet. He lives frugally, sharing a modest apartment with roommates and prioritizing his musical investments over material possessions.\n\nShopping Habits:\nLucas is a savvy shopper, scouring thrift stores, garage sales, and online marketplaces for affordable musical equipment and gear. He takes pride in finding unique, vintage instruments and refurbishing them to suit his needs. When it comes to everyday essentials, he seeks out budget-friendly options that allow him to allocate more funds towards his musical endeavors.\n\nProfessional Life:\nAlongside his part-time job, Lucas spends countless hours writing, composing, and rehearsing with his band. He is constantly honing his skills, experimenting with different genres and techniques to develop his unique sound. Lucas actively seeks out performance opportunities, whether it's open mic nights at local venues or small-scale gigs, to gain exposure and build a loyal following.\n\nPersonal Style:\nLucas's personal style reflects his artistic sensibilities and passion for music. He gravitates towards vintage-inspired clothing, often repurposing and customizing secondhand items to create his signature look. His wardrobe is a blend of eclectic and understated, with a focus on comfort and self-expression.\n\nIn his free time, Lucas can be found immersed in the local music scene, attending concerts, and networking with other musicians. He is driven by a deep love for his craft and the desire to share his music with the world, despite the financial challenges he faces.",
+    "intent": "buy a portable USB battery pack to charge my musical equipment on the go.",
+    "age": 24,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

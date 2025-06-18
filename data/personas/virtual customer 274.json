@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Evelyn\n\nBackground:\nEvelyn is a seasoned executive who has spent her career navigating the corporate world. With decades of experience under her belt, she has built a reputation as a strategic thinker and an innovative problem-solver.\n\nDemographics:\nAge: 57\nGender: Female\nEducation: MBA\nProfession: Chief Operating Officer, Multinational Corporation\nIncome: $325,000\n\nFinancial Situation:\nAs the COO of a large multinational corporation, Evelyn's income falls within the $94,001 to $1,000,000 range. She has accumulated substantial savings and investments over the years, and she is selective in her spending, focusing on high-quality, long-lasting purchases.\n\nShopping Habits:\nEvelyn approaches shopping with the same level of diligence and attention to detail that she brings to her professional life. She seeks out products that are both functional and stylish, and she is willing to invest in timeless pieces that will last. She enjoys the occasional luxury purchase, but she is always mindful of value and quality.\n\nProfessional Life:\nIn her role as COO, Evelyn is responsible for overseeing the day-to-day operations of the corporation. She is an expert in strategic planning, risk management, and process optimization. Her ability to think critically and make decisions under pressure has been instrumental to the company's success.\n\nPersonal Style:\nEvelyn's personal style reflects her professional persona \u2013 polished, sophisticated, and understated. She favors tailored, high-quality pieces that exude confidence and authority, such as well-fitting slacks, crisp button-down shirts, and elegant blazers. Her accessories, such as leather handbags and statement jewelry, add a touch of elegance to her look.",
+    "intent": "buy a solar power bank with an AC outlet.",
+    "age": 57,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

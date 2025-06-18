@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a seasoned professional who has spent the better part of his career in the corporate world, honing his skills in the field of project management. After years of navigating the demanding corporate landscape, he has recently made the decision to transition into the non-profit sector, where he can apply his expertise to make a meaningful difference in his community.\n\nDemographics:\nAge: 58\nGender: Male\nEducation: Bachelor's Degree in Business Administration\nProfession: Project Manager (Non-Profit Organization)\nIncome: $58,000\n\nFinancial Situation:\nWith his extensive experience and ongoing professional development, Michael's income falls within the $30,001 to $94,000 range. He has been diligent in his financial planning, ensuring a comfortable lifestyle while also setting aside funds for future goals, such as a comfortable retirement and supporting charitable causes.\n\nShopping Habits:\nMichael approaches his shopping with a mix of practicality and intentionality. He values quality over quantity, investing in well-made, long-lasting products that align with his personal and professional needs. While he enjoys the convenience of online shopping, he also takes pleasure in browsing local boutiques and supporting small businesses in his community.\n\nProfessional Life:\nAs a project manager in the non-profit sector, Michael leverages his expertise to streamline operations, optimize resources, and ensure the successful execution of initiatives that positively impact the community. He takes great pride in his work, finding fulfillment in the tangible results of his efforts and the positive changes he helps to facilitate.\n\nPersonal Style:\nMichael's personal style is refined and understated, reflecting his professional demeanor and his appreciation for timeless fashion. His wardrobe consists of well-tailored suits, crisp button-down shirts, and classic leather shoes. While he values comfort, he also believes in the importance of appearing polished and put-together, both in his personal and professional life.",
+    "intent": "buy a high-quality artificial christmas tree with led lights that can inflate and automatically inflate to 6 feet tall.",
+    "age": 58,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

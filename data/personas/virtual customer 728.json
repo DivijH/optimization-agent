@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a seasoned professional who has carved out a successful career in the nonprofit sector. With a deep passion for social impact and a knack for strategic planning, she has played a pivotal role in driving positive change within her organization.\n\nDemographics:\nAge: 49\nGender: Female\nEducation: Master's Degree in Public Administration\nProfession: Nonprofit Program Manager\nIncome: $65,000\n\nFinancial Situation:\nAs a program manager for a well-established nonprofit organization, Emily's income falls within the $30,001 to $94,000 range. She is mindful of her spending and actively contributes to her retirement savings, while also allocating funds to support causes and initiatives she cares about.\n\nShopping Habits:\nEmily's shopping habits reflect her values and her desire to make a difference. She is drawn to ethically-sourced, sustainable products that align with her principles. When making purchases, Emily carefully researches brands and their social responsibility practices, prioritizing those that give back to the community or minimize their environmental footprint.\n\nProfessional Life:\nIn her role as a nonprofit program manager, Emily oversees the implementation of large-scale initiatives aimed at addressing critical social and environmental issues. She excels at collaborating with cross-functional teams, fostering partnerships with stakeholders, and securing funding to ensure the success of her organization's programs. Emily is also a skilled communicator, adept at presenting complex information to diverse audiences.\n\nPersonal Style:\nEmily's personal style is a reflection of her practical yet stylish sensibilities. She favors timeless, high-quality pieces that can be mixed and matched to create versatile, professional looks. Her wardrobe consists of well-fitting slacks, crisp button-down shirts, and classic blazers, often paired with comfortable yet chic flats or loafers.\n\nIn her free time, Emily enjoys engaging in local community events, volunteering for causes she cares about, and attending thought-provoking lectures or workshops. She is an avid reader, staying informed on the latest developments in the nonprofit and social impact sectors.",
+    "intent": "buy the \"the agony and the ecstasy cinema classics collection\" DVD set.",
+    "age": 49,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Javier\n\nBackground:\nJavier is a dedicated community organizer who has spent the past two decades advocating for affordable housing and social justice initiatives in his local neighborhood. Despite facing financial challenges, he remains steadfast in his mission to create positive change and empower marginalized communities.\n\nDemographics:\nAge: 48\nGender: Male\nEducation: High School Diploma\nProfession: Community Organizer\nIncome: $26,000\n\nFinancial Situation:\nJavier's income as a community organizer is modest, which requires him to carefully manage his finances. He lives frugally, prioritizing essential expenses and seeking out creative ways to stretch his limited resources. Javier relies on government assistance and local community programs to help meet his basic needs.\n\nShopping Habits:\nJavier is a savvy shopper, frequently visiting thrift stores, discount outlets, and online marketplaces to find affordable, high-quality items. He values functionality and durability over the latest trends, often repairing or repurposing items to extend their lifespan. Javier also supports local small businesses and social enterprises that align with his values.\n\nProfessional Life:\nAs a community organizer, Javier's days are filled with attending meetings, organizing events, and advocating for policy changes. He works tirelessly to connect residents with essential resources and amplify the voices of those who have been historically marginalized. Javier's unwavering dedication and passion for his work are a source of inspiration for those around him.\n\nPersonal Style:\nJavier's personal style reflects his practical and down-to-earth nature. He favors comfortable, durable clothing that allows him to move freely and focus on his work. His wardrobe consists of well-worn jeans, sturdy boots, and versatile shirts that can be layered for different weather conditions. Javier's style is humble and unassuming, with an emphasis on functionality over fashion.\n\nIn his free time, Javier enjoys volunteering at the local community center, attending neighborhood gatherings, and engaging in outdoor activities like gardening and hiking. These pursuits not only nourish his own well-being but also strengthen the bonds within his community.",
+    "intent": "buy a durable, lightweight umbrella for outdoor activities.",
+    "age": 48,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

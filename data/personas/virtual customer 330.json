@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Alex\n\nBackground:\nAlex is a passionate young professional who recently graduated with a degree in marketing. He currently works as a Social Media Coordinator for a mid-sized tech startup, where he helps to drive the company's digital marketing efforts.\n\nDemographics:\nAge: 23\nGender: Male\nEducation: Bachelor's Degree in Marketing\nProfession: Social Media Coordinator\nIncome: $45,000\n\nFinancial Situation:\nAs a recent college graduate, Alex is still establishing his financial footing. While his income as a Social Media Coordinator is comfortable, he is mindful of his spending and aims to save a portion of his earnings each month. He has started to build an emergency fund and is exploring opportunities to invest in his financial future.\n\nShopping Habits:\nAlex has a keen eye for trends and enjoys incorporating the latest styles into his wardrobe. He often scours online marketplaces and social media platforms for unique and affordable finds. While he appreciates quality, he is also budget-conscious and looks for ways to maximize his purchases, such as taking advantage of sales and discounts.\n\nProfessional Life:\nIn his role as Social Media Coordinator, Alex brings a youthful and creative energy to the team. He is adept at analyzing data, crafting engaging content, and staying up-to-date with the ever-evolving landscape of social media platforms. His colleagues appreciate his innovative ideas and his willingness to experiment with new strategies.\n\nPersonal Style:\nAlex's personal style reflects his trendy and stylish persona. He enjoys mixing and matching streetwear, athleisure, and casual-chic pieces to create versatile, yet stylish outfits. He takes pride in his appearance and often seeks inspiration from fashion influencers and social media.\n\nWhen he's not at work, Alex enjoys exploring the city's vibrant food scene, attending local music festivals, and staying active through activities like rock climbing and cycling. He is an avid reader, particularly of business and marketing publications, and he dreams of one day starting his own digital marketing agency.",
+    "intent": "buy a pack of baby wipes.",
+    "age": 23,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Mia\n\nBackground:\nMia is a passionate artist and freelance graphic designer who has carved out a unique niche for herself in the creative industry. Despite facing financial challenges, she remains dedicated to her craft and committed to using her talents to make a positive impact on her community.\n\nDemographics:\nAge: 36\nGender: Female\nEducation: Bachelor's degree in Fine Arts\nProfession: Freelance Graphic Designer\nIncome: $25,000\n\nFinancial Situation:\nAs a freelancer, Mia's income can be unpredictable, and she often struggles to make ends meet. However, she has learned to adapt her lifestyle to her financial realities, living frugally and prioritizing her artistic pursuits over material possessions. Mia supplements her income through part-time work and occasional commissioned projects.\n\nShopping Habits:\nMia is a conscious consumer who focuses on purchasing high-quality, durable items that will last. She frequents thrift stores, flea markets, and online marketplaces to find unique and affordable pieces that align with her personal style. Mia also values supporting local and independent artisans, even if it means spending a little more.\n\nProfessional Life:\nMia's freelance work as a graphic designer allows her to apply her creative skills to a variety of projects, from branding for small businesses to designing promotional materials for non-profit organizations. She takes great pride in her work and is constantly seeking new opportunities to grow and expand her portfolio. Mia also volunteers her time to local art initiatives, mentoring aspiring young artists.\n\nPersonal Style:\nMia's personal style is eclectic and reflective of her artistic sensibilities. She gravitates towards vintage-inspired pieces, unique thrifted finds, and handmade accessories. Mia's wardrobe is a mix of comfortable, bohemian-inspired pieces and well-tailored, statement-making items that allow her to express her creative flair.",
+    "intent": "buy a chiropractic adjustment session",
+    "age": 36,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

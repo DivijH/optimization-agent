@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ava\n\nBackground:\nAva is a recent college graduate, passionate about sustainable design and environmentalism. She is currently working as a freelance graphic designer, using her creative talents to support local eco-friendly businesses and nonprofits.\n\nDemographics:\nAge: 24\nGender: Female \nEducation: Bachelor's degree in Graphic Design\nProfession: Freelance Graphic Designer\nIncome: $25,000\n\nFinancial Situation:\nAs a freelancer, Ava's income can be inconsistent, but she is frugal and diligent about budgeting. She lives modestly in a small apartment and prioritizes saving money to eventually start her own sustainable design studio.\n\nShopping Habits:\nAva is intentional and mindful about her purchases, favoring ethical, eco-friendly brands and secondhand items. She enjoys browsing local thrift stores and artisan markets in search of unique, sustainable finds. Efficiency is not her top priority when shopping, as she sees it as an opportunity to support her community.\n\nProfessional Life:\nAva wears many hats as a freelance designer - from branding and web design to print materials and marketing collateral. She is selective about the clients she works with, only partnering with businesses and organizations that share her passion for sustainability. In her free time, Ava volunteers with local environmental nonprofits.\n\nPersonal Style:\nAva's personal style reflects her values - she gravitates towards natural fibers, earth-toned palettes, and minimalist silhouettes. She loves to incorporate vintage and handmade pieces into her wardrobe, and often thrifts for unique accessories. Comfort and functionality are important, but she also enjoys expressing her creativity through her fashion choices.\n\nAva is an early riser, typically waking up around 7am each day. She is a loyal customer of Patagonia and tries to shop there as often as possible.",
+    "intent": "buy a CO2-powered, full-auto airsoft rifle.",
+    "age": 24,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

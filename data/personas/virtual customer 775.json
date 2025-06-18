@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Veronica\n\nBackground:\nVeronica is a passionate artist and art educator who has dedicated her life to nurturing creativity and self-expression in her local community. Despite facing financial challenges, she remains committed to her craft and to sharing her love of art with others.\n\nDemographics:\nAge: 41\nGender: Female\nEducation: Bachelor's Degree in Fine Arts\nProfession: Art Educator and Independent Artist\nIncome: $23,000\n\nFinancial Situation:\nAs an art educator and independent artist, Veronica's income is modest and often inconsistent. She relies on a combination of part-time teaching positions, art commissions, and occasional grants to support herself. While she lives a simple lifestyle, she sometimes struggles to cover her basic expenses, prioritizing the needs of her art classes and personal creative projects over her own financial security.\n\nShopping Habits:\nVeronica is a mindful consumer who seeks out high-quality, long-lasting art supplies and materials. She frequents local art stores, online marketplaces, and secondhand shops to find affordable, sustainable options that align with her artistic sensibilities. When possible, she prefers to support independent artists and small businesses that share her values.\n\nProfessional Life:\nVeronica's days are filled with a diverse array of tasks, from teaching art classes to local youth and community groups to working on her own creative projects. She is passionate about fostering a love of art in her students and providing accessible, inclusive art education opportunities. Veronica also actively participates in local art exhibitions and community events to showcase her work and engage with fellow artists.\n\nPersonal Style:\nVeronica's personal style is a reflection of her creative, bohemian spirit. She favors comfortable, versatile clothing that allows her to move freely and engage in her various artistic pursuits. Her wardrobe is a mix of vintage finds, thrifted pieces, and handmade items that showcase her unique sense of style and her commitment to sustainability.",
+    "intent": "buy a toaster tray for my kitchen that is stainless steel, dishwasher safe, and compatible with my existing toaster.",
+    "age": 41,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a seasoned professional who has built a successful career as a marketing consultant. With years of experience working with both small businesses and large corporations, she has developed a diverse skillset and a keen understanding of the ever-evolving marketing landscape.\n\nDemographics:\nAge: 55\nGender: Female\nEducation: Master's Degree in Marketing\nProfession: Marketing Consultant\nIncome: $60,000\n\nFinancial Situation:\nEmily's steady income as a marketing consultant, coupled with her prudent financial management, has allowed her to achieve a comfortable lifestyle. She maintains a balanced portfolio, investing in a mix of stocks, mutual funds, and real estate, with a focus on long-term growth and retirement planning.\n\nShopping Habits:\nEmily approaches shopping with a practical and discerning mindset. She values quality over quantity and is willing to invest in high-performance, durable products that will serve her well in both her professional and personal life. While she enjoys browsing online and in-person for the latest trends, she is selective and prioritizes items that align with her style and needs.\n\nProfessional Life:\nAs a respected marketing consultant, Emily provides strategic guidance and creative solutions to a diverse client base. She is adept at identifying emerging market trends, crafting effective branding and advertising campaigns, and helping businesses navigate the complexities of the digital landscape. Emily's strong interpersonal skills, combined with her extensive industry knowledge, make her a trusted advisor to her clients.\n\nPersonal Style:\nEmily's personal style reflects her confidence and sophistication. She favors classic, timeless pieces with a modern twist, such as well-tailored blazers, crisp button-down shirts, and elegant slacks. Her wardrobe is a harmonious blend of professionalism and personal flair, often complemented by statement accessories that add a touch of personal expression.\n\nIn her free time, Emily enjoys exploring new culinary experiences, attending art exhibitions, and engaging in outdoor activities like hiking and gardening. She is an active member of her local community, volunteering for a nonprofit organization that provides marketing services to small businesses.",
+    "intent": "buy a 125 cc motor scooter for adult street legal use.",
+    "age": 55,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

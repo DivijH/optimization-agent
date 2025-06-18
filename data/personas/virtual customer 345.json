@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a seasoned IT professional who has carved out a successful career in the tech industry. With decades of experience under his belt, he currently serves as the IT Manager for a growing software development firm, overseeing a team of talented engineers and technicians.\n\nDemographics:\nAge: 55\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: IT Manager\nIncome: $75,000\n\nFinancial Situation:\nAs an experienced IT professional, Michael's income falls within the $30,001 to $94,000 range, providing him with a comfortable financial standing. He has been diligent in his savings and investments over the years, ensuring a secure retirement plan. While he enjoys the occasional splurge on the latest tech gadgets or home improvements, he maintains a balanced budget and is mindful of his spending.\n\nShopping Habits:\nMichael's shopping habits reflect his practical and pragmatic approach to life. He tends to research and compare products, seeking the best value for his money. When it comes to technology, he keeps a keen eye on the latest advancements and is often an early adopter of cutting-edge hardware and software. However, he is also conscious of sustainability and longevity, preferring to invest in high-quality, long-lasting products.\n\nProfessional Life:\nAs the IT Manager, Michael is responsible for overseeing the smooth operation of the software development firm's technology infrastructure. He takes pride in his ability to troubleshoot complex issues and implement innovative solutions to improve efficiency and productivity. Michael is a respected leader within the organization, known for his technical expertise and his ability to effectively manage and mentor his team.\n\nPersonal Style:\nMichael's personal style is a reflection of his professional persona \u2013 polished and practical. He favors a classic, business-casual look, often pairing pressed slacks with button-down shirts or sweaters. His attire is always neat and well-maintained, showcasing his attention to detail and his desire to present a professional image. While he may not be considered a fashion-forward individual, Michael's style is timeless and appropriate for his role within the company.",
+    "intent": "buy a large, high-quality golf umbrella.",
+    "age": 55,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

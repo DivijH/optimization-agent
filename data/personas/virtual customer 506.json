@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Damian\n\nBackground:\nDamian is a passionate artist who has dedicated his career to pursuing his creative passions, even in the face of financial challenges. Despite the ups and downs of his unconventional path, he remains steadfast in his commitment to his craft and the pursuit of artistic expression.\n\nDemographics:\nAge: 32\nGender: Male\nEducation: High School Diploma\nProfession: Freelance Artist\nIncome: $18,000\n\nFinancial Situation:\nAs a freelance artist, Damian's income fluctuates, often falling within the $0 to $30,000 range. He has learned to live frugally, prioritizing his artistic endeavors over material possessions. Damian carefully manages his finances, balancing his basic living expenses with the investment in art supplies and equipment.\n\nShopping Habits:\nDamian's shopping habits reflect his artistic sensibilities and his desire to minimize waste. He frequents thrift stores, flea markets, and online platforms that offer secondhand or repurposed items. He is skilled at finding unique and affordable materials that can be transformed into his art. Damian also makes a conscious effort to support local artisans and independent makers when making purchases.\n\nProfessional Life:\nAs a freelance artist, Damian's professional life is characterized by a constant search for creative expression and opportunities to showcase his work. He takes on various projects, from mural commissions to graphic design freelance work, all while maintaining his personal artistic practice. Damian is adept at networking within the local art community and continuously seeks ways to expand his artistic horizons.\n\nPersonal Style:\nDamian's personal style is a reflection of his bohemian and unconventional nature. He favors comfortable, oversized clothing, often mixing vintage pieces with contemporary elements. His wardrobe is a canvas for his artistic flair, with splashes of color, eclectic patterns, and unique accessories that showcase his creative sensibilities.",
+    "intent": "buy a rubiks cube case.",
+    "age": 32,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

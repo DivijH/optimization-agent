@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a 44-year-old family man who has balanced a successful career in the non-profit sector with his dedication to community service and his own personal growth. He has found fulfillment in his role as a program manager, where he is able to combine his analytical skills with his passion for making a positive impact on the lives of those in need.\n\nDemographics:\nAge: 44\nGender: Male\nEducation: Master's Degree in Public Administration\nProfession: Program Manager, Non-Profit Organization\nIncome: $68,000\n\nFinancial Situation:\nMichael's income as a program manager falls within the middle range, allowing him to provide a comfortable lifestyle for his family while also contributing to various charitable causes. He is financially responsible, maintaining a balanced budget and investing in long-term savings to ensure financial security for the future.\n\nShopping Habits:\nMichael takes a practical and value-driven approach to shopping, seeking out high-quality, durable products that will serve him and his family well. He enjoys researching and comparing options to find the best deals, often utilizing online resources and discount stores. While he is not opposed to occasional indulgences, Michael's primary focus is on meeting the needs of his household in a fiscally responsible manner.\n\nProfessional Life:\nIn his role as a program manager, Michael oversees the implementation of various social welfare initiatives, working closely with his team to ensure efficient and effective delivery of services. He is skilled at navigating the complexities of the non-profit sector, leveraging his analytical abilities to identify areas for improvement and strengthen the organization's impact.\n\nPersonal Style:\nMichael's personal style reflects his pragmatic and down-to-earth nature. He favors comfortable, yet professional attire, such as well-fitting dress shirts, slacks, and casual blazers. He is not one to follow the latest fashion trends, but instead focuses on building a wardrobe of timeless, versatile pieces that can be easily mixed and matched for a polished, understated look.",
+    "intent": "buy a pair of wide calf compression socks that provide support and comfort.",
+    "age": 44,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

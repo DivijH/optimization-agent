@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a passionate environmental advocate who works as a sustainability consultant for a leading non-profit organization. She is dedicated to helping businesses and communities adopt eco-friendly practices and reduce their carbon footprint.\n\nDemographics:\nAge: 37\nGender: Female\nEducation: Master's Degree in Environmental Science\nProfession: Sustainability Consultant\nIncome: $55,000\n\nFinancial Situation:\nOlivia's income as a sustainability consultant falls within the $30,001 to $94,000 range. While she is financially stable, she is conscious of her spending and prioritizes saving for future goals, such as a down payment on a home. Olivia is mindful of her environmental impact and often seeks out sustainable and ethical investment opportunities.\n\nShopping Habits:\nOlivia's shopping habits reflect her environmental values. She prefers to purchase from brands that prioritize sustainability and ethical production. When shopping, she is diligent in researching the sourcing and manufacturing processes of products, and she is willing to pay a premium for items that align with her eco-conscious beliefs. Olivia also enjoys browsing thrift stores and secondhand shops, where she can find unique, pre-owned items.\n\nProfessional Life:\nAs a sustainability consultant, Olivia works with a diverse range of clients, from small businesses to large corporations, to develop and implement sustainable practices. She leverages her expertise in renewable energy, waste management, and green building to help her clients reduce their environmental impact and improve their bottom line. Olivia is passionate about her work and is constantly seeking new ways to drive positive change.\n\nPersonal Style:\nOlivia's personal style reflects her commitment to sustainability. She favors natural fabrics, such as organic cotton and linen, and often incorporates vintage or repurposed elements into her outfits. Olivia's style is casual yet chic, with a focus on timeless pieces that can be mixed and matched. She enjoys accessorizing with statement jewelry, scarves, and bags that complement her ethical, eco-friendly aesthetic.\n\nOlivia lives in a cozy apartment in Seattle and commutes to work using public transportation or her electric bicycle.",
+    "intent": "buy a package of Corlys Gotitas de Amor bath bombs.",
+    "age": 37,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

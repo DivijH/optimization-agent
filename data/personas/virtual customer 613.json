@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Maria\n\nBackground:\nMaria is a successful businesswoman who has worked tirelessly to build her own thriving marketing agency. Despite her financial stability, she remains grounded and committed to giving back to her community through various philanthropic initiatives.\n\nDemographics:\nAge: 45\nGender: Female\nEducation: Bachelor's Degree in Marketing\nProfession: Founder and CEO of a Marketing Agency\nIncome: $125,000\n\nFinancial Situation:\nAs the founder and CEO of her own marketing agency, Maria has achieved a comfortable level of financial security. Her business has grown steadily over the years, allowing her to enjoy a higher standard of living while also setting aside substantial savings and investments.\n\nShopping Habits:\nMaria's shopping habits reflect her executive status and appreciation for quality. She tends to invest in timeless, high-end pieces that will last and complement her professional wardrobe. However, she also enjoys discovering unique finds at local boutiques and supporting small businesses that align with her values.\n\nProfessional Life:\nMaria's professional life is the central focus of her identity. She is deeply passionate about her work and takes pride in the success of her agency, which she has built from the ground up. Maria is known for her strategic thinking, strong leadership, and unwavering dedication to her clients.\n\nPersonal Style:\nMaria's personal style is polished and sophisticated, yet comfortable. She favors well-tailored suits, elegant dresses, and classic accessories that convey her sense of professionalism and authority. Her attention to detail extends to her grooming, with a focus on timeless and understated elegance.\n\nIn her free time, Maria enjoys indulging in her love for the arts, whether it's attending art exhibits, symphony performances, or supporting local cultural institutions. She also carves out time for physical activities like yoga and hiking, which help her maintain a healthy work-life balance.",
+    "intent": "buy a high-quality silverware rest for table setting.",
+    "age": 45,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

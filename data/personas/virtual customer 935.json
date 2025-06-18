@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Darren\n\nBackground:\nDarren is a retired factory worker who has faced many challenges in his life, but has remained resilient and optimistic. After years of physical labor, he is now enjoying a well-deserved retirement, focusing on his hobbies and giving back to his community.\n\nDemographics:\nAge: 57\nGender: Male\nEducation: High School Diploma\nProfession: Retired Factory Worker\nIncome: $20,000\n\nFinancial Situation:\nDarren's retirement income is modest, consisting of a small pension and Social Security benefits. Despite his limited resources, he is careful with his spending, prioritizing essential expenses and finding creative ways to make ends meet. He is grateful for the stability his retirement provides, though he must be mindful of his budget.\n\nShopping Habits:\nDarren is a savvy shopper, taking advantage of discounts, sales, and secondhand stores to find the best deals. He takes pride in his ability to stretch his dollars and often shares his bargaining tips with friends and family. Necessity is the driving factor behind most of his purchases, though he occasionally treats himself to a small indulgence.\n\nProfessional Life:\nAfter decades of physically demanding work in the factory, Darren is now enjoying a well-deserved retirement. He takes great satisfaction in the knowledge that his hard work and dedication have provided him with the opportunity to enjoy his golden years.\n\nPersonal Style:\nDarren's personal style is practical and comfortable, reflecting his years of manual labor. He favors durable, well-worn clothing that allows him to move freely and engage in his daily activities. While he may not be concerned with the latest fashion trends, Darren takes pride in maintaining a neat and presentable appearance.",
+    "intent": "buy a dinamo generator charger.",
+    "age": 57,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Harold\n\nBackground:\nHarold is a hardworking man who has faced his fair share of challenges throughout his life. Despite having to take on a variety of odd jobs to make ends meet, he remains optimistic and takes pride in his ability to provide for his family.\n\nDemographics:\nAge: 49\nGender: Male\nEducation: High school diploma\nProfession: Various part-time jobs\nIncome: $20,000\n\nFinancial Situation:\nWith a limited income, Harold carefully manages his finances to ensure he can cover essential expenses, such as rent, utilities, and groceries. He often relies on government assistance programs and community resources to supplement his income. While he dreams of a more financially secure future, Harold is grateful for what he has and tries to find joy in the small things.\n\nShopping Habits:\nHarold is a practical shopper, focusing on finding the best deals and discounts to stretch his budget. He frequents thrift stores, secondhand shops, and discount retailers, always on the lookout for quality items at affordable prices. When making larger purchases, he takes the time to research and compare options to ensure he is getting the most value for his money.\n\nPersonal Life:\nDespite the challenges he faces, Harold finds solace in spending time with his family. He enjoys taking his children to the park, helping with homework, and sharing stories from his own childhood. In his free time, Harold may pick up odd jobs or volunteer in his community, finding fulfillment in helping others and staying active.",
+    "intent": "buy pediasure grow and gain non dairy.",
+    "age": 49,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

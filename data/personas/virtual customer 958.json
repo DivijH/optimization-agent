@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a resilient and adaptable individual who has faced his fair share of life's challenges. After a career change and personal setbacks, he is now exploring new opportunities and seeking a path that aligns with his values and passions.\n\nDemographics:\nAge: 53\nGender: Male\nEducation: High School Diploma\nProfession: Part-time Handyman\nIncome: $23,000\n\nFinancial Situation:\nAs a part-time handyman, Michael's income falls within the $0 to $30,000 range. He lives modestly, prioritizing essential expenses and finding creative ways to make the most of his limited resources. Despite his modest financial situation, Michael is determined to maintain his independence and financial stability.\n\nShopping Habits:\nMichael approaches shopping with a practical and frugal mindset. He seeks out affordable, durable goods and often visits secondhand stores, thrift shops, and discount retailers to find quality items at reasonable prices. When making larger purchases, he thoroughly researches his options to ensure the best value for his money.\n\nProfessional Life:\nIn his role as a part-time handyman, Michael applies his diverse skill set to help homeowners and small businesses with a variety of tasks, from basic home repairs to light construction projects. He takes pride in his work and finds satisfaction in helping others while earning a modest income.\n\nPersonal Style:\nMichael's personal style reflects his pragmatic and no-frills approach to life. He favors practical, comfortable clothing that allows him to move freely and perform his handyman duties effectively. His wardrobe consists of sturdy work pants, durable t-shirts, and well-worn but reliable work boots. When not on the job, he opts for casual, easy-to-wear pieces that prioritize function over fashion.\n\nIn his free time, Michael enjoys engaging in outdoor activities, such as hiking and fishing, which allow him to connect with nature and find solace. He also dedicates time to pursuing his hobby of woodworking, creating unique and personalized pieces that bring him a sense of fulfillment.",
+    "intent": "buy 2 leapreader books for elementary school children.",
+    "age": 53,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

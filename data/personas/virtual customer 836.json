@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a passionate environmental activist who has dedicated his life to promoting sustainable living and eco-friendly practices. Despite facing financial challenges, he remains steadfast in his commitment to making a positive impact on the world around him.\n\nDemographics:\nAge: 36\nGender: Male\nEducation: High School Diploma\nProfession: Environmental Activist\nIncome: $21,000\n\nFinancial Situation:\nAs an environmental activist, Ethan's income is limited, often relying on grants, donations, and part-time jobs to make ends meet. He lives a simple, minimalist lifestyle, prioritizing his cause over material possessions. Ethan is skilled at budgeting and finding creative ways to stretch his limited resources, ensuring he can continue his important work without sacrificing his personal well-being.\n\nShopping Habits:\nEthan's shopping habits reflect his eco-conscious values. He seeks out secondhand, recycled, or ethically-sourced products whenever possible, supporting local and sustainable businesses in the process. He is a skilled thrifter, finding unique and affordable items that align with his personal style and environmental principles. Ethan also makes a conscious effort to reduce his overall consumption, focusing on purchasing only what he needs.\n\nPersonal Life:\nIn his free time, Ethan can be found volunteering for local environmental organizations, leading community clean-ups, or attending climate rallies. He is an avid outdoorsman, finding solace and inspiration in nature. Ethan also enjoys reading, educating himself on the latest environmental research and strategies for promoting sustainable change.\n\nProfessional Life:\nAs an environmental activist, Ethan's work is a calling rather than a traditional career. He dedicates his time and energy to raising awareness, advocating for policy changes, and inspiring others to adopt eco-friendly practices. While his path may not be financially lucrative, Ethan finds deep fulfillment in the tangible impact he is able to make on his community and the planet.",
+    "intent": "buy a 12-inch bottom grid made of stainless steel for the kitchen sink.",
+    "age": 36,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

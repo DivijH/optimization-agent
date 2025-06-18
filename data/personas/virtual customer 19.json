@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Daniel\n\nBackground:\nDaniel is a young entrepreneur who founded a successful tech startup. He is passionate about innovation and using technology to solve real-world problems.\n\nDemographics:\nAge: 22\nGender: Male\nEducation: Bachelor's degree in Computer Science\nProfession: Founder and CEO of a tech startup\nIncome: $120,000\n\nFinancial Situation:\nDaniel has a comfortable financial situation due to the success of his startup. He is strategic with his spending and prioritizes investing in his business and personal growth.\n\nShopping Habits:\nDaniel enjoys browsing for the latest tech gadgets and innovative products. He is always on the lookout for tools and services that can help streamline his work and personal life. He values quality and is willing to spend more for items that offer exceptional performance or unique features.\n\nProfessional Life:\nAs the founder and CEO of his startup, Daniel wears many hats. He oversees the company's operations, manages a small team, and is actively involved in product development and marketing. He is constantly seeking new opportunities to expand his business and stay ahead of industry trends.\n\nPersonal Style:\nDaniel has a modern, minimalist style. He prefers clean-cut, well-fitted clothing that reflects his professional and entrepreneurial persona. He gravitates towards neutral tones and high-quality materials that exude a sense of sophistication.\n\nDaniel is a frequent traveler and often flies with Delta Airlines. He typically wakes up at 7 AM to tackle his busy schedule.\n\nDaniel lives in San Francisco.",
+    "intent": "buy rave toys",
+    "age": 22,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

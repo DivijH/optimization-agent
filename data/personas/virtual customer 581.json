@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Bella\n\nBackground:\nBella is a vibrant and creative young professional who has found her niche in the ever-evolving world of digital marketing. With a natural flair for social media and a keen understanding of consumer trends, she has quickly established herself as an invaluable asset to the marketing team at a prominent e-commerce company.\n\nDemographics:\nAge: 28\nGender: Female\nEducation: Bachelor's Degree in Communications\nProfession: Digital Marketing Specialist\nIncome: $52,000\n\nFinancial Situation:\nBella's income as a digital marketing specialist falls within the $30,001 to $94,000 range, allowing her to live comfortably and pursue her various interests and hobbies. She is mindful of her spending, but also enjoys treating herself to occasional luxuries, such as a weekend getaway or a new designer handbag.\n\nShopping Habits:\nBella loves to shop, often scouring online boutiques and trendy retail stores for the latest fashion and beauty products. She has a keen eye for style and is always on the lookout for unique, sustainable, and ethically-sourced items. Bella also enjoys supporting local businesses and independent designers whenever possible.\n\nProfessional Life:\nAs a digital marketing specialist, Bella's days are filled with a dynamic mix of tasks, from creating captivating social media content to analyzing data and developing targeted marketing strategies. She thrives in the fast-paced, ever-changing environment and is constantly seeking new ways to engage her brand's audience and drive growth.\n\nPersonal Style:\nBella's personal style reflects her creative and youthful spirit. She often experiments with bold colors, playful patterns, and eclectic accessories, curating a look that is both fashionable and reflective of her individuality. Bella's appearance is a perfect blend of trendy and timeless, with a touch of bohemian flair.\n\nIn her free time, Bella enjoys exploring the vibrant art scene in her city, attending local music festivals, and practicing yoga and meditation. She is passionate about environmental sustainability and supports eco-friendly initiatives whenever possible. Bella's well-rounded interests and zest for life make her a dynamic and inspiring individual.",
+    "intent": "buy a solar power bank with ac outlet.",
+    "age": 28,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

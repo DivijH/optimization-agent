@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a successful real estate agent who has built a thriving career in the highly competitive housing market. With her keen eye for detail, negotiation skills, and passion for helping her clients find their dream homes, she has become one of the top-performing agents in her local market.\n\nDemographics:\nAge: 37\nGender: Female\nEducation: Bachelor's Degree in Business Administration\nProfession: Real Estate Agent\nIncome: $120,000\n\nFinancial Situation:\nSarah's real estate career has provided her with a comfortable income that allows her to live a relatively affluent lifestyle. She is financially savvy and invests a portion of her earnings to grow her wealth over time.\n\nShopping Habits:\nSarah's shopping habits reflect her professional success and personal style. She enjoys browsing high-end retail stores and carefully curating her wardrobe with timeless, quality pieces. She also appreciates the convenience of online shopping for home decor and other household items.\n\nProfessional Life:\nAs a top-performing real estate agent, Sarah's days are filled with client meetings, property showings, and negotiations. She thrives in the fast-paced, competitive environment and is constantly seeking new ways to excel in her field. Networking and continuing education are essential components of her professional development.\n\nPersonal Style:\nSarah's personal style is polished and sophisticated, with a touch of modern flair. She favors well-tailored blazers, tailored trousers, and elegant blouses that exude confidence and professionalism. She also enjoys accessorizing with statement jewelry and designer handbags that complement her overall look.",
+    "intent": "buy a corpse bride-inspired necklace or pendant.",
+    "age": 37,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

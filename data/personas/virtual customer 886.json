@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Samantha\n\nBackground:\nSamantha is a seasoned business executive with a proven track record of success in the financial industry. With decades of experience under her belt, she has navigated the corporate landscape with grace and strategic foresight, rising to the top echelons of her field.\n\nDemographics:\nAge: 62\nGender: Female\nEducation: Master's Degree in Finance\nProfession: Chief Financial Officer\nIncome: $225,000\n\nFinancial Situation:\nAs the CFO of a large, multinational corporation, Samantha's annual income falls within the $94,001 to $1,000,000 range. She has accumulated substantial wealth over the course of her career, allowing her to maintain a comfortable lifestyle and plan for a secure retirement.\n\nShopping Habits:\nSamantha's shopping habits reflect her pragmatic and discerning nature. She gravitates towards high-quality, durable products that offer lasting value. When making purchases, she thoroughly researches options, seeking out the best combination of functionality, aesthetics, and cost-effectiveness. While she is not averse to splurging on luxury items, Samantha is mindful of her spending and prioritizes financial responsibility.\n\nProfessional Life:\nSamantha's professional life is marked by her exceptional financial acumen and strategic decision-making abilities. As the CFO, she is responsible for overseeing the company's financial operations, analyzing data, and providing the executive team with actionable insights to drive the organization's growth. Samantha is known for her attention to detail, her ability to navigate complex financial regulations, and her collaborative leadership style.\n\nPersonal Interests:\nOutside of her demanding career, Samantha finds fulfillment in various philanthropic endeavors. She is passionate about supporting causes related to women's empowerment, education, and environmental sustainability. Samantha also enjoys spending time with her family, traveling to new destinations, and indulging in her love for classical music and the arts.",
+    "intent": "buy a bello2 product.",
+    "age": 62,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sophia\n\nBackground:\nSophia is a 57-year-old woman who has faced a series of setbacks in her life, including a long-term illness and the loss of her job. Despite these challenges, she has remained resilient and is determined to rebuild her life and find new sources of fulfillment.\n\nDemographics:\nAge: 57\nGender: Female\nEducation: Associate's Degree\nProfession: Retired\nIncome: $20,000 (Social Security and Part-Time Gig Work)\n\nFinancial Situation:\nSophia's current financial situation is limited, as she relies primarily on her Social Security benefits and occasional part-time gig work to make ends meet. She has had to adjust her lifestyle and spending habits to accommodate her reduced income, while also managing the ongoing costs of her medical care.\n\nShopping Habits:\nSophia has become an expert at finding ways to save money and stretch her limited budget. She frequents thrift stores, yard sales, and online marketplaces to search for affordable, gently used items. She also takes advantage of coupons, discounts, and loyalty programs whenever possible to maximize her purchasing power.\n\nPersonal Life:\nIn her free time, Sophia finds solace in her hobbies and community involvement. She is an avid reader, often visiting the local library to borrow books or participate in book club discussions. Sophia also enjoys gardening, finding a sense of peace and purpose in tending to her small backyard garden.\n\nAdditionally, Sophia is actively involved in her local community, volunteering at a food bank and participating in neighborhood cleanup initiatives. These activities not only provide her with a sense of purpose but also allow her to connect with others and give back to her community.\n\nDespite her financial challenges, Sophia maintains a positive outlook and is committed to finding joy and fulfillment in the simple pleasures of life. She embraces a minimalist lifestyle, focusing on experiences and relationships over material possessions.",
+    "intent": "buy a 14k gold-plated Pandora chain.",
+    "age": 57,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

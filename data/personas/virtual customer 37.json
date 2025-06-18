@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: William\n\nBackground:\nWilliam is a retired factory worker who has spent his life in the blue-collar workforce. He is passionate about his local community and often volunteers at the neighborhood community center, helping with various activities and events.\n\nDemographics:\nAge: 64\nGender: Male\nEducation: High school graduate\nProfession: Retired factory worker\nIncome: $25,000\n\nFinancial Situation:\nWilliam lives on a modest fixed income from his retirement savings and Social Security benefits. He is frugal with his spending and focuses on meeting his basic needs while also setting aside funds to support his community involvement.\n\nShopping Habits:\nWilliam prefers to shop at local stores and thrift shops, where he can find affordable and practical items. He enjoys the personal interactions with store owners and feels a sense of community when supporting local businesses. William is not one to indulge in impulse purchases and takes his time to carefully consider any major purchases.\n\nPersonal Style:\nWilliam's style is casual and comfortable, often wearing jeans, t-shirts, and flannel shirts. He values durability and functionality in his clothing, prioritizing items that can withstand the wear and tear of his active lifestyle. William's wardrobe is a reflection of his blue-collar roots and his preference for simplicity.",
+    "intent": "buy a 5/8in non-metallic mounting block for lap siding.",
+    "age": 64,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

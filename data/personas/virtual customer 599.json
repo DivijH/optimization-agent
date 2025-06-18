@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: James\n\nBackground:\nJames is a resilient and determined individual who has faced numerous challenges throughout his life. Despite the obstacles he has encountered, he remains steadfast in his pursuit of stability and personal growth.\n\nDemographics:\nAge: 47\nGender: Male\nEducation: High School Diploma\nProfession: Part-Time Retail Associate\nIncome: $22,000\n\nFinancial Situation:\nAs a part-time retail associate, James's income falls within the $0 to $30,000 range. He lives a modest, frugal lifestyle, carefully budgeting his limited resources to cover basic necessities such as rent, food, and utilities. While financial security can be a constant struggle, James finds solace in the small joys and simple pleasures that life has to offer.\n\nShopping Habits:\nJames's shopping habits are primarily driven by necessity and practicality. He frequents secondhand stores, discount retailers, and community-based resources to stretch his budget and find affordable, durable items. When making purchases, James focuses on essentials like clothing, household goods, and occasional small treats that bring him comfort.\n\nProfessional Life:\nAs a part-time retail associate, James's professional life is marked by a desire for stability and reliability. He takes pride in his work, striving to provide excellent customer service and contribute to the overall success of the store. Despite the limitations of his position, James finds satisfaction in the interactions with his colleagues and customers, as well as the sense of routine and purpose it provides.\n\nPersonal Style:\nJames's personal style is a reflection of his practical and down-to-earth nature. He favors comfortable, functional clothing that allows him to move freely and focus on his daily tasks. His wardrobe consists of well-worn jeans, sturdy work boots, and simple t-shirts or button-down shirts. While he may not follow the latest fashion trends, James takes care to present a neat and presentable appearance.\n\nIn his limited free time, James finds solace in engaging in simple pleasures, such as reading, taking walks in his neighborhood, and spending time with close friends or family members. He values the connections he has forged and the small moments of joy that help him navigate the challenges of his day-to-day life.",
+    "intent": "buy a pair of compression socks to help with shin splints.",
+    "age": 47,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

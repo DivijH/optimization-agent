@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Robert\n\nBackground:\nRobert is a retired school teacher who has dedicated his life to educating and inspiring young minds. After a fulfilling career spanning over three decades, he is now enjoying his golden years, exploring new hobbies and spending quality time with his family.\n\nDemographics:\nAge: 64\nGender: Male\nEducation: Bachelor's Degree in Education\nProfession: Retired School Teacher\nIncome: $25,000\n\nFinancial Situation:\nRobert's retirement income, consisting of a modest pension and social security benefits, is sufficient to cover his basic living expenses. While he doesn't have a substantial savings account, he has managed his finances carefully, ensuring that he can maintain a comfortable lifestyle and occasionally indulge in his various interests.\n\nShopping Habits:\nAs a retiree, Robert's shopping habits are characterized by practicality and value. He tends to seek out durable, high-quality products that will last, often opting for reliable brands and classic styles. While he enjoys browsing for unique items that pique his interest, Robert is mindful of his budget and prioritizes essential purchases over unnecessary luxuries.\n\nPersonal Life:\nIn his retirement, Robert has embraced a more relaxed pace of life. He spends his days pursuing his passions, such as gardening, woodworking, and volunteering at the local library. Robert also cherishes the time he can devote to his family, including his grandchildren, with whom he enjoys sharing his wealth of knowledge and life experiences.\n\nPersonal Style:\nRobert's personal style reflects his easygoing and comfortable approach to life. He favors classic, well-fitting clothing that provides both comfort and a touch of sophistication, such as button-down shirts, well-worn slacks, and sturdy, comfortable shoes. While he may not be at the forefront of fashion trends, Robert's attire exudes a timeless, gentleman-like charm.",
+    "intent": "buy a dairy-free version of Swiss Miss hot chocolate mix.",
+    "age": 64,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

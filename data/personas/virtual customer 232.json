@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Marilyn\n\nBackground:\nMarilyn is a seasoned business executive who has built a successful career in the financial services industry. She has spent the past two decades working her way up the corporate ladder, and now serves as the President of a prestigious investment firm.\n\nDemographics:\nAge: 58\nGender: Female\nEducation: Master's Degree in Finance\nProfession: President of an Investment Firm\nIncome: $175,000\n\nFinancial Situation:\nWith her high-level position and extensive experience, Marilyn earns a comfortable income that falls within the $94,001 to $1,000,000 range. She has amassed a substantial investment portfolio and maintains a healthy balance between personal savings and business reinvestment.\n\nShopping Habits:\nMarilyn's shopping habits reflect her refined taste and financial savvy. She gravitates towards luxury brands and high-quality products, but she also seeks out value and is willing to research and compare options to find the best deals. She enjoys treating herself to occasional splurges, such as designer handbags or exclusive experiences.\n\nProfessional Life:\nAs the President of the investment firm, Marilyn oversees all aspects of the business, from strategic planning and risk management to client relations and team leadership. She is known for her sharp analytical skills, sound decision-making, and ability to navigate complex financial landscapes. Marilyn is a respected leader in her industry and is often sought out for her expertise.\n\nPersonal Style:\nMarilyn's personal style is polished and sophisticated, reflecting her professional status and personal taste. She favors timeless, high-quality pieces, such as tailored suits, elegant dresses, and luxurious accessories. Marilyn takes pride in her appearance and believes that her style choices communicate her competence and success.",
+    "intent": "buy a ladybug-themed necklace or bracelet from a reputable online jewelry retailer.",
+    "age": 58,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

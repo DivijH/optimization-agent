@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emma\n\nBackground:\nEmma is a driven and ambitious young entrepreneur who has found success in the rapidly growing tech industry. With a keen eye for innovation and a passion for problem-solving, she has built a thriving startup that provides cutting-edge software solutions to a wide range of clients.\n\nDemographics:\nAge: 20\nGender: Female\nEducation: Bachelor's degree in Computer Science\nProfession: Founder and CEO of a tech startup\nIncome: $125,000\n\nFinancial Situation:\nEmma's income as the CEO of her startup places her in a comfortable financial position. She is disciplined with her money, allocating a significant portion of her earnings to reinvest in the growth of her company, while also saving for the future and indulging in occasional splurges that align with her values and lifestyle.\n\nShopping Habits:\nEmma's shopping habits reflect her professional success and personal priorities. She appreciates quality and design, often investing in high-end, durable products that will last. At the same time, she is mindful of her environmental impact and seeks out sustainable and ethically-produced goods whenever possible. Emma enjoys browsing online marketplaces and attending exclusive pop-up shops to discover unique and innovative products.\n\nPersonal Life:\nOutside of her demanding work schedule, Emma values maintaining a balanced lifestyle. She makes time for physical fitness, exploring the city's vibrant cultural scene, and engaging with her close-knit community of fellow entrepreneurs and tech enthusiasts. Emma's drive and determination are balanced by her commitment to self-care and personal growth.",
+    "intent": "buy a variety pack of craft root beer from a local specialty food store.",
+    "age": 20,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

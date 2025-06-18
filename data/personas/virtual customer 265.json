@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Samantha\n\nBackground:\nSamantha is a dedicated social worker who has spent the past two decades advocating for underserved communities in a mid-sized city. With a deep passion for making a positive impact, she has built a career around empowering individuals and families to overcome societal challenges.\n\nDemographics:\nAge: 48\nGender: Female\nEducation: Master's degree in Social Work\nProfession: Social Worker\nIncome: $52,000\n\nFinancial Situation:\nSamantha's income as a social worker allows her to maintain a comfortable, yet modest lifestyle. While she is not able to indulge in luxuries, she is diligent in managing her finances, ensuring that her basic needs are met and that she can contribute to causes she cares about.\n\nShopping Habits:\nSamantha's shopping habits reflect her practical and pragmatic approach to life. She focuses on purchasing quality, durable items that will serve her well in both her personal and professional endeavors. Thrift stores and secondhand shops are her go-to destinations, where she can find unique, affordable pieces to complement her wardrobe.\n\nProfessional Life:\nAs a social worker, Samantha's days are filled with meetings, case assessments, and advocacy efforts. She works tirelessly to connect her clients with the resources and support they need to improve their quality of life. Her dedication and empathy have earned her the respect and admiration of her colleagues and the community she serves.\n\nPersonal Style:\nSamantha's personal style is characterized by comfort and functionality. She favors well-fitting, versatile pieces that allow her to move freely and confidently throughout her busy days. Her wardrobe consists of a mix of casual and professional attire, with a preference for earth-toned colors and natural fabrics.\n\nIn her free time, Samantha enjoys volunteering at local community centers, where she can continue to make a difference in the lives of others. She also finds solace in outdoor activities, such as hiking and gardening, as a way to recharge and reconnect with nature.",
+    "intent": "buy a pandora chain.",
+    "age": 48,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

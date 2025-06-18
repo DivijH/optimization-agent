@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Natalie\n\nBackground:\nNatalie is a passionate artist who has dedicated her life to exploring various mediums and expressing her unique perspectives through her work. Despite the financial challenges she faces, she remains committed to her creative pursuits and finds joy in the process of making art.\n\nDemographics:\nAge: 48\nGender: Female\nEducation: High School Diploma\nProfession: Artist\nIncome: $25,000\n\nFinancial Situation:\nAs a freelance artist, Natalie's income is often unpredictable and falls within the $0 to $30,000 range. She relies on a combination of commission-based work, sales from local art markets, and occasional teaching opportunities to support herself. While money is tight, Natalie has developed a resourceful and frugal lifestyle that allows her to prioritize her art over material possessions.\n\nShopping Habits:\nNatalie's shopping habits are primarily focused on acquiring art supplies and materials to support her creative endeavors. She scours secondhand stores, online platforms, and discount art retailers to find affordable, high-quality materials that she can use in her work. When it comes to personal purchases, Natalie is mindful of her spending and prioritizes practical, long-lasting items that complement her artistic lifestyle.\n\nPersonal Style:\nNatalie's personal style reflects her creative and eclectic sensibilities. She favors a mix of vintage finds, handmade pieces, and the occasional new purchase from independent designers or ethical clothing brands. Her wardrobe is comfortable and practical, allowing her to move freely while working in her studio. Natalie's style is a reflection of her artistic spirit and her commitment to living authentically.",
+    "intent": "buy a 36 inch bathroom sink.",
+    "age": 48,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

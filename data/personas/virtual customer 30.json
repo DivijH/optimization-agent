@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a successful entrepreneur who has built his own technology consulting firm. He is passionate about leveraging technology to help businesses become more efficient and profitable.\n\nDemographics:\nAge: 44\nGender: Male\nEducation: Bachelor's Degree\nProfession: Founder and CEO of a Technology Consulting Firm\nIncome: $150,000\n\nFinancial Situation:\nWith his thriving business, Michael has a comfortable income that allows him to live a relatively affluent lifestyle. He is financially savvy and makes strategic investments to grow his wealth.\n\nShopping Habits:\nMichael values efficiency and quality when it comes to his shopping experiences. He tends to research products thoroughly before making purchases and is willing to invest in high-end items that he believes will last. He often shops online to save time, but also enjoys browsing specialty stores for unique finds.\n\nProfessional Life:\nAs the founder and CEO of his own company, Michael takes a hands-on approach to running the business. He is constantly seeking new ways to expand his firm's capabilities and client base. He travels frequently for work, attending industry events and meeting with clients.\n\nPersonal Style:\nMichael has a refined, professional style that reflects his successful career. He favors well-tailored suits, dress shirts, and leather shoes. He also enjoys wearing casual, but still stylish, attire when not in a formal business setting.",
+    "intent": "purchase the Pit Boss Copper Series Tabletop Wood Pellet Grill (model PB150PPG)",
+    "age": 44,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

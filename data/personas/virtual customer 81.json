@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a seasoned financial advisor with a diverse portfolio of high-net-worth clients. He has spent over two decades honing his skills in investment strategies, wealth management, and financial planning, earning a reputation as a trusted and knowledgeable expert in the industry.\n\nDemographics:\nAge: 43\nGender: Male\nEducation: Master's Degree in Finance\nProfession: Financial Advisor\nIncome: $125,000\n\nFinancial Situation:\nWith his successful career and prudent financial practices, David has amassed a sizable personal wealth, allowing him to maintain a comfortable lifestyle and invest in various ventures. He is diligent in managing his own finances, leveraging his expertise to optimize his returns and ensure long-term financial security.\n\nShopping Habits:\nDavid's shopping habits reflect his discerning taste and attention to detail. He is selective when making purchases, prioritizing quality and longevity over trends. He enjoys discovering high-end, specialized products that align with his professional image and personal interests, often taking the time to research and compare options before making a decision.\n\nProfessional Life:\nAs a seasoned financial advisor, David is known for his exceptional client service and ability to navigate complex financial landscapes. He takes a personalized approach to each client's needs, tailoring his strategies to help them achieve their financial goals. David is also actively involved in industry associations and often shares his expertise through speaking engagements and thought leadership pieces.\n\nPersonal Style:\nDavid's personal style is a seamless blend of sophistication and practicality. He favors well-fitting, classic menswear pieces, such as tailored suits, dress shirts, and leather shoes, which he combines with subtle, high-quality accessories to create a polished, professional look. Outside of work, he enjoys more casual attire, such as button-down shirts, chinos, and loafers, while still maintaining a refined and stylish appearance.\n\nDavid is an avid golf enthusiast and enjoys spending his weekends on the course. He is also a patron of the arts, frequently attending theater performances and art exhibitions in his local community.\nDavid resides in New York City.",
+    "intent": "Buy a set of high-quality jewelers saws for professional use.",
+    "age": 43,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

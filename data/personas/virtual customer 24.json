@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Eliza\n\nBackground:\nEliza is a successful business executive who has climbed the corporate ladder over the past three decades. She is currently the Vice President of Operations at a mid-sized technology company, where she is responsible for overseeing various departments and ensuring the smooth running of the organization.\n\nDemographics:\n\nAge: 59\nGender: Female\nEducation: Bachelor's degree in Business Administration\nProfession: Vice President of Operations\nIncome: $75,000\n\nFinancial Situation:\nEliza has built a comfortable financial portfolio over the years, with a mix of investments, retirement savings, and a steady income from her executive position. She is financially stable and can afford to indulge in occasional luxuries, but is also mindful of her spending and focuses on long-term financial planning.\n\nShopping Habits:\nEliza appreciates quality and is willing to invest in high-end products that she deems worth the cost. However, she also enjoys the thrill of a good bargain and often scours for sales and discounts. She tends to be a selective shopper, taking her time to research and evaluate options before making a purchase.\n\nProfessional Life:\nEliza is a seasoned professional who takes her work very seriously. She is known for her strategic thinking, problem-solving abilities, and strong leadership skills. She often works long hours and travels extensively for her job, but she finds great satisfaction in the challenges and achievements of her career.\n\nPersonal Style:\nEliza's personal style reflects her position and success. She favors sophisticated, well-tailored clothing, often in neutral colors and classic designs. She takes pride in her appearance and believes that dressing professionally is important in her line of work. In her free time, Eliza enjoys pursuing her hobbies, such as reading, gardening, and attending the theater.",
+    "intent": "buy a high-quality, full-sized airsoft gun suitable for recreational use.",
+    "age": 59,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Lucas\n\nBackground:\nLucas is an ambitious and driven young professional who has rapidly risen through the ranks of the corporate world. With a keen business acumen and a natural talent for strategic planning, he has positioned himself as a rising star in his industry.\n\nDemographics:\nAge: 23\nGender: Male\nEducation: Master's Degree in Business Administration\nProfession: Management Consultant\nIncome: $110,000\n\nFinancial Situation:\nLucas's impressive income allows him to live a comfortable and affluent lifestyle. He is financially savvy and has a diverse investment portfolio that generates additional wealth. While he enjoys the finer things in life, Lucas is also conscious of the importance of responsible financial management and charitable giving.\n\nShopping Habits:\nLucas has a refined and sophisticated taste in fashion and consumer goods. He favors high-quality, tailored clothing and accessories from premium brands, carefully curating his wardrobe to reflect his professional success and personal style. When making purchases, he values quality, durability, and timeless design over trends.\n\nProfessional Life:\nAs a management consultant, Lucas works with a variety of clients, providing strategic advice and implementing innovative solutions to complex business challenges. He thrives in fast-paced, high-pressure environments and is known for his analytical problem-solving skills and ability to think outside the box.\n\nPersonal Style:\nLucas's personal style is polished and modern, with a subtle touch of understated elegance. He favors well-fitted suits, crisp dress shirts, and carefully selected accessories that complement his sharp, professional appearance. Even in his leisure time, Lucas maintains a refined and composed look, blending classic and contemporary elements to create a sophisticated, yet approachable, aesthetic.\n\nIn his free time, Lucas enjoys staying physically active, whether it's hitting the gym or participating in outdoor activities. He is also an avid reader, with a particular interest in business, technology, and personal development literature. Despite his demanding career, Lucas makes time to give back to his community through volunteer work and charitable initiatives.",
+    "intent": "buy a professional-grade Easy Bake Oven for himself.",
+    "age": 23,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

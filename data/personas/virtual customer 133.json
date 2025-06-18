@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a passionate social worker dedicated to making a positive impact in her community. With a deep commitment to helping those in need, she has been working tirelessly to advocate for underserved individuals and families, ensuring they have access to the resources and support they require.\n\nDemographics:\nAge: 34\nGender: Female\nEducation: Bachelor's degree in Social Work\nProfession: Social Worker\nIncome: $55,000\n\nFinancial Situation:\nWhile Emily's income as a social worker falls within the middle range, she is adept at managing her finances and living within her means. She prioritizes saving for her future and occasional travel opportunities, which she sees as a way to recharge and gain new perspectives.\n\nShopping Habits:\nEmily values ethical and sustainable consumption, opting for eco-friendly products and supporting local businesses whenever possible. She enjoys discovering unique items at thrift stores and secondhand shops, finding joy in the thrill of the hunt and the opportunity to give new life to pre-owned items.\n\nProfessional Life:\nIn her role as a social worker, Emily works closely with individuals and families facing various challenges, such as poverty, homelessness, and mental health issues. She is known for her empathy, problem-solving skills, and ability to connect her clients with the appropriate resources and support systems.\n\nPersonal Style:\nEmily's personal style reflects her commitment to practicality and comfort, with a focus on versatile and functional pieces. She enjoys mixing and matching casual attire, such as jeans, t-shirts, and comfortable shoes, with the occasional touch of personal flair, like a colorful scarf or a statement necklace.",
+    "intent": "buy a solar filter sheet for telescopes.",
+    "age": 34,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

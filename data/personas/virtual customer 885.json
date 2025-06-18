@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Nora\n\nBackground:\nNora is a vibrant and resilient middle-aged woman who has navigated a series of personal and professional challenges throughout her life. Despite these obstacles, she has emerged with a renewed sense of purpose and a deep appreciation for the simple joys in life.\n\nDemographics:\nAge: 59\nGender: Female\nEducation: Associate's Degree in Business Administration\nProfession: Customer Service Representative\nIncome: $52,000\n\nFinancial Situation:\nNora's income as a customer service representative falls within the $30,001 to $94,000 range. She has a stable financial footing, allowing her to meet her basic needs, pay off her mortgage, and gradually build her retirement savings.\n\nShopping Habits:\nNora approaches shopping with a practical and cost-conscious mindset. She enjoys hunting for deals at local thrift stores and discount retailers, where she can find quality, long-lasting items that fit her personal style. She also appreciates the value of investing in a few well-made, versatile pieces that can be mixed and matched to create a variety of outfits.\n\nProfessional Life:\nIn her role as a customer service representative, Nora is known for her empathy, patience, and problem-solving skills. She takes great pride in providing excellent support to her clients, often going above and beyond to ensure their satisfaction. Nora's colleagues admire her strong work ethic and her positive, team-oriented attitude.\n\nPersonal Style:\nNora's personal style is best described as practical and comfortable, with a touch of casual elegance. She favors classic silhouettes, natural fabrics, and a neutral color palette that can easily transition from workday to weekend. Her wardrobe is a mix of timeless basics and the occasional statement piece, reflecting her desire for functionality and self-expression.\n\nIn her free time, Nora enjoys tending to her small but bountiful vegetable garden, hosting monthly game nights with her close-knit group of friends, and volunteering at the local animal shelter. She finds solace in the simple pleasures of life, drawing strength and fulfillment from her relationships and community involvement.",
+    "intent": "buy a car ashtray.",
+    "age": 59,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

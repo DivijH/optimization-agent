@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: James\n\nBackground:\nJames is a 57-year-old freelance graphic designer who has a passion for creating visually stunning designs that evoke emotion and capture the essence of his clients' brands. Despite facing financial challenges, he remains dedicated to his craft and continuously seeks out new opportunities to showcase his talents.\n\nDemographics:\nAge: 57\nGender: Male\nEducation: Associate's degree in Graphic Design\nProfession: Freelance Graphic Designer\nIncome: $22,000\n\nFinancial Situation:\nAs a freelance graphic designer, James' income can be inconsistent, and he often struggles to make ends meet. However, he has learned to live within his means, prioritizing his essential expenses and finding creative ways to supplement his income, such as taking on side projects or selling his artwork online.\n\nShopping Habits:\nJames' shopping habits reflect his frugal nature and his focus on finding the best value for his money. He is a skilled bargain hunter, scouring thrift stores, garage sales, and online marketplaces for unique finds that he can repurpose or incorporate into his design work. When it comes to essential purchases, he seeks out high-quality, durable items that will last.\n\nProfessional Life:\nDespite the financial challenges, James finds immense fulfillment in his work as a freelance graphic designer. He relishes the opportunity to collaborate with clients from diverse backgrounds, translating their visions into captivating designs that resonate with their target audiences. James is known for his attention to detail, his ability to think outside the box, and his willingness to go the extra mile to ensure his clients are satisfied.\n\nPersonal Style:\nJames' personal style is a reflection of his creative spirit and his practical nature. He often mixes vintage and thrifted pieces with more contemporary items, creating a distinctive, eclectic look that showcases his individuality. He values comfort and functionality, but he also enjoys experimenting with bold colors, patterns, and accessories to express his artistic sensibilities.",
+    "intent": "buy a muscle scraper on Amazon that is affordable, high-quality, and durable.",
+    "age": 57,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

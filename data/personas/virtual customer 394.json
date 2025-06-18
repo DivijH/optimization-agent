@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Daniel\n\nBackground:\nDaniel is a retired school teacher who has dedicated his life to educating and inspiring young minds. After decades of service, he now embraces a more relaxed lifestyle, focusing on his personal hobbies and community involvement.\n\nDemographics:\nAge: 59\nGender: Male\nEducation: Bachelor's Degree in Education\nProfession: Retired School Teacher\nIncome: $25,000\n\nFinancial Situation:\nWith a modest pension and Social Security benefits, Daniel's income falls within the $0 to $30,000 range. While he is not wealthy, he has managed his finances prudently over the years, allowing him to maintain a comfortable lifestyle in retirement.\n\nShopping Habits:\nDaniel's shopping habits reflect his practical and cost-conscious mindset. He is a conscientious consumer, often seeking out sales, discounts, and secondhand items to stretch his limited budget. However, he is also willing to invest in quality products that will last, especially when it comes to items related to his hobbies, such as gardening tools or outdoor equipment.\n\nProfessional Life:\nAs a retired school teacher, Daniel takes great pride in the lasting impact he has had on his former students. He remains connected to the education community, often volunteering his time to mentor new teachers or serve on advisory boards. Daniel's passion for learning and his dedication to helping others have left an indelible mark on the lives he has touched.\n\nPersonal Style:\nDaniel's personal style is casual and comfortable, with a focus on practicality and durability. He typically wears well-fitting slacks, button-down shirts, and sturdy shoes, creating an approachable and polished look. In his free time, he enjoys dressing down in comfortable sweaters, jeans, and sneakers, which allow him to fully immerse himself in his hobbies and outdoor activities.",
+    "intent": "buy a Halloween tree",
+    "age": 59,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

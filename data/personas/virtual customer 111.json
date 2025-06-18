@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a driven and ambitious young professional who has quickly climbed the corporate ladder. He is passionate about entrepreneurship and is actively involved in investing in and mentoring promising startups.\n\nDemographics:\nAge: 22\nGender: Male\nEducation: Bachelor's degree\nProfession: Financial Analyst\nIncome: $120,000\n\nFinancial Situation:\nEthan's substantial income as a financial analyst allows him to live comfortably and save a significant portion of his earnings. He is financially savvy and enjoys researching investment opportunities to grow his wealth.\n\nShopping Habits:\nEthan values quality and functionality over trends when it comes to his shopping. He prefers to invest in well-made, versatile pieces that will last. While he enjoys browsing high-end stores, he also takes advantage of online sales and discounts to find the best deals.\n\nProfessional Life:\nEthan is a rising star in the financial industry, known for his analytical skills and strategic thinking. He works long hours and is constantly seeking out new challenges and opportunities to expand his expertise. Ethan's ambitious nature and strong work ethic have contributed to his rapid career progression.\n\nPersonal Style:\nEthan's personal style reflects his professional persona. He favors classic, tailored clothing that is stylish yet practical. His wardrobe consists of well-fitting suits, crisp dress shirts, and polished accessories. Ethan values a put-together, sophisticated look that commands respect in the corporate world.\n\nIn his free time, Ethan enjoys exploring the city's thriving startup scene, attending industry events, and keeping up with the latest financial trends and innovations. He is driven to make a lasting impact on the business world.",
+    "intent": "buy a replacement trick drive shaft.",
+    "age": 22,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

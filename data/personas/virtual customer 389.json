@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a dedicated educator who has spent the last two decades shaping young minds in the public school system. With a passion for social justice and a deep commitment to empowering his students, he continuously seeks ways to innovate and improve the educational experience.\n\nDemographics:\nAge: 43\nGender: Male\nEducation: Master's Degree in Education\nProfession: High School History Teacher\nIncome: $55,000\n\nFinancial Situation:\nAs a public school teacher, David's income falls within the $30,001 to $94,000 range. While he may not be considered wealthy, he has learned to live comfortably within his means, prioritizing experiences and investments that align with his values over material possessions.\n\nShopping Habits:\nDavid's shopping habits reflect his pragmatic and mindful approach to life. He is conscious of his environmental impact and often seeks out ethically-sourced, durable products that will stand the test of time. When making purchases, he carefully considers the necessity and long-term value of the item, rather than impulse buying.\n\nProfessional Life:\nIn the classroom, David is known for his engaging teaching style and his ability to connect with students from diverse backgrounds. He continually seeks out professional development opportunities to enhance his skills and stay up-to-date with the latest educational trends and pedagogical approaches.\n\nPersonal Style:\nDavid's personal style is casual and comfortable, with a focus on functionality and sustainability. He favors classic pieces, such as well-fitted jeans, button-down shirts, and sturdy leather shoes, that can be easily mixed and matched to create a variety of outfits. His wardrobe reflects his practical and down-to-earth personality.",
+    "intent": "buy a food warmer burner.",
+    "age": 43,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

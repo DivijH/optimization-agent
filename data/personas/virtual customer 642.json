@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a seasoned executive who has carved out an impressive career in the world of management consulting. With decades of experience advising Fortune 500 companies on strategic initiatives, he has developed a reputation as a trusted and insightful business strategist.\n\nDemographics:\nAge: 45\nGender: Male\nEducation: Master's Degree in Business Administration\nProfession: Senior Partner, Management Consulting Firm\nIncome: $325,000\n\nFinancial Situation:\nMichael's senior leadership role and extensive experience in the consulting industry have afforded him a comfortable and financially secure lifestyle. He maintains a diversified investment portfolio, balancing growth-oriented assets with more stable, income-generating instruments to ensure long-term financial stability.\n\nShopping Habits:\nAs a successful professional, Michael has a penchant for high-quality, timeless items that reflect his refined tastes and status. He frequents luxury retailers and specialty boutiques, curating a wardrobe of well-tailored suits, designer dress shirts, and fine leather accessories. Michael also enjoys collecting rare and limited-edition luxury timepieces.\n\nProfessional Life:\nIn his role as a Senior Partner at a prestigious management consulting firm, Michael is responsible for overseeing large-scale, complex projects for the firm's top-tier clients. He leverages his extensive industry expertise and strategic acumen to help organizations navigate challenging business environments and achieve their desired outcomes. Michael is highly respected by his peers and clients alike.\n\nPersonal Style:\nMichael's personal style is a reflection of his professional success and sophisticated sensibilities. He favors classic, tailored silhouettes that convey an air of authority and confidence. Whether in a bespoke suit or a more casual ensemble of premium denim and a cashmere sweater, Michael's appearance consistently exudes an aura of refinement and distinction.",
+    "intent": "buy a luxury, high-end commercial claw machine for his office.",
+    "age": 45,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

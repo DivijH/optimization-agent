@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Phoebe\n\nBackground:\nPhoebe is a marketing manager at a mid-sized tech company. She has extensive experience in digital marketing and is known for her creativity and analytical approach.\n\nDemographics:\nAge: 46\nGender: Female\nEducation: Bachelor's Degree\nProfession: Marketing Manager\nIncome: $75,000\n\nFinancial Situation:\nPhoebe earns a comfortable income and is financially stable. She prioritizes saving for retirement and occasional travel, but also enjoys treating herself to high-quality products and experiences.\n\nShopping Habits:\nPhoebe enjoys discovering new brands and products, often browsing online and in-person stores. She values quality and is willing to pay a premium for items that align with her personal style and needs. Phoebe likes to research thoroughly before making purchases.\n\nProfessional Life:\nAs a marketing manager, Phoebe oversees digital campaigns, social media strategy, and content development. She collaborates closely with her team and often attends industry events to stay up-to-date on the latest trends.\n\nPersonal Style:\nPhoebe has a classic yet stylish personal fashion sense. She prefers timeless pieces in neutral colors and high-quality fabrics, often with a touch of elegance. She enjoys accessorizing with jewelry and scarves to add a personal flair to her outfits.\n\nPhoebe lives in San Francisco and is an avid hiker, often exploring the nearby trails on weekends.",
+    "intent": "buy a premium quality crizaal bag.",
+    "age": 46,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

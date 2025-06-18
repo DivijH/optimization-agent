@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jasmine\n\nBackground:\nJasmine is a vibrant and ambitious 21-year-old who is just starting to navigate the world after recently graduating from a local community college with an associate's degree in hospitality management. She is eager to gain practical experience and build a career in the hospitality industry.\n\nDemographics:\nAge: 21\nGender: Female\nEducation: Associate's Degree in Hospitality Management\nProfession: Entry-level Hospitality Associate\nIncome: $22,000\n\nFinancial Situation:\nAs an entry-level hospitality associate, Jasmine's income falls within the $0 to $30,000 range. She is mindful of her spending and strives to live within her means, saving a portion of her earnings for future goals and emergencies.\n\nShopping Habits:\nJasmine enjoys shopping, but she is selective and budget-conscious. She frequents fast-fashion retailers, thrift stores, and online marketplaces to find affordable yet stylish clothing and accessories. When making larger purchases, she takes the time to research and compare options to ensure she's getting the best value.\n\nProfessional Life:\nIn her role as an entry-level hospitality associate, Jasmine is responsible for a variety of tasks, such as assisting guests, maintaining the cleanliness of the facility, and providing excellent customer service. She is eager to learn and grow within the industry, and she is constantly looking for opportunities to take on additional responsibilities and gain new skills.\n\nPersonal Style:\nJasmine's personal style is a reflection of her youthful and vibrant personality. She enjoys mixing and matching trendy and affordable pieces, often incorporating bold colors, playful patterns, and statement accessories into her outfits. She takes pride in her appearance and enjoys experimenting with different styles to express her individual flair.",
+    "intent": "buy a game guel.",
+    "age": 21,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

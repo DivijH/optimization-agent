@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a passionate artist and community organizer who dedicates her time to uplifting underrepresented voices through her work. With a deep appreciation for diverse cultural expressions, she has built a strong network of fellow creatives and activists.\n\nDemographics:\nAge: 43\nGender: Female\nEducation: Bachelor's degree in Fine Arts\nProfession: Artist, Community Organizer\nIncome: $25,000\n\nFinancial Situation:\nAs an independent artist and community organizer, Emily's income falls within the lower range. She manages her limited resources carefully, prioritizing her artistic pursuits and community initiatives over material luxuries. Despite the financial challenges, Emily finds joy and fulfillment in her work and is committed to making a positive impact.\n\nShopping Habits:\nEmily is a mindful shopper, often seeking out secondhand, locally-sourced, and ethically-produced goods. She values quality over quantity and takes pride in supporting small businesses and independent artisans. When making purchases, Emily considers the environmental and social impact of her choices.\n\nProfessional Life:\nEmily's artistic practice and community organizing work are deeply intertwined. She uses her creative skills to amplify the voices of marginalized communities, collaborating with local organizations to facilitate workshops, public art installations, and cultural events. Emily's dedication and passion have made her a respected figure in her community.\n\nPersonal Style:\nEmily's personal style reflects her artistic sensibilities and commitment to sustainability. She often wears vibrant, handcrafted pieces, such as colorful dresses, statement jewelry, and upcycled accessories. Her style is eclectic and expressive, showcasing her individuality and appreciation for diverse cultural influences.\n\nIn her free time, Emily can be found exploring local art galleries, attending community gatherings, or immersing herself in creative projects. She is an avid gardener and enjoys tending to her small urban plot, finding solace in the natural world.",
+    "intent": "buy a menu from a local, independent restaurant that features a diverse selection of culturally-inspired dishes.",
+    "age": 43,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

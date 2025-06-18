@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Aidan\n\nBackground:\nAidan is a 34-year-old man who is navigating the challenges of finding stable employment and achieving financial security. After a series of setbacks, he is determined to create a better life for himself and is actively exploring new opportunities.\n\nDemographics:\nAge: 34\nGender: Male\nEducation: Some college\nProfession: Unemployed\nIncome: $15,000\n\nFinancial Situation:\nAidan's income is limited, as he has been in and out of temporary jobs over the past few years. He relies on government assistance programs and the generosity of family and friends to make ends meet. Despite his financial struggles, Aidan is committed to finding a reliable source of income and building a more stable financial foundation.\n\nShopping Habits:\nOut of necessity, Aidan is a frugal shopper who seeks out the best deals and discounts. He is an avid bargain hunter, often scouring thrift stores, online marketplaces, and sale racks for affordable clothing, household items, and other necessities. Aidan values quality and durability, but he is also mindful of his limited budget.\n\nPersonal Life:\nAidan finds solace in his close-knit network of family and friends, who provide emotional support and occasional financial assistance. In his free time, he enjoys activities that are low-cost or free, such as reading, hiking, and volunteering at a local community center. Aidan is determined to break the cycle of unemployment and financial instability, and he is committed to taking small but meaningful steps towards a more secure future.",
+    "intent": "buy a pair of blue light blocking glasses for women with clear lenses.",
+    "age": 34,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

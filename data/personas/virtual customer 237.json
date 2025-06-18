@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a passionate musician who has dedicated his life to pursuing his artistic dreams. He performs regularly at local cafes and open mic nights, but also works a part-time job to supplement his income.\n\nDemographics:\nAge: 38\nGender: Male\nEducation: High school graduate\nProfession: Musician, part-time retail worker\nIncome: $24,000\n\nFinancial Situation:\nDavid's income from his musical performances and part-time job is modest, but he is able to cover his basic living expenses and occasional splurges on new music equipment or concert tickets. He is resourceful and lives a relatively simple lifestyle, prioritizing his creative passions over material possessions.\n\nShopping Habits:\nDavid tends to be mindful and selective in his shopping habits. He frequents local music shops and thrift stores, seeking out unique and affordable items that align with his artistic sensibilities. He also takes advantage of online sales and discounts when replacing necessary items or upgrading his musical gear.\n\nPersonal Life:\nIn his free time, David immerses himself in the local music scene, attending and performing at various venues. He finds great fulfillment in collaborating with other musicians, exchanging ideas, and sharing his love of music with the community. David also enjoys exploring nature, finding inspiration in the outdoors for his songwriting.\n\nPersonal Style:\nDavid's personal style reflects his creative and laid-back personality. He often wears vintage-inspired clothing, such as retro band t-shirts, worn jeans, and leather boots. He accessorizes with a variety of statement jewelry, including rings, bracelets, and necklaces. David's appearance conveys a sense of individuality and a connection to the artistic community he is a part of.",
+    "intent": "buy a lava rock necklace.",
+    "age": 38,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

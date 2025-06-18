@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a passionate community organizer who has dedicated her career to advocating for social and environmental justice. She has a deep commitment to her local community and works tirelessly to address issues such as affordable housing, access to healthcare, and sustainable urban development.\n\nDemographics:\nAge: 56\nGender: Female\nEducation: Master's degree in Public Policy\nProfession: Community Organizer\nIncome: $65,000\n\nFinancial Situation:\nAs a community organizer, Emily's income falls within the $30,001 to $94,000 range. While not a high earner, she is financially responsible and budgets her money carefully to ensure she can continue her advocacy work and support local initiatives. She is comfortable living within her means and values investing in causes that are important to her.\n\nShopping Habits:\nEmily's shopping habits reflect her commitment to sustainability and ethical consumerism. She prefers to shop at local, independently owned businesses, thrift stores, and online retailers that prioritize fair labor practices and environmentally friendly products. When making purchases, she considers the long-term impact on the community and the planet.\n\nPersonal Style:\nEmily's personal style is a blend of practical and stylish. She favors comfortable, versatile clothing that allows her to move freely and attend various community events and meetings. Her wardrobe often includes items from ethical and sustainable fashion brands, as well as thrifted or repurposed pieces that align with her values.",
+    "intent": "buy a halloween tree.",
+    "age": 56,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

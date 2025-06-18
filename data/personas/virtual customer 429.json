@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jacob\n\nBackground:\nJacob is a 23-year-old man who is navigating the challenges of entering the workforce and establishing financial independence. Despite facing setbacks and uncertainty, he remains hopeful and determined to build a better future for himself.\n\nDemographics:\nAge: 23\nGender: Male\nEducation: High School Graduate\nProfession: Part-Time Retail Associate\nIncome: $18,000\n\nFinancial Situation:\nJacob's current financial situation is precarious, as he struggles to cover his basic living expenses on his limited income. He is working part-time in a retail position, but the hours and pay are inconsistent. Jacob relies on government assistance programs and occasional financial support from his family to make ends meet.\n\nShopping Habits:\nGiven his tight budget, Jacob has become adept at finding creative ways to save money. He frequents discount stores, thrift shops, and online marketplaces to search for affordable clothing, household items, and other necessities. Jacob is also skilled at repurposing and upcycling items to extend their lifespan.\n\nProfessional Life:\nJacob's current job as a part-time retail associate provides him with some income, but he is actively seeking out more stable and fulfilling employment opportunities. He is exploring vocational training programs and entry-level positions in various industries, hoping to find a career path that aligns with his interests and skills.\n\nPersonal Style:\nJacob's personal style is practical and budget-conscious, reflecting his current financial constraints. He tends to favor comfortable, durable clothing that allows him to move easily and perform his job duties. His wardrobe consists mainly of basic tops, jeans, and comfortable shoes, with the occasional addition of a thrifted or secondhand item to add a touch of personal flair.\n\nIn his free time, Jacob enjoys engaging in low-cost hobbies, such as reading, hiking, and volunteering at a local community center. These activities not only provide him with a sense of fulfillment but also allow him to connect with others and explore new experiences.",
+    "intent": "buy a detox foot bath machine to remove toxins.",
+    "age": 23,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a passionate visual artist who has found success in the world of graphic design. With a keen eye for aesthetics and a talent for innovative problem-solving, he has built a thriving freelance business creating branding and marketing materials for a diverse clientele.\n\nDemographics:\nAge: 33\nGender: Male\nEducation: Bachelor's Degree in Graphic Design\nProfession: Freelance Graphic Designer\nIncome: $58,000\n\nFinancial Situation:\nAs a successful freelance designer, David's income varies based on the projects he takes on, but he typically earns a comfortable living. He is disciplined about his spending and budgeting, allocating a portion of his earnings towards savings and investments to ensure long-term financial stability.\n\nShopping Habits:\nDavid's shopping habits reflect his creative and practical nature. He enjoys browsing art supply stores and online marketplaces for unique, high-quality tools and materials that can help him bring his design visions to life. At the same time, he is mindful of value and will research products to ensure he's getting the best bang for his buck.\n\nProfessional Life:\nDavid's days are filled with a diverse array of client projects, from branding and web design to illustration and motion graphics. He thrives in this dynamic, ever-changing environment and relishes the challenge of translating his clients' needs into visually captivating and impactful designs. David's attention to detail, technical skills, and creative problem-solving abilities have been key to his professional success.\n\nPersonal Style:\nDavid's personal style is a reflection of his artistic sensibilities and preference for comfort. He favors well-fitting, stylish casual wear, such as well-tailored jeans, graphic tees, and sneakers. While he appreciates high-quality, fashionable items, he is not beholden to the latest trends and instead curates a wardrobe that aligns with his individual sense of style.",
+    "intent": "buy a pink, ceramic baking dish.",
+    "age": 33,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

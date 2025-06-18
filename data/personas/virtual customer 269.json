@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a passionate and driven small business owner who has dedicated the past decade to building her eco-friendly clothing line. She takes pride in creating high-quality, sustainable garments that resonate with her socially conscious customer base.\n\nDemographics:\nAge: 47\nGender: Female\nEducation: Bachelor's degree in Textile Design\nProfession: Founder and CEO of an Eco-Fashion Brand\nIncome: $54,000\n\nFinancial Situation:\nAs the founder of a growing small business, Sarah's income fluctuates, but she has managed to maintain a stable financial situation. She is diligent about budgeting, reinvesting profits back into the company, and setting aside funds for future growth and unexpected expenses.\n\nShopping Habits:\nSarah's shopping habits are largely influenced by her business and her personal values. She seeks out responsibly sourced materials, prioritizing organic, recycled, and ethically produced fabrics for her own wardrobe. When it comes to non-work-related purchases, she focuses on quality over quantity, investing in timeless pieces that will last.\n\nProfessional Life:\nRunning her own eco-fashion brand requires Sarah to wear many hats \u2013 from design and production to marketing and customer relations. She is passionate about her work and driven to create a sustainable business model that positively impacts the environment and the lives of her employees.\n\nPersonal Style:\nSarah's personal style reflects her brand's commitment to sustainability and timeless elegance. She often wears her own designs, which feature clean lines, natural fibers, and subtle, nature-inspired patterns. She complements her wardrobe with carefully curated accessories, such as handcrafted jewelry and vintage-inspired bags.\n\nIn her free time, Sarah enjoys exploring the local farmers market, practicing yoga, and volunteering with environmental organizations. She is an avid reader and stays up-to-date on the latest developments in the sustainable fashion industry.",
+    "intent": "buy a high-quality, eco-friendly weight belt from a sustainable brand.",
+    "age": 47,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ryan\n\nBackground:\nRyan is a young, ambitious entrepreneur who has established a successful tech startup in the heart of the city. With a keen eye for innovation and a knack for problem-solving, he has quickly risen through the ranks, becoming a respected leader in his industry.\n\nDemographics:\nAge: 29\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Founder and CEO, Tech Startup\nIncome: $450,000\n\nFinancial Situation:\nRyan's entrepreneurial endeavors have propelled him into the upper echelons of the income bracket, with an annual income ranging from $94,001 to $1,000,000. He is financially savvy, investing a portion of his earnings into diversified portfolios and strategic business ventures to secure his long-term financial stability.\n\nShopping Habits:\nAs a successful entrepreneur, Ryan's shopping habits reflect his modern sensibilities and appreciation for quality. He gravitates towards high-end, technology-driven products, from the latest smartphones and laptops to smart home devices and cutting-edge gadgets. Ryan also enjoys indulging in premium experiences, such as fine dining, exclusive tech conferences, and luxury travel.\n\nProfessional Life:\nAt the helm of his tech startup, Ryan is a visionary leader who is constantly exploring new opportunities for growth and innovation. He has built a talented and dynamic team, fostering a collaborative work environment that encourages creativity and problem-solving. Ryan's unwavering drive and adaptability have been instrumental in navigating the ever-changing landscape of the tech industry.\n\nPersonal Style:\nRyan's personal style reflects his progressive and forward-thinking mindset. He favors a modern, minimalist aesthetic, with a wardrobe that includes well-fitted blazers, crisp button-down shirts, and tailored pants. Ryan also has a penchant for stylish, tech-infused accessories, such as sleek smartwatches and high-end headphones.\n\nOutside of his professional pursuits, Ryan is an avid reader, staying up-to-date on the latest industry trends and technological advancements. He also enjoys staying active, regularly engaging in outdoor activities like mountain biking and rock climbing. Ryan's diverse interests and insatiable curiosity contribute to his well-rounded and dynamic persona.",
+    "intent": "buy a premium women's shave cream for sensitive skin.",
+    "age": 29,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

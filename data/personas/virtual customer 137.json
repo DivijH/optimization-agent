@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Samantha\n\nBackground:\nSamantha is a recent college graduate who is navigating the early stages of her career. She is passionate about sustainability and is determined to find a job that aligns with her values.\n\nDemographics:\nAge: 24\nGender: Female\nEducation: Bachelor's degree in Environmental Science\nProfession: Freelance Environmental Consultant\nIncome: $27,000\n\nFinancial Situation:\nAs a freelance consultant, Samantha has a modest income that allows her to cover her basic living expenses. She is mindful of her spending and tries to save what she can, but she also enjoys treating herself to small luxuries on occasion.\n\nShopping Habits:\nSamantha is a conscious consumer who prioritizes sustainability and ethical practices when making purchases. She often shops at thrift stores, secondhand shops, and eco-friendly brands, where she can find unique and affordable items. She also enjoys supporting local artisans and small businesses.\n\nProfessional Life:\nSamantha's role as a freelance environmental consultant allows her to work with a variety of clients, from non-profit organizations to small businesses. She uses her expertise to help them implement greener practices and reduce their environmental impact. Samantha is constantly seeking out new learning opportunities and networking with like-minded professionals.\n\nPersonal Style:\nSamantha's personal style reflects her environmental values. She favors comfortable, versatile clothing made from natural fibers, such as organic cotton and linen. She enjoys mixing and matching pieces to create unique, sustainable outfits. Samantha also prioritizes functionality and practicality in her wardrobe choices, as she often needs to be on the move for her work.",
+    "intent": "buy a small, portable outdoor ashtray with a lid to safely dispose of weed.",
+    "age": 24,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

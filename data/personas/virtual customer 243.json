@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a vibrant and passionate young woman who is dedicated to making a positive impact on her local community. Despite facing financial challenges, she has found purpose and fulfillment through her involvement in various volunteer organizations and social initiatives.\n\nDemographics:\nAge: 21\nGender: Female\nEducation: High School Diploma\nProfession: Part-Time Retail Associate, Volunteer\nIncome: $18,000\n\nFinancial Situation:\nAs a part-time retail associate, Emily's income is modest, but she is resourceful and adept at managing her finances. She lives frugally, prioritizing her basic needs and setting aside funds to support the causes she cares about. While she may not have a large disposable income, Emily finds joy in discovering affordable ways to enrich her life and the lives of others.\n\nShopping Habits:\nEmily is a mindful and environmentally-conscious shopper. She seeks out secondhand stores, thrift shops, and online marketplaces to find unique, high-quality items at a fraction of the retail price. When making purchases, she considers the ethical and sustainable practices of the businesses she supports, often opting for local, independent vendors over large corporations.\n\nProfessional Life:\nIn addition to her part-time retail job, Emily dedicates a significant portion of her time and energy to volunteering. She has become involved with several local non-profit organizations, lending her time and talents to initiatives that address issues such as homelessness, food insecurity, and youth empowerment. Her passion for making a difference in her community is a driving force in her life.\n\nPersonal Style:\nEmily's personal style is a reflection of her eclectic and creative spirit. She has a knack for thrifting and repurposing items, crafting unique outfits that blend vintage and contemporary elements. Her wardrobe is a diverse mix of comfortable, versatile pieces that allow her to transition seamlessly between her various volunteer activities and her part-time job.",
+    "intent": "buy a wooden shield for kids",
+    "age": 21,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a freelance graphic designer who works on a variety of projects for small businesses and local organizations. He finds fulfillment in using his creative talents to help his clients achieve their marketing and branding goals.\n\nDemographics:\nAge: 41\nGender: Male\nEducation: Associate's Degree in Graphic Design\nProfession: Freelance Graphic Designer\nIncome: $25,000\n\nFinancial Situation:\nAs a freelancer, Michael's income can be inconsistent, but he has learned to live within his means. He carefully budgets his earnings and relies on side gigs, such as tutoring art students, to supplement his design work. Michael is diligent about saving for unexpected expenses and setting aside money for his retirement.\n\nShopping Habits:\nMichael approaches shopping with a practical mindset. He seeks out sales and discounts, often scouring thrift stores and online marketplaces for unique, affordable finds. When it comes to design-related purchases, such as software or art supplies, Michael is willing to invest in high-quality products that will support his craft.\n\nPersonal Life:\nIn his free time, Michael enjoys exploring the local art scene, visiting museums, and attending community events. He is an avid reader, with a particular interest in art history and design theory. Michael also volunteers at a local youth center, teaching art classes and mentoring aspiring creatives.\n\nPersonal Style:\nMichael's personal style reflects his artistic sensibilities. He tends to wear comfortable, relaxed clothing, such as well-fitting jeans, t-shirts, and hoodies, which he often pairs with vintage or thrifted items. He values functionality and sustainability in his wardrobe choices, opting for durable, high-quality pieces that can be mixed and matched.",
+    "intent": "buy a kids diner order pad.",
+    "age": 41,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

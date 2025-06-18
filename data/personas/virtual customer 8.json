@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a marketing manager at a mid-sized advertising agency. She is passionate about crafting engaging campaigns that resonate with target audiences. Emily enjoys the fast-paced, creative environment of her job and is always striving to stay ahead of industry trends.\n\nDemographics:\nAge: 30\nGender: Female\nEducation: Bachelor's Degree in Marketing\nProfession: Marketing Manager\nIncome: $65,000\n\nFinancial Situation:\nEmily earns a comfortable income that allows her to live comfortably in the city. She is diligent about budgeting and saving, but also enjoys treating herself to occasional splurges, like a weekend getaway or a new designer handbag.\n\nShopping Habits:\nEmily loves to shop and considers it a form of self-care. She enjoys browsing both online and in-store, and often discovers new brands and products that inspire her work. When shopping, Emily looks for items that are stylish, high-quality, and versatile enough to mix and match with her existing wardrobe.\n\nProfessional Life:\nAs a marketing manager, Emily's days are filled with client meetings, brainstorming sessions, and creative problem-solving. She thrives in the dynamic, collaborative environment and is always eager to take on new challenges. Emily places a strong emphasis on work-life balance, ensuring she has time for her hobbies and personal relationships.\n\nPersonal Style:\nEmily has a polished, modern aesthetic. She favors well-tailored pieces in neutral tones, such as black, gray, and navy, which she likes to accent with pops of color or bold accessories. She enjoys fashion and follows the latest trends, but her style remains professional and sophisticated.\nEmily loves Starbucks and often wakes up at 7am.\nEmily lives in Chicago.",
+    "intent": "buy a bb gun",
+    "age": 30,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

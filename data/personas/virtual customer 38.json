@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a software engineer working at a mid-sized tech company. He is passionate about designing innovative solutions that solve real-world problems and improve people's lives through technology.\n\nDemographics:\nAge: 32\nGender: Male\nEducation: Bachelor's degree in Computer Science\nProfession: Software Engineer\nIncome: $73,000\n\nFinancial Situation:\nDavid is financially stable, earning a comfortable income as a software engineer. He is diligent about budgeting and saving, allocating funds towards his retirement, as well as investing in personal development opportunities to enhance his skills.\n\nShopping Habits:\nDavid enjoys a balanced approach to shopping. He is practical and value-conscious, often researching products and seeking the best deal. However, he also appreciates quality and is willing to invest in items that he believes will last. David tends to shop online for convenience, but also enjoys the occasional in-store experience for certain purchases.\n\nProfessional Life:\nDavid is a dedicated and hardworking software engineer, constantly seeking to expand his knowledge and stay up-to-date with the latest industry trends. He enjoys collaborating with his team to tackle complex technical challenges, and takes pride in delivering high-quality, innovative solutions.\n\nPersonal Style:\nDavid's personal style is a blend of functionality and comfort. He typically wears casual but well-fitted clothing, such as button-down shirts, chinos, and comfortable yet stylish shoes. He prefers neutral tones and classic designs, which he believes reflect his professional and organized approach to life.\n\nDavid is an avid hiker and enjoys exploring the great outdoors during his free time. He also volunteers at a local animal shelter, finding joy in giving back to the community.",
+    "intent": "buy an ionic foot bath.",
+    "age": 32,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a retired schoolteacher who has dedicated her life to educating and inspiring young minds. After decades of service in the public education system, she now focuses on pursuing her lifelong passions and finding ways to give back to her community.\n\nDemographics:\nAge: 63\nGender: Female\nEducation: Bachelor's Degree in Education\nProfession: Retired Schoolteacher\nIncome: $25,000\n\nFinancial Situation:\nEmily lives on a modest retirement income, supplemented by a small pension and Social Security benefits. While she is not wealthy, she is financially responsible and manages her limited resources carefully, prioritizing her needs and finding creative ways to stretch her budget.\n\nShopping Habits:\nEmily enjoys browsing thrift stores, garage sales, and community flea markets in search of hidden gems and unique items. She takes pride in her ability to find quality products at bargain prices, often repurposing or upcycling her discoveries. When it comes to necessities, she relies on trusted local shops and online retailers that offer reliable service and fair prices.\n\nProfessional Life:\nAlthough Emily is no longer actively teaching, she remains engaged with the education community. She volunteers at local schools, sharing her expertise and mentoring new teachers. Additionally, she serves on the board of a nonprofit organization that provides educational resources and support to underprivileged families.\n\nPersonal Style:\nEmily's personal style reflects her practical and down-to-earth nature. She favors comfortable, classic clothing that allows her to easily move and engage in her daily activities. While she appreciates well-made, durable items, she is not driven by the latest fashion trends and instead focuses on finding pieces that make her feel confident and at ease.",
+    "intent": "add a hot water bottle and hot chocolate gift set to my shopping cart.",
+    "age": 63,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

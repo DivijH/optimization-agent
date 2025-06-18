@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a passionate and ambitious 23-year-old who is currently navigating the challenges of finding his place in the world. Despite facing financial instability, he is determined to pursue his dream of becoming a musician and making a meaningful impact through his art.\n\nDemographics:\nAge: 23\nGender: Male\nEducation: Some college\nProfession: Aspiring Musician, Part-time Retail Worker\nIncome: $18,000\n\nFinancial Situation:\nEthan's income from his part-time retail job provides a modest but irregular stream of funds, which he carefully manages to cover his basic living expenses. He often relies on side gigs, such as busking or playing local events, to supplement his income and fund his music endeavors. Despite the financial strain, Ethan remains optimistic and focused on investing in the equipment and resources he needs to hone his craft.\n\nShopping Habits:\nEthan approaches shopping with a minimalist mindset, focusing on finding high-quality, versatile items that will serve him well both on and off the stage. He frequents secondhand stores, online marketplaces, and sometimes even garage sales in search of unique and affordable musical equipment, instruments, and clothing that aligns with his personal style. Ethan prioritizes practicality and functionality over trends, and he is skilled at stretching his limited budget to accommodate his creative needs.\n\nPersonal Life:\nMusic is the driving force in Ethan's life, and he dedicates most of his free time to practicing, writing songs, and networking with other musicians. He finds solace and inspiration in the act of creating, and his passion for his craft is a source of motivation and resilience. Ethan's determination to succeed as a musician is fueled by a desire to make a positive impact on the world through his art, and he constantly seeks out opportunities to share his music with others.",
+    "intent": "buy a small silverware basket caddy for a dishwasher.",
+    "age": 23,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

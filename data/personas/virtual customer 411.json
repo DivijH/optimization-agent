@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a retired educator who has dedicated his life to nurturing the minds of young people. After decades of teaching and mentoring students, he now finds fulfillment in pursuing his lifelong passion for gardening and environmental conservation.\n\nDemographics:\nAge: 61\nGender: Male\nEducation: Bachelor's Degree in Education\nProfession: Retired Teacher, Environmental Activist\nIncome: $25,000\n\nFinancial Situation:\nMichael's retirement income, combined with his modest savings, allows him to live a simple yet fulfilling life. While his finances are modest, he is content with his current situation and prioritizes experiences and community involvement over material possessions.\n\nShopping Habits:\nMichael is a thoughtful and intentional shopper, focusing on purchasing high-quality, long-lasting items that align with his values. He frequents secondhand stores, community thrift shops, and online marketplaces to find unique treasures and repurpose items for his gardening projects. Michael also supports local businesses and artisans whenever possible.\n\nPersonal Style:\nMichael's personal style reflects his laid-back and eco-conscious approach to life. He favors comfortable, practical clothing that allows him to move freely while tending to his garden or participating in outdoor activities. His wardrobe includes a mix of well-worn, durable pieces and the occasional thrifted find that he incorporates into his signature look.\n\nProfessional Life:\nDuring his teaching career, Michael was known for his innovative teaching methods, deep care for his students, and unwavering commitment to environmental education. Now retired, he remains actively involved in local environmental organizations, sharing his knowledge and expertise to inspire the next generation of environmental stewards.",
+    "intent": "buy a small, smoke machine for outdoor Halloween decorations",
+    "age": 61,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

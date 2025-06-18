@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a passionate advocate for environmental sustainability and social justice. At the age of 38, she has dedicated her career to working with local nonprofits and community organizations, using her diverse skills and boundless energy to drive positive change.\n\nDemographics:\nAge: 38\nGender: Female\nEducation: Bachelor's Degree in Environmental Studies\nProfession: Community Organizer, Freelance Grant Writer\nIncome: $22,000\n\nFinancial Situation:\nWith a modest income from her community organizing work and freelance grant writing, Sarah lives a frugal lifestyle, prioritizing her passions over material possessions. She is adept at budgeting and finding creative ways to stretch her resources, whether it's thrifting, bartering, or taking advantage of community resources.\n\nShopping Habits:\nSarah is a conscious consumer, making mindful choices about the products she purchases. She frequents secondhand stores, farmer's markets, and eco-friendly retailers, seeking out sustainable, ethically-sourced, and locally-produced items. When possible, she supports small businesses and social enterprises that align with her values.\n\nProfessional Life:\nAs a community organizer, Sarah leverages her skills and network to coordinate grassroots initiatives that address environmental and social issues. She works closely with various nonprofit organizations, helping them secure funding, develop programs, and engage the local community. Her resilience and adaptability allow her to navigate the challenges of working in the nonprofit sector.\n\nPersonal Style:\nSarah's personal style reflects her commitment to sustainability and her active lifestyle. She favors comfortable, versatile clothing that can be easily layered and repurposed, such as organic cotton shirts, durable denim, and sturdy boots. She prioritizes quality over quantity, investing in pieces that will last and can be seamlessly integrated into her wardrobe.",
+    "intent": "buy a heel scuff marker.",
+    "age": 38,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

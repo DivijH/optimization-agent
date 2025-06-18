@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Margaret\n\nBackground:\nMargaret is a retired schoolteacher who has dedicated her life to nurturing young minds and advocating for educational equity. After 35 years of service, she now focuses her energy on volunteering with local organizations that provide support and resources to underprivileged families.\n\nDemographics:\nAge: 60\nGender: Female\nEducation: Bachelor's Degree in Education\nProfession: Retired Schoolteacher\nIncome: $24,000\n\nFinancial Situation:\nMargaret's fixed income from her retirement pension and social security benefits falls within the $0 to $30,000 range. While modest, she has learned to live frugally and prioritize her essential needs. Margaret supplements her income through part-time tutoring and her involvement in various community initiatives, which provide her with a sense of purpose and a modest additional source of revenue.\n\nShopping Habits:\nMargaret's shopping habits are characterized by her thrifty and resourceful nature. She is a frequent visitor to local thrift stores, secondhand shops, and garage sales, where she can find high-quality, gently used items at a fraction of the retail price. When purchasing new items, Margaret focuses on practical necessities and seeks out sales, coupons, and discounts to stretch her limited budget.\n\nPersonal Style:\nMargaret's personal style reflects her practical and comfortable approach to life. She favors classic, well-made pieces that can be easily mixed and matched, often opting for natural fabrics and timeless silhouettes. While she is not averse to the occasional splurge on a special occasion, Margaret's wardrobe is primarily composed of affordable, durable clothing that can withstand the wear and tear of her active lifestyle.\n\nIn her free time, Margaret enjoys volunteering at the local community center, where she tutors underprivileged children and helps organize educational programs. She is a passionate advocate for improving access to quality education and is dedicated to making a positive impact on the lives of those around her.",
+    "intent": "buy a 6-pack of KSI's Lemonade Prime beverage.",
+    "age": 60,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

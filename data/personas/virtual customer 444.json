@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a seasoned nonprofit professional who has dedicated her career to championing the rights of the elderly and ensuring their well-being. With decades of experience working in the social services sector, she has developed a deep understanding of the unique challenges faced by aging populations and has become a respected advocate for improving access to quality care and resources.\n\nDemographics:\nAge: 58\nGender: Female\nEducation: Bachelor's degree in Social Work\nProfession: Nonprofit Program Manager\nIncome: $58,000\n\nFinancial Situation:\nAs a seasoned nonprofit professional, Sarah's income falls within the middle range, allowing her to maintain a comfortable lifestyle while still prioritizing her passion for social impact. She is a diligent budgeter, carefully allocating her resources to support both her personal needs and the causes she holds dear.\n\nShopping Habits:\nSarah's shopping habits reflect her pragmatic and values-driven approach to life. She aims to make thoughtful purchasing decisions, prioritizing quality, durability, and ethical production over fleeting trends. While she is not averse to occasional splurges on high-quality items, Sarah often seeks out sustainable, socially conscious brands and secondhand options to align her consumer choices with her personal principles.\n\nPersonal Style:\nSarah's personal style is refined and polished, with a focus on timeless, versatile pieces that can be easily mixed and matched. She favors classic silhouettes, natural fabrics, and muted color palettes that convey a sense of professionalism and approachability. Sarah's wardrobe is a reflection of her desire to present a confident and composed image while remaining comfortable and true to her values.",
+    "intent": "buy a men's cape.",
+    "age": 58,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

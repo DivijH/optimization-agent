@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a passionate and creative young woman pursuing her dream of becoming a published author. She has been honing her writing skills and working on her first novel, balancing her creative work with various part-time jobs to make ends meet.\n\nDemographics:\nAge: 24\nGender: Female\nEducation: High school diploma\nProfession: Part-time retail associate, aspiring writer\nIncome: $22,000\n\nFinancial Situation:\nOlivia's income is modest, as she relies on a combination of part-time jobs and occasional freelance writing gigs to support herself. She is financially conscious, living in a small studio apartment and carefully budgeting her expenses to ensure she has enough to cover her basic needs and invest in her writing pursuits.\n\nShopping Habits:\nOlivia approaches shopping with a mindful and minimalist mindset. She tends to gravitate towards sustainable, ethically-sourced clothing and household items, often opting for secondhand or upcycled products whenever possible. When it comes to her writing supplies, she is willing to invest in high-quality materials that enhance her creative process.\n\nProfessional Life:\nWhile Olivia's primary focus is on her writing, she balances this with part-time work in the retail industry. She finds fulfillment in her creative endeavors, spending her free time immersed in the worlds she crafts through her writing. Olivia is constantly seeking opportunities to grow as a writer, whether it's attending local writing workshops or submitting her work to literary journals.\n\nPersonal Style:\nOlivia's personal style is a reflection of her artistic sensibilities and eco-conscious values. She favors natural fabrics, earth-toned palettes, and minimalist silhouettes that allow her to express her individuality. She enjoys thrifting and repurposing clothing, often adding her own unique touches to create one-of-a-kind pieces.\n\nIn her free time, Olivia can be found exploring local bookstores, attending open mic nights, or spending quiet moments in nature, where she finds inspiration for her writing. She is an avid reader and a passionate advocate for promoting diverse voices in the literary community.",
+    "intent": "buy a Tesla Model Y charging hub.",
+    "age": 24,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

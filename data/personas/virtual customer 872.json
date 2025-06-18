@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a dynamic and ambitious 27-year-old who has carved out a successful career in the non-profit sector. With a deep passion for social justice and a knack for strategic planning, she has become a valuable asset to the organization she works for, driving impactful initiatives that create positive change in her community.\n\nDemographics:\nAge: 27\nGender: Female\nEducation: Master's Degree in Public Administration\nProfession: Program Manager, Non-Profit Organization\nIncome: $48,000\n\nFinancial Situation:\nAs a program manager in the non-profit world, Olivia's income falls within the $30,001 to $94,000 range, providing her with a comfortable yet modest financial standing. She is mindful of her spending and prioritizes saving for both short-term goals and long-term financial security. Olivia believes in using her resources to support the causes she cares about, often allocating a portion of her income to charitable donations and volunteer efforts.\n\nShopping Habits:\nOlivia approaches shopping with a mindful and ethical perspective. She seeks out sustainable, socially responsible brands and products that align with her values. While she is willing to invest in high-quality, long-lasting items, she also enjoys scouring thrift stores, consignment shops, and online secondhand marketplaces for unique and affordable finds. Olivia's shopping habits reflect her commitment to living a conscious, eco-friendly lifestyle.\n\nPersonal Life:\nOutside of her professional endeavors, Olivia is an active member of her local community, volunteering with various non-profit organizations and participating in advocacy initiatives. She finds joy in connecting with like-minded individuals and collaborating on projects that make a tangible difference. In her free time, Olivia enjoys exploring the outdoors, attending cultural events, and immersing herself in books that broaden her understanding of social and environmental issues.",
+    "intent": "buy a large inflatable dachshund.",
+    "age": 27,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

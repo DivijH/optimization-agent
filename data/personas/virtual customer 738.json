@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a resilient and determined woman who has faced numerous challenges throughout her life. After an unexpected job loss and a series of personal setbacks, she has found herself navigating the complexities of retirement on a limited income.\n\nDemographics:\nAge: 60\nGender: Female\nEducation: High School Diploma\nProfession: Retired\nIncome: $18,000\n\nFinancial Situation:\nOlivia's primary source of income is a modest Social Security check, supplemented by a small pension from her previous employer. While she does her best to manage her expenses frugally, Olivia often finds herself struggling to make ends meet, particularly when faced with unexpected medical bills or other financial emergencies.\n\nShopping Habits:\nOut of necessity, Olivia has become a master at finding bargains and stretching her limited resources. She is a regular at local thrift stores, flea markets, and discount outlets, where she scours for gently used items that can meet her needs. Olivia also takes advantage of senior discounts and community programs that provide assistance with essential purchases.\n\nPersonal Life:\nOlivia's day-to-day life is often focused on managing her limited finances and finding ways to stay active and engaged in her community. She enjoys volunteering at a local food bank, participating in senior center activities, and spending time with her grandchildren, who bring her immense joy.\n\nDespite the challenges she faces, Olivia maintains a positive outlook and a strong sense of resilience. She takes pride in her ability to find creative solutions to her problems and continues to seek out opportunities to learn and grow, even in her later years.",
+    "intent": "buy a eucalyptus necklace.",
+    "age": 60,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

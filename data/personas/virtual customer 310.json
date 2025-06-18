@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a resilient and adaptable woman who has navigated a diverse career path. After years of working in the corporate world, she decided to pursue her passion for sustainable agriculture and now operates a small organic farm.\n\nDemographics:\nAge: 54\nGender: Female\nEducation: Bachelor's degree in Business Administration\nProfession: Organic Farmer\nIncome: $45,000\n\nFinancial Situation:\nWhile Emily's income from her farming operation is modest, she has developed a frugal lifestyle and is skilled at managing her finances. She has built up a comfortable savings account and invests in sustainable practices to ensure the long-term viability of her farm.\n\nShopping Habits:\nEmily values quality, sustainability, and supporting local businesses. She often shops at farmers' markets, co-ops, and small specialty stores to find the freshest produce, ethically sourced goods, and unique home goods. When making larger purchases, she thoroughly researches options to ensure she is getting the best value.\n\nProfessional Life:\nRunning her own organic farm has allowed Emily to combine her business acumen with her passion for environmental stewardship. She takes great pride in the quality of her crops and the positive impact her farm has on the local community. Emily is constantly learning and adapting her practices to stay at the forefront of sustainable agriculture.\n\nPersonal Style:\nEmily's personal style reflects her practical and down-to-earth nature. She favors comfortable, durable clothing that allows her to move freely while working on the farm. Her wardrobe consists of well-made basics, such as sturdy jeans, button-down shirts, and practical footwear. Emily occasionally incorporates pops of color or unique accessories to express her individuality.",
+    "intent": "buy a kid-sized vacuum cleaner.",
+    "age": 54,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

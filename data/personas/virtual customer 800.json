@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a dedicated caregiver who has spent the majority of her professional life providing compassionate support to those in need. While her career path may not have led her to the financial heights of some, she finds immense fulfillment in the work she does and the positive impact she has on the lives of her clients.\n\nDemographics:\nAge: 57\nGender: Female\nEducation: High School Diploma\nProfession: Caregiver\nIncome: $24,000\n\nFinancial Situation:\nEmily's modest income as a caregiver, which falls within the $0 to $30,000 range, requires her to carefully manage her finances. However, she has developed a knack for stretching her dollars and finding creative ways to make ends meet. While she may not have the same luxurious lifestyle as some of her more affluent counterparts, Emily is content with her simple pleasures and the security of a steady paycheck.\n\nShopping Habits:\nWhen it comes to shopping, Emily prioritizes practicality and value over flashy trends or designer labels. She takes the time to research and compare prices, often seeking out sales, coupons, and secondhand stores to stretch her limited budget. Emily's purchases tend to focus on essentials, such as quality clothing, household items, and necessities for her clients, rather than indulgences or impulse buys.\n\nProfessional Life:\nAs a caregiver, Emily's days are filled with providing compassionate care and support to her clients, many of whom are elderly or have special needs. She takes great pride in her work, finding joy in the small moments of connection and the knowledge that she is making a positive difference in the lives of those she serves. Emily's empathy, patience, and dedication have earned her the respect and appreciation of her clients and their families.\n\nPersonal Style:\nEmily's personal style reflects her practical and down-to-earth nature. She favors comfortable, durable clothing that allows her to move easily and provide hands-on care to her clients. Her wardrobe consists of well-fitting slacks, button-down shirts, and sensible shoes that prioritize comfort and functionality. While Emily may not be at the forefront of fashion trends, she takes care to present a neat and professional appearance, reflecting her commitment to her work and the people she serves.",
+    "intent": "add a 6-serving container of overnight oats to my cart.",
+    "age": 57,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

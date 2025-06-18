@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Robert\n\nBackground:\nRobert is a retired military veteran who has found a new purpose in life through his volunteer work and commitment to community service. After decades of dedicated service, he now devotes his time to supporting local organizations and mentoring young people in his neighborhood.\n\nDemographics:\nAge: 52\nGender: Male\nEducation: High School Diploma\nProfession: Retired Military, Volunteer\nIncome: $24,000\n\nFinancial Situation:\nWith a modest retirement income and a focus on living simply, Robert is able to maintain a comfortable lifestyle that allows him to prioritize his volunteer work. He is fiscally responsible, carefully managing his expenses and allocating funds to support various charitable initiatives.\n\nShopping Habits:\nRobert approaches shopping with a pragmatic and minimalist mindset. He prefers practical, durable items that can withstand everyday use and align with his active lifestyle. When making purchases, he often seeks out secondhand or discounted options, valuing quality over quantity. Robert's shopping habits reflect his desire to live within his means and contribute more to his community.\n\nProfessional Life:\nIn his retirement, Robert has found a new sense of purpose through his volunteer work. He dedicates his time to various local organizations, from tutoring underprivileged youth to assisting at a food bank. Robert's wealth of experience and dedication to serving others have made him a respected and beloved figure in his community.\n\nPersonal Style:\nRobert's personal style is a reflection of his practical and active lifestyle. He favors comfortable, versatile clothing that allows him to move freely during his volunteer activities. His wardrobe consists of well-worn, durable pieces, such as sturdy boots, casual shirts, and reliable outerwear. Robert's style is understated and functional, with a focus on quality over flashiness.\n\nIn his free time, Robert can often be found exploring nature, hiking, or engaging in other outdoor pursuits. He finds solace and rejuvenation in these activities, which complement his commitment to community service and personal growth.",
+    "intent": "buy a 12-pack of rock star sugar free grape soda.",
+    "age": 52,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

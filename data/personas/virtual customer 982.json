@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Meredith\n\nBackground:\nMeredith is a successful entrepreneur who has built a thriving technology company from the ground up. Her visionary approach and innovative product offerings have earned her industry recognition and a loyal customer base.\n\nDemographics:\nAge: 42\nGender: Female\nEducation: Master's Degree in Computer Science\nProfession: Founder and CEO of a Technology Startup\nIncome: $115,000\n\nFinancial Situation:\nAs the founder and CEO of a successful technology startup, Meredith's income falls within the range of $94,001 to $1,000,000. She has amassed significant wealth through her business ventures, and she actively manages her finances to ensure long-term stability and growth. Meredith is mindful of her spending, but she also invests in personal and professional development opportunities that align with her goals.\n\nShopping Habits:\nMeredith's shopping habits reflect her busy lifestyle and her desire for efficiency. She values quality over quantity and tends to invest in versatile, high-performing products that can withstand the demands of her fast-paced career. Meredith also enjoys discovering innovative and sustainable brands that align with her personal values.\n\nProfessional Life:\nMeredith's professional life is a testament to her determination and entrepreneurial spirit. As the founder and CEO of a thriving tech startup, she has navigated the challenges of building a business from the ground up, managing a talented team, and bringing cutting-edge products to market. Meredith is a visionary leader who is constantly seeking new opportunities to grow and innovate.\n\nPersonal Life:\nDespite her demanding work schedule, Meredith prioritizes her personal well-being and makes time for hobbies and leisure activities. She is an avid reader, a passionate traveler, and an active participant in her local community. Meredith also values the importance of work-life balance and strives to maintain a healthy lifestyle through regular exercise and mindfulness practices.",
+    "intent": "buy a set of high-quality, hypoallergenic ear piercing earrings.",
+    "age": 42,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

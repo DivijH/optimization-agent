@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a dynamic middle manager at a local tech startup, where she oversees a team of talented developers and designers. With a strong entrepreneurial spirit and a keen eye for innovation, Olivia has been instrumental in driving the company's growth and success.\n\nDemographics:\nAge: 36\nGender: Female\nEducation: Master's Degree in Computer Science\nProfession: Middle Manager, Tech Startup\nIncome: $65,000\n\nFinancial Situation:\nOlivia's income as a middle manager provides her with a comfortable financial standing. She is financially responsible, maintaining a balanced budget that allows her to save for the future while also enjoying occasional indulgences.\n\nShopping Habits:\nOlivia's shopping habits reflect her pragmatic and efficient approach to life. She tends to invest in high-quality, durable products that will serve her well in the long run, often seeking out sales and discounts to maximize her value. While she enjoys browsing the latest trends, Olivia is selective in her purchases and prioritizes function over form.\n\nProfessional Life:\nOlivia's role as a middle manager requires her to be a strong leader, a skilled communicator, and a strategic thinker. She takes great pride in mentoring her team and fostering a collaborative work environment that encourages innovation and creativity. Olivia's dedication and problem-solving abilities have earned her the respect of her colleagues and the trust of her superiors.\n\nPersonal Life:\nIn her personal life, Olivia maintains a healthy work-life balance. She enjoys engaging in active hobbies, such as hiking and yoga, and regularly volunteers at a local animal shelter, where she finds solace and fulfillment. Olivia also values her close-knit network of friends and family, with whom she enjoys sharing experiences and creating lasting memories.\n\nPersonal Style:\nOlivia's personal style reflects her professional persona \u2013 polished, practical, and versatile. She favors well-tailored, high-quality pieces that can seamlessly transition from the office to social events. Her wardrobe is a mix of classic silhouettes and modern, trend-forward accents, allowing her to maintain a sophisticated and confident presence in various settings.",
+    "intent": "buy a high-quality, durable tcg game mat.",
+    "age": 36,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

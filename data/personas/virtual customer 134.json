@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jacob\n\nBackground:\nJacob is a 57-year-old retired factory worker, determined to make the most of his golden years. After dedicating his life to providing for his family through physically demanding work, he is now exploring new hobbies and passions.\n\nDemographics:\nAge: 57\nGender: Male\nEducation: High School Graduate\nProfession: Retired Factory Worker\nIncome: $25,000\n\nFinancial Situation:\nJacob's retirement income is modest, but he has managed to save a modest nest egg over the years. He is frugal with his spending, focusing on essentials and occasionally treating himself to small pleasures. His main goal is to maintain a comfortable, stress-free lifestyle.\n\nShopping Habits:\nJacob is a practical shopper, prioritizing functionality and value over trends or status symbols. He tends to frequent discount stores, thrift shops, and online marketplaces to find quality items at affordable prices. When it comes to larger purchases, he takes his time to research and compare options to ensure he is getting the best deal.\n\nProfessional Life:\nAfter retiring from a long career in a factory, Jacob is now enjoying the freedom and flexibility of his golden years. He takes pride in his former work, but is grateful to have the opportunity to pursue his own interests and activities.\n\nPersonal Style:\nJacob's personal style is casual and comfortable, reflecting his blue-collar roots and practical nature. He favors durable, well-worn clothing, such as flannel shirts, jeans, and sturdy boots. Functionality and durability are more important to him than fashion.\n\nJacob is an avid gardener and spends most of his free time tending to his vegetable garden and doing light home repairs. He enjoys the simple pleasures in life and values the time he can now spend with his grandchildren.",
+    "intent": "buy a boys' hammer.",
+    "age": 57,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

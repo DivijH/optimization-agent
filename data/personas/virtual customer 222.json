@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a resilient single mother who has faced her fair share of challenges but remains determined to provide a stable and nurturing environment for her family. After years of working various part-time jobs, she is now pursuing her dream of starting a small catering business, fueled by her passion for cooking and her desire for financial independence.\n\nDemographics:\nAge: 54\nGender: Female\nEducation: High School Diploma\nProfession: Self-employed Caterer\nIncome: $20,000\n\nFinancial Situation:\nWith a limited income from her budding catering business, Sarah often has to make tough decisions to stretch her budget and ensure her family's basic needs are met. She has become adept at finding affordable housing, seeking out community resources, and finding creative ways to save on everyday expenses.\n\nShopping Habits:\nSarah is a savvy shopper, meticulously planning her purchases and seeking out the best deals. She frequents thrift stores, discount retailers, and local farmer's markets to find high-quality, affordable ingredients for her catering business. When it comes to her personal wardrobe and household items, she prioritizes function and value over the latest trends.\n\nPersonal Life:\nDespite the financial challenges, Sarah finds joy in the simple pleasures of life. She cherishes the time she spends with her two children, often involving them in the catering business and teaching them the value of hard work and entrepreneurship. Sarah also finds solace in her faith community, drawing strength and support from her church family.\n\nProfessional Life:\nSarah's catering business is a labor of love, fueled by her lifelong passion for cooking and her desire to create delicious, wholesome meals for her community. She takes great pride in sourcing local, fresh ingredients and infusing each dish with her unique culinary flair. As a self-employed entrepreneur, Sarah is constantly learning, adapting, and seeking out new opportunities to grow her business.",
+    "intent": "buy a co2 powered airsoft pistol.",
+    "age": 54,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

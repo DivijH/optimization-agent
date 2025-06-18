@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Samantha\n\nBackground:\nSamantha is a resilient and determined single mother who has faced her fair share of adversity. After a difficult divorce and the loss of her previous job, she has reinvented herself as a dedicated community volunteer and small business owner, using her skills and passion to support her local community.\n\nDemographics:\nAge: 44\nGender: Female\nEducation: Associate's Degree in Early Childhood Education\nProfession: Part-time Preschool Teacher and Small Business Owner\nIncome: $28,000\n\nFinancial Situation:\nSamantha's income as a part-time preschool teacher, combined with the modest earnings from her small home-based business, provides her with a limited but stable financial foundation. She is meticulous in her budgeting, prioritizing essentials and seeking out ways to save wherever possible. Despite the challenges, Samantha is determined to create a secure future for herself and her young daughter.\n\nShopping Habits:\nSamantha's shopping habits reflect her practical and resourceful nature. She is an avid thrift store and garage sale shopper, constantly on the lookout for high-quality, gently used items that can meet her family's needs. When making larger purchases, she diligently compares prices, researches products, and waits for sales and discounts to maximize her limited budget.\n\nPersonal Style:\nSamantha's personal style is a blend of comfort and functionality, with a touch of creativity. She enjoys mixing and matching pieces from thrift stores and local boutiques, often repurposing or customizing items to create unique outfits. Her wardrobe is a reflection of her versatile lifestyle, incorporating durable, easy-to-care-for garments that can transition seamlessly between her roles as a preschool teacher and a small business owner.\n\nPersonal Life:\nDespite her financial challenges, Samantha finds joy and fulfillment in her community involvement and the strong relationships she has built with her neighbors and fellow small business owners. She is an active volunteer at her daughter's school and participates in local initiatives aimed at supporting working families and promoting small business growth. Samantha's resilience and determination serve as an inspiration to those around her.",
+    "intent": "buy a bottle of da vinci eggnogg",
+    "age": 44,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

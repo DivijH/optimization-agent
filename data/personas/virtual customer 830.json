@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a driven and ambitious young professional who is navigating the early stages of her career. With a passion for technology and a keen eye for innovation, she is determined to make her mark in the dynamic world of software development.\n\nDemographics:\nAge: 20\nGender: Female\nEducation: Bachelor's Degree in Computer Science\nProfession: Junior Software Engineer\nIncome: $46,000\n\nFinancial Situation:\nAs a recent college graduate, Emily has taken on the responsibility of managing her own finances. While her starting salary as a junior software engineer provides a comfortable income, she is mindful of budgeting and saving for her long-term goals, which include paying off student loans and eventually purchasing a home.\n\nShopping Habits:\nEmily's shopping habits reflect her practical and goal-oriented mindset. She tends to invest in high-quality, functional items that will last, such as durable work attire and the latest tech gadgets that support her career. At the same time, she enjoys the occasional splurge on experiences, such as attending tech conferences or treating herself to a weekend getaway.\n\nPersonal Style:\nEmily's personal style blends professionalism and a touch of personal flair. Her wardrobe consists of well-fitted, sophisticated pieces that she effortlessly mixes and matches, creating a polished and modern look. She takes pride in her appearance, but also values comfort and practicality, ensuring that her attire aligns with the demands of her fast-paced career.\n\nProfessional Life:\nAs a junior software engineer, Emily is driven, detail-oriented, and eager to learn. She thrives in collaborative environments, where she can contribute her technical expertise and problem-solving skills to innovative projects. Emily's passion for technology and her willingness to take on challenges have already caught the attention of her colleagues and managers, who see great potential in her.",
+    "intent": "buy durable, interlocking garage floor tiles that are easy to clean and resistant to stains and heavy use.",
+    "age": 20,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

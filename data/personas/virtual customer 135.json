@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Nathan\n\nBackground:\nNathan is a 25-year-old aspiring artist who is currently navigating the challenge of balancing his creative pursuits with the need to earn a living. He has a deep passion for visual arts and is determined to carve out a fulfilling career in this field, despite the financial uncertainties that often accompany artistic endeavors.\n\nDemographics:\nAge: 25\nGender: Male\nEducation: High School Diploma\nProfession: Freelance Artist\nIncome: $22,000\n\nFinancial Situation:\nAs a freelance artist, Nathan's income is variable and often unpredictable. He lives on a modest budget, carefully managing his expenses and finding creative ways to supplement his earnings through part-time jobs and commissioned work. While he dreams of one day achieving financial stability through his art, Nathan is currently focused on honing his skills and building his portfolio.\n\nShopping Habits:\nNathan approaches shopping with a pragmatic mindset, carefully considering the value and necessity of each purchase. He tends to frequent thrift stores, secondhand shops, and online marketplaces in search of unique and affordable art supplies, as well as clothing that reflects his personal style. Nathan is mindful of his spending and often seeks out sales or discounts to maximize his limited budget.\n\nProfessional Life:\nNathan spends his days immersed in his creative work, experimenting with various mediums and techniques to develop his artistic voice. He splits his time between working on personal projects, accepting commissioned pieces, and seeking out opportunities to showcase his art in local galleries or online platforms. While the financial challenges can be daunting, Nathan remains passionate and resilient in his pursuit of a career as a professional artist.\n\nPersonal Style:\nNathan's personal style is a reflection of his artistic sensibilities and limited budget. He often mixes and matches thrifted or secondhand items, layering them in a way that showcases his individual flair. Nathan gravitates towards comfortable, versatile pieces that allow him to focus on his creative work without feeling restricted by his wardrobe. His look is a blend of casual and eclectic, with a touch of edginess that complements his artistic persona.",
+    "intent": "buy a set of straps for a round patio awning",
+    "age": 25,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

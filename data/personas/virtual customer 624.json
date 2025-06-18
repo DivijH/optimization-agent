@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a resilient and resourceful single mother who has faced numerous challenges, but remains determined to provide a stable and nurturing environment for her two children. With a passion for community service and a deep commitment to environmental sustainability, she has found creative ways to support her family while staying true to her values.\n\nDemographics:\nAge: 49\nGender: Female\nEducation: High School Diploma\nProfession: Part-Time Nonprofit Coordinator\nIncome: $28,000\n\nFinancial Situation:\nAs a part-time nonprofit coordinator, Sarah's income falls within the lower range, requiring her to carefully manage her household expenses. She supplements her income through various side gigs, such as dog walking, tutoring, and selling handmade crafts. Despite the financial constraints, Sarah prioritizes saving for her children's future and allocating resources to community outreach programs she volunteers with.\n\nShopping Habits:\nSarah's shopping habits reflect her frugal yet conscious approach to consumerism. She frequents thrift stores, garage sales, and online secondhand marketplaces to find quality, affordable items for her family. When possible, she seeks out eco-friendly and socially responsible brands, supporting businesses that align with her values. Sarah has also developed a talent for repurposing and upcycling household items, finding joy in the creative process.\n\nPersonal Style:\nSarah's personal style is a blend of practical and expressive. Her wardrobe consists of comfortable, versatile pieces that allow her to easily transition between her various roles as a parent, volunteer, and part-time worker. She enjoys incorporating pops of color, patterns, and unique accessories to add a touch of individuality to her outfits. Sarah's style is also influenced by her commitment to sustainability, as she often opts for secondhand or ethically-sourced garments.\n\nIn her free time, Sarah can be found volunteering at the local food bank, leading recycling initiatives in her community, or spending quality time with her children, instilling in them the values of compassion, resilience, and environmental stewardship.",
+    "intent": "buy an Ahsoka Tano-inspired lightsaber.",
+    "age": 49,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a project manager at a mid-sized construction firm. He has over 20 years of experience in the industry and is known for his ability to efficiently coordinate and oversee complex projects.\n\nDemographics:\nAge: 51\nGender: Male\nEducation: Bachelor's degree in Civil Engineering\nProfession: Project Manager\nIncome: $65,000\n\nFinancial Situation:\nAs a seasoned professional, Michael has a comfortable income that allows him to maintain a stable financial situation. He is responsible with his money, prioritizing saving for retirement and unexpected expenses.\n\nShopping Habits:\nMichael is a practical shopper who focuses on finding high-quality, durable products that will last. He does his research before making purchases and prefers to shop in person at specialty stores or reputable online retailers. He values functionality and reliability over trendy or flashy items.\n\nProfessional Life:\nMichael's role as a project manager requires him to be detail-oriented, organized, and adept at problem-solving. He enjoys the challenge of coordinating the various moving parts of a construction project and takes pride in delivering successful outcomes for his clients.\n\nPersonal Style:\nMichael's personal style reflects his pragmatic nature. He typically wears casual but well-fitted clothing, such as button-down shirts, khakis, and comfortable shoes. He prefers neutral colors and classic styles that are easy to mix and match.\n\nMichael is a frequent flyer with Delta Airlines and typically wakes up at 6:30 am every day. He lives in Atlanta, Georgia.",
+    "intent": "add triducna massager model tr 1002 to cart",
+    "age": 51,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

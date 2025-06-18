@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Alex\n\nBackground:\nAlex is a passionate and dedicated musician who is navigating the challenges of pursuing his creative dreams while managing a limited income. Despite the financial obstacles, he remains committed to honing his craft and exploring new avenues to share his music with the world.\n\nDemographics:\nAge: 26\nGender: Male\nEducation: Some College\nProfession: Freelance Musician\nIncome: $25,000 (Combination of Gig Work, Part-Time Jobs, and Occasional Music Commissions)\n\nFinancial Situation:\nAs a freelance musician, Alex's income can be variable and unpredictable, often relying on a patchwork of gig work, part-time jobs, and occasional music commissions to make ends meet. While he is careful to budget his limited resources, Alex often struggles to cover his basic living expenses, such as rent, utilities, and groceries. Despite the financial constraints, he remains determined to invest in his musical equipment and pursue creative opportunities.\n\nShopping Habits:\nOut of necessity, Alex has developed a pragmatic approach to shopping, prioritizing functionality and value over extravagance. He scours thrift stores, online marketplaces, and local music gear exchanges to find affordable instruments, equipment, and everyday essentials. When making larger purchases, Alex thoroughly researches his options to ensure he is getting the best quality for his money.\n\nPersonal Life:\nMusic is the driving force in Alex's life, and he dedicates countless hours to honing his skills as a multi-instrumentalist and songwriter. His passion for music extends beyond personal practice, as he actively collaborates with local artists, participates in open mic nights, and searches for opportunities to showcase his talents.\n\nDespite the financial challenges, Alex maintains a positive outlook and a strong sense of community. He has cultivated a network of fellow musicians and creatives who provide support, encouragement, and opportunities to expand his artistic horizons. In his free time, Alex enjoys exploring the vibrant local music scene, attending live performances, and engaging in lively discussions about the industry.",
+    "intent": "buy a small hunny pot for cooking and storing honey.",
+    "age": 26,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Damian\n\nBackground:\nDamian is a 27-year-old aspiring musician. He is passionate about creating music and spends much of his time writing songs, practicing his guitar, and performing at local venues. Although he has not yet found mainstream success, he is determined to make a career out of his artistic pursuits.\n\nDemographics:\nAge: 27\nGender: Male\nEducation: High school diploma\nProfession: Musician\nIncome: $20,000\n\nFinancial Situation:\nDamian's income as a freelance musician is modest, often fluctuating from month to month. He lives frugally, prioritizing his creative endeavors over material possessions. He is mindful of his spending and tries to find ways to save money where he can.\n\nShopping Habits:\nDamian tends to be a practical shopper, focusing on essentials and items that support his musical interests. He is not driven by trends or flashy purchases, preferring to invest in high-quality instruments and gear that will last. When shopping, he looks for affordable options that provide good value.\n\nProfessional Life:\nDamian's primary focus is on his music. He spends his days writing, rehearsing, and performing at local bars and coffee shops. He is constantly seeking out new opportunities to showcase his talent and build a following. Though the financial rewards are limited, the joy he finds in creating music sustains him.\n\nPersonal Style:\nDamian's personal style reflects his artistic sensibilities. He favors comfortable, casual clothing that allows him to move freely while performing. He often wears jeans, t-shirts, and a well-worn leather jacket. His wardrobe is primarily composed of neutral tones, with the occasional splash of color or unique accessory.\n\nDamian is a big fan of public transportation and often takes the bus or train to get around his local city. He is an early riser, typically waking up around 7 a.m. to start his day.",
+    "intent": "buy a silver link chain necklace.",
+    "age": 27,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

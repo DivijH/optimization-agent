@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a seasoned executive who has built an impressive career in the financial services industry. With decades of experience and a keen business acumen, he has risen through the ranks to become the Chief Financial Officer of a prominent investment firm.\n\nDemographics:\nAge: 62\nGender: Male\nEducation: Master's Degree in Finance\nProfession: Chief Financial Officer, Investment Firm\nIncome: $210,000\n\nFinancial Situation:\nMichael's long-standing success in the financial sector has afforded him a comfortable and financially secure lifestyle. He has a well-diversified investment portfolio that includes real estate, stocks, and alternative assets, allowing him to grow his wealth over time.\n\nShopping Habits:\nAs a discerning consumer, Michael values quality over quantity when it comes to his shopping habits. He tends to invest in timeless, high-end items that reflect his refined taste and professional status, such as tailored suits, luxury watches, and premium electronic devices. He also enjoys supporting local businesses and discovering unique, artisanal products that align with his personal interests.\n\nProfessional Life:\nIn his role as the Chief Financial Officer, Michael is responsible for overseeing the firm's financial operations, risk management, and strategic decision-making. His analytical skills, attention to detail, and deep industry knowledge make him a respected and influential figure within the organization. Michael is also known for his mentorship of younger professionals and his commitment to fostering a culture of financial excellence.\n\nPersonal Style:\nMichael's personal style is sophisticated and understated, with a focus on classic, well-fitted pieces. He favors tailored suits, crisp dress shirts, and polished leather shoes, which convey a sense of authority and professionalism. He may occasionally incorporate subtle, high-end accessories, such as a silk tie or a designer briefcase, to add a touch of personal flair to his appearances.\n\nIn his free time, Michael enjoys exploring his passions for fine art, classical music, and international travel. He is also an active philanthropist, contributing to various charitable organizations and initiatives that align with his values.",
+    "intent": "buy a set of high-quality glass baking pans.",
+    "age": 62,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

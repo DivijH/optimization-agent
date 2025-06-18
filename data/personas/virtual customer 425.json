@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Isabelle\n\nBackground:\nIsabelle is a passionate environmental activist who has dedicated her life to advocating for sustainable practices and raising awareness about climate change. Her unwavering commitment to the cause has led her to sacrifice a lucrative career in favor of her activist work.\n\nDemographics:\nAge: 35\nGender: Female\nEducation: Bachelor's degree in Environmental Studies\nProfession: Environmental Activist\nIncome: $20,000\n\nFinancial Situation:\nIsabelle's modest income as an activist reflects her commitment to her values over financial gain. She lives a frugal lifestyle, prioritizing her advocacy work over material possessions. Despite her limited resources, Isabelle is adept at budgeting and finding creative ways to fund her initiatives.\n\nShopping Habits:\nIsabelle is a mindful and ethical consumer, seeking out sustainable, eco-friendly, and secondhand options whenever possible. She frequents thrift stores, local markets, and online platforms that support independent and mission-driven brands. Minimizing her environmental impact is a key consideration in all of her purchasing decisions.\n\nProfessional Life:\nIsabelle's days are filled with organizing protests, lobbying policymakers, and educating the public about environmental issues. She works tirelessly to amplify the voices of marginalized communities and collaborate with other grassroots organizations to drive meaningful change. Her passion for her work is unwavering, despite the financial challenges she faces.\n\nPersonal Style:\nIsabelle's personal style reflects her commitment to sustainability and her active lifestyle. She favors comfortable, durable, and versatile clothing that allows her to move freely during protests and events. Her wardrobe consists of ethically sourced basics, vintage finds, and repurposed items that she has creatively upcycled.\n\nIn her free time, Isabelle can be found volunteering at community gardens, attending environmental conferences, or exploring the natural wonders of her local area. She finds solace and inspiration in her connection to the earth and the community of like-minded individuals who share her vision for a more sustainable future.",
+    "intent": "buy sustainable and eco-friendly travel straps for luggage",
+    "age": 35,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

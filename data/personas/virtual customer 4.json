@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a freelance graphic designer who is passionate about creating innovative and visually striking designs. He is driven by his love for the creative process and the ability to bring his clients' visions to life.\n\nDemographics:\nAge: 29\nGender: Male\nEducation: Graphic Design diploma\nProfession: Freelance graphic designer\nIncome: $25,000\n\nFinancial Situation:\nAs a freelancer, Michael's income can be variable, but he has learned to manage his finances carefully. He tries to save a portion of his earnings for lean periods and unexpected expenses, while also allocating funds for professional development and equipment upgrades.\n\nShopping Habits:\nMichael enjoys browsing through online design marketplaces and stores to discover new tools, software, and creative materials. He is always on the lookout for deals and discounts, as he needs to be mindful of his budget. When making purchases, he prioritizes quality and functionality over the latest trends.\n\nProfessional Life:\nMichael's workday is flexible, as he manages his own schedule and projects. He often works from home, but also enjoys the occasional change of scenery by visiting local coffee shops or co-working spaces. Networking and building relationships with fellow creatives are important aspects of his professional life.\n\nPersonal Style:\nMichael's personal style reflects his creative sensibilities. He tends to wear comfortable, yet stylish, clothing that allows him to move freely. He enjoys experimenting with different colors and patterns, often incorporating elements of street fashion into his everyday look.",
+    "intent": "buy a plastic orb for head.",
+    "age": 29,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

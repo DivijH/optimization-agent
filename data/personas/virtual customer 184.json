@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a recent college graduate who is just starting to build her career. She is passionate about social and environmental issues and is actively searching for a job that aligns with her values.\n\nDemographics:\nAge: 21\nGender: Female\nEducation: Bachelor's degree\nProfession: Seeking employment\nIncome: $25,000\n\nFinancial Situation:\nWith student loans to pay off and an entry-level salary, Emily is currently living on a tight budget. She is diligent about tracking her expenses and finding ways to save money where she can.\n\nShopping Habits:\nEmily is mindful of her spending and tries to shop sustainably whenever possible. She prefers to buy second-hand or from ethical brands, and she is always on the lookout for sales and discounts. Emily enjoys browsing thrift stores and online marketplaces for unique and affordable finds.\n\nPersonal Style:\nEmily's personal style is casual and comfortable, with a focus on versatile pieces that can be mixed and matched. She enjoys thrifting for vintage pieces and experimenting with different trends and styles. Emily values self-expression through her clothing and seeks to align her wardrobe with her personal values.",
+    "intent": "buy a pack of pampers pure wipes.",
+    "age": 21,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

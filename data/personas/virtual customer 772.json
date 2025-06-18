@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a passionate and driven individual who is navigating the early stages of his career. Despite facing financial challenges, he remains optimistic and determined to create a brighter future for himself.\n\nDemographics:\nAge: 27\nGender: Male\nEducation: Bachelor's Degree in Fine Arts\nProfession: Freelance Graphic Designer\nIncome: $28,000\n\nFinancial Situation:\nAs a freelance graphic designer, Ethan's income fluctuates, but it generally falls within the $0 to $30,000 range. He is skilled at budgeting and finding creative ways to make ends meet, often taking on side gigs or freelance projects to supplement his primary income. Ethan is committed to saving what he can and exploring ways to grow his freelance business.\n\nShopping Habits:\nEthan's shopping habits are a reflection of his artistic sensibilities and his desire to find unique, sustainable, and affordable products. He frequents local thrift stores, vintage shops, and online marketplaces to discover one-of-a-kind items that he can incorporate into his personal style and home decor. Ethan also supports small, independent businesses and makers whenever possible, aligning his purchases with his values.\n\nProfessional Life:\nEthan's workdays are filled with a diverse array of creative projects, from designing logos and branding materials to creating illustrations and digital art. He thrives on the flexibility and autonomy of his freelance lifestyle, but also recognizes the need to constantly hustle and network to maintain a steady flow of work. Ethan is continuously seeking out new opportunities to showcase his talents and expand his professional portfolio.\n\nPersonal Life:\nIn his free time, Ethan indulges in his passion for the arts, whether it's experimenting with new mediums, attending local art exhibits, or collaborating with fellow creatives. He is also an avid outdoorsman, enjoying activities like hiking, camping, and photography. Ethan values his close-knit circle of friends, often organizing budget-friendly gatherings and sharing his artistic talents with his community.",
+    "intent": "buy a fascia blaster.",
+    "age": 27,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a hard-working and ambitious individual who is navigating the challenges of establishing a stable career. After completing his degree in environmental science, he has taken on a series of part-time and contract positions as he explores his options and pursues his passion for sustainability.\n\nDemographics:\nAge: 35\nGender: Male\nEducation: Bachelor's Degree in Environmental Science\nProfession: Part-time Sustainability Consultant, Freelance Writer\nIncome: $22,000\n\nFinancial Situation:\nWith a limited and inconsistent income, Michael has had to carefully manage his finances to make ends meet. He lives in a modest apartment, sharing expenses with a roommate, and relies on frugal spending habits to save what he can. Despite the financial challenges, Michael remains optimistic and is committed to finding opportunities that align with his values and professional goals.\n\nShopping Habits:\nMichael is mindful of his spending and often seeks out second-hand stores, online marketplaces, and eco-friendly brands to meet his needs. He is cautious about accumulating material possessions and focuses on investing in high-quality, long-lasting items that support his sustainable lifestyle.\n\nProfessional Life:\nMichael's professional journey has been a mix of contract work and freelance opportunities. He has taken on various sustainability consulting projects, helping local businesses and organizations implement environmentally-friendly practices. Additionally, he writes articles for online publications, sharing his expertise and advocating for environmental causes.\n\nPersonal Style:\nMichael's personal style reflects his practical and eco-conscious approach to life. He favors comfortable, versatile clothing that is easy to mix and match, often opting for natural fabrics and neutral tones. He takes pride in supporting ethical and sustainable brands, and his wardrobe choices align with his values and lifestyle.\n\nIn his free time, Michael is an avid outdoor enthusiast, finding solace in nature and exploring local hiking trails and parks. He is also an active member of the local sustainability community, attending workshops, volunteering, and networking with like-minded individuals to stay informed and engaged in the environmental movement.",
+    "intent": "buy a metal v8 model dm118 machinery.",
+    "age": 35,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

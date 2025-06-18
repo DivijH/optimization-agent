@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is an accomplished entrepreneur who founded a successful technology startup. She is passionate about using her business acumen and technical expertise to create innovative solutions that address real-world challenges.\n\nDemographics:\nAge: 46\nGender: Female\nEducation: Bachelor's degree in Computer Science\nProfession: Entrepreneur, CEO of a technology startup\nIncome: $200,000\n\nFinancial Situation:\nOlivia's business has grown significantly over the past several years, providing her with a comfortable income. She is financially savvy and invests a portion of her earnings to secure her future.\n\nShopping Habits:\nOlivia's shopping habits reflect her busy lifestyle. She tends to be selective and efficient when making purchases, prioritizing quality and functionality over trends. She enjoys discovering unique, high-end products that align with her personal style and business needs.\n\nProfessional Life:\nAs the CEO of her startup, Olivia is constantly juggling a variety of responsibilities, from overseeing product development to managing a team of talented professionals. She thrives in a fast-paced, innovative environment and is always seeking new opportunities to expand her business.\n\nPersonal Style:\nOlivia's personal style is a blend of professionalism and personal flair. She often wears tailored, sophisticated clothing that exudes confidence and authority, while also incorporating elements of her creative sensibilities. She gravitates towards neutral tones and minimalist designs that complement her active lifestyle.\n\nOlivia is a frequent traveler and is loyal to Delta Airlines. She typically wakes up at 6:30 am each day to start her busy schedule.\nOlivia resides in San Francisco, California.",
+    "intent": "buy a high-quality, programmable gaming keyboard.",
+    "age": 46,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

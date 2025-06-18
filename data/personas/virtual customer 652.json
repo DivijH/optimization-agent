@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Janet\n\nBackground:\nJanet is a vibrant and active retiree who has dedicated her later years to supporting her local community. After a successful career in non-profit administration, she now focuses her energy on a variety of volunteer initiatives and personal enrichment activities.\n\nDemographics:\nAge: 60\nGender: Female\nEducation: Bachelor's Degree in Social Work\nProfession: Retired Non-Profit Administrator\nIncome: $70,000\n\nFinancial Situation:\nWith a comfortable pension and retirement savings, Janet's income allows her to maintain a good quality of life while also having the flexibility to pursue her various interests and philanthropic endeavors.\n\nShopping Habits:\nJanet takes a practical yet thoughtful approach to shopping. She enjoys browsing local boutiques and secondhand stores for unique home decor items and garments that reflect her personal style. When making larger purchases, she researches thoroughly to ensure she is getting the best value.\n\nProfessional Life:\nDuring her professional career, Janet held various leadership roles in non-profit organizations, where she specialized in program development and community outreach. Now in retirement, she continues to lend her expertise to several local charities and community centers, serving on boards and volunteering her time.\n\nPersonal Style:\nJanet's personal style is best described as classic and comfortable. She favors well-fitting, versatile pieces in natural fibers and neutral tones, often accessorizing with colorful scarves or distinctive jewelry. Her look is polished yet approachable, reflecting her active and engaged lifestyle.\n\nIn her free time, Janet enjoys gardening, attending live music performances, and taking art classes at the local community college. She is also an avid reader and frequently hosts book club meetings in her home. Janet is known for her warm personality, quick wit, and unwavering commitment to making a positive impact in her community.",
+    "intent": "buy a large, decorative outdoor scarecrow to display in the garden.",
+    "age": 60,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

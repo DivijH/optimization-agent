@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a successful tech entrepreneur who has built a thriving software company from the ground up. His innovative mindset and unwavering determination have propelled him to the forefront of the industry, allowing him to achieve significant financial success.\n\nDemographics:\nAge: 36\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Co-founder and CEO of a Software Development Firm\nIncome: $250,000\n\nFinancial Situation:\nEthan's financial situation is robust, owing to the success of his company. He has a diversified investment portfolio, which includes real estate, stocks, and other lucrative ventures. While his income is substantial, Ethan maintains a relatively modest lifestyle, focusing on smart financial planning and philanthropic endeavors.\n\nShopping Habits:\nEthan's shopping habits reflect his practical and strategic mindset. He tends to invest in high-quality, durable products that stand the test of time, whether it's technology, clothing, or home goods. Ethan values functionality and efficiency over flashy or trendy items, and he is not afraid to research and compare options to find the best value.\n\nProfessional Life:\nEthan's days are filled with a mix of executive-level decision-making, team management, and strategic planning. He takes pride in fostering a collaborative and innovative work environment, where his employees are encouraged to contribute their ideas and expertise. Ethan is constantly seeking new opportunities to expand his company's reach and impact.\n\nPersonal Style:\nEthan's personal style is a blend of professionalism and casual comfort. He favors well-tailored suits and dress shirts for formal business meetings, but he also enjoys wearing more relaxed attire, such as button-down shirts, chinos, and high-quality denim, when the occasion calls for it. Ethan's wardrobe is curated with a focus on timeless, versatile pieces that can be mixed and matched.",
+    "intent": "buy a keratin complex hair treatment product.",
+    "age": 36,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

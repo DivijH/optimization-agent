@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a vibrant and ambitious young woman who recently graduated with a degree in marketing. She has quickly established herself as a rising star in the dynamic world of digital advertising, leveraging her creativity and analytical skills to drive impactful campaigns for her clients.\n\nDemographics:\nAge: 23\nGender: Female\nEducation: Bachelor's Degree in Marketing\nProfession: Digital Marketing Specialist\nIncome: $48,000\n\nFinancial Situation:\nEmily's steady income as a digital marketing specialist, coupled with her prudent financial habits, allows her to maintain a comfortable lifestyle. While she is mindful of her spending, she also enjoys the occasional splurge, treating herself to trendy fashion items or indulging in new experiences that align with her passions.\n\nShopping Habits:\nEmily's shopping habits reflect her savvy and trend-conscious nature. She keeps a close eye on the latest fashion and tech trends, but she also values sustainability and ethical practices. Emily often seeks out stylish yet eco-friendly brands, and she is a frequent patron of local boutiques and vintage stores that offer unique, one-of-a-kind finds.\n\nProfessional Life:\nAs a digital marketing specialist, Emily is responsible for creating and executing innovative online campaigns that drive results for her clients. She excels at leveraging data analytics to inform her strategies, and her keen eye for design and her ability to craft compelling narratives have earned her a reputation as a rising talent in the industry.\n\nPersonal Style:\nEmily's personal style embodies a chic, urban aesthetic. She effortlessly pairs trendy pieces, such as high-waisted jeans and crop tops, with more classic elements, like tailored blazers and sleek leather accessories. Her fashion sense is a reflection of her creative spirit and her desire to express her individuality.\n\nIn her free time, Emily indulges in her diverse hobbies, which include photography, exploring the local art scene, and experimenting with new recipes in the kitchen. She is also an avid reader, with a particular fondness for autobiographies and self-improvement books that inspire her to continue growing both personally and professionally.",
+    "intent": "buy 12-pack of Zevia Zero Calorie Soda.",
+    "age": 23,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

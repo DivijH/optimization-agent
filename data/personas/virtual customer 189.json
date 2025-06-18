@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sara\n\nBackground:\nSara is a passionate community organizer who has dedicated her life to advocating for social justice and promoting equitable access to resources in her local community. Despite facing financial challenges, she remains steadfast in her commitment to making a positive impact on the lives of those around her.\n\nDemographics:\nAge: 53\nGender: Female\nEducation: High School Diploma\nProfession: Community Organizer\nIncome: $20,000\n\nFinancial Situation:\nAs a community organizer, Sara's income is modest and often inconsistent, as she relies on grants, donations, and occasional freelance work to sustain her efforts. While she lives a simple lifestyle, she sometimes struggles to make ends meet, prioritizing the needs of her organization and the people she serves over her own financial security.\n\nShopping Habits:\nSara is a conscious consumer, focusing on purchasing essential items and supporting local businesses and organizations that align with her values. She frequents secondhand stores, community thrift shops, and online marketplaces to find affordable, high-quality goods. When possible, she prefers to invest in durable, ethically-sourced products that will serve her needs for an extended period.\n\nProfessional Life:\nSara's days are filled with a diverse array of tasks, from organizing community events and fundraisers to advocating for policy changes and connecting individuals with social services. She is adept at navigating the complexities of the nonprofit sector, leveraging her impressive networking skills and unwavering passion to secure resources and create meaningful change.\n\nPersonal Style:\nSara's personal style is a reflection of her active, practical, and socially conscious lifestyle. She favors comfortable, versatile clothing that allows her to move freely and engage in her various community-based activities. While she may not always be up-to-date with the latest fashion trends, Sara's wardrobe is a testament to her commitment to sustainability and her belief in the power of individual expression.",
+    "intent": "buy a simple, affordable birthday cake from a local bakery.",
+    "age": 53,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

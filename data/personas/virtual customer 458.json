@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Robert\n\nBackground:\nRobert is a passionate educator who has dedicated his career to inspiring and guiding young minds. After retiring from his position as a high school history teacher, he has found a new sense of purpose in volunteering at a local community center, where he leads engaging workshops and mentorship programs.\n\nDemographics:\nAge: 64\nGender: Male\nEducation: Master's Degree in Education\nProfession: Retired High School Teacher, Community Center Volunteer\nIncome: $62,000\n\nFinancial Situation:\nWith a comfortable pension and a part-time income from his volunteer work, Robert's financial situation allows him to maintain a quality of life while also contributing to causes he cares about. He is mindful of his spending and takes pleasure in finding ways to stretch his budget, such as shopping at thrift stores and taking advantage of senior discounts.\n\nShopping Habits:\nRobert's shopping habits reflect his practical and resourceful nature. He enjoys the thrill of discovering hidden gems at secondhand stores, flea markets, and garage sales, where he can find unique items and vintage treasures. When it comes to necessities, he is a savvy shopper, always on the lookout for sales and discounts to stretch his budget.\n\nProfessional Life:\nAs a retired teacher, Robert has found a new sense of purpose in his volunteer work at the community center. He takes great pride in sharing his knowledge and experience with the younger generation, mentoring students and leading interactive workshops on a variety of historical topics. Robert's infectious enthusiasm and dedication have made him a beloved figure in the community.\n\nPersonal Style:\nRobert's personal style is a blend of practicality and comfort. He favors well-worn, durable clothing that allows him to move freely and focus on his work. However, he also enjoys the occasional touch of style, such as a crisp button-down shirt or a pair of well-fitted trousers. Robert's wardrobe reflects his active lifestyle and his commitment to making a positive impact in his community.",
+    "intent": "buy a pair of leg compression sleeves for women with a zipper.",
+    "age": 64,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

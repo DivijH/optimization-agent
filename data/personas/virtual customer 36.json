@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Nadia\n\nBackground:\nNadia is a successful entrepreneur who founded her own tech startup in the San Francisco Bay Area. She is driven and ambitious, constantly seeking new opportunities to grow her business and innovate in the industry.\n\nDemographics:\n\nAge: 29\nGender: Female\nEducation: Bachelor's degree in Computer Science\nProfession: Founder and CEO of a tech startup\nIncome: $120,000\n\nFinancial Situation:\nNadia has a comfortable income from her startup, which allows her to enjoy a high standard of living. She is financially savvy and invests a portion of her earnings to ensure long-term financial stability.\n\nShopping Habits:\nNadia enjoys shopping for stylish and high-quality items that reflect her professional and personal brand. She values efficiency and convenience, often shopping online for the latest fashion trends and tech gadgets. Nadia is willing to invest in products that she believes will enhance her productivity or improve her quality of life.\n\nProfessional Life:\nAs the founder and CEO of her tech startup, Nadia's days are filled with meetings, negotiations, and strategic planning. She is passionate about her work and dedicates long hours to ensuring the success of her company. Nadia is constantly networking, attending industry events, and seeking new partnerships to expand her business.\n\nPersonal Style:\nNadia has a chic and modern personal style, often wearing business-casual attire with a touch of sophistication. She gravitates towards timeless, high-end pieces that can be easily dressed up or down, and she is not afraid to experiment with bold colors and patterns.",
+    "intent": "buy a Spiderman-themed bowling ball.",
+    "age": 29,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

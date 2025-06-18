@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Samantha\n\nBackground:\nSamantha is a passionate community activist who has dedicated her life to advocating for social justice and environmental causes. Despite facing financial challenges, she remains committed to her work and finds great fulfillment in making a positive impact on her local community.\n\nDemographics:\nAge: 52\nGender: Female\nEducation: High School Diploma\nProfession: Community Activist\nIncome: $22,000\n\nFinancial Situation:\nSamantha's income is limited, as she relies on a combination of part-time jobs, government assistance, and donations to support her activist work. She lives modestly, prioritizing her community initiatives over personal luxuries. Despite her financial constraints, Samantha is resourceful and finds creative ways to stretch her budget while still contributing to the causes she cares about.\n\nShopping Habits:\nSamantha is a conscious and frugal shopper, often visiting thrift stores, secondhand shops, and community-focused marketplaces in search of affordable yet meaningful items. She values ethical and sustainable practices, and seeks out products that align with her environmental and social justice values. When possible, Samantha prefers to support local businesses and independent artisans.\n\nProfessional Life:\nAs a community activist, Samantha's professional life is centered around advocating for social and environmental change. She organizes grassroots campaigns, coordinates community events, and collaborates with like-minded organizations to address issues such as affordable housing, clean energy, and racial equity. Samantha's tireless efforts and dedication have made her a respected leader within her local community.\n\nPersonal Style:\nSamantha's personal style reflects her passion for sustainability and social consciousness. She gravitates toward comfortable, practical clothing that allows her to be active in her community work, often incorporating eco-friendly fabrics and secondhand finds into her wardrobe. She accessorizes with pieces that showcase her values, such as jewelry made by local artisans or t-shirts with social justice slogans.",
+    "intent": "buy a secondhand, refurbished commercial claw machine that supports local charities.",
+    "age": 52,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

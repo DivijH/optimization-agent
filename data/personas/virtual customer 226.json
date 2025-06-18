@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jacob\n\nBackground:\nJacob is a passionate and ambitious graphic designer who has built a successful freelance career. With a keen eye for design and a strong creative vision, he has collaborated with a diverse range of clients, from small businesses to prestigious marketing agencies.\n\nDemographics:\nAge: 31\nGender: Male\nEducation: Bachelor's Degree in Graphic Design\nProfession: Graphic Designer\nIncome: $65,000\n\nFinancial Situation:\nAs a self-employed graphic designer, Jacob has learned to manage his finances effectively. While his income falls within the $30,001 to $94,000 range, he is diligent about saving a portion of his earnings and investing in his professional development. He enjoys the flexibility and freedom that come with being a freelancer, but he also recognizes the importance of maintaining a balanced budget.\n\nShopping Habits:\nJacob's shopping habits reflect his creative interests and need for high-quality design tools. He regularly invests in the latest design software, drawing tablets, and other technology that can enhance his workflow and creative process. He also enjoys browsing online marketplaces and local art supply stores to discover unique materials and resources that can inspire his work.\n\nProfessional Life:\nJacob thrives on the challenge of translating his clients' visions into visually compelling designs. He takes pride in his ability to blend cutting-edge techniques with timeless design principles, consistently delivering projects that exceed his clients' expectations. His strong communication skills and adaptability allow him to navigate the ever-evolving landscape of the design industry with ease.\n\nPersonal Style:\nJacob's personal style reflects his creative and adventurous spirit. He often pairs slim-fit jeans with well-fitted t-shirts or button-down shirts, complementing his look with a variety of stylish accessories, such as designer eyewear, carefully selected jewelry, and a meticulously curated collection of sneakers. He is not afraid to experiment with bold colors, patterns, and silhouettes, always striving to maintain a fresh, modern aesthetic.",
+    "intent": "buy a large, colorful dragon inflatable.",
+    "age": 31,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

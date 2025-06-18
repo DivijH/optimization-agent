@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a vibrant and ambitious young professional navigating the early stages of her career. With a degree in communications, she has landed a dynamic role as a social media strategist at a leading marketing agency. Emily's boundless energy and creative flair have quickly made her a rising star within the company.\n\nDemographics:\nAge: 25\nGender: Female\nEducation: Bachelor's Degree in Communications\nProfession: Social Media Strategist\nIncome: $38,000\n\nFinancial Situation:\nAs a young professional, Emily's income falls within the $30,001 to $94,000 range. She is financially responsible, budgeting her earnings to cover her living expenses, student loan payments, and occasional splurges on experiences and personal development opportunities.\n\nShopping Habits:\nEmily's shopping habits reflect her youthful and trendy personal style. She enjoys browsing online and in-person at a mix of fast-fashion retailers, sustainable clothing brands, and secondhand shops. Emily is conscious of her environmental impact and often seeks out eco-friendly and ethically produced items. She is also an avid researcher, reading reviews and comparing prices to ensure she is making informed purchasing decisions.\n\nProfessional Life:\nIn her role as a social media strategist, Emily is charged with developing and implementing innovative digital marketing campaigns for the agency's diverse clientele. Her deep understanding of social media trends and algorithms, coupled with her creative flair, allows her to craft engaging content that resonates with target audiences. Emily thrives on the fast-paced, collaborative nature of her work and is constantly seeking opportunities to expand her skill set.\n\nPersonal Life:\nOutside of her professional pursuits, Emily is an active and socially conscious individual. She volunteers at a local non-profit organization, dedicated to empowering underprivileged youth. In her free time, Emily enjoys exploring the city's vibrant art and music scene, attending fitness classes, and hosting gatherings with her close-knit group of friends.",
+    "intent": "add decorative light switch covers to my cart",
+    "age": 25,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

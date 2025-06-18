@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a seasoned professional who has spent decades honing his skills in the field of marketing. He has a wealth of experience working with a diverse range of clients, helping them to effectively reach their target audiences.\n\nDemographics:\nAge: 57\nGender: Male\nEducation: Bachelor's Degree\nProfession: Marketing Consultant\nIncome: $65,000\n\nFinancial Situation:\nWith his successful career as a marketing consultant, David has a comfortable income that allows him to maintain a stable financial position. He is disciplined in his spending and has built a solid retirement portfolio to ensure his long-term financial security.\n\nShopping Habits:\nDavid takes a practical and discerning approach to his shopping habits. He values quality over quantity and is willing to invest in high-quality products that will last. He enjoys browsing specialty stores and online marketplaces to find unique items that align with his personal style and needs.\n\nProfessional Life:\nDavid is a respected figure in the marketing industry, known for his strategic thinking and ability to deliver effective campaigns. He works with a range of clients, from small businesses to large corporations, providing his expertise and guiding them through the ever-evolving marketing landscape. David is constantly seeking out opportunities to expand his knowledge and stay ahead of industry trends.\n\nPersonal Style:\nDavid's personal style reflects his professional success and refined sensibilities. He favors well-tailored, classic pieces, such as tailored suits, dress shirts, and polished leather shoes. He also enjoys incorporating stylish casual wear, such as button-down shirts and chinos, into his wardrobe for a more relaxed, yet sophisticated, look.",
+    "intent": "buy a book on dungeon and dragon frameworks.",
+    "age": 57,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

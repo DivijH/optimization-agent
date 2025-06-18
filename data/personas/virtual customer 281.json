@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a driven and ambitious young professional who has recently embarked on her career journey. Despite her youth, she has a clear vision for her future and is determined to make a mark in her industry.\n\nDemographics:\nAge: 22\nGender: Female\nEducation: Bachelor's Degree in Marketing\nProfession: Marketing Coordinator\nIncome: $55,000\n\nFinancial Situation:\nAs a marketing coordinator, Emily's income falls within the range of $30,001 to $94,000. She is financially responsible, living within her means and actively saving for both short-term and long-term goals, such as a down payment on a house and building her retirement nest egg.\n\nShopping Habits:\nEmily is a savvy and thoughtful shopper. She enjoys browsing both online and in-store, carefully researching products and comparing prices to find the best value. While she is mindful of her budget, Emily is also willing to invest in quality items that will serve her well in both her professional and personal life. She particularly enjoys discovering new brands and supporting local businesses.\n\nPersonal Style:\nEmily's personal style is a reflection of her youthful energy and growing confidence. She enjoys experimenting with fashion, mixing trendy pieces with classic, timeless items. Her wardrobe is a versatile blend of professional attire, such as well-fitted blazers and chic dresses, and more casual, comfortable outfits for her leisure time, including stylish jeans, blouses, and stylish sneakers.\n\nPersonal Life:\nOutside of work, Emily is an avid fitness enthusiast, regularly attending yoga classes and going on hikes with her friends. She also enjoys exploring the city's vibrant cultural scene, attending art exhibits, live music performances, and trying new restaurants. Emily values the importance of work-life balance and makes time for self-care, whether it's indulging in a relaxing spa day or curling up with a good book.",
+    "intent": "buy a disco ball-themed jewelry set.",
+    "age": 22,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

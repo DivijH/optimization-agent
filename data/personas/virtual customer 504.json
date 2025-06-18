@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Javier\n\nBackground:\nJavier is a 25-year-old man who has faced numerous challenges in his life, including financial instability and limited opportunities. Despite these obstacles, he remains determined to build a better future for himself and his family.\n\nDemographics:\nAge: 25\nGender: Male\nEducation: High School Diploma\nProfession: Warehouse Worker\nIncome: $27,000\n\nFinancial Situation:\nAs a warehouse worker, Javier's income falls within the $0 to $30,000 range, which often leaves him in a precarious financial situation. He struggles to make ends meet, prioritizing essential expenses like rent, utilities, and groceries over discretionary spending.\n\nShopping Habits:\nJavier's shopping habits are primarily driven by necessity and budgetary constraints. He frequents discount stores, thrift shops, and big-box retailers to find the most affordable options for clothing, household items, and necessities. He often has to forgo purchases that are not essential, focusing on stretching his limited income as far as possible.\n\nPersonal Style:\nJavier's personal style is practical and unassuming, reflecting his focus on functionality over fashion. He typically wears durable, comfortable clothing such as jeans, t-shirts, and work boots, often opting for clothing that can withstand the demands of his job. Appearance is not a top priority for Javier, as he is more concerned with meeting his basic needs and providing for his family.\n\nPersonal Life:\nIn his personal life, Javier finds solace in simple pleasures, such as spending time with his family and engaging in hobbies that don't require significant financial investment. He enjoys activities like playing soccer with friends, visiting local parks, and tinkering with old vehicles, which allow him to find moments of joy and respite amidst the challenges he faces.\n\nDespite the financial constraints, Javier remains hopeful and determined to improve his circumstances. He dreams of one day finding a more stable and better-paying job that will enable him to provide a more comfortable life for himself and his loved ones.",
+    "intent": "buy a Thunderbolt 3 hub.",
+    "age": 25,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

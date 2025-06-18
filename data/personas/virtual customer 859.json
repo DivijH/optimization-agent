@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: John\n\nBackground:\nJohn is a resilient and adaptable individual who has navigated various challenges throughout his life. After a successful career in the manufacturing industry, he found himself unemployed due to a series of company restructures. Determined to reinvent himself, he has turned his attention to pursuing a lifelong passion for woodworking.\n\nDemographics:\nAge: 51\nGender: Male\nEducation: High school diploma\nProfession: Freelance Woodworker\nIncome: $18,000\n\nFinancial Situation:\nJohn's current income as a freelance woodworker is modest, but he has developed a practical, frugal lifestyle that allows him to meet his basic needs. He supplements his earnings with occasional part-time work and government assistance programs. Despite the financial constraints, John remains optimistic and focused on building his woodworking business.\n\nShopping Habits:\nJohn is a savvy shopper, constantly on the lookout for sales, discounts, and secondhand opportunities. He frequents local hardware stores, lumber yards, and online marketplaces to source high-quality, affordable materials for his woodworking projects. When it comes to personal purchases, John prioritizes practical, long-lasting items that contribute to his simple, minimalist lifestyle.\n\nPersonal Life:\nIn his free time, John finds solace in the therapeutic process of working with his hands. He spends hours in his small home workshop, meticulously crafting unique furniture, d\u00e9cor, and other wooden items. John also enjoys connecting with the local maker community, attending workshops and events where he can share his knowledge and learn from fellow artisans. His resilience and passion for his craft serve as an inspiration to those around him.",
+    "intent": "buy a set of 24x24 landscape pavers.",
+    "age": 51,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

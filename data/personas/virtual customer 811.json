@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Samantha\n\nBackground:\nSamantha is a driven and ambitious young professional who has been steadily climbing the corporate ladder. With a strong analytical mind and a passion for problem-solving, she has carved out a successful career in the financial industry, navigating the complexities of the business world with grace and determination.\n\nDemographics:\nAge: 28\nGender: Female\nEducation: Bachelor's Degree in Finance\nProfession: Financial Analyst\nIncome: $58,000\n\nFinancial Situation:\nSamantha's income as a financial analyst places her within the middle-income range, allowing her to maintain a comfortable lifestyle while also saving for her future. She is financially savvy, actively managing her investments and retirement accounts to ensure long-term financial security.\n\nShopping Habits:\nSamantha approaches shopping with a practical and strategic mindset. She prefers quality over quantity, investing in timeless, well-made items that will last. When making larger purchases, Samantha conducts thorough research to find the best value and often takes advantage of sales and discounts to stretch her budget.\n\nProfessional Life:\nSamantha's professional life is characterized by her analytical skills, attention to detail, and ability to thrive in a fast-paced, high-pressure environment. She is a valuable asset to her company, providing insightful financial analysis and recommendations that inform key business decisions. Samantha's strong work ethic and commitment to continuous learning have earned her the respect of her colleagues and superiors.\n\nPersonal Style:\nSamantha's personal style is a reflection of her practical and polished approach to life. She favors classic, tailored pieces that exude professionalism and sophistication, often incorporating subtle pops of color or unique accessories to add a touch of personal flair. Comfort and functionality are also important considerations in Samantha's wardrobe choices, as she needs to feel confident and at ease during her workday.",
+    "intent": "buy a package of high-quality, fragrance-free vaginal wipes for sensitive skin.",
+    "age": 28,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

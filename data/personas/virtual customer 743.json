@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a dedicated and hardworking individual who has faced numerous challenges throughout his life. Despite the obstacles he has had to overcome, he remains resilient and committed to providing for his family.\n\nDemographics:\nAge: 49\nGender: Male\nEducation: High School Diploma\nProfession: Retail Sales Associate\nIncome: $24,000\n\nFinancial Situation:\nWith an annual income between $0 and $30,000, David's financial situation is often tight. He carefully budgets his expenses, prioritizing essential needs such as housing, food, and utilities. While he may occasionally struggle to make ends meet, David is determined to maintain a stable and secure environment for his family.\n\nShopping Habits:\nDavid's shopping habits are primarily focused on meeting his family's basic needs. He looks for affordable and durable products, often seeking out sales, discounts, and secondhand items to stretch his limited budget. When it comes to personal purchases, David is mindful of his spending and tries to avoid extravagant or unnecessary expenses.\n\nProfessional Life:\nAs a retail sales associate, David's days are filled with assisting customers, restocking shelves, and maintaining a positive and welcoming atmosphere in the store. While the work can be physically and mentally demanding, David takes pride in providing excellent customer service and contributing to the smooth operation of the business.\n\nPersonal Style:\nDavid's personal style is practical and functional, with a focus on comfortable and versatile clothing. He typically wears casual attire, such as t-shirts, sturdy jeans, and comfortable shoes, that allow him to move freely and perform his job duties effectively. David's wardrobe choices are primarily driven by durability and affordability, rather than the latest fashion trends.",
+    "intent": "buy a paintball marker for hurricane play.",
+    "age": 49,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

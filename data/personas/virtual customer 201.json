@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a passionate artist and freelance illustrator, using her creative talents to bring vibrant and imaginative designs to life.\n\nDemographics:\nAge: 39\nGender: Female\nEducation: Bachelor's Degree in Fine Arts\nProfession: Freelance Illustrator\nIncome: $24,000\n\nFinancial Situation:\nAs a freelance artist, Olivia's income can be inconsistent, but she has learned to manage her finances carefully. She supplements her freelance work with part-time employment, allowing her to maintain a modest but comfortable lifestyle.\n\nShopping Habits:\nOlivia loves to explore local art supply stores and online marketplaces to discover unique materials and tools for her creative projects. She values quality over quantity and is willing to invest in high-quality art supplies that will enhance her work. When it comes to personal items, Olivia enjoys thrifting and vintage shopping, finding one-of-a-kind pieces that reflect her artistic sensibilities.\n\nProfessional Life:\nOlivia's illustrations are highly sought after by a diverse range of clients, from small businesses to independent publishers. She takes great pride in her ability to translate her clients' visions into vibrant and visually captivating designs. Olivia is constantly expanding her skill set, experimenting with new techniques and staying up-to-date with the latest trends in the illustration industry.\n\nPersonal Style:\nOlivia's personal style is a reflection of her creative spirit. She enjoys mixing vintage-inspired pieces with bold, contemporary elements, often pairing flowing skirts or dresses with oversized sweaters or statement accessories. Her hair, often adorned with colorful hair clips or scarves, is styled in a playful, eclectic manner.\n\nIn her free time, Olivia can be found sketching in local parks, attending art exhibitions, or participating in collaborative projects with fellow artists. She finds inspiration in the world around her, constantly seeking new ways to translate her unique perspective into her work.",
+    "intent": "buy 24x24 landscape pavers.",
+    "age": 39,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

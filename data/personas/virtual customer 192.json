@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Anthony\n\nBackground:\nAnthony is a passionate artist who has dedicated his life to creating bold, thought-provoking paintings. Although he has struggled financially over the years, he remains committed to his craft and finds great fulfillment in his work.\n\nDemographics:\nAge: 48\nGender: Male\nEducation: High School Diploma\nProfession: Artist\nIncome: $25,000\n\nFinancial Situation:\nAnthony's income as an artist is modest, as he often relies on commissions and sporadic gallery sales to make ends meet. He lives a relatively frugal lifestyle, prioritizing his creative pursuits over material possessions. Despite the financial challenges, he is content with his chosen path and finds joy in the artistic process.\n\nShopping Habits:\nAnthony is selective in his shopping, focusing on essential supplies for his art, such as paints, canvases, and brushes. He frequents local art supply stores and occasionally shops online for specialty items. When it comes to personal attire, he tends to favor comfortable, practical clothing that allows him to focus on his work.\n\nProfessional Life:\nAs a self-employed artist, Anthony's days are spent in his studio, immersed in the creative process. He enjoys the freedom and autonomy of his work, though he often faces the challenges of securing commissions and promoting his art to potential buyers. Anthony is deeply passionate about his craft and finds fulfillment in sharing his unique artistic vision with the world.\n\nPersonal Style:\nAnthony's personal style reflects his artistic sensibilities. He often wears well-worn, comfortable clothing, such as jeans, t-shirts, and a weathered leather jacket. His appearance is casual and unassuming, allowing the focus to remain on his art rather than his outward appearance.",
+    "intent": "buy the Ninja Grill Woodfire XL.",
+    "age": 48,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

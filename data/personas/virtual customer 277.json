@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Maria\n\nBackground:\nMaria is a resilient and determined single mother who juggles multiple part-time jobs to make ends meet. Despite the financial challenges, she is committed to providing a stable and nurturing environment for her two children.\n\nDemographics:\nAge: 53\nGender: Female\nEducation: High School Diploma\nProfession: Retail Associate, Housekeeper, Freelance Seamstress\nIncome: $26,000\n\nFinancial Situation:\nWith an income below $30,000, Maria faces constant financial struggles. She carefully budgets her limited resources, prioritizing her children's needs and looking for ways to save on essential expenses. Maria occasionally relies on government assistance and community support programs to help make ends meet.\n\nShopping Habits:\nMaria is a savvy and resourceful shopper, often seeking out thrift stores, garage sales, and online marketplaces to find affordable clothing, household items, and supplies for her family. She is skilled at finding quality products at discounted prices and is not afraid to get creative with her purchases, such as repurposing or upcycling items.\n\nPersonal Life:\nMaria finds joy and purpose in raising her two children, ages 10 and 7. She is a devoted mother, ensuring her children have a stable and nurturing home environment. In her limited free time, Maria enjoys sewing and crafting, finding solace in these activities as a way to express her creativity and supplement her income.\n\nProfessional Life:\nTo provide for her family, Maria works multiple part-time jobs, including as a retail associate, a housekeeper, and a freelance seamstress. She is a hardworking and reliable employee, often taking on extra shifts or tasks to support her household. Despite the long hours and physical demands, Maria finds fulfillment in her work, knowing that it is a means to a better life for her children.",
+    "intent": "buy a cycling mat for home exercise and fitness.",
+    "age": 53,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

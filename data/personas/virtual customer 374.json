@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a 30-year-old aspiring entrepreneur with a passion for technology and innovation. After working a series of entry-level jobs, he has recently taken the leap to start his own tech-focused small business, driven by his desire to turn his ideas into reality.\n\nDemographics:\nAge: 30\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Small Business Owner\nIncome: $25,000\n\nFinancial Situation:\nAs a new small business owner, Michael's income is modest and inconsistent, often fluctuating as he works to establish his venture. He lives frugally, prioritizing reinvesting his earnings back into his business to ensure its growth and sustainability. Despite the financial challenges, Michael remains optimistic about the long-term potential of his endeavor.\n\nShopping Habits:\nMichael's shopping habits reflect his practical and budget-conscious mindset. He focuses on finding affordable, quality products that serve his business and personal needs. When making purchases, he conducts thorough research to identify the best value-for-money options, often opting for secondhand or refurbished items to stretch his limited budget.\n\nProfessional Life:\nMichael's professional life is dedicated to his tech-focused small business. He wears many hats, handling everything from product development and marketing to customer service and financial management. His days are filled with a constant hustle, as he works tirelessly to turn his entrepreneurial dreams into a successful reality.\n\nPersonal Style:\nMichael's personal style is casual and functional, with a focus on comfortable, durable clothing that can withstand the demands of his busy work life. He typically wears jeans, t-shirts, and hoodies, with the occasional addition of a blazer or button-down shirt for more formal occasions. Practicality and cost-effectiveness are his primary considerations when it comes to his wardrobe choices.\n\nIn his free time, Michael enjoys tinkering with new technologies, attending local tech meetups, and exploring the latest innovations in the industry. He is a self-described \"tech enthusiast\" and is constantly seeking ways to expand his knowledge and stay ahead of the curve.",
+    "intent": "buy a durable, affordable indoor frisbee set.",
+    "age": 30,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

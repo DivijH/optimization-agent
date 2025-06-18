@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Robert\n\nBackground:\nRobert is a seasoned professional who has spent his career working in the financial industry. With a wealth of experience and a practical, analytical mindset, he has achieved a level of financial stability that allows him to focus on his personal interests and giving back to his community.\n\nDemographics:\nAge: 58\nGender: Male\nEducation: Bachelor's degree in Finance\nProfession: Financial Analyst\nIncome: $68,000\n\nFinancial Situation:\nRobert has a comfortable middle-class income, with a steady salary from his job as a financial analyst. He is diligent about saving and investing, ensuring that he has a secure financial foundation for the future. While he enjoys the occasional splurge, Robert is generally frugal and prioritizes financial responsibility.\n\nShopping Habits:\nRobert tends to be a thoughtful and pragmatic shopper. He takes the time to research purchases, seeking out quality products that will last and provide good value. He is not easily swayed by trends or impulse buys, preferring to stick to a well-curated wardrobe and household items. Robert often shops at department stores, specialty retailers, and online marketplaces that offer a mix of affordability and reliability.\n\nPersonal Life:\nIn his free time, Robert enjoys pursuing his hobbies, which include woodworking, gardening, and recreational sports. He also volunteers regularly at a local food bank, where he can apply his organizational and analytical skills to help address issues of food insecurity in his community. Robert values his relationships with family and friends, often hosting gatherings or planning outings to stay connected.",
+    "intent": "buy a set of high-quality, non-toxic plastic rats for halloween decor.",
+    "age": 58,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

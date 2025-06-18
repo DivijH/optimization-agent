@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Gabriel\n\nBackground:\nGabriel is a driven and passionate middle school teacher who has dedicated his career to shaping the lives of young students. With a deep commitment to education and a genuine interest in child development, he strives to create a learning environment that fosters critical thinking, creativity, and empathy.\n\nDemographics:\nAge: 30\nGender: Male\nEducation: Master's Degree in Education\nProfession: Middle School Teacher\nIncome: $68,000\n\nFinancial Situation:\nAs a middle school teacher, Gabriel's income falls within the range of $30,001 to $94,000. He manages his finances responsibly, living comfortably within his means and prioritizing savings for both short-term goals and long-term financial security.\n\nShopping Habits:\nGabriel's shopping habits reflect his practical and value-conscious approach to life. He appreciates well-made, durable products that will stand the test of time, often seeking out sales and discounts to stretch his budget. When it comes to discretionary spending, he enjoys browsing outdoor gear and educational resources to support his professional and personal interests.\n\nProfessional Life:\nIn the classroom, Gabriel is known for his engaging teaching style, his ability to connect with students, and his dedication to helping them reach their full potential. He continuously seeks professional development opportunities to enhance his teaching skills and stay up-to-date with the latest pedagogical approaches. Gabriel's colleagues and the school community recognize him as a valuable asset, respected for his leadership, adaptability, and commitment to student success.\n\nPersonal Life:\nOutside of work, Gabriel is an avid outdoor enthusiast, finding solace in activities like hiking, camping, and kayaking. These hobbies not only provide him with a sense of personal fulfillment but also allow him to model a healthy, active lifestyle for his students. Gabriel is also an active volunteer, dedicating his time to various community initiatives that support underprivileged youth and promote environmental sustainability.",
+    "intent": "buy a Glock 17 Gen 3 magazine.",
+    "age": 30,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

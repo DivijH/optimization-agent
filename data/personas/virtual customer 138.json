@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Marisa\n\nBackground:\nMarisa is a passionate community organizer who dedicates her time to advocating for affordable housing and social services in her local neighborhood. She is known for her tireless efforts to amplify the voices of marginalized individuals and families.\n\nDemographics:\nAge: 58\nGender: Female\nEducation: High School Diploma\nProfession: Community Organizer\nIncome: $22,000\n\nFinancial Situation:\nAs a community organizer, Marisa's income is modest, but she is adept at managing her limited resources. She relies on grants, donations, and part-time employment to sustain herself and her various community initiatives.\n\nShopping Habits:\nMarisa is a conscientious shopper who prioritizes ethical and sustainable options. She frequents local thrift stores, community buy-nothing groups, and farmer's markets to find affordable, high-quality items. Marisa is skilled at repurposing and upcycling items to extend their lifespan.\n\nPersonal Life:\nMarisa's life is deeply rooted in her community. She organizes and participates in neighborhood clean-ups, tenant rights workshops, and food distribution programs. Her unwavering commitment to social justice and community empowerment drives her every day, and she finds great fulfillment in her work.",
+    "intent": "buy a beactive+ exercise mat.",
+    "age": 58,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

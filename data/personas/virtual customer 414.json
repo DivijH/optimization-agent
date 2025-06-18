@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Margaret\n\nBackground:\nMargaret is a retired school librarian who has dedicated her golden years to supporting local charitable organizations and engaging with her community. Despite living on a fixed income, she finds great joy in volunteering her time and resources to make a positive impact on those around her.\n\nDemographics:\nAge: 64\nGender: Female\nEducation: Master's Degree in Library Science\nProfession: Retired School Librarian, Volunteer\nIncome: $25,000 (Retirement and Part-Time Volunteer Stipends)\n\nFinancial Situation:\nMargaret's primary source of income is her retirement pension, which provides a modest but stable financial foundation. She supplements this with occasional part-time work or volunteer stipends, allowing her to maintain a comfortable yet frugal lifestyle. Margaret is adept at budgeting and finding ways to stretch her limited resources, ensuring she can continue supporting the causes she cares about.\n\nShopping Habits:\nMargaret is a savvy and selective shopper, focusing on quality over quantity. She frequents secondhand stores, thrift shops, and local craft fairs, where she can find unique, affordable items that align with her values. When necessary, she will also shop at discount retailers, always on the lookout for sales and discounts. Margaret takes pride in her ability to find hidden gems and repurpose items to extend their lifespan.\n\nPersonal Life:\nIn her retirement, Margaret is an active volunteer, dedicating her time to various community organizations. She volunteers at the local library, organizes book drives, and helps prepare meals for the elderly. Margaret also enjoys participating in book clubs, attending community events, and spending time with her grandchildren, whom she dotes on with great affection.\n\nPersonal Style:\nMargaret's personal style reflects her practical and community-oriented approach to life. She favors comfortable, yet stylish clothing that allows her to move freely and engage in physical tasks during her volunteer work. Her wardrobe consists of well-fitting slacks, button-down shirts, and sensible shoes, often accessorized with scarves or jewelry that add a touch of personal flair. Margaret believes in dressing in a way that is both functional and respectable, as she takes pride in representing the causes she supports.",
+    "intent": "buy a youth football helmet with visor.",
+    "age": 64,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

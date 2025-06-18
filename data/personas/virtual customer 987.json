@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a passionate environmentalist who is committed to making a difference in her community. She has a deep understanding of sustainability and climate change, and she works tirelessly to promote eco-friendly practices and raise awareness about the importance of protecting the planet.\n\nDemographics:\nAge: 28\nGender: Female\nEducation: Bachelor's Degree in Environmental Science\nProfession: Sustainability Coordinator at a Non-Profit Organization\nIncome: $50,000\n\nFinancial Situation:\nEmily's income as a sustainability coordinator at a non-profit organization falls within the $30,001 to $94,000 range. While she doesn't have a high-paying job, she lives modestly and is intentional with her spending, prioritizing her environmental initiatives and personal savings over material possessions.\n\nShopping Habits:\nEmily is a conscious consumer who prioritizes sustainability and ethical practices when making purchasing decisions. She seeks out local, organic, and Fair Trade products, and she is willing to pay a premium for items that align with her values. She also frequents secondhand stores and participates in clothing swaps to reduce waste and support the circular economy.\n\nProfessional Life:\nAs a sustainability coordinator, Emily's role involves organizing community events, coordinating volunteer initiatives, and advocating for green policies within her organization and the local government. She is a highly effective communicator and collaborator, able to inspire others to take action and contribute to environmental causes.\n\nPersonal Style:\nEmily's personal style reflects her passion for sustainability and her commitment to ethical living. She favors eco-friendly fabrics, such as organic cotton, bamboo, and recycled materials, and she often incorporates vintage or upcycled pieces into her wardrobe. Her outfits are comfortable, practical, and stylish, with a focus on timeless, versatile pieces that can be mixed and matched.\n\nIn her free time, Emily enjoys activities that connect her to nature, such as hiking, gardening, and outdoor recreation. She is also an avid reader, staying informed on the latest environmental research and developments in the sustainability movement.",
+    "intent": "buy recycled paper bulletin boards for my office.",
+    "age": 28,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

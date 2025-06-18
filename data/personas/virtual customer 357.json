@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Liam\n\nBackground:\nLiam is a 21-year-old recent college graduate who is navigating the challenges of entering the job market during a difficult economic climate. Despite his limited work experience, he remains optimistic and is actively seeking opportunities that align with his interests and skill set.\n\nDemographics:\nAge: 21\nGender: Male\nEducation: Bachelor's Degree\nProfession: Unemployed\nIncome: $18,000\n\nFinancial Situation:\nWith limited income from part-time jobs and occasional freelance work, Liam relies heavily on financial support from his parents and student loans to cover his basic living expenses. He is diligently managing his budget, prioritizing essentials while looking for ways to cut costs and save whenever possible.\n\nShopping Habits:\nAs a budget-conscious individual, Liam is strategic in his shopping habits. He frequents discount retail stores, thrift shops, and online marketplaces to find affordable, high-quality items. Liam also takes advantage of student discounts and loyalty programs to maximize his savings. He is mindful of his purchases, focusing on practical necessities over impulse buys.\n\nPersonal Life:\nLiam maintains a positive outlook and is proactive in his job search, networking with peers and leveraging his university's career services. In his free time, he enjoys pursuing his hobbies, such as photography and outdoor activities, which provide a sense of fulfillment and balance. Liam is committed to developing his skills and finding a meaningful career that will set him on the path to financial stability.\n\nProfessional Life:\nAs a recent graduate, Liam is eager to apply his education and skills in a professional setting. He has been actively applying for entry-level positions across various industries, showcasing his adaptability, problem-solving abilities, and passion for learning. Liam is open to internships and volunteer opportunities that can provide him with valuable experience and networking opportunities.",
+    "intent": "buy blu rays under 5 dollars.",
+    "age": 21,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

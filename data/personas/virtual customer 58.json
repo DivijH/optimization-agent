@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a successful business owner who has built a thriving e-commerce company specializing in sustainable home goods and lifestyle products. She is passionate about environmental conservation and creating products that are both stylish and eco-friendly.\n\nDemographics:\nAge: 37\nGender: Female\nEducation: Bachelor's Degree in Entrepreneurship\nProfession: Founder and CEO of a sustainable e-commerce company\nIncome: $120,000\n\nFinancial Situation:\nOlivia's business has been steadily growing, allowing her to earn a comfortable income that falls within the $94,001 to $1,000,000 range. She is financially responsible, investing a portion of her earnings into the company's growth while also maintaining a personal savings account and retirement fund.\n\nShopping Habits:\nAs a conscious consumer, Olivia is selective about the products she purchases, both for her business and her personal life. She prioritizes sustainability, ethical manufacturing, and quality craftsmanship when shopping. Olivia enjoys discovering new eco-friendly brands and supporting small artisanal businesses.\n\nProfessional Life:\nOlivia's days are filled with a variety of tasks, from overseeing product development and managing her team to handling marketing and networking with industry partners. She is a hands-on leader who values collaboration and innovation. Olivia is constantly seeking ways to expand her business while staying true to her environmental mission.\n\nPersonal Style:\nOlivia's personal style reflects her passion for sustainability and her appreciation for minimalist, modern design. She gravitates towards neutral-toned, versatile pieces made from organic or recycled materials. Olivia also enjoys accessorizing with unique, handcrafted items that showcase her eco-conscious values.",
+    "intent": "buy a sustainable, eco-friendly plastic orb to wear on my head.",
+    "age": 37,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

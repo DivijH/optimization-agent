@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Lydia\n\nBackground:\nLydia is a passionate undergraduate student majoring in Environmental Science. She is deeply committed to understanding the complex environmental challenges facing the world and finding innovative solutions to protect the planet.\n\nDemographics:\nAge: 19\nGender: Female\nEducation: Undergraduate student, Environmental Science major\nProfession: Student\nIncome: $45,000\n\nFinancial Situation:\nAs a college student, Lydia has a limited budget, but she is careful with her spending. She tries to save money where she can to invest in environmental causes and sustainability initiatives.\n\nShopping Habits:\nLydia is conscious of her environmental impact and tries to make sustainable choices when shopping. She prefers to buy secondhand or ethically sourced items and is always on the lookout for sales and discounts. She enjoys browsing eco-friendly and green-focused stores.\n\nProfessional Life:\nLydia is heavily involved in campus environmental organizations and volunteers for local conservation projects. She is also an active participant in sustainability-focused research and internships, which take up a significant portion of her time.\n\nPersonal Style:\nLydia's personal style reflects her passion for the environment. She loves wearing natural fabrics, such as organic cotton and linen, and gravitates towards earth-toned colors and patterns inspired by nature. Comfort and practicality are important to her, as she often spends time outdoors for her studies and volunteer work.",
+    "intent": "buy a sustainable, eco-friendly tcg game mat.",
+    "age": 19,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

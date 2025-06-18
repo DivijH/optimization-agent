@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a vibrant and ambitious young professional who has carved out a successful career in the marketing industry. With a keen eye for trends and a passion for creative problem-solving, she has quickly risen through the ranks, becoming a sought-after marketing strategist at a dynamic agency.\n\nDemographics:\nAge: 30\nGender: Female\nEducation: Bachelor's Degree in Marketing\nProfession: Marketing Strategist\nIncome: $65,000\n\nFinancial Situation:\nEmily's income as a marketing strategist allows her to live comfortably and pursue her personal and professional goals. She is financially responsible, setting aside a portion of her earnings for savings and investments, while also enjoying the occasional splurge on travel, dining, and self-care.\n\nShopping Habits:\nEmily's shopping habits reflect her stylish and trend-conscious personality. She enjoys browsing through a mix of high-street fashion retailers, boutique stores, and online platforms, curating a wardrobe that combines affordable staples with statement pieces. She is always on the lookout for unique and sustainable fashion options that align with her values.\n\nProfessional Life:\nAt the marketing agency, Emily collaborates with a diverse team of creatives and strategists to develop innovative campaigns for a wide range of clients. Her ability to think outside the box, combined with her data-driven approach, has made her an invaluable asset to the company. Emily is constantly seeking ways to expand her skillset and contribute to the agency's continued growth.\n\nPersonal Style:\nEmily's personal style reflects her youthful and dynamic personality. She effortlessly blends trendy and classic pieces, seamlessly transitioning from a polished, professional look to a more casual, off-duty ensemble. Her wardrobe includes a mix of well-fitting denim, tailored blazers, colorful blouses, and comfortable yet stylish footwear. Emily also enjoys experimenting with bold accessories and makeup to complement her outfits.\n\nIn her free time, Emily pursues her passions for photography, art, and wellness. She can often be found exploring the city's vibrant cultural scene or indulging in self-care activities, like yoga and meditation, to maintain a healthy work-life balance.",
+    "intent": "buy medical grade compression leggings with 40-60 mmHg compression.",
+    "age": 30,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

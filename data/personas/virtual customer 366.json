@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a dynamic and ambitious young woman who has carved out a successful career in the tech industry. After completing her degree in computer science, she landed a promising role at a rapidly growing startup, where she has steadily climbed the ranks.\n\nDemographics:\nAge: 26\nGender: Female\nEducation: Bachelor's Degree in Computer Science\nProfession: Software Engineer\nIncome: $65,000\n\nFinancial Situation:\nWith a steady income from her software engineering position, Emily is in a relatively stable financial position. She is diligent in her budgeting and saving, aiming to build a solid financial foundation for the future. While she enjoys the occasional splurge, Emily is mindful of her spending and prioritizes long-term financial security.\n\nShopping Habits:\nEmily's shopping habits reflect her practical and organized nature. She prefers to make well-informed decisions, researching products and seeking out the best value for her money. She enjoys browsing online marketplaces and taking advantage of sales and discounts, but she also recognizes the importance of investing in quality, durable items.\n\nPersonal Life:\nIn her free time, Emily is an avid reader, exploring a wide range of topics from technology to personal development. She is also an outdoor enthusiast, often escaping the hustle and bustle of city life to hike or bike in nearby nature trails. Emily values her close-knit group of friends, who share her passion for adventure and intellectual stimulation.\n\nPersonal Style:\nEmily's personal style is a blend of functionality and modern flair. She gravitates towards comfortable yet stylish clothing, such as well-fitting jeans, structured blazers, and versatile tops. Emily is conscious of sustainability and often seeks out ethically-sourced or environmentally-friendly fashion options.",
+    "intent": "buy an airsoft pistol.",
+    "age": 26,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

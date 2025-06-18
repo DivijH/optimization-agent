@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a passionate and creative individual who has taken an unconventional path in life. After several years of pursuing his artistic passions, he has found his stride as a freelance graphic designer, embracing the freedom and flexibility of his self-employed lifestyle.\n\nDemographics:\nAge: 32\nGender: Male\nEducation: Bachelor's Degree in Fine Arts\nProfession: Freelance Graphic Designer\nIncome: $27,000\n\nFinancial Situation:\nAs a freelance graphic designer, Michael's income can fluctuate, but he has learned to manage his finances with careful budgeting and a pragmatic approach. He lives a minimalist lifestyle, prioritizing experiences over material possessions, and takes advantage of the gig economy to supplement his income as needed.\n\nShopping Habits:\nMichael is mindful of his spending and seeks out unique, artisanal products that align with his creative sensibilities. He frequents local thrift stores, secondhand shops, and online marketplaces to curate a personal style that reflects his individuality. Michael also supports fellow artists and small businesses, understanding the value of community investment.\n\nPersonal Life:\nIn his personal life, Michael embraces a balance between creative pursuits and self-care. He dedicates time to his graphic design projects, but also makes space for hobbies like photography, painting, and exploring the great outdoors. Michael values his close-knit circle of friends, many of whom share his artistic passions, and he enjoys hosting intimate gatherings and collaborative events.\n\nPersonal Style:\nMichael's personal style is a reflection of his eclectic and unconventional approach to life. He favors vintage-inspired clothing, bold patterns, and layers that allow him to experiment with different looks. His wardrobe is a mix of thrifted finds, handmade pieces, and the occasional splurge on a unique, high-quality item that catches his eye. Michael's overall aesthetic is both stylish and practical, enabling him to express his creativity while maintaining a level of comfort and functionality.",
+    "intent": "buy a greeting card for \"hello katrina\".",
+    "age": 32,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

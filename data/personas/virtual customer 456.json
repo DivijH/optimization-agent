@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a retiree who has dedicated his life to community service and volunteerism. After a fulfilling career in the public sector, he now focuses on giving back to his local community and pursuing his lifelong passions.\n\nDemographics:\nAge: 62\nGender: Male\nEducation: High school diploma\nProfession: Retired\nIncome: $25,000\n\nFinancial Situation:\nWith a modest retirement income and limited savings, David lives a frugal but comfortable lifestyle. He is mindful of his expenses and seeks out opportunities to save, such as taking advantage of senior discounts and participating in community programs that provide assistance to low-income individuals.\n\nShopping Habits:\nDavid's shopping habits reflect his practical and cost-conscious approach to life. He frequents thrift stores, garage sales, and secondhand shops to find gently used items that meet his needs. When making purchases, he prioritizes functionality and durability over trends or aesthetics.\n\nProfessional Life:\nAlthough officially retired, David remains an active member of his community. He volunteers regularly at a local food bank, serves on the board of a community development organization, and participates in various civic initiatives. His vast experience and dedication to public service make him a respected and valued member of the community.\n\nPersonal Style:\nDavid's personal style is comfortable and casual, often favoring well-worn but well-maintained clothing. He dresses in simple, practical outfits that allow him to move freely and comfortably throughout his daily activities. Functionality and practicality are the key considerations in his wardrobe choices.\n\nIn his free time, David enjoys gardening, attending community events, and spending time with his grandchildren. He takes great pride in being a role model and mentor to the younger generations, sharing his wisdom and life experiences.",
+    "intent": "buy a soft baby book for my grandchild.",
+    "age": 62,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

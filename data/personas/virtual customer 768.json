@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Thomas\n\nBackground:\nThomas is a seasoned professional who has navigated a successful career in the financial services industry. With decades of experience under his belt, he has developed a keen eye for strategic decision-making and a deep understanding of the ever-evolving financial landscape.\n\nDemographics:\nAge: 59\nGender: Male\nEducation: Bachelor's Degree in Finance\nProfession: Financial Advisor\nIncome: $80,000\n\nFinancial Situation:\nAs a financial advisor, Thomas has amassed a comfortable income that allows him to maintain a stable financial footing. He has diligently saved and invested over the years, ensuring a secure retirement plan and the ability to provide for his family. Thomas takes pride in his financial acumen and enjoys sharing his expertise with his clients to help them achieve their financial goals.\n\nShopping Habits:\nThomas approaches his shopping with a pragmatic and discerning mindset. He values quality over quantity, investing in durable and timeless products that will serve him well in the long run. While he is not averse to occasional splurges, Thomas generally prefers to research and compare options before making a purchase, ensuring he gets the best value for his money.\n\nPersonal Style:\nThomas's personal style reflects his professional demeanor and his appreciation for timeless elegance. He typically wears tailored suits, crisp dress shirts, and polished leather shoes, exuding a sense of confidence and sophistication. However, Thomas also enjoys incorporating more casual elements into his wardrobe, such as well-fitting denim and comfortable sweaters, to strike a balance between formality and comfort.\n\nPersonal Life:\nIn his personal life, Thomas has found a harmonious balance between his career and his leisure pursuits. He enjoys engaging in activities that challenge his mind and body, such as playing golf, attending classical music concerts, and participating in local community events. Thomas also cherishes the time he spends with his wife and grown children, fostering strong familial bonds and creating lasting memories.",
+    "intent": "buy a pair of compression stockings with 20-30 mmhg compression.",
+    "age": 59,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

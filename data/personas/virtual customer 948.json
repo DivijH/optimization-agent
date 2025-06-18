@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Liam\n\nBackground:\nLiam is a creative individual who has faced his fair share of financial challenges but finds solace in his artistic pursuits. Despite the constraints of his limited income, he remains resilient and innovative, using his talents to make a positive impact on his local community.\n\nDemographics:\nAge: 36\nGender: Male\nEducation: Bachelor's Degree in Fine Arts\nProfession: Freelance Artist\nIncome: $22,000\n\nFinancial Situation:\nLiam's income falls within the range of $0 to $30,000, which presents financial limitations in his day-to-day life. He carefully budgets his resources, prioritizing the materials and tools needed for his art while also ensuring he can cover his basic living expenses. Despite the financial hurdles, Liam finds joy and fulfillment in his creative work.\n\nShopping Habits:\nLiam's shopping habits reflect his resourceful and mindful approach to life. He frequently visits secondhand stores, online marketplaces, and local art supply shops to acquire the materials he needs for his projects. Liam is skilled at repurposing and upcycling items, finding innovative ways to create unique and affordable works of art.\n\nProfessional Life:\nAs a freelance artist, Liam's workdays are filled with a diverse array of tasks, from conceptualizing and executing his own artistic pieces to collaborating with local businesses and community organizations on commissioned projects. His role requires a strong creative vision, adaptability, and the ability to effectively manage his time and resources.\n\nPersonal Style:\nLiam's personal style is a reflection of his artistic sensibilities and his desire for self-expression. He combines thrifted and vintage finds with handmade elements, creating a distinctive and eclectic look that sets him apart. His clothing, accessories, and home decor often feature bold colors, intricate patterns, and unconventional materials, showcasing his creative flair.\n\nIn his free time, Liam immerses himself in the local art scene, attending exhibitions, workshops, and networking events to connect with fellow creatives. He also dedicates time to mentoring aspiring artists, sharing his knowledge and experiences to nurture the next generation of talent.",
+    "intent": "buy a used am fm radio within my budget.",
+    "age": 36,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

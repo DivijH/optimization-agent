@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a 43-year-old marketing manager at a growing tech startup. With a strong background in digital advertising and a knack for strategic thinking, she has played a key role in driving the company's growth and brand recognition.\n\nDemographics:\nAge: 43\nGender: Female\nEducation: Bachelor's Degree in Marketing\nProfession: Marketing Manager\nIncome: $58,000\n\nFinancial Situation:\nAs a marketing manager, Sarah's income falls within the $30,001 to $94,000 range, providing her with a comfortable financial cushion. She is prudent with her spending, setting aside a portion of her earnings for savings and retirement, while also allocating funds for occasional splurges and travel.\n\nShopping Habits:\nSarah is a savvy shopper who balances practical purchases with stylish investments. She enjoys browsing online and in-person for quality, versatile pieces that can be mixed and matched to create a polished, professional wardrobe. She is willing to spend a bit more on items that are well-made and will last, but she also appreciates finding a good deal.\n\nProfessional Life:\nSarah's work as a marketing manager is her primary focus. She thrives on the fast-paced, dynamic nature of the tech industry and is constantly seeking ways to optimize campaigns, analyze data, and stay ahead of industry trends. Her strong communication skills, creative problem-solving abilities, and strategic mindset make her a valued asset to her company.\n\nPersonal Style:\nSarah's personal style reflects her professional persona \u2013 sophisticated, modern, and put-together. She favors tailored separates, well-fitting denim, and classic accessories that can transition seamlessly from the office to after-work events. She enjoys experimenting with new trends and playing with bold colors or patterns, but she always maintains a polished, confident look.",
+    "intent": "buy a stylish, high-quality women's t-shirt from the Tee Poppee brand.",
+    "age": 43,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

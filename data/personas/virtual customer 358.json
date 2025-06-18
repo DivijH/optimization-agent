@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sophia\n\nBackground:\nSophia is a seasoned executive and philanthropist who has built an impressive career in the financial services industry. After decades of success in corporate leadership roles, she now dedicates a significant portion of her time and resources to supporting charitable causes that are close to her heart.\n\nDemographics:\nAge: 59\nGender: Female\nEducation: Master's Degree in Business Administration\nProfession: Retired Financial Executive, Philanthropist\nIncome: $275,000\n\nFinancial Situation:\nSophia's many years of professional achievements have afforded her substantial financial stability and the ability to comfortably pursue her passions. She maintains a diverse investment portfolio and is actively involved in managing her wealth to ensure it has a positive impact, both personally and through her philanthropic endeavors.\n\nShopping Habits:\nAs a discerning consumer, Sophia approaches shopping with a deliberate and thoughtful approach. She seeks out high-quality, timeless products that align with her sophisticated aesthetic and commitment to sustainability. While she enjoys the occasional luxury purchase, Sophia is more inclined to invest in experiences, such as travel and cultural events, that enrich her life and allow her to give back to her community.\n\nProfessional Life:\nSophia's corporate career spanned over three decades, during which she held increasingly senior roles in the financial sector, including serving as the Chief Financial Officer of a global investment firm. Her exceptional leadership skills, financial acumen, and strategic vision were instrumental in driving the success of the organizations she served. Now retired, Sophia dedicates her time and expertise to various non-profit boards and philanthropic initiatives.\n\nPersonal Style:\nSophia's personal style exudes elegance and timelessness. She favors high-quality, tailored ensembles that convey a sense of sophistication and confidence. Her wardrobe is a carefully curated collection of designer pieces and investment-worthy staples that she seamlessly combines to create effortlessly chic looks. Sophia also values sustainability and often seeks out ethically-produced fashion and accessories.",
+    "intent": "buy prescription glasses for women.",
+    "age": 59,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

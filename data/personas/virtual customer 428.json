@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a dedicated middle school science teacher who is passionate about inspiring the next generation of scientists and innovators. With a keen interest in environmental conservation, he incorporates hands-on learning and real-world applications into his curriculum to engage his students.\n\nDemographics:\nAge: 46\nGender: Male\nEducation: Master's Degree in Education\nProfession: Middle School Science Teacher\nIncome: $62,000\n\nFinancial Situation:\nAs a public school teacher, Michael's income is within the middle range, allowing him to live comfortably while also contributing to his retirement savings and occasional travel. He is mindful of his spending and seeks to maintain a balanced budget, prioritizing experiences and financial security over material possessions.\n\nShopping Habits:\nMichael's shopping habits reflect his practical and environmentally-conscious approach to life. He tends to invest in high-quality, durable items that will last, often opting for secondhand or eco-friendly alternatives when possible. He is not swayed by trends and prefers to maintain a functional, versatile wardrobe.\n\nProfessional Life:\nIn the classroom, Michael is known for his engaging teaching style and his ability to make complex scientific concepts accessible to his students. He is constantly seeking out new ways to incorporate technology, hands-on activities, and real-world examples into his lessons, fostering a love of learning and curiosity among his students.\n\nPersonal Style:\nMichael's personal style is casual yet polished, reflecting his active lifestyle and dedication to his work. He favors comfortable, practical clothing that allows him to move freely and engage with his students, such as button-down shirts, khakis, and sturdy shoes. While he doesn't follow fashion trends, Michael takes pride in his appearance and aims to present a professional image.",
+    "intent": "buy a Taylor Swift signed album from Ave Records.",
+    "age": 46,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

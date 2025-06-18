@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a successful entrepreneur who has built a thriving software development company. With a keen eye for innovative technology and a passion for problem-solving, he has led his team to create cutting-edge solutions that have disrupted the industry.\n\nDemographics:\nAge: 34\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: CEO of a Software Development Company\nIncome: $120,000\n\nFinancial Situation:\nAs the CEO of a successful tech company, Michael's income falls within the $94,001 to $1,000,000 range. He has amassed significant savings and investments, which allow him to live comfortably and pursue his professional and personal goals.\n\nShopping Habits:\nMichael has a discerning taste and enjoys acquiring high-quality products that reflect his sophisticated style and technical expertise. He frequently shops at upscale retailers, both in-person and online, and is willing to invest in premium items that enhance his lifestyle or support his business.\n\nProfessional Life:\nMichael's role as the CEO of his software development company demands a significant amount of his time and attention. He is responsible for overseeing the strategic direction of the business, managing a talented team of developers, and fostering partnerships with industry leaders. Despite the demands of his position, Michael maintains a hands-on approach and is actively involved in the company's day-to-day operations.\n\nPersonal Style:\nMichael's personal style is a blend of modern and classic. He favors well-tailored suits, crisp button-down shirts, and polished leather shoes for his professional attire. In his leisure time, he enjoys wearing casual yet sophisticated ensembles, often pairing designer denim with a cashmere sweater or a sleek leather jacket.",
+    "intent": "add a travel usb hub to cart",
+    "age": 34,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

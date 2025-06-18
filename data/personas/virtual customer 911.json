@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a driven and ambitious woman who has carved out a successful career in the non-profit sector. With a deep passion for social justice and a relentless work ethic, she has climbed the ranks to become the regional director of a prominent advocacy organization.\n\nDemographics:\nAge: 42\nGender: Female\nEducation: Master's Degree in Public Policy\nProfession: Regional Director of a Non-Profit Advocacy Organization\nIncome: $75,000\n\nFinancial Situation:\nOlivia's income as a regional director falls within the $30,001 to $94,000 range, providing her with a stable and comfortable financial situation. She is mindful of her spending and saves a portion of her earnings to support her long-term goals, such as retirement and potential future investments.\n\nShopping Habits:\nOlivia's shopping habits reflect her practical and goal-oriented nature. She prioritizes functionality and quality over trends, often investing in durable and versatile pieces that can be mixed and matched for a variety of professional and casual occasions. While she enjoys the occasional splurge on high-quality items, she is generally cautious with her spending and seeks out sales and discounts to maximize her budget.\n\nProfessional Life:\nAs the regional director of a non-profit advocacy organization, Olivia is responsible for overseeing a team of dedicated professionals who work tirelessly to promote social and political change. She is a strategic thinker and an effective communicator, adept at navigating the complexities of the non-profit landscape and building partnerships with key stakeholders.\n\nPersonal Style:\nOlivia's personal style is a reflection of her professionalism and her commitment to her work. She favors a mix of classic and modern pieces, often opting for well-tailored blazers, button-down shirts, and slacks. She values comfort and practicality, but she also takes pride in her appearance, ensuring that her look is polished and put-together.\n\nIn her free time, Olivia enjoys staying active through activities like yoga and hiking, and she takes great pleasure in exploring the vibrant cultural offerings of her city. She is also an avid reader and frequently attends conferences and workshops to stay informed and inspired.",
+    "intent": "buy a set of SPD pedals for a bike.",
+    "age": 42,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a 53-year-old retired factory worker who is now dedicated to volunteering and community service. After years of working long hours on the assembly line, he decided to focus his energy on giving back to his local community.\n\nDemographics:\nAge: 53\nGender: Male\nEducation: High School Graduate\nProfession: Retired Factory Worker, Volunteer\nIncome: $20,000 (Retirement and Part-Time Volunteer Work)\n\nFinancial Situation:\nDavid lives on a modest retirement income, supplemented by the occasional part-time jobs or volunteer stipends. He is frugal in his spending, prioritizing his basic needs and finding ways to save where he can. Despite his limited resources, he is content and feels fulfilled through his volunteer work.\n\nShopping Habits:\nDavid tends to shop at thrift stores, garage sales, and discount retailers to find affordable, practical items. He values durability and functionality over the latest trends, and often repurposes or repairs items to extend their lifespan. When necessary, he will also shop online to compare prices and find the best deals.\n\nProfessional Life:\nIn his retirement, David has become an active volunteer in his community. He spends his days tutoring underprivileged youth, maintaining community gardens, and organizing neighborhood cleanup events. His dedication to making a positive impact on the lives of others is a source of great pride and fulfillment.\n\nPersonal Style:\nDavid's personal style is comfortable and practical. He favors casual, sturdy clothing that allows him to move freely and engage in physical tasks during his volunteer work. His wardrobe consists mainly of well-worn t-shirts, jeans, and work boots, with the occasional button-down shirt or sweater for more formal occasions.\n\nDavid loves listening to oldies music and usually wakes up at 6am.\nDavid lives in a small town in the Midwest.",
+    "intent": "buy a high-quality, durable battle-grade lightsaber.",
+    "age": 53,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

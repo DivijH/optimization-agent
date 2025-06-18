@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a driven and ambitious young professional who has established herself as a rising star in the tech industry. With a keen interest in the intersection of technology and social impact, she has carved out a niche for herself as a product manager for a non-profit organization that develops innovative digital solutions to address societal challenges.\n\nDemographics:\nAge: 21\nGender: Female\nEducation: Bachelor's Degree in Computer Science\nProfession: Product Manager\nIncome: $45,000\n\nFinancial Situation:\nEmily's income as a product manager allows her to live comfortably and save for her long-term goals. While she is mindful of her spending, she is not overly frugal and enjoys treating herself to occasional splurges, such as travel and experiences that align with her values.\n\nShopping Habits:\nEmily approaches shopping with a practical and conscious mindset. She seeks out high-quality, durable products that will last, and she is willing to invest in items that she knows will serve her well in the long run. She also prioritizes ethical and sustainable brands, often doing research to ensure that her purchases align with her personal values.\n\nProfessional Life:\nEmily's days are filled with a dynamic mix of strategic planning, collaborative problem-solving, and hands-on product development. She thrives in the fast-paced, innovative environment of the tech industry and is constantly seeking out new opportunities to expand her skill set and contribute to the greater good.\n\nPersonal Style:\nEmily's personal style reflects her dual roles as a young professional and a socially conscious individual. She favors a minimalist, streamlined aesthetic, opting for comfortable yet polished clothing that allows her to transition seamlessly between work and leisure activities. She gravitates towards versatile, high-quality pieces that can be mixed and matched to create a range of stylish outfits.",
+    "intent": "buy sensitive skin baby wipes.",
+    "age": 21,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

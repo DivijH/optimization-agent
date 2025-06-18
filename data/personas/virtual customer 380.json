@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Samantha\n\nBackground:\nSamantha is a savvy and accomplished business leader who has risen through the ranks to become the Vice President of Operations at a thriving e-commerce startup. With a keen eye for strategy and a passion for innovation, she has played a pivotal role in driving the company's rapid growth and expansion.\n\nDemographics:\nAge: 35\nGender: Female\nEducation: MBA\nProfession: Vice President of Operations\nIncome: $125,000\n\nFinancial Situation:\nAs a senior executive, Samantha's income falls within the $94,001 to $1,000,000 range. She has built a solid financial foundation, carefully managing her resources to support her lifestyle while also prioritizing long-term investments and philanthropic initiatives.\n\nShopping Habits:\nSamantha's shopping habits reflect her discerning taste and appreciation for high-quality, sustainable products. She frequents luxury retailers and designer boutiques, but also seeks out unique, one-of-a-kind items from small, independent businesses. Samantha values craftsmanship, timeless style, and ethical sourcing when making her purchases.\n\nProfessional Life:\nIn her role as Vice President of Operations, Samantha oversees a team of talented professionals responsible for optimizing the company's logistics, supply chain, and operational efficiency. She is known for her strategic thinking, data-driven decision-making, and ability to navigate complex challenges. Samantha's leadership and innovative mindset have been instrumental in the company's continued growth and success.\n\nPersonal Life:\nOutside of her professional commitments, Samantha is an active philanthropist, dedicating her time and resources to supporting various charitable organizations. She serves on the board of a local non-profit focused on empowering underserved communities. Samantha also enjoys exploring her creative side through art and design, and she is an avid collector of contemporary works.",
+    "intent": "buy a pink ceramic baking dish.",
+    "age": 35,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

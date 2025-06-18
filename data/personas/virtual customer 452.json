@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sophia\n\nBackground:\nSophia is a passionate advocate for environmental sustainability, driven by her deep concern for the future of the planet. As a young professional, she has dedicated her career to working for a non-profit organization focused on promoting eco-friendly practices and raising awareness about climate change.\n\nDemographics:\nAge: 24\nGender: Female\nEducation: Bachelor's Degree in Environmental Science\nProfession: Sustainability Coordinator\nIncome: $43,000\n\nFinancial Situation:\nWith an income within the range of $30,001 to $94,000, Sophia maintains a comfortable but modest lifestyle. She is diligent about budgeting, prioritizing her financial goals, which include saving for a down payment on a small eco-friendly home and contributing to a retirement fund. Sophia is also mindful of her environmental impact and often makes purchasing decisions with sustainability in mind.\n\nShopping Habits:\nSophia's shopping habits reflect her commitment to sustainability. She seeks out ethical and eco-friendly brands, opting for products made from sustainable materials or with a reduced environmental footprint. When possible, she prefers to shop secondhand, taking advantage of local thrift stores and online marketplaces. Sophia also supports local businesses and social enterprises that align with her values.\n\nPersonal Life:\nIn her free time, Sophia enjoys exploring the great outdoors, whether it's hiking in nearby nature preserves or volunteering at a community garden. She is an avid reader, staying informed on the latest advancements in renewable energy and sustainable living. Sophia also values her connections with friends and family, often hosting sustainable potlucks or organizing environmentally-conscious group activities.\n\nProfessional Life:\nAs a sustainability coordinator, Sophia works tirelessly to implement eco-friendly practices within her organization and the broader community. She coordinates educational campaigns, organizes recycling and composting initiatives, and collaborates with local government agencies to advocate for green policies. Sophia's passion and dedication have earned her the respect of her colleagues and the admiration of those she serves.",
+    "intent": "buy a Lumos Maxima light-up wand from the Harry Potter collection.",
+    "age": 24,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a passionate artist who has dedicated her life to exploring her creative talents. After completing her art degree, she has chosen to pursue a freelance career, allowing her the freedom to work on personal projects and commission-based works.\n\nDemographics:\nAge: 30\nGender: Female\nEducation: Bachelor's degree in Fine Arts\nProfession: Freelance Artist\nIncome: $25,000\n\nFinancial Situation:\nAs a freelance artist, Olivia's income can be variable, but she has learned to live within a modest budget. She is frugal with her spending, prioritizing materials for her art over personal luxuries. Olivia carefully manages her finances to ensure she can continue focusing on her creative passions.\n\nShopping Habits:\nOlivia enjoys the thrill of finding unique, affordable art supplies and materials to fuel her creativity. She often scours local thrift stores and art supply shops for hidden gems. When it comes to personal items, Olivia prefers a minimalist approach, investing in high-quality, versatile pieces that can be mixed and matched.\n\nProfessional Life:\nOlivia's days are filled with a combination of working on commissioned pieces, personal art projects, and searching for new opportunities to showcase her work. She is constantly seeking ways to expand her artistic skills and explore new mediums. Networking with other artists and attending local art events are essential parts of her professional life.\n\nPersonal Style:\nOlivia's personal style reflects her artistic sensibilities. She gravitates towards flowing, comfortable clothing that allows her to move freely while she works. Her color palette tends to be muted, with accents of bold, vibrant hues that complement her artwork. Olivia values functionality and sustainability in her wardrobe choices.\n\nOlivia lives in a cozy loft in a vibrant artist community in San Francisco. She loves exploring local thrift stores and visiting the nearby parks for inspiration.",
+    "intent": "buy a keyboard.",
+    "age": 30,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

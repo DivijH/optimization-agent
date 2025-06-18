@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jade\n\nBackground:\nJade is a dedicated social worker who advocates for the rights and well-being of marginalized communities. Despite the challenges of working in a low-income sector, she finds immense fulfillment in supporting her clients and driving positive change.\n\nDemographics:\nAge: 35\nGender: Female\nEducation: Bachelor's degree in Social Work\nProfession: Social Worker\nIncome: $28,000\n\nFinancial Situation:\nAs a social worker, Jade's income falls within the lower range, but she is skilled at budgeting and making the most of her limited resources. She lives frugally, prioritizing her essential needs and allocating the rest of her funds towards her passion for community service.\n\nShopping Habits:\nJade's shopping habits reflect her practical and resourceful nature. She often shops at thrift stores, secondhand shops, and discount retailers to find affordable, high-quality items. When making larger purchases, she thoroughly researches options to ensure she is getting the best value for her money.\n\nPersonal Style:\nJade's personal style is comfortable and functional, with a focus on versatility and durability. She enjoys wearing classic, well-fitting pieces that can be easily mixed and matched, such as cotton blouses, sturdy jeans, and comfortable shoes. Her wardrobe is a combination of thoughtful thrift store finds and ethical brand essentials.",
+    "intent": "buy a basic, affordable popcorn maker that can be used for home movie nights and gatherings with friends.",
+    "age": 35,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

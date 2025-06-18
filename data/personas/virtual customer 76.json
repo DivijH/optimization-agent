@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a passionate graphic designer who works at a mid-size advertising agency. He is known for his creative flair and ability to translate his clients' visions into visually stunning designs.\n\nDemographics:\n\nAge: 32\nGender: Male\nEducation: Bachelor's degree in Graphic Design\nProfession: Graphic Designer\nIncome: $55,000\n\nFinancial Situation:\nEthan's income as a graphic designer allows him to maintain a comfortable lifestyle with a few financial indulgences, such as investing in high-quality art supplies and attending design conferences. He is mindful of his spending and makes efforts to save for the future, including contributing to his retirement account.\n\nShopping Habits:\nEthan enjoys browsing for unique and inspiring items that fuel his creative process. He often shops for the latest design software, specialty art materials, and trendy, yet functional, apparel that he can wear to the office or during his leisure time. Ethan values quality over quantity and is willing to invest in products that enhance his professional and personal life.\n\nProfessional Life:\nAs a graphic designer at a reputable advertising agency, Ethan is responsible for collaborating with clients, conceptualizing design solutions, and executing visually compelling campaigns. He thrives in a dynamic, fast-paced environment and is constantly seeking opportunities to expand his skillset and take on new creative challenges.\n\nPersonal Style:\nEthan's personal style reflects his artistic sensibilities and passion for design. He often wears a mix of casual and professional attire, such as slim-fit chinos, button-down shirts, and well-fitted, modern-cut blazers. Ethan enjoys exploring the latest fashion trends and experimenting with unique color combinations and patterns, always aiming to maintain a polished, yet creative, appearance.\n\nIn his free time, Ethan indulges in his hobbies, which include photography, sketching, and exploring the vibrant art scene in his city.",
+    "intent": "add to cart gold necklace with initial pendant",
+    "age": 32,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

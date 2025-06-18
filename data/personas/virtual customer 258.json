@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a driven and ambitious 23-year-old marketing manager at a thriving startup in the tech industry. With a keen eye for data analysis and a passion for innovative digital marketing strategies, she has quickly risen through the ranks, becoming a valuable asset to her company.\n\nDemographics:\nAge: 23\nGender: Female\nEducation: Bachelor's Degree in Marketing\nProfession: Marketing Manager\nIncome: $65,000\n\nFinancial Situation:\nOlivia's income as a marketing manager provides her with a comfortable financial standing, allowing her to live independently in a modern apartment in the heart of the city. While she is mindful of her spending, she is not afraid to invest in tools and resources that can enhance her professional growth and development.\n\nShopping Habits:\nOlivia's shopping habits reflect her fast-paced lifestyle and her desire to stay ahead of the curve. She is an avid online shopper, regularly browsing e-commerce platforms for the latest technological gadgets, high-quality athleisure wear, and stylish, work-appropriate attire. She values convenience and efficiency when it comes to her purchases.\n\nProfessional Life:\nAs a marketing manager, Olivia is responsible for developing and executing data-driven digital marketing campaigns that drive engagement and conversions for her company's products. She thrives in a collaborative environment, working closely with the product, design, and sales teams to ensure the success of their marketing initiatives.\n\nPersonal Style:\nOlivia's personal style is a reflection of her professional success and her active lifestyle. She favors a modern, minimalist aesthetic, often wearing sleek, well-fitted pants, stylish blouses, and comfortable yet chic sneakers. Olivia accessorizes her outfits with statement jewelry and a versatile leather tote bag that can transition seamlessly from the office to after-work activities.\n\nIn her free time, Olivia enjoys exploring the vibrant food scene in her city, experimenting with healthy recipes, and staying active through yoga and cycling.",
+    "intent": "buy a balloon arch strip for a birthday party or wedding event.",
+    "age": 23,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

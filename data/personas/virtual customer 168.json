@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Antonio\n\nBackground:\nAntonio is a passionate community activist who has dedicated his life to advocating for social and economic justice. Though his income is limited, he finds fulfillment in his work as a nonprofit organizer, tirelessly campaigning for the rights of marginalized groups in his city.\n\nDemographics:\nAge: 53\nGender: Male\nEducation: High School Diploma\nProfession: Nonprofit Organizer\nIncome: $21,000\n\nFinancial Situation:\nAs a nonprofit organizer, Antonio's income is modest, but he has learned to live within his means. He relies on a combination of government assistance and community support to make ends meet, often prioritizing the needs of the people he serves over his own.\n\nShopping Habits:\nAntonio is a frugal shopper, seeking out secondhand stores, thrift shops, and online marketplaces for affordable, practical items. He is mindful of his spending and focuses on acquiring necessities rather than luxuries. However, he is willing to splurge on occasion to support local businesses and social enterprises that align with his values.\n\nPersonal Life:\nIn his free time, Antonio is an avid reader, staying informed on the latest social and political issues. He also enjoys gardening, finding solace in nurturing plants and connecting with the natural world. Antonio is a dedicated father, prioritizing quality time with his family and imparting his values of community service and activism.\n\nProfessional Life:\nAs a nonprofit organizer, Antonio is a tireless advocate for social justice and community empowerment. He coordinates fundraising efforts, organizes rallies and protests, and works closely with local government officials to address the needs of underserved populations. Antonio's unwavering commitment and passion for his work inspire those around him, and he is respected by his peers for his integrity and dedication.",
+    "intent": "buy a mens turquoise necklace.",
+    "age": 53,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

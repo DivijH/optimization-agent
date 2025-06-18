@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Aisha\n\nBackground:\nAisha is a passionate community organizer dedicated to addressing issues of social justice and economic inequality in her local neighborhood. Despite facing her own financial challenges, she tirelessly devotes her time and energy to empowering marginalized individuals and advocating for systemic change.\n\nDemographics:\nAge: 36\nGender: Female\nEducation: High school diploma\nProfession: Community Organizer\nIncome: $22,000\n\nFinancial Situation:\nAs a community organizer, Aisha's income falls within the $0 to $30,000 range. She often struggles to make ends meet, but she is resourceful and determined to make the most of her limited financial resources. She carefully budgets her expenses, prioritizing her community work and finding ways to support herself and her family.\n\nShopping Habits:\nAisha's shopping habits are driven by her desire to be mindful of her spending and support local, mission-driven businesses. She frequents thrift stores, community-based marketplaces, and online platforms that connect her with social enterprises and non-profit organizations. She is skilled at finding affordable, high-quality items that align with her values and needs.\n\nProfessional Life:\nAisha's days are filled with a dynamic blend of grassroots organizing, community outreach, and advocacy work. She collaborates with local leaders, volunteers, and residents to identify pressing issues, develop strategic solutions, and mobilize collective action. Her unwavering commitment to social justice and her ability to inspire and empower others make her a respected and influential figure in her community.\n\nPersonal Style:\nAisha's personal style reflects her practical and versatile approach to life. She favors comfortable, durable clothing that allows her to move freely and easily throughout her busy schedule. Her wardrobe often includes mix-and-match pieces, such as well-made basics and second-hand finds, that she can effortlessly combine to create functional and stylish outfits.",
+    "intent": "buy a black pearl necklace.",
+    "age": 36,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

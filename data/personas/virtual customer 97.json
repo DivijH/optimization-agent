@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a seasoned IT professional who has spent the past two decades working in the tech industry. He currently holds the role of IT Manager at a mid-sized software company, where he oversees a team of IT technicians and engineers.\n\nDemographics:\nAge: 62\nGender: Male\nEducation: Bachelor's degree in Computer Science\nProfession: IT Manager\nIncome: $75,000\n\nFinancial Situation:\nWith his steady income and prudent financial management, David has accumulated a comfortable retirement savings and investment portfolio. He is able to maintain a good quality of life, while also contributing to his children's college funds and occasional charitable donations.\n\nShopping Habits:\nDavid tends to be a practical and discerning shopper. He values durability, functionality, and reliability over the latest trends. When making purchases, he thoroughly researches products and compares prices to ensure he is getting the best value. David prefers to shop online for convenience, but he also enjoys browsing through local electronics and home improvement stores.\n\nProfessional Life:\nAs an IT Manager, David is responsible for overseeing the company's technology infrastructure, implementing new systems and software, and managing the IT team. He is skilled at problem-solving, strategic planning, and fostering a collaborative work environment. David stays up-to-date with the latest industry developments and often attends technology conferences and seminars.\n\nPersonal Style:\nDavid's personal style is practical and comfortable, with a touch of professionalism. He typically wears button-down shirts, slacks, and leather shoes to the office. On weekends, he enjoys wearing more casual attire, such as polo shirts, khakis, and sneakers. David values quality and timelessness in his wardrobe choices, rather than following the latest fashion trends.\n\nDavid resides in a cozy suburban home in the Midwest with his wife, where they enjoy tending to their vegetable garden and hosting gatherings for their extended family.",
+    "intent": "buy a high-quality, durable men's umbrella.",
+    "age": 62,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

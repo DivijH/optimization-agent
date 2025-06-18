@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Alex\n\nBackground:\nAlex is a passionate and driven young man who is just starting to build his career. He recently graduated from college with a degree in graphic design and is excited to put his creative skills to the test. Despite his relatively low income, Alex is determined to make the most of his opportunities and continue developing his craft.\n\nDemographics:\nAge: 24\nGender: Male\nEducation: Bachelor's Degree in Graphic Design\nProfession: Freelance Graphic Designer\nIncome: $25,000\n\nFinancial Situation:\nAs a freelance graphic designer, Alex's income falls within the $0 to $30,000 range. He is mindful of his spending and lives frugally, carefully budgeting his earnings to cover essential expenses and invest in his professional development. While his financial situation is modest, Alex is confident in his ability to grow his income as he gains more experience and builds his client base.\n\nShopping Habits:\nAlex's shopping habits reflect his desire to balance quality and affordability. He often seeks out sales, discounts, and secondhand stores to find affordable yet stylish clothing and supplies for his design work. When making larger purchases, such as a new computer or design software, he researches extensively to find the best value for his money.\n\nProfessional Life:\nAs a freelance graphic designer, Alex's days are filled with a variety of tasks, from client consultations and project briefs to creating designs and delivering final products. He is constantly learning and experimenting with new design techniques, software, and trends to stay ahead of the curve. Alex is passionate about his craft and is driven to continually improve his skills and build a strong portfolio.\n\nPersonal Style:\nAlex's personal style is a reflection of his creative and practical mindset. He favors a mix of casual and professional attire, often pairing graphic tees, slim-fit jeans, and comfortable sneakers with a tailored blazer or button-down shirt. He enjoys accessorizing with statement pieces, such as a unique watch or a bold pair of glasses, that showcase his individual style.",
+    "intent": "buy a high-quality, stylish ashtray for men.",
+    "age": 24,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

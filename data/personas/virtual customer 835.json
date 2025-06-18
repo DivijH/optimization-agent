@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jacob\n\nBackground:\nJacob is a young and ambitious individual who is actively pursuing his dreams and carving out his path in the world. Despite facing financial challenges, he remains determined to build a successful future for himself.\n\nDemographics:\nAge: 26\nGender: Male\nEducation: High School Diploma\nProfession: Freelance Graphic Designer\nIncome: $25,000\n\nFinancial Situation:\nAs a freelance graphic designer, Jacob's income can be inconsistent, but he has learned to manage his finances carefully. He lives frugally, budgeting his money to cover essential expenses and minimize debt. While he may not have significant savings, Jacob is steadily working towards financial stability and independence.\n\nShopping Habits:\nJacob's shopping habits are guided by necessity and practicality. He is selective in his purchases, focusing on affordable, high-quality items that will serve him well in both his personal and professional life. He actively seeks out sales, discounts, and secondhand opportunities to stretch his limited budget.\n\nProfessional Life:\nJacob's passion for design and visual storytelling has led him to pursue a freelance career as a graphic designer. He works with a variety of clients, from small local businesses to online startups, providing creative solutions and tailored design services. Jacob is constantly honing his skills, learning new software, and exploring innovative design techniques to stay competitive in the dynamic field.\n\nPersonal Style:\nJacob's personal style reflects his youthful energy and practical mindset. He favors versatile, comfortable clothing that can transition from work to leisure activities. While he may not indulge in high-end fashion, Jacob takes pride in curating a wardrobe that is both functional and stylish.\n\nIn his free time, Jacob enjoys exploring his creative hobbies, such as photography and sketching. He finds solace in these artistic pursuits, which not only provide an outlet for his creativity but also serve as a means of personal growth and self-expression.",
+    "intent": "buy the \"Prey\" blu-ray movie.",
+    "age": 26,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

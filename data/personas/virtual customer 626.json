@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jade\n\nBackground:\nJade is a passionate, creative individual who is navigating the early stages of her professional journey. With a degree in graphic design, she is determined to carve out a fulfilling career that allows her to merge her artistic talents with her desire to make a positive impact.\n\nDemographics:\nAge: 24\nGender: Female\nEducation: Bachelor's degree in Graphic Design\nProfession: Freelance Graphic Designer\nIncome: $22,000\n\nFinancial Situation:\nAs a freelance graphic designer, Jade's income can be variable and unpredictable. She manages her finances carefully, living within a modest budget and relying on side gigs and part-time work to supplement her freelance earnings. Despite the financial challenges, Jade remains optimistic and focused on building her creative portfolio and client base.\n\nShopping Habits:\nJade values unique, visually-appealing items that reflect her personal style and creative sensibilities. She frequents local thrift stores, artisanal markets, and online platforms that offer one-of-a-kind, sustainably-sourced products. When making purchases, Jade strives to support small businesses, independent artists, and ethical brands.\n\nPersonal Life:\nIn her free time, Jade indulges in her artistic hobbies, such as painting, printmaking, and experimental photography. She finds joy in collaborating with fellow creatives and attending local art events and exhibitions. Jade also values self-care practices, such as meditation, journaling, and spending time in nature, which help her maintain a balanced and fulfilling lifestyle.\n\nProfessional Life:\nJade's passion for graphic design and her exceptional eye for visual storytelling have enabled her to build a diverse portfolio of freelance projects. She works with clients ranging from local small businesses to social impact organizations, creating branding materials, digital designs, and marketing collateral. Jade constantly seeks opportunities to expand her skillset and explore new creative avenues.",
+    "intent": "buy clear storage containers for organizing my art supplies.",
+    "age": 24,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a 34-year-old tech professional who has carved out a successful career in the rapidly evolving world of software development. With a keen eye for problem-solving and a passion for innovation, Ethan has climbed the corporate ladder, honing his skills and taking on increasingly complex projects that challenge him both intellectually and creatively.\n\nDemographics:\nAge: 34\nGender: Male\nEducation: Bachelor's degree in Computer Science\nProfession: Software Developer\nIncome: $68,000\n\nFinancial Situation:\nEthan's steady income as a software developer allows him to maintain a comfortable lifestyle and pursue his personal and professional interests. He is a diligent saver, allocating a portion of his earnings towards retirement accounts and emergency funds, while also allowing himself the occasional splurge on hobbies and experiences that bring him joy.\n\nShopping Habits:\nEthan approaches shopping with a pragmatic yet discerning eye. He values quality and functionality, often investing in durable, high-performance products that can withstand the demands of his active lifestyle. When it comes to consumer electronics and tech gadgets, Ethan stays up-to-date with the latest innovations, carefully researching and comparing options to ensure he gets the best bang for his buck.\n\nProfessional Life:\nAs a software developer, Ethan is constantly immersed in the latest technologies and programming languages, constantly expanding his skillset to stay ahead of the curve. He thrives on the challenge of tackling complex problems and translating client needs into innovative digital solutions. Ethan's attention to detail, analytical thinking, and collaborative spirit make him a valuable asset to his team and the company as a whole.\n\nPersonal Style:\nEthan's personal style reflects his active and versatile lifestyle. He favors a blend of contemporary and casual pieces, often opting for comfortable yet stylish clothing that allows him to transition seamlessly between work and leisure activities. Ethan's wardrobe includes a mix of well-fitted jeans, tailored button-down shirts, and versatile outerwear that can be layered for different weather conditions. He takes pride in curating a wardrobe that is both practical and reflective of his personal style.",
+    "intent": "buy a skull archway decoration for the front of my home.",
+    "age": 34,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

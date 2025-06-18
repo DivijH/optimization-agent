@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is an aspiring graphic designer who recently launched his own freelance business. He is passionate about creating visually striking designs that help his clients effectively communicate their brand's message.\n\nDemographics:\nAge: 30\nGender: Male\nEducation: Bachelor's degree in Graphic Design\nProfession: Freelance Graphic Designer\nIncome: $55,000\n\nFinancial Situation:\nAs a self-employed graphic designer, Michael's income can fluctuate, but he has managed to maintain a comfortable financial situation. He is mindful of his spending and actively saves for both short-term goals and long-term investments.\n\nShopping Habits:\nMichael enjoys browsing for unique and creative products that align with his artistic sensibilities. He often shops at local independent stores and online marketplaces that feature handmade or limited-edition items. While he is conscious of his budget, he is willing to invest in high-quality materials and tools that support his design work.\n\nProfessional Life:\nMichael spends the majority of his time working on client projects, networking with other creative professionals, and continuously honing his design skills. He values the flexibility and autonomy of being a freelancer, but also recognizes the importance of maintaining a healthy work-life balance.\n\nPersonal Style:\nMichael's personal style reflects his creative and laid-back personality. He favors a mix of casual and stylish pieces, such as well-fitted jeans, graphic t-shirts, and statement accessories. He enjoys experimenting with different looks and staying up-to-date with the latest fashion trends.\n\nMichael typically flies with JetBlue and wakes up at 8 am each day to start his workday.\nMichael lives in Seattle.",
+    "intent": "buy a massage pad for back pain relief.",
+    "age": 30,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

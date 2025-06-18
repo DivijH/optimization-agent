@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Frank\n\nBackground:\nFrank is a retiree who spends his time pursuing his hobbies and taking care of his family. After working blue-collar jobs for most of his life, he's now enjoying his golden years with a modest income.\n\nDemographics:\nAge: 63\nGender: Male\nEducation: High school diploma\nProfession: Retired\nIncome: $25,000\n\nFinancial Situation:\nFrank lives on a fixed income from his pension and Social Security benefits. He is careful with his spending, prioritizing necessities and leaving little room for frivolous purchases.\n\nShopping Habits:\nFrank tends to be a cautious shopper, taking the time to research and compare prices before making a purchase. He values quality and durability over trends, preferring to invest in items that will last. Frank often shops at local thrift stores or discount retailers to stretch his budget.\n\nPersonal Life:\nIn his retirement, Frank enjoys spending time with his grandchildren, going for walks in the park, and working on DIY projects around the house. He takes pride in his ability to fix things and often shares his skills with his family and neighbors.",
+    "intent": "buy a Traxxas Slash body.",
+    "age": 63,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Carlos\n\nBackground:\nCarlos is a driven and ambitious social media strategist who is passionate about helping businesses navigate the ever-evolving digital landscape. With a keen eye for trends and a deep understanding of audience behavior, he crafts innovative campaigns that drive engagement and measurable results.\n\nDemographics:\nAge: 30\nGender: Male\nEducation: Bachelor's degree in Marketing\nProfession: Social Media Strategist\nIncome: $58,000\n\nFinancial Situation:\nCarlos has a comfortable income that allows him to maintain a balanced lifestyle. He is mindful of his spending, saving a portion of his earnings for future investments and experiences. He enjoys the occasional splurge on technology or travel, but overall, he is fiscally responsible.\n\nShopping Habits:\nAs a tech-savvy professional, Carlos keeps a close eye on the latest gadgets and digital tools that can enhance his work. He researches thoroughly, reads reviews, and seeks out the best value for his money. When it comes to personal style, he gravitates towards modern, minimalist fashion that reflects his professional persona.\n\nProfessional Life:\nCarlos thrives in the fast-paced world of social media marketing. He spends his days analyzing data, brainstorming creative content strategies, and collaborating with clients to achieve their digital goals. He is constantly learning, attending industry events, and staying ahead of the curve to ensure his clients' success.\n\nPersonal Style:\nCarlos's personal style is a reflection of his professional persona. He favors clean-cut, well-fitted clothing that exudes a sense of sophistication and confidence. He often sports button-down shirts, tailored trousers, and sleek leather shoes, completing the look with subtle accessories like a stylish watch or a minimalist wallet.",
+    "intent": "buy a pair of Futuro compression socks for men.",
+    "age": 30,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

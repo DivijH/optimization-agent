@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: George\n\nBackground:\nGeorge is a retired school teacher who has dedicated his life to educating and inspiring younger generations. Although he no longer holds a formal teaching position, he remains actively involved in his community, volunteering at local schools and youth organizations.\n\nDemographics:\nAge: 61\nGender: Male\nEducation: Bachelor's degree in Education\nProfession: Retired School Teacher\nIncome: $25,000\n\nFinancial Situation:\nAs a retiree living on a fixed income, George's financial situation is modest. He carefully manages his expenses, relying on his pension and Social Security benefits to cover his basic needs. Despite his limited means, he finds joy in simple pleasures and values experiences over material possessions.\n\nShopping Habits:\nGeorge tends to be a frugal shopper, often visiting thrift stores, garage sales, and discount retailers in search of bargains. He takes pride in finding hidden gems and repurposing items to give them new life. When it comes to necessities, he prioritizes quality and durability over the latest trends.\n\nProfessional Life:\nAlthough George is no longer employed as a full-time teacher, he remains deeply invested in education and continues to share his knowledge and wisdom with the younger generation. He volunteers as a tutor, mentor, and guest speaker, finding fulfillment in passing on his love of learning.\n\nPersonal Style:\nGeorge's personal style is practical and comfortable, reflecting his active lifestyle and dedication to community service. He favors casual, well-worn clothing that allows him to move freely and engage with the children and youth he works with. His wardrobe is a mix of classic pieces and functional attire, often including button-up shirts, khakis, and sturdy footwear.",
+    "intent": "buy a foot massager.",
+    "age": 61,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

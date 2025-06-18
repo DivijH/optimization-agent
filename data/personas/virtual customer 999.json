@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sophia\n\nBackground:\nSophia is a seasoned executive who has navigated the corporate world with grace and determination. After decades of climbing the ladder, she has reached the pinnacle of her career, serving as the Chief Financial Officer of a thriving multinational company. Sophia's wealth of experience and keen financial acumen have been instrumental in driving the organization's success.\n\nDemographics:\nAge: 64\nGender: Female\nEducation: Master's Degree in Accounting\nProfession: Chief Financial Officer\nIncome: $250,000\n\nFinancial Situation:\nSophia's position as the CFO of a major corporation places her firmly in the upper-income bracket, with an annual income that falls within the $94,001 to $1,000,000 range. She has meticulously managed her finances throughout her career, accumulating substantial savings, investments, and real estate holdings that provide a comfortable and secure retirement.\n\nShopping Habits:\nAs a sophisticated and discerning consumer, Sophia approaches shopping with a refined and pragmatic mindset. She invests in high-quality, timeless products that reflect her personal style and professional stature. From designer handbags to innovative tech gadgets, Sophia seeks out items that not only serve a practical purpose but also exude a sense of elegance and exclusivity. She is selective in her purchases, prioritizing value, durability, and environmental consciousness.\n\nPersonal Life:\nDespite her demanding career, Sophia maintains a balanced and fulfilling personal life. She is an avid art collector, frequently visiting galleries and auctions to add unique and valuable pieces to her growing collection. Sophia also enjoys traveling to exotic destinations, exploring new cultures, and immersing herself in culinary experiences that expand her palate. Additionally, she is an active philanthropist, contributing her time and resources to support various charitable organizations that align with her values.",
+    "intent": "buy a high-quality pearl necklace for men.",
+    "age": 64,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

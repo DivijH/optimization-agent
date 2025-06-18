@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Richard\n\nBackground:\nRichard is a successful entrepreneur and philanthropist who has built a thriving technology consulting business over the past two decades. Despite his wealth and professional accomplishments, he remains grounded and driven to make a positive impact on his community.\n\nDemographics:\nAge: 40\nGender: Male\nEducation: Master's degree in Computer Science\nProfession: Founder and CEO of a Technology Consulting Firm\nIncome: $180,000\n\nFinancial Situation:\nRichard's technology consulting business has been a consistent source of high income, allowing him to live comfortably and invest in various philanthropic initiatives. He is prudent with his spending, but also enjoys the occasional luxury purchase or travel experience.\n\nShopping Habits:\nRichard prefers to shop at high-end retailers and boutiques, seeking out quality, durable products that will last. He is not easily swayed by trends, instead focusing on classic, timeless pieces that reflect his personal style. Richard also enjoys the occasional online shopping spree, but values the in-person experience of browsing and interacting with sales associates.\n\nProfessional Life:\nAs the founder and CEO of a successful technology consulting firm, Richard is a respected leader in his industry. He takes great pride in mentoring and empowering his team, while also continuously seeking new ways to innovate and expand the company's offerings. Richard is deeply involved in the local startup community and serves on the board of several tech-focused nonprofit organizations.\n\nPersonal Style:\nRichard's personal style is a blend of sophistication and practicality. He favors well-fitted suits, tailored shirts, and polished leather shoes for the office, while also enjoying more casual attire, such as chinos, button-down shirts, and sweaters, for his leisure time. Richard takes great care in his personal grooming and often accessorizes with a stylish watch or a pair of designer sunglasses.\n\nIn his free time, Richard enjoys reading, hiking, and attending cultural events in the city. He is also an avid supporter of local charities and often organizes fundraising events to support causes close to his heart.",
+    "intent": "buy decorative light switch covers in a modern, minimalist style.",
+    "age": 40,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

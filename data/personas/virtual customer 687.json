@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a young, ambitious individual just starting to navigate the complexities of adulthood. Fresh out of high school, he is determined to forge his own path and make his mark on the world.\n\nDemographics:\nAge: 21\nGender: Male\nEducation: High School Diploma\nProfession: Barista at a local coffee shop\nIncome: $24,000\n\nFinancial Situation:\nAs a barista, Ethan's income falls within the range of $0 to $30,000. While it's a modest salary, he is learning to manage his finances responsibly, budgeting carefully to cover his basic living expenses and occasional discretionary spending.\n\nShopping Habits:\nEthan's shopping habits reflect his desire to balance practicality and personal expression. He seeks out affordable, versatile clothing and items that allow him to maintain a stylish, yet casual appearance. When making purchases, he often scours online marketplaces and thrift stores for unique finds that align with his evolving personal style.\n\nPersonal Life:\nOutside of work, Ethan is an active and engaged member of his community. He volunteers at a local youth center, mentoring underprivileged children and helping them explore their creative interests. In his free time, Ethan enjoys pursuing his own passions, such as playing the guitar and exploring the great outdoors through hiking and camping trips.",
+    "intent": "buy a massage mat",
+    "age": 21,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

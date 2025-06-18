@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Martha\n\nBackground:\nMartha is a resilient and experienced administrative professional who has navigated the ups and downs of the corporate world for over two decades. Despite the challenges, she has remained committed to her career and has found fulfillment in supporting the success of her organization.\n\nDemographics:\nAge: 52\nGender: Female\nEducation: Associate's Degree in Business Administration\nProfession: Executive Assistant\nIncome: $65,000\n\nFinancial Situation:\nWith her steady income and years of experience, Martha has built a comfortable financial foundation. She manages her money prudently, saving for retirement and occasional travel, while also contributing to her children's college funds. Though not extravagant, Martha's financial stability allows her to enjoy a moderate lifestyle and provide for her family's needs.\n\nShopping Habits:\nMartha approaches shopping with a practical and discerning eye. She values quality over quantity, investing in durable, timeless pieces that will serve her well in both her professional and personal life. She enjoys the occasional splurge, but overall, she is a thoughtful consumer, seeking out sales and researching purchases to ensure she is getting the best value.\n\nPersonal Life:\nOutside of work, Martha is an active member of her community, volunteering at her local church and participating in book clubs and social gatherings. She finds joy in spending quality time with her two grown children and planning family outings. In her free time, Martha indulges in her hobbies, such as gardening, cooking, and exploring new restaurants in the city.",
+    "intent": "buy a bottle of red wine.",
+    "age": 52,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

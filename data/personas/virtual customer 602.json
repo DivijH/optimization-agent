@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Melissa\n\nBackground:\nMelissa is a determined and resourceful young woman who is navigating the challenges of establishing financial stability and independence. Despite her limited income, she remains optimistic and committed to building a better life for herself.\n\nDemographics:\nAge: 27\nGender: Female\nEducation: Associate's Degree\nProfession: Retail Associate\nIncome: $22,000\n\nFinancial Situation:\nMelissa's income as a retail associate falls within the range of $0 to $30,000. She faces ongoing financial constraints, often struggling to cover her basic living expenses, such as rent, utilities, and groceries. While she receives some government assistance, Melissa is committed to becoming self-sufficient and reducing her reliance on external support.\n\nShopping Habits:\nMelissa's shopping habits are primarily focused on necessity and value. She carefully budgets her limited funds, seeking out sales, discounts, and secondhand stores to find affordable options for clothing, household items, and other essentials. Whenever possible, she looks for ways to save money, such as buying in bulk or utilizing coupons.\n\nProfessional Life:\nMelissa currently works as a retail associate, providing customer service and assisting customers in a local store. While she finds the work rewarding, she recognizes the limitations of her current position and is actively exploring opportunities for career advancement or additional income streams, such as freelance work or part-time jobs.\n\nPersonal Style:\nMelissa's personal style reflects her practical and pragmatic approach to life. She favors comfortable, durable clothing that allows her to move freely and easily throughout her workday. Her wardrobe consists mainly of versatile basics, such as jeans, t-shirts, and casual dresses, complemented by affordable accessories. Melissa prioritizes functionality over high-end fashion, focusing on pieces that will serve her well in both professional and everyday settings.\n\nIn her free time, Melissa enjoys exploring low-cost recreational activities, such as visiting local parks, attending free community events, and reading. She also values the importance of maintaining a healthy lifestyle, incorporating regular exercise routines and mindfulness practices into her daily routine.",
+    "intent": "add a wood backscratcher for adults to my shopping cart.",
+    "age": 27,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

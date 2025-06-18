@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a seasoned executive with a diverse professional background. After years of honing his skills in various leadership roles, he has now taken on the position of Chief Operating Officer at a thriving technology startup. Known for his strategic vision and ability to navigate complex challenges, David has become a highly respected figure in his industry.\n\nDemographics:\nAge: 49\nGender: Male\nEducation: MBA\nProfession: Chief Operating Officer at a Technology Startup\nIncome: $110,000\n\nFinancial Situation:\nDavid's solid financial footing is a result of his successful career and prudent money management. He has built a diverse investment portfolio, including real estate, stocks, and retirement accounts, ensuring a comfortable and secure financial future. While he enjoys the occasional luxury purchase, David maintains a balanced approach to spending, prioritizing long-term financial stability.\n\nShopping Habits:\nDavid's shopping habits reflect his sophisticated taste and practical nature. He prefers high-quality, durable products that will stand the test of time, whether it's a well-crafted suit for the office or a reliable piece of technology for his home. He takes the time to research and compare options, often seeking out reviews and recommendations from trusted sources before making a purchase.\n\nProfessional Life:\nAs the Chief Operating Officer, David is responsible for overseeing the day-to-day operations of the technology startup. He works closely with the executive team to develop and implement strategic initiatives that drive growth, improve efficiency, and enhance the overall performance of the organization. David's leadership style is collaborative, and he is skilled at motivating and empowering his team to achieve their full potential.\n\nPersonal Style:\nDavid's personal style is a reflection of his status and professional persona. He favors well-tailored suits, crisp dress shirts, and polished leather shoes for the office. On more casual occasions, he gravitates towards high-quality, timeless pieces that maintain a refined and sophisticated look. David's attention to detail and preference for classic, versatile clothing ensure that he always presents a polished and put-together appearance.",
+    "intent": "buy a Glock 17 Gen 3 magazine.",
+    "age": 49,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

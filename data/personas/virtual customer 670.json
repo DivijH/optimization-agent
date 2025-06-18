@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Samantha\n\nBackground:\nSamantha is a passionate artist and freelance graphic designer who is navigating the challenges of building a career in the creative industry. Despite the financial constraints she faces, she remains dedicated to her craft and is constantly exploring new ways to share her unique vision with the world.\n\nDemographics:\nAge: 28\nGender: Female\nEducation: Associate's Degree in Graphic Design\nProfession: Freelance Graphic Designer\nIncome: $22,000\n\nFinancial Situation:\nAs a freelance graphic designer, Samantha's income can be inconsistent, fluctuating between periods of steady work and uncertain earnings. She carefully manages her finances, living frugally and supplementing her design income with occasional odd jobs or gig work. Although she faces financial limitations, Samantha remains optimistic and resourceful, finding creative ways to support herself while pursuing her artistic passions.\n\nShopping Habits:\nSamantha's shopping habits are a reflection of her financial situation and her commitment to sustainability. She frequents thrift stores, online marketplaces, and local artist fairs in search of unique, affordable items that align with her personal aesthetic. When making purchases, she prioritizes quality over quantity, investing in well-made, durable products that she can use for an extended period.\n\nPersonal Life:\nIn her free time, Samantha dedicates herself to her artistic endeavors, working on personal design projects, experimenting with new mediums, and attending local art events. She finds solace in the creative process, using it as a means of self-expression and emotional exploration. Samantha also values her close-knit community of fellow artists and creatives, drawing inspiration and support from their shared experiences.\n\nPersonal Style:\nSamantha's personal style is a reflection of her creative spirit and her desire to be unique. She curates a wardrobe filled with vintage finds, handmade pieces, and bold, statement-making accessories. Her look often features a mix of eclectic patterns, vibrant colors, and unconventional silhouettes, showcasing her individuality and her commitment to artistic self-expression.",
+    "intent": "buy a 32-pack of Gatorade variety pack, including flavors such as fruit punch, blue raspberry, and lemon-lime.",
+    "age": 28,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

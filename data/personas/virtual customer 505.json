@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Samantha\n\nBackground:\nSamantha is a driven and innovative entrepreneur who has found success in the tech industry. With a keen eye for emerging trends and a passion for problem-solving, she has founded and grown multiple tech startups, earning her a comfortable income and a reputation as a visionary leader in her field.\n\nDemographics:\nAge: 32\nGender: Female\nEducation: Master's Degree in Computer Science\nProfession: Tech Entrepreneur\nIncome: $125,000\n\nFinancial Situation:\nSamantha's entrepreneurial ventures have placed her in a financially stable position, with an income that falls within the $94,001 to $1,000,000 range. She is prudent with her money, investing a significant portion of her earnings to ensure long-term financial security and growth.\n\nShopping Habits:\nSamantha's shopping habits reflect her success and sophisticated taste. She gravitates towards high-quality, well-designed products that combine functionality and style. While she is not afraid to invest in premium items, Samantha also appreciates the value of a good bargain and often seeks out deals on luxury goods.\n\nProfessional Life:\nAs the founder and CEO of multiple tech startups, Samantha's days are filled with a dynamic mix of strategic planning, team management, and problem-solving. She is passionate about driving innovation and empowering her employees to reach their full potential. Samantha is also an active investor, providing mentorship and funding to promising startups in her industry.\n\nPersonal Life:\nDespite her demanding professional life, Samantha prioritizes work-life balance and makes time for her hobbies and personal interests. She enjoys staying physically active through activities like yoga and hiking, and she is an avid reader with a keen interest in the latest developments in technology and entrepreneurship. Samantha also dedicates a portion of her time and resources to various philanthropic initiatives, reflecting her commitment to making a positive impact on her community.",
+    "intent": "buy a jewelers saw.",
+    "age": 32,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

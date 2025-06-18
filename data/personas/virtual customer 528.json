@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jonah\n\nBackground:\nJonah is a passionate and hardworking young man who is navigating the challenges of early adulthood. With a strong desire to make a positive impact, he is currently exploring different paths to find his true calling.\n\nDemographics:\nAge: 19\nGender: Male\nEducation: High school diploma\nProfession: Retail sales associate\nIncome: $24,000\n\nFinancial Situation:\nAs a recent high school graduate, Jonah is still establishing his financial independence. With a part-time job in retail, he earns a modest income that allows him to cover his basic living expenses and start saving for the future. He is budget-conscious and looks for ways to stretch his dollars.\n\nShopping Habits:\nJonah's shopping habits reflect his practical and value-conscious mindset. He frequents discount stores, thrift shops, and online marketplaces to find affordable, quality items. When making purchases, he prioritizes functionality and durability over trends or status symbols.\n\nProfessional Life:\nJonah's current job in retail provides him with steady income and valuable customer service experience. However, he sees this as a temporary stepping stone and is actively exploring alternative career paths that align with his passions and values. Jonah is eager to find a role that will allow him to make a meaningful contribution to his community.\n\nPersonal Style:\nJonah's personal style is understated and casual, with a focus on comfort and practicality. He gravitates towards classic, versatile pieces that can be easily mixed and matched, such as t-shirts, jeans, and comfortable shoes. Jonah's style is a reflection of his down-to-earth and unpretentious personality.\n\nIn his free time, Jonah enjoys volunteering at local community organizations, exploring the great outdoors, and engaging in creative hobbies like writing and photography. He is driven by a desire to learn, grow, and make a positive impact on the world around him.",
+    "intent": "buy a pack of needle and thread, dental floss, and other sewing necessities.",
+    "age": 19,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

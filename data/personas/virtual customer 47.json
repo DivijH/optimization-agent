@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Amelia\n\nBackground:\nAmelia is a marketing manager at a mid-sized tech company. She is passionate about using data-driven insights to create effective marketing campaigns that drive business growth.\n\nDemographics:\n\nAge: 31\nGender: Female\nEducation: Bachelor's degree in Business Administration\nProfession: Marketing Manager\nIncome: $72,000\n\nFinancial Situation:\nAmelia has a comfortable income that allows her to save for the future while also enjoying some lifestyle expenses. She is mindful of her spending and aims to maintain a healthy financial balance.\n\nShopping Habits:\nAmelia enjoys browsing for fashionable and practical items, both online and in-person. She often researches products and reviews before making purchases, seeking a balance between quality and value. Amelia appreciates brands that align with her personal values and interests.\n\nProfessional Life:\nAs a marketing manager, Amelia's days are filled with a mix of analytical work, creative projects, and team collaboration. She thrives in a fast-paced environment and is always looking for ways to improve the company's marketing strategies.\n\nPersonal Style:\nAmelia has a modern, polished style that she adapts to different work and social settings. She enjoys experimenting with trends but also has a few timeless pieces that she relies on. Amelia gravitates towards neutral tones and classic silhouettes, often accessorizing with statement jewelry or scarves.\n\nAmelia is a coffee enthusiast and frequents local cafes in her city of Seattle. She is an avid hiker and tries to spend time outdoors on the weekends.",
+    "intent": "buy a holographic microcosm electronic device.",
+    "age": 31,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

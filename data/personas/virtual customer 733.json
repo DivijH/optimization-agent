@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sonya\n\nBackground:\nSonya is a resilient and compassionate retired nurse who has dedicated her life to caring for others. After a fulfilling career in the medical field, she now spends her days volunteering at a local community center, where she provides support and companionship to the elderly.\n\nDemographics:\nAge: 59\nGender: Female\nEducation: Associate's Degree in Nursing\nProfession: Retired Nurse, Volunteer\nIncome: $20,000\n\nFinancial Situation:\nSonya's retirement income, which includes a modest pension and social security benefits, places her within the $0 to $30,000 range. She has learned to live within her means, carefully budgeting her finances to ensure she can meet her basic needs and continue her volunteer work. While her income is limited, Sonya finds joy in the simple pleasures of life and the fulfillment she derives from serving her community.\n\nShopping Habits:\nAs a frugal shopper, Sonya frequents thrift stores, secondhand shops, and discount retailers to find affordable necessities. She takes pride in her ability to stretch her budget and discover hidden gems. Sonya's shopping habits are guided by practicality and a desire to make the most of her limited resources.\n\nPersonal Life:\nSonya's retirement years are filled with a renewed sense of purpose and connection. She volunteers several days a week at the community center, where she organizes social activities, leads exercise classes, and provides a listening ear to the elderly. Sonya finds deep fulfillment in the relationships she has built and the positive impact she has on the lives of those around her.\n\nIn her free time, Sonya enjoys engaging in low-cost hobbies that bring her joy, such as gardening, reading, and participating in local community events. She has also discovered a passion for knitting and often donates her handmade items to local charities.\n\nDespite the financial challenges she faces, Sonya maintains a positive outlook on life, finding contentment in the simple things and the opportunity to make a difference in her community.",
+    "intent": "add the Aircat extended straight die grinder to my cart",
+    "age": 59,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

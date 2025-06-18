@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Samantha\n\nBackground:\nSamantha is a successful marketing executive who has built an impressive career over the past two decades. She is known for her strategic thinking, innovative approach, and ability to lead high-performing teams.\n\nDemographics:\nAge: 45\nGender: Female\nEducation: Master's degree in Marketing\nProfession: Marketing Executive\nIncome: $125,000\n\nFinancial Situation:\nSamantha's income as a marketing executive places her in a comfortable financial position. She is able to maintain a high standard of living, while also contributing to her retirement savings and investing in personal interests.\n\nShopping Habits:\nSamantha is a discerning shopper who appreciates quality and style. She enjoys browsing high-end retail stores and online platforms, seeking out the latest fashion trends and designer products. However, she is also mindful of her spending and makes thoughtful purchasing decisions.\n\nProfessional Life:\nSamantha is a driven and ambitious marketing professional who has climbed the corporate ladder. She is responsible for overseeing the marketing strategies and campaigns for a large consumer-facing brand, constantly seeking ways to stay ahead of the competition and exceed her clients' expectations.\n\nPersonal Style:\nSamantha's personal style reflects her polished and sophisticated approach to life. She favors sleek, tailored clothing in bold colors and patterns, often complemented by statement accessories. She takes pride in her appearance and uses fashion as a means of self-expression.\n\nIn her free time, Samantha enjoys exploring new restaurants and attending cultural events. She is also an avid reader and enjoys staying up-to-date on the latest industry trends and innovations.",
+    "intent": "buy an outdoor ashtray with lid for smoking weed.",
+    "age": 45,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

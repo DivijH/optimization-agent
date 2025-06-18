@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a seasoned marketing executive who has worked his way up the corporate ladder over the past three decades. With a deep understanding of consumer behavior and a knack for crafting effective campaigns, he currently serves as the Vice President of Marketing for a mid-sized technology company.\n\nDemographics:\nAge: 61\nGender: Male\nEducation: Bachelor's Degree in Business Administration\nProfession: Vice President of Marketing\nIncome: $75,000\n\nFinancial Situation:\nMichael has built a comfortable financial foundation over the years, with a healthy mix of investments, savings, and a stable income. While he occasionally splurges on high-end gadgets or luxury travel, he is generally prudent with his spending, aiming to maintain a balanced lifestyle.\n\nShopping Habits:\nAs a busy executive, Michael values efficiency and convenience when it comes to shopping. He often turns to online platforms to research and purchase the items he needs, from tech accessories to apparel. While he is open to trying new products, he is also loyal to brands he has had positive experiences with in the past.\n\nProfessional Life:\nMichael's role as the VP of Marketing involves overseeing a team of talented professionals, developing and implementing marketing strategies, and collaborating with other departments to drive business growth. He takes pride in his work and is constantly seeking new ways to stay ahead of industry trends and outmaneuver the competition.\n\nPersonal Style:\nMichael's personal style reflects his professional persona \u2013 polished and sophisticated, yet comfortable. He favors well-tailored suits, dress shirts, and leather shoes for the office, but also enjoys more casual attire, such as button-down shirts and chinos, when off-duty.",
+    "intent": "buy a 23&me DNA testing kit.",
+    "age": 61,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

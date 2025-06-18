@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Evelyn\n\nBackground:\nEvelyn is a retired elementary school teacher who now spends her time volunteering at a local community center. She is passionate about providing educational support and resources to underprivileged children in her neighborhood.\n\nDemographics:\nAge: 63\nGender: Female\nEducation: Bachelor's degree in Elementary Education\nProfession: Retired Teacher\nIncome: $28,000\n\nFinancial Situation:\nEvelyn lives on a fixed income from her pension and part-time volunteering work. While her financial resources are limited, she is adept at budgeting and finding ways to make the most of her modest means.\n\nShopping Habits:\nEvelyn is a thrifty shopper who frequents secondhand stores, local flea markets, and community garage sales. She takes pride in her ability to find unique, high-quality items at a fraction of the retail price. Evelyn values functionality and durability over trends, and she often repurposes or upcycles items to extend their lifespan.\n\nPersonal Life:\nIn her retirement, Evelyn dedicates her time to volunteering at the local community center, where she helps tutor children, organize activities, and provide a nurturing environment for the youth in her neighborhood. She finds great fulfillment in giving back to her community and making a positive impact on the lives of those around her.",
+    "intent": "buy the Rockpods Vibe Silicone Cupping Set with Power Vibration, SKU: rok10389.",
+    "age": 63,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

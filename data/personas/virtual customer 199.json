@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a passionate environmental activist who dedicates her time to organizing grassroots campaigns and raising awareness about sustainability issues. She is driven by a deep concern for the planet and a desire to inspire positive change in her community.\n\nDemographics:\nAge: 23\nGender: Female\nEducation: Associate's Degree in Environmental Studies\nProfession: Environmental Activist (Volunteer)\nIncome: $20,000\n\nFinancial Situation:\nAs a volunteer activist, Emily's income is limited, but she manages her finances carefully to cover her basic needs. She is frugal by nature and prioritizes saving for future activist projects and educational opportunities.\n\nShopping Habits:\nEmily is conscious of her environmental impact and seeks out ethical, eco-friendly products whenever possible. She frequents thrift stores, second-hand shops, and local farmers' markets to reduce waste and support sustainable businesses. When making larger purchases, she extensively researches the brands and production methods to ensure alignment with her values.\n\nProfessional Life:\nEmily's primary focus is her volunteer work with various environmental organizations. She organizes protests, leads community clean-up efforts, and networks with like-minded individuals to amplify her impact. While she doesn't receive a formal salary, the sense of purpose and accomplishment she derives from her work is deeply fulfilling.\n\nPersonal Style:\nEmily's personal style reflects her commitment to sustainability and a minimalist lifestyle. She favors comfortable, versatile clothing made from natural fibers, and she often repurposes or upcycles items to create unique outfits. Her accessories, such as reusable water bottles and eco-friendly bags, reinforce her environmental values.\n\nEmily prefers to use public transportation or ride her bicycle to get around the city. She typically wakes up at 7 am to start her day of activism and community engagement.",
+    "intent": "buy a micro turbine generator.",
+    "age": 23,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

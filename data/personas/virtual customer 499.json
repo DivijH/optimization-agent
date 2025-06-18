@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ronnie\n\nBackground:\nRonnie is a resilient and resourceful individual who has weathered his fair share of life's storms. After a series of setbacks, he has reinvented himself as a skilled handyman, taking on a variety of odd jobs and freelance projects to make ends meet.\n\nDemographics:\nAge: 52\nGender: Male\nEducation: High School Diploma\nProfession: Handyman/Odd-Job Worker\nIncome: $18,000\n\nFinancial Situation:\nRonnie's financial situation is tight, but he has developed a knack for living frugally and making the most of his limited resources. He is adept at finding creative ways to save money, whether it's through DIY home repairs, bulk purchasing, or taking advantage of community resources.\n\nShopping Habits:\nRonnie's shopping habits are practical and utilitarian. He frequents hardware stores, thrift shops, and secondhand markets to find the tools and materials he needs for his various projects. When it comes to personal purchases, he focuses on essential items and rarely indulges in unnecessary luxuries.\n\nProfessional Life:\nRonnie's professional life is a patchwork of odd jobs and freelance work. He is a skilled handyman, able to tackle a wide range of home repair and maintenance tasks, from plumbing to carpentry. He also takes on landscaping, gardening, and other seasonal work to supplement his income.\n\nPersonal Style:\nRonnie's personal style reflects his practical and hardworking nature. He favors durable, comfortable clothing, such as work boots, sturdy jeans, and well-worn t-shirts. His attire is often covered in the remnants of his latest project, a testament to his dedication and hands-on approach to life.",
+    "intent": "add dr pepper to cart",
+    "age": 52,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

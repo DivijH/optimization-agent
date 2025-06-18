@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sophia\n\nBackground:\nSophia is a 57-year-old artist who has dedicated her life to exploring the intersection of nature, spirituality, and self-expression through her vibrant paintings. Despite facing financial challenges, she remains deeply committed to her creative practice, finding joy and fulfillment in the act of creating.\n\nDemographics:\nAge: 57\nGender: Female\nEducation: High School Diploma\nProfession: Artist\nIncome: $22,000\n\nFinancial Situation:\nAs a self-employed artist, Sophia's income can be unpredictable and often falls within the $0 to $30,000 range. She has learned to live simply, prioritizing the materials and tools she needs for her art over personal luxuries. Sophia supplements her income by teaching occasional art classes and selling her work through local galleries and online platforms.\n\nShopping Habits:\nSophia's shopping habits are focused on finding affordable, high-quality art supplies and supporting local, sustainable businesses. She frequents art supply stores, thrift shops, and online marketplaces in search of unique materials that inspire her creativity. Sophia values quality over quantity and often invests in durable, long-lasting products that align with her artistic vision.\n\nProfessional Life:\nSophia's days are filled with the joy of creating. She dedicates her time to experimenting with different mediums, exploring new techniques, and bringing her unique artistic vision to life. Sophia finds fulfillment in the process of creating, often losing herself in the flow of her work. She is deeply connected to the natural world, and her paintings often reflect her reverence for the beauty and rhythms of the earth.\n\nPersonal Style:\nSophia's personal style is a reflection of her artistic sensibilities and her connection to nature. She favors loose, flowing garments in earthy tones and natural fibers, often accessorizing with handmade jewelry or scarves. Sophia's appearance conveys a sense of serenity and authenticity, mirroring the peaceful and introspective nature of her creative practice.\n\nIn her free time, Sophia enjoys spending time in nature, whether it's tending to her small garden, hiking in local parks, or simply finding a quiet spot to meditate and draw inspiration for her next work of art.",
+    "intent": "buy a 32-ounce bottle of Gatorade Fruit Punch.",
+    "age": 57,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

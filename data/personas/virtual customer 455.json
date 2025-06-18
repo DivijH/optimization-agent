@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a passionate and resilient individual who has faced his fair share of challenges in life. Despite his modest financial situation, he remains determined to create a better future for himself and his loved ones.\n\nDemographics:\nAge: 46\nGender: Male\nEducation: High School Diploma\nProfession: Freelance Handyman\nIncome: $22,000\n\nFinancial Situation:\nDavid's income as a freelance handyman fluctuates, making it difficult for him to maintain a consistent financial stability. He lives a frugal lifestyle, carefully budgeting his resources to cover essential expenses such as rent, utilities, and basic necessities. While he struggles to save, David prioritizes financial responsibility and explores ways to supplement his income through various odd jobs and side hustles.\n\nShopping Habits:\nDavid's shopping habits are primarily focused on practicality and value. He tends to shop at thrift stores, secondhand shops, and discount retailers to find affordable, durable items to meet his everyday needs. When making purchases, he is cautious and deliberate, seeking out the best deals and prioritizing functionality over fashion.\n\nPersonal Life:\nIn his free time, David finds solace in simple pleasures. He enjoys tinkering with household repairs, discovering new ways to repurpose and upcycle discarded items, and exploring the great outdoors through hiking and camping. These activities not only provide him with a sense of fulfillment but also allow him to save money on entertainment and recreational expenses.\n\nDespite the financial challenges he faces, David maintains a positive outlook and is determined to improve his circumstances. He is constantly seeking opportunities to develop new skills and expand his professional network, with the ultimate goal of securing more stable and lucrative employment.",
+    "intent": "buy a spider web garland decoration for home.",
+    "age": 46,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

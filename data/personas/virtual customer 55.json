@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is an aspiring artist who is passionate about expressing her unique vision through a variety of mediums. She has a deep appreciation for the arts and is constantly seeking ways to hone her skills and push the boundaries of her creativity.\n\nDemographics:\nAge: 33\nGender: Female\nEducation: High school diploma\nProfession: Freelance artist\nIncome: $20,000\n\nFinancial Situation:\nAs a freelance artist, Olivia's income can be sporadic and unpredictable. She has learned to live frugally, carefully managing her expenses and seeking out opportunities to supplement her income through part-time jobs or commission-based work. Despite the financial challenges, Olivia remains dedicated to her artistic pursuits.\n\nShopping Habits:\nOlivia is mindful of her limited budget, often looking for sales, secondhand items, or DIY solutions to fulfill her needs. She enjoys browsing local art supply stores and online marketplaces to discover new materials and techniques that can enhance her creative process. When making purchases, Olivia prioritizes quality and functionality over fashion or trends.\n\nProfessional Life:\nOlivia's workday is fluid, as she balances her artistic endeavors with part-time employment to make ends meet. She values the flexibility of her freelance lifestyle, as it allows her to dedicate time to her personal projects and experimentation. Networking with other artists and seeking out collaborative opportunities are important aspects of Olivia's professional development.\n\nPersonal Style:\nOlivia's personal style reflects her artistic sensibilities. She enjoys mixing and matching eclectic pieces, often incorporating vintage or repurposed items into her outfits. Her style is a blend of bohemian and edgy, with a focus on comfort and self-expression.",
+    "intent": "buy a stall mat for my home art studio.",
+    "age": 33,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

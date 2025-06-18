@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a creative soul who has always been drawn to the arts. Despite facing financial challenges, he has dedicated his life to pursuing his passion for music, painting, and writing. With a resilient spirit and a deep appreciation for the beauty in the world, David strives to make a meaningful impact through his artistic expression.\n\nDemographics:\nAge: 39\nGender: Male\nEducation: High School Diploma\nProfession: Freelance Artist\nIncome: $26,000\n\nFinancial Situation:\nDavid's income, which falls within the $0 to $30,000 range, comes from a variety of freelance gigs and part-time jobs that allow him to support his artistic endeavors. Although he lives a modest lifestyle, he is skilled at budgeting and finding ways to make the most of his limited resources. David values experiences and personal growth over material possessions, often prioritizing the investment of his time and energy into his creative pursuits.\n\nShopping Habits:\nDavid is a mindful shopper, focusing on finding affordable, high-quality materials and supplies to support his artistic work. He frequents local art supply stores, thrift shops, and online marketplaces to source unique and affordable items. David takes pride in his ability to create beautiful works of art from repurposed or reclaimed materials, and he is always on the lookout for inspiring finds that can be incorporated into his projects.\n\nPersonal Life:\nIn his free time, David can be found in his home studio, immersed in the creative process. He derives great joy from experimenting with different mediums, techniques, and artistic styles, constantly pushing the boundaries of his own abilities. David also values community engagement and often participates in local art exhibitions, open mic nights, and collaborative projects that allow him to connect with like-minded individuals and share his artistic vision.\n\nPersonal Style:\nDavid's personal style is a reflection of his artistic sensibilities and his desire for comfort and functionality. He favors loose-fitting, bohemian-inspired clothing, such as vintage-inspired t-shirts, well-worn denim, and comfortable, eco-friendly footwear. David's wardrobe also includes a variety of artfully distressed or upcycled pieces, which he incorporates to add a unique and personalized touch to his overall look.",
+    "intent": "buy a 25th anniversary pendant.",
+    "age": 39,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

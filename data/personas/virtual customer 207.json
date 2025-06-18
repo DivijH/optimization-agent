@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a dedicated family man and small business owner who has built a successful local pet supply store. With a deep love for animals and a knack for customer service, he has created a welcoming and community-focused environment in his shop.\n\nDemographics:\nAge: 40\nGender: Male\nEducation: High School Diploma\nProfession: Small Business Owner (Pet Supply Store)\nIncome: $55,000\n\nFinancial Situation:\nAs the owner of a thriving local business, David's income falls within the middle-range. He is financially stable, allowing him to provide for his family and reinvest in his store to maintain its growth and success.\n\nShopping Habits:\nDavid is a discerning shopper who values quality and functionality. When purchasing items for his store or personal use, he carefully researches products to ensure they meet his high standards. He enjoys supporting local and independent businesses, often seeking out specialty suppliers and artisans.\n\nProfessional Life:\nDavid's passion for animals and his entrepreneurial spirit drive his dedication to his pet supply store. He takes pride in curating a diverse selection of high-quality products, offering exceptional customer service, and fostering a strong community presence. David is actively involved in local animal welfare initiatives and frequently collaborates with area shelters and rescue organizations.\n\nPersonal Style:\nDavid's personal style reflects his approachable and down-to-earth personality. He typically wears comfortable yet presentable attire, such as button-down shirts, khakis, and casual dress shoes. When not working, he often opts for t-shirts, jeans, and sturdy boots, embracing a practical and durable look.\n\nIn his free time, David enjoys spending quality time with his family, taking his beloved dog on hikes, and tending to his backyard garden. He is also an avid sports fan, enthusiastically supporting his local teams and occasionally attending games with his family and friends.",
+    "intent": "buy a high-quality, energy-efficient oven door glass replacement.",
+    "age": 40,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

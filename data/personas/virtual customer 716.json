@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sophia\n\nBackground:\nSophia is a driven and ambitious young entrepreneur who has already established a successful e-commerce business. With a keen eye for trends and a knack for strategic marketing, she has rapidly grown her online platform, catering to a diverse customer base.\n\nDemographics:\nAge: 19\nGender: Female\nEducation: High School Diploma\nProfession: Founder and CEO, E-Commerce Business\nIncome: $120,000\n\nFinancial Situation:\nAs the founder and CEO of her thriving e-commerce business, Sophia's income falls within the $94,001 to $1,000,000 range. Despite her young age, she has demonstrated a strong financial acumen, skillfully managing her company's resources and investing in its continued growth.\n\nShopping Habits:\nSophia approaches shopping with a mix of pragmatism and a keen eye for emerging trends. While she is mindful of her budget, she is not afraid to make strategic investments in high-quality, versatile items that align with her brand and personal style. She often seeks out unique, handcrafted, or sustainable products that can set her apart from the competition.\n\nProfessional Life:\nSophia's entrepreneurial spirit and innovative thinking have been the driving forces behind her e-commerce business's rapid expansion. She leads her team with a dynamic and collaborative approach, fostering a culture of creativity and agility. Sophia is constantly seeking new opportunities to diversify her product offerings, explore new markets, and stay ahead of industry trends.\n\nPersonal Style:\nSophia's personal style reflects her position as a young, successful entrepreneur. She favors a mix of contemporary and classic silhouettes, often incorporating bold colors, unique patterns, and statement accessories that showcase her confidence and personal flair. Sophia's attention to detail and her ability to blend style and professionalism make her a fashion role model within her industry.",
+    "intent": "buy 2 disco balls for home decor",
+    "age": 19,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

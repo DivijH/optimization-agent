@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a 20-year-old marketing associate at a renowned advertising agency. Despite his young age, he has already demonstrated a keen eye for creative strategy and a natural talent for building strong client relationships.\n\nDemographics:\nAge: 20\nGender: Male\nEducation: Bachelor's Degree in Marketing\nProfession: Marketing Associate\nIncome: $52,000\n\nFinancial Situation:\nEthan's income as a marketing associate provides him with a comfortable financial situation, allowing him to live independently in a modern apartment. While he is mindful of his spending, he enjoys treating himself to the occasional splurge, particularly when it comes to technology and professional development.\n\nShopping Habits:\nEthan is an avid online shopper, taking advantage of e-commerce platforms to find the latest trends and cutting-edge products. He is constantly on the lookout for innovative gadgets and software that can enhance his work and personal life. When it comes to fashion, Ethan prefers a clean, contemporary style, investing in well-made, versatile pieces.\n\nProfessional Life:\nAt the advertising agency, Ethan is known for his creative problem-solving skills and his ability to think outside the box. He works closely with clients to develop highly effective marketing campaigns that drive results. Ethan is also actively involved in mentoring younger members of the team, sharing his knowledge and insights.\n\nPersonal Style:\nEthan's personal style reflects his professional success and youthful energy. He favors a modern, minimalist aesthetic, often opting for slim-fit chinos, crisp button-down shirts, and sleek leather shoes. He complements his wardrobe with the latest tech accessories, such as a smartwatch and a high-end smartphone.\n\nEthan is an avid reader, staying up-to-date on the latest industry trends and innovations. In his free time, he enjoys exploring the vibrant food and music scene in his city.",
+    "intent": "buy a boys potty training urinal.",
+    "age": 20,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a young, ambitious professional working as a marketing associate at a dynamic startup in New York City. With a keen eye for trends and a knack for creative problem-solving, he plays a vital role in crafting innovative marketing campaigns that help his company stand out in a crowded industry.\n\nDemographics:\nAge: 22\nGender: Male\nEducation: Bachelor's Degree in Marketing\nProfession: Marketing Associate\nIncome: $58,000\n\nFinancial Situation:\nAs a marketing associate, Ethan earns a comfortable salary that allows him to maintain a reasonable standard of living in the bustling city of New York. While he is mindful of his spending, he enjoys the occasional indulgence, such as treating himself to a night out with friends or investing in quality, long-lasting items.\n\nShopping Habits:\nEthan is a savvy shopper who takes advantage of the convenience and variety offered by online platforms. He is always on the lookout for the latest trends and unique products that align with his personal style. Ethan values quality and is willing to invest in items that will last, but he also enjoys the thrill of finding a great deal.\n\nProfessional Life:\nEthan's workdays are filled with a dynamic mix of tasks, from brainstorming creative campaigns to analyzing market data and collaborating with his team. He thrives in the fast-paced, innovative environment of the startup, and is constantly seeking opportunities to expand his skills and knowledge.\n\nPersonal Style:\nEthan's personal style reflects his youthful energy and metropolitan lifestyle. He favors a blend of casual and semi-formal attire, often pairing well-fitted jeans with tailored shirts and trendy sneakers. Ethan enjoys experimenting with different looks and incorporates the latest fashion trends into his wardrobe.",
+    "intent": "buy a rubber play shield.",
+    "age": 22,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

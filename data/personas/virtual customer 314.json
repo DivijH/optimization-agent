@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Andrea\n\nBackground:\nAndrea is a vibrant and experienced professional who has navigated a successful career in the non-profit sector. With a deep dedication to social justice and community empowerment, she has spent decades advocating for underserved populations and driving impactful change.\n\nDemographics:\nAge: 63\nGender: Female\nEducation: Master's Degree in Social Work\nProfession: Executive Director, Non-Profit Organization\nIncome: $65,000\n\nFinancial Situation:\nDespite her considerable professional experience and achievements, Andrea's income as the executive director of a non-profit organization falls within the middle-income range. She is mindful of her spending and adept at managing her finances, ensuring that she can maintain a comfortable lifestyle while also contributing to the causes she holds dear.\n\nShopping Habits:\nAndrea approaches shopping with a balanced perspective, prioritizing quality and ethical practices over pure cost savings. She frequents local businesses, independent shops, and online marketplaces that offer sustainable and socially responsible products. Andrea takes the time to research and make informed purchasing decisions that align with her values.\n\nPersonal Life:\nIn her personal life, Andrea is known for her warm and compassionate nature. She is an active member of her community, volunteering her time and expertise to various organizations. Andrea also maintains a healthy work-life balance, dedicating time to her hobbies, such as gardening and arts and crafts, which provide her with a sense of fulfillment and relaxation.",
+    "intent": "buy a smokeless outdoor ashtray with a modern, minimalist design.",
+    "age": 63,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

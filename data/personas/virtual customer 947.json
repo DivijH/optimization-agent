@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a resilient and determined 54-year-old man who has faced his fair share of challenges throughout his life. After a series of unexpected setbacks, he has had to reinvent himself, learning to navigate the workforce in his later years.\n\nDemographics:\nAge: 54\nGender: Male\nEducation: High School Diploma\nProfession: Handyman and Odd-Job Worker\nIncome: $22,000\n\nFinancial Situation:\nMichael's income as a handyman and odd-job worker falls within the $0 to $30,000 range. He struggles to make ends meet, often relying on government assistance and the generosity of friends and family to cover his basic expenses. Budgeting and finding ways to stretch his limited resources are constant concerns for him.\n\nShopping Habits:\nMichael's shopping habits are focused on necessity and practicality. He seeks out sales, discounts, and secondhand options to find affordable tools, equipment, and supplies for his handyman work. When it comes to his personal needs, he prioritizes functionality and durability over fashion or trends.\n\nProfessional Life:\nAfter losing his previous job due to downsizing, Michael has had to adapt and find alternative ways to support himself. He has become a skilled handyman, taking on various odd jobs and repair tasks within his local community. While the work is often physically demanding, Michael takes pride in his ability to help others and provide for himself.\n\nPersonal Style:\nMichael's personal style is utilitarian and practical, reflecting the nature of his work. He typically wears durable, comfortable clothing that can withstand the wear and tear of his daily tasks. His appearance is often marked by the marks of his labor, but he takes care to present himself in a neat and tidy manner.\n\nIn his free time, Michael enjoys tinkering with his tools, exploring local parks and nature areas, and spending quality time with his grandchildren. Despite the financial challenges he faces, he remains resilient and optimistic, determined to create a better life for himself and those around him.",
+    "intent": "buy a durable, weatherproof rural route mailbox.",
+    "age": 54,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

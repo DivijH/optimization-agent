@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Aiden\n\nBackground:\nAiden is a driven and successful entrepreneur who has built a thriving technology startup from the ground up. His innovative mindset and market-savvy approach have been instrumental in driving his company's rapid growth and expansion.\n\nDemographics:\nAge: 31\nGender: Male\nEducation: Bachelor's degree in Computer Science\nProfession: Founder and CEO of a Technology Startup\nIncome: $150,000\n\nFinancial Situation:\nAiden's entrepreneurial venture has placed him firmly in the upper-middle-class income bracket, providing him with significant financial resources and stability. He is financially astute and strategically reinvests a portion of his earnings back into his business to fuel its continued growth and development.\n\nShopping Habits:\nAs a tech-savvy individual, Aiden enjoys browsing the latest gadgets, electronics, and innovative products. He is not afraid to invest in high-end, cutting-edge technology that aligns with his business needs and personal interests. At the same time, Aiden is mindful of the value and seeks out strategic deals and discounts to maximize his purchasing power.\n\nProfessional Life:\nAiden's passion for technology and entrepreneurship has been the driving force behind his professional success. He is constantly seeking new opportunities to innovate, disrupt, and stay ahead of the curve in his industry. His leadership skills, problem-solving abilities, and strategic vision have earned him the respect of his peers and the admiration of his employees.\n\nPersonal Style:\nAiden's personal style reflects his dynamic and driven personality. He favors a modern, minimalist aesthetic, often opting for well-fitted, high-quality clothing that exudes a sense of sophistication and confidence. His wardrobe consists of tailored suits, crisp button-down shirts, and sleek, stylish footwear that complement his professional persona while also allowing for a touch of personal expression.",
+    "intent": "buy the \"Brain Candy\" DVD.",
+    "age": 31,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

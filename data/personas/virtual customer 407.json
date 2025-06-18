@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Frank\n\nBackground:\nFrank is a retired veteran who has spent the last few years adjusting to life after his military service. With a wealth of experience and a strong sense of discipline, he is now focused on finding purpose and fulfillment in his golden years.\n\nDemographics:\nAge: 60\nGender: Male\nEducation: High School Diploma\nProfession: Retired Veteran\nIncome: $20,000\n\nFinancial Situation:\nFrank's primary source of income is his military pension, which, combined with a small part-time job, provides him with a modest living. While he may not have a substantial disposable income, Frank is resourceful and maintains a frugal lifestyle, prioritizing his basic needs and occasional leisure activities.\n\nShopping Habits:\nFrank's shopping habits reflect his practical and no-frills approach to life. He tends to favor functional, durable products that offer good value for his money. When making purchases, he thoroughly researches his options, seeking the most cost-effective solutions. Frank is not one to indulge in impulse buys or luxury items, but he will occasionally treat himself to a special purchase that aligns with his interests or needs.\n\nProfessional Life:\nAfter serving in the military for over two decades, Frank has transitioned into retirement. Though no longer in active service, he remains connected to the veteran community, volunteering his time and expertise to support fellow service members and their families. Frank also maintains a part-time job, which provides him with a sense of purpose and additional income to supplement his pension.\n\nPersonal Style:\nFrank's personal style is defined by comfort and practicality. He favors sturdy, well-fitting clothing that allows him to move freely and engage in his daily activities. His wardrobe consists of classic, timeless pieces like button-down shirts, khakis, and sensible footwear. While he may not be considered a fashion-forward individual, Frank's style reflects his no-nonsense approach to life and his focus on functionality over form.",
+    "intent": "buy a 10x12 ft. roll of durable rubber flooring for a shed.",
+    "age": 60,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

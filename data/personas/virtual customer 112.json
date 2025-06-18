@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Alexander\n\nBackground:\nAlexander is a passionate social media strategist who has quickly risen through the ranks of the digital marketing industry. With a keen understanding of online trends and a knack for crafting engaging content, he currently serves as the Social Media Manager for a fast-growing e-commerce startup.\n\nDemographics:\nAge: 26\nGender: Male\nEducation: Bachelor's Degree in Communication\nProfession: Social Media Manager\nIncome: $40,000\n\nFinancial Situation:\nAs a young professional, Alexander is still building his financial foundations. While his income falls within the $30,001 to $94,000 range, he is mindful of his spending and aims to save a portion of his earnings each month. He enjoys the occasional splurge on trendy tech gadgets or concert tickets, but he is also conscious of maintaining a balanced budget.\n\nShopping Habits:\nAlexander is a tech-savvy shopper who often turns to online platforms to research and purchase the latest products. He is drawn to innovative, cutting-edge items that can enhance his personal and professional life. At the same time, he is also conscious of finding the best value and often compares prices and reviews before making a purchase.\n\nProfessional Life:\nIn his role as the Social Media Manager, Alexander is responsible for developing and executing social media strategies that drive brand awareness, engagement, and customer acquisition for the startup. He thrives on the fast-paced, ever-evolving nature of digital marketing and is constantly seeking new ways to stay ahead of the curve.\n\nPersonal Style:\nAlexander's personal style reflects his youthful, dynamic personality. He favors a mix of casual and contemporary clothing, often pairing slim-fit jeans with graphic tees, hoodies, and sneakers. He is also fond of incorporating the latest fashion trends into his wardrobe, showcasing his ability to blend function and style.",
+    "intent": "buy a silver, minimalist collar necklace for women.",
+    "age": 26,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a dedicated high school history teacher who is passionate about inspiring his students to explore the complexities of the past. He takes great pride in his work and is committed to providing a well-rounded education that empowers his students to think critically and engage with the world around them.\n\nDemographics:\nAge: 40\nGender: Male\nEducation: Master's degree in History\nProfession: High School History Teacher\nIncome: $52,000\n\nFinancial Situation:\nAs a public-school teacher, David's income is stable, though not extravagant. He is financially responsible, allocating his earnings to cover his living expenses, contribute to his retirement savings, and occasionally treat himself to small luxuries, such as travel or hobbies.\n\nShopping Habits:\nDavid's shopping habits reflect his practical and thoughtful nature. He tends to invest in quality, long-lasting items, especially when it comes to classroom supplies and teaching materials. When making personal purchases, he seeks out ethical and sustainable products that align with his values. David enjoys browsing secondhand stores and online marketplaces for unique finds.\n\nProfessional Life:\nDavid's workday is filled with a variety of tasks, from lesson planning and grading to leading classroom discussions and extracurricular activities. He takes great pride in creating engaging and thought-provoking lesson plans that challenge his students to think beyond the textbook. Collaboration with his colleagues and professional development opportunities are important aspects of his career.\n\nPersonal Style:\nDavid's personal style is a reflection of his approachable and academic persona. He typically wears button-down shirts, slacks, and sweaters or cardigans, often in neutral tones or classic patterns. He values comfort and practicality, but also strives to maintain a polished, scholarly appearance that commands respect from his students.",
+    "intent": "buy a sturdy, high-quality umbrella to use on rainy days.",
+    "age": 40,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

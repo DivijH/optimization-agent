@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Alison\n\nBackground:\nAlison is a passionate advocate for social justice and community empowerment. After completing her undergraduate degree, she decided to dedicate her career to working with non-profit organizations that strive to make a positive impact on underserved communities.\n\nDemographics:\nAge: 33\nGender: Female\nEducation: Bachelor's Degree in Social Work\nProfession: Community Outreach Coordinator, Non-Profit Organization\nIncome: $27,000\n\nFinancial Situation:\nAs a community outreach coordinator for a non-profit organization, Alison's income falls within the $0 to $30,000 range. While her financial resources are limited, she is adept at budgeting and prioritizing her expenses to ensure she can cover her basic needs and occasionally treat herself to small indulgences that bring her joy.\n\nShopping Habits:\nAlison's shopping habits are focused on finding affordable, ethically-sourced, and sustainable products that align with her values. She is a conscious consumer, carefully researching brands and their practices before making purchases. Alison also enjoys thrifting, scouring secondhand stores and online marketplaces for unique finds that she can incorporate into her wardrobe.\n\nProfessional Life:\nAs the community outreach coordinator for a non-profit organization, Alison is responsible for building and maintaining relationships with local community groups, organizing events and workshops, and advocating for the needs of underserved populations. Her passion for social justice, strong communication skills, and ability to connect with diverse individuals have made her an invaluable asset to the organization.\n\nPersonal Style:\nAlison's personal style reflects her commitment to ethical and sustainable living. Her wardrobe is a mix of secondhand finds, ethically-produced garments, and versatile pieces that can be easily dressed up or down. She gravitates towards natural fabrics, earth-toned palettes, and timeless silhouettes that prioritize comfort and functionality. Alison's personal style is a reflection of her values and her desire to live in a way that minimizes her environmental impact.",
+    "intent": "buy a ninja foodi baking sheet.",
+    "age": 33,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

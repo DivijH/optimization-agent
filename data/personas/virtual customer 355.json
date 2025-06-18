@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a driven and ambitious young professional who has carved out a successful career in the tech industry. Despite his relatively young age, he has already made significant strides in his field, demonstrating a keen intellect and an unwavering work ethic.\n\nDemographics:\nAge: 29\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Software Engineer\nIncome: $65,000\n\nFinancial Situation:\nWith a solid income in the mid-range, Michael has achieved a level of financial stability that allows him to enjoy a comfortable lifestyle. He is prudent in his spending, regularly contributing to his savings and investment portfolio, while also allocating funds for occasional splurges and recreational activities.\n\nShopping Habits:\nMichael's shopping habits reflect his pragmatic and efficient nature. He tends to research extensively before making purchases, seeking out high-quality, durable products that offer the best value. While he is not averse to splurging on select items, such as the latest tech gadgets or high-performance gear for his active hobbies, he generally maintains a balanced and thoughtful approach to spending.\n\nProfessional Life:\nAs a software engineer, Michael is at the forefront of technological innovation, constantly learning and adapting to the rapid changes in his industry. He takes pride in his work, often going above and beyond to deliver exceptional results for his employer. Michael's technical expertise, combined with his excellent problem-solving skills, make him a valuable asset to his team.\n\nPersonal Style:\nMichael's personal style reflects his active lifestyle and practical nature. He favors comfortable, well-fitted attire that allows him to move freely, whether he's at the office or engaging in his outdoor adventures. His wardrobe consists of a mix of casual and smart-casual pieces, with a preference for quality, durable fabrics and clean, modern silhouettes.",
+    "intent": "buy a collection of john grisham dvd movies.",
+    "age": 29,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

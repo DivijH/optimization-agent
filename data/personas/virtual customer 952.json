@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a dedicated and resilient individual who has faced numerous challenges throughout his life. After experiencing job loss and financial setbacks, he has found purpose and fulfillment in his role as a community volunteer and part-time handyman. Despite his modest means, Michael's unwavering spirit and willingness to help others have made him a beloved figure in his local neighborhood.\n\nDemographics:\nAge: 52\nGender: Male\nEducation: High School Diploma\nProfession: Part-Time Handyman, Community Volunteer\nIncome: $25,000\n\nFinancial Situation:\nMichael's income falls within the lower range, as he balances his part-time handyman work with his volunteer commitments. While he faces financial constraints, he has developed a knack for frugal living and finding creative ways to make ends meet. He is skilled at budgeting and prioritizing his expenses to ensure he can maintain his modest lifestyle and occasional treats.\n\nShopping Habits:\nMichael's shopping habits reflect his practical and resourceful approach to life. He often shops at secondhand stores, thrift shops, and discount retailers, seeking out quality items at affordable prices. He takes pride in finding unique, gently used treasures that he can repurpose or repair. Michael also enjoys supporting local businesses and artisans, recognizing the value of community-based commerce.\n\nPersonal Style:\nMichael's personal style is unassuming and functional. He typically wears comfortable, well-worn clothing, such as durable jeans, sturdy work boots, and comfortable t-shirts or flannel shirts. He believes in the adage \"function over form\" and prioritizes practicality and durability in his wardrobe choices. However, Michael does take pride in his appearance and maintains a neat, tidy, and presentable look.\n\nPersonal Life:\nIn his free time, Michael finds immense joy in volunteering at the local community center, where he helps with various tasks and engages with the neighborhood's youth. He also enjoys tinkering with small electronics and household items, finding satisfaction in repairing and restoring them. Michael's simple yet fulfilling lifestyle is a testament to his resilience, selflessness, and unwavering commitment to making a positive impact on his community.",
+    "intent": "buy a simple, affordable pendant or necklace from Tous.",
+    "age": 52,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

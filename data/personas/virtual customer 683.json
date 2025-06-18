@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a successful business executive who has spent the past two decades building a thriving consulting firm. With a keen eye for strategic planning and a talent for navigating complex organizational challenges, he has become a respected leader in his industry.\n\nDemographics:\nAge: 53\nGender: Male\nEducation: Master's Degree in Business Administration\nProfession: Business Consultant, CEO\nIncome: $205,000\n\nFinancial Situation:\nDavid's professional accomplishments have afforded him a comfortable and stable financial standing. He diligently manages his assets, diversifying his investments to ensure long-term financial security. While he enjoys the perks of his success, David maintains a balanced approach, prioritizing smart spending and strategic savings.\n\nShopping Habits:\nAs a seasoned executive, David's shopping habits reflect his refined tastes and appreciation for quality. He carefully curates his wardrobe, favoring high-end designer labels and custom-tailored pieces. When it comes to larger purchases, such as luxury vehicles or high-tech gadgets, David conducts thorough research to ensure he is making informed and prudent decisions.\n\nProfessional Life:\nDavid's professional life is defined by his ability to navigate complex business challenges and drive strategic growth. As the CEO of his consulting firm, he is responsible for setting the overall vision and direction, while also managing a team of talented professionals. David is highly regarded for his strategic acumen, problem-solving skills, and ability to foster collaborative environments.\n\nPersonal Style:\nDavid's personal style exudes a sense of understated sophistication. He favors well-fitted, tailored suits and shirts, often complemented by sleek, polished accessories. While he is not one to follow the latest trends, David's wardrobe reflects his refined taste and attention to detail. He takes pride in presenting a professional and confident image, both in the boardroom and in social settings.",
+    "intent": "buy a high-quality 2x2 Rubik's cube.",
+    "age": 53,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

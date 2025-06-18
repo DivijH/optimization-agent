@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Evelyn\n\nBackground:\nEvelyn is a vibrant and engaged retiree, eager to embark on the next chapter of her life. After a fulfilling career as a high school English teacher, she is now exploring new hobbies and opportunities to stay active and connected with her community.\n\nDemographics:\nAge: 63\nGender: Female\nEducation: Master's Degree in English Literature\nProfession: Retired High School Teacher\nIncome: $60,000\n\nFinancial Situation:\nEvelyn's retirement income, a combination of her pension, social security, and personal savings, provides her with a comfortable financial cushion. She is prudent with her spending and enjoys the freedom to allocate resources towards her interests and passions.\n\nShopping Habits:\nEvelyn approaches shopping with a balanced perspective, seeking quality over quantity. She takes pride in her ability to find unique and meaningful items, whether it's a special piece of artwork for her home or a thoughtful gift for a loved one. Evelyn values the experience of browsing local artisanal shops and supporting small businesses in her community.\n\nProfessional Life:\nAs a retired teacher, Evelyn's professional life was dedicated to nurturing the minds and hearts of her students. She takes great satisfaction in the lasting impact she had on her community and is now exploring opportunities to volunteer and share her expertise with a new generation of learners.\n\nPersonal Style:\nEvelyn's personal style reflects her vibrant and youthful spirit. She embraces a classic, yet fashionable, aesthetic, with a preference for comfortable yet stylish clothing that allows her to move freely and engage in her various activities. Evelyn enjoys experimenting with accessories and playful touches to add a touch of individualism to her outfits.\n\nIn her leisure time, Evelyn indulges in her love for reading, gardening, and taking long walks around her neighborhood. She is also an active member of her local book club and enjoys attending cultural events and performances in her community.",
+    "intent": "buy a variety pack of root beer from an online retailer or local grocery store.",
+    "age": 63,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

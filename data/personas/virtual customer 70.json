@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a college student pursuing a degree in environmental science. She is passionate about sustainability and is actively involved in campus organizations dedicated to environmental conservation and activism.\n\nDemographics:\nAge: 18\nGender: Female\nEducation: College Student\nProfession: Environmental Activist\nIncome: $40,000\n\nFinancial Situation:\nAs a college student, Emily's income comes from a combination of scholarships, part-time jobs, and support from her parents. She is mindful of her spending and tries to live within her means, prioritizing her education and environmental initiatives over lavish purchases.\n\nShopping Habits:\nEmily's shopping habits reflect her eco-conscious values. She prefers to buy secondhand or sustainable clothing, and she often shops at thrift stores, consignment shops, and eco-friendly retailers. When making larger purchases, she thoroughly researches products to ensure they align with her environmental principles.\n\nPersonal Style:\nEmily's personal style is casual and comfortable, with a focus on ethical and sustainable fashion. She enjoys wearing oversized sweaters, vintage-inspired dresses, and practical, durable shoes. Her wardrobe is a mix of thrifted finds, locally made pieces, and ethical brand apparel.",
+    "intent": "buy a fat massager to burn fat.",
+    "age": 18,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

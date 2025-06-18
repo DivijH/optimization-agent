@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Samantha\n\nBackground:\nSamantha is a successful business executive with an entrepreneurial spirit. She has built a thriving tech startup from the ground up, driven by her passion for innovation and a desire to create positive change. Samantha's impressive career achievements are matched by her commitment to giving back to her community.\n\nDemographics:\nAge: 44\nGender: Female\nEducation: Master's Degree in Business Administration\nProfession: CEO, Technology Startup\nIncome: $185,000\n\nFinancial Situation:\nAs the CEO of a successful tech company, Samantha enjoys a comfortable financial standing. She has accumulated substantial savings and investments, allowing her to live a lifestyle that balances financial responsibility with occasional luxuries. Samantha is well-versed in managing her wealth and regularly consults with financial advisors to ensure her long-term financial security.\n\nShopping Habits:\nSamantha's shopping habits reflect her appreciation for quality and convenience. While she enjoys the occasional high-end purchase, she also seeks out ethical and sustainable brands that align with her values. Samantha is selective in her shopping, focusing on investment pieces that will last. She often leverages her extensive professional network to access exclusive shopping opportunities.\n\nProfessional Life:\nAs the CEO of a rapidly growing tech startup, Samantha's days are filled with a diverse array of responsibilities. She oversees the strategic direction of the company, manages a team of talented professionals, and actively seeks new opportunities for expansion and innovation. Samantha is known for her strong leadership skills, her ability to navigate complex challenges, and her commitment to fostering a positive and inclusive work culture.\n\nPersonal Life:\nOutside of her professional commitments, Samantha is an active philanthropist and community leader. She serves on the board of several nonprofit organizations, using her expertise and resources to drive positive change in areas such as education, healthcare, and environmental sustainability. Samantha also enjoys exploring her creative side through painting and photography, and she is an avid traveler, seeking out new experiences and cultures.",
+    "intent": "buy a package of frozen peas.",
+    "age": 44,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

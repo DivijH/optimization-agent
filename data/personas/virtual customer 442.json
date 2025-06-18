@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a passionate artist and freelance graphic designer, using her creative talents to support herself and pursue her passion projects.\n\nDemographics:\nAge: 33\nGender: Female\nEducation: Associate's degree in Graphic Design\nProfession: Freelance Graphic Designer\nIncome: $26,000\n\nFinancial Situation:\nAs a freelance designer, Emily's income can be variable, but she has learned to budget carefully and live within her means. She supplements her design work with part-time jobs and gig work to ensure financial stability. Emily prioritizes saving for emergencies and investing in equipment and tools to grow her design business.\n\nShopping Habits:\nEmily is a conscious consumer, seeking out ethical, sustainable, and locally-sourced products whenever possible. She enjoys browsing online marketplaces and small independent boutiques for unique, handmade items that align with her personal style. Emily is not swayed by trends and instead focuses on building a versatile wardrobe of high-quality, long-lasting pieces.\n\nPersonal Style:\nEmily's personal style is a blend of bohemian and minimalist. She often wears flowy dresses, comfortable pants, and oversized sweaters, complemented by statement jewelry and accessories. Emily gravitates towards natural fabrics, earthy tones, and vintage-inspired designs that reflect her artistic sensibilities.\n\nIn her free time, Emily can be found exploring local art galleries, attending community craft fairs, or hiking in the nearby nature reserves. She is an active volunteer at a local animal shelter, finding joy in giving back to her community.",
+    "intent": "buy a high-quality, realistic-looking airsoft gun for target practice and recreational use.",
+    "age": 33,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Alex\n\nBackground:\nAlex is a driven and ambitious young man who is navigating the early stages of his professional journey. With a strong entrepreneurial spirit, he has founded his own small technology startup, where he serves as the chief technology officer.\n\nDemographics:\nAge: 18\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Co-Founder and CTO of a Technology Startup\nIncome: $50,000\n\nFinancial Situation:\nAs a co-founder of a startup, Alex's income can be volatile, fluctuating with the company's funding and growth. However, he has managed to maintain a comfortable financial situation by living frugally and reinvesting a significant portion of his earnings back into the business. He is mindful of his spending and prioritizes investments that will help his startup thrive.\n\nShopping Habits:\nAlex's shopping habits reflect his pragmatic and future-oriented mindset. He tends to research products extensively, seeking out the most efficient and cost-effective options that will support his work and personal productivity. While he is not opposed to occasional splurges on high-quality tech gear or other tools that will enhance his entrepreneurial endeavors, he is generally cautious with his spending.\n\nProfessional Life:\nAlex's days are filled with a diverse array of tasks, from coding and product development to networking, fundraising, and strategic planning. He is passionate about the innovative solutions his startup is creating and is driven to see the company grow and succeed. Alex thrives on the fast-paced, ever-changing nature of the tech industry and is constantly seeking new challenges to tackle.\n\nPersonal Style:\nAlex's personal style is a blend of practicality and casual sophistication. He often opts for comfortable, versatile clothing that allows him to transition seamlessly between work and personal activities. His wardrobe consists of well-fitted, minimalist pieces, such as button-down shirts, dark jeans, and sleek sneakers. He values functionality and adaptability in his attire, as it reflects his dynamic lifestyle and entrepreneurial mindset.",
+    "intent": "buy a pair of black leg compression sleeves for women with a zipper.",
+    "age": 18,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

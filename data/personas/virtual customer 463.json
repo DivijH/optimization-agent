@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Aiden\n\nBackground:\nAiden is a driven and ambitious 19-year-old, who is currently completing his second year of a computer science degree at a prestigious university. He is passionate about technology and is determined to turn his passion into a successful career.\n\nDemographics:\nAge: 19\nGender: Male\nEducation: College student, pursuing a degree in Computer Science\nProfession: Student\nIncome: $58,000 (scholarships, part-time internship, and family support)\n\nFinancial Situation:\nAiden's financial situation is relatively stable, thanks to a combination of scholarships, a part-time internship, and support from his family. He is mindful of his spending, carefully budgeting his income to cover tuition, living expenses, and occasional indulgences.\n\nShopping Habits:\nAiden's shopping habits reflect his pragmatic and future-oriented mindset. He tends to invest in high-quality, durable products that he believes will serve him well in the long run, such as reliable tech devices, professional attire, and practical everyday items. He also takes advantage of student discounts and sales to maximize his purchasing power.\n\nProfessional Life:\nAiden is deeply immersed in the world of technology and computer science. He actively participates in campus coding clubs, hackathons, and tech-related extracurricular activities. He is constantly seeking opportunities to expand his knowledge, network with industry professionals, and gain hands-on experience through internships and projects.\n\nPersonal Style:\nAiden's personal style is a blend of casual and professional attire. He typically wears well-fitting jeans, button-down shirts, and smart casual shoes, often accessorized with a smartwatch or a stylish backpack. He values comfort and functionality, but also aims to present a polished and put-together appearance, especially in professional settings.\n\nIn his free time, Aiden enjoys tinkering with new technologies, participating in coding challenges, and staying up-to-date with the latest industry trends. He also makes time for physical activities, such as running and swimming, to maintain a healthy work-life balance.",
+    "intent": "buy women's leg compression sleeves with zipper.",
+    "age": 19,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

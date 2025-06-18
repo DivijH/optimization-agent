@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a passionate artist and freelance graphic designer who is dedicated to using his creative talents to support social justice causes and local businesses. Despite the fluctuations in his income, he remains committed to his craft and his desire to make a positive impact on his community.\n\nDemographics:\nAge: 29\nGender: Male\nEducation: Bachelor's Degree in Graphic Design\nProfession: Freelance Graphic Designer\nIncome: $22,000\n\nFinancial Situation:\nAs a freelance graphic designer, Ethan's income can be unpredictable, often fluctuating between $0 and $30,000 annually. He has learned to live frugally, budgeting carefully and seeking out creative ways to stretch his limited resources. Ethan relies on part-time jobs, commission-based work, and community support programs to supplement his freelance income.\n\nShopping Habits:\nEthan's shopping habits reflect his commitment to sustainability and supporting local businesses. He frequents thrift stores, secondhand shops, and online marketplaces to find affordable, unique items that align with his artistic sensibilities. Ethan also makes a conscious effort to patronize local artisans, independent designers, and ethical brands when making purchases.\n\nPersonal Style:\nEthan's personal style is a reflection of his creative spirit and his desire to express his individuality. He favors a mix of vintage and contemporary pieces, often incorporating bold colors, eclectic patterns, and unconventional silhouettes into his outfits. Ethan's style is a constantly evolving canvas, as he experiments with different materials, textures, and DIY projects to create his unique look.\n\nIn his free time, Ethan can be found volunteering at local art centers, collaborating with fellow creatives on community-based projects, or exploring the vibrant street art scene in his neighborhood. His passion for design and his commitment to social justice are the driving forces behind his work and his lifestyle.",
+    "intent": "add a blue nugget play climbs to cart",
+    "age": 29,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

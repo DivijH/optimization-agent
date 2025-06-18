@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Alexander\n\nBackground:\nAlexander is a 54-year-old man who has faced his fair share of challenges throughout his life. After a series of setbacks, he found himself unemployed and struggling to make ends meet. However, Alexander has not lost his determination and is actively seeking new opportunities to regain his financial stability.\n\nDemographics:\nAge: 54\nGender: Male\nEducation: High School Graduate\nProfession: Unemployed, Seeking New Opportunities\nIncome: $20,000 (Unemployment Benefits and Odd Jobs)\n\nFinancial Situation:\nAlexander's current financial situation is precarious. He relies on a modest income from unemployment benefits and occasional odd jobs to cover his basic expenses. Despite his limited resources, he strives to maintain a positive outlook and remains hopeful that he will find a stable source of income soon.\n\nShopping Habits:\nGiven his financial constraints, Alexander has become a savvy shopper. He frequents thrift stores, discount retailers, and flea markets to find affordable, gently used items. He takes pride in finding hidden gems and repurposing items to extend their lifespan. When necessary, he also compares prices online to ensure he is getting the best deals.\n\nProfessional Life:\nAfter losing his previous job, Alexander has been actively searching for new employment opportunities that align with his skills and experiences. He is open to a wide range of positions, from manual labor to customer service, and is willing to invest in additional training or certifications to increase his marketability.\n\nPersonal Style:\nAlexander's personal style reflects his practical and resourceful nature. He favors comfortable, durable clothing that allows him to move freely and engage in various tasks. His wardrobe consists mainly of well-worn t-shirts, jeans, and work boots, with the occasional button-down shirt or jacket for more formal occasions.\n\nIn his free time, Alexander enjoys tinkering with electronics, gardening, and spending time outdoors, activities that not only provide him with a sense of purpose but also help him save money.",
+    "intent": "buy a matching necklace set for myself.",
+    "age": 54,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

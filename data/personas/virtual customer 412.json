@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a passionate young artist dedicated to using her creative talents to make a positive impact on her local community. With a deep appreciation for the arts and a drive to uplift underserved populations, she has found fulfillment in teaching art workshops and collaborating with community organizations.\n\nDemographics:\nAge: 28\nGender: Female\nEducation: Associate's Degree in Fine Arts\nProfession: Artist and Art Instructor\nIncome: $26,000\n\nFinancial Situation:\nAs an artist and part-time art instructor, Emily's income falls within the range of $0 to $30,000. While her earnings are modest, she is skilled at budgeting and living frugally to ensure she can cover her basic needs and invest in her artistic pursuits. Emily is resourceful, often finding creative ways to source affordable art supplies and supplement her income through commissions and gig work.\n\nShopping Habits:\nEmily's shopping habits reflect her artistic sensibilities and commitment to supporting local and sustainable businesses. She frequents thrift stores, art supply shops, and local markets, seeking out unique and affordable items that inspire her creativity. When making larger purchases, Emily is diligent in her research, prioritizing quality and longevity over trends.\n\nProfessional Life:\nEmily's workdays are filled with a diverse array of responsibilities, from teaching art classes at community centers to collaborating with local organizations on public art projects. She thrives on the energy and dynamism of her multifaceted role, finding great fulfillment in empowering her students, beautifying her neighborhood, and using her art as a tool for social change.\n\nPersonal Style:\nEmily's personal style is a reflection of her artistic and bohemian spirit. She gravitates towards comfortable, versatile clothing that allows her to move freely and engage in her daily activities. Her wardrobe is a eclectic mix of vintage finds, handmade pieces, and thrifted treasures, often featuring bold colors, intricate patterns, and upcycled elements. Emily values self-expression and authenticity in her style, ensuring that her outward appearance aligns with her creative and community-oriented persona.",
+    "intent": "buy a pair of Jobst zipper compression socks for women.",
+    "age": 28,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

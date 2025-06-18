@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a resilient 52-year-old man who has faced numerous setbacks in his life. After a series of health issues and job losses, he now finds himself navigating the challenges of unemployment and financial instability. Despite these difficulties, David remains optimistic and is actively seeking opportunities to regain his footing and provide for himself.\n\nDemographics:\nAge: 52\nGender: Male\nEducation: High School Diploma\nProfession: Unemployed\nIncome: $18,000 (from occasional odd jobs and government assistance)\n\nFinancial Situation:\nWith limited income from occasional odd jobs and government assistance, David's financial situation is precarious. He struggles to cover basic living expenses, such as rent, utilities, and food. David is cautious with his spending, prioritizing essential needs and relying on community resources, such as food banks and public transportation, to make ends meet.\n\nShopping Habits:\nDavid's shopping habits are primarily focused on finding the most affordable options for necessary items. He frequents thrift stores, discount retailers, and online marketplaces to look for gently used or discounted clothing, household goods, and other essentials. David also takes advantage of sales, coupons, and any available financial assistance programs to stretch his limited resources.\n\nPersonal Life:\nDespite his challenging circumstances, David finds solace in simple pleasures and the support of his close-knit community. He enjoys spending time in local parks, reading at the public library, and engaging in volunteer work at a nearby community center. David's resilience and positive attitude help him navigate the ups and downs of his current situation, as he continues to search for more stable employment opportunities.\n\nPersonal Style:\nDavid's personal style reflects his practical and budget-conscious approach to life. His wardrobe consists mostly of durable, comfortable clothing, often acquired from secondhand stores or handed down from friends and family members. While he aims to maintain a presentable appearance, David's primary focus is on finding functional and long-lasting items that meet his basic needs.",
+    "intent": "add a diamond pendant necklace with small diamonds to cart.",
+    "age": 52,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

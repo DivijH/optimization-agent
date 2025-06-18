@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emma\n\nBackground:\nEmma is a driven and ambitious young professional who is making her mark in the world of digital marketing. With a keen eye for trends and a natural talent for creative storytelling, she has quickly risen through the ranks of a prominent advertising agency.\n\nDemographics:\nAge: 20\nGender: Female\nEducation: Bachelor's Degree in Marketing\nProfession: Digital Marketing Strategist\nIncome: $45,000\n\nFinancial Situation:\nAs a digital marketing strategist, Emma's income falls within the $30,001 to $94,000 range. She is financially responsible, setting aside a portion of her earnings to save for future goals while also enjoying her newfound independence and the ability to indulge in occasional splurges.\n\nShopping Habits:\nEmma is a savvy shopper who seeks out a balance between quality and value. She enjoys browsing both online and brick-and-mortar stores, carefully researching products and seeking out the best deals. While she is not afraid to invest in high-quality items that align with her personal style, she also takes advantage of sales and promotions to maximize her purchasing power.\n\nProfessional Life:\nEmma's role as a digital marketing strategist allows her to combine her analytical skills with her creative flair. She is responsible for developing and executing innovative campaigns that drive engagement and conversion for her clients. Emma thrives in the fast-paced, ever-evolving world of digital marketing, constantly seeking out new trends and technologies to stay ahead of the curve.\n\nPersonal Style:\nEmma's personal style is a reflection of her youthful energy and her passion for the latest fashion trends. She enjoys mixing and matching a variety of styles, pairing trendy streetwear with more polished pieces. Her wardrobe is a blend of affordable fast-fashion items and carefully selected investment pieces that elevate her overall look.",
+    "intent": "buy a renaissance-style necklace.",
+    "age": 20,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

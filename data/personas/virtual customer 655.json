@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a 48-year-old single mother who has faced numerous challenges throughout her life. Despite her limited financial resources, she remains resilient and dedicated to providing the best possible future for her two children.\n\nDemographics:\nAge: 48\nGender: Female\nEducation: High School Diploma\nProfession: Part-time Retail Associate\nIncome: $22,000\n\nFinancial Situation:\nAs a part-time retail associate, Olivia's income falls within the $0 to $30,000 range. She carefully budgets her limited funds to cover essential expenses, such as rent, utilities, and food, while also saving a small amount each month to build a modest emergency fund. Olivia relies on government assistance and community resources to help support her family.\n\nShopping Habits:\nOlivia prioritizes functionality and affordability when it comes to her shopping habits. She frequents discount stores, thrift shops, and secondhand markets to find affordable clothing and household items for her family. Olivia also takes advantage of local food banks and community programs to supplement her grocery purchases. She is mindful of her spending and focuses on meeting her family's basic needs.\n\nPersonal Life:\nOlivia's personal life is centered around her children, whom she adores. She dedicates her free time to supporting their academic and extracurricular activities, ensuring they have a stable and nurturing environment. Olivia also finds solace in her faith community, where she finds emotional support and a sense of belonging.\n\nProfessional Life:\nDespite the challenges of balancing work and family responsibilities, Olivia remains committed to her part-time retail job. She appreciates the steady income and the opportunity to interact with people, which provides a sense of purpose and social connection. Olivia is diligently looking for ways to improve her financial situation, such as pursuing additional job opportunities or exploring educational programs that could lead to better-paying positions.",
+    "intent": "buy a Jeff Hardy necklace.",
+    "age": 48,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

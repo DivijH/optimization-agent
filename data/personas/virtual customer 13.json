@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Vivian\n\nBackground:\nVivian is a successful business executive who has spent decades building her career in the tech industry. She is a visionary leader known for her strategic thinking and ability to drive innovation within her company.\n\nDemographics:\nAge: 59\nGender: Female\nEducation: MBA\nProfession: Executive Vice President, Technology Company\nIncome: $150,000\n\nFinancial Situation:\nVivian has accumulated significant wealth over the course of her career, with a sizable investment portfolio and a comfortable lifestyle. She is financially secure and able to enjoy the finer things in life, though she remains prudent with her spending.\n\nShopping Habits:\nVivian enjoys a luxurious shopping experience and appreciates high-quality, fashionable items. She frequents upscale department stores and boutiques, taking the time to carefully curate her wardrobe and home decor. While she is willing to invest in premium products, she also seeks value and is not swayed by excessive trends or conspicuous consumption.\n\nProfessional Life:\nAs the EVP of a leading tech company, Vivian oversees major strategic initiatives and manages a team of talented professionals. She is respected for her industry expertise, decision-making abilities, and commitment to fostering a collaborative and innovative work environment.\n\nPersonal Style:\nVivian's personal style reflects her refined taste and executive status. She favors elegant, well-tailored clothing in classic silhouettes and neutral tones, such as black, navy, and gray. She accessorizes with statement pieces, like a silk scarf or a designer handbag, to add a touch of sophistication to her looks.",
+    "intent": "buy a child-proof light switch cover.",
+    "age": 59,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

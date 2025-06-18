@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a young, ambitious entrepreneur with a passion for technology and innovation. After completing his computer science degree, he co-founded a successful tech startup that has quickly gained traction in the industry, positioning him as a rising star in the local business community.\n\nDemographics:\nAge: 23\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Co-founder and Chief Technology Officer of a tech startup\nIncome: $120,000\n\nFinancial Situation:\nEthan's income as a co-founder and CTO of his thriving tech startup places him in a comfortable financial position. He is able to maintain a modern, urban lifestyle while also investing in the growth of his company. Ethan is financially savvy, carefully managing his personal and business expenses to ensure the long-term sustainability of his venture.\n\nShopping Habits:\nEthan's shopping habits reflect his entrepreneurial mindset and his passion for technology. He is an early adopter of the latest gadgets and devices, constantly seeking out innovative products that can enhance his work and personal life. While he is selective in his purchases, Ethan is willing to invest in high-quality items that he believes will provide long-term value.\n\nProfessional Life:\nEthan's professional life is centered around the success of his tech startup. He works tirelessly alongside his co-founder, leading a team of talented developers and engineers to bring their innovative solutions to the market. Ethan's technical expertise, coupled with his sharp business acumen, has been instrumental in driving the company's rapid growth and securing investment funding.\n\nPersonal Life:\nOutside of work, Ethan maintains a balanced lifestyle, prioritizing both his professional goals and personal well-being. He is an avid reader, keeping up with the latest trends and developments in the tech industry, and he enjoys attending technology conferences and networking events to stay connected with the broader entrepreneurial community. In his free time, Ethan engages in various hobbies, such as hiking, cycling, and exploring the vibrant cultural scene of his city.",
+    "intent": "buy an adjustable punch saw tool.",
+    "age": 23,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

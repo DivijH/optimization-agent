@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Daniel\n\nBackground:\nDaniel is a driven and adaptable professional who has navigated a diverse career path, leveraging his dynamic skillset to find success in various industries. After several years in the corporate world, he has recently transitioned into a leadership role in the non-profit sector, where he is applying his business acumen to drive positive social change.\n\nDemographics:\nAge: 36\nGender: Male\nEducation: Master's Degree in Business Administration\nProfession: Non-Profit Program Manager\nIncome: $62,000\n\nFinancial Situation:\nDaniel's income, which falls within the middle-to-upper-middle-class range, provides him with a stable financial foundation. He is disciplined in his spending, prioritizing investments, such as retirement savings and home ownership, while also allowing for occasional indulgences and travel experiences that enrich his personal life.\n\nShopping Habits:\nDaniel's shopping habits reflect his pragmatic and value-conscious approach. While he appreciates quality and functionality, he is not driven by the latest trends or status symbols. He favors versatile, durable items that can be seamlessly integrated into his lifestyle, often seeking out sales, discounts, and secondhand opportunities to maximize his purchasing power.\n\nProfessional Life:\nAs a non-profit program manager, Daniel leverages his business acumen and strategic planning skills to oversee the implementation of initiatives aimed at addressing complex social issues. He excels at fostering collaborative partnerships, securing funding, and optimizing operational efficiency to ensure the success of the programs under his management. Daniel is passionate about making a tangible difference in his community and is constantly seeking ways to amplify the impact of his organization.\n\nPersonal Interests:\nIn his free time, Daniel is an avid outdoorsman, finding solace and inspiration in activities such as hiking, cycling, and kayaking. He also maintains a diverse array of intellectual interests, from political philosophy and global affairs to the latest advancements in technology and sustainability. Daniel values continuous learning and regularly engages in professional development opportunities to expand his knowledge and hone his leadership skills.",
+    "intent": "buy a ray bolt product to tell the world.",
+    "age": 36,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

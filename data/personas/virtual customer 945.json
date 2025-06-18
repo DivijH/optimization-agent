@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Samantha\n\nBackground:\nSamantha is a driven and accomplished business executive who has carved out a successful career for herself in the tech industry. With a keen eye for strategy and a passion for innovation, she has risen through the ranks to become a respected leader in her field.\n\nDemographics:\nAge: 42\nGender: Female\nEducation: Master's Degree\nProfession: Vice President of Product Management\nIncome: $120,000\n\nFinancial Situation:\nSamantha's executive-level position in the tech industry provides her with a comfortable and stable financial situation. She earns a six-figure salary that allows her to maintain a affluent lifestyle, invest in her future, and support causes and organizations that are important to her.\n\nShopping Habits:\nSamantha approaches her shopping with a blend of practicality and discernment. She is willing to invest in high-quality, durable products that will serve her needs both professionally and personally. While she appreciates the finer things in life, she is also mindful of her spending and seeks to find a balance between indulgence and value.\n\nProfessional Life:\nAs the Vice President of Product Management, Samantha is responsible for overseeing the development and launch of innovative products that cater to the ever-changing needs of her company's clientele. She is a strategic thinker, adept at navigating complex challenges and driving her team to achieve ambitious goals. Samantha is respected for her ability to make tough decisions, her commitment to excellence, and her dedication to mentoring and empowering the next generation of leaders.\n\nPersonal Style:\nSamantha's personal style reflects her professional success and confident demeanor. She favors sophisticated, well-tailored pieces that exude a sense of authority and refinement. Her wardrobe includes a mix of designer business attire, such as tailored suits and elegant blouses, as well as stylish casual wear that she can easily transition into for after-work activities.",
+    "intent": "buy a boys' potty training urinal.",
+    "age": 42,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

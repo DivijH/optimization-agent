@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a passionate artist and community activist who has dedicated her life to using her creative talents to drive positive social change. With a deep empathy for the underprivileged and a keen eye for the nuances of the human experience, Emily creates thought-provoking artwork that challenges societal norms and raises awareness about important issues.\n\nDemographics:\nAge: 43\nGender: Female\nEducation: Bachelor's Degree in Fine Arts\nProfession: Artist and Community Activist\nIncome: $25,000\n\nFinancial Situation:\nAs an independent artist, Emily's income fluctuates, often leaving her in a precarious financial position. She supplements her earnings from art commissions and exhibitions with part-time work and community grants, but her focus remains on her artistic pursuits and activism. Emily maintains a modest lifestyle, prioritizing her passion projects over material possessions.\n\nShopping Habits:\nEmily's shopping habits are heavily influenced by her environmental and social consciousness. She avoids fast fashion and mass-produced goods, instead seeking out locally sourced, ethically made products whenever possible. Emily frequents thrift stores, secondhand shops, and artisanal markets, where she can find unique, one-of-a-kind items that align with her values.\n\nProfessional Life:\nAs an artist and community activist, Emily's professional life is a blend of creative expression and social engagement. She spends her days working on various art projects, from large-scale murals to intimate textile pieces. In addition, Emily volunteers her time and talents to local organizations, leading workshops, organizing events, and using her art to amplify the voices of marginalized communities.\n\nPersonal Style:\nEmily's personal style reflects her artistic sensibilities and her commitment to sustainability. She favors fluid, bohemian silhouettes, often incorporating vibrant colors, intricate patterns, and repurposed materials into her eclectic wardrobe. Emily's look is a statement of her values, blending comfort, creativity, and a touch of avant-garde flair.",
+    "intent": "add 3 foot water bags to cart",
+    "age": 43,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

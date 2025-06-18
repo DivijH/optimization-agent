@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: George\n\nBackground:\nGeorge is a seasoned professional who has dedicated his career to the field of accounting. With over three decades of experience, he has developed a deep understanding of complex financial regulations and a keen eye for detail, making him a trusted advisor to his clients.\n\nDemographics:\nAge: 62\nGender: Male\nEducation: Bachelor's Degree in Accounting\nProfession: Certified Public Accountant\nIncome: $65,000\n\nFinancial Situation:\nGeorge's steady income as a CPA has allowed him to build a comfortable financial foundation. While he is not extravagant in his spending, he enjoys the occasional splurge, such as an annual fishing trip or a new piece of high-quality outdoor gear. He is diligent in his retirement planning, ensuring that he will have a secure financial future.\n\nShopping Habits:\nGeorge's shopping habits are pragmatic and practical. He prefers to invest in durable, long-lasting products that will serve him well for years to come. Whether it's a new suit for client meetings or a pair of sturdy hiking boots for his outdoor adventures, George prioritizes quality and functionality over the latest trends.\n\nProfessional Life:\nGeorge is highly respected within the accounting community for his expertise and integrity. He is known for his meticulous attention to detail, his ability to navigate complex tax codes, and his unwavering commitment to providing his clients with exceptional service. George's colleagues admire his mentorship and his willingness to share his knowledge with younger professionals.\n\nPersonal Style:\nGeorge's personal style reflects his active lifestyle and his practical nature. He favors classic, well-fitted clothing that offers comfort and ease of movement, such as button-down shirts, khakis, and sturdy leather shoes. While he is not one to follow the latest fashion trends, George takes pride in his appearance, ensuring that his attire is always neat and well-maintained.\n\nIn his free time, George can be found pursuing his passion for outdoor activities, such as fishing, hiking, and birdwatching. He is also an avid reader, with a particular interest in historical non-fiction and wilderness exploration literature.",
+    "intent": "buy a high-quality JBL amplifier to enhance the audio experience for my home entertainment system.",
+    "age": 62,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

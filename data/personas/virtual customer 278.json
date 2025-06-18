@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a young, passionate advocate for social and environmental justice. He has dedicated his time to volunteering and activism, working tirelessly to raise awareness and drive change within his community.\n\nDemographics:\nAge: 22\nGender: Male\nEducation: High school diploma\nProfession: Freelance graphic designer and community organizer\nIncome: $25,000\n\nFinancial Situation:\nAs a freelance graphic designer and community organizer, Ethan's income fluctuates, but he is skilled at budgeting and living frugally. He prioritizes experiences over material possessions and is mindful of his spending, often seeking out inexpensive or free ways to enjoy his hobbies and interests.\n\nShopping Habits:\nEthan is conscious of his environmental and ethical impact as a consumer. He frequents secondhand shops, thrift stores, and online marketplaces to find unique, affordable items that align with his values. He also supports local businesses, independent artists, and organizations that promote sustainability and social responsibility.\n\nProfessional Life:\nIn addition to his freelance design work, Ethan dedicates a significant amount of his time to community organizing. He volunteers with local non-profit organizations, helps coordinate protests and rallies, and uses his graphic design skills to create impactful visual campaigns for social and environmental causes.\n\nPersonal Style:\nEthan's personal style reflects his laid-back, eco-conscious approach to life. He favors comfortable, versatile clothing that allows him to be active and engaged in his various pursuits. His wardrobe consists of vintage t-shirts, thrifted denim, and practical, durable accessories. Ethan often incorporates bold, expressive elements, such as graphic prints or vibrant colors, to express his individual flair.\n\nEthan lives in a shared apartment in a vibrant, diverse neighborhood, where he can easily access the resources and community he needs to continue his work as an advocate and organizer.",
+    "intent": "buy a mug shot sign.",
+    "age": 22,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

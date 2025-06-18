@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a driven and ambitious young man who has recently embarked on a career in the field of digital marketing. Despite his young age, he has already demonstrated a keen understanding of the ever-evolving digital landscape and a passion for helping businesses thrive in the online world.\n\nDemographics:\nAge: 19\nGender: Male\nEducation: Associate's Degree in Digital Marketing\nProfession: Digital Marketing Specialist\nIncome: $45,000\n\nFinancial Situation:\nEthan's income as a digital marketing specialist places him in the middle-income range, providing him with a level of financial stability and independence. While he is still in the early stages of his career, Ethan has developed a disciplined approach to budgeting and saving, allocating a portion of his earnings towards long-term goals such as buying a home and building a retirement portfolio.\n\nShopping Habits:\nAs a tech-savvy individual, Ethan's shopping habits often revolve around the latest digital gadgets, software, and online services. He is an avid researcher, carefully evaluating product reviews and comparing features before making a purchase. Ethan also values sustainability and tends to seek out brands and products that align with his environmental and ethical values.\n\nProfessional Life:\nIn his professional role as a digital marketing specialist, Ethan applies his analytical skills and creative flair to develop effective online campaigns for his clients. He is constantly staying up-to-date with the latest trends and best practices in digital marketing, regularly attending industry events and webinars to expand his knowledge and network. Ethan's dedication and innovative approach have garnered him a reputation as a rising star within the company.\n\nPersonal Life:\nOutside of work, Ethan maintains a well-rounded lifestyle, balancing his career ambitions with a commitment to personal growth and leisure activities. He is an active participant in local community events and volunteer initiatives, driven by a desire to make a positive impact on the world around him. In his free time, Ethan enjoys exploring new hiking trails, reading thought-provoking books, and pursuing his passion for photography.",
+    "intent": "buy a pair of zip up compression socks for women aged 20-30 years old.",
+    "age": 19,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

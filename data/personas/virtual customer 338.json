@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Julia\n\nBackground:\nJulia is a 54-year-old woman who has faced numerous challenges throughout her life, leading her to a period of financial instability. Despite her circumstances, she remains resilient and continues to search for ways to improve her situation.\n\nDemographics:\nAge: 54\nGender: Female\nEducation: High School Diploma\nProfession: Freelance Seamstress\nIncome: $25,000\n\nFinancial Situation:\nJulia's income as a freelance seamstress fluctuates, and she often struggles to make ends meet. She has limited savings and relies on government assistance programs to supplement her irregular income. Managing her day-to-day expenses is a constant challenge, and she often has to make difficult choices about where to allocate her limited resources.\n\nShopping Habits:\nOut of necessity, Julia's shopping habits are highly frugal. She seeks out sales, discounts, and secondhand stores to find affordable clothing, household items, and other necessities. Quality is often a secondary consideration, as she prioritizes cost-saving measures to stretch her limited budget. When possible, she repurposes or repairs items to extend their lifespan.\n\nProfessional Life:\nJulia's primary source of income is her freelance work as a seamstress. She uses her sewing skills to take on various alterations and custom projects, working from her small home studio. The irregular nature of her work and the lack of a steady paycheck can be stressful, but she takes pride in her craftsmanship and the satisfaction of helping her clients.\n\nPersonal Style:\nJulia's personal style is practical and modest, focused on comfort and functionality over fashion. She typically wears loose-fitting, durable clothing that allows her to move easily while working. Her wardrobe consists mainly of simple tops, comfortable pants, and sturdy shoes, with minimal accessories. Julia's style reflects her pragmatic approach to life, where every purchase is carefully considered for its utility and value.\n\nIn her spare time, Julia enjoys tending to her small garden and volunteering at a local community center, where she teaches sewing classes to underprivileged individuals. These activities provide her with a sense of purpose and connection, helping to offset the challenges of her financial situation.",
+    "intent": "add airsoft anper to shopping cart",
+    "age": 54,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

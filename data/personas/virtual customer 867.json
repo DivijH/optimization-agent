@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a dedicated and resilient woman who has faced numerous challenges throughout her life. Despite her limited financial resources, she has maintained a steadfast commitment to her community and a deep appreciation for the simple joys in life.\n\nDemographics:\nAge: 50\nGender: Female\nEducation: High School Diploma\nProfession: Freelance Caregiver\nIncome: $25,000\n\nFinancial Situation:\nAs a freelance caregiver, Emily's income falls within the range of $0 to $30,000 per year. She manages her finances carefully, budgeting meticulously and seeking out ways to supplement her income, such as participating in local community programs and occasionally accepting donations from neighbors and friends.\n\nShopping Habits:\nEmily's shopping habits are guided by practicality and necessity. She frequents thrift stores, secondhand shops, and community-based initiatives that provide affordable, gently-used items. When making purchases, Emily prioritizes essential household goods, clothing, and healthcare-related items. She is mindful of her limited resources and strives to find the best value for her money.\n\nProfessional Life:\nEmily's professional life is marked by her dedication to caring for others. As a freelance caregiver, she provides in-home assistance to elderly individuals and people with disabilities in her community. Emily's empathetic nature, patience, and attention to detail have earned her the trust and respect of her clients and their families.\n\nPersonal Style:\nEmily's personal style reflects her practical and unassuming nature. She favors comfortable, durable clothing that allows her to move freely and perform her caregiving duties efficiently. Her wardrobe consists of simple, well-worn pieces that she has acquired over the years, often repurposed or mended to extend their lifespan.\n\nIn her free time, Emily finds joy in small, everyday activities, such as tending to her community garden, volunteering at the local food bank, and sharing homemade meals with her neighbors. She finds solace in the connections she has forged within her community and the sense of purpose that her work as a caregiver provides.",
+    "intent": "buy a squeegee for window cleaning.",
+    "age": 50,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

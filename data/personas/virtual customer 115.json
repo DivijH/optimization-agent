@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a passionate creative who is pursuing his dreams of becoming a successful freelance graphic designer. Despite facing financial challenges, he remains determined to build a fulfilling career that aligns with his artistic vision.\n\nDemographics:\nAge: 29\nGender: Male\nEducation: Associate's Degree in Graphic Design\nProfession: Freelance Graphic Designer\nIncome: $25,000\n\nFinancial Situation:\nAs a freelance designer, Ethan's income can be inconsistent, and he often has to carefully manage his finances to make ends meet. He is resourceful and adept at finding ways to stretch his budget, such as seeking out affordable housing and creative ways to reduce his expenses.\n\nShopping Habits:\nEthan is mindful of his spending and often looks for sales, discounts, and second-hand options when it comes to personal purchases. He enjoys scouring thrift stores and online marketplaces for unique, one-of-a-kind items that he can incorporate into his personal style. When it comes to his design work, Ethan invests in high-quality software, equipment, and resources to ensure the best possible outcomes for his clients.\n\nPersonal Life:\nIn his free time, Ethan is an avid musician, playing the guitar and writing his own songs. He finds solace in creating art and uses his creative outlets as a way to unwind and recharge. Ethan also values his close-knit group of friends, who provide emotional support and inspiration as he navigates the ups and downs of the freelance lifestyle.\n\nProfessional Life:\nEthan is a talented and versatile graphic designer, known for his ability to create visually striking designs that effectively communicate his clients' messages. He is constantly exploring new techniques and staying up-to-date with the latest industry trends, always striving to hone his skills and deliver exceptional results.\n\nDespite the financial challenges, Ethan remains passionate about his craft and is determined to build a sustainable freelance business that allows him to pursue his creative passions. He is not afraid to take risks and is constantly seeking out new opportunities to showcase his talent and expand his client base.",
+    "intent": "buy sound-cancelling headphones.",
+    "age": 29,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

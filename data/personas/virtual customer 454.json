@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Juan\n\nBackground:\nJuan is a devoted family man who has faced his fair share of challenges throughout his life. Despite having a lower income, he finds fulfillment in his role as a devoted husband and father, working tirelessly to provide for his loved ones.\n\nDemographics:\nAge: 54\nGender: Male\nEducation: High School Diploma\nProfession: Maintenance Worker\nIncome: $25,000\n\nFinancial Situation:\nWith an income between $0 and $30,000, Juan's financial situation is modest. He carefully budgets his earnings to cover essential expenses, such as rent, utilities, and groceries. While he may not have the means for luxuries, Juan is content with the simple pleasures in life and prioritizes the well-being of his family.\n\nShopping Habits:\nJuan is a practical shopper who focuses on finding the most affordable and durable options for his household needs. He frequents discount stores and thrift shops, meticulously comparing prices to ensure he is getting the best value. Whenever possible, he seeks out sales and coupons to stretch his limited budget.\n\nProfessional Life:\nAs a maintenance worker, Juan's job involves repairing and maintaining various facilities and equipment. Though the work can be physically demanding, he takes pride in his ability to problem-solve and ensure the smooth operation of the buildings he oversees. Juan's strong work ethic and attention to detail have earned him the respect of his colleagues and supervisors.\n\nPersonal Style:\nJuan's personal style reflects his practical and down-to-earth nature. He typically wears comfortable, durable clothing, such as jeans, t-shirts, and work boots, that allows him to move freely and withstand the demands of his job. While he may not be a fashionista, Juan takes care to present a neat and presentable appearance.\n\nFamily Life:\nJuan's primary focus is on providing for his family. He dedicates much of his free time to spending quality moments with his wife and children, whether it's attending their extracurricular activities, going on family outings, or simply enjoying a home-cooked meal together. Juan's family is the cornerstone of his life, and he finds great joy in nurturing those cherished relationships.",
+    "intent": "buy a sensory tray for my family to use at home.",
+    "age": 54,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

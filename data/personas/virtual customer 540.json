@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a passionate artist who has dedicated herself to the pursuit of her creative dreams. Despite facing financial challenges, she refuses to compromise her artistic vision and continues to explore new mediums and techniques to express her unique perspective on the world.\n\nDemographics:\nAge: 28\nGender: Female\nEducation: Bachelor's Degree in Fine Arts\nProfession: Freelance Artist\nIncome: $20,000\n\nFinancial Situation:\nAs a freelance artist, Olivia's income can be unpredictable, often fluctuating between periods of steady work and stretches of financial uncertainty. She carefully budgets her earnings, prioritizing essential expenses and finding creative ways to supplement her income, such as by selling her artwork online or participating in local art shows and exhibitions.\n\nShopping Habits:\nOlivia approaches shopping with a thrifty mindset, often seeking out secondhand stores, flea markets, and online marketplaces to find unique, affordable items for her art supplies and personal wardrobe. She is skilled at repurposing and upcycling materials, finding joy in the challenge of transforming discarded items into something new and visually striking.\n\nProfessional Life:\nOlivia's passion for art fuels her creative pursuits, and she is constantly experimenting with different mediums and techniques to expand her artistic skills. She actively networks with other artists, participates in collaborative projects, and seeks out opportunities to showcase her work in local galleries and online platforms. Despite the financial challenges, Olivia remains undaunted, driven by her unwavering commitment to her craft.\n\nPersonal Style:\nOlivia's personal style is a reflection of her artistic sensibilities, with a focus on individuality and self-expression. She often mixes and matches vintage finds, thrifted pieces, and handmade items to create unique, eclectic outfits that capture her free-spirited nature. Comfort and functionality are important, but Olivia also enjoys incorporating bold colors, patterns, and textures into her wardrobe to showcase her creative flair.",
+    "intent": "buy a sturdy, adjustable shotgun sling for target practice and hunting.",
+    "age": 28,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

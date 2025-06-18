@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a spirited and ambitious college student, passionate about making a positive impact on the world. With a keen intellect and a thirst for knowledge, she is dedicated to exploring her diverse interests and paving the way for a fulfilling career.\n\nDemographics:\nAge: 19\nGender: Female\nEducation: College Student\nProfession: Student\nIncome: $45,000\n\nFinancial Situation:\nSarah's income, derived from a combination of scholarships, part-time jobs, and family support, allows her to maintain financial stability and independence during her college years. She is mindful of her spending, prioritizing necessities while also setting aside funds for occasional leisure activities and savings.\n\nShopping Habits:\nSarah's shopping habits reflect her youthful energy and desire to express her personal style. She enjoys exploring trendy clothing stores, online marketplaces, and local boutiques, seeking out unique pieces that align with her evolving fashion sense. While conscious of her budget, she is willing to invest in higher-quality items that she believes will last.\n\nAcademic and Personal Interests:\nAs a college student, Sarah's primary focus is on her academics, where she excels in a variety of subjects, from the social sciences to the arts. Beyond the classroom, she is an active member of several student organizations, including the environmental club and the debate team, through which she explores her passion for social and political issues.\n\nIn her free time, Sarah embraces her adventurous spirit, whether hiking through nearby nature trails, attending local music festivals, or trying her hand at new hobbies like pottery or rock climbing. She values personal growth and is constantly seeking opportunities to expand her horizons.\n\nPersonal Style:\nSarah's personal style is a reflection of her multifaceted personality. She enjoys mixing contemporary trends with timeless classics, often pairing distressed denim with a structured blazer or a flowy sundress with statement accessories. Her wardrobe is a versatile canvas that allows her to adapt to various social and academic settings while maintaining a sense of individuality.",
+    "intent": "buy a Halloween-themed tree ornament.",
+    "age": 19,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Aisha\n\nBackground:\nAisha is a 21-year-old college student with a passion for social and environmental activism. She is a vocal advocate for causes she believes in, using her voice to raise awareness and drive positive change within her community.\n\nDemographics:\nAge: 21\nGender: Female\nEducation: Currently pursuing a Bachelor's degree\nProfession: Student\nIncome: $15,000 (part-time jobs and scholarships)\n\nFinancial Situation:\nAs a college student, Aisha's financial situation is modest. She relies on a combination of part-time jobs, scholarships, and family support to cover her expenses. Despite her limited income, she is mindful of her spending and prioritizes her activism efforts over material possessions.\n\nShopping Habits:\nAisha approaches shopping with a conscious and ethical mindset. She seeks out sustainable, fair-trade, and socially responsible brands and products whenever possible. She is not driven by trends or status but rather by the values and impact of her purchases.\n\nProfessional Life:\nAisha's primary focus is on her studies and her activism work. She is an active member of several student organizations that advocate for social and environmental justice. In her spare time, she participates in protests, organizes fundraisers, and volunteers for local non-profit organizations.\n\nPersonal Style:\nAisha's personal style reflects her passion for sustainability and her commitment to her activist causes. She gravitates towards comfortable, practical, and ethically-sourced clothing that allows her to move freely and express her individuality. Her wardrobe includes a mix of vintage pieces, thrifted items, and carefully curated sustainable brands.\n\nAisha is an avid public transportation user, often taking the bus or train to get around her college town. She is an early riser, typically waking up around 7 a.m. to start her day.",
+    "intent": "buy a home hair washing station that is eco-friendly, portable, and easy to set up.",
+    "age": 21,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

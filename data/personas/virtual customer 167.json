@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a seasoned mid-career professional who has navigated a diverse career path, transitioning from a corporate management role to becoming a successful small business owner. With his entrepreneurial spirit and a knack for problem-solving, he has carved out a niche for himself in the local service industry.\n\nDemographics:\nAge: 46\nGender: Male\nEducation: Bachelor's Degree in Business Administration\nProfession: Small Business Owner\nIncome: $65,000\n\nFinancial Situation:\nDavid's income falls within the $30,001 to $94,000 range, reflecting the steady growth of his small business. He diligently manages his finances, balancing investments, savings, and reinvesting into his company to ensure long-term sustainability.\n\nShopping Habits:\nAs a pragmatic consumer, David values quality and practicality over flashiness. He tends to shop for durable, long-lasting products that serve his everyday needs, whether it's work attire, home furnishings, or recreational equipment. While he is not averse to occasional splurges, he is generally cautious with his spending and prioritizes financial stability.\n\nProfessional Life:\nDavid's entrepreneurial journey began after several years in the corporate world, where he honed his management skills and gained valuable insights into the challenges faced by small businesses. Now, as the owner of a thriving local service company, he takes pride in providing excellent customer service and fostering a positive work environment for his employees.\n\nPersonal Style:\nDavid's personal style reflects his practical, no-nonsense approach to life. He favors well-made, versatile clothing that can transition seamlessly from the office to leisure activities. His wardrobe consists of classic, understated pieces that emphasize comfort and durability, with the occasional nod to current trends.",
+    "intent": "add a Barbie-themed fanny pack to cart.",
+    "age": 46,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

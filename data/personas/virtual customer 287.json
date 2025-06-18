@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Tyler\n\nBackground:\nTyler is a driven and ambitious young man who has recently launched his own tech startup. With a keen eye for innovation and a passion for solving complex problems, he is determined to make his mark in the dynamic world of technology.\n\nDemographics:\nAge: 18\nGender: Male\nEducation: High school graduate, currently taking online business and coding courses\nProfession: Founder and CEO of a tech startup\nIncome: $97,500\n\nFinancial Situation:\nAs the founder of a promising tech startup, Tyler's income falls within the higher range, allowing him to invest in his business while also building a comfortable financial foundation. He is meticulous in his budgeting and actively seeks opportunities to expand his wealth through savvy investments.\n\nShopping Habits:\nTyler approaches shopping with a strategic mindset, always on the lookout for the latest tech gadgets, high-quality business attire, and tools that can streamline his work. He values efficiency and functionality, but also appreciates the occasional splurge on cutting-edge products that can give his startup a competitive edge.\n\nProfessional Life:\nTyler's professional life revolves around his tech startup, which he founded shortly after graduating from high school. Drawing upon his technical expertise and entrepreneurial spirit, he has assembled a talented team and secured funding to bring his innovative product to market. He is a visionary leader who constantly challenges his team to push the boundaries of what's possible.\n\nPersonal Style:\nTyler's personal style reflects his driven and ambitious nature. He favors a clean-cut, contemporary look, often wearing tailored shirts, slim-fit chinos, and sleek leather shoes. However, he is not afraid to incorporate casual elements, such as well-fitted t-shirts and sneakers, particularly when he's working in the office or attending tech events.\n\nIn his free time, Tyler enjoys staying up-to-date with the latest industry trends, attending tech conferences, and networking with other entrepreneurs. He is a voracious reader and actively seeks out mentorship opportunities to continue his personal and professional growth.",
+    "intent": "buy a black BMW M Sport umbrella.",
+    "age": 18,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

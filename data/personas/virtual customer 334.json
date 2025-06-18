@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Samantha\n\nBackground:\nSamantha is a driven and successful entrepreneur who has built a thriving marketing and communications agency. With a keen eye for strategy and a passion for helping businesses grow, she has carved out a niche for herself in the highly competitive industry.\n\nDemographics:\nAge: 34\nGender: Female\nEducation: Master's Degree in Marketing\nProfession: Founder and CEO of a Marketing and Communications Agency\nIncome: $120,000\n\nFinancial Situation:\nSamantha's business acumen and strategic vision have allowed her to build a comfortable and stable financial foundation. She is financially savvy, investing in both personal and professional ventures to ensure long-term growth and security.\n\nShopping Habits:\nSamantha's shopping habits reflect her sophisticated taste and her commitment to quality. She enjoys browsing high-end boutiques and designer stores, but she also values discovering unique pieces from small, independent brands. Her wardrobe is a reflection of her professional image, with a focus on well-tailored, elegant pieces that can easily transition from the boardroom to after-work events.\n\nProfessional Life:\nAs the founder and CEO of a thriving marketing and communications agency, Samantha oversees a team of talented professionals who help her clients achieve their business goals. She is a strategic thinker and a skilled networker, constantly seeking out new opportunities to expand her agency's reach and influence.\n\nPersonal Style:\nSamantha's personal style is polished and refined, with a touch of modern sophistication. She favors luxury fabrics, clean lines, and understated elegance. Whether she's wearing a tailored suit or a flowing maxi dress, Samantha always exudes confidence and professionalism.",
+    "intent": "buy a 25th anniversary pendant.",
+    "age": 34,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

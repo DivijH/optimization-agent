@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a successful real estate investor and developer who has been active in the industry for over two decades. He has a keen eye for identifying promising properties and has built a sizable portfolio of commercial and residential real estate assets across multiple markets.\n\nDemographics:\nAge: 50\nGender: Male\nEducation: Bachelor's degree in Business Administration\nProfession: Real Estate Investor, Developer\nIncome: $150,000\n\nFinancial Situation:\nDavid's real estate investments have allowed him to accumulate significant wealth over the years. He maintains a diversified portfolio and is always on the lookout for new opportunities to expand his holdings. While he lives comfortably, David is also mindful of his financial responsibilities and prioritizes long-term financial planning.\n\nShopping Habits:\nDavid tends to be pragmatic and efficient when it comes to shopping. He prefers to make well-researched purchases, whether it's for his personal needs or investment-related items. While he appreciates quality and is willing to invest in durable, high-performing products, he also keeps a close eye on value and looks for good deals.\n\nProfessional Life:\nAs an experienced real estate investor and developer, David leverages his extensive industry knowledge and network to identify and capitalize on lucrative investment opportunities. He carefully analyzes market trends, evaluates property risks and potentials, and works closely with his team to execute successful real estate transactions and development projects.\n\nPersonal Style:\nDavid's personal style is understated yet polished. He favors well-fitted, classic menswear pieces that project a professional and sophisticated image. He values comfort and practicality, but also takes pride in maintaining a put-together appearance. David's wardrobe consists of quality suits, dress shirts, and accessories that he can easily mix and match for various business and social occasions.",
+    "intent": "buy a Porsche 911 Lego set.",
+    "age": 50,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

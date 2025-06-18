@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Samantha\n\nBackground:\nSamantha is a successful entrepreneur who founded a thriving tech company in Silicon Valley. With a keen eye for innovation and a talent for identifying market opportunities, she has built her business from the ground up and is now reaping the rewards of her hard work.\n\nDemographics:\nAge: 35\nGender: Female\nEducation: Bachelor's degree in Computer Science\nProfession: Founder and CEO of a tech startup\nIncome: $250,000\n\nFinancial Situation:\nSamantha has a comfortable financial situation, with a high income from her successful tech company. She is financially savvy and invests her wealth in a diverse portfolio, aiming to grow her assets and secure her financial future.\n\nShopping Habits:\nSamantha has a discerning eye for quality and design, and she enjoys browsing high-end stores and boutiques for unique and stylish items. She is not afraid to splurge on luxury goods that she believes are worth the investment. However, she also values efficiency and often shops online for convenience.\n\nProfessional Life:\nAs the founder and CEO of her tech startup, Samantha's professional life is fast-paced and demanding. She juggles a variety of responsibilities, from overseeing product development to managing a team of employees. Despite the challenges, she thrives on the excitement and sense of accomplishment that comes with building a successful business.\n\nPersonal Style:\nSamantha has a chic, modern style that reflects her professional success. She favors well-tailored, sophisticated outfits that exude confidence and elegance. She enjoys accessorizing with stylish jewelry and high-quality handbags, and she typically wears size medium clothing.\n\nSamantha is a frequent traveler and loves to fly with Emirates Airlines. She typically wakes up at 7 am each day to start her busy schedule.\n\nSamantha lives in San Francisco.",
+    "intent": "buy an indoor frisbee",
+    "age": 35,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

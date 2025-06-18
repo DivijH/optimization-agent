@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a successful business owner who has built a thriving company from the ground up. With a keen eye for innovation and a passion for empowering others, she has carved out her own path in the corporate world, inspiring those around her.\n\nDemographics:\nAge: 43\nGender: Female\nEducation: Bachelor's Degree\nProfession: Small Business Owner\nIncome: $180,000\n\nFinancial Situation:\nOlivia's hard work and entrepreneurial spirit have paid off, allowing her to achieve a comfortable financial status. While she is not extravagant, she is able to enjoy the fruits of her labor, investing in her business, supporting her community, and providing for her family.\n\nShopping Habits:\nOlivia's shopping habits reflect her discerning taste and appreciation for quality. She seeks out products and services that align with her values, prioritizing sustainability, ethical practices, and local businesses. She enjoys discovering unique, high-quality items that can enhance both her personal and professional life.\n\nProfessional Life:\nAs the founder and CEO of a successful tech startup, Olivia is a driven and innovative leader. She has built a diverse, talented team and has cultivated a company culture that values creativity, collaboration, and social responsibility. Olivia is constantly looking for ways to expand her business, while also finding opportunities to give back to her community.\n\nPersonal Style:\nOlivia's personal style is a reflection of her confidence and professional success. She favors a mix of sophisticated, tailored pieces and comfortable, versatile items that allow her to seamlessly transition between her various roles and responsibilities. Her wardrobe is a blend of high-quality, ethically-sourced clothing and unique, locally-crafted accessories.\n\nIn her free time, Olivia enjoys pursuing her passions, such as mentoring young entrepreneurs, exploring the latest advancements in technology, and engaging in outdoor activities like hiking and kayaking. She is committed to maintaining a balanced lifestyle and using her resources to make a positive impact on the world around her.",
+    "intent": "add a 12-pack of Diet Dr Pepper to my cart",
+    "age": 43,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

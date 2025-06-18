@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a strategic marketing executive who has carved out a successful career in the tech industry. With a keen eye for market trends and a knack for crafting impactful campaigns, she has played a pivotal role in driving growth and brand awareness for her company.\n\nDemographics:\nAge: 35\nGender: Female\nEducation: MBA in Marketing\nProfession: Marketing Executive\nIncome: $120,000\n\nFinancial Situation:\nOlivia's six-figure income allows her to maintain a comfortable lifestyle, with the financial freedom to indulge in luxuries and invest in her future. She is diligent about saving a significant portion of her earnings, with a focus on long-term financial security and potential entrepreneurial ventures.\n\nShopping Habits:\nAs a marketing professional, Olivia is acutely aware of the latest trends and the power of strong brand associations. She enjoys shopping for high-quality, stylish apparel and accessories that reflect her refined personal aesthetic. While she is selective in her purchases, Olivia is not afraid to invest in premium products that she believes will stand the test of time.\n\nProfessional Life:\nIn her role as a marketing executive, Olivia oversees a team of talented marketers and designers, leading the development and implementation of comprehensive marketing strategies. She is skilled at navigating the dynamic tech landscape, identifying opportunities for growth, and ensuring her company remains at the forefront of industry innovations.\n\nPersonal Style:\nOlivia's personal style exudes confidence and sophistication. She favors classic, tailored pieces with a modern twist, such as well-cut blazers, sleek trousers, and elegant dresses. Her wardrobe is a harmonious blend of high-end designer items and versatile, timeless essentials, allowing her to transition seamlessly between professional and social settings.",
+    "intent": "purchase amika hair mask",
+    "age": 35,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

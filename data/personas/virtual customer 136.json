@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a lifelong artist who has dedicated his career to pursuing his passion for painting and sculpture. Despite financial challenges, he remains committed to his creative endeavors and finds joy in the process of making art.\n\nDemographics:\nAge: 52\nGender: Male\nEducation: Art School Graduate\nProfession: Freelance Artist\nIncome: $18,000\n\nFinancial Situation:\nAs a freelance artist, David's income is often irregular and unpredictable. He relies on a combination of commissions, gallery sales, and occasional teaching jobs to make ends meet. While money is tight, David is resourceful and finds ways to stretch his limited budget to support his artistic lifestyle.\n\nShopping Habits:\nDavid's shopping habits are driven by necessity and a desire to find materials and supplies that fit his modest budget. He frequents art supply stores, thrift shops, and online marketplaces to source affordable paints, canvases, and other art-making materials. When it comes to personal purchases, David is mindful of his spending and focuses on acquiring quality, long-lasting items that will serve him well in his creative pursuits.\n\nPersonal Style:\nDavid's personal style is eclectic and reflective of his artistic sensibilities. He enjoys wearing comfortable, bohemian-inspired clothing that allows him to move freely while working in his studio. His wardrobe is a mix of vintage finds, handmade pieces, and the occasional new purchase from local independent designers or ethical clothing brands.",
+    "intent": "buy a unique, specialized tool for ironing ham or other meats.",
+    "age": 52,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

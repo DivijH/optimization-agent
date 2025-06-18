@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Daniel\n\nBackground:\nDaniel is a passionate musician who has dedicated his life to his craft. Despite facing financial hardships, he remains steadfast in his pursuit of artistic expression and the pursuit of his musical dreams.\n\nDemographics:\nAge: 40\nGender: Male\nEducation: High School Diploma\nProfession: Freelance Musician\nIncome: $22,000\n\nFinancial Situation:\nDaniel's income as a freelance musician is modest, as he struggles to find consistent work and stable sources of revenue. However, he has learned to live frugally, prioritizing his passion for music over material possessions. He often relies on the generosity of friends and family to make ends meet.\n\nShopping Habits:\nDaniel is a thrifty shopper who frequents secondhand stores, yard sales, and online marketplaces for affordable musical equipment and everyday essentials. He takes pride in his ability to find hidden gems and repurpose items to suit his needs. Daniel is mindful of his environmental impact and tries to avoid impulsive purchases.\n\nProfessional Life:\nAs a freelance musician, Daniel's professional life is filled with uncertainty and unpredictability. He performs in local venues, teaches private music lessons, and occasionally lands temporary gigs. Despite the financial challenges, Daniel remains steadfast in his commitment to his craft, constantly honing his skills and seeking new opportunities to share his music with the world.\n\nPersonal Style:\nDaniel's personal style is a reflection of his artistic sensibilities and his desire for comfort. He favors casual, comfortable clothing that allows him to move freely during performances and practice sessions. His wardrobe consists of well-worn t-shirts, jeans, and comfortable shoes, often complemented by accessories that showcase his musical interests, such as a guitar pick necklace or a band-themed t-shirt.\n\nDaniel relies on public transportation and occasionally carpools with fellow musicians to get to his various engagements. He typically wakes up at 9 AM to start his day, as his schedule is often flexible and variable.\n\nDaniel lives in a modest, rented apartment in a vibrant, arts-focused neighborhood.",
+    "intent": "buy an iPad Magic Keyboard.",
+    "age": 40,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

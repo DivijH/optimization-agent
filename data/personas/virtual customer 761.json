@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Edward\n\nBackground:\nEdward is a retired veteran who now spends his days volunteering at a local community center, sharing his experiences and wisdom with younger generations. After serving in the military for over two decades, he has found a new purpose in giving back to his community.\n\nDemographics:\nAge: 64\nGender: Male\nEducation: High School Diploma\nProfession: Retired Veteran, Volunteer\nIncome: $24,000\n\nFinancial Situation:\nEdward's primary income sources are his military pension and social security benefits, which provide him with a modest, but stable, financial standing. While he lives frugally, he is able to cover his basic expenses and set aside a small amount for occasional recreational activities.\n\nShopping Habits:\nEdward embraces a minimalist approach to shopping, focusing on purchasing only what he needs. He frequents thrift stores, garage sales, and community-based organizations to find affordable, high-quality items. Edward takes pride in repurposing and repairing items, showing a keen eye for craftsmanship and a desire to reduce waste.\n\nPersonal Style:\nEdward's personal style reflects his practical and no-nonsense approach to life. He favors comfortable, durable clothing that allows him to move freely and engage in his volunteer work. His wardrobe consists of well-worn, classic pieces that he has accumulated over the years, often complemented by the occasional thrifted find that adds a touch of character to his ensemble.\n\nProfessional Life:\nDuring his military service, Edward specialized in logistics and supply chain management. Now in retirement, he applies his organizational skills and attention to detail to his volunteer work at the community center, where he assists with various administrative tasks and mentors young adults. Edward takes great pride in his role, knowing that he is making a meaningful difference in the lives of those around him.",
+    "intent": "buy a large inflatable dachshund from a pet supply store.",
+    "age": 64,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

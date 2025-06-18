@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a retired school custodian who is navigating the challenges of living on a fixed income. After dedicating his career to ensuring the cleanliness and maintenance of his local school district, he is now exploring new ways to fill his days and supplement his modest retirement funds.\n\nDemographics:\nAge: 64\nGender: Male\nEducation: High School Diploma\nProfession: Retired School Custodian\nIncome: $24,000\n\nFinancial Situation:\nMichael's retirement income, consisting of a small pension and Social Security benefits, falls within the $0 to $30,000 range. He carefully budgets his expenses, prioritizing essential costs such as housing, utilities, and healthcare while seeking ways to save on discretionary spending.\n\nShopping Habits:\nAs a thrifty shopper, Michael frequents secondhand stores, yard sales, and discount retailers to find affordable necessities and occasional treats. He takes pride in his ability to stretch his limited funds, often scouring for deals and bargains. When making larger purchases, Michael conducts thorough research to ensure he is getting the best value for his money.\n\nPersonal Life:\nIn his retirement, Michael has found joy in reconnecting with his longtime hobbies, such as gardening and woodworking. He relishes the opportunity to spend more time with his grandchildren, often taking them on outings to local parks or teaching them his handyman skills. Michael's simple pleasures and the time he can now devote to his passions have become a source of fulfillment in his later years.\n\nPersonal Style:\nMichael's personal style reflects his pragmatic and down-to-earth nature. He favors comfortable, durable clothing that prioritizes function over fashion, such as well-worn jeans, sturdy work boots, and plain t-shirts. Despite his modest means, Michael takes pride in maintaining a tidy and presentable appearance, ensuring his clothes are clean and well-kept.",
+    "intent": "buy non-alcoholic sparkling beverages that provide a refreshing, natural energy boost.",
+    "age": 64,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

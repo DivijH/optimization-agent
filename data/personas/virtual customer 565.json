@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a passionate and driven young woman who has recently graduated from college with a degree in environmental science. Determined to make a positive impact on the world, she has chosen to work for a non-profit organization that focuses on sustainable urban development and community outreach.\n\nDemographics:\nAge: 20\nGender: Female\nEducation: Bachelor's Degree in Environmental Science\nProfession: Program Coordinator at a Non-Profit Organization\nIncome: $27,000\n\nFinancial Situation:\nAs a recent graduate and a program coordinator at a non-profit, Emily's income falls within the $0 to $30,000 range. She is mindful of her spending and lives within a modest budget, prioritizing her financial stability and the ability to contribute to the causes she cares about.\n\nShopping Habits:\nEmily is a conscious and eco-conscious shopper. She seeks out ethical and sustainable brands, often visiting thrift stores and secondhand shops to find unique and affordable items. When making purchases, she carefully considers the environmental and social impact of her choices. Emily also enjoys supporting local businesses and artisans whenever possible.\n\nProfessional Life:\nIn her role as a program coordinator, Emily is responsible for organizing community events, managing volunteers, and coordinating educational workshops. She is passionate about her work and deeply committed to the mission of her non-profit organization, often going above and beyond to ensure the success of the organization's initiatives.\n\nPersonal Style:\nEmily's personal style reflects her values and her active lifestyle. She favors comfortable, versatile clothing that allows her to move freely and participate in hands-on projects. Her wardrobe consists of mix-and-match pieces, such as organic cotton t-shirts, durable jeans, and practical, eco-friendly footwear. Emily also enjoys adding personal touches to her outfits, such as vintage accessories or handmade jewelry, to express her individuality.",
+    "intent": "buy a kids' Easy-Bake Oven from a reputable online retailer.",
+    "age": 20,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

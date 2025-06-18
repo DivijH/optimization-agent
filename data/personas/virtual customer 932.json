@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Henry\n\nBackground:\nHenry is a retired factory worker who dedicated his career to providing for his family. After decades of hard work, he is now embracing the freedom of retirement and exploring new hobbies and passions.\n\nDemographics:\nAge: 62\nGender: Male\nEducation: High School Diploma\nProfession: Retired Factory Worker\nIncome: $24,000\n\nFinancial Situation:\nHenry's retirement income, combined with his modest savings, allows him to maintain a comfortable yet frugal lifestyle. He is mindful of his spending and prioritizes his essential needs while occasionally treating himself to small indulgences.\n\nShopping Habits:\nHenry's shopping habits are practical and pragmatic. He prefers to purchase durable, long-lasting items that provide good value for his money. He often visits discount stores, thrift shops, and local flea markets to find well-made, affordable products. Henry is not drawn to the latest trends or flashy purchases, instead focusing on timeless and functional items.\n\nPersonal Life:\nIn his retirement, Henry has embraced a more relaxed pace of life. He enjoys spending time in his garden, tending to his vegetable patches and meticulously maintaining his lawn. Henry is also an avid reader, delving into a variety of genres, from historical non-fiction to classic literature. He finds solace in the tranquility of his daily routines and the simple pleasures of his hobbies.\n\nCommunity Involvement:\nHenry is an active member of his local community, volunteering his time and skills to various organizations. He is particularly passionate about supporting veterans' initiatives, having served in the military himself. Henry takes great pride in contributing to causes that make a positive difference in the lives of others.",
+    "intent": "buy a high-quality iced tea dispenser that can hold multiple gallons and has a sturdy, durable construction.",
+    "age": 62,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

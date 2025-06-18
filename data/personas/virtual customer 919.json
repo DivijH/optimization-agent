@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Maria\n\nBackground:\nMaria is a passionate and driven young professional who is making her mark in the non-profit sector. With a deep commitment to social justice and sustainable practices, she has chosen a career path that aligns with her values and allows her to contribute to the greater good.\n\nDemographics:\nAge: 26\nGender: Female\nEducation: Bachelor's degree in Environmental Studies\nProfession: Program Coordinator, Non-Profit Organization\nIncome: $50,000\n\nFinancial Situation:\nMaria's income as a program coordinator in a non-profit organization falls within the range of $30,001 to $94,000. While she may not have the highest earning potential, Maria is financially responsible and strives to live within her means. She is conscious of her spending and prioritizes saving for the future, while also allocating funds to support the causes and organizations she believes in.\n\nShopping Habits:\nMaria approaches shopping with a mindful and environmentally-conscious mindset. She seeks out sustainable and ethically-produced products, often patronizing local businesses, secondhand stores, and online marketplaces that align with her values. When making larger purchases, Maria researches thoroughly to ensure she is making informed decisions that minimize her environmental impact.\n\nProfessional Life:\nAs a program coordinator at a non-profit organization, Maria plays a crucial role in the implementation and execution of various initiatives focused on environmental conservation, community engagement, and social welfare. She excels at coordinating teams, managing projects, and communicating the organization's mission to both internal and external stakeholders. Maria's passion for her work and her ability to problem-solve make her a valuable asset to her organization.\n\nPersonal Life:\nOutside of her professional responsibilities, Maria is an avid outdoor enthusiast. She enjoys hiking, camping, and exploring the local parks and nature reserves. In her free time, she also volunteers at a community garden, teaching others about sustainable farming practices and the importance of food security. Maria's diverse interests and commitment to making a positive impact in her community contribute to her well-rounded and fulfilling lifestyle.",
+    "intent": "buy a mug with a \"mug shot\" design.",
+    "age": 26,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Eliza\n\nBackground:\nEliza is a driven and ambitious young woman who has already made significant strides in her career. Despite her youth, she has a clear vision for her future and is not afraid to take calculated risks to achieve her goals.\n\nDemographics:\nAge: 19\nGender: Female\nEducation: Bachelor's Degree in Business Administration\nProfession: Marketing Coordinator\nIncome: $110,000\n\nFinancial Situation:\nWith her lucrative marketing position, Eliza enjoys a comfortable financial standing. She is diligent about budgeting and saving, allocating a substantial portion of her income towards investing in her future, whether it's funding her retirement account or setting aside capital to start her own business venture someday.\n\nShopping Habits:\nEliza takes a strategic approach to her shopping, balancing her desire for quality and style with a keen eye for value. She invests in timeless, high-quality pieces that will last, but also indulges in the occasional trend-driven purchase to keep her wardrobe fresh and modern. Eliza is not afraid to splurge on items that she knows will bring her joy and enhance her professional image.\n\nPersonal Life:\nOutside of work, Eliza is an active member of her community, volunteering her time and expertise to various nonprofit organizations. She is passionate about mentoring young women, and in her free time, she can be found networking, attending industry events, or pursuing her hobbies, which include yoga, photography, and traveling to new destinations.",
+    "intent": "buy a pair of graduated compression stockings.",
+    "age": 19,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

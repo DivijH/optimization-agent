@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jacob\n\nBackground:\nJacob is a passionate and driven software engineer who has carved out a successful career in the tech industry. With a keen eye for detail and an innovative mindset, he has made significant contributions to the development of cutting-edge applications and platforms.\n\nDemographics:\nAge: 27\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Software Engineer\nIncome: $68,000\n\nFinancial Situation:\nJacob's income as a software engineer allows him to maintain a comfortable lifestyle and save for his future. He is financially responsible, carefully managing his expenses and investments to ensure long-term financial stability.\n\nShopping Habits:\nJacob's shopping habits reflect his practical and technology-oriented nature. He frequently invests in high-quality electronics, gadgets, and software to enhance his work and personal life. While he is selective in his purchases, Jacob is also willing to splurge on the latest tech innovations that align with his professional and personal interests.\n\nProfessional Life:\nAs a software engineer, Jacob is constantly exploring new technologies and programming languages to stay ahead of industry trends. He is a valuable asset to his team, known for his problem-solving skills, attention to detail, and ability to think outside the box. Jacob takes great pride in his work and is always seeking opportunities to contribute to the development of innovative digital solutions.\n\nPersonal Style:\nJacob's personal style is a blend of comfort and professionalism. On a typical workday, he can be found wearing well-fitted button-down shirts, chinos, and sleek leather shoes. During his free time, he gravitates towards more casual attire, such as graphic tees, slim-fit jeans, and sneakers. However, Jacob's wardrobe always maintains a sense of polish and attention to detail, reflecting his meticulous approach to life.\n\nOutside of work, Jacob is an avid reader, exploring the latest advancements in technology and software development. He also enjoys outdoor activities, such as hiking and cycling, as a means of balancing his sedentary work life.",
+    "intent": "buy a fillable glass container.",
+    "age": 27,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

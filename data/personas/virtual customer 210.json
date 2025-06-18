@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Robert\n\nBackground:\nRobert is a seasoned business executive who has built a successful career in the technology industry. After years of climbing the corporate ladder, he now serves as the Chief Operating Officer for a leading software company.\n\nDemographics:\nAge: 59\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Chief Operating Officer\nIncome: $180,000\n\nFinancial Situation:\nWith his high-level executive position and extensive experience, Robert has accumulated substantial wealth over the years. He is financially stable and able to provide for himself and his family comfortably. While he is not extravagant in his spending, Robert enjoys the occasional luxury, such as traveling to exotic destinations or investing in rare collectibles.\n\nShopping Habits:\nRobert's shopping habits reflect his successful and sophisticated lifestyle. He prefers to purchase high-quality, durable products that are built to last. When it comes to clothing, he gravitates towards well-tailored, classic pieces from reputable brands. Robert also enjoys browsing antique shops and art galleries in search of unique, one-of-a-kind items to add to his collection.\n\nProfessional Life:\nAs the Chief Operating Officer, Robert is responsible for overseeing the day-to-day operations of the software company. He is a strategic thinker with a keen eye for efficiency and innovation. Robert takes great pride in his ability to lead his team and drive the organization towards continued growth and success.\n\nPersonal Style:\nRobert's personal style is polished and refined, reflecting his professional stature. He favors well-fitted suits, pressed shirts, and leather dress shoes, often with a subtle touch of personal flair, such as a bold tie or a stylish watch. Off-duty, Robert enjoys more casual attire, such as tailored slacks and sweaters, which he pairs with an air of effortless sophistication.",
+    "intent": "buy a pair of medical grade compression leggings with 40-60 mmHg compression.",
+    "age": 59,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

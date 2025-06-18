@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: James\n\nBackground:\nJames is a retired factory worker who is navigating the transition into his golden years. After decades of hard work on the assembly line, he is now enjoying the opportunity to slow down and focus on his personal interests and hobbies.\n\nDemographics:\nAge: 63\nGender: Male\nEducation: High School Diploma\nProfession: Retired Factory Worker\nIncome: $18,000\n\nFinancial Situation:\nWith a modest retirement income, James lives within his means and prioritizes financial stability. He has managed to save a modest nest egg, which provides him with a sense of security and the ability to occasionally indulge in small luxuries.\n\nShopping Habits:\nJames is a practical shopper who values quality and durability over trendiness. He frequents discount retailers, thrift stores, and garage sales in search of reliable and affordable items that will stand the test of time. James takes pride in finding hidden gems and making the most of his limited budget.\n\nHobbies and Interests:\nIn retirement, James has rediscovered his passion for woodworking. He spends countless hours in his garage workshop, meticulously crafting intricate birdhouses, small furniture pieces, and other handmade items. James also enjoys gardening, regularly tending to his vegetable patch and immaculately manicured lawn.\n\nPersonal Style:\nJames' personal style reflects his no-frills approach to life. He favors comfortable, well-worn clothing, such as flannel shirts, sturdy jeans, and reliable work boots. While not overly concerned with fashion, James takes pride in maintaining a neat and presentable appearance.",
+    "intent": "buy a simple, silver-toned western-style necklace.",
+    "age": 63,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

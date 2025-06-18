@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a retired factory worker who is now navigating the transition to life on a fixed income. Despite the financial challenges, he remains resilient and maintains a positive outlook, finding joy in his hobbies and spending time with his family.\n\nDemographics:\nAge: 55\nGender: Male\nEducation: High School Diploma\nProfession: Retired Factory Worker\nIncome: $22,000\n\nFinancial Situation:\nAfter decades of working in the manufacturing industry, Michael is now relying on a modest pension and social security benefits to cover his living expenses. While his income is limited, he has developed strategies to stretch his resources, such as cutting back on non-essential expenses, seeking out discounts and sales, and occasionally picking up part-time work to supplement his retirement income.\n\nShopping Habits:\nMichael's shopping habits are primarily focused on meeting his basic needs. He tends to shop at discount stores, thrift shops, and secondhand markets, seeking out affordable and practical items for his everyday life. Splurging on luxuries or high-end products is not a priority for Michael, who values functionality and longevity over brand names or trends.\n\nPersonal Life:\nIn his retirement, Michael has embraced a slower-paced lifestyle, devoting more time to his hobbies and family. He enjoys tinkering with small home repairs, gardening, and attending local community events. Michael's connections with his children and grandchildren bring him great joy and help offset the financial constraints he faces in his retirement.\n\nPersonal Style:\nMichael's personal style is comfortable and practical, reflecting his blue-collar background and the realities of living on a fixed income. He gravitates towards durable, well-worn clothing that can withstand the demands of his daily activities. His wardrobe consists of casual staples, such as t-shirts, flannel shirts, sturdy pants, and comfortable shoes, all chosen for their functionality and affordability.",
+    "intent": "buy a cubic zirconia necklace.",
+    "age": 55,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

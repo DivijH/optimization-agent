@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Edward\n\nBackground:\nEdward is a 53-year-old man who has navigated a diverse career path, transitioning from the corporate world to the nonprofit sector. After a successful tenure in marketing and business development, he felt a calling to apply his skills and experience to make a positive impact on his community.\n\nDemographics:\nAge: 53\nGender: Male\nEducation: Bachelor's degree in Business Administration\nProfession: Program Manager, Local Nonprofit Organization\nIncome: $65,000\n\nFinancial Situation:\nWith his current position at a local nonprofit organization, Edward has a comfortable income that allows him to maintain a stable financial footing. While he is not wealthy, he is able to cover his living expenses, contribute to his retirement savings, and participate in charitable initiatives that are important to him.\n\nShopping Habits:\nEdward's shopping habits reflect his practical and pragmatic approach to life. He values quality over quantity and often invests in durable, well-made products that will serve him well in the long run. He enjoys browsing local independent shops and online marketplaces to discover unique items that align with his personal style and values.\n\nProfessional Life:\nAs a Program Manager at a local nonprofit organization, Edward is responsible for overseeing the implementation of impactful community initiatives. He leverages his extensive business acumen to optimize program operations, secure funding, and foster meaningful collaborations with diverse stakeholders. Edward takes great pride in his work, as it allows him to contribute to positive change in his community.\n\nPersonal Style:\nEdward's personal style is polished and professional, with a touch of understated elegance. He favors well-fitting, classic menswear pieces that are versatile and easy to mix and match. While he is not overly concerned with the latest trends, Edward ensures his wardrobe reflects his sense of confidence and commitment to his work.\n\nIn his free time, Edward enjoys engaging in outdoor activities, such as hiking and gardening, as a way to maintain a healthy work-life balance. He is also an avid reader, with a particular interest in biographies and books on leadership and organizational management.",
+    "intent": "buy an ergonomic keyboard that supports proper wrist and hand positioning.",
+    "age": 53,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

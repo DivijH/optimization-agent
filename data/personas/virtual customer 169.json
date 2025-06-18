@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a 50-year-old single mother who has faced significant financial challenges throughout her life. Despite the obstacles she has overcome, she remains resilient and dedicated to providing the best possible future for her two children.\n\nDemographics:\nAge: 50\nGender: Female\nEducation: High School Diploma\nProfession: Part-time Retail Associate\nIncome: $25,000\n\nFinancial Situation:\nOlivia's income as a part-time retail associate is limited, often leaving her struggling to make ends meet. She relies on government assistance and occasional help from family members to cover her essential expenses. Budgeting and finding ways to save are constant priorities in her daily life.\n\nShopping Habits:\nOlivia's shopping habits are primarily focused on necessity rather than luxury. She scours for sales, coupon codes, and discounted items to stretch her limited budget. When possible, she seeks out second-hand stores and thrift shops to find affordable clothing and household items for her family.\n\nProfessional Life:\nOlivia's part-time job in retail provides her with a steady, albeit modest, income. She values the stability and flexibility it offers, which allows her to balance her work responsibilities with her roles as a caregiver and a single parent. Olivia hopes to eventually secure a higher-paying position that can better support her family.\n\nPersonal Style:\nOlivia's personal style is pragmatic and practical, prioritizing comfort and functionality over trends or high fashion. She often wears casual, durable clothing that can withstand the demands of her daily life. She values quality and longevity in her purchases, investing in well-made pieces that can be passed down to her children.",
+    "intent": "buy a mini playdough set for kids.",
+    "age": 50,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

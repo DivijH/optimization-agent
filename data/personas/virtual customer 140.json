@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a successful marketing executive at a global advertising agency. With her exceptional strategic thinking and creative flair, she has played a pivotal role in developing award-winning campaigns that have elevated the profiles of several high-profile clients.\n\nDemographics:\nAge: 37\nGender: Female\nEducation: Master's Degree in Marketing\nProfession: Marketing Executive\nIncome: $112,000\n\nFinancial Situation:\nAs a seasoned marketing executive, Sarah enjoys a comfortable financial position. She has built a substantial savings and investment portfolio, allowing her to maintain a high standard of living while also contributing to various charitable causes that are close to her heart.\n\nShopping Habits:\nSarah is a discerning shopper who values quality and timelessness over fleeting trends. She meticulously researches products and services, seeking the best value for her money. While she is not afraid to splurge on luxury items that align with her personal style, Sarah also enjoys scouting for unique, one-of-a-kind finds.\n\nProfessional Life:\nSarah is a respected leader in her field, known for her ability to inspire and guide her team to success. She is constantly seeking new challenges and opportunities to expand her expertise, frequently attending industry events and conferences to stay ahead of the curve.\n\nPersonal Style:\nSarah's personal style is polished and sophisticated, reflecting her professional persona. She favors well-tailored business attire, including sharp blazers, figure-flattering dresses, and elegant heels. Outside of the office, she enjoys experimenting with more casual and trendy looks, blending high-end and affordable pieces to create her signature style.\n\nSarah resides in a chic, modern apartment in the heart of the city, where she can easily access the vibrant cultural and social scene. In her free time, she enjoys exploring new restaurants, attending art exhibitions, and practicing yoga to maintain a healthy work-life balance.",
+    "intent": "buy a handheld massager from Niagara Earth.",
+    "age": 37,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

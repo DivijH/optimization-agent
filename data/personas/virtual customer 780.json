@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Damien\n\nBackground:\nDamien is a 33-year-old man who has faced a series of setbacks in his life, leading him to a difficult financial situation. Despite the challenges, he remains determined to find a stable path forward and improve his circumstances.\n\nDemographics:\nAge: 33\nGender: Male\nEducation: High School Diploma\nProfession: Unemployed\nIncome: $15,000\n\nFinancial Situation:\nDamien's financial situation is precarious, as he has been unemployed for an extended period. He relies on a combination of government assistance, occasional freelance work, and the support of his aging parents to make ends meet. Damien is acutely aware of the need to find a steady source of income and is actively exploring job opportunities and vocational training programs to improve his prospects.\n\nShopping Habits:\nOut of necessity, Damien is a cautious and pragmatic shopper. He focuses on finding the most affordable options for essential items such as food, clothing, and basic household necessities. Damien frequents discount stores, thrift shops, and online marketplaces, always on the lookout for the best deals. He values practicality and functionality over style, prioritizing durability and affordability in his purchasing decisions.\n\nPersonal Life:\nDamien finds solace and motivation in his close relationships with his family and a small circle of loyal friends. He is a devoted son who helps care for his aging parents, and he draws strength from their unwavering support. In his free time, Damien engages in low-cost activities such as volunteering at a local community center, hiking in nearby parks, and attending free cultural events. He is determined to improve his circumstances and provide a better future for himself and his loved ones.",
+    "intent": "buy a high-quality mechanical keyboard that is durable and affordable.",
+    "age": 33,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

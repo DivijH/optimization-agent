@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Alex\n\nBackground:\nAlex is a 21-year-old aspiring musician and part-time barista. He is passionate about music, dedicating much of his free time to writing songs and practicing his guitar.\n\nDemographics:\nAge: 21\nGender: Male\nEducation: High School Graduate\nProfession: Barista, Musician\nIncome: $25,000\n\nFinancial Situation:\nAs a barista, Alex's income is limited, but he is careful with his spending and tries to save what he can to invest in his music equipment and recording. He lives in a modest apartment with a roommate to keep his expenses low.\n\nShopping Habits:\nAlex tends to shop for practical, affordable items that fit his casual, creative lifestyle. He enjoys browsing secondhand stores and online marketplaces to find unique, budget-friendly items. When it comes to music gear, he is willing to spend a bit more to get quality products that will last.\n\nProfessional Life:\nAlex works part-time as a barista to support himself while pursuing his passion for music. He spends his evenings and weekends writing, rehearsing, and occasionally performing at local venues. His ultimate goal is to one day turn his music into a full-time career.\n\nPersonal Style:\nAlex's personal style reflects his artistic and laidback personality. He tends to wear comfortable, casual clothing, often opting for t-shirts, jeans, and comfortable sneakers. He appreciates unique, vintage-inspired pieces that help him express his individuality.\n\nAlex loves Spotify and usually wakes up at 11am every day.\nAlex lives in Seattle.",
+    "intent": "add cinnamoroll keyboard to cart",
+    "age": 21,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Samantha\n\nBackground:\nSamantha is a marketing manager at a mid-sized tech company. She has a strong background in digital marketing and is passionate about using data-driven strategies to drive business growth.\n\nDemographics:\nAge: 43\nGender: Female\nEducation: Bachelor's Degree in Marketing\nProfession: Marketing Manager\nIncome: $65,000\n\nFinancial Situation:\nSamantha earns a comfortable income that allows her to live comfortably and save for the future. She is disciplined with her finances and enjoys the occasional splurge on travel or home decor.\n\nShopping Habits:\nSamantha enjoys browsing for unique and stylish items, often seeking out local boutiques and independent retailers. She values quality over quantity and is willing to invest in well-made products that will last. Samantha also appreciates the convenience of online shopping but tries to support local businesses when possible.\n\nProfessional Life:\nAs a marketing manager, Samantha oversees a team of digital marketers and is responsible for developing and executing campaigns across various channels. She is constantly staying up-to-date on industry trends and enjoys collaborating with her colleagues to devise innovative strategies.\n\nPersonal Style:\nSamantha has a classic and sophisticated personal style, mixing high-end pieces with more casual essentials. She gravitates towards neutral tones and timeless silhouettes, with the occasional pop of color or bold accessory. Samantha values comfort and practicality, but also enjoys expressing her personal style.\n\nSamantha is a frequent traveler and loves to explore new destinations. She is an avid reader and enjoys visiting local bookstores during her travels. Samantha lives in San Francisco.",
+    "intent": "add a paintball pistol to my cart",
+    "age": 43,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Amelia\n\nBackground:\nAmelia is a passionate artist and freelance graphic designer living in a vibrant, creative community. Despite her modest income, she has found fulfillment in the freedom and flexibility of her chosen career path.\n\nDemographics:\nAge: 31\nGender: Female\nEducation: Associate's Degree in Graphic Design\nProfession: Freelance Graphic Designer\nIncome: $26,000\n\nFinancial Situation:\nAs a freelancer, Amelia's income can fluctuate, but she has learned to manage her finances carefully. She lives in a cozy, rent-controlled apartment and is mindful of her spending, prioritizing her artistic supplies and equipment over lavish purchases.\n\nShopping Habits:\nAmelia is a savvy shopper, scouring thrift stores, garage sales, and online marketplaces for unique finds. She enjoys the challenge of creating stylish outfits on a budget and often repurposes or upcycles items to suit her aesthetic. When it comes to art supplies, she invests in quality materials that support her creative process.\n\nProfessional Life:\nAmelia's days are filled with a diverse array of projects, from designing logos and branding materials for local businesses to creating illustrations for independent publications. She thrives on the variety and the opportunity to collaborate with like-minded individuals. Amelia is constantly seeking ways to expand her skills and stay at the forefront of design trends.\n\nPersonal Style:\nAmelia's personal style reflects her eclectic and artistic sensibilities. She gravitates towards vintage and secondhand clothing, mixing and matching pieces to create her signature looks. Her wardrobe is a blend of bohemian flair and minimalist chic, with a focus on comfort and self-expression.\n\nIn her free time, Amelia can be found exploring local art galleries, attending community events, or immersing herself in various creative hobbies, such as pottery and textile design. She values the connections she has made within her close-knit creative community.",
+    "intent": "buy a set of ashtrol tealight holders.",
+    "age": 31,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

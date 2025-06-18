@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a savvy and ambitious marketing executive who has built a successful career at a leading advertising agency. With her keen analytical mind and creative flair, she has helped her clients achieve impactful brand campaigns that drive tangible results.\n\nDemographics:\nAge: 38\nGender: Female\nEducation: Master's Degree in Marketing\nProfession: Marketing Executive\nIncome: $125,000\n\nFinancial Situation:\nAs a seasoned marketing professional, Emily's income places her in a comfortable financial position. She is diligent in her financial planning, allocating funds towards retirement savings, investment opportunities, and occasional luxury purchases. Emily values financial stability and is always on the lookout for ways to grow her wealth responsibly.\n\nShopping Habits:\nEmily's shopping habits reflect her sophisticated tastes and her desire to maintain a polished, professional image. She gravitates towards high-quality, investment-worthy items, both for her work wardrobe and personal lifestyle. While conscious of her spending, she is willing to splurge on items that she believes will last and enhance her productivity or quality of life.\n\nProfessional Life:\nEmily thrives in the fast-paced, dynamic environment of the advertising industry. She is a strategic thinker who excels at translating client objectives into captivating, data-driven marketing campaigns. Her ability to collaborate with cross-functional teams, manage multiple projects, and adapt to evolving industry trends has earned her a reputation as a rising star within the agency.\n\nPersonal Style:\nEmily's personal style reflects her professional persona - chic, elegant, and sophisticated. She curates a wardrobe of timeless pieces, such as tailored blazers, streamlined dresses, and well-fitted trousers, often accessorized with statement jewelry and high-quality leather goods. Emily's style is a seamless blend of practicality and polish, projecting an air of confidence and poise.\n\nIn her free time, Emily enjoys indulging in her passion for art and culture. She is a frequent visitor to local galleries, attends high-profile industry events, and travels to explore new destinations that inspire her creative sensibilities.",
+    "intent": "buy a high-quality square metal bun holder.",
+    "age": 38,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

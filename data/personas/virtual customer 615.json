@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a resilient and resourceful woman who has faced her fair share of challenges throughout her life. After experiencing a series of setbacks, including the loss of her long-term job and a difficult divorce, she is now navigating the complexities of re-establishing her independence and financial stability.\n\nDemographics:\nAge: 54\nGender: Female\nEducation: High School Diploma\nProfession: Part-time Retail Associate\nIncome: $21,000\n\nFinancial Situation:\nOlivia's current financial situation is relatively modest, with her part-time retail income falling within the $0 to $30,000 range. She has faced difficulties in the past, leading to a depletion of her savings and the need to rely on government assistance programs. However, Olivia is determined to regain control of her financial future and is actively seeking ways to supplement her income and rebuild her financial security.\n\nShopping Habits:\nGiven her limited financial resources, Olivia's shopping habits are primarily focused on finding the best deals and prioritizing essential purchases. She is skilled at navigating thrift stores, discount retailers, and online marketplaces to find affordable, high-quality items for her household and personal needs. Olivia takes pride in her ability to stretch her budget and make the most of her limited funds.\n\nPersonal Life:\nDespite the challenges she has faced, Olivia remains resilient and optimistic. She finds solace in the small joys of life, such as spending quality time with her supportive circle of friends and engaging in creative hobbies, like gardening and volunteering at the local community center. Olivia's determination to rebuild her life and create a brighter future for herself is a testament to her strength of character.\n\nPersonal Style:\nOlivia's personal style reflects her practical and pragmatic approach to life. She favors comfortable, durable clothing that provides both function and a touch of personal expression. Her wardrobe consists of mix-and-match pieces, such as well-fitting jeans, classic tops, and sturdy, comfortable shoes. While she may not be at the forefront of fashion trends, Olivia's style is a reflection of her resilience and her ability to make the most of what she has.",
+    "intent": "buy an easy bake oven for a child.",
+    "age": 54,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

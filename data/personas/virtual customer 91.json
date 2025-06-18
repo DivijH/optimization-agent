@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a successful entrepreneur who runs a thriving marketing agency in a large metropolitan city. With a keen eye for trends and a knack for strategic thinking, she has built a reputation for delivering innovative, results-driven campaigns for her diverse client base.\n\nDemographics:\nAge: 30\nGender: Female\nEducation: Master's degree in Marketing\nProfession: Founder and CEO of a Marketing Agency\nIncome: $110,000\n\nFinancial Situation:\nAs the owner of a successful marketing agency, Emily enjoys a comfortable and stable financial situation. She is a disciplined saver and investor, allocating funds towards business growth, personal investments, and a secure retirement plan.\n\nShopping Habits:\nEmily's shopping habits reflect her sophisticated and discerning taste. She enjoys browsing high-end boutiques and designer stores, seeking out unique and exclusive pieces that align with her personal style. While she is not afraid to splurge on quality items, Emily also appreciates a good bargain and often takes advantage of sales and promotions.\n\nProfessional Life:\nEmily's professional life is fast-paced and dynamic. As the CEO of her own agency, she oversees a team of talented marketing professionals, manages client relationships, and continuously explores new business opportunities. She thrives on the adrenaline of closing lucrative deals and delivering successful campaigns.\n\nPersonal Style:\nEmily has a polished and stylish personal aesthetic. She favors tailored, high-quality pieces that exude confidence and sophistication, such as well-fitted blazers, structured dresses, and sleek accessories. Emily keeps up with the latest fashion trends but maintains a timeless, elegant look that commands attention.\n\nIn her free time, Emily enjoys indulging in her passion for the arts, attending art exhibits and theatrical performances. She is also an avid reader and enjoys hosting intimate social gatherings at her chic, contemporary apartment.",
+    "intent": "buy a 12-pack of Zevia zero-calorie, zero-sugar soda.",
+    "age": 30,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

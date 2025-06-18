@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ivan\n\nBackground:\nIvan is a driven and ambitious entrepreneur who has carved out a successful niche for himself in the tech industry. With a keen eye for innovation and a knack for identifying emerging trends, he has founded and grown several startup companies, each one more promising than the last.\n\nDemographics:\nAge: 39\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Entrepreneur, Tech Startup Founder\nIncome: $78,000\n\nFinancial Situation:\nWhile Ivan's income can fluctuate due to the inherent risks of the startup world, he has managed to maintain a comfortable financial standing. He is prudent in his spending, allocating resources strategically to fuel the growth of his ventures while ensuring a stable personal lifestyle. Ivan actively invests his earnings back into his businesses, viewing each opportunity as a chance to expand his empire.\n\nShopping Habits:\nIvan's shopping habits reflect his pragmatic approach to life. He tends to prioritize practical, high-quality purchases that serve a purpose, whether it's the latest tech gadget to aid his work or a well-crafted suit to maintain a professional image. However, he also allows himself the occasional indulgence, seeking out unique experiences or products that align with his personal interests and passions.\n\nProfessional Life:\nIvan's professional life is a whirlwind of activities, from overseeing the day-to-day operations of his startups to networking with industry leaders and exploring new investment opportunities. He thrives on the challenge of bringing innovative ideas to life and takes great pride in the successes of his ventures. Despite the long hours and constant hustle, Ivan finds immense fulfillment in his work and is driven to continue expanding his entrepreneurial empire.\n\nPersonal Style:\nIvan's personal style is a reflection of his dynamic, fast-paced lifestyle. He favors a modern, yet refined aesthetic, often seen in well-fitted button-down shirts, tailored trousers, and polished leather shoes. However, he is not averse to incorporating more casual elements, such as well-crafted denim or stylish sneakers, when the occasion calls for it. Ivan believes that his appearance should convey a sense of professionalism and confidence, mirroring the image he projects in the business world.",
+    "intent": "buy a high-quality glass baking dish set.",
+    "age": 39,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

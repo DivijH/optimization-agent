@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a passionate and resilient artist who has dedicated his life to pursuing his creative passions. Despite facing financial challenges, he remains determined to create meaningful works of art that can inspire and provoke thought in others.\n\nDemographics:\nAge: 40\nGender: Male\nEducation: High School Diploma\nProfession: Artist\nIncome: $22,000\n\nFinancial Situation:\nEthan's income as a freelance artist falls within the $0 to $30,000 range, which requires him to carefully manage his finances. He often struggles to make ends meet, but he has developed a frugal lifestyle that allows him to prioritize his art over material possessions. He supplements his income through occasional part-time jobs and by selling his artwork at local art fairs and online marketplaces.\n\nShopping Habits:\nEthan's shopping habits are primarily focused on acquiring art supplies and materials to support his creative endeavors. He scours secondhand stores, online platforms, and discount art supply retailers to find affordable, high-quality materials that he can use in his work. He is mindful of his spending and often prioritizes necessities over discretionary purchases.\n\nProfessional Life:\nAs a self-employed artist, Ethan's professional life is a constant balancing act between creating his art and finding ways to generate income. He spends long hours in his studio, experimenting with various mediums and techniques to develop his unique artistic style. He actively seeks out opportunities to showcase his work, whether through local art exhibitions, online galleries, or commission-based projects.\n\nPersonal Style:\nEthan's personal style reflects his creative and introspective nature. He favors a casual, yet thoughtful, approach to fashion, often donning well-worn jeans, comfortable t-shirts, and a variety of layering pieces that allow him to adapt to the changing weather and demands of his artistic work. His attire is functional and practical, allowing him to move freely and focus on his craft.",
+    "intent": "buy a used, affordable art supplies set from a secondhand store or online platform.",
+    "age": 40,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Maria\n\nBackground:\nMaria is a resilient single mother who has faced numerous challenges throughout her life. Despite the obstacles, she remains dedicated to providing a stable and loving environment for her two children.\n\nDemographics:\nAge: 40\nGender: Female\nEducation: High School Diploma\nProfession: Part-time Daycare Assistant\nIncome: $22,000\n\nFinancial Situation:\nAs a part-time daycare assistant, Maria's income falls within the $0 to $30,000 range. She carefully budgets her expenses, prioritizing essential needs such as housing, food, and childcare. While she occasionally struggles to make ends meet, Maria is determined to create a secure and nurturing home for her family.\n\nShopping Habits:\nMaria's shopping habits are focused on finding affordable and practical solutions for her family's needs. She regularly visits thrift stores, secondhand shops, and discount retailers to stretch her limited budget. When possible, she also takes advantage of sales, coupons, and community support programs to access essential items at a lower cost.\n\nProfessional Life:\nIn her role as a part-time daycare assistant, Maria provides a safe and engaging environment for young children. She takes great pride in her work, finding joy in helping the children learn and grow. Although the pay is modest, the flexible schedule allows Maria to balance her professional responsibilities with her duties as a single parent.\n\nPersonal Style:\nMaria's personal style is practical and comfortable, with a focus on versatile and durable clothing. She often relies on a mix of secondhand finds, budget-friendly basics, and handmade items to create her wardrobe. Her fashion choices are primarily driven by functionality, affordability, and the ability to meet the demands of her daily life as a working mother.\n\nIn her free time, Maria enjoys engaging in low-cost family activities, such as visiting local parks, attending community events, and creating crafts with her children. She values quality time with her loved ones and finding joy in the simple pleasures of life.",
+    "intent": "buy an Oklahoma Joe's smoker.",
+    "age": 40,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

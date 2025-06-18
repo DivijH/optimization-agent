@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Alex\n\nBackground:\nAlex is a driven and ambitious young professional who has quickly risen through the ranks in the tech industry. With a keen analytical mind and a passion for innovation, he has established himself as a respected leader in his field.\n\nDemographics:\nAge: 26\nGender: Male\nEducation: Bachelor's degree in Computer Science\nProfession: Software Engineering Manager\nIncome: $110,000\n\nFinancial Situation:\nAs a software engineering manager at a successful tech company, Alex's income falls within the range of $94,001 to $1,000,000. He is financially stable and comfortable, allowing him to save for the future while also enjoying a certain degree of luxury. Alex is mindful of his spending and aims to strike a balance between investing in his career and maintaining a healthy work-life balance.\n\nShopping Habits:\nAlex's shopping habits reflect his affluence and his appreciation for quality. He tends to invest in high-end, durable products, whether it's the latest tech gadgets, well-tailored suits, or premium grooming products. While he enjoys the finer things in life, Alex is also conscious of not overspending and seeks out discounts and sales when possible.\n\nProfessional Life:\nAlex has quickly climbed the corporate ladder, demonstrating his exceptional technical skills, strategic thinking, and ability to lead a team. In his role as a software engineering manager, he oversees a talented group of developers, guiding them in the implementation of cutting-edge solutions. Alex is known for his attention to detail, his ability to problem-solve, and his dedication to fostering a collaborative and innovative work environment.\n\nPersonal Style:\nAlex's personal style is a reflection of his professional success and his appreciation for quality craftsmanship. He typically wears well-fitted suits, dress shirts, and polished leather shoes, projecting a polished and sophisticated image. Outside of work, he enjoys exploring the latest trends in menswear, incorporating stylish yet functional pieces into his wardrobe.\n\nIn his free time, Alex enjoys staying physically active through activities like cycling and hiking. He is also an avid reader, with a particular interest in technology, business, and personal development.",
+    "intent": "buy non-alcoholic mocktail mixes and ingredients.",
+    "age": 26,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

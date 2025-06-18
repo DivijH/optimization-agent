@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a seasoned marketing executive who has navigated the corporate world with aplomb. With over 15 years of experience, he has honed his skills in developing and implementing successful marketing strategies for a variety of industries.\n\nDemographics:\nAge: 43\nGender: Male\nEducation: Bachelor's degree in Business Administration\nProfession: Vice President of Marketing at a large consumer goods company\nIncome: $120,000\n\nFinancial Situation:\nAs a senior-level executive, Michael enjoys a comfortable and stable financial situation. He has built a solid investment portfolio, which includes a mix of stocks, bonds, and real estate. Michael is prudent with his spending, but he also allows himself the occasional indulgence, such as luxury vacations and fine dining.\n\nShopping Habits:\nMichael's shopping habits reflect his professional status and personal taste. He gravitates towards high-quality, well-crafted items that exude sophistication and attention to detail. Whether it's a tailored suit, a premium timepiece, or the latest technology gadget, Michael is willing to invest in products that he deems worthy of his discerning eye.\n\nProfessional Life:\nMichael's professional life is fast-paced and dynamic. As the Vice President of Marketing, he oversees a team of talented marketers and is responsible for developing and executing marketing campaigns that drive business growth. He is known for his strategic thinking, excellent communication skills, and ability to adapt to changing market conditions.\n\nPersonal Style:\nMichael's personal style is polished and refined, with a touch of understated elegance. He favors tailored suits, crisp dress shirts, and high-quality accessories that complement his professional persona. While he keeps up with the latest fashion trends, Michael prefers a classic look that conveys authority and confidence.\n\nIn his free time, Michael enjoys indulging in his passion for fine wines and gourmet cuisine. He is an avid collector of rare and vintage wines and often hosts intimate dinner parties for his close circle of friends and colleagues. Michael also finds solace in reading literary classics and engaging in outdoor activities, such as hiking and cycling, to maintain a balanced lifestyle.",
+    "intent": "buy a high-quality shower squeegee for cleaning glass shower doors.",
+    "age": 43,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

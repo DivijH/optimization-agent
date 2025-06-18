@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Robert\n\nBackground:\nRobert is a seasoned executive who has navigated the corporate world for decades, amassing a wealth of experience and expertise. He has built a successful career in the financial services industry, leveraging his sharp analytical skills and keen business acumen to propel his rise through the ranks.\n\nDemographics:\nAge: 63\nGender: Male\nEducation: Master's Degree in Finance\nProfession: Chief Financial Officer at a leading financial institution\nIncome: $117,000\n\nFinancial Situation:\nRobert's steady climb up the corporate ladder has afforded him a comfortable and secure financial standing. With a sizeable income and prudent money management, he has accumulated substantial savings and investments, ensuring a stable financial future.\n\nShopping Habits:\nRobert's shopping habits reflect his refined tastes and appreciation for quality. He frequents high-end department stores and boutiques, seeking out well-crafted, durable products that align with his professional image. While he is not afraid to splurge on luxury items, he also values practicality and efficiency in his purchases.\n\nProfessional Life:\nAs the Chief Financial Officer of a prominent financial institution, Robert's responsibilities span a wide range of strategic and operational duties. He is skilled in financial planning, risk management, and decision-making, guiding his organization through complex economic landscapes and ensuring its financial stability and growth.\n\nPersonal Style:\nRobert's personal style exudes a sense of sophistication and authority. He favors well-tailored, classic menswear, including custom-fitted suits, crisp dress shirts, and polished leather shoes. His wardrobe is a reflection of his refined taste and his commitment to maintaining a professional and polished appearance.\n\nIn his spare time, Robert enjoys indulging in his passion for fine art, attending exclusive gallery openings and art auctions. He also maintains an active lifestyle, engaging in regular exercise and occasionally playing a round of golf with his business associates.\n\nRobert resides in a luxurious penthouse apartment in a prestigious downtown neighborhood, surrounded by the trappings of his success.",
+    "intent": "buy roasted chicory.",
+    "age": 63,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

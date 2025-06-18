@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a dedicated middle school teacher who has spent the past 20 years shaping the minds of young students. With a passion for education and a commitment to making a positive impact on his community, he finds great fulfillment in his role as an educator.\n\nDemographics:\nAge: 54\nGender: Male\nEducation: Master's degree in Education\nProfession: Middle School Teacher\nIncome: $62,000\n\nFinancial Situation:\nAs a middle school teacher, David's income falls within the range of $30,001 to $94,000. While not the highest-paying profession, he is able to maintain a comfortable lifestyle and provide for his family. He is mindful of his spending and tends to save for larger purchases or unexpected expenses.\n\nShopping Habits:\nDavid is a practical shopper who focuses on finding quality items that will last. He often researches products online before making purchases, comparing prices and reviews to ensure he is getting the best value. When possible, he prefers to shop at local stores to support his community.\n\nProfessional Life:\nTeaching is more than just a job for David; it's a calling. He dedicates long hours to lesson planning, grading assignments, and attending professional development workshops. David takes great pride in watching his students grow and succeed, and he is always striving to improve his teaching methods.\n\nPersonal Style:\nDavid's personal style reflects his down-to-earth and approachable personality. He typically wears casual, comfortable clothing, such as button-down shirts, khakis, and loafers. He values function over fashion and aims to maintain a professional appearance while remaining at ease in the classroom.",
+    "intent": "buy an adult onesie with a face cover.",
+    "age": 54,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

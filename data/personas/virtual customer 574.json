@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a passionate and driven social entrepreneur who has dedicated her career to creating positive social impact. After several years working in the corporate sector, she made the bold decision to start her own social enterprise, leveraging her business acumen to address pressing societal issues.\n\nDemographics:\nAge: 34\nGender: Female\nEducation: Master's Degree in Social Innovation\nProfession: Founder and CEO of a Social Enterprise\nIncome: $65,000\n\nFinancial Situation:\nOlivia's income falls within the range of $30,001 to $94,000, reflecting the challenges and risks inherent in running a social enterprise. She is financially disciplined, prioritizing the growth and sustainability of her business over personal indulgences. Olivia reinvests a significant portion of her earnings back into the organization to ensure its long-term viability and impact.\n\nShopping Habits:\nAs a socially conscious individual, Olivia's shopping habits align with her values. She seeks out ethical, sustainable, and mission-driven brands, often supporting local artisans and social enterprises. Olivia is a discerning shopper, carefully researching products and their supply chains to ensure they meet her high standards.\n\nProfessional Life:\nOlivia's role as the founder and CEO of a social enterprise requires her to wear many hats, from overseeing operations and managing a small team to securing funding and forging strategic partnerships. She is a natural leader and skilled communicator, able to inspire her team and engage with a diverse range of stakeholders.\n\nPersonal Style:\nOlivia's personal style reflects her professional persona \u2013 a blend of practicality and sophistication. She favors versatile, high-quality pieces that can easily transition from the office to community events. Olivia values comfort and functionality, often incorporating sustainable fabrics and ethical fashion labels into her wardrobe.\n\nIn her free time, Olivia can be found attending industry events, networking with like-minded individuals, or volunteering with local organizations aligned with her enterprise's mission. She is a lifelong learner, constantly seeking new knowledge and innovative solutions to address social challenges.",
+    "intent": "buy a renaissance-style necklace.",
+    "age": 34,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

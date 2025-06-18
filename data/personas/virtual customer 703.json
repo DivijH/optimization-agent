@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a driven and ambitious young professional who has quickly established himself as a rising star in the tech industry. With a keen eye for innovation and a natural talent for problem-solving, he has secured a highly coveted position at a leading software company.\n\nDemographics:\nAge: 23\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Software Engineer\nIncome: $105,000\n\nFinancial Situation:\nAt just 23 years old, Ethan's impressive income as a software engineer places him in a comfortable financial position. He is able to save a substantial portion of his earnings, allowing him to steadily build his wealth through investments and retirement planning. While he is mindful of his spending, Ethan is not afraid to splurge on high-quality tech gadgets and experiences that align with his personal interests.\n\nShopping Habits:\nEthan's shopping habits reflect his tech-savvy and modern lifestyle. He is an early adopter of the latest digital devices and software, often researching and comparing products extensively before making a purchase. He also enjoys browsing online marketplaces and specialized tech stores to stay on top of the latest industry trends and innovations.\n\nProfessional Life:\nEthan's professional life is marked by his exceptional technical skills and his ability to collaborate effectively with cross-functional teams. As a software engineer, he is at the forefront of developing cutting-edge solutions that drive the growth and success of his company. Ethan is highly respected by his peers for his analytical thinking, his attention to detail, and his ability to tackle complex problems with innovative approaches.\n\nPersonal Style:\nEthan's personal style reflects his youthful and dynamic personality. He favors a casual yet stylish aesthetic, often pairing well-fitted jeans with crisp button-down shirts or trendy graphic tees. He is also drawn to sleek, minimalist designs and high-quality materials that complement his tech-savvy lifestyle. Ethan's personal style helps him maintain a professional, yet approachable image both in the workplace and in his social circles.",
+    "intent": "buy a 13\" hammered sink.",
+    "age": 23,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

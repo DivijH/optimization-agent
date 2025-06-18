@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emma\n\nBackground:\nEmma is a rising star in the fashion industry, having carved out a successful career as a fashion designer. With a keen eye for trend forecasting and a passion for sustainable design, she has quickly gained recognition for her innovative and eco-friendly fashion collections.\n\nDemographics:\nAge: 29\nGender: Female\nEducation: Bachelor's degree in Fashion Design\nProfession: Fashion Designer\nIncome: $105,000\n\nFinancial Situation:\nEmma's income as a successful fashion designer places her in the $94,001 to $1,000,000 range. She has been diligent in managing her finances, investing a portion of her earnings into her own fashion label and sustainable initiatives. While she enjoys the occasional splurge on high-quality fashion and accessories, Emma is primarily focused on building a secure financial future.\n\nShopping Habits:\nAs a fashion designer, Emma is acutely aware of the industry's impact on the environment. She makes a concerted effort to support ethical and sustainable brands, both in her personal shopping and in the materials she sources for her own designs. When making purchases, Emma prioritizes quality, longevity, and alignment with her values, often choosing classic pieces over trendy fast-fashion items.\n\nProfessional Life:\nEmma's role as a fashion designer allows her to combine her creative talents with her passion for sustainability. She leads a team of skilled artisans and pattern-makers, collaborating with them to bring her visions to life. Emma's designs have garnered critical acclaim for their innovative use of eco-friendly fabrics and production methods, positioning her brand as a leader in the sustainable fashion movement.\n\nPersonal Style:\nEmma's personal style reflects her design aesthetic - a harmonious blend of minimalism and sophistication. She favors clean lines, natural fabrics, and muted color palettes, often incorporating unique, handcrafted details into her outfits. Emma's wardrobe is a testament to her commitment to sustainability, featuring pieces from her own label as well as carefully curated selections from other ethical fashion brands.",
+    "intent": "buy a collection of John Grisham movie adaptations on DVD.",
+    "age": 29,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

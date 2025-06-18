@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a successful real estate developer who has built a thriving business in a rapidly growing city. With a keen eye for emerging trends and a talent for identifying lucrative investment opportunities, he has amassed a diverse portfolio of commercial and residential properties.\n\nDemographics:\nAge: 35\nGender: Male\nEducation: Bachelor's Degree in Business Administration\nProfession: Real Estate Developer\nIncome: $250,000\n\nFinancial Situation:\nEthan's income as a real estate developer falls within the range of $94,001 to $1,000,000. His financial acumen and strategic investments have allowed him to accumulate significant wealth, which he carefully manages through a diversified portfolio of assets, including stocks, bonds, and real estate holdings.\n\nShopping Habits:\nEthan's shopping habits reflect his affluent lifestyle and discerning taste. He appreciates high-end, luxury brands and often makes strategic purchases that align with his professional image and personal interests. While he is not afraid to splurge on premium items, Ethan also values quality and longevity, investing in timeless pieces that will last for years.\n\nProfessional Life:\nEthan's prowess in the real estate industry has earned him a reputation as a savvy and influential player in the local market. He is known for his ability to identify undervalued properties, secure lucrative deals, and transform them into profitable investments. Ethan's leadership skills, negotiation prowess, and in-depth market knowledge make him a trusted advisor to both clients and industry peers.\n\nPersonal Style:\nEthan's personal style reflects his success and refined taste. He favors well-tailored suits, designer casual wear, and luxury accessories that convey an air of sophistication and authority. Whether attending a high-profile networking event or overseeing a construction project, Ethan's appearance is always impeccable, projecting a sense of confidence and professionalism.\n\nIn his free time, Ethan enjoys exploring the city's thriving culinary scene, attending exclusive social events, and indulging in his passion for classic cars. He is a member of a prestigious local country club, where he can be found playing a round of golf or engaging in lively discussions with fellow business leaders.",
+    "intent": "buy light up witch wands for adults.",
+    "age": 35,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emma\n\nBackground:\nEmma is a 25-year-old aspiring writer who is passionate about using her craft to amplify underrepresented voices and tackle important social issues. Despite facing financial challenges, she remains determined to forge a career in the literary world, fueled by her unwavering dedication to storytelling.\n\nDemographics:\nAge: 25\nGender: Female\nEducation: Bachelor's Degree in English Literature\nProfession: Freelance Writer\nIncome: $18,000\n\nFinancial Situation:\nAs a freelance writer, Emma's income is often unpredictable and falls within the $0 to $30,000 range. She lives on a tight budget, carefully managing her expenses and seeking out opportunities to supplement her earnings through part-time work or grants. Emma's financial situation can be stressful at times, but she remains committed to her passion and finds creative ways to make ends meet.\n\nShopping Habits:\nEmma approaches shopping with a mindful and eco-conscious mindset. She frequents thrift stores, secondhand shops, and online marketplaces in search of unique, affordable clothing and accessories that align with her personal style and values. Emma also enjoys supporting local businesses and independent creators, often seeking out ethically-sourced and sustainable products.\n\nProfessional Life:\nEmma spends her days immersed in her writing, crafting powerful narratives and essays that explore themes of social justice, identity, and personal growth. She actively seeks out opportunities to contribute her work to literary journals, online publications, and anthologies, driven by a desire to share diverse perspectives and inspire meaningful change. Despite the financial challenges, Emma remains resilient and passionate about her craft.\n\nPersonal Style:\nEmma's personal style reflects her artistic and socially conscious persona. She favors comfortable, versatile pieces that allow her to move freely between her writing sessions and part-time jobs. Her wardrobe is a mix of thrifted and secondhand items, often featuring bold patterns, vintage-inspired silhouettes, and unique accessories that add a touch of personality to her look. Emma values sustainability and seeks out ethical fashion brands when possible.",
+    "intent": "buy a gold septum ring.",
+    "age": 25,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

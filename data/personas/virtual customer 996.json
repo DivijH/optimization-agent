@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jacob\n\nBackground:\nJacob is a driven and ambitious young professional who has carved out a successful career in the tech industry. With a keen eye for innovation and a passion for problem-solving, he has quickly risen through the ranks, taking on increasingly challenging roles that allow him to showcase his technical expertise and strategic thinking.\n\nDemographics:\nAge: 28\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Software Engineer\nIncome: $62,000\n\nFinancial Situation:\nAs a mid-level software engineer, Jacob's income falls within the $30,001 to $94,000 range. He has a solid financial foundation, with a steady stream of income and the ability to save and invest for the future. Jacob is mindful of his spending, prioritizing experiences and investments that align with his long-term goals, such as purchasing his first home or building a robust retirement portfolio.\n\nShopping Habits:\nJacob's shopping habits reflect his practical and pragmatic approach to life. He values quality and functionality over flashiness, seeking out durable, high-performance products that will enhance his productivity and lifestyle. Whether it's investing in the latest tech gadgets, upgrading his athleisure wardrobe, or furnishing his apartment, Jacob conducts thorough research to ensure he is getting the best value for his money.\n\nProfessional Life:\nJacob's professional life is a source of great fulfillment and personal growth. As a software engineer, he thrives on the constant challenges and opportunities for learning that come with his work. Jacob is known for his analytical problem-solving skills, his ability to collaborate effectively within cross-functional teams, and his passion for staying up-to-date with the latest industry trends and technologies.\n\nPersonal Style:\nJacob's personal style is a blend of contemporary and practical. He favors a minimalist aesthetic, with a wardrobe that consists of well-fitting, versatile pieces that can be easily mixed and matched. Jacob's clothing choices often reflect his active lifestyle, with a focus on comfortable, high-performance athleisure wear that can transition seamlessly from the gym to the office. He values functionality and durability, ensuring that his style choices support his busy, on-the-go lifestyle.",
+    "intent": "buy a set of stainless steel silverware lifts.",
+    "age": 28,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

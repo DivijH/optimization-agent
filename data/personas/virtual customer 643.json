@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sophia\n\nBackground:\nSophia is a 63-year-old retired teacher who has dedicated her life to lifelong learning and community engagement. After a fulfilling career in education, she now spends her time exploring new hobbies, volunteering, and actively participating in her local community.\n\nDemographics:\nAge: 63\nGender: Female\nEducation: Bachelor's Degree in Education\nProfession: Retired Teacher\nIncome: $24,000\n\nFinancial Situation:\nSophia's primary source of income is her retirement pension, which, combined with Social Security benefits, provides her with a modest but comfortable living. She has always been fiscally responsible, and in retirement, she continues to budget carefully, prioritizing her essential needs and allocating funds for her various volunteer activities and personal enrichment.\n\nShopping Habits:\nSophia approaches shopping with a practical and frugal mindset. She is an avid bargain hunter, frequently visiting thrift stores, secondhand shops, and discount retailer to find high-quality, affordable items for her home and wardrobe. When making larger purchases, she thoroughly researches her options to ensure she is getting the best value for her money.\n\nProfessional Life:\nSophia's professional life as a teacher was deeply rewarding, and she takes great pride in the positive impact she had on her students over the years. In retirement, she continues to nurture her passion for education by volunteering as a tutor and mentor to underprivileged youth in her community.\n\nPersonal Style:\nSophia's personal style is comfortable and practical, reflecting her active lifestyle and her desire for versatile, easy-to-care-for garments. She favors classic pieces like well-fitting slacks, blouses, and cardigans, often complemented by comfortable walking shoes or sandals. Sophia's wardrobe is a mix of timeless essentials and the occasional thrifted or secondhand find that catches her eye.",
+    "intent": "buy a high-quality miter saw stand that is sturdy, space-saving, and easy to set up and use.",
+    "age": 63,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a middle-aged marketing professional who has dedicated his career to helping small businesses and startups reach their target audiences. With his keen eye for trends and creative problem-solving skills, he has built a successful consulting firm that caters to a diverse clientele.\n\nDemographics:\nAge: 44\nGender: Male\nEducation: Bachelor's Degree in Marketing\nProfession: Marketing Consultant\nIncome: $65,000\n\nFinancial Situation:\nAs a successful marketing consultant, David has a comfortable income that allows him to maintain a stable financial situation. He is adept at budgeting and investing, ensuring that he can save for the future while still enjoying the fruits of his labor.\n\nShopping Habits:\nDavid's shopping habits reflect his professional and personal interests. He enjoys browsing online marketplaces and attending industry events to discover the latest marketing tools and technologies. While he is selective in his purchases, he is not afraid to invest in high-quality products and services that can help him stay ahead of the curve.\n\nProfessional Life:\nDavid's role as a marketing consultant requires him to wear many hats, from developing strategic marketing plans to executing creative campaigns. He takes pride in his ability to tailor his approach to the unique needs of each client, drawing on his extensive industry knowledge and network of industry contacts.\n\nPersonal Style:\nDavid's personal style is a blend of sophisticated and casual. In the office, he favors well-fitted suits and polished dress shirts, projecting an air of professionalism and authority. When off the clock, he can often be found in stylish yet comfortable attire, such as slim-fit jeans, button-down shirts, and leather loafers.",
+    "intent": "buy a corpse bride-themed necklace or pendant.",
+    "age": 44,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

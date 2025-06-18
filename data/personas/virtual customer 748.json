@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Liam\n\nBackground:\nLiam is a passionate and driven young man who is navigating the early stages of his career. After completing his degree in computer science, he has been exploring various job opportunities while also pursuing his entrepreneurial ambitions.\n\nDemographics:\nAge: 26\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Freelance Web Developer, Aspiring Entrepreneur\nIncome: $24,000\n\nFinancial Situation:\nAs a freelance web developer, Liam's income can be inconsistent, but he is resourceful and disciplined when it comes to managing his limited budget. He lives in a modest apartment, sharing expenses with a roommate, and supplements his freelance work with part-time gigs and occasional financial support from his family.\n\nShopping Habits:\nLiam is mindful of his spending and often seeks out sales, online discounts, and secondhand sources to find affordable tech gear, office supplies, and everyday essentials. He enjoys the challenge of finding innovative solutions to fit his needs without breaking the bank.\n\nProfessional Life:\nLiam's primary focus is on developing his skills as a freelance web developer, taking on a variety of projects that allow him to expand his portfolio and client base. In addition to his freelance work, he is also nurturing his entrepreneurial aspirations, dedicating time to researching and planning his own start-up idea, which he hopes will eventually provide a more stable and fulfilling source of income.\n\nPersonal Style:\nLiam's personal style is practical and minimalist, reflecting his focus on his work and professional goals. He favors comfortable, versatile clothing that can be easily dressed up or down, and he takes pride in maintaining a tidy, organized living and working space.\n\nIn his free time, Liam enjoys exploring the local tech and startup community, attending meetups and networking events to connect with like-minded individuals. He is also an avid reader, staying up-to-date on the latest industry trends and innovations that could inform his own entrepreneurial ventures.",
+    "intent": "buy mini playdough set.",
+    "age": 26,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

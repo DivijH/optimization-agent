@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jacob\n\nBackground:\nJacob is a passionate artist who is dedicated to expressing himself through various mediums, including painting, sculpture, and photography. He is constantly seeking new ways to push the boundaries of his craft and share his unique perspective with the world.\n\nDemographics:\nAge: 33\nGender: Male\nEducation: High school graduate\nProfession: Artist\nIncome: $20,000\n\nFinancial Situation:\nAs a struggling artist, Jacob's income is limited, but he is committed to his craft and finds ways to make ends meet. He is frugal with his spending and often relies on public transportation or walking to get around.\n\nShopping Habits:\nJacob tends to shop at thrift stores, garage sales, and online marketplaces in search of unique and affordable items that he can incorporate into his art. He enjoys the thrill of the hunt and the opportunity to find hidden gems that inspire his creativity.\n\nProfessional Life:\nJacob's primary focus is on his art, and he spends long hours in his studio, experimenting with new techniques and ideas. He also participates in local art shows and exhibitions, where he can showcase his work and connect with the community.\n\nPersonal Style:\nJacob's personal style reflects his artistic sensibilities. He favors a mix of vintage and eclectic pieces, often layering different textures and patterns to create a visually interesting look. He is not concerned with following trends and instead aims to express his individuality through his clothing.",
+    "intent": "buy dog nail clippers in different sizes.",
+    "age": 33,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

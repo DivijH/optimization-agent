@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Samantha\n\nBackground:\nSamantha is a young, ambitious woman who has quickly risen through the ranks in the tech industry. With a degree in computer science and a natural aptitude for problem-solving, she has carved out a successful career as a software engineer at a leading technology company.\n\nDemographics:\nAge: 22\nGender: Female\nEducation: Bachelor's Degree in Computer Science\nProfession: Software Engineer\nIncome: $118,000\n\nFinancial Situation:\nSamantha's lucrative salary as a software engineer places her within the $94,001 to $1,000,000 income range. She has been diligent in her financial planning, allocating a substantial portion of her earnings towards retirement savings, investment accounts, and a down payment on a condo in a desirable urban neighborhood.\n\nShopping Habits:\nSamantha's shopping habits reflect her practical and efficient nature. She prefers to invest in high-quality, versatile pieces that can be easily incorporated into her professional wardrobe and her casual weekend attire. She regularly visits e-commerce platforms and specialty tech stores to acquire the latest gadgets and accessories that complement her lifestyle and interests.\n\nProfessional Life:\nIn her role as a software engineer, Samantha is responsible for designing, developing, and maintaining cutting-edge digital solutions that drive innovation within her company. She thrives on the fast-paced, constantly evolving nature of the tech industry and actively seeks out opportunities to expand her skill set and contribute to the development of groundbreaking products.\n\nPersonal Style:\nSamantha's personal style reflects her mix of professionalism and youthful energy. She favors well-tailored trousers, sleek blouses, and minimalist accessories that exude an air of sophistication. When off-duty, she embraces a more casual, yet chic, approach, pairing her outfits with stylish sneakers or trendy denim pieces.",
+    "intent": "buy a 5-gallon Hakka beverage dispenser",
+    "age": 22,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Thomas\n\nBackground:\nThomas is a retired factory worker who has been struggling to make ends meet on a limited fixed income. After decades of physical labor, he now faces the challenges of navigating his golden years with limited financial resources.\n\nDemographics:\nAge: 54\nGender: Male\nEducation: High School Diploma\nProfession: Retired Factory Worker\nIncome: $18,000\n\nFinancial Situation:\nThomas lives on a modest pension and social security benefits, which provide him with a monthly income of just $1,500. He has a small savings account, but it has been slowly dwindling as he tries to cover his basic living expenses, such as rent, utilities, and medical costs. Budgeting and finding ways to stretch his limited funds have become a constant concern.\n\nShopping Habits:\nThomas is very mindful of his spending and tries to find the most affordable options for his essential needs. He frequently shops at discount stores, thrift shops, and online marketplaces in search of bargains. When making larger purchases, he takes the time to comparison shop and seeks out coupons or sales to maximize his savings.\n\nProfessional Life:\nAfter a long career in a local factory, Thomas retired at the age of 62. While he enjoyed the physical nature of his work, the demanding job took a toll on his body over the years. Now, he spends his days engaging in more sedentary hobbies, such as reading, watching television, and occasionally volunteering at a local community center.\n\nPersonal Style:\nThomas' personal style reflects his practical and budget-conscious approach to life. He often wears comfortable, well-worn clothing, including t-shirts, jeans, and comfortable shoes. He values function over fashion and prioritizes durability and affordability when making purchasing decisions.",
+    "intent": "buy a low-cost, preowned video game console called a \"game guel\".",
+    "age": 54,
+    "age_group": "45-54",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

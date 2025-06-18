@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Lucas\n\nBackground:\nLucas is a driven and ambitious young professional who has carved out an exciting career in the tech industry. As a software engineer at a rapidly growing startup, he is at the forefront of developing innovative digital solutions that are transforming the way people interact with technology.\n\nDemographics:\nAge: 29\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Software Engineer\nIncome: $65,000\n\nFinancial Situation:\nWith a steady income in the $30,001 to $94,000 range, Lucas is financially stable and able to manage his finances responsibly. He is diligent about budgeting, saving, and investing, ensuring he can comfortably cover his living expenses while also setting aside funds for future goals, such as purchasing a home.\n\nShopping Habits:\nLucas' shopping habits reflect his passion for technology and his desire to stay at the forefront of industry trends. He is an early adopter of the latest gadgets and electronics, often researching and comparing products to find the best value. While he is selective in his purchases, Lucas is willing to invest in high-quality, durable items that will serve him well in both his professional and personal life.\n\nProfessional Life:\nAs a software engineer, Lucas is deeply immersed in the fast-paced, ever-evolving world of technology. He thrives on the challenge of solving complex problems and collaborating with cross-functional teams to bring innovative ideas to life. Lucas is constantly honing his skills, staying up-to-date with the latest programming languages and frameworks, and exploring new opportunities to contribute to the company's success.\n\nPersonal Style:\nLucas' personal style is a reflection of his active lifestyle and his appreciation for contemporary, functional fashion. He favors comfortable, yet stylish, clothing that allows him to seamlessly transition between his work responsibilities and his leisure activities. Lucas often incorporates athletic-inspired pieces, such as slim-fit chinos and minimalist sneakers, into his daily wardrobe, complementing them with well-fitted button-down shirts and modern outerwear.",
+    "intent": "add a women's cuban link chain to shopping cart",
+    "age": 29,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

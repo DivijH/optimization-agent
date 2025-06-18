@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jason\n\nBackground:\nJason is a successful entrepreneur and tech innovator who has built a thriving software company from the ground up. With a keen eye for emerging technologies and a talent for identifying market opportunities, he has established his business as a leader in the industry.\n\nDemographics:\nAge: 37\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Founder and CEO, Software Company\nIncome: $175,000\n\nFinancial Situation:\nJason's entrepreneurial ventures have provided him with a substantial income and a comfortable financial standing. He is a savvy investor, diversifying his assets across various portfolios and exploring opportunities to reinvest in his business and support philanthropic initiatives. Jason is mindful of his financial decisions, but also believes in the importance of work-life balance and occasional indulgences.\n\nShopping Habits:\nAs a tech-savvy and trend-conscious individual, Jason enjoys researching and acquiring the latest gadgets, software, and other innovative products. He frequents online marketplaces, tech review sites, and specialty retailers to stay informed about the latest industry developments and make strategic purchases. While he appreciates quality and innovation, Jason also values sustainability and seeks out eco-friendly options when possible.\n\nProfessional Life:\nJason's role as the Founder and CEO of a successful software company is the culmination of his lifelong passion for technology and problem-solving. He leads a talented team of developers, engineers, and business strategists, fostering a collaborative and innovative work environment. Jason is known for his visionary thinking, his ability to navigate complex challenges, and his commitment to driving the continuous growth and evolution of his company.\n\nPersonal Style:\nJason's personal style reflects his dynamic and innovative persona. He favors a modern, minimalist aesthetic, often incorporating sleek, technical fabrics and clean-lined silhouettes into his wardrobe. His sartorial choices are intentional and well-curated, blending high-end designer pieces with versatile, investment-worthy essentials. Whether he's attending a industry conference or enjoying a weekend getaway, Jason's style remains polished and sophisticated.",
+    "intent": "buy a short throw 4k projector.",
+    "age": 37,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

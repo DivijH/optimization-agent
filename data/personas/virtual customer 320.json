@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a seasoned professional who has built a successful career in the field of marketing. With over two decades of experience, she has developed a keen understanding of consumer behavior and an expert ability to craft impactful campaigns that resonate with her target audiences.\n\nDemographics:\nAge: 52\nGender: Female\nEducation: Master's Degree in Marketing\nProfession: Marketing Director\nIncome: $75,000\n\nFinancial Situation:\nSarah's marketing expertise has allowed her to command a comfortable income, which she has diligently managed over the years. While she enjoys the occasional splurge, such as a luxurious vacation or a new piece of designer jewelry, Sarah is primarily focused on building a secure financial future. She regularly contributes to her retirement savings and maintains a diversified investment portfolio.\n\nShopping Habits:\nAs a seasoned professional, Sarah has a refined and discerning taste when it comes to shopping. She prefers to invest in high-quality, timeless pieces that will last her for years to come. While she enjoys browsing through the latest fashion trends, she is selective in her purchases, seeking out items that complement her personal style and lifestyle.\n\nProfessional Life:\nSarah is a respected marketing leader within her organization, known for her strategic vision and her ability to consistently deliver successful campaigns. She takes great pride in her work, constantly seeking ways to stay ahead of industry trends and adapt to the evolving needs of her clients. Her colleagues admire her mentorship and collaborative approach, which have contributed to the growth and success of the marketing team.\n\nPersonal Style:\nSarah's personal style reflects her confidence and experience. She favors classic silhouettes with a touch of modern flair, often incorporating designer pieces into her wardrobe. Her outfits are a blend of elegance and practicality, allowing her to transition seamlessly from the office to social engagements.\n\nIn her free time, Sarah enjoys exploring her creative side through painting and pottery classes. She is also an avid reader, with a particular interest in historical biographies and self-improvement literature.",
+    "intent": "buy a toy chainsaw for halloween.",
+    "age": 52,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jayden\n\nBackground:\nJayden is a driven and ambitious young man who is determined to forge his own path in life. Despite facing financial challenges, he remains optimistic and innovative, constantly seeking new opportunities to grow and expand his skillset.\n\nDemographics:\nAge: 21\nGender: Male\nEducation: High School Diploma\nProfession: Freelance Web Developer, Part-time Retail Associate\nIncome: $22,000\n\nFinancial Situation:\nAs a freelance web developer and part-time retail associate, Jayden's income can be unpredictable. However, he has developed a keen understanding of budgeting and financial management, allowing him to make the most of his limited resources. Jayden is always looking for ways to supplement his income, whether through additional web development projects or exploring new entrepreneurial ventures.\n\nShopping Habits:\nJayden is a savvy and conscious consumer who prioritizes value and functionality over brand names. He frequently scours online marketplaces, thrift stores, and discount retailers to find affordable, high-quality items for his wardrobe and tech setup. Jayden also enjoys DIY projects, often repurposing and upcycling found items to create unique and personalized pieces.\n\nProfessional Life:\nJayden's professional life is a tapestry of his technical expertise and entrepreneurial spirit. As a freelance web developer, he works with a diverse range of clients, crafting visually stunning and user-friendly websites that showcase his creativity and problem-solving skills. In addition, Jayden's part-time job in retail provides him with valuable customer service experience and a steady source of income.\n\nPersonal Style:\nJayden's personal style is a reflection of his multifaceted interests and his desire to express his individuality. He gravitates towards a mix of streetwear, vintage-inspired pieces, and minimalist, tech-inspired items that allow him to feel comfortable and confident in his own skin. Jayden's wardrobe is a constantly evolving canvas, as he experiments with different looks and incorporates new thrifted finds and DIY creations.",
+    "intent": "buy an adult onesie with a face cover.",
+    "age": 21,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

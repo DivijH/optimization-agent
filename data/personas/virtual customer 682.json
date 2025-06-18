@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Liam\n\nBackground:\nLiam is a passionate and ambitious young professional who has recently entered the workforce. With a degree in marketing, he is driven to make his mark in the dynamic world of digital advertising.\n\nDemographics:\nAge: 18\nGender: Male\nEducation: Bachelor's degree in Marketing\nProfession: Digital Marketing Coordinator\nIncome: $35,000\n\nFinancial Situation:\nLiam's starting salary as a digital marketing coordinator provides him with a comfortable income, allowing him to live independently and save for future goals. He is financially responsible, creating a budget to balance his essential expenses, student loan payments, and occasional discretionary spending.\n\nShopping Habits:\nAs a tech-savvy Millennial, Liam enjoys exploring the latest digital gadgets and software tools to enhance his work and personal life. He is also conscious of supporting sustainable and ethical brands, often researching companies' environmental and social practices before making purchases. Liam takes advantage of sales, discounts, and loyalty programs to stretch his budget.\n\nProfessional Life:\nLiam's enthusiasm and adaptability have made him a valuable asset to the digital marketing team at his company. He is always eager to take on new challenges, learn emerging industry trends, and contribute innovative ideas to campaigns. His strong analytical skills and creative problem-solving abilities have earned him the respect of his colleagues and management.\n\nPersonal Style:\nLiam's personal style reflects his youthful energy and professional aspirations. He favors a modern, stylish wardrobe, often mixing high-street fashion with carefully selected designer pieces. His outfits strike a balance between casual and business casual, allowing him to transition seamlessly between the office and social settings.",
+    "intent": "buy a heated nacho display unit.",
+    "age": 18,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

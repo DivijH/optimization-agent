@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: William\n\nBackground:\nWilliam is a successful entrepreneur and business executive in the technology industry. He has built multiple startups from the ground up and is now leading a fast-growing software company as the CEO.\n\nDemographics:\nAge: 41\nGender: Male\nEducation: Bachelor's degree in Computer Science\nProfession: CEO of a technology company\nIncome: $165,000\n\nFinancial Situation:\nWilliam has accumulated significant wealth through his entrepreneurial ventures and smart investments. He is financially secure and can afford a comfortable lifestyle, though he is still driven to grow his business and build his personal net worth.\n\nShopping Habits:\nWilliam values quality and efficiency when it comes to shopping. He prefers to buy high-end, durable products that will last, and he is willing to pay a premium for items he deems worth the investment. He often shops online for convenience, but he also enjoys browsing through specialty stores and boutiques.\n\nProfessional Life:\nAs the CEO of a thriving tech company, William spends most of his time in meetings, overseeing operations, and strategizing for the future. He is a skilled negotiator and is adept at securing funding, partnerships, and new business opportunities. William is known for his innovative thinking and his ability to inspire his team.\n\nPersonal Style:\nWilliam has a refined, sophisticated personal style. He favors tailored suits, dress shirts, and designer shoes, but he also enjoys wearing more casual attire, such as button-down shirts and chinos, when the occasion calls for it. He prefers neutral colors like gray, navy, and black, which he believes project an air of professionalism and confidence.",
+    "intent": "buy a set of high-quality glow-in-the-dark vampire teeth for kids.",
+    "age": 41,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

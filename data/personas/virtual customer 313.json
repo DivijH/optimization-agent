@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sophia\n\nBackground:\nSophia is a driven and ambitious young woman who has rapidly ascended the corporate ladder. With a natural talent for strategic thinking and a relentless work ethic, she has carved out a successful career in the tech industry, becoming a rising star at a prominent tech startup.\n\nDemographics:\nAge: 19\nGender: Female\nEducation: Bachelor's Degree in Computer Science\nProfession: Product Manager\nIncome: $125,000\n\nFinancial Situation:\nAt just 19 years old, Sophia has already achieved a remarkable level of financial stability and independence. Her impressive income as a product manager allows her to maintain a comfortable lifestyle, save diligently for the future, and indulge in occasional luxuries.\n\nShopping Habits:\nSophia's shopping habits reflect her discerning taste and her penchant for investing in high-quality, long-lasting items. She enjoys browsing through upscale retailers and online marketplaces, carefully curating her wardrobe and home goods to align with her sophisticated aesthetic. While she is not afraid to splurge on items that hold lasting value, she also seeks out sustainable and ethically produced products.\n\nProfessional Life:\nIn her role as a product manager, Sophia is responsible for overseeing the development and launch of cutting-edge technology solutions. Her sharp analytical skills, innovative mindset, and ability to effectively communicate with cross-functional teams have made her an invaluable asset to her company. Sophia is constantly seeking opportunities to expand her knowledge and take on new challenges, positioning herself for continued growth and advancement.\n\nPersonal Life:\nOutside of her demanding career, Sophia maintains a well-rounded lifestyle. She is an avid reader, often immersing herself in the latest industry literature and thought-provoking novels. Sophia is also an active member of her local community, volunteering her time and expertise to various charitable organizations. In her free time, she enjoys indulging in her passions for art, fashion, and travel, constantly seeking new experiences to broaden her horizons.",
+    "intent": "add fart spray to cart",
+    "age": 19,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a resilient and resourceful young woman who has faced her fair share of challenges. Despite her humble financial circumstances, she approaches life with a positive attitude and a determination to create a better future for herself.\n\nDemographics:\nAge: 31\nGender: Female\nEducation: High School Diploma\nProfession: Part-Time Retail Associate\nIncome: $22,000\n\nFinancial Situation:\nAs a part-time retail associate, Olivia's income is modest, but she has become skilled at budgeting and finding creative ways to make ends meet. She carefully tracks her expenses, prioritizes necessities, and looks for opportunities to supplement her income through freelance work or side hustles.\n\nShopping Habits:\nOlivia is a savvy and resourceful shopper. She frequents thrift stores, secondhand shops, and online marketplaces in search of affordable, high-quality items. When making purchases, Olivia focuses on finding durable, versatile pieces that can be mixed and matched to create a variety of outfits. She also enjoys scouring clearance sections and taking advantage of sales and discounts.\n\nProfessional Life:\nWhile Olivia's current job in retail may not be her ultimate career goal, she approaches it with a positive and hardworking attitude. She takes pride in providing excellent customer service and is always willing to take on additional responsibilities or learn new skills. Olivia is actively exploring ways to develop her professional skills and potentially transition into a more fulfilling career path.\n\nPersonal Style:\nOlivia's personal style reflects her practical and adaptable nature. She favors comfortable, versatile clothing that can be dressed up or down, such as well-fitting jeans, classic t-shirts, and practical but stylish footwear. Olivia also enjoys incorporating thrifted or upcycled items into her wardrobe, showcasing her creativity and resourcefulness.\n\nIn her free time, Olivia pursues hobbies that allow her to express her artistic side, such as painting, sewing, and DIY home projects. These activities not only provide her with a creative outlet but also enable her to save money by making her own unique clothing, home decor, and other personal items.",
+    "intent": "buy a 1-in-2-out HDMI splitter.",
+    "age": 31,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

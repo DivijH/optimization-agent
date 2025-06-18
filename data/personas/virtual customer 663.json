@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a resilient and resourceful man who has faced significant financial challenges throughout his life. Despite the obstacles, he remains determined to build a better future for himself and his family.\n\nDemographics:\nAge: 39\nGender: Male\nEducation: GED\nProfession: Handyman/Odd Jobs\nIncome: $22,000\n\nFinancial Situation:\nAs a handyman and occasional day laborer, David's income is variable and often falls below the poverty line. He has had to learn to stretch every dollar, prioritizing essential expenses and relying on community resources to supplement his meager earnings. Despite the financial strain, David is committed to maintaining a positive outlook and finding creative ways to make ends meet.\n\nShopping Habits:\nDavid is a savvy and resourceful shopper, scouring thrift stores, yard sales, and online marketplaces for bargains. He takes pride in his ability to find high-quality items at a fraction of the retail price. David is also skilled at repurposing and repairing used goods, further stretching his limited budget.\n\nProfessional Life:\nDavid's days are filled with a variety of odd jobs and handyman tasks, from minor home repairs to yard work and furniture assembly. He takes pride in his versatility and the satisfaction he derives from helping others. Despite the physical demands of his work, David approaches each task with a positive attitude and a commitment to delivering quality results.\n\nPersonal Style:\nDavid's personal style is practical and comfortable, focused on durability and functionality. His wardrobe consists of well-worn but well-maintained clothing, often acquired through secondhand sources. He values quality over quantity, investing in a few key pieces that can withstand the rigors of his work.\n\nIn his free time, David enjoys spending time with his family, engaging in outdoor activities, and pursuing his hobbies, such as woodworking and tinkering with old machinery. These pursuits not only provide him with a sense of fulfillment but also offer opportunities to supplement his income through the sale of handmade items or small repair jobs.",
+    "intent": "buy a sturdy, adjustable backdrop frame for my home photography studio.",
+    "age": 39,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

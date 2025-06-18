@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a young, ambitious software engineer working at a leading tech company in Seattle. With a passion for innovation and a knack for problem-solving, he is quickly making a name for himself within the industry.\n\nDemographics:\nAge: 25\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Software Engineer\nIncome: $58,000\n\nFinancial Situation:\nEthan has a stable income that allows him to live comfortably in the vibrant city of Seattle. He is diligent about budgeting and saving, with the goal of eventually purchasing a home and investing in his future.\n\nShopping Habits:\nAs a tech-savvy millennial, Ethan is drawn to the latest gadgets and cutting-edge technology. He enjoys researching and comparing products, often seeking out the best deals and sales. However, he is also mindful of his spending and tries to balance his desire for the latest innovations with more practical, everyday purchases.\n\nProfessional Life:\nEthan is a skilled programmer with a keen eye for detail and a passion for continuous learning. He thrives in a fast-paced, collaborative environment, regularly contributing to the development of innovative software solutions. His colleagues admire his dedication and problem-solving abilities, and he is often sought out for his expertise.\n\nPersonal Style:\nEthan's personal style reflects his active, tech-savvy lifestyle. He gravitates toward comfortable, versatile clothing that allows him to transition seamlessly between the office and his leisure activities. He enjoys mixing casual essentials, such as t-shirts and jeans, with more polished pieces that convey his professional identity.\n\nIn his free time, Ethan can be found exploring the vibrant food scene in Seattle, attending tech meetups and conferences, or hiking in the nearby mountains. He values work-life balance and makes an effort to maintain a healthy lifestyle, often incorporating exercise and outdoor activities into his routine.",
+    "intent": "buy a new video game called \"Guel\" for my gaming setup.",
+    "age": 25,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emma\n\nBackground:\nEmma is a young, ambitious professional who is navigating the challenges of establishing her career while also maintaining a healthy work-life balance. With a degree in marketing, she is currently working as a marketing coordinator for a mid-size tech company, where she is constantly striving to push the boundaries of traditional marketing strategies.\n\nDemographics:\nAge: 31\nGender: Female\nEducation: Bachelor's Degree in Marketing\nProfession: Marketing Coordinator\nIncome: $52,000\n\nFinancial Situation:\nEmma's income as a marketing coordinator falls within the $30,001 to $94,000 range, allowing her to cover her basic living expenses and provide a modest level of financial security. She is actively working towards building her savings, with the goal of one day purchasing a small, yet comfortable home.\n\nShopping Habits:\nEmma's shopping habits are a reflection of her practical approach to personal finance. While she enjoys the occasional splurge on quality clothing or tech gadgets, she is generally quite thrifty, frequently shopping at mid-range retail stores and taking advantage of online sales and discounts. She is also conscious of her environmental impact and tries to support sustainable and ethical brands when possible.\n\nProfessional Life:\nIn her role as a marketing coordinator, Emma is responsible for implementing various marketing campaigns, analyzing data, and collaborating with cross-functional teams to drive business growth. She takes great pride in her work and is constantly seeking opportunities to learn and expand her skillset. Emma's strong interpersonal skills and innovative thinking have earned her the respect of her colleagues and the admiration of her superiors.\n\nPersonal Style:\nEmma's personal style is a blend of classic and contemporary, with a focus on comfort and functionality. She gravitates towards well-fitting, versatile pieces that can be easily dressed up or down, such as tailored trousers, crisp button-down shirts, and minimal-yet-stylish accessories. Emma values quality over quantity and is selective in her purchases, ensuring that each item in her wardrobe serves a purpose and reflects her personal aesthetic.",
+    "intent": "buy a 20 inch screen printing squeegee.",
+    "age": 31,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

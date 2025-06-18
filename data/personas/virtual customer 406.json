@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Alexandra\n\nBackground:\nAlexandra is a young, ambitious professional who has quickly made a name for herself in the competitive tech industry. With a sharp mind and a drive to succeed, she has worked tirelessly to climb the corporate ladder, proving her worth and earning the respect of her peers.\n\nDemographics:\nAge: 22\nGender: Female\nEducation: Bachelor's degree in Computer Science\nProfession: Software Engineer\nIncome: $120,000\n\nFinancial Situation:\nAs a rising star in the tech world, Alexandra's income falls within the $94,001 to $1,000,000 range. She is financially savvy, setting aside a portion of her earnings for long-term savings and investments while still allowing herself to enjoy the fruits of her labor.\n\nShopping Habits:\nAlexandra's shopping habits reflect her practical and efficient approach to life. She gravitates towards high-quality, durable products that will stand the test of time, whether it's the latest tech gadgets or well-crafted, timeless fashion pieces. She is a discerning shopper, taking the time to research and compare options to ensure she is getting the best value for her money.\n\nProfessional Life:\nAs a software engineer, Alexandra is at the forefront of technological innovation. She thrives on the challenge of tackling complex problems and finding innovative solutions that push the boundaries of what's possible. Her passion for her work and her ability to work collaboratively with cross-functional teams have earned her a reputation as a rising star in the industry.\n\nPersonal Style:\nAlexandra's personal style is polished and sophisticated, with a touch of modern flair. She favors clean lines, minimalist designs, and neutral color palettes that convey a sense of confidence and professionalism. Whether she's in the office or attending a industry event, Alexandra's appearance always reflects her strong work ethic and dedication to excellence.\n\nIn her limited free time, Alexandra enjoys indulging in her hobbies, which include hiking, reading, and attending tech-focused meetups and conferences. She is constantly seeking out opportunities to expand her knowledge and network, always striving to stay ahead of the curve in her ever-evolving field.",
+    "intent": "buy a plastic orb to wear on my head.",
+    "age": 22,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

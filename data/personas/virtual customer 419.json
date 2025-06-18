@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a retired veteran who has faced a series of challenges in his later years, including health issues and financial instability. Despite these setbacks, he remains resilient and is dedicated to finding purpose and fulfillment in his golden years.\n\nDemographics:\nAge: 58\nGender: Male\nEducation: High School Diploma\nProfession: Retired Veteran\nIncome: $22,000 (from a combination of social security and a small pension)\n\nFinancial Situation:\nMichael's income is limited to a modest social security check and a small military pension. He has struggled to make ends meet, often relying on government assistance and the kindness of his community to cover essential expenses. Despite his financial constraints, he is determined to maintain his independence and dignity.\n\nShopping Habits:\nMichael is a frugal shopper, carefully prioritizing his purchases and seeking out the best deals. He frequently visits thrift stores, yard sales, and discount retailers to find affordable clothing, household items, and occasionally, small luxuries. Michael is a skilled bargain hunter, using coupons and loyalty programs to maximize his limited resources.\n\nPersonal Life:\nIn his retirement, Michael has found solace in his local community, where he volunteers at a veterans' organization and participates in support groups. These activities provide him with a sense of purpose and social connection, which is crucial for his well-being. He also enjoys spending time outdoors, gardening, and engaging in low-cost recreational activities.\n\nHealth and Wellness:\nMichael's health challenges, including chronic pain and limited mobility, have significantly impacted his quality of life. He relies on government-assisted healthcare and carefully manages his medications and treatment plan. Despite these obstacles, Michael remains determined to maintain his physical and mental well-being to the best of his abilities.",
+    "intent": "buy corlys gotitas de amor perfume.",
+    "age": 58,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

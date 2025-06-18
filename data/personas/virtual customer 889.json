@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a retired educator who has dedicated his life to supporting and inspiring young minds. Although his fixed income presents financial challenges, he finds fulfillment in his continued involvement with local educational initiatives and his lifelong passion for learning.\n\nDemographics:\nAge: 58\nGender: Male\nEducation: Master's Degree in Education\nProfession: Retired Educator\nIncome: $25,000\n\nFinancial Situation:\nWith a modest retirement pension and Social Security benefits, David's income is limited, requiring him to carefully manage his expenses. He has learned to live simply, prioritizing necessities and finding creative ways to supplement his income, such as tutoring, writing, and participating in local civic projects.\n\nShopping Habits:\nDavid approaches shopping with a pragmatic mindset, focusing on quality, durable products that will last. He is an avid thrift store and garage sale enthusiast, enjoying the challenge of finding hidden gems and unique items that can be repurposed or used in his various creative pursuits.\n\nPersonal Life:\nIn retirement, David has embraced the opportunity to deepen his involvement with his community. He regularly volunteers at the local library, mentors young students, and participates in book clubs and discussion groups. His passion for education and lifelong learning inspires him to stay engaged and contribute his knowledge and experience.\n\nHobbies and Interests:\nDavid's interests span a wide range, from classic literature and history to gardening and woodworking. He finds solace in tending to his small vegetable garden and crafting personalized furniture and decor pieces. These activities not only provide him with a creative outlet but also allow him to save money on everyday expenses.",
+    "intent": "buy a cruise-themed gift for a retired educator.",
+    "age": 58,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

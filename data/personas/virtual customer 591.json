@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a young, ambitious individual who is just starting to navigate the professional landscape. Despite his limited work experience, he is driven to establish a solid foundation for his future career.\n\nDemographics:\nAge: 24\nGender: Male\nEducation: Bachelor's Degree in Business Administration\nProfession: Entry-Level Sales Associate\nIncome: $28,000\n\nFinancial Situation:\nAs an entry-level sales associate, Ethan's income falls within the range of $0 to $30,000. While he is not yet financially independent, he is diligently saving and budgeting to build up his savings and cover his essential expenses. Ethan is conscious of his spending habits and seeks to find a balance between enjoying his youth and being responsible with his finances.\n\nShopping Habits:\nEthan's shopping habits reflect his current financial situation and his desire to invest in quality, long-lasting items. He frequents mid-range retail stores and online marketplaces, carefully researching products and seeking out sales and discounts. Ethan prioritizes practicality and functionality in his purchases, but he also enjoys adding a touch of personal style to his wardrobe.\n\nProfessional Life:\nIn his role as an entry-level sales associate, Ethan is eager to learn and develop the necessary skills to advance his career. He is a quick learner and demonstrates a strong work ethic, consistently striving to exceed his sales targets and impress his managers. Ethan's positive attitude and willingness to take on additional responsibilities have not gone unnoticed, and he is well-regarded by his colleagues.\n\nPersonal Style:\nEthan's personal style is a reflection of his youthful and adaptable nature. He favors casual, versatile clothing that can be dressed up or down, such as slim-fit chinos, button-down shirts, and well-made sneakers. He keeps a keen eye on current fashion trends but maintains a classic, timeless aesthetic that complements his professional environment.\n\nIn his free time, Ethan enjoys exploring the city's vibrant social scene, attending local concerts and art exhibitions. He is also an avid reader, with a particular interest in business and entrepreneurship literature, as he aspires to one day start his own venture.",
+    "intent": "buy a small, affordable outdoor scarecrow decoration for my apartment.",
+    "age": 24,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

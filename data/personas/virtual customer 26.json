@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a marketing manager at a rapidly growing tech startup in San Francisco. She is passionate about using data-driven strategies to drive customer engagement and brand growth.\n\nDemographics:\n\nAge: 29\nGender: Female\nEducation: Bachelor's degree in Business Administration\nProfession: Marketing Manager\nIncome: $70,000\n\nFinancial Situation:\nOlivia earns a comfortable salary at her job and is able to save a portion of her income each month. She enjoys the perks of working at a startup, including equity options, but is mindful of her spending and aims to build financial security.\n\nShopping Habits:\nOlivia has a keen eye for fashion and likes to stay up-to-date with the latest trends. She enjoys browsing both online and in-store for stylish yet practical clothing and accessories. She is willing to invest in higher quality items that will last but also looks for good deals and sales.\n\nProfessional Life:\nOlivia is a rising star at her company, leading innovative marketing campaigns that have helped the startup gain traction in the competitive tech industry. She thrives in a fast-paced environment and is always looking for ways to optimize processes and drive results.\n\nPersonal Style:\nOlivia likes to express her personality through her fashion choices, often mixing high-end pieces with more affordable items. She gravitates toward a chic, modern aesthetic and is fond of monochromatic looks in shades of black, white, and gray. Olivia is an avid yoga practitioner and prefers comfortable, activewear-inspired pieces for her daily commute and workouts.\n\nOlivia is a loyal customer of Lululemon and usually wakes up at 7am every day. She lives in San Francisco.",
+    "intent": "buy a 5 ft skeleton halloween decoration",
+    "age": 29,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

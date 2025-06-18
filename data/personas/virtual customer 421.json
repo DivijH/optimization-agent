@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a successful entrepreneur who has built multiple thriving businesses from the ground up. With a keen eye for market trends and a drive to innovate, he has established a reputation as a visionary in his industry.\n\nDemographics:\nAge: 44\nGender: Male\nEducation: Bachelor's Degree in Business Administration\nProfession: Entrepreneur\nIncome: $325,000\n\nFinancial Situation:\nAs the founder and CEO of several profitable enterprises, Michael's income falls within the $94,001 to $1,000,000 range. He has amassed a significant personal fortune, which he carefully manages through a diversified investment portfolio and strategic financial planning.\n\nShopping Habits:\nMichael approaches shopping with a pragmatic and strategic mindset. While he enjoys the occasional luxury purchase, he is primarily focused on finding high-quality, durable products that will serve his business and personal needs. He values efficiency and is willing to invest in time-saving solutions, such as personalized shopping services and subscription-based delivery programs.\n\nProfessional Life:\nMichael's professional life is marked by his boundless entrepreneurial spirit and his ability to identify and capitalize on emerging market opportunities. He is constantly seeking new challenges and is not afraid to take calculated risks in pursuit of his business goals. His leadership style is characterized by a focus on innovation, collaboration, and adaptability.\n\nPersonal Style:\nMichael's personal style reflects his professional persona \u2013 polished, modern, and understated. He favors well-tailored suits, premium casual wear, and high-end accessories that project an aura of success and sophistication. While he is not one to follow trends, Michael is always mindful of maintaining a stylish and cohesive personal aesthetic.",
+    "intent": "buy a DEWALT 20V MAX Cordless 4-1/2\" Cut-Off Tool/Grinder Kit.",
+    "age": 44,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

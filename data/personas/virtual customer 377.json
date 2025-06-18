@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Kylie\n\nBackground:\nKylie is a passionate and driven young woman who has recently embarked on her journey to build a career in the arts. With a natural talent for creative expression and a keen eye for design, she has taken the plunge into the world of freelance graphic design, determined to carve out her own path in the industry.\n\nDemographics:\nAge: 18\nGender: Female\nEducation: High school diploma, currently enrolled in online graphic design courses\nProfession: Freelance Graphic Designer\nIncome: $45,000\n\nFinancial Situation:\nAs a freelance designer, Kylie's income fluctuates, but she has been able to maintain a comfortable lifestyle by carefully managing her expenses and investing in her professional development. She is mindful of her spending and aims to save a portion of her earnings to achieve her long-term financial goals.\n\nShopping Habits:\nKylie's shopping habits reflect her creative sensibilities and her desire to support ethical and sustainable brands. She enjoys browsing online marketplaces and independent design stores, seeking out unique, visually striking pieces that align with her personal aesthetic. She is also an avid supporter of local artists and small businesses, often incorporating their products into her wardrobe and home decor.\n\nProfessional Life:\nKylie's days are filled with a dynamic mix of client meetings, design work, and professional networking. She relishes the freedom and flexibility that comes with being a freelancer and is constantly seeking out new opportunities to showcase her talents and expand her client base. Kylie is also actively involved in the local design community, attending workshops and events to stay inspired and connected.\n\nPersonal Style:\nKylie's personal style is a reflection of her artistic flair and her commitment to sustainability. She gravitates towards bold, vibrant colors and playful, eclectic patterns, often mixing high-street finds with unique, handcrafted pieces. Kylie's style is ever-evolving, as she continuously experiments with new looks and trends, always seeking to express her individuality and creative spirit.",
+    "intent": "buy a high-quality, compact travel umbrella that can withstand windy conditions.",
+    "age": 18,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

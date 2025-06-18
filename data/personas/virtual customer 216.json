@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Alex\n\nBackground:\nAlex is a passionate and ambitious young man who has carved out a unique career path for himself. After completing his degree in computer science, he decided to pursue his entrepreneurial dreams and founded a successful tech startup. With his innovative mindset and problem-solving skills, Alex has successfully navigated the competitive startup landscape and is now leading a team of talented individuals.\n\nDemographics:\nAge: 20\nGender: Male\nEducation: Bachelor's degree in Computer Science\nProfession: Founder and CEO, Tech Startup\nIncome: $52,000\n\nFinancial Situation:\nAs the CEO of a thriving tech startup, Alex's income falls within the $30,001 to $94,000 range. He is financially savvy, allocating a portion of his earnings towards business investments, personal savings, and occasional splurges on the latest technology and travel experiences.\n\nShopping Habits:\nAlex's shopping habits reflect his dynamic lifestyle and business-oriented mindset. He is a discerning consumer, seeking high-quality, durable products that enhance his productivity and personal style. He frequently shops for the latest gadgets, stylish yet practical clothing, and thoughtfully curated home decor to create a comfortable and inspirational workspace.\n\nProfessional Life:\nAlex's passion for technology and innovation drives his work as the founder and CEO of his tech startup. He is a strategic thinker, constantly exploring new ideas and emerging trends to stay ahead of the competition. Alex's leadership skills and ability to foster a collaborative, innovative team environment have been instrumental to the success of his company.\n\nPersonal Style:\nAlex's personal style is a reflection of his professional persona \u2013 a mix of modern, minimalist, and functional. He favors well-fitted, versatile clothing that can seamlessly transition from the office to social events. His wardrobe consists of tailored button-down shirts, slim-fit chinos, and sleek leather shoes, complemented by the occasional statement accessory, such as a bold watch or a stylish pair of sunglasses.",
+    "intent": "buy a high-quality basketball face mask to protect myself during pickup games and training sessions.",
+    "age": 20,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

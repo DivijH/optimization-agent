@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a driven and successful entrepreneur who has built a thriving business from the ground up. After years of working in the corporate world, she decided to take a leap of faith and pursue her passion for sustainable fashion, launching her own eco-conscious clothing line.\n\nDemographics:\nAge: 37\nGender: Female\nEducation: Master's Degree in Business Administration\nProfession: Founder and CEO of a Sustainable Fashion Brand\nIncome: $175,000\n\nFinancial Situation:\nEmily's income as the CEO of her successful fashion brand falls within the $94,001 to $1,000,000 range. She has a strong financial footing, allowing her to reinvest in her business, save for the future, and enjoy a comfortable lifestyle.\n\nShopping Habits:\nAs the founder of a sustainable fashion brand, Emily is highly conscious of her shopping habits and the impact of her purchases. She primarily shops from ethical, eco-friendly retailers, carefully selecting high-quality, long-lasting pieces that align with her brand's values. Emily also enjoys supporting small, independent designers and artisans, seeking out unique and innovative clothing and accessories.\n\nProfessional Life:\nEmily's days are filled with a diverse range of responsibilities, from overseeing the design and production of her clothing line to managing the operations and growth of her business. She is a strategic thinker and a skilled communicator, adept at navigating the complexities of the fashion industry and building strong relationships with her team, suppliers, and customers.\n\nPersonal Style:\nEmily's personal style reflects her passion for sustainable fashion and her commitment to quality and timeless elegance. She favors classic silhouettes, natural fabrics, and minimalist designs that exude sophistication. Emily's wardrobe is a carefully curated collection of versatile, investment pieces that can be mixed and matched to create a range of polished, effortless looks.\n\nIn her free time, Emily enjoys exploring the local artisan markets, attending sustainable fashion events, and mentoring aspiring entrepreneurs. She resides in a modern, eco-friendly loft in a vibrant, urban neighborhood.",
+    "intent": "buy a pokemon puzzle game from 2000.",
+    "age": 37,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

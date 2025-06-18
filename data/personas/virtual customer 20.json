@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a project manager for a non-profit organization that focuses on sustainable urban development. She is passionate about creating positive change in her community and ensuring that all people have access to affordable and environmentally-friendly housing options.\n\nDemographics:\nAge: 56\nGender: Female\nEducation: Bachelor's degree in Urban Planning\nProfession: Project Manager at a non-profit\nIncome: $60,000\n\nFinancial Situation:\nOlivia is financially stable, with a comfortable income that allows her to save for retirement and occasional travel. She is mindful of her spending and prefers to invest in experiences over material possessions.\n\nShopping Habits:\nOlivia enjoys shopping, but she tends to be selective and thoughtful in her purchases. She values quality over quantity and often seeks out ethically-sourced or eco-friendly products. She prefers to shop in-person at local small businesses or online from companies that align with her values.\n\nProfessional Life:\nAs a project manager, Olivia coordinates the efforts of various stakeholders to ensure the successful completion of sustainability-focused initiatives. She is skilled at balancing multiple priorities and communicating effectively with diverse groups of people. Olivia also volunteers her time to local community organizations.\n\nPersonal Style:\nOlivia's personal style reflects her commitment to sustainability and her appreciation for natural materials. She tends to wear comfortable, versatile clothing in earthy tones and patterns. She enjoys accessorizing with handmade jewelry and scarves. Olivia also values practicality and often chooses footwear that is both stylish and comfortable.\n\nOlivia prefers to fly with Delta Airlines and typically wakes up at 6:30 am every day. She resides in Seattle, Washington.",
+    "intent": "buy Disney Blu-ray movies.",
+    "age": 56,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

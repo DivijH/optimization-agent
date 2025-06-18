@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Lily\n\nBackground:\nLily is a driven and ambitious entrepreneur who recently launched her own fashion startup in New York City. With a keen eye for design and a passion for sustainable fashion, she is determined to disrupt the industry and build a brand that resonates with socially conscious consumers.\n\nDemographics:\nAge: 31\nGender: Female\nEducation: Bachelor's Degree in Fashion Design\nProfession: Founder and Creative Director, Fashion Startup\nIncome: $150,000\n\nFinancial Situation:\nLily's entrepreneurial success has provided her with a comfortable income that allows her to invest in her business, while also enjoying a high quality of life. She is financially savvy, carefully managing her personal and business finances to ensure the long-term growth and stability of her company.\n\nShopping Habits:\nAs a fashion industry insider, Lily is constantly on the lookout for innovative, sustainable materials and production methods. She frequents high-end designer showrooms, fashion trade shows, and online marketplaces to source unique fabrics and collaborate with artisanal manufacturers. In her personal life, Lily tends to shop for investment pieces that align with her brand's aesthetic and ethical values.\n\nProfessional Life:\nLily's unwavering passion for sustainable fashion has driven her to create a startup that challenges the status quo. She leads a talented team of designers, marketers, and operations specialists, fostering a collaborative and innovative work culture. Lily's strategic vision and hands-on approach have been crucial in establishing her brand as a industry leader in eco-friendly fashion.\n\nPersonal Style:\nLily's personal style is a reflection of her brand's ethos. She favors timeless, minimalist silhouettes in high-quality, sustainable fabrics, such as organic cotton, recycled polyester, and plant-based leathers. Her wardrobe is a curated collection of versatile, investment pieces that can be easily mixed and matched to create chic, effortless looks.",
+    "intent": "buy an eco-friendly, organic hair care product from Iserhair.",
+    "age": 31,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

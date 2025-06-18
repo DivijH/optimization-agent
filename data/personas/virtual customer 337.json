@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jared\n\nBackground:\nJared is a passionate freelance artist who has carved out a niche for himself in the local art scene. With a keen eye for design and a talent for digital illustration, he creates commissioned works for small businesses and individuals alike.\n\nDemographics:\nAge: 36\nGender: Male\nEducation: Associate's Degree in Graphic Design\nProfession: Freelance Digital Artist\nIncome: $25,000\n\nFinancial Situation:\nAs a freelance artist, Jared's income can fluctuate, but he has learned to manage his finances carefully. He lives a relatively simple lifestyle, prioritizing his creative pursuits over material possessions. While his earnings may be modest, Jared finds joy and fulfillment in the work he does, and he is content with his current financial situation.\n\nShopping Habits:\nJared's shopping habits reflect his artistic sensibilities and desire for functional, yet visually appealing, items. He tends to frequent local art supply stores, independent boutiques, and online marketplaces that offer unique and handmade products. When making purchases, he values quality over quantity and seeks out items that will inspire his creative process.\n\nProfessional Life:\nJared's professional life is centered around his freelance work, which allows him the flexibility to take on projects that he is passionate about. He is constantly honing his skills, experimenting with new digital tools and techniques, and networking with fellow creatives to expand his client base. Jared also participates in local art events and exhibits, showcasing his work and connecting with the community.\n\nPersonal Style:\nJared's personal style is a reflection of his artistic and laid-back personality. He favors comfortable, yet stylish, attire, often pairing vintage-inspired t-shirts, well-worn jeans, and comfortable sneakers. He also enjoys accessorizing with unique pieces, such as eclectic jewelry or a colorful scarf, that add a touch of individuality to his look.",
+    "intent": "buy moringa seeds.",
+    "age": 36,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

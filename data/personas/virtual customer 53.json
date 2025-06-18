@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a retired school teacher who has dedicated her life to educating and inspiring young minds. After 35 years of service, she is now embracing the next chapter of her life, focusing on her hobbies and spending more time with her family.\n\nDemographics:\nAge: 60\nGender: Female\nEducation: Bachelor's degree in Education\nProfession: Retired School Teacher\nIncome: $48,000\n\nFinancial Situation:\nSarah's retirement income, combined with her pension and savings, allows her to live comfortably. She is financially responsible and enjoys the freedom to travel, explore new interests, and support her family.\n\nShopping Habits:\nSarah enjoys a mix of online and in-person shopping experiences. She takes pride in finding quality, long-lasting items that align with her personal style and values. While she occasionally treats herself to a special purchase, Sarah is mindful of her spending and seeks out sales and discounts.\n\nProfessional Life:\nAs a respected and beloved teacher, Sarah has had a profound impact on the lives of countless students. She remains connected to the education community, often volunteering and attending school events. Sarah is passionate about lifelong learning and sharing her knowledge with others.\n\nPersonal Style:\nSarah's personal style is classic and sophisticated, with a touch of elegance. She favors well-made, timeless pieces that can be easily mixed and matched. Her wardrobe consists of tailored blouses, coordinating slacks, and comfortable yet stylish shoes. She appreciates quality craftsmanship and gravitates towards natural fabrics and neutral colors.",
+    "intent": "buy a round to rectangular electrical box cover plate.",
+    "age": 60,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

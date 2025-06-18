@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Samantha\n\nBackground:\nSamantha is a driven and ambitious business executive who has climbed the corporate ladder through her tireless work ethic and strategic decision-making. She is a trailblazer in her industry, known for her innovative approaches and unwavering commitment to her company's success.\n\nDemographics:\nAge: 36\nGender: Female\nEducation: MBA\nProfession: Vice President of Operations\nIncome: $145,000\n\nFinancial Situation:\nWith her impressive income and successful career, Samantha enjoys a comfortable and stable financial footing. She is a strategic saver, contributing regularly to her retirement accounts and investment portfolio while also allowing herself occasional indulgences, such as international travel and luxury purchases.\n\nShopping Habits:\nSamantha's shopping habits reflect her elevated lifestyle and professional status. She tends to invest in high-quality, versatile pieces for her wardrobe, focusing on timeless designs and quality fabrics that will last. She also enjoys browsing designer boutiques and online luxury retailers, seeking out the latest trends and statement pieces to complement her polished, executive aesthetic.\n\nPersonal Life:\nOutside of her demanding career, Samantha prioritizes her personal well-being and work-life balance. She is an avid fitness enthusiast, regularly attending yoga classes and going on hiking excursions in the nearby mountains. Samantha also enjoys hosting dinner parties for her close-knit circle of friends and colleagues, showcasing her culinary skills and love for entertaining.",
+    "intent": "buy a metal mesh mask.",
+    "age": 36,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

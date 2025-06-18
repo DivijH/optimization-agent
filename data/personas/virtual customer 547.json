@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a seasoned marketing professional with over two decades of experience in the industry. He has worked his way up the corporate ladder, developing a keen understanding of marketing strategies and consumer behavior. Known for his analytical approach and innovative thinking, Michael has become a valuable asset to the marketing team at his current company.\n\nDemographics:\nAge: 44\nGender: Male\nEducation: Bachelor's Degree in Marketing\nProfession: Marketing Manager\nIncome: $80,000\n\nFinancial Situation:\nWith a comfortable income, Michael is able to maintain a stable financial situation. He is prudent with his spending, ensuring he sets aside funds for retirement and unexpected expenses. While not extravagant, Michael enjoys occasional splurges on travel and hobbies he is passionate about.\n\nShopping Habits:\nMichael's shopping habits reflect his practical and efficient approach to life. He tends to invest in high-quality, long-lasting items, whether it's professional attire or household goods. He enjoys the convenience of online shopping but also appreciates the value of in-person browsing at select retailers.\n\nProfessional Life:\nAs a marketing manager, Michael is responsible for overseeing the development and execution of marketing campaigns for his company's products and services. He thrives on the analytical and creative aspects of his work, constantly seeking new ways to connect with the target audience and drive business growth.\n\nPersonal Style:\nMichael's personal style is understated yet polished. He favors well-fitting, classic pieces that exude professionalism and sophistication. While he is not overly concerned with the latest fashion trends, Michael believes in dressing for success and maintains a put-together appearance that reflects his confidence and experience.\n\nIn his free time, Michael enjoys outdoor activities such as hiking and cycling. He is also an avid reader, with a particular interest in biographies and business literature that provides insights into effective leadership and management strategies.",
+    "intent": "buy a small, white porcelain wash basin.",
+    "age": 44,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

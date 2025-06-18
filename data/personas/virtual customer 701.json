@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Robert\n\nBackground:\nRobert is a retired educator who has dedicated his life to shaping young minds. After a fulfilling career as a high school history teacher, he now enjoys the more relaxed pace of retirement, focusing on his personal passions and community involvement.\n\nDemographics:\nAge: 61\nGender: Male\nEducation: Master's Degree in Education\nProfession: Retired High School History Teacher\nIncome: $28,000 (pension and social security)\n\nFinancial Situation:\nWhile Robert's retirement income is modest, he has carefully managed his finances over the years, living within his means and prioritizing his savings. He relies on his pension, Social Security benefits, and a small investment portfolio to cover his basic expenses, allowing him to maintain a comfortable lifestyle.\n\nShopping Habits:\nRobert takes a practical and value-conscious approach to his shopping. He frequents thrift stores, secondhand shops, and discount retailers to find quality items at affordable prices. He enjoys the thrill of the hunt and takes pride in discovering hidden gems that fit his budget. Robert also supports local businesses and artisans whenever possible, believing in the importance of community investment.\n\nPersonal Life:\nIn retirement, Robert has embraced a more relaxed and fulfilling lifestyle. He spends his days indulging in his hobbies, such as gardening, woodworking, and reading. Robert also actively volunteers at his local library, sharing his love of history and literature with the community. He enjoys the company of his close-knit group of friends and family, often hosting potluck dinners or participating in community events.\n\nPersonal Style:\nRobert's personal style reflects his comfortable and practical approach to life. He favors classic, well-fitting clothing items, such as button-down shirts, khakis, and comfortable loafers. While he maintains a tidy and presentable appearance, he is not overly concerned with following the latest fashion trends, prioritizing comfort and functionality over unnecessary frills.",
+    "intent": "buy the zardoz blu-ray movie.",
+    "age": 61,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Jacob\n\nBackground:\nJacob is a passionate artist and community activist, dedicated to using his creative talents to drive positive change in his local neighborhood. After facing financial challenges and personal setbacks in his earlier years, he has found purpose and fulfillment in using art as a tool for social justice and community empowerment.\n\nDemographics:\nAge: 39\nGender: Male\nEducation: High School Diploma\nProfession: Community Artist, Activist\nIncome: $25,000\n\nFinancial Situation:\nJacob's income as a freelance artist and community organizer is modest, but he has learned to live frugally and prioritize his passions over material possessions. He relies on a mix of commissions, grants, and part-time work to make ends meet, and is adept at finding creative ways to stretch his limited resources.\n\nShopping Habits:\nJacob's shopping habits are heavily influenced by his commitment to sustainable and ethical consumption. He frequents secondhand stores, local artisan markets, and online platforms that support independent creators. When making purchases, Jacob carefully considers the impact of his choices, prioritizing products that are environmentally friendly, ethically produced, and supportive of his local community.\n\nHobbies and Interests:\nJacob's primary focus is on using his artistic talents to create murals, installations, and community-based projects that address pressing social and environmental issues. He is an active member of several local non-profit organizations, where he volunteers his time and expertise to organize workshops, lead community events, and collaborate with fellow artists and activists.\n\nPersonal Style:\nJacob's personal style is a reflection of his eclectic interests and his commitment to sustainability. His wardrobe is a mix of thrifted, repurposed, and locally-sourced garments, often featuring bold colors, patterns, and unique designs. Jacob values comfort and self-expression over trends, and his style evolves as he continues to explore new creative avenues and engage with his community.",
+    "intent": "buy a set of baby proof light switch covers.",
+    "age": 39,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

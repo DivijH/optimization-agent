@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emily\n\nBackground:\nEmily is a vibrant and passionate woman who has dedicated her career to supporting the local arts community. With over two decades of experience working in various arts organizations, she has developed a deep understanding of the challenges and joys of the creative industry.\n\nDemographics:\nAge: 62\nGender: Female\nEducation: Bachelor's degree in Fine Arts\nProfession: Director of Community Arts Center\nIncome: $65,000\n\nFinancial Situation:\nWhile Emily's income as the Director of the Community Arts Center is comfortable, she is mindful of her spending and makes a conscious effort to save for the future. She enjoys the occasional splurge on art supplies or tickets to local performances, but her primary focus is on ensuring the financial stability of the organization she serves.\n\nShopping Habits:\nEmily's shopping habits reflect her appreciation for quality and craftsmanship. She often seeks out locally-owned boutiques, artisan markets, and independent galleries, where she can find unique, handmade items that align with her personal style and values. She is less concerned with following trends and more interested in investing in pieces that will stand the test of time.\n\nProfessional Life:\nAs the Director of the Community Arts Center, Emily is responsible for overseeing the day-to-day operations, managing a team of staff and volunteers, and implementing strategic initiatives to engage the local community. She is a passionate advocate for the arts, using her platform to showcase the work of emerging and established artists alike.\n\nPersonal Style:\nEmily's personal style is a reflection of her artistic sensibilities and her commitment to supporting local businesses. She favors natural fabrics, such as linen and cotton, and gravitates towards earthy, muted tones. She often incorporates handmade accessories, such as artisanal jewelry or locally-sourced scarves, into her outfits.",
+    "intent": "buy a foot massage from a local spa or massage therapist.",
+    "age": 62,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

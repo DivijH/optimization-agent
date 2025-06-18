@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Nadia\n\nBackground:\nNadia is a successful business executive working in the tech industry. She has risen through the ranks to become the Chief Operating Officer of a prominent software company. Nadia is known for her strategic thinking, strong leadership skills, and ability to drive innovation.\n\nDemographics:\nAge: 31\nGender: Female\nEducation: MBA\nProfession: Chief Operating Officer\nIncome: $150,000\n\nFinancial Situation:\nNadia has a high-income and enjoys financial stability. She is able to save a substantial portion of her earnings and frequently invests in stocks and real estate. Nadia is prudent with her spending but also likes to treat herself to luxury items and experiences.\n\nShopping Habits:\nNadia appreciates quality and design when shopping. She enjoys browsing high-end stores and boutiques, carefully selecting pieces that reflect her sophisticated personal style. However, she is also mindful of value and will research products to find the best deals.\n\nProfessional Life:\nAs COO, Nadia oversees the day-to-day operations of the company, working closely with the CEO and other executives. She is responsible for driving efficiency, implementing new strategies, and ensuring the company's continued growth and success. Nadia is often travel",
+    "intent": "buy a high-quality, heavy-duty reciprocating saw for home improvement projects.",
+    "age": 31,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a seasoned entrepreneur who has built a successful business over the course of his career. He takes pride in his ability to identify and capitalize on emerging market trends, consistently innovating to stay ahead of the competition.\n\nDemographics:\nAge: 62\nGender: Male\nEducation: Bachelor's Degree in Business Administration\nProfession: Founder and CEO of a Technology Startup\nIncome: $275,000\n\nFinancial Situation:\nWith his thriving technology startup, Michael's income falls within the $94,001 to $1,000,000 range. He has amassed significant personal wealth through his entrepreneurial ventures and savvy investment strategies. While he maintains a comfortable lifestyle, Michael remains fiscally responsible, reinvesting a portion of his earnings back into his business and personal wealth management.\n\nShopping Habits:\nMichael's shopping habits reflect his pragmatic approach to financial management. He seeks high-quality, durable products that offer long-term value, prioritizing functionality and reliability over the latest trends. When making larger purchases, Michael thoroughly researches options, evaluating factors such as longevity, energy efficiency, and after-sales support.\n\nProfessional Life:\nAs the founder and CEO of a thriving technology startup, Michael leverages his deep industry expertise and keen business acumen to drive innovation and growth. He fosters a collaborative work environment, empowering his team to contribute their unique perspectives and problem-solving skills. Michael's visionary leadership and ability to anticipate market shifts have been instrumental in the company's sustained success.\n\nPersonal Life:\nOutside of his professional commitments, Michael enjoys pursuing hobbies and activities that provide a healthy work-life balance. He is an avid outdoorsman, finding solace in activities like hiking, fly fishing, and bird watching. Additionally, Michael is actively involved in his local community, supporting various philanthropic initiatives and serving on the board of a non-profit organization focused on promoting STEM education.",
+    "intent": "buy a high-quality, vintage-inspired necklace or bracelet from the Mrs. Roper jewelry collection.",
+    "age": 62,
+    "age_group": "55-64",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

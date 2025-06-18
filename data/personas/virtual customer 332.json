@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a successful business owner who has built her company from the ground up over the past two decades. With a keen business acumen and a passion for innovation, she has navigated the challenges of entrepreneurship to achieve financial stability and professional fulfillment.\n\nDemographics:\nAge: 53\nGender: Female\nEducation: Bachelor's Degree in Business Administration\nProfession: Small Business Owner\nIncome: $150,000\n\nFinancial Situation:\nAs the owner of a thriving local enterprise, Sarah's income falls within the range of $94,001 to $1,000,000. She has been able to accumulate significant savings and investments, allowing her to live comfortably and provide for her family. Sarah is financially savvy, carefully managing her business finances and personal wealth to ensure long-term stability.\n\nShopping Habits:\nSarah's shopping habits reflect her success and sophisticated taste. She enjoys shopping at high-end department stores and boutiques, seeking out well-crafted, timeless pieces that add elegance to her wardrobe. While she is not afraid to splurge on quality items, Sarah is also mindful of her spending and looks for strategic investments that will stand the test of time.\n\nProfessional Life:\nSarah's business venture is her life's work, and she approaches it with unwavering dedication and a commitment to excellence. She oversees all aspects of the company, from operations and marketing to strategic planning and team management. Sarah is a respected leader in her industry, known for her innovative thinking and her ability to adapt to changing market conditions.\n\nPersonal Style:\nSarah's personal style exudes confidence and sophistication. She favors classic silhouettes and tailored pieces, such as tailored blazers, pencil skirts, and well-fitted dresses. She accessorizes with statement jewelry, luxurious handbags, and high-quality shoes that complement her refined aesthetic. Sarah's appearance conveys a sense of authority and poise, reflecting her success and her commitment to presenting a professional image.",
+    "intent": "buy a high-quality black umbrella with a sleek, modern design.",
+    "age": 53,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

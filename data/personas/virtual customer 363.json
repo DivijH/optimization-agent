@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Olivia\n\nBackground:\nOlivia is a successful executive who has built an impressive career in the tech industry. She is known for her strategic vision, innovative problem-solving skills, and ability to lead high-performing teams.\n\nDemographics:\nAge: 41\nGender: Female\nEducation: Master's degree in Computer Science\nProfession: Vice President of Engineering at a Major Tech Firm\nIncome: $160,000\n\nFinancial Situation:\nAs a seasoned professional with a high-level position, Olivia enjoys a comfortable financial situation. She is able to comfortably cover her living expenses, contribute to her retirement accounts, and invest in various financial instruments to grow her wealth.\n\nShopping Habits:\nOlivia's shopping habits reflect her refined taste and appreciation for quality. She prefers to invest in classic, well-made pieces that will last her for years. When it comes to fashion, she gravitates towards minimalist, timeless designs from high-end brands. She also enjoys discovering unique home decor items and gadgets that enhance her modern, sophisticated lifestyle.\n\nProfessional Life:\nOlivia's career in the tech industry has been marked by a steady rise through the ranks, culminating in her current role as Vice President of Engineering. She is responsible for overseeing a team of talented engineers, spearheading innovative projects, and ensuring the seamless operation of the company's technology infrastructure.\n\nPersonal Style:\nOlivia's personal style is a perfect blend of professionalism and personal flair. She favors clean-cut, tailored pieces in neutral tones, such as blazers, well-fitting trousers, and crisp button-down shirts. She accessorizes with statement jewelry, a structured handbag, and polished leather shoes to complete her polished, executive look.\n\nIn her free time, Olivia enjoys exploring her creative side through activities like painting and pottery. She also makes a conscious effort to maintain a healthy work-life balance, regularly practicing yoga and mindfulness techniques to manage the demands of her high-powered career.",
+    "intent": "buy a Bluey-themed mom and dad headband.",
+    "age": 41,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

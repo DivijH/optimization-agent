@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Gabriela\n\nBackground:\nGabriela is a 28-year-old woman who is navigating the challenges of starting her own business while also managing her personal and financial responsibilities. With a passion for entrepreneurship and a drive to create her own path, she is determined to make her venture a success.\n\nDemographics:\nAge: 28\nGender: Female\nEducation: Bachelor's Degree in Business Administration\nProfession: Entrepreneur (small business owner)\nIncome: $25,000\n\nFinancial Situation:\nAs a new small business owner, Gabriela's income is currently limited. She has invested her savings into launching her business and is reinvesting any profits back into the company to facilitate growth. While she is not earning a substantial salary at the moment, Gabriela is hopeful that her business will become more financially stable and sustainable over time.\n\nShopping Habits:\nGabriela is mindful of her spending and tries to find cost-effective solutions to support her business and personal needs. She often shops at discount retailers, online marketplaces, and wholesalers to obtain the supplies and materials she needs for her business. When it comes to personal purchases, Gabriela seeks out sales, coupons, and secondhand items to stretch her limited budget.\n\nProfessional Life:\nGabriela recently quit her corporate job to pursue her entrepreneurial dreams. She has launched a small online retail business that specializes in handcrafted, sustainable home goods. Despite the challenges of starting a new venture, Gabriela is passionate about her work and is dedicated to growing her business and building a loyal customer base.\n\nPersonal Style:\nGabriela's personal style reflects her practical and resourceful approach to life. She often wears comfortable, versatile clothing that can be easily mixed and matched. Her wardrobe includes a mix of secondhand finds, affordable basics, and occasional splurges on high-quality, ethically-produced pieces that align with her values.",
+    "intent": "buy a set of high-quality, reusable cigar ashtrays that are well-designed and durable.",
+    "age": 28,
+    "age_group": "25-34",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

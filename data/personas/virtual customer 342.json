@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Ethan\n\nBackground:\nEthan is a talented and ambitious young entrepreneur who has built a successful tech startup from the ground up. His innovative approach and keen business acumen have propelled him to the forefront of the industry.\n\nDemographics:\nAge: 22\nGender: Male\nEducation: Bachelor's Degree in Computer Science\nProfession: Founder and CEO of a Tech Startup\nIncome: $125,000\n\nFinancial Situation:\nEthan's income as the CEO of his tech startup falls within the range of $94,001 to $1,000,000. He has carefully managed his finances, reinvesting a significant portion of his earnings back into the business to drive its growth. While he maintains a comfortable lifestyle, Ethan is focused on expanding his company and ensuring its long-term success.\n\nShopping Habits:\nEthan's shopping habits reflect his pragmatic and forward-thinking mindset. He invests in high-quality, durable products that align with his professional and personal needs. Whether it's the latest tech gadgets or tailored suits, Ethan seeks out items that combine functionality, style, and value. He also supports ethical and sustainable brands whenever possible.\n\nProfessional Life:\nAs the founder and CEO of a thriving tech startup, Ethan's days are filled with a dynamic mix of strategic planning, team management, and problem-solving. He is a driven, innovative thinker who is constantly seeking new opportunities to expand his company's reach and impact. Ethan's ability to navigate the fast-paced, ever-evolving tech landscape has been instrumental in his success.\n\nPersonal Style:\nEthan's personal style is a reflection of his professional persona \u2013 polished, modern, and confident. He favors well-fitted suits, crisp dress shirts, and sleek leather shoes, creating a polished, executive-level look. However, he also enjoys casual attire, such as fitted jeans and tailored blazers, that allows him to maintain a approachable, entrepreneurial vibe.\n\nIn his free time, Ethan is an avid reader, constantly exploring the latest developments in technology, business, and entrepreneurship. He also makes time for physical activity, such as hitting the gym or participating in outdoor adventures, to maintain a healthy work-life balance.",
+    "intent": "buy large fall pumpkin cutouts for a bulletin board",
+    "age": 22,
+    "age_group": "18-24",
+    "gender": "male",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

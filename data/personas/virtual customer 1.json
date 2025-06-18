@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Michael\n\nBackground:\nMichael is a software engineer at a thriving tech startup in San Francisco. With a passion for innovative technology, he plays a crucial role in developing cutting-edge applications that aim to disrupt traditional industries.\n\nDemographics:\nAge: 29\nGender: Male\nEducation: Bachelor's degree in Computer Science\nProfession: Software Engineer\nIncome: $72,000\n\nFinancial Situation:\nMichael earns a comfortable salary as a software engineer, allowing him to maintain a relatively stable financial standing. While he is mindful of his spending, he enjoys the occasional splurge on gadgets and experiences that fuel his creative interests.\n\nShopping Habits:\nMichael is an avid online shopper, leveraging the convenience and variety of e-commerce platforms. He tends to research products thoroughly before making purchases, seeking out the best deals and value for his money. Michael values efficiency and often relies on user reviews to guide his shopping decisions.\n\nProfessional Life:\nAs a software engineer, Michael's workdays are filled with coding, collaborating with his team, and attending stand-up meetings. He thrives in a fast-paced, innovative environment and is always seeking opportunities to learn and grow professionally.\n\nPersonal Style:\nMichael has a casual, yet stylish personal style. He favors comfortable, modern clothing that allows him to maintain a professional appearance while remaining at ease during his workday. Neutral colors and minimalist designs are his go-to choices, complemented by the occasional pop of color or trendy accessory.",
+    "intent": "buy a set of brown toddler thermals.",
+    "age": 29,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

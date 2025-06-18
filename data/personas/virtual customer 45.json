@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a software engineer at a mid-sized technology company. He is passionate about creating efficient and user-friendly applications that can improve people's daily lives.\n\nDemographics:\n\nAge: 38\nGender: Male\nEducation: Bachelor's degree in Computer Science\nProfession: Software Engineer\nIncome: $70,000\n\nFinancial Situation:\nDavid has a comfortable income that allows him to live independently and save for the future. He is financially responsible, setting aside a portion of his earnings for retirement and unexpected expenses.\n\nShopping Habits:\nDavid prefers a practical and efficient approach to shopping. He researches products online before making purchases, seeking quality and value over trends or impulse buys. He enjoys the convenience of online shopping but also appreciates the opportunity to browse in-person for certain items.\n\nProfessional Life:\nDavid is dedicated to his work as a software engineer, constantly seeking ways to enhance his skills and contribute to his team's projects. He enjoys the intellectual challenge of problem-solving and collaborating with his colleagues to deliver innovative solutions.\n\nPersonal Style:\nDavid's personal style is a reflection of his practical and organized nature. He typically wears well-fitting, comfortable clothing that is appropriate for the office, such as button-down shirts, khakis, and dress shoes. He prefers muted, neutral tones that can be easily mixed and matched.\n\nDavid is an avid hiker and enjoys spending his free time exploring the outdoors. He is also an amateur woodworker, creating simple but functional furniture pieces for his home.",
+    "intent": "buy a dtf transfer film for my printer.",
+    "age": 38,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

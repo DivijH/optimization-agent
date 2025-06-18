@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Emma\n\nBackground:\nEmma is a passionate and creative young woman who is just starting to navigate the challenges of adulthood. She recently graduated from college with a degree in Graphic Design, and is now exploring various paths to build a fulfilling career.\n\nDemographics:\nAge: 21\nGender: Female\nEducation: Bachelor's Degree in Graphic Design\nProfession: Freelance Graphic Designer\nIncome: $18,000\n\nFinancial Situation:\nAs a freelance graphic designer, Emma's income can be sporadic, but she is resourceful and adept at managing her limited funds. She lives in a modest apartment, sharing expenses with a roommate, and relies on a combination of freelance work, part-time jobs, and occasional financial support from her parents to make ends meet.\n\nShopping Habits:\nEmma is conscious of her budget and often seeks out sales, thrift stores, and online marketplaces to find affordable, unique items. She enjoys the thrill of discovering vintage or handmade pieces that she can incorporate into her personal style. When it comes to art supplies and design software, Emma is willing to invest in quality tools that will enhance her creative process.\n\nProfessional Life:\nWhile Emma is passionate about design, she is still exploring her options and experimenting with different types of freelance work. She has taken on a variety of projects, from designing logos and branding materials for local businesses to creating illustrations and social media graphics for individual clients. Emma is continuously building her portfolio, networking with other creatives, and seeking out opportunities to expand her skill set.\n\nPersonal Style:\nEmma's personal style is a reflection of her eclectic interests and creative spirit. She enjoys mixing vintage-inspired pieces, such as high-waisted jeans and oversized t-shirts, with bold, contemporary accessories. Her wardrobe is a constantly evolving canvas, as she often repurposes and customizes her clothing to create unique, one-of-a-kind looks.\n\nIn her free time, Emma can be found sketching in her journal, experimenting with new design software, or attending local art events and workshops. She is deeply inspired by the world around her and is constantly seeking ways to translate her unique perspectives into her work.",
+    "intent": "buy an elf flex kit.",
+    "age": 21,
+    "age_group": "18-24",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

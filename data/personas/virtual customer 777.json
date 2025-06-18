@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: David\n\nBackground:\nDavid is a kind-hearted and resilient individual who has faced various challenges throughout his life. Despite the ups and downs, he has remained optimistic and continues to find joy in the simple things.\n\nDemographics:\nAge: 40\nGender: Male\nEducation: High School Diploma\nProfession: Part-time Grocery Store Clerk\nIncome: $25,000\n\nFinancial Situation:\nAs a part-time grocery store clerk, David's income falls within the range of $0 to $30,000. He lives modestly, prioritizing necessities and occasionally indulging in small pleasures that bring him comfort. While his financial situation may be limited, David is resourceful and finds ways to make the most of what he has.\n\nShopping Habits:\nDavid's shopping habits are practical and budget-conscious. He seeks out sales, discounts, and second-hand stores to stretch his limited funds. Quality is important to him, but he is not driven by the latest trends or designer labels. Instead, David focuses on purchasing durable, long-lasting items that will serve him well.\n\nProfessional Life:\nDavid's job at the local grocery store provides him with a steady, albeit modest, income. While it may not be his dream career, he takes pride in his work and values the connections he has made with his colleagues and regular customers. David's friendly demeanor and willingness to lend a helping hand have earned him the respect and appreciation of those around him.\n\nPersonal Life:\nOutside of work, David finds solace in his hobbies and community involvement. He is an active volunteer at a local soup kitchen, where he can make a tangible difference in the lives of those in need. Additionally, David is an avid gardener, finding peace and fulfillment in tending to his small plot of land and growing his own produce.\n\nIn his free time, David enjoys simple pleasures like reading, listening to music, and taking leisurely walks through his neighborhood. He cherishes the moments he can spend with his close-knit circle of friends, who provide him with a strong support system and a sense of belonging.",
+    "intent": "buy taylor swift themed party favors.",
+    "age": 40,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Natasha\n\nBackground:\nNatasha is a successful entrepreneur who has built a thriving software company from the ground up. Her innovative approach and strategic vision have made her a respected figure in the tech industry, and she takes great pride in her ability to identify and capitalize on emerging market opportunities.\n\nDemographics:\nAge: 37\nGender: Female\nEducation: Bachelor's Degree in Computer Science\nProfession: CEO, Technology Company\nIncome: $150,000\n\nFinancial Situation:\nNatasha's entrepreneurial success has afforded her a comfortable and financially stable lifestyle. She is prudent with her spending, but also enjoys the fruits of her labor, treating herself to luxury vacations and high-end experiences. She is actively involved in managing her investments and exploring new avenues for growing her wealth.\n\nShopping Habits:\nNatasha's shopping habits reflect her sophisticated taste and appreciation for quality. She frequents upscale boutiques and designer stores, where she can find unique and stylish items that complement her professional image. However, she also enjoys scouring the internet for the latest tech gadgets and innovative products that align with her entrepreneurial mindset.\n\nProfessional Life:\nAs the CEO of a successful technology company, Natasha is a driven and strategic leader who is constantly seeking new ways to expand her business and stay ahead of the competition. She is adept at navigating the ever-changing landscape of the tech industry, and her ability to identify and capitalize on emerging trends has been a key driver of her company's success.\n\nPersonal Style:\nNatasha's personal style is a reflection of her professional success and confident demeanor. She favors sleek, minimalist designs and tailored silhouettes that convey a sense of authority and refinement. Her wardrobe is a mix of high-end designer pieces and chic, versatile essentials that she can effortlessly transition from the boardroom to the social scene.",
+    "intent": "buy traditional mooncakes for upcoming mid-autumn festival.",
+    "age": 37,
+    "age_group": "35-44",
+    "gender": "female",
+    "income": [
+        94001,
+        1000000
+    ],
+    "income_group": "94001-1000000"
+}

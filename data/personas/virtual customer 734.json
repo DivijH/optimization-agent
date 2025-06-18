@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Javier\n\nBackground:\nJavier is a passionate artist and freelance graphic designer. Although his income fluctuates, he finds great fulfillment in pursuing his creative passions and supporting the local art community.\n\nDemographics:\nAge: 39\nGender: Male\nEducation: Associate's Degree in Graphic Design\nProfession: Freelance Graphic Designer\nIncome: $25,000\n\nFinancial Situation:\nAs a freelance artist, Javier's income can be irregular, but he manages his finances carefully to maintain a modest yet comfortable lifestyle. He is adept at budgeting and prioritizing his essential expenses, while also setting aside funds to invest in his creative projects and professional development.\n\nShopping Habits:\nJavier's shopping habits reflect his artistic sensibilities and eco-conscious mindset. He often frequents thrift stores, vintage shops, and local artisan markets in search of unique, one-of-a-kind items that inspire his creative work. When making purchases, he is mindful of sustainability and prefers to support independent artists and small businesses whenever possible.\n\nProfessional Life:\nJavier's freelance graphic design work allows him the flexibility to balance his creative pursuits with his desire to contribute to the local art scene. He collaborates with small businesses, non-profit organizations, and fellow artists on a variety of design projects, constantly expanding his portfolio and honing his skills. Javier is actively involved in the local art community, participating in exhibitions, workshops, and community initiatives that promote the arts.\n\nPersonal Style:\nJavier's personal style is a reflection of his artistic inclinations and his casual, laid-back approach to life. He favors comfortable, bohemian-inspired clothing, such as vintage-inspired t-shirts, well-worn denim, and eclectic accessories. Javier's style is often complemented by his signature look \u2013 a well-maintained beard and a signature pair of vintage-inspired eyeglasses.\n\nIn his free time, Javier can be found exploring the local art galleries, experimenting with new painting and drawing techniques, or tending to his small urban garden, where he finds solace and inspiration for his creative work.",
+    "intent": "buy buttons for math projects.",
+    "age": 39,
+    "age_group": "35-44",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

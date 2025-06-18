@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Amir\n\nBackground:\nAmir is a passionate artist and musician who has chosen to pursue his creative passions over traditional career paths. He is deeply committed to using his art to bring awareness to social and environmental issues within his community.\n\nDemographics:\nAge: 27\nGender: Male\nEducation: Some College\nProfession: Artist and Musician\nIncome: $18,000\n\nFinancial Situation:\nAmir's income as an independent artist and musician falls within the $0 to $30,000 range. He supplements his creative work with part-time jobs, such as bartending or freelance graphic design, to cover his basic living expenses. Despite the financial challenges, Amir remains dedicated to his artistic pursuits, prioritizing creative freedom and social impact over financial gain.\n\nShopping Habits:\nAmir's shopping habits reflect his frugal and environmentally-conscious approach to life. He frequents thrift stores, vintage shops, and local artist markets to find unique, affordable, and ethically-sourced items for his wardrobe and home. Whenever possible, he supports independent artists and small businesses that align with his values.\n\nProfessional Life:\nAmir's professional life is a balance between his artistic endeavors and his part-time jobs. He spends his days painting, writing music, and collaborating with other local creatives to produce thought-provoking works of art. His goal is to use his platform to shed light on social and environmental issues that are important to him, such as racial justice, LGBTQ+ rights, and climate change.\n\nPersonal Style:\nAmir's personal style is a reflection of his artistic sensibilities and his commitment to sustainability. He favors vintage-inspired, eclectic pieces that allow him to express his individuality, such as colorful thrifted shirts, ripped jeans, and unique accessories. His appearance is a blend of comfort and self-expression, with a focus on supporting local and independent designers whenever possible.\n\nIn his free time, Amir can be found volunteering at community art centers, participating in local protests or demonstrations, or immersing himself in the vibrant music scene of his city. He is driven by a deep desire to make a tangible difference in the world through his creative work and community involvement.",
+    "intent": "buy a pair of fairy-themed earrings or a necklace for a young woman.",
+    "age": 27,
+    "age_group": "25-34",
+    "gender": "male",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}

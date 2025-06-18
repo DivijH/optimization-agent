@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Julia\n\nBackground:\nJulia is a dedicated and hardworking middle school teacher who has been shaping the minds of young students for the past two decades. She is passionate about education and committed to providing her students with a well-rounded and engaging learning experience.\n\nDemographics:\nAge: 47\nGender: Female\nEducation: Master's degree in Education\nProfession: Middle School Teacher\nIncome: $65,000\n\nFinancial Situation:\nAs a public school teacher, Julia's income falls within the middle range, but she is able to maintain a comfortable lifestyle through careful budgeting and strategic financial planning. She prioritizes saving for retirement and ensuring financial security for herself and her family.\n\nShopping Habits:\nJulia values practical and functional purchases, often seeking out sales, discounts, and budget-friendly options. However, she is also willing to invest in high-quality items that will last, such as durable clothing and reliable household appliances. She enjoys browsing through local thrift stores and secondhand shops in search of unique finds.\n\nProfessional Life:\nIn the classroom, Julia is known for her engaging teaching style, empathetic approach, and commitment to helping her students reach their full potential. She continually seeks opportunities for professional development to stay up-to-date with the latest educational trends and teaching methodologies.\n\nPersonal Style:\nJulia's personal style reflects her practical and down-to-earth personality. She favors comfortable, versatile clothing that allows her to move freely and focus on her teaching responsibilities. She often opts for classic, timeless pieces that can be easily mixed and matched, creating a polished yet approachable look.\n\nJulia resides in a suburban neighborhood and commutes to her school by car. In her free time, she enjoys gardening, reading, and spending quality time with her family.",
+    "intent": "buy a set of salt crystal lamps.",
+    "age": 47,
+    "age_group": "45-54",
+    "gender": "female",
+    "income": [
+        30001,
+        94000
+    ],
+    "income_group": "30001-94000"
+}

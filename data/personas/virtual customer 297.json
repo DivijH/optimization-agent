@@ -1,0 +1,12 @@
+{
+    "persona": "Persona: Sarah\n\nBackground:\nSarah is a retired educator who has dedicated her life to making a positive impact on the lives of her students. After years of teaching in the public school system, she is now enjoying the slower pace of retirement and focusing on her lifelong passions.\n\nDemographics:\nAge: 55\nGender: Female\nEducation: Master's Degree in Education\nProfession: Retired Teacher\nIncome: $25,000\n\nFinancial Situation:\nAs a retiree, Sarah's income falls within the $0 to $30,000 range. She has carefully managed her finances over the years, living within her means and saving for her retirement. Though her income is modest, Sarah is able to maintain a comfortable lifestyle and pursue her hobbies and interests.\n\nShopping Habits:\nSarah approaches shopping with a practical and thoughtful mindset. She is a bargain hunter, frequently visiting thrift stores, yard sales, and online marketplaces to find unique and affordable items. While she enjoys the occasional splurge on a quality item, Sarah is generally more focused on finding items that are durable, functional, and align with her personal style.\n\nPersonal Style:\nSarah's personal style reflects her relaxed and down-to-earth personality. She favors comfortable and versatile pieces, such as well-worn jeans, cozy sweaters, and comfortable shoes. Sarah's wardrobe is a mix of timeless classics and unique thrifted finds that she has carefully curated over the years.\n\nHobbies and Interests:\nIn retirement, Sarah has embraced a variety of hobbies and interests that keep her active and engaged. She is an avid reader, often immersing herself in historical fiction and biographies. Sarah also enjoys gardening, birdwatching, and volunteering at her local community center, where she helps facilitate art classes for the elderly.",
+    "intent": "buy a glowberry prime product.",
+    "age": 55,
+    "age_group": "55-64",
+    "gender": "female",
+    "income": [
+        0,
+        30000
+    ],
+    "income_group": "0-30000"
+}
