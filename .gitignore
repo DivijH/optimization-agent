@@ -2,3 +2,4 @@ debug_run/
 __pycache__/
 *.key
 tmp*
+.DS_Store

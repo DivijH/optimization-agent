@@ -39,6 +39,7 @@ python shopping_agent.py --task "your shopping task here"
 |-----------|---------|-------------|
 | `--task` | `"buy a large, inflatable spider decoration for halloween"` | The shopping task for the agent |
 | `--persona` | Michael (42yo marketing manager) | The persona for the agent |
+| `--config-file` | *None* | Path to a JSON file containing `task` and `persona`. Values in the file override the flags above |
 | `--manual` | False | Wait for user to press Enter after each agent action |
 | `--headless` | False | Run the browser in headless mode |
 | `--max-steps` | 10 | Maximum number of steps the agent will take |
@@ -75,6 +76,11 @@ python shopping_agent.py --task "buy art supplies" --headless --record-video --m
 **Custom model and temperature**:
 ```bash
 python shopping_agent.py --task "find a wedding gift" --model "gpt-4o" --temperature 0.3
+```
+
+**Using a JSON config file**:
+```bash
+python shopping_agent.py --config-file my_shopping_task.json
 ```
 
 ## How It Works
@@ -114,3 +120,22 @@ brew install ffmpeg
 ```
 
 ⚠️  `--record-video` and `--headless` cannot be used together – the script will exit with an error if both flags are supplied.
+
+## Using a JSON Config File
+
+Passing large persona descriptions via the command line can get messy. Instead, place them in a small JSON file:
+
+```json
+{
+  "intent": "buy a pair of Jobst zipper compression socks for women.",
+  "persona": "Persona: Sophia\n\nBackground:\nSophia is a dedicated community college professor with a deep passion for education and empowering underserved students. She has spent the past two decades sharing her expertise and inspiring young minds to reach their full potential.\n\nDemographics:\nAge: 54\nGender: Female\nEducation: Master's degree in Education\nProfession: Community College Professor\nIncome: $65,000\n\nFinancial Situation:\nSophia's income as a community college professor provides her with a comfortable, yet modest, living. She is financially responsible and manages her budget carefully, prioritizing her personal and professional goals.\n\nShopping Habits:\nSophia is a practical shopper who focuses on finding high-quality, durable items that will serve her needs for the long term. She enjoys browsing local thrift stores and online marketplaces for unique finds, but she is also willing to invest in essential items that will last. Sophia values sustainability and often looks for eco-friendly or ethically sourced products.\n\nProfessional Life:\nAs a community college professor, Sophia takes great pride in her work and the impact she has on her students' lives. She is known for her engaging teaching style, her deep subject matter expertise, and her genuine care for the well-being and success of her students. Sophia is actively involved in curriculum development and mentoring programs, constantly seeking ways to improve the educational experience.\n\nPersonal Style:\nSophia's personal style reflects her practical and comfortable approach to life. She often wears classic pieces, such as button-down shirts, cardigans, and well-fitted trousers, that allow her to move freely and feel confident in the classroom. She also enjoys adding personal touches, like colorful scarves or statement jewelry, to express her own sense of style."
+}
+```
+
+Run the agent with:
+
+```bash
+python shopping_agent.py --config-file my_shopping_task.json
+```
+
+The values in the JSON file take precedence over any of the corresponding CLI flags.
