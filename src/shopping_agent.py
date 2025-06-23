@@ -86,6 +86,7 @@ class EtsyShoppingAgent:
     viewport_width: int = 1920
     viewport_height: int = 1080
     products_to_check: int = 5  # -1 means all products on page
+    user_data_dir: Optional[str] = None
 
     # LLM configuration
     model_name: str = "gpt-4o-mini"
@@ -758,6 +759,7 @@ Here are the products that have been analyzed:
         browser_profile = BrowserProfile(
             viewport={"width": self.viewport_width, "height": self.viewport_height},
             window_size={"width": self.viewport_width, "height": self.viewport_height},
+            user_data_dir=self.user_data_dir,
         )
 
         self.browser_session = BrowserSession(
@@ -1003,7 +1005,8 @@ Here are the products that have been analyzed:
 @click.option("--model", "model_name", default="gpt-4o-mini", help="Model name to use (e.g. gpt-4o, gpt-4o-mini).")
 @click.option("--temperature", default=0.7, type=float, help="Sampling temperature for the language model (0-2).")
 @click.option("--record-video", is_flag=True, help="Record the agent's browser session and save it to the debug path.")
-def cli(config_file, task, persona, manual, headless, max_steps, debug_path, width, height, n_products, model_name, temperature, record_video):
+@click.option("--user-data-dir", type=click.Path(), help="Path to user data directory for the browser.")
+def cli(config_file, task, persona, manual, headless, max_steps, debug_path, width, height, n_products, model_name, temperature, record_video, user_data_dir):
     """Runs the Etsy Shopping Agent."""
     if headless and record_video:
         print("Error: --headless and --record-video options cannot be used together.", file=sys.stderr)
@@ -1048,6 +1051,7 @@ def cli(config_file, task, persona, manual, headless, max_steps, debug_path, wid
         model_name=model_name,
         temperature=temperature,
         record_video=record_video,
+        user_data_dir=user_data_dir,
     )
     asyncio.run(agent.run())
 

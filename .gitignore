@@ -1,4 +1,4 @@
-debug_run/
+debug_run*/
 __pycache__/
 *.key
 tmp*
