@@ -76,8 +76,12 @@ Return ONLY a valid JSON object with the following structure:
   "reasoning": "<explanation why you did and did not buy product>",
   "recommendations": [
     {
-      "product_name": "<name>",
-      "reasoning": "<short explanation>"
+      "product_name": "<name_1>",
+      "reasoning": "<short explanation_1>"
+    },
+    {
+      "product_name": "<name_2>",
+      "reasoning": "<short explanation_2>"
     },
     ...
   ]

@@ -6,6 +6,9 @@ import time
 import shutil
 from pathlib import Path
 from typing import List, Tuple, Optional
+import logging
+import io
+from contextlib import redirect_stdout, redirect_stderr
 
 import click
 
@@ -14,6 +17,56 @@ if str(CURRENT_DIR) not in sys.path:
     sys.path.append(str(CURRENT_DIR))
 
 from shopping_agent import EtsyShoppingAgent
+
+print_lock = asyncio.Lock()
+
+class StatusDisplay:
+    """Manages a clean, updating multi-line status display in the terminal."""
+    def __init__(self, agent_specs: List[Tuple]):
+        self.agent_specs = agent_specs
+        self.statuses = {spec[0]: "Waiting to start..." for spec in agent_specs}
+        self._num_lines = 0
+
+    async def update(self, agent_id: int, status: str):
+        """Update the status for a given agent and redraw the display."""
+        async with print_lock:
+            self.statuses[agent_id] = status
+            
+            # Move cursor up to overwrite previous status lines
+            if self._num_lines > 0:
+                sys.stdout.write(f"\x1b[{self._num_lines}A")
+
+            # Print all statuses
+            for spec_id, group, _, _ in self.agent_specs:
+                # \x1b[2K clears the entire line before writing
+                sys.stdout.write(f"\x1b[2K[Agent {spec_id} | {group:^7}] {self.statuses[spec_id]}\n")
+            
+            sys.stdout.flush()
+
+    async def print_initial_statuses(self):
+        """Prints the initial waiting status for all agents."""
+        async with print_lock:
+            for agent_id, group, _, _ in self.agent_specs:
+                 sys.stdout.write(f"[Agent {agent_id} | {group:^7}] {self.statuses[agent_id]}\n")
+            self._num_lines = len(self.agent_specs)
+            sys.stdout.flush()
+
+
+def _setup_file_logger(name: str, log_file: Path) -> logging.Logger:
+    """Sets up a logger that writes to a file."""
+    logger = logging.getLogger(name)
+    # Prevent logger from propagating to the root logger
+    logger.propagate = False
+    logger.setLevel(logging.INFO)
+
+    # Remove any existing handlers to avoid duplicate logging
+    if logger.hasHandlers():
+        logger.handlers.clear()
+        
+    handler = logging.FileHandler(log_file)
+    handler.setFormatter(logging.Formatter('%(asctime)s - %(message)s'))
+    logger.addHandler(handler)
+    return logger
 
 def _load_persona_file(file_path: Path) -> Tuple[str, str]:
     """Load a single persona JSON file and return (task, persona_text).
@@ -47,29 +100,16 @@ async def _run_single_agent(
     headless: bool,
     model_name: str,
     debug_root: Path,
-):
-    """Create and execute a single `EtsyShoppingAgent` instance.
-
-    Args:
-        agent_id: Sequential number of the agent (used for debug path naming).
-        group: Either "control" or "target".
-        persona_file: Path to JSON file describing the persona.
-        max_steps: Maximum number of steps the agent is allowed to take.
-        headless: Whether the browser should run in headless mode.
-        model_name: Name of the LLM model to use.
-        record_video: Whether to capture a video of the session.
-        debug_root: Base directory under which per-agent debug folders are
-            created.
-    """
+) -> str:
+    """Create and execute a single `EtsyShoppingAgent` instance."""
 
     task, persona = _load_persona_file(persona_file)
 
-    # We intentionally do NOT create the debug directory beforehand.  Doing so would
-    # trigger the interactive `click.confirm` prompt inside `EtsyShoppingAgent.__post_init__`
-    # that asks for permission to delete the existing directory.  By ensuring the
-    # path does not yet exist we avoid any blocking user interaction in batch runs.
-
     debug_path = debug_root / f"{group}_agent_{agent_id}_{int(time.time())}"
+    debug_path.mkdir(parents=True, exist_ok=True)
+    log_file = debug_path / "agent.log"
+    logger = _setup_file_logger(f"agent_{agent_id}", log_file)
+
     user_data_dir = debug_path / "browser_profile"
 
     agent = EtsyShoppingAgent(
@@ -80,15 +120,31 @@ async def _run_single_agent(
         model_name=model_name,
         debug_path=str(debug_path),
         user_data_dir=str(user_data_dir),
+        logger=logger,
+        non_interactive=True,
     )
 
-    print(
-        f"[Agent {agent_id} | {group}] Persona file: '{persona_file.name}', model: {model_name}, task: {task}"
-    )
     try:
-        await agent.run()
-    except Exception as e:
-        print(f"[Agent {agent_id} | {group}] ⚠️  Encountered an error: {e}")
+        # Redirect any unexpected stdout/stderr during agent execution to the log file
+        stdout_capture = io.StringIO()
+        stderr_capture = io.StringIO()
+        with redirect_stdout(stdout_capture), redirect_stderr(stderr_capture):
+            await agent.run()
+
+        captured_stdout = stdout_capture.getvalue()
+        if captured_stdout:
+            logger.info("--- Captured stdout ---\n%s", captured_stdout)
+
+        captured_stderr = stderr_capture.getvalue()
+        if captured_stderr:
+            logger.warning("--- Captured stderr ---\n%s", captured_stderr)
+
+        return "Finished."
+    except Exception:
+        # Log the full exception to the agent's dedicated log file
+        logger.error("Agent run failed with an exception.", exc_info=True)
+        # Keep error message to a single line for clean display
+        return f"⚠️  Failed. See log for details: {log_file}"
 
 
 ###############################################################################
@@ -137,7 +193,12 @@ async def _run_single_agent(
     show_default=True,
     help="Maximum number of steps each agent is allowed to take.",
 )
-@click.option("--headless/--no-headless", default=True, show_default=True, help="Run browsers in headless mode.")
+@click.option(
+    "--headless/--no-headless",
+    default=True,
+    show_default=True,
+    help="Run browsers in headless mode.",
+)
 @click.option(
     "--concurrency",
     type=int,
@@ -171,9 +232,23 @@ def cli(
     replacement if possible) from *personas-dir*.
     """
 
+    # Silence all existing loggers to prevent library logs from flooding stdout.
+    # We will set up our own file-based loggers for each agent.
+    for handler in logging.root.handlers[:]:
+        logging.root.removeHandler(handler)
+    logging.root.setLevel(logging.CRITICAL + 1)
+
+    # Specifically target and silence the browser_use loggers which are the source of the noise
+    for logger_name in ['browser_use', 'browser_use.telemetry', 'browser_use.telemetry.service']:
+        logger = logging.getLogger(logger_name)
+        logger.setLevel(logging.CRITICAL + 1)
+        logger.propagate = False
+        logger.disabled = True
+        for handler in logger.handlers[:]:
+            logger.removeHandler(handler)
+
     if seed is not None:
         random.seed(seed)
-        print(f"Using random seed {seed} for persona selection.")
 
     if n_agents < 2:
         raise click.BadParameter("--n-agents must be greater than 2.")
@@ -206,24 +281,40 @@ def cli(
         model_name = control_model if group == "control" else target_model
         agent_specs.append((idx, group, persona_file, model_name))
 
+    status_display = StatusDisplay(agent_specs)
+
     async def _runner():
         # Use a semaphore to limit the number of concurrent agents so we don't exhaust system resources
         sem = asyncio.Semaphore(concurrency)
+        await status_display.print_initial_statuses()
 
         async def _wrap(spec):
+            agent_id, group, persona_path, model_name_local = spec
             async with sem:
-                agent_id, group, persona_path, model_name_local = spec
-                await _run_single_agent(
-                    agent_id=agent_id,
-                    group=group,
-                    persona_file=persona_path,
-                    max_steps=max_steps,
-                    headless=headless,
-                    model_name=model_name_local,
-                    debug_root=debug_root,
-                )
+                # Update status to Running BEFORE starting the agent
+                await status_display.update(agent_id, "Running...")
+                # Small delay to allow status update to complete
+                await asyncio.sleep(0.1)
+                
+                try:
+                    final_status = await _run_single_agent(
+                        agent_id=agent_id,
+                        group=group,
+                        persona_file=persona_path,
+                        max_steps=max_steps,
+                        headless=headless,
+                        model_name=model_name_local,
+                        debug_root=debug_root,
+                    )
+                except Exception as e:
+                    final_status = f"⚠️  Failed: {str(e)}"
+                    
+                await status_display.update(agent_id, final_status)
 
-        await asyncio.gather(*[_wrap(spec) for spec in agent_specs])
+        tasks = []
+        for spec in agent_specs:
+            tasks.append(_wrap(spec))
+        await asyncio.gather(*tasks)
 
     asyncio.run(_runner())
 

@@ -9,6 +9,7 @@ import subprocess
 from typing import Any, Dict, List, Optional
 from dataclasses import dataclass, field, asdict, is_dataclass
 import click
+import logging
 from langchain_core.language_models.chat_models import BaseChatModel
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.prompts import ChatPromptTemplate
@@ -87,6 +88,8 @@ class EtsyShoppingAgent:
     viewport_height: int = 1080
     products_to_check: int = 5  # -1 means all products on page
     user_data_dir: Optional[str] = None
+    logger: Optional[logging.Logger] = None
+    non_interactive: bool = False
 
     # LLM configuration
     model_name: str = "gpt-4o-mini"
@@ -109,21 +112,34 @@ class EtsyShoppingAgent:
     # Internal attribute: ffmpeg process
     _record_proc: Optional[subprocess.Popen] = field(init=False, default=None, repr=False)
 
+    def _log(self, message: str, level: str = "info"):
+        """Logs a message using the provided logger or prints to stdout."""
+        if self.logger:
+            if level == "error":
+                self.logger.error(message)
+            else:
+                self.logger.info(message)
+        else:
+            if level == "error":
+                print(message, file=sys.stderr)
+            else:
+                print(message)
+
     def __post_init__(self):
         """Initializes sub-tasks from the main task after the object is created."""
         if self.debug_path and os.path.isdir(self.debug_path):
-            if click.confirm(
+            if self.non_interactive or click.confirm(
                 f"Debug path '{self.debug_path}' already exists. Do you want to remove it and all its contents?", 
                 default=False
             ):
                 try:
                     shutil.rmtree(self.debug_path)
-                    print(f"Removed existing debug path: {self.debug_path}")
+                    self._log(f"Removed existing debug path: {self.debug_path}")
                 except Exception as e:
-                    print(f"Error removing debug path: {e}", file=sys.stderr)
+                    self._log(f"Error removing debug path: {e}", level="error")
                     sys.exit(1)
             else:
-                print("Aborting. Please choose a different debug path or remove the existing one manually.")
+                self._log("Aborting. Please choose a different debug path or remove the existing one manually.")
                 sys.exit(0)
 
         # Initialize the language model with user-specified (or default) parameters
@@ -137,7 +153,7 @@ class EtsyShoppingAgent:
         
         try:
             raw_sub_tasks = chain.invoke({"task": self.task, "persona": self.persona})
-            print(f"🔍 Raw sub-tasks derived from the task: {raw_sub_tasks}")
+            self._log(f"🔍 Raw sub-tasks derived from the task: {raw_sub_tasks}")
 
             if self.debug_path:
                 os.makedirs(self.debug_path, exist_ok=True)
@@ -159,9 +175,9 @@ class EtsyShoppingAgent:
                 try:
                     with open(file_path, "w") as f:
                         json.dump(debug_info, f, indent=2)
-                    print(f"   - Saved subtask generation debug info to {file_path}")
+                    self._log(f"   - Saved subtask generation debug info to {file_path}")
                 except Exception as e:
-                    print(f"   - Failed to save subtask generation debug info: {e}")
+                    self._log(f"   - Failed to save subtask generation debug info: {e}")
             
             sub_tasks_list = []
             if isinstance(raw_sub_tasks, list):
@@ -207,9 +223,9 @@ class EtsyShoppingAgent:
             try:
                 with open(image_path, "wb") as f:
                     f.write(base64.b64decode(state.screenshot))
-                print(f"   - Saved highlighted debug screenshot to {image_path}")
+                self._log(f"   - Saved highlighted debug screenshot to {image_path}")
             except Exception as e:
-                print(f"   - Failed to save highlighted debug screenshot: {e}")
+                self._log(f"   - Failed to save highlighted debug screenshot: {e}")
                 image_path = None
 
         # Capture a plain screenshot without highlight overlays
@@ -224,11 +240,11 @@ class EtsyShoppingAgent:
                 try:
                     with open(plain_image_path, "wb") as f:
                         f.write(base64.b64decode(plain_screenshot_b64))
-                    print(f"   - Saved plain debug screenshot to {plain_image_path}")
+                    self._log(f"   - Saved plain debug screenshot to {plain_image_path}")
                 except Exception as e:
-                    print(f"   - Failed to save plain debug screenshot: {e}")
+                    self._log(f"   - Failed to save plain debug screenshot: {e}")
         except Exception as e:
-            print(f"   - Failed to capture plain screenshot: {e}")
+            self._log(f"   - Failed to capture plain screenshot: {e}")
 
         return image_path, plain_image_path
 
@@ -283,7 +299,7 @@ class EtsyShoppingAgent:
                 screenshot_b64 = await self.browser_session.take_screenshot(full_page=False)
                 screenshots.append(screenshot_b64)
             except Exception as e:
-                print(f"   - Failed to take screenshot during scroll capture: {e}")
+                self._log(f"   - Failed to take screenshot during scroll capture: {e}")
 
             # Capture all visible text on the page at this scroll position
             try:
@@ -291,7 +307,7 @@ class EtsyShoppingAgent:
                 if inner_text:
                     text_chunks.append(inner_text)
             except Exception as e:
-                print(f"   - Failed to capture text during scroll capture: {e}")
+                self._log(f"   - Failed to capture text during scroll capture: {e}")
 
             # Check how much more we can scroll on the main page
             try:
@@ -310,7 +326,7 @@ class EtsyShoppingAgent:
                 dy = int(self.viewport_height * 0.9)
                 await page.evaluate(MAIN_PAGE_SCROLL_JS, dy)
             except Exception as e:
-                print(f"   - Failed to perform smooth scroll: {e}")
+                self._log(f"   - Failed to perform smooth scroll: {e}")
                 # Fallback to immediate scroll if smooth scroll fails
                 try:
                     await self.browser_session._scroll_container(dy)
@@ -326,11 +342,11 @@ class EtsyShoppingAgent:
 
     async def _analyze_product_page(self, state: BrowserStateSummary, current_goal: str, step: int, product_name: Optional[str] = None) -> Optional[ProductMemory]:
         """Analyzes a product page and adds the product to memory."""
-        print("   - On a product page. Analyzing product details.")
+        self._log("   - On a product page. Analyzing product details.")
 
         # Check if we have already analyzed this page
         if self.memory.get_product_by_url(state.url):
-            print("   - Already analyzed this product.")
+            self._log("   - Already analyzed this product.")
             return None
 
         _, screenshots_b64 = await self._scroll_and_collect(max_scrolls=15, stop_at_bottom=True, delay=0.3)
@@ -364,7 +380,7 @@ class EtsyShoppingAgent:
             )
             
             self.memory.add_product(product_memory)
-            print(f"   - Added '{product_memory.product_name}' to memory.")
+            self._log(f"   - Added '{product_memory.product_name}' to memory.")
             
             # Save scroll screenshots for debugging
             if self.debug_path:
@@ -377,7 +393,7 @@ class EtsyShoppingAgent:
                             f.write(base64.b64decode(b64))
                         scroll_image_paths.append(img_path)
                     except Exception as e:
-                        print(f"   - Failed to save scroll screenshot {idx}: {e}")
+                        self._log(f"   - Failed to save scroll screenshot {idx}: {e}")
 
                 debug_info = {
                     "type": "product_analysis",
@@ -395,14 +411,14 @@ class EtsyShoppingAgent:
                 try:
                     with open(file_path, "w") as f:
                         json.dump(debug_info, f, indent=2)
-                    print(f"   - Saved product analysis debug info to {file_path}")
+                    self._log(f"   - Saved product analysis debug info to {file_path}")
                 except Exception as e:
-                    print(f"   - Failed to save product analysis debug info: {e}")
+                    self._log(f"   - Failed to save product analysis debug info: {e}")
 
             return product_memory
 
         except Exception as e:
-            print(f"   - An error occurred during product analysis: {e}")
+            self._log(f"   - An error occurred during product analysis: {e}")
             return None
 
 
@@ -419,7 +435,7 @@ class EtsyShoppingAgent:
             await self.browser_session.remove_highlights()
             plain_screenshot_b64 = await self.browser_session.take_screenshot()
         except Exception as e:
-            print(f"   - Failed to capture plain screenshot: {e}")
+            self._log(f"   - Failed to capture plain screenshot: {e}")
 
         # If we couldn't get a plain screenshot, fall back to the highlighted one
         screenshot_for_model = plain_screenshot_b64 or state.screenshot
@@ -446,7 +462,7 @@ class EtsyShoppingAgent:
                     })
 
         if not product_listings:
-            print("   - No new products found to choose from.")
+            self._log("   - No new products found to choose from.")
             return None
 
         parser = JsonOutputParser()
@@ -454,7 +470,7 @@ class EtsyShoppingAgent:
         if len(parsed_product_listings) < 4:
             # Sometimes, the website offers search recommendations, and not products.
             # In this case, we scroll down to load more products.
-            print("   - Not enough products to choose from. Scrolling down to load more products.")
+            self._log("   - Not enough products to choose from. Scrolling down to load more products.")
             return {"scroll_down": ScrollAction(amount=None)}
         
         system_prompt = CHOICE_SYSTEM_PROMPT
@@ -504,9 +520,9 @@ Products:
                 try:
                     with open(file_path, "w") as f:
                         json.dump(debug_info, f, indent=2)
-                    print(f"   - Saved choice debug info to {file_path}")
+                    self._log(f"   - Saved choice debug info to {file_path}")
                 except Exception as e:
-                    print(f"   - Failed to save choice debug info: {e}")
+                    self._log(f"   - Failed to save choice debug info: {e}")
             
 
             chosen_index = choice_response.get("product_number")
@@ -516,7 +532,7 @@ Products:
                 chosen_product_name = chosen_listing["product_name"] if chosen_listing else None
 
                 if chosen_index in state.selector_map and chosen_listing:
-                    print(f"   - LLM chose product with index {chosen_index}. Product name: {chosen_product_name}")
+                    self._log(f"   - LLM chose product with index {chosen_index}. Product name: {chosen_product_name}")
                     chosen_element = state.selector_map[chosen_index]
                     href = chosen_element.attributes.get("href") if hasattr(chosen_element, "attributes") else None
 
@@ -543,12 +559,12 @@ Products:
                             action_dict["product_name"] = chosen_product_name
                         return action_dict
                 else:
-                    print(f"   - LLM chose an invalid index: {chosen_index}.")
+                    self._log(f"   - LLM chose an invalid index: {chosen_index}.")
             else:
-                print("   - LLM decided no product was suitable.")
+                self._log("   - LLM decided no product was suitable.")
 
         except Exception as e:
-            print(f"   - An error occurred while asking LLM to choose a product: {e}")
+            self._log(f"   - An error occurred while asking LLM to choose a product: {e}")
             
         return None
 
@@ -557,17 +573,17 @@ Products:
         Uses an LLM to choose a product from a search results page, with visual input.
         """
         if self.products_to_check != -1 and self.products_checked >= self.products_to_check:
-            print("   - Desired number of products already checked on this page.")
+            self._log("   - Desired number of products already checked on this page.")
             # Move to next subtask if any remaining
             self._advance_to_next_subtask()
             return None
 
         # Screenshot-based selection is now the only supported option for choosing products
         if state.screenshot:
-            print("   - On search results page. Asking LLM to choose a product.")
+            self._log("   - On search results page. Asking LLM to choose a product.")
             action = await self._choose_product(state, current_goal, step)
         else:
-            print("   - Screenshot-based selection is required but a screenshot is unavailable; scrolling or moving on.")
+            self._log("   - Screenshot-based selection is required but a screenshot is unavailable; scrolling or moving on.")
             action = None
 
         if action:
@@ -575,11 +591,11 @@ Products:
 
         # No suitable products found in current viewport
         if state.pixels_below and state.pixels_below > 0:
-            print("   - No suitable products visible. Scrolling down to load more products.")
+            self._log("   - No suitable products visible. Scrolling down to load more products.")
             return {"scroll_down": ScrollAction(amount=None)}
 
         # Reached end of page and still nothing useful; move on
-        print("   - Reached end of results without finding a suitable product.")
+        self._log("   - Reached end of results without finding a suitable product.")
         self._advance_to_next_subtask()
         return None
 
@@ -587,11 +603,11 @@ Products:
         """
         The agent's 'brain'. Decides the next action based on the current page state.
         """
-        print("🤔 Thinking...")
-        print(f"   - Current URL: {state.url}")
+        self._log("🤔 Thinking...")
+        self._log(f"   - Current URL: {state.url}")
         
         current_goal = self.sub_tasks[self.current_task_index]
-        print(f"   - Current Subtask: {current_goal}")
+        self._log(f"   - Current Subtask: {current_goal}")
 
         if "etsy.com" not in state.url:
             return {"go_to_url": GoToUrlAction(url="https://www.etsy.com/")}
@@ -601,15 +617,15 @@ Products:
             # If _choose_product_from_search returns None, it means we should move to the next task
             # Check if we've moved to the next task
             if action is None and self.current_task_index < len(self.sub_tasks):
-                print(f"   - Completed task: {current_goal}")
-                print(f"   - Moving to next task: {self.sub_tasks[self.current_task_index]}")
+                self._log(f"   - Completed task: {current_goal}")
+                self._log(f"   - Moving to next task: {self.sub_tasks[self.current_task_index]}")
                 return {"go_to_url": GoToUrlAction(url="https://www.etsy.com/")}
             return action
 
         elif "etsy.com/listing" in state.url:
             # 1️⃣ Analyse the product first
             if self.current_product_name:
-                print(f"   - Analyzing product: {self.current_product_name}")
+                self._log(f"   - Analyzing product: {self.current_product_name}")
             await self._analyze_product_page(state, current_goal, step, self.current_product_name)
 
             # 2️⃣ Keep track that we've looked at another item
@@ -627,20 +643,20 @@ Products:
 
         search_bar = self._find_search_bar(state)
         if search_bar and f"searched_{current_goal}" not in self.history:
-            print(f"   - Found search bar. Searching for '{current_goal}'.")
+            self._log(f"   - Found search bar. Searching for '{current_goal}'.")
             return {
                 "input_text": InputTextAction(index=search_bar, text=current_goal),
                 "send_keys": SendKeysAction(keys="Enter"),
                 "search_query": current_goal
             }
 
-        print("   - No specific action decided.")
+        self._log("   - No specific action decided.")
         return None
 
     async def _make_final_purchase_decision(self):
         """Use the LLM to decide which products to finally purchase based on memory."""
         if not self.memory.products:
-            print("🤷 No products were analyzed, skipping final purchase decision.")
+            self._log("🤷 No products were analyzed, skipping final purchase decision.")
             return
 
         # Build a detailed list of products the agent has analyzed
@@ -671,7 +687,7 @@ Here are the products that have been analyzed:
             HumanMessage(content=user_prompt_text),
         ]
 
-        print("🔮 Asking LLM for final purchase recommendations...")
+        self._log("🔮 Asking LLM for final purchase recommendations...")
         try:
             ai_message = await self.llm.ainvoke(messages)
             response_content = ai_message.content.strip()
@@ -681,8 +697,8 @@ Here are the products that have been analyzed:
                 # If the model returned something that isn't valid JSON, fall back to raw string
                 decision_json = {"raw_response": response_content}
 
-            print("💡 Final purchase decision:")
-            print(json.dumps(decision_json, indent=2))
+            self._log("💡 Final purchase decision:")
+            self._log(json.dumps(decision_json, indent=2))
 
             if self.debug_path:
                 os.makedirs(self.debug_path, exist_ok=True)
@@ -699,16 +715,16 @@ Here are the products that have been analyzed:
                 decision_path = os.path.join(self.debug_path, "_final_purchase_decision.json")
                 with open(decision_path, "w") as f:
                     json.dump(debug_info, f, indent=2)
-                print(f"   - Final decision saved to {decision_path}")
+                self._log(f"   - Final decision saved to {decision_path}")
 
         except Exception as e:
-            print(f"   - An error occurred during final purchase decision making: {e}")
+            self._log(f"   - An error occurred during final purchase decision making: {e}")
 
     async def run(self):
         """
         Main agent workflow for online shopping on Etsy.
         """
-        print("🚀 Starting Etsy shopping agent...")
+        self._log("🚀 Starting Etsy shopping agent...")
         # Monkey-patch BrowserSession._scroll_container once so that all future
         # ScrollAction invocations use smooth scrolling instead of the default
         # instant jump.  This ensures visual continuity for the end user when
@@ -749,8 +765,8 @@ Here are the products that have been analyzed:
             BrowserSession._scroll_container = _smooth_scroll_container  # type: ignore
             BrowserSession._smooth_scroll_patched = True
 
-        print(f"   - Task: {self.task}")
-        print(f"   - Persona: {self.persona}")
+        self._log(f"   - Task: {self.task}")
+        self._log(f"   - Persona: {self.persona}")
 
         # Begin screen recording before the browser launches so we capture the whole session
         if self.record_video:
@@ -768,18 +784,18 @@ Here are the products that have been analyzed:
             browser_profile=browser_profile
         )
         await self.browser_session.start()
-        print("✅ Browser session started.")
+        self._log("✅ Browser session started.")
 
         Action = self.controller.registry.create_action_model()
 
         for i in range(self.max_steps):
-            print(f"\n--- Step {i+1}/{self.max_steps} ---")
+            self._log(f"\n--- Step {i+1}/{self.max_steps} ---")
 
             if self.current_task_index >= len(self.sub_tasks):
-                print("   - All sub-tasks are completed.")
+                self._log("   - All sub-tasks are completed.")
                 break
             
-            print("👀 Observing page state...")
+            self._log("👀 Observing page state...")
             state = await self.browser_session.get_state_summary(cache_clickable_elements_hashes=True)
 
             step = i + 1
@@ -813,69 +829,69 @@ Here are the products that have been analyzed:
                     try:
                         with open(debug_file_path, "w") as f:
                             json.dump(debug_info, f, indent=2)
-                        print(f"   - Saved generic action debug info to {debug_file_path}")
+                        self._log(f"   - Saved generic action debug info to {debug_file_path}")
                     except Exception as e:
-                        print(f"   - Failed to save generic action debug info: {e}")
+                        self._log(f"   - Failed to save generic action debug info: {e}")
 
             if action_plan:
-                print("🎬 Taking action...")
+                self._log("🎬 Taking action...")
                 actions_to_perform = []
                 if "go_to_url" in action_plan:
                     actions_to_perform.append(Action(go_to_url=action_plan["go_to_url"]))
-                    print(f"   - Navigating to {action_plan['go_to_url'].url}")
+                    self._log(f"   - Navigating to {action_plan['go_to_url'].url}")
                 if "input_text" in action_plan:
                     actions_to_perform.append(Action(input_text=action_plan["input_text"]))
                     self.history.append(f"searched_{action_plan['search_query']}")
                     self.memory.add_search_query(action_plan["search_query"])
-                    print(f"   - Typing '{action_plan['input_text'].text}'")
+                    self._log(f"   - Typing '{action_plan['input_text'].text}'")
                 if "send_keys" in action_plan:
                     actions_to_perform.append(Action(send_keys=action_plan["send_keys"]))
-                    print(f"   - Pressing '{action_plan['send_keys'].keys}'")
+                    self._log(f"   - Pressing '{action_plan['send_keys'].keys}'")
                 if "click_element_by_index" in action_plan:
                     actions_to_perform.append(Action(click_element_by_index=action_plan["click_element_by_index"]))
                     if "product_name" in action_plan:
                         self.history.append(f"clicked_product_{action_plan['product_name']}")
                         self.current_product_name = action_plan["product_name"]  # Store for analysis
-                    print(f"   - Clicking element at index {action_plan['click_element_by_index'].index}")
+                    self._log(f"   - Clicking element at index {action_plan['click_element_by_index'].index}")
                 if "open_tab" in action_plan:
                     actions_to_perform.append(Action(open_tab=action_plan["open_tab"]))
                     if "product_name" in action_plan:
                         self.history.append(f"clicked_product_{action_plan['product_name']}")
                         self.current_product_name = action_plan["product_name"]  # Store for analysis
-                    print(f"   - Opening new tab with {action_plan['open_tab'].url}")
+                    self._log(f"   - Opening new tab with {action_plan['open_tab'].url}")
                 if "close_tab" in action_plan:
                     actions_to_perform.append(Action(close_tab=action_plan["close_tab"]))
                     self.current_product_name = None  # Clear after closing tab
-                    print(f"   - Closing tab {action_plan['close_tab'].page_id}")
+                    self._log(f"   - Closing tab {action_plan['close_tab'].page_id}")
                 if "switch_tab" in action_plan:
                     actions_to_perform.append(Action(switch_tab=action_plan["switch_tab"]))
-                    print(f"   - Switching to tab {action_plan['switch_tab'].page_id}")
+                    self._log(f"   - Switching to tab {action_plan['switch_tab'].page_id}")
                 if "scroll_down" in action_plan:
                     actions_to_perform.append(Action(scroll_down=action_plan["scroll_down"]))
-                    print("   - Scrolling down the page")
+                    self._log("   - Scrolling down the page")
 
                 for action in actions_to_perform:
                     result = await self.controller.act(action=action, browser_session=self.browser_session)
-                    print(f"   ✔️ Action result: {result.extracted_content}")
+                    self._log(f"   ✔️ Action result: {result.extracted_content}")
                     await asyncio.sleep(2)
                 if self.manual:
                     input("Press Enter to continue...")
             else:
-                print("   - No action to take. Continuing to next iteration to check for task transitions.")
+                self._log("   - No action to take. Continuing to next iteration to check for task transitions.")
                 if self.current_task_index >= len(self.sub_tasks):
-                    print("   - All sub-tasks completed. Ending.")
+                    self._log("   - All sub-tasks completed. Ending.")
                     break
                 await asyncio.sleep(1)  # Small delay before next iteration
 
-        print("\n✅ Shopping agent finished.")
+        self._log("\n✅ Shopping agent finished.")
 
         if self.debug_path:
             memory_path = os.path.join(self.debug_path, "_memory.json")
             try:
                 self.memory.save_to_json(memory_path)
-                print(f"🧠 Memory saved to {memory_path}")
+                self._log(f"🧠 Memory saved to {memory_path}")
             except Exception as e:
-                print(f"   - Failed to save memory: {e}", file=sys.stderr)
+                self._log(f"   - Failed to save memory: {e}", level="error")
 
         # Decide on the final purchase based on the memory collected
         await self._make_final_purchase_decision()
@@ -949,14 +965,14 @@ Here are the products that have been analyzed:
                 output_path,
             ]
         else:
-            print("⚠️  Screen recording not supported on this OS. Skipping video capture.")
+            self._log("⚠️  Screen recording not supported on this OS. Skipping video capture.")
             return
 
         try:
             self._record_proc = subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-            print(f"🎥 Screen recording started → {output_path}")
+            self._log(f"🎥 Screen recording started → {output_path}")
         except FileNotFoundError:
-            print("❌ ffmpeg not found. Install ffmpeg to enable screen recording.")
+            self._log("❌ ffmpeg not found. Install ffmpeg to enable screen recording.")
             self._record_proc = None
 
     def _stop_screen_recording(self):
@@ -966,7 +982,7 @@ Here are the products that have been analyzed:
         try:
             self._record_proc.terminate()
             self._record_proc.wait(timeout=10)
-            print("🎬 Screen recording saved.")
+            self._log("🎬 Screen recording saved.")
         except Exception:
             try:
                 self._record_proc.kill()
@@ -992,7 +1008,7 @@ Here are the products that have been analyzed:
         self.products_checked = 0
 
 @click.command()
-@click.option("--config-file", type=click.Path(exists=True, dir_okay=False, readable=True), default=None, help="Path to a JSON file containing both 'task' and 'persona' keys. If provided, values in the file override --task/--persona options.")
+@click.option("--config-file", type=click.Path(exists=True, dir_okay=False, readable=True), default=None, help="Path to a JSON file containing 'intent' and 'persona' keys. Overrides --task and --persona.")
 @click.option("--task", default=DEFAULT_TASK, help="The shopping task for the agent.")
 @click.option("--persona", default=DEFAULT_PERSONA, help="The persona for the agent.")
 @click.option("--manual", is_flag=True, help="Wait for user to press Enter after each agent action.")
@@ -1007,43 +1023,24 @@ Here are the products that have been analyzed:
 @click.option("--record-video", is_flag=True, help="Record the agent's browser session and save it to the debug path.")
 @click.option("--user-data-dir", type=click.Path(), help="Path to user data directory for the browser.")
 def cli(config_file, task, persona, manual, headless, max_steps, debug_path, width, height, n_products, model_name, temperature, record_video, user_data_dir):
-    """Runs the Etsy Shopping Agent."""
-    if headless and record_video:
-        print("Error: --headless and --record-video options cannot be used together.", file=sys.stderr)
-        sys.exit(1)
-        
-    # If a config JSON file is provided, load task and persona from it
+    """A command-line interface to run the EtsyShoppingAgent."""
+    
     if config_file:
         try:
-            with open(config_file, "r") as cf:
-                config_data = json.load(cf)
-
-            if not isinstance(config_data, dict):
-                raise ValueError("Config JSON must be an object with 'intent' and 'persona' keys.")
-
-            # Override task and persona if present in the JSON
-            if "intent" in config_data and isinstance(config_data["intent"], str):
-                task = config_data["intent"].strip()
-            else:
-                print("Error: 'intent' key missing or not a string in config file.", file=sys.stderr)
-                sys.exit(1)
-
-            if "persona" in config_data and isinstance(config_data["persona"], str):
-                persona = config_data["persona"].strip()
-            else:
-                print("Error: 'persona' key missing or not a string in config file.", file=sys.stderr)
-                sys.exit(1)
-
-        except Exception as e:
+            with open(config_file, 'r') as f:
+                config_data = json.load(f)
+                task = config_data.get('task', task)
+                persona = config_data.get('persona', persona)
+        except (IOError, json.JSONDecodeError) as e:
             print(f"Error reading config file '{config_file}': {e}", file=sys.stderr)
             sys.exit(1)
-        
+
     agent = EtsyShoppingAgent(
-        task=task, 
-        persona=persona, 
-        manual=manual, 
-        headless=headless, 
-        max_steps=max_steps, 
+        task=task,
+        persona=persona,
+        manual=manual,
+        headless=headless,
+        max_steps=max_steps,
         debug_path=debug_path,
         viewport_width=width,
         viewport_height=height,
@@ -1053,7 +1050,17 @@ def cli(config_file, task, persona, manual, headless, max_steps, debug_path, wid
         record_video=record_video,
         user_data_dir=user_data_dir,
     )
-    asyncio.run(agent.run())
+    try:
+        asyncio.run(agent.run())
+    except KeyboardInterrupt:
+        print("\n👋 Interrupted by user. Shutting down...")
+    except Exception as e:
+        print(f"\n💥 An unexpected error occurred: {e}", file=sys.stderr)
+        # In case of an error, try to clean up the browser session if it exists
+        if agent.browser_session:
+            asyncio.run(agent.browser_session.kill())
+        if agent._record_proc:
+            agent._stop_screen_recording()
 
 if __name__ == "__main__":
     cli() 

@@ -6,11 +6,24 @@
 
 An AI-powered Etsy shopping agent that autonomously browses and analyzes products based on a given task and persona. The agent uses browser automation to search for products, analyze product pages, and make informed shopping decisions. The personas, gathered from the paper [UXAgent: An LLM Agent-Based Usability Testing Framework for Web Design](https://arxiv.org/abs/2502.12561), are located at `data/personas`.
 
+## A/B Testing Agent
+
+The A/B testing script (`ab_testing.py`) runs multiple shopping agents in parallel to compare the performance of two different models (a "control" and a "target"). It assigns a unique persona to each agent from the `data/personas` directory and runs them concurrently.
+
+This is useful for evaluating how different models handle the same shopping tasks. Each agent runs independently and saves its own debug logs, screenshots, and memory files.
+
 ## Quick Start
 
+### Single Agent
 ```bash
 cd src
 python shopping_agent.py --task "buy a large, inflatable spider decoration for halloween"
+```
+
+### A/B Test
+```bash
+cd src
+python ab_testing.py --n-agents 4 --control-model "gpt-4o-mini" --target-model "gpt-4o"
 ```
 
 ## Setup
@@ -27,19 +40,19 @@ python shopping_agent.py --task "buy a large, inflatable spider decoration for h
 
 ## Usage
 
-### Basic Usage
+### Basic Usage (Single Agent)
 
 ```bash
 python shopping_agent.py --task "your shopping task here"
 ```
 
-### All Parameters
+### All Parameters (Single Agent)
 
 | Parameter | Default | Description |
 |-----------|---------|-------------|
 | `--task` | `"buy a large, inflatable spider decoration for halloween"` | The shopping task for the agent |
 | `--persona` | Michael (42yo marketing manager) | The persona for the agent |
-| `--config-file` | *None* | Path to a JSON file containing `task` and `persona`. Values in the file override the flags above |
+| `--config-file` | *None* | Path to a JSON file containing `intent` and `persona`. Values in the file override the flags above |
 | `--manual` | False | Wait for user to press Enter after each agent action |
 | `--headless` | False | Run the browser in headless mode |
 | `--max-steps` | 10 | Maximum number of steps the agent will take |
@@ -50,6 +63,21 @@ python shopping_agent.py --task "your shopping task here"
 | `--model` | `"gpt-4o-mini"` | LLM model name (e.g., gpt-4o, gpt-4o-mini) |
 | `--temperature` | 0.7 | LLM sampling temperature (0-2) |
 | `--record-video` | False | Record browser session video (requires ffmpeg) |
+| `--user-data-dir`| *None* | Path to a browser profile directory to reuse cookies and cache |
+
+### All Parameters (A/B Test)
+
+| Parameter | Default | Description |
+|-----------|---------|-------------|
+| `--n-agents` | 4 | Total agents to run (half control, half target) |
+| `--personas-dir` | `"../data/personas"` | Directory with JSON persona files |
+| `--seed` | *None* | Random seed for persona selection |
+| `--control-model`| `"gpt-4o-mini"` | Model name for the control group |
+| `--target-model`| `"gpt-4o-mini"` | Model name for the target group |
+| `--max-steps` | 10 | Maximum number of steps per agent |
+| `--headless` | True | Run browsers in headless mode |
+| `--concurrency` | 2 | Max number of agents to run concurrently |
+| `--debug-root` | `"debug_run_ab"` | Root directory for per-agent debug folders |
 
 ### Examples
 
@@ -81,6 +109,13 @@ python shopping_agent.py --task "find a wedding gift" --model "gpt-4o" --tempera
 **Using a JSON config file**:
 ```bash
 python shopping_agent.py --config-file my_shopping_task.json
+```
+
+**A/B Test Example**:
+
+Compare `gpt-4o-mini` against `gpt-4o` with 6 agents, running 3 concurrently.
+```bash
+python ab_testing.py --n-agents 6 --concurrency 3 --control-model "gpt-4o-mini" --target-model "gpt-4o"
 ```
 
 ## How It Works
@@ -123,7 +158,7 @@ brew install ffmpeg
 
 ## Using a JSON Config File
 
-Passing large persona descriptions via the command line can get messy. Instead, place them in a small JSON file:
+Passing large persona descriptions via the command line can get messy. Instead, place the shopping `intent` and `persona` in a small JSON file:
 
 ```json
 {
@@ -138,4 +173,4 @@ Run the agent with:
 python shopping_agent.py --config-file my_shopping_task.json
 ```
 
-The values in the JSON file take precedence over any of the corresponding CLI flags.
+The `intent` and `persona` values in the JSON file take precedence over the `--task` and `--persona` CLI flags.
