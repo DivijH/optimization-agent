@@ -1,0 +1,20 @@
+# Data
+
+This directory contains data used by the shopping agent, primarily the virtual customer personas.
+
+## Personas (`personas/`)
+
+The `personas/` directory contains JSON files, each representing a unique virtual customer persona. These personas are used by the shopping agent to inform its browsing and purchasing decisions, simulating a wide range of user behaviors and preferences.
+
+The personas were gathered from the paper [UXAgent: An LLM Agent-Based Usability Testing Framework for Web Design](https://arxiv.org/abs/2502.12561).
+
+### Persona File Format
+
+Each JSON file in this directory defines a persona with a shopping `intent`. Here is an example:
+
+```json
+{
+  "intent": "buy a pair of Jobst zipper compression socks for women.",
+  "persona": "Persona: Sophia\n\nBackground:\nSophia is a dedicated community college professor with a deep passion for education and empowering underserved students. She has spent the past two decades sharing her expertise and inspiring young minds to reach their full potential.\n\nDemographics:\nAge: 54\nGender: Female\nEducation: Master's degree in Education\nProfession: Community College Professor\nIncome: $65,000\n\nFinancial Situation:\nSophia's income as a community college professor provides her with a comfortable, yet modest, living. She is financially responsible and manages her budget carefully, prioritizing her personal and professional goals.\n\nShopping Habits:\nSophia is a practical shopper who focuses on finding high-quality, durable items that will serve her needs for the long term. She enjoys browsing local thrift stores and online marketplaces for unique finds, but she is also willing to invest in essential items that will last. Sophia values sustainability and often looks for eco-friendly or ethically sourced products.\n\nProfessional Life:\nAs a community college professor, Sophia takes great pride in her work and the impact she has on her students' lives. She is known for her engaging teaching style, her deep subject matter expertise, and her genuine care for the well-being and success of her students. Sophia is actively involved in curriculum development and mentoring programs, constantly seeking ways to improve the educational experience.\n\nPersonal Style:\nSophia's personal style reflects her practical and comfortable approach to life. She often wears classic pieces, such as button-down shirts, cardigans, and well-fitted trousers, that allow her to move freely and feel confident in the classroom. She also enjoys adding personal touches, like colorful scarves or statement jewelry, to express her own sense of style."
+}
+``` 
