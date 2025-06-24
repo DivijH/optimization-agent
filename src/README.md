@@ -100,6 +100,23 @@ Compare `gpt-4o-mini` against `gpt-4o` with 6 agents, running 3 concurrently.
 python ab_testing.py --n-agents 6 --concurrency 3 --control-model "gpt-4o-mini" --target-model "gpt-4o"
 ```
 ---
+## Etsy Environment (`etsy_environment/`)
+
+This directory contains a suite of tools for creating a local, offline copy of the Etsy website for agent training and evaluation. This allows for reproducible experiments without relying on the live website, which is constantly changing.
+
+### `get_search_queries.py`
+Uses an LLM to generate a list of realistic search queries based on the "persona" and "intent" defined in each JSON file in `../data/personas`. It then saves these queries back into the JSON files under the `search_queries` key. This is a data-generation step to prepare personas for the scraper.
+
+### `batch_scraper.py`
+Reads the `search_queries` from all persona files and uses `webpage_downloader.py` to scrape the corresponding search result pages from Etsy. It downloads the HTML, assets, and all linked product listings from the search results page. It uses multithreading to speed up the download process.
+
+### `webpage_downloader.py`
+This is the core module that handles the downloading of a single Etsy page (either a search page or a listing page). It saves the page's HTML and all its assets (CSS, JS, images) and rewrites the links in the HTML to point to the local copies.
+
+### `hosting_webpages.py`
+A simple Flask web server that serves the locally-downloaded Etsy pages. This allows the agent to browse the offline copy of the website as if it were live. It also includes a basic A/B testing framework to serve different versions of a page (e.g., "control" vs "test") and an endpoint to track analytics events.
+
+---
 ## How It Works
 
 1. **Task Breakdown**: Breaks your shopping task into specific search queries
