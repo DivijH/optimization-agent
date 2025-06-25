@@ -24,18 +24,21 @@ For more information, please see the overall project documentation: [Google Doc]
     echo "your-api-key-here" > src/keys/litellm.key
     ```
 
-## Quick Start
+4. Set up the local website for agents
+[TODO]
 
-### Single Agent
-```bash
-cd src
-python shopping_agent.py --task "buy a large, inflatable spider decoration for halloween"
-```
+## Quick Start
 
 ### A/B Test
 ```bash
 cd src
 python ab_testing.py --n-agents 4
+```
+
+### Single Agent
+```bash
+cd src
+python shopping_agent.py --task "buy a large, inflatable spider decoration for halloween"
 ```
 
 ## Documentation

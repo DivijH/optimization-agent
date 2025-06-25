@@ -56,7 +56,7 @@ def main() -> None:
     parser.add_argument(
         "--delay",
         type=float,
-        default=0.0,
+        default=1.5,
         help="Optional delay (in seconds) between processing each query.",
     )
     parser.add_argument(
