@@ -2,6 +2,41 @@
 
 This directory contains the core logic for the Optimization Agent, including the shopping agent, A/B testing framework, and supporting modules.
 
+## A/B Testing Agent (`ab_testing.py`)
+
+The A/B testing script (`ab_testing.py`) runs multiple shopping agents in parallel to compare the performance of two different models (a "control" and a "target"). It assigns a unique persona to each agent from the `../data/personas` directory and runs them concurrently.
+
+This is useful for evaluating how different models handle the same shopping tasks. Each agent runs independently and saves its own debug logs, screenshots, and memory files.
+
+### Quick Start
+```bash
+python ab_testing.py --n-agents 4 --control-model "gpt-4o-mini" --target-model "gpt-4o"
+```
+
+### Usage
+
+#### All Parameters (A/B Test)
+
+| Parameter | Default | Description |
+|-----------|---------|-------------|
+| `--n-agents` | 4 | Total agents to run (half control, half target) |
+| `--personas-dir` | `"../data/personas"` | Directory with JSON persona files |
+| `--seed` | *None* | Random seed for persona selection |
+| `--control-model`| `"gpt-4o-mini"` | Model name for the control group |
+| `--target-model`| `"gpt-4o-mini"` | Model name for the target group |
+| `--max-steps` | 10 | Maximum number of steps per agent |
+| `--headless` | True | Run browsers in headless mode |
+| `--concurrency` | 2 | Max number of agents to run concurrently |
+| `--debug-root` | `"debug_run_ab"` | Root directory for per-agent debug folders |
+
+#### A/B Test Example
+
+Compare `gpt-4o-mini` against `gpt-4o` with 6 agents, running 3 concurrently.
+```bash
+python ab_testing.py --n-agents 6 --concurrency 3 --control-model "gpt-4o-mini" --target-model "gpt-4o"
+```
+---
+
 ## Shopping Agent (`shopping_agent.py`)
 
 An AI-powered Etsy shopping agent that autonomously browses and analyzes products based on a given task and persona. The agent uses browser automation to search for products, analyze product pages, and make informed shopping decisions.
@@ -63,58 +98,6 @@ python shopping_agent.py --task "find a wedding gift" --model "gpt-4o" --tempera
 ```bash
 python shopping_agent.py --config-file my_shopping_task.json
 ```
-
----
-
-## A/B Testing Agent (`ab_testing.py`)
-
-The A/B testing script (`ab_testing.py`) runs multiple shopping agents in parallel to compare the performance of two different models (a "control" and a "target"). It assigns a unique persona to each agent from the `../data/personas` directory and runs them concurrently.
-
-This is useful for evaluating how different models handle the same shopping tasks. Each agent runs independently and saves its own debug logs, screenshots, and memory files.
-
-### Quick Start
-```bash
-python ab_testing.py --n-agents 4 --control-model "gpt-4o-mini" --target-model "gpt-4o"
-```
-
-### Usage
-
-#### All Parameters (A/B Test)
-
-| Parameter | Default | Description |
-|-----------|---------|-------------|
-| `--n-agents` | 4 | Total agents to run (half control, half target) |
-| `--personas-dir` | `"../data/personas"` | Directory with JSON persona files |
-| `--seed` | *None* | Random seed for persona selection |
-| `--control-model`| `"gpt-4o-mini"` | Model name for the control group |
-| `--target-model`| `"gpt-4o-mini"` | Model name for the target group |
-| `--max-steps` | 10 | Maximum number of steps per agent |
-| `--headless` | True | Run browsers in headless mode |
-| `--concurrency` | 2 | Max number of agents to run concurrently |
-| `--debug-root` | `"debug_run_ab"` | Root directory for per-agent debug folders |
-
-#### A/B Test Example
-
-Compare `gpt-4o-mini` against `gpt-4o` with 6 agents, running 3 concurrently.
-```bash
-python ab_testing.py --n-agents 6 --concurrency 3 --control-model "gpt-4o-mini" --target-model "gpt-4o"
-```
----
-## Etsy Environment (`etsy_environment/`)
-
-This directory contains a suite of tools for creating a local, offline copy of the Etsy website for agent training and evaluation. This allows for reproducible experiments without relying on the live website, which is constantly changing.
-
-### `get_search_queries.py`
-Uses an LLM to generate a list of realistic search queries based on the "persona" and "intent" defined in each JSON file in `../data/personas`. It then saves these queries back into the JSON files under the `search_queries` key. This is a data-generation step to prepare personas for the scraper.
-
-### `batch_scraper.py`
-Reads the `search_queries` from all persona files and uses `webpage_downloader.py` to scrape the corresponding search result pages from Etsy. It downloads the HTML, assets, and all linked product listings from the search results page. It uses multithreading to speed up the download process.
-
-### `webpage_downloader.py`
-This is the core module that handles the downloading of a single Etsy page (either a search page or a listing page). It saves the page's HTML and all its assets (CSS, JS, images) and rewrites the links in the HTML to point to the local copies.
-
-### `hosting_webpages.py`
-A simple Flask web server that serves the locally-downloaded Etsy pages. This allows the agent to browse the offline copy of the website as if it were live. It also includes a basic A/B testing framework to serve different versions of a page (e.g., "control" vs "test") and an endpoint to track analytics events.
 
 ---
 ## How It Works

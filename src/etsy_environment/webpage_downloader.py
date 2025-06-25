@@ -5,9 +5,10 @@ import urllib.parse
 from urllib.parse import urljoin, urlparse
 import re
 from tqdm import tqdm
+import time
 
 class EtsyPageDownloader:
-    def __init__(self, progress_position: int = 0):
+    def __init__(self, progress_position: int = 0, delay: float = 0.0):
         """Create a new *EtsyPageDownloader*.
 
         Parameters
@@ -17,9 +18,13 @@ class EtsyPageDownloader:
             progress bars.  Passing a unique value for each concurrent worker
             ensures that their respective bars are rendered on separate lines
             and do not clobber one another.
+        delay:
+            An optional delay (in seconds) to wait after processing each
+            search query.
         """
 
         self.progress_position = progress_position
+        self.delay = delay
 
         self.session = requests.Session()
         # Use a realistic user agent
@@ -182,6 +187,9 @@ class EtsyPageDownloader:
                     # Download the listing page and its assets (only once per unique listing)
                     self.download_page(full_listing_url, listing_rel_dir)
                     downloaded_ids.add(listing_id)
+
+                    if self.delay > 0:
+                        time.sleep(self.delay)
 
                 # Update the anchor so it points to the local copy
                 anchor['href'] = f'listing_{listing_id}/index.html'

@@ -42,3 +42,32 @@ python ab_testing.py --n-agents 4
 
 - **[Core Components (`src/`)](./src/README.md)**: Detailed documentation on the shopping agent, A/B testing framework, and their configurations.
 - **[Data (`data/`)](./data/README.md)**: Information about the virtual customer personas used by the agent.
+
+## Directory Structure
+
+```
+.
+├── data/
+│   ├── etsy_pages/           # Cached HTML of Etsy search results and product pages
+│   ├── personas/             # Virtual customer personas for agents
+│   │   ├── virtual customer 0.json
+│   │   ├── virtual customer 1.json
+│   │   └── ...
+│   └── README.md             # Information about the data
+├── src/
+│   ├── ab_testing.py         # Script for A/B testing
+│   ├── shopping_agent.py     # Core logic for the shopping agent
+│   ├── feature_suggestion.py # Code for suggesting new features for products
+│   ├── memory.py             # Agent's memory implementation
+│   ├── prompts.py            # Prompts used by LLM
+│   ├── etsy_environment/     # Code for scraping and hosting Etsy environment
+│   │   ├── batch_scraper.py
+│   │   ├── get_search_queries.py
+│   │   ├── hosting_webpages.py
+│   │   └── webpage_downloader.py
+│   ├── keys/                 # Directory for API keys
+│   │   └── litellm.key
+│   └── README.md             # Core components documentation
+├── requirements.txt          # Project dependencies
+└── README.md                 # This file
+```
