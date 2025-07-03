@@ -6,22 +6,21 @@ import base64
 import shutil
 import sys
 import subprocess
+import signal
 from typing import Any, Dict, List, Optional
 from dataclasses import dataclass, field, asdict, is_dataclass
 import click
 import logging
 from langchain_core.language_models.chat_models import BaseChatModel
 from langchain_core.output_parsers import JsonOutputParser
-from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI
-from urllib.parse import urljoin
+from urllib.parse import urljoin, quote
 
 from browser_use.browser.profile import BrowserProfile
 from browser_use.browser.session import BrowserSession
 from browser_use.controller.service import Controller
 from browser_use.controller.views import (
-    ClickElementAction,
     GoToUrlAction,
     InputTextAction,
     SendKeysAction,
@@ -34,40 +33,51 @@ from browser_use.browser.views import BrowserStateSummary
 from memory import MemoryModule, ProductMemory
 
 from prompts import (
-    SUBTASK_GENERATION_PROMPT,
-    CHOICE_SYSTEM_PROMPT,
     PRODUCT_ANALYSIS_PROMPT,
     FINAL_DECISION_PROMPT,
 )
 
-# Default task and persona for the agent
+# Pricing per million tokens for OpenAI models
+MODEL_PRICING = {
+    # model_name: {"input": cost_per_million, "output": cost_per_million}
+    "gpt-4o-mini": {"input": 0.15, "output": 0.60},
+    "gpt-4o": {"input": 2.50, "output": 10.00},
+    "o3-mini": {"input": 1.10, "output": 4.40},
+    "openai/o4-mini": {"input": 1.10, "output": 4.40},
+}
+
+# Default task and persona for the agent (Persona 21)
 DEFAULT_TASK = """
-buy a large, inflatable spider decoration for halloween
+indoor frisbee
 """.strip()
 DEFAULT_PERSONA = """
-Persona: Michael
+Persona: Samantha
 
 Background:
-Michael is a mid-career professional working as a marketing manager at a technology startup in San Francisco. He is passionate about using data-driven strategies to drive growth and innovation for the company.
+Samantha is a successful entrepreneur who founded a thriving tech company in Silicon Valley. With a keen eye for innovation and a talent for identifying market opportunities, she has built her business from the ground up and is now reaping the rewards of her hard work.
 
 Demographics:
-Age: 42
-Gender: Male
-Education: Bachelor's degree in Business Administration
-Profession: Marketing Manager
-Income: $75,000
+Age: 35
+Gender: Female
+Education: Bachelor's degree in Computer Science
+Profession: Founder and CEO of a tech startup
+Income: $250,000
 
 Financial Situation:
-Michael has a comfortable income that allows him to maintain a decent standard of living in the expensive San Francisco Bay Area. He is financially responsible, saving a portion of his earnings for retirement and emergencies, while also enjoying occasional leisure activities and travel.
+Samantha has a comfortable financial situation, with a high income from her successful tech company. She is financially savvy and invests her wealth in a diverse portfolio, aiming to grow her assets and secure her financial future.
 
 Shopping Habits:
-Michael prefers to shop online for convenience, but he also enjoys the occasional trip to the mall or specialty stores to browse for new products. He tends to research items thoroughly before making a purchase, looking for quality, functionality, and value. Michael values efficiency and is not influenced by trends or impulse buys.
+Samantha has a discerning eye for quality and design, and she enjoys browsing high-end stores and boutiques for unique and stylish items. She is not afraid to splurge on luxury goods that she believes are worth the investment. However, she also values efficiency and often shops online for convenience.
 
 Professional Life:
-As a marketing manager, Michael is responsible for developing and implementing marketing strategies to promote the startup's products and services. He collaborates closely with the product, sales, and design teams to ensure a cohesive brand experience. Michael is always looking for ways to optimize marketing campaigns and stay ahead of industry trends.
+As the founder and CEO of her tech startup, Samantha's professional life is fast-paced and demanding. She juggles a variety of responsibilities, from overseeing product development to managing a team of employees. Despite the challenges, she thrives on the excitement and sense of accomplishment that comes with building a successful business.
 
 Personal Style:
-Michael has a casual, yet professional style. He often wears button-down shirts, chinos, and leather shoes to the office. On weekends, he enjoys wearing comfortable, sporty attire for outdoor activities like hiking or cycling. Michael tends to gravitate towards neutral colors and classic, versatile pieces that can be mixed and matched.
+Samantha has a chic, modern style that reflects her professional success. She favors well-tailored, sophisticated outfits that exude confidence and elegance. She enjoys accessorizing with stylish jewelry and high-quality handbags, and she typically wears size medium clothing.
+
+Samantha is a frequent traveler and loves to fly with Emirates Airlines. She typically wakes up at 7 am each day to start her busy schedule.
+
+Samantha lives in San Francisco.
 """.strip()
 
 os.environ["OPENAI_API_KEY"] = open("keys/litellm.key").read().strip()
@@ -82,17 +92,17 @@ class EtsyShoppingAgent:
     persona: str = DEFAULT_PERSONA
     manual: bool = False
     headless: bool = False
-    max_steps: int = 50
+    max_steps: Optional[int] = None
     debug_path: Optional[str] = "debug_run"
     viewport_width: int = 1920
     viewport_height: int = 1080
-    products_to_check: int = 5  # -1 means all products on page
     user_data_dir: Optional[str] = None
     logger: Optional[logging.Logger] = None
     non_interactive: bool = False
 
     # LLM configuration
     model_name: str = "gpt-4o-mini"
+    final_decision_model_name: Optional[str] = None
     temperature: float = 0.7
 
     # Recording configuration
@@ -100,17 +110,42 @@ class EtsyShoppingAgent:
 
     # Internal state, not initialized by the user
     history: List[str] = field(init=False, default_factory=list)
-    sub_tasks: List[str] = field(init=False, default_factory=list)
-    current_task_index: int = field(init=False, default=0)
-    products_checked: int = field(init=False, default=0)
     browser_session: Optional[BrowserSession] = field(init=False, default=None)
     controller: Controller = field(init=False, default_factory=Controller)
     llm: BaseChatModel = field(init=False)
+    final_decision_llm: BaseChatModel = field(init=False)
     memory: MemoryModule = field(init=False, default_factory=MemoryModule)
     current_product_name: Optional[str] = field(init=False, default=None)  # Store the current product being analyzed
+    visited_listing_ids: set = field(init=False, default_factory=set)  # Track visited listing IDs
+    token_usage: Dict[str, Dict[str, Any]] = field(init=False, default_factory=dict)
 
     # Internal attribute: ffmpeg process
     _record_proc: Optional[subprocess.Popen] = field(init=False, default=None, repr=False)
+
+    async def _save_token_usage(self):
+        """Calculates total cost and saves token usage to a JSON file in real-time."""
+        if not self.debug_path:
+            return
+
+        total_session_cost = sum(usage.get("cost", 0.0) for usage in self.token_usage.values())
+
+        token_usage_path = os.path.join(self.debug_path, "_token_usage.json")
+        token_usage_data = {
+            "models": self.token_usage,
+            "total_session_cost": total_session_cost,
+        }
+        
+        def _write_file_sync():
+            # This function contains the blocking file I/O
+            os.makedirs(self.debug_path, exist_ok=True)
+            with open(token_usage_path, "w") as f:
+                json.dump(token_usage_data, f, indent=2)
+
+        try:
+            # Run the synchronous file write operation in a separate thread
+            await asyncio.to_thread(_write_file_sync)
+        except Exception as e:
+            self._log(f"   - Failed to save token usage in real-time: {e}", level="error")
 
     def _log(self, message: str, level: str = "info"):
         """Logs a message using the provided logger or prints to stdout."""
@@ -125,77 +160,100 @@ class EtsyShoppingAgent:
             else:
                 print(message)
 
+    async def _update_token_usage(self, model_name: str, usage_metadata: Optional[Dict[str, Any]]):
+        """Updates the token usage count for a given model."""
+        if not usage_metadata:
+            return
+
+        input_tokens = usage_metadata.get("input_tokens", 0)
+        output_tokens = usage_metadata.get("output_tokens", 0)
+        total_tokens = usage_metadata.get("total_tokens", 0)
+
+        if not total_tokens:
+            return
+
+        # Calculate cost for this specific call
+        cost = 0.0
+        if model_name in MODEL_PRICING:
+            price_per_million = MODEL_PRICING[model_name]
+            input_cost = (input_tokens / 1_000_000) * price_per_million["input"]
+            output_cost = (output_tokens / 1_000_000) * price_per_million["output"]
+            cost = input_cost + output_cost
+
+        if model_name not in self.token_usage:
+            self.token_usage[model_name] = {
+                "input_tokens": 0,
+                "output_tokens": 0,
+                "total_tokens": 0,
+                "cost": 0.0,
+            }
+
+        self.token_usage[model_name]["input_tokens"] += input_tokens
+        self.token_usage[model_name]["output_tokens"] += output_tokens
+        self.token_usage[model_name]["total_tokens"] += total_tokens
+        self.token_usage[model_name]["cost"] += cost
+
+        cost_log = f" (Cost: ${cost:.6f})" if cost > 0 else ""
+        self._log(
+            f"   - Token usage for {model_name}: "
+            f"Input={input_tokens}, Output={output_tokens}, Total={total_tokens}{cost_log}"
+        )
+
+        cumulative_cost = self.token_usage[model_name]["cost"]
+        cumulative_cost_log = f" (Cumulative Cost: ${cumulative_cost:.6f})" if cumulative_cost > 0 else ""
+        self._log(
+            f"   - Cumulative token usage for {model_name}: "
+            f"Total={self.token_usage[model_name]['total_tokens']}{cumulative_cost_log}"
+        )
+
+        # Save token usage to file in real-time
+        await self._save_token_usage()
+
     def __post_init__(self):
-        """Initializes sub-tasks from the main task after the object is created."""
-        if self.debug_path and os.path.isdir(self.debug_path):
-            if self.non_interactive or click.confirm(
-                f"Debug path '{self.debug_path}' already exists. Do you want to remove it and all its contents?", 
-                default=False
-            ):
-                try:
-                    shutil.rmtree(self.debug_path)
-                    self._log(f"Removed existing debug path: {self.debug_path}")
-                except Exception as e:
-                    self._log(f"Error removing debug path: {e}", level="error")
-                    sys.exit(1)
-            else:
-                self._log("Aborting. Please choose a different debug path or remove the existing one manually.")
-                sys.exit(0)
+        """Initializes the agent, handling debug path setup."""
+        if self.model_name not in MODEL_PRICING:
+            self._log(f"Model '{self.model_name}' not found in MODEL_PRICING. Aborting.", level="error")
+            sys.exit(1)
+        if self.final_decision_model_name and self.final_decision_model_name not in MODEL_PRICING:
+            self._log(
+                f"Final decision model '{self.final_decision_model_name}' not found in MODEL_PRICING. Aborting.",
+                level="error",
+            )
+            sys.exit(1)
+
+        if self.debug_path:
+            if os.path.isdir(self.debug_path):
+                if self.non_interactive or click.confirm(
+                    f"Debug path '{self.debug_path}' already exists. Do you want to remove it and all its contents?",
+                    default=False
+                ):
+                    try:
+                        shutil.rmtree(self.debug_path)
+                        self._log(f"Removed existing debug path: {self.debug_path}")
+                    except Exception as e:
+                        self._log(f"Error removing debug path: {e}", level="error")
+                        sys.exit(1)
+                else:
+                    self._log("Aborting. Please choose a different debug path or remove the existing one manually.")
+                    sys.exit(0)
+            
+            # Create the debug directory to ensure it's available for all subsequent operations.
+            try:
+                os.makedirs(self.debug_path)
+                self._log(f"Created debug directory: {self.debug_path}")
+            except OSError as e:
+                self._log(f"Could not create debug directory: {e}", level="error")
+                sys.exit(1)
 
         # Initialize the language model with user-specified (or default) parameters
         self.llm = ChatOpenAI(temperature=self.temperature, model=self.model_name)
-        parser = JsonOutputParser()
-        prompt = ChatPromptTemplate.from_messages([
-            ("system", SUBTASK_GENERATION_PROMPT),
-            ("user", "PERSONA: {persona}\nTASK: {task}"),
-        ])
-        chain = prompt | self.llm | parser
         
-        try:
-            raw_sub_tasks = chain.invoke({"task": self.task, "persona": self.persona})
-            self._log(f"🔍 Raw sub-tasks derived from the task: {raw_sub_tasks}")
-
-            if self.debug_path:
-                os.makedirs(self.debug_path, exist_ok=True)
-                formatted_prompt_messages = prompt.format_messages(persona=self.persona, task=self.task)
-
-                debug_info = {
-                    "type": "subtask_generation",
-                    "prompt": [
-                        {
-                            "role": getattr(msg, "type", "unknown"),
-                            "content": getattr(msg, "content", str(msg)),
-                        }
-                        for msg in formatted_prompt_messages
-                    ],
-                    "input": {"task": self.task, "persona": self.persona},
-                    "output": raw_sub_tasks,
-                }
-                file_path = os.path.join(self.debug_path, "debug_step_0.json")
-                try:
-                    with open(file_path, "w") as f:
-                        json.dump(debug_info, f, indent=2)
-                    self._log(f"   - Saved subtask generation debug info to {file_path}")
-                except Exception as e:
-                    self._log(f"   - Failed to save subtask generation debug info: {e}")
-            
-            sub_tasks_list = []
-            if isinstance(raw_sub_tasks, list):
-                sub_tasks_list = [str(item) for item in raw_sub_tasks]
-            elif isinstance(raw_sub_tasks, dict):
-                for key, value in raw_sub_tasks.items():
-                    if isinstance(value, list):
-                        sub_tasks_list = [str(item) for item in value]
-                        break
-            
-            if sub_tasks_list:
-                self.sub_tasks = sub_tasks_list
-            else:
-                raise ValueError(f"LLM returned unexpected format for sub-tasks: {raw_sub_tasks}")
-
-        except Exception as e:
-            raise RuntimeError(f"An error occurred during sub-task creation: {e}")
-
+        # Initialize the final decision LLM
+        final_decision_model = self.final_decision_model_name or self.model_name
+        self.final_decision_llm = ChatOpenAI(temperature=self.temperature, model=final_decision_model)
+        
+        # The user wants to use the task as the search query.
+        self._log(f"Using task as the only search query: {self.task}")
 
     def _find_search_bar(self, state: BrowserStateSummary) -> Optional[int]:
         """Finds the search bar element on the page."""
@@ -205,6 +263,25 @@ class EtsyShoppingAgent:
                 element.attributes.get("aria-label", "").lower() == "search"):
                 return index
         return None
+
+    def _extract_product_name_from_url(self, href: str) -> Optional[str]:
+        """Extract product name from Etsy listing URL.
+        
+        URL pattern: /listing/<listing_id>/<product-name-with-dashes>...
+        Example: /listing/719316991/giant-halloween-spider-photo-props
+        """
+        try:
+            import re
+            # Pattern to match /listing/<number>/<product-name-part>
+            match = re.search(r'/listing/\d+/([^/?]+)', href)
+            if match:
+                product_slug = match.group(1)
+                # Convert dashes to spaces and title case
+                product_name = product_slug.replace('-', ' ').title()
+                return product_name
+            return None
+        except Exception:
+            return None
 
     async def _save_debug_screenshots(self, state: BrowserStateSummary, step: int) -> tuple[Optional[str], Optional[str]]:
         """
@@ -340,7 +417,7 @@ class EtsyShoppingAgent:
         full_text = "\n".join(text_chunks)
         return full_text, screenshots
 
-    async def _analyze_product_page(self, state: BrowserStateSummary, current_goal: str, step: int, product_name: Optional[str] = None) -> Optional[ProductMemory]:
+    async def _analyze_product_page(self, state: BrowserStateSummary, step: int, product_name: Optional[str] = None) -> Optional[ProductMemory]:
         """Analyzes a product page and adds the product to memory."""
         self._log("   - On a product page. Analyzing product details.")
 
@@ -353,7 +430,7 @@ class EtsyShoppingAgent:
         parser = JsonOutputParser()
 
         system_prompt = PRODUCT_ANALYSIS_PROMPT
-        user_prompt_text = f"Persona: {self.persona}\nShopping Goal: {self.task}\nCurrent Date: {datetime.now().strftime('%B %d')}"
+        user_prompt_text = f"{self.persona}\nSearched Query: {self.task}\nCurrent Date: {datetime.now().strftime('%B %d')}"
         image_payloads = [
             {
                 "type": "image_url",
@@ -369,14 +446,18 @@ class EtsyShoppingAgent:
 
         try:
             ai_message = await self.llm.ainvoke(messages)
+            if hasattr(ai_message, 'usage_metadata') and ai_message.usage_metadata:
+                await self._update_token_usage(self.llm.model_name, ai_message.usage_metadata)
             analysis_response = parser.parse(ai_message.content)
             
             product_memory = ProductMemory(
                 product_name=product_name,
                 url=state.url,
+                price=analysis_response.get("price"),
                 pros=analysis_response.get("pros", []),
                 cons=analysis_response.get("cons", []),
-                summary=analysis_response.get("summary", "")
+                summary=analysis_response.get("summary", ""),
+                semantic_score=analysis_response.get("semantic_score", "")
             )
             
             self.memory.add_product(product_memory)
@@ -421,182 +502,93 @@ class EtsyShoppingAgent:
             self._log(f"   - An error occurred during product analysis: {e}")
             return None
 
-
-    async def _choose_product(self, state: BrowserStateSummary, current_goal: str, step: int) -> Optional[Dict[str, Any]]:
+    async def _choose_product_from_search(self, state: BrowserStateSummary, step: int) -> Optional[Dict[str, Any]]:
         """
-        Uses the model to choose a product from a screenshot of the search results page.
+        Finds the next unvisited product on a search results page and returns an action to click it.
+        If no unvisited products are in the current viewport, it scrolls down.
         """
-        # Save screenshots for analysis if debug path is provided
-        image_path, plain_image_path = await self._save_debug_screenshots(state, step)
-
-        # Get plain screenshot for model input
-        plain_screenshot_b64 = None
-        try:
-            await self.browser_session.remove_highlights()
-            plain_screenshot_b64 = await self.browser_session.take_screenshot()
-        except Exception as e:
-            self._log(f"   - Failed to capture plain screenshot: {e}")
-
-        # If we couldn't get a plain screenshot, fall back to the highlighted one
-        screenshot_for_model = plain_screenshot_b64 or state.screenshot
-
+        # Extract all potential product listings from the current view
         product_listings = []
         for index, element in state.selector_map.items():
-            element_text = element.get_all_text_till_next_clickable_element()
-            product_name = element_text.strip().lower()[:500]  # Take first 500 chars to avoid too long keys
-            if (
-                len(element_text.strip()) > 20 and
-                f"clicked_product_{product_name}" not in self.history and
-                'rtisement' not in element_text.lower() and
-                'original price' not in product_name and
-                'search for' not in product_name and
-                'sellers looking to' not in product_name and
-                'order soon' not in product_name and
-                'recommended categories' not in product_name
-            ):
-                if not self.memory.is_product_in_memory(element_text):
+            attributes = element.attributes or {}
+            href = attributes.get("href", "")
+            
+            # Heuristic to identify a product link:
+            # - It must have a 'data-listing-id' attribute.
+            # - The href should point to a listing page.
+            # - It must not be an ad (checking text is a fallback).
+            is_product_listing = 'data-listing-id' in attributes and '/listing/' in href
+
+            if is_product_listing:
+                # Extract listing ID from the data-listing-id attribute
+                listing_id = attributes.get("data-listing-id")
+                if not listing_id:
+                    continue  # Skip if no listing ID found
+                
+                # Extract product name from the URL
+                product_name = self._extract_product_name_from_url(href)
+                if not product_name:
+                    # Fallback to extracting from element text if URL extraction fails
+                    element_text = element.get_all_text_till_next_clickable_element()
+                    title_candidates = [line.strip() for line in element_text.split('\n') if len(line.strip()) > 10]
+                    product_name = title_candidates[0] if title_candidates else element_text[:100]
+                
+                # Check if we've already visited this listing ID
+                if listing_id in self.visited_listing_ids:
+                    continue  # Skip already visited items
+                
+                # Get element text for ad filtering
+                element_text = element.get_all_text_till_next_clickable_element()
+                
+                # Filter out ads and already-visited items by URL
+                full_url = urljoin("https://www.etsy.com", href) if href.startswith("/") else href
+                if (
+                    'ad from etsy seller' not in element_text.lower() and
+                    'rtisement' not in element_text.lower() and
+                    not self.memory.get_product_by_url(full_url)
+                ):
                     product_listings.append({
-                        "index": index, 
+                        "index": index,
                         "text": element_text,
-                        "product_name": product_name
+                        "product_name": product_name,
+                        "href": href,
+                        "listing_id": listing_id
                     })
 
-        if not product_listings:
-            self._log("   - No new products found to choose from.")
-            return None
+        # If we found at least one new product, act on the first one
+        if product_listings:
+            chosen_listing = product_listings[0]
+            chosen_index = chosen_listing["index"]
+            chosen_product_name = chosen_listing["product_name"]
+            chosen_listing_id = chosen_listing["listing_id"]
 
-        parser = JsonOutputParser()
-        parsed_product_listings = "\n".join([f"{product['index']}. {product['text']}" for product in product_listings])
-        if len(parsed_product_listings) < 4:
-            # Sometimes, the website offers search recommendations, and not products.
-            # In this case, we scroll down to load more products.
-            self._log("   - Not enough products to choose from. Scrolling down to load more products.")
-            return {"scroll_down": ScrollAction(amount=None)}
+            self._log(f"   - Found unvisited product: '{chosen_product_name}' (ID: {chosen_listing_id}) at index {chosen_index}. Opening it.")
+            href = chosen_listing["href"]
+            
+            # Mark this listing as visited
+            self.visited_listing_ids.add(chosen_listing_id)
+            
+            # Ensure the URL is absolute for navigation
+            if href.startswith("/"):
+                href = urljoin("https://www.etsy.com", href)
+
+            # Prepare an action to open the product page in a new tab
+            return {
+                "open_tab": OpenTabAction(url=href),
+                "switch_tab": SwitchTabAction(page_id=-1), # -1 switches to the newly opened tab
+                "product_name": chosen_product_name,
+                "listing_id": chosen_listing_id
+            }
         
-        system_prompt = CHOICE_SYSTEM_PROMPT
-        user_prompt_text = f"""
-Persona: {self.persona}
-
-Shopping Goal: {current_goal}
-
-I have already seen these products:
-{self.memory.get_memory_summary_for_prompt()}
-
-Products:
-{parsed_product_listings}
-""".strip()
-        messages = [
-            SystemMessage(content=system_prompt),
-            HumanMessage(
-                content=[
-                    {"type": "text", "text": user_prompt_text},
-                    {
-                        "type": "image_url",
-                        "image_url": {"url": f"data:image/png;base64,{screenshot_for_model}"},
-                    },
-                ]
-            )
-        ]
-
-        try:
-            ai_message = await self.llm.ainvoke(messages)
-            choice_response = parser.parse(ai_message.content)
-
-            if self.debug_path:
-                os.makedirs(self.debug_path, exist_ok=True)
-                debug_info = {
-                    "type": "choice",
-                    "prompt": {
-                        "system": system_prompt,
-                        "user_text": user_prompt_text
-                    },
-                    "output": choice_response
-                }
-                if image_path:
-                    debug_info["highlighted_image"] = image_path
-                if plain_image_path:
-                    debug_info["plain_image"] = plain_image_path
-                file_path = os.path.join(self.debug_path, f"debug_step_{step}.json")
-                try:
-                    with open(file_path, "w") as f:
-                        json.dump(debug_info, f, indent=2)
-                    self._log(f"   - Saved choice debug info to {file_path}")
-                except Exception as e:
-                    self._log(f"   - Failed to save choice debug info: {e}")
-            
-
-            chosen_index = choice_response.get("product_number")
-            if chosen_index is not None and isinstance(chosen_index, int):
-                # Find the corresponding listing details using the original index
-                chosen_listing = next((item for item in product_listings if item["index"] == chosen_index), None)
-                chosen_product_name = chosen_listing["product_name"] if chosen_listing else None
-
-                if chosen_index in state.selector_map and chosen_listing:
-                    self._log(f"   - LLM chose product with index {chosen_index}. Product name: {chosen_product_name}")
-                    chosen_element = state.selector_map[chosen_index]
-                    href = chosen_element.attributes.get("href") if hasattr(chosen_element, "attributes") else None
-
-                    if href:
-                        # Etsy often uses relative URLs (e.g. "/listing/123...") for product anchors. If the URL is
-                        # relative, convert it to an absolute URL so that the browser can navigate correctly.
-                        if href.startswith("/"):
-                            href = urljoin("https://www.etsy.com", href)
-
-                        # Open the product in a new tab and immediately switch focus to it so we can analyse the product page next.
-                        action_dict = {
-                            "open_tab": OpenTabAction(url=href),
-                            "switch_tab": SwitchTabAction(page_id=-1), # `-1` means the last tab that was just opened.
-                        }
-                        if chosen_product_name:
-                            action_dict["product_name"] = chosen_product_name
-                        return action_dict
-                    else:
-                        action_dict = {
-                            "click_element_by_index": ClickElementAction(index=chosen_index, xpath=chosen_element.xpath),
-                            "switch_tab": SwitchTabAction(page_id=-1),
-                        }
-                        if chosen_product_name:
-                            action_dict["product_name"] = chosen_product_name
-                        return action_dict
-                else:
-                    self._log(f"   - LLM chose an invalid index: {chosen_index}.")
-            else:
-                self._log("   - LLM decided no product was suitable.")
-
-        except Exception as e:
-            self._log(f"   - An error occurred while asking LLM to choose a product: {e}")
-            
-        return None
-
-    async def _choose_product_from_search(self, state: BrowserStateSummary, current_goal: str, step: int) -> Optional[Dict[str, Any]]:
-        """
-        Uses an LLM to choose a product from a search results page, with visual input.
-        """
-        if self.products_to_check != -1 and self.products_checked >= self.products_to_check:
-            self._log("   - Desired number of products already checked on this page.")
-            # Move to next subtask if any remaining
-            self._advance_to_next_subtask()
-            return None
-
-        # Screenshot-based selection is now the only supported option for choosing products
-        if state.screenshot:
-            self._log("   - On search results page. Asking LLM to choose a product.")
-            action = await self._choose_product(state, current_goal, step)
-        else:
-            self._log("   - Screenshot-based selection is required but a screenshot is unavailable; scrolling or moving on.")
-            action = None
-
-        if action:
-            return action  # Found something worth clicking / opening
-
-        # No suitable products found in current viewport
+        # If no new products are visible, check if we can scroll further down
         if state.pixels_below and state.pixels_below > 0:
-            self._log("   - No suitable products visible. Scrolling down to load more products.")
-            return {"scroll_down": ScrollAction(amount=None)}
+            self._log("   - No new products visible. Scrolling down to find more.")
+            # Use a smaller scroll amount for search pages to avoid skipping product rows
+            scroll_amount = int(self.viewport_height * 0.3)  # 30% of viewport height
+            return {"scroll_down": ScrollAction(amount=scroll_amount)}
 
-        # Reached end of page and still nothing useful; move on
-        self._log("   - Reached end of results without finding a suitable product.")
-        self._advance_to_next_subtask()
+        # If we can't scroll further, we've reached the end of the results
+        self._log("   - Reached end of search results page.")
         return None
 
     async def _think(self, state: BrowserStateSummary, step: int) -> Optional[Dict[str, Any]]:
@@ -605,49 +597,44 @@ Products:
         """
         self._log("🤔 Thinking...")
         self._log(f"   - Current URL: {state.url}")
-        
-        current_goal = self.sub_tasks[self.current_task_index]
-        self._log(f"   - Current Subtask: {current_goal}")
+        self._log(f"   - Current Task: {self.task}")
 
         if "etsy.com" not in state.url:
-            return {"go_to_url": GoToUrlAction(url="https://www.etsy.com/")}
+            search_query_encoded = quote(self.task)
+            search_url = f"https://www.etsy.com/search?q={search_query_encoded}&application_behavior=default"
+            self._log(f"   - Initial navigation. Going to search page for '{self.task}'.")
+            return {
+                "go_to_url": GoToUrlAction(url=search_url),
+                "search_query": self.task
+            }
 
         if "etsy.com/search" in state.url:
-            action = await self._choose_product_from_search(state, current_goal, step)
-            # If _choose_product_from_search returns None, it means we should move to the next task
-            # Check if we've moved to the next task
-            if action is None and self.current_task_index < len(self.sub_tasks):
-                self._log(f"   - Completed task: {current_goal}")
-                self._log(f"   - Moving to next task: {self.sub_tasks[self.current_task_index]}")
-                return {"go_to_url": GoToUrlAction(url="https://www.etsy.com/")}
+            action = await self._choose_product_from_search(state, step)
             return action
 
         elif "etsy.com/listing" in state.url:
             # 1️⃣ Analyse the product first
             if self.current_product_name:
                 self._log(f"   - Analyzing product: {self.current_product_name}")
-            await self._analyze_product_page(state, current_goal, step, self.current_product_name)
+            await self._analyze_product_page(state, step, self.current_product_name)
 
-            # 2️⃣ Keep track that we've looked at another item
-            self.products_checked += 1
-
-            # 3️⃣ Work out which tab we're on so we can close it later
+            # 2️⃣ Work out which tab we're on so we can close it later
             try:
                 current_tab_id = next((tab.page_id for tab in state.tabs if tab.url == state.url), None)
             except Exception:
                 current_tab_id = None
 
-            # 4️⃣ Finished analyzing this product; close the product tab and return to results.
+            # 3️⃣ Finished analyzing this product; close the product tab and return to results.
             if current_tab_id is not None and current_tab_id != 0:
                 return {"close_tab": CloseTabAction(page_id=current_tab_id)}
 
         search_bar = self._find_search_bar(state)
-        if search_bar and f"searched_{current_goal}" not in self.history:
-            self._log(f"   - Found search bar. Searching for '{current_goal}'.")
+        if search_bar and f"searched_{self.task}" not in self.history:
+            self._log(f"   - Found search bar. Searching for '{self.task}'.")
             return {
-                "input_text": InputTextAction(index=search_bar, text=current_goal),
+                "input_text": InputTextAction(index=search_bar, text=self.task),
                 "send_keys": SendKeysAction(keys="Enter"),
-                "search_query": current_goal
+                "search_query": self.task
             }
 
         self._log("   - No specific action decided.")
@@ -659,24 +646,36 @@ Products:
             self._log("🤷 No products were analyzed, skipping final purchase decision.")
             return
 
+        # Filter products to include only those that are "HIGHLY RELEVANT" or "SOMEWHAT RELEVANT"
+        relevant_products = [
+            p for p in self.memory.products
+            if p.semantic_score.upper() in ["HIGHLY RELEVANT", "SOMEWHAT RELEVANT"]
+        ]
+
+        if not relevant_products:
+            self._log("🤷 No relevant products found after filtering, skipping final purchase decision.")
+            return
+
         # Build a detailed list of products the agent has analyzed
         product_descriptions = ''
-        for idx, product in enumerate(self.memory.products, start=1):
-            pros = " ".join(product.pros) if product.pros else "-"
-            cons = " ".join(product.cons) if product.cons else "-"
+        for idx, product in enumerate(relevant_products, start=1):
+            # pros = " ".join(product.pros) if product.pros else "-"
+            # cons = " ".join(product.cons) if product.cons else "-"
             summary = product.summary if product.summary else "-"
+            price = f"Price: ${product.price:.2f}" if product.price is not None else "Price: Not Available"
             desc = (
                 f"{idx}. {product.product_name.title()}\n"
-                f"Pros: {pros}\n"
-                f"Cons: {cons}\n"
-                f"Summary: {summary}"
+                # f"Pros: {pros}\n"
+                # f"Cons: {cons}\n"
+                f"Summary: {summary}\n"
+                f"{price}"
             )
             product_descriptions += desc + "\n\n"
 
         user_prompt_text = f"""
 Persona: {self.persona}
 
-Shopping Goal: {self.task}
+Searched Query: {self.task}
 
 Here are the products that have been analyzed:
 {product_descriptions.strip()}
@@ -689,10 +688,25 @@ Here are the products that have been analyzed:
 
         self._log("🔮 Asking LLM for final purchase recommendations...")
         try:
-            ai_message = await self.llm.ainvoke(messages)
+            ai_message = await self.final_decision_llm.ainvoke(messages)
+            if hasattr(ai_message, 'usage_metadata') and ai_message.usage_metadata:
+                await self._update_token_usage(self.final_decision_llm.model_name, ai_message.usage_metadata)
             response_content = ai_message.content.strip()
             try:
                 decision_json = json.loads(response_content)
+                # Ensure total_cost is calculated and present
+                if "total_cost" not in decision_json or not isinstance(decision_json.get("total_cost"), (float, int)):
+                    total_cost = 0.0
+                    product_price_map = {p.product_name.lower(): p.price for p in relevant_products if p.price is not None}
+                    
+                    recommendations = decision_json.get("recommendations", [])
+                    for rec in recommendations:
+                        product_name = rec.get("product_name", "").lower()
+                        if product_name in product_price_map:
+                            total_cost += product_price_map[product_name]
+                    
+                    decision_json["total_cost"] = round(total_cost, 2)
+
             except json.JSONDecodeError:
                 # If the model returned something that isn't valid JSON, fall back to raw string
                 decision_json = {"raw_response": response_content}
@@ -730,7 +744,7 @@ Here are the products that have been analyzed:
         # instant jump.  This ensures visual continuity for the end user when
         # the agent scrolls search result pages.
         if not getattr(BrowserSession, "_smooth_scroll_patched", False):
-            async def _smooth_scroll_container(self_bs, pixels: int) -> None:  # type: ignore
+            async def _smooth_scroll_container(self_bs, pixels: int) -> None:
                 """Replacement for BrowserSession._scroll_container with smooth behaviour."""
                 SMART_SCROLL_JS_SMOOTH = """(dy) => {
                     const bigEnough = el => el.clientHeight >= window.innerHeight * 0.5;
@@ -788,17 +802,23 @@ Here are the products that have been analyzed:
 
         Action = self.controller.registry.create_action_model()
 
-        for i in range(self.max_steps):
-            self._log(f"\n--- Step {i+1}/{self.max_steps} ---")
-
-            if self.current_task_index >= len(self.sub_tasks):
-                self._log("   - All sub-tasks are completed.")
+        step = 0
+        while True:
+            step += 1
+            if self.max_steps and step > self.max_steps:
+                self._log(f"   - Reached max steps ({self.max_steps}).")
                 break
-            
+
+            step_info = f"{step}/{self.max_steps}" if self.max_steps else f"{step}"
+            self._log(f"\n--- Step {step_info} ---")
+
             self._log("👀 Observing page state...")
             state = await self.browser_session.get_state_summary(cache_clickable_elements_hashes=True)
 
-            step = i + 1
+            # Save screenshots when on search pages to see all products
+            if "etsy.com/search" in state.url:
+                await self._save_debug_screenshots(state, step)
+
             action_plan = await self._think(state, step)
 
             # Always write a generic debug file for every step so that debugging information is available even
@@ -839,24 +859,34 @@ Here are the products that have been analyzed:
                 if "go_to_url" in action_plan:
                     actions_to_perform.append(Action(go_to_url=action_plan["go_to_url"]))
                     self._log(f"   - Navigating to {action_plan['go_to_url'].url}")
+                    # If we're going to a search URL directly, record it as a search action
+                    if "search_query" in action_plan:
+                        self.history.append(f"searched_{action_plan['search_query']}")
+                        self.memory.add_search_query(action_plan['search_query'])
                 if "input_text" in action_plan:
                     actions_to_perform.append(Action(input_text=action_plan["input_text"]))
                     self.history.append(f"searched_{action_plan['search_query']}")
-                    self.memory.add_search_query(action_plan["search_query"])
-                    self._log(f"   - Typing '{action_plan['input_text'].text}'")
                 if "send_keys" in action_plan:
                     actions_to_perform.append(Action(send_keys=action_plan["send_keys"]))
                     self._log(f"   - Pressing '{action_plan['send_keys'].keys}'")
                 if "click_element_by_index" in action_plan:
                     actions_to_perform.append(Action(click_element_by_index=action_plan["click_element_by_index"]))
                     if "product_name" in action_plan:
-                        self.history.append(f"clicked_product_{action_plan['product_name']}")
+                        if "listing_id" in action_plan:
+                            self.history.append(f"clicked_listing_{action_plan['listing_id']}")
+                        else:
+                            # Fallback to old method if listing_id not available
+                            self.history.append(f"clicked_product_{action_plan['product_name']}")
                         self.current_product_name = action_plan["product_name"]  # Store for analysis
                     self._log(f"   - Clicking element at index {action_plan['click_element_by_index'].index}")
                 if "open_tab" in action_plan:
                     actions_to_perform.append(Action(open_tab=action_plan["open_tab"]))
                     if "product_name" in action_plan:
-                        self.history.append(f"clicked_product_{action_plan['product_name']}")
+                        if "listing_id" in action_plan:
+                            self.history.append(f"opened_listing_{action_plan['listing_id']}")
+                        else:
+                            # Fallback to old method if listing_id not available
+                            self.history.append(f"clicked_product_{action_plan['product_name']}")
                         self.current_product_name = action_plan["product_name"]  # Store for analysis
                     self._log(f"   - Opening new tab with {action_plan['open_tab'].url}")
                 if "close_tab" in action_plan:
@@ -877,33 +907,10 @@ Here are the products that have been analyzed:
                 if self.manual:
                     input("Press Enter to continue...")
             else:
-                self._log("   - No action to take. Continuing to next iteration to check for task transitions.")
-                if self.current_task_index >= len(self.sub_tasks):
-                    self._log("   - All sub-tasks completed. Ending.")
-                    break
-                await asyncio.sleep(1)  # Small delay before next iteration
+                self._log("   - No action to take. Ending agent run.")
+                break
 
         self._log("\n✅ Shopping agent finished.")
-
-        if self.debug_path:
-            memory_path = os.path.join(self.debug_path, "_memory.json")
-            try:
-                self.memory.save_to_json(memory_path)
-                self._log(f"🧠 Memory saved to {memory_path}")
-            except Exception as e:
-                self._log(f"   - Failed to save memory: {e}", level="error")
-
-        # Decide on the final purchase based on the memory collected
-        await self._make_final_purchase_decision()
-
-        await asyncio.sleep(5)
-        if self.browser_session:
-            await self.browser_session.stop()
-            await self.browser_session.kill()
-
-        # Stop recorder if running
-        if self.record_video:
-            self._stop_screen_recording()
 
     def _start_screen_recording(self):
         """Spawn an ffmpeg process to capture the entire primary display as a single video."""
@@ -911,7 +918,7 @@ Here are the products that have been analyzed:
             return  # already recording
 
         os.makedirs(self.debug_path, exist_ok=True)
-        output_path = os.path.join(self.debug_path, "session.mp4")
+        output_path = os.path.join(self.debug_path, "_session.mp4")
 
         # Build ffmpeg command depending on OS
         if sys.platform == "darwin":
@@ -991,21 +998,99 @@ Here are the products that have been analyzed:
         finally:
             self._record_proc = None
 
-    def _advance_to_next_subtask(self):
-        """Advance to the next sub-task and reset per-task state.
+    async def shutdown(self):
+        """Saves memory, makes final decision, and cleans up resources."""
+        self._log("\n--- Shutting down and saving state ---")
 
-        This helper should be called every time the agent decides that the
-        current sub-task has been completed and it is time to start working on
-        the next one.  It takes care of incrementing the sub-task pointer and
-        clearing transient memory such as the `history` list (which tracks
-        viewed/search items) and the `products_checked` counter so that the
-        next sub-task starts with a clean slate.
-        """
-        # Move the pointer
-        self.current_task_index += 1
-        # Reset counters/histories that should not bleed over to the next task
-        self.history.clear()
-        self.products_checked = 0
+        # Clean up browser and recording
+        if self._record_proc:
+            self._stop_screen_recording()
+        if self.browser_session:
+            await self.browser_session.kill()
+
+        # Save memory
+        if self.debug_path:
+            memory_path = os.path.join(self.debug_path, "_memory.json")
+            try:
+                self.memory.save_to_json(memory_path)
+                self._log(f"🧠 Memory saved to {memory_path}")
+            except Exception as e:
+                self._log(f"   - Failed to save memory: {e}", level="error")
+
+            # Calculate and save semantic scores
+            all_products = self.memory.products
+            top_10_products = all_products[:10]
+
+            def calculate_scores(products: List[ProductMemory]) -> Dict[str, int]:
+                scores = {
+                    "HIGHLY RELEVANT": 0,
+                    "SOMEWHAT RELEVANT": 0,
+                    "NOT RELEVANT": 0,
+                }
+                for p in products:
+                    score = p.semantic_score.upper()
+                    if score in scores:
+                        scores[score] += 1
+                
+                return {
+                    "total": len(products),
+                    "highly_relevant": scores["HIGHLY RELEVANT"],
+                    "somewhat_relevant": scores["SOMEWHAT RELEVANT"],
+                    "not_relevant": scores["NOT RELEVANT"],
+                }
+
+            semantic_scores_data = {
+                "page1_products": calculate_scores(all_products),
+                "top_10_products": calculate_scores(top_10_products),
+            }
+
+            scores_path = os.path.join(self.debug_path, "_semantic_scores.json")
+            try:
+                with open(scores_path, "w") as f:
+                    json.dump(semantic_scores_data, f, indent=2)
+                self._log(f"📊 Semantic scores saved to {scores_path}")
+            except Exception as e:
+                self._log(f"   - Failed to save semantic scores: {e}", level="error")
+        
+        # Decide on the final purchase based on the memory collected
+        await self._make_final_purchase_decision()
+
+        if self.debug_path:
+            self._log("📊 Final token usage:")
+            total_session_cost = 0.0
+            for model, usage in self.token_usage.items():
+                cost = usage.get("cost", 0.0)
+                total_session_cost += cost
+                self._log(
+                    f"   - {model}: "
+                    f"Input={usage['input_tokens']}, Output={usage['output_tokens']}, "
+                    f"Total={usage['total_tokens']}, Cost=${cost:.6f}"
+                )
+            self._log(f"   - Total session cost: ${total_session_cost:.6f}")
+
+            # Token usage is saved in real-time. The final version is already on disk.
+            self._log(f"   - Token usage saved to {os.path.join(self.debug_path, '_token_usage.json')}")
+
+async def async_main(agent: EtsyShoppingAgent):
+    """Runs the agent and handles graceful shutdown within a single event loop."""
+    original_sigint_handler = signal.getsignal(signal.SIGINT)
+    try:
+        await agent.run()
+    except KeyboardInterrupt:
+        print("\n👋 Interrupted by user. Shutting down...")
+    except Exception as e:
+        print(f"\n💥 An unexpected error occurred: {e}", file=sys.stderr)
+    finally:
+        # Prevent further interruptions during shutdown
+        signal.signal(signal.SIGINT, signal.SIG_IGN)
+        
+        try:
+            print("\nShutting down gracefully. Please wait, this may take a moment and cannot be interrupted...")
+            await agent.shutdown()
+        finally:
+            # Restore the original signal handler
+            signal.signal(signal.SIGINT, original_sigint_handler)
+            print("\nShutdown complete.")
 
 @click.command()
 @click.option("--config-file", type=click.Path(exists=True, dir_okay=False, readable=True), default=None, help="Path to a JSON file containing 'intent' and 'persona' keys. Overrides --task and --persona.")
@@ -1013,16 +1098,16 @@ Here are the products that have been analyzed:
 @click.option("--persona", default=DEFAULT_PERSONA, help="The persona for the agent.")
 @click.option("--manual", is_flag=True, help="Wait for user to press Enter after each agent action.")
 @click.option("--headless", is_flag=True, help="Run the browser in headless mode.")
-@click.option("--max-steps", default=10, help="The maximum number of steps the agent will take.")
+@click.option("--max-steps", default=None, type=int, help="The maximum number of steps the agent will take. If not provided, the agent will continue until no more products are left to analyze.")
 @click.option("--debug-path", type=click.Path(), default="debug_run", help="Path to save debug artifacts, such as screenshots.")
-@click.option("--width", default=1920, help="The width of the browser viewport.")
-@click.option("--height", default=1080, help="The height of the browser viewport.")
-@click.option("--n-products", default=3, help="Number of products to analyze from the search results (-1 for all).")
+@click.option("--width", default=3024, help="The width of the browser viewport.")
+@click.option("--height", default=1964, help="The height of the browser viewport.")
 @click.option("--model", "model_name", default="gpt-4o-mini", help="Model name to use (e.g. gpt-4o, gpt-4o-mini).")
+@click.option("--final-decision-model", "final_decision_model_name", default="gpt-4o", help="Model name for the final decision. Defaults to the main model.")
 @click.option("--temperature", default=0.7, type=float, help="Sampling temperature for the language model (0-2).")
 @click.option("--record-video", is_flag=True, help="Record the agent's browser session and save it to the debug path.")
 @click.option("--user-data-dir", type=click.Path(), help="Path to user data directory for the browser.")
-def cli(config_file, task, persona, manual, headless, max_steps, debug_path, width, height, n_products, model_name, temperature, record_video, user_data_dir):
+def cli(config_file, task, persona, manual, headless, max_steps, debug_path, width, height, model_name, temperature, record_video, user_data_dir, final_decision_model_name):
     """A command-line interface to run the EtsyShoppingAgent."""
     
     if config_file:
@@ -1044,23 +1129,13 @@ def cli(config_file, task, persona, manual, headless, max_steps, debug_path, wid
         debug_path=debug_path,
         viewport_width=width,
         viewport_height=height,
-        products_to_check=n_products,
         model_name=model_name,
         temperature=temperature,
         record_video=record_video,
         user_data_dir=user_data_dir,
+        final_decision_model_name=final_decision_model_name,
     )
-    try:
-        asyncio.run(agent.run())
-    except KeyboardInterrupt:
-        print("\n👋 Interrupted by user. Shutting down...")
-    except Exception as e:
-        print(f"\n💥 An unexpected error occurred: {e}", file=sys.stderr)
-        # In case of an error, try to clean up the browser session if it exists
-        if agent.browser_session:
-            asyncio.run(agent.browser_session.kill())
-        if agent._record_proc:
-            agent._stop_screen_recording()
+    asyncio.run(async_main(agent))
 
 if __name__ == "__main__":
     cli() 

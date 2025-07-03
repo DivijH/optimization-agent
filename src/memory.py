@@ -7,9 +7,11 @@ class ProductMemory:
     """Holds information about a product that has been viewed."""
     product_name: str
     url: str
+    price: Optional[float] = None
     pros: List[str] = field(default_factory=list)
     cons: List[str] = field(default_factory=list)
     summary: str = ""
+    semantic_score: str = ""
 
 @dataclass
 class MemoryModule:
@@ -46,6 +48,8 @@ class MemoryModule:
             #     summary_lines.append(f"  Cons: {', '.join(product.cons)}")
             # if product.summary:
             #     summary_lines.append(f"  Summary: {product.summary}")
+            # if product.semantic_score:
+            #     summary_lines.append(f"  Semantic Score: {product.semantic_score}")
         return "\n".join(summary_lines)
 
     def get_search_history_summary(self) -> str:

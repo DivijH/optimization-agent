@@ -2,21 +2,23 @@ import asyncio
 import json
 import random
 import sys
-import time
 import shutil
 from pathlib import Path
 from typing import List, Tuple, Optional
 import logging
 import io
 from contextlib import redirect_stdout, redirect_stderr
-
 import click
+import subprocess
+import os
 
 CURRENT_DIR = Path(__file__).resolve().parent
 if str(CURRENT_DIR) not in sys.path:
     sys.path.append(str(CURRENT_DIR))
 
 from shopping_agent import EtsyShoppingAgent
+
+DEFAULT_TASK = "toddler-sized driving wheel toy" # from persona 257
 
 print_lock = asyncio.Lock()
 
@@ -37,7 +39,7 @@ class StatusDisplay:
                 sys.stdout.write(f"\x1b[{self._num_lines}A")
 
             # Print all statuses
-            for spec_id, group, _, _ in self.agent_specs:
+            for spec_id, group, _, _, _ in self.agent_specs:
                 # \x1b[2K clears the entire line before writing
                 sys.stdout.write(f"\x1b[2K[Agent {spec_id} | {group:^7}] {self.statuses[spec_id]}\n")
             
@@ -46,7 +48,7 @@ class StatusDisplay:
     async def print_initial_statuses(self):
         """Prints the initial waiting status for all agents."""
         async with print_lock:
-            for agent_id, group, _, _ in self.agent_specs:
+            for agent_id, group, _, _, _ in self.agent_specs:
                  sys.stdout.write(f"[Agent {agent_id} | {group:^7}] {self.statuses[agent_id]}\n")
             self._num_lines = len(self.agent_specs)
             sys.stdout.flush()
@@ -68,12 +70,11 @@ def _setup_file_logger(name: str, log_file: Path) -> logging.Logger:
     logger.addHandler(handler)
     return logger
 
-def _load_persona_file(file_path: Path) -> Tuple[str, str]:
-    """Load a single persona JSON file and return (task, persona_text).
+def _load_persona(file_path: Path) -> str:
+    """Load a single persona JSON file and return persona_text.
     The expected schema is:
         {
             "persona": "<long persona text>",
-            "intent": "<shopping intent>",
             ...
         }
     """
@@ -83,29 +84,34 @@ def _load_persona_file(file_path: Path) -> Tuple[str, str]:
     except Exception as e:
         raise ValueError(f"Error loading persona file {file_path}: {e}")
 
-    task = data.get("intent", None)
     persona_text = data.get("persona", None)
-    if persona_text and task:
-        return task, persona_text
+    if persona_text:
+        return persona_text
     else:
-        raise ValueError(f"Persona file {file_path} is missing either 'intent' or 'persona' field.")
+        raise ValueError(f"Persona file {file_path} is missing a 'persona' field.")
 
 
 async def _run_single_agent(
     *,
     agent_id: int,
     group: str,
+    task: str,
     persona_file: Path,
     max_steps: int,
     headless: bool,
     model_name: str,
     debug_root: Path,
+    width: int,
+    height: int,
+    final_decision_model_name: Optional[str],
+    temperature: float,
+    record_video: bool,
 ) -> str:
     """Create and execute a single `EtsyShoppingAgent` instance."""
 
-    task, persona = _load_persona_file(persona_file)
+    persona = _load_persona(persona_file)
 
-    debug_path = debug_root / f"{group}_agent_{agent_id}_{int(time.time())}"
+    debug_path = debug_root / f"{group}_agent_{agent_id}"
     debug_path.mkdir(parents=True, exist_ok=True)
     log_file = debug_path / "agent.log"
     logger = _setup_file_logger(f"agent_{agent_id}", log_file)
@@ -122,6 +128,11 @@ async def _run_single_agent(
         user_data_dir=str(user_data_dir),
         logger=logger,
         non_interactive=True,
+        viewport_width=width,
+        viewport_height=height,
+        final_decision_model_name=final_decision_model_name,
+        temperature=temperature,
+        record_video=record_video,
     )
 
     try:
@@ -145,6 +156,58 @@ async def _run_single_agent(
         logger.error("Agent run failed with an exception.", exc_info=True)
         # Keep error message to a single line for clean display
         return f"⚠️  Failed. See log for details: {log_file}"
+    finally:
+        # Ensure that the agent's shutdown sequence (saving memory, closing browser etc.)
+        # is always called, regardless of whether the run succeeded or failed.
+        await agent.shutdown()
+
+
+def _start_main_recording(
+    debug_root: Path, width: int, height: int
+) -> Optional[subprocess.Popen]:
+    """Spawn an ffmpeg process to capture the entire primary display for the A/B test."""
+    output_path = debug_root / "ab_test_session.mp4"
+
+    # Build ffmpeg command depending on OS
+    if sys.platform == "darwin":
+        # macOS – capture primary display (id 1).
+        input_spec = "1:none"  # video id 1, no audio
+        cmd = ["ffmpeg", "-y", "-f", "avfoundation", "-framerate", "30", "-i", input_spec, "-pix_fmt", "yuv420p", str(output_path)]
+    elif sys.platform.startswith("linux"):
+        # Linux – capture :0 X11 display.
+        display = os.environ.get("DISPLAY", ":0")
+        resolution = f"{width}x{height}"
+        cmd = ["ffmpeg", "-y", "-f", "x11grab", "-s", resolution, "-i", f"{display}", "-r", "30", "-pix_fmt", "yuv420p", str(output_path)]
+    elif sys.platform == "win32":
+        # Windows – capture desktop using gdigrab.
+        cmd = ["ffmpeg", "-y", "-f", "gdigrab", "-framerate", "30", "-i", "desktop", "-pix_fmt", "yuv420p", str(output_path)]
+    else:
+        print("⚠️  Screen recording not supported on this OS. Skipping video capture.")
+        return None
+
+    try:
+        proc = subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        print(f"🎥 Central screen recording started → {output_path}")
+        return proc
+    except FileNotFoundError:
+        print("❌ ffmpeg not found. Install ffmpeg to enable screen recording.")
+        return None
+
+def _stop_main_recording(proc: Optional[subprocess.Popen]):
+    """Terminate the main ffmpeg process gracefully."""
+    if not proc:
+        return
+    try:
+        proc.terminate()
+        proc.wait(timeout=10)
+        print("🎬 Central screen recording saved.")
+    except Exception:
+        try:
+            proc.kill()
+        except Exception:
+            pass
+    finally:
+        proc = None
 
 
 ###############################################################################
@@ -152,6 +215,13 @@ async def _run_single_agent(
 ###############################################################################
 
 @click.command()
+@click.option(
+    "--task",
+    type=str,
+    default=DEFAULT_TASK,
+    show_default=True,
+    help="The shopping task for all agents to perform.",
+)
 @click.option(
     "--n-agents",
     type=int,
@@ -194,6 +264,48 @@ async def _run_single_agent(
     help="Maximum number of steps each agent is allowed to take.",
 )
 @click.option(
+    "--width",
+    type=int,
+    default=1920,
+    show_default=True,
+    help="The width of the browser viewport.",
+)
+@click.option(
+    "--height",
+    type=int,
+    default=1080,
+    show_default=True,
+    help="The height of the browser viewport.",
+)
+@click.option(
+    "--control-final-decision-model",
+    type=str,
+    default="gpt-4o",
+    show_default=True,
+    help="Model name for the final decision in the *control* group. Defaults to the main control model if not set.",
+)
+@click.option(
+    "--target-final-decision-model",
+    type=str,
+    default="gpt-4o",
+    show_default=True,
+    help="Model name for the final decision in the *target* group. Defaults to the main target model if not set.",
+)
+@click.option(
+    "--temperature",
+    type=float,
+    default=0.7,
+    show_default=True,
+    help="Sampling temperature for the language model (0.0-2.0).",
+)
+@click.option(
+    "--record-video",
+    is_flag=True,
+    default=False,
+    show_default=True,
+    help="Record a video of each agent's session.",
+)
+@click.option(
     "--headless/--no-headless",
     default=True,
     show_default=True,
@@ -202,7 +314,7 @@ async def _run_single_agent(
 @click.option(
     "--concurrency",
     type=int,
-    default=2,
+    default=4,
     show_default=True,
     help="Maximum number of agents to run concurrently. Lower this if you run out of system resources.",
 )
@@ -214,6 +326,7 @@ async def _run_single_agent(
     help="Root directory under which per-agent debug folders will be created.",
 )
 def cli(
+    task: str,
     n_agents: int,
     personas_dir: Path,
     seed: Optional[int],
@@ -223,6 +336,12 @@ def cli(
     headless: bool,
     concurrency: int,
     debug_root: Path,
+    width: int,
+    height: int,
+    control_final_decision_model: Optional[str],
+    target_final_decision_model: Optional[str],
+    temperature: float,
+    record_video: bool,
 ):
     """Run a simple A/B test by spawning multiple shopping agents.
 
@@ -274,12 +393,24 @@ def cli(
             sys.exit(1)
     debug_root.mkdir(parents=True, exist_ok=True)
 
+    # If recording is enabled, start it for the whole duration of the test.
+    recording_proc = None
+    if record_video:
+        recording_proc = _start_main_recording(debug_root, width, height)
+
     # Prepare arguments for each agent
     agent_specs = []
     for idx, persona_file in enumerate(selected_personas):
         group = "control" if idx < n_agents / 2 else "target"
         model_name = control_model if group == "control" else target_model
-        agent_specs.append((idx, group, persona_file, model_name))
+        final_decision_model = (
+            control_final_decision_model
+            if group == "control"
+            else target_final_decision_model
+        )
+        agent_specs.append(
+            (idx, group, persona_file, model_name, final_decision_model)
+        )
 
     status_display = StatusDisplay(agent_specs)
 
@@ -289,7 +420,13 @@ def cli(
         await status_display.print_initial_statuses()
 
         async def _wrap(spec):
-            agent_id, group, persona_path, model_name_local = spec
+            (
+                agent_id,
+                group,
+                persona_path,
+                model_name_local,
+                final_decision_model_name_local,
+            ) = spec
             async with sem:
                 # Update status to Running BEFORE starting the agent
                 await status_display.update(agent_id, "Running...")
@@ -300,11 +437,17 @@ def cli(
                     final_status = await _run_single_agent(
                         agent_id=agent_id,
                         group=group,
+                        task=task,
                         persona_file=persona_path,
                         max_steps=max_steps,
                         headless=headless,
                         model_name=model_name_local,
                         debug_root=debug_root,
+                        width=width,
+                        height=height,
+                        final_decision_model_name=final_decision_model_name_local,
+                        temperature=temperature,
+                        record_video=False,  # Agents should not handle recording
                     )
                 except Exception as e:
                     final_status = f"⚠️  Failed: {str(e)}"
@@ -316,7 +459,12 @@ def cli(
             tasks.append(_wrap(spec))
         await asyncio.gather(*tasks)
 
-    asyncio.run(_runner())
+    try:
+        asyncio.run(_runner())
+    finally:
+        # Ensure the main recording process is stopped when the test finishes.
+        if recording_proc:
+            _stop_main_recording(recording_proc)
 
 
 if __name__ == "__main__":

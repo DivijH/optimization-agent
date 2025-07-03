@@ -1,0 +1,11 @@
+{
+  "type": "generic_action",
+  "step": 2,
+  "url": "https://www.etsy.com/search?q=wood%20backscratcher&application_behavior=default",
+  "action_plan": {
+    "open_tab": "url='https://www.etsy.com/listing/1085511393/the-ultimate-back-scratcher-scalp?click_key=4ec95f6cacc25f5c20e8b6240c8117336bb44d13%3A1085511393&click_sum=9901ecdf&ls=a&ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=wood+backscratcher&ref=search_grid-101476-1-1&sr_prefetch=1&frs=1&nob=1'",
+    "switch_tab": "page_id=-1",
+    "product_name": "The Ultimate Back Scratcher Scalp",
+    "listing_id": "1085511393"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "page1_products": {
+    "total": 0,
+    "highly_relevant": 0,
+    "somewhat_relevant": 0,
+    "not_relevant": 0
+  },
+  "top_10_products": {
+    "total": 0,
+    "highly_relevant": 0,
+    "somewhat_relevant": 0,
+    "not_relevant": 0
+  }
+}

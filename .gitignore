@@ -3,6 +3,6 @@ __pycache__/
 *.key
 tmp*
 .DS_Store
-etsy_pages/
+etsy_pages*
 ab_test_results.json
 temp/
