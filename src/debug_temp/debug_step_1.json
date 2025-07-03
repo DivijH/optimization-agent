@@ -1,9 +1,0 @@
-{
-  "type": "generic_action",
-  "step": 1,
-  "url": "about:blank",
-  "action_plan": {
-    "go_to_url": "url='https://www.etsy.com/search?q=wood%20backscratcher&application_behavior=default'",
-    "search_query": "wood backscratcher"
-  }
-}
