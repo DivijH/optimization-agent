@@ -1,75 +1,56 @@
 # Core Components
 
-This directory contains the core logic for the Optimization Agent, including the shopping agent, A/B testing framework, and supporting modules.
+This directory contains the core logic for the Optimization Agent, including the shopping agent, A/B testing framework, memory management, prompts, and feature suggestion utilities.
 
-## A/B Testing Agent (`ab_testing.py`)
+## Files Overview
 
-The A/B testing script (`ab_testing.py`) runs multiple shopping agents in parallel to compare the performance of two different models (a "control" and a "target"). It assigns a unique persona to each agent from the `../data/personas` directory and runs them concurrently.
-
-This is useful for evaluating how different models handle the same shopping tasks. Each agent runs independently and saves its own debug logs, screenshots, and memory files.
-
-### Quick Start
-```bash
-python ab_testing.py --n-agents 4 --control-model "gpt-4o-mini" --target-model "gpt-4o"
-```
-
-### Usage
-
-#### All Parameters (A/B Test)
-
-| Parameter | Default | Description |
-|-----------|---------|-------------|
-| `--n-agents` | 4 | Total agents to run (half control, half target) |
-| `--personas-dir` | `"../data/personas"` | Directory with JSON persona files |
-| `--seed` | *None* | Random seed for persona selection |
-| `--control-model`| `"gpt-4o-mini"` | Model name for the control group |
-| `--target-model`| `"gpt-4o-mini"` | Model name for the target group |
-| `--max-steps` | 10 | Maximum number of steps per agent |
-| `--headless` | True | Run browsers in headless mode |
-| `--concurrency` | 2 | Max number of agents to run concurrently |
-| `--debug-root` | `"debug_run_ab"` | Root directory for per-agent debug folders |
-
-#### A/B Test Example
-
-Compare `gpt-4o-mini` against `gpt-4o` with 6 agents, running 3 concurrently.
-```bash
-python ab_testing.py --n-agents 6 --concurrency 3 --control-model "gpt-4o-mini" --target-model "gpt-4o"
-```
----
+| File | Description |
+|------|-------------|
+| `ab_testing.py` | A/B testing framework for comparing different LLM models |
+| `shopping_agent.py` | Main shopping agent that browses Etsy and analyzes products |
+| `feature_suggestion.py` | Utility for generating product feature suggestions |
+| `memory.py` | Memory management system for storing product analysis |
+| `prompts.py` | LLM prompts for product analysis and decision making |
+| `keys/litellm.key` | API key file (create this manually) |
 
 ## Shopping Agent (`shopping_agent.py`)
 
 An AI-powered Etsy shopping agent that autonomously browses and analyzes products based on a given task and persona. The agent uses browser automation to search for products, analyze product pages, and make informed shopping decisions.
 
-### Quick Start
-```bash
-python shopping_agent.py --task "buy a large, inflatable spider decoration for halloween"
-```
+### Key Features
+- **Autonomous Browsing**: Navigates Etsy search results and product pages automatically
+- **Visual Product Selection**: Uses screenshots and multimodal LLM to choose which products to analyze
+- **Comprehensive Analysis**: Extracts product information including price, pros, cons, and relevance scores
+- **Memory System**: Tracks analyzed products and search history to avoid duplicates
+- **Final Recommendations**: Makes data-driven purchase decisions based on collected analysis
+- **Debug Artifacts**: Saves detailed logs, screenshots, and analysis results
+- **Cost Tracking**: Monitors LLM token usage and associated costs in real-time
+- **Video Recording**: Optional screen recording of browser sessions (requires ffmpeg)
 
 ### Usage
 
-#### All Parameters (Single Agent)
+#### All Parameters
 
 | Parameter | Default | Description |
 |-----------|---------|-------------|
-| `--task` | `"buy a large, inflatable spider decoration for halloween"` | The shopping task for the agent |
-| `--persona` | Michael (42yo marketing manager) | The persona for the agent |
-| `--config-file` | *None* | Path to a JSON file containing `intent` and `persona`. Values in the file override the flags above |
+| `--task` | "indoor frisbee" | The shopping task for the agent |
+| `--persona` | Samantha (default persona) | The persona for the agent |
+| `--config-file` | *None* | Path to a JSON file containing `intent` and `persona`. Overrides flags |
 | `--manual` | False | Wait for user to press Enter after each agent action |
 | `--headless` | False | Run the browser in headless mode |
-| `--max-steps` | 10 | Maximum number of steps the agent will take |
-| `--debug-path` | `"debug_run"` | Path to save debug artifacts (screenshots, logs) |
-| `--width` | 1920 | Browser viewport width |
-| `--height` | 1080 | Browser viewport height |
-| `--n-products` | 3 | Number of products to analyze (-1 for all) |
-| `--model` | `"gpt-4o-mini"` | LLM model name (e.g., gpt-4o, gpt-4o-mini) |
+| `--max-steps` | *None* | Maximum number of steps the agent will take |
+| `--debug-path` | "debug_run" | Path to save debug artifacts (screenshots, logs) |
+| `--width` | 3024 | Browser viewport width |
+| `--height` | 1964 | Browser viewport height |
+| `--model` | "gpt-4o-mini" | LLM model name (e.g., gpt-4o, gpt-4o-mini, o3-mini) |
+| `--final-decision-model` | "gpt-4o" | Model for final decision (defaults to main model) |
 | `--temperature` | 0.7 | LLM sampling temperature (0-2) |
 | `--record-video` | False | Record browser session video (requires ffmpeg) |
-| `--user-data-dir`| *None* | Path to a browser profile directory to reuse cookies and cache |
+| `--user-data-dir`| *None* | Path to browser profile directory for session persistence |
 
 #### Examples
 
-**Simple task**:
+**Basic shopping task**:
 ```bash
 python shopping_agent.py --task "find a handmade ceramic mug"
 ```
@@ -99,60 +80,171 @@ python shopping_agent.py --task "find a wedding gift" --model "gpt-4o" --tempera
 python shopping_agent.py --config-file my_shopping_task.json
 ```
 
+### Output Files
+
+The agent generates the following files in the debug directory:
+- `_memory.json` - All analyzed products and search history
+- `_final_purchase_decision.json` - LLM's final purchase recommendations
+- `_token_usage.json` - Token usage and cost breakdown by model
+- `_semantic_scores.json` - Distribution of product relevance scores
+- `screenshot_step_N_*.png` - Screenshots from each step
+- `debug_step_N.json` - Detailed logs for each step
+- `_session.mp4` - Video recording (if `--record-video` enabled)
+
 ---
-## How It Works
 
-1. **Task Breakdown**: Breaks your shopping task into specific search queries
-2. **Product Discovery**: Searches Etsy and identifies relevant products
-3. **Visual Selection**: Uses screenshots + LLM to choose the most promising listings
-4. **Product Analysis**: Summarises pros/cons for each product page
-5. **Memory Management**: Remembers analysed products to avoid duplicates
-6. **Decision Making**: Generates the final purchase recommendation based on memory
+## A/B Testing Framework (`ab_testing.py`)
 
-## Output
+The A/B testing script runs multiple shopping agents in parallel to compare the performance of two different models (a "control" and a "target"). It assigns unique personas to each agent and runs them concurrently with isolated logging.
 
-- **Console**: Real-time progress and decision logs
-- **Memory**: `_memory.json` with all analysed products & search history
-- **Final Decision**: `_final_purchase_decision.json` with the LLM's recommendation
-- **Debug Files**: Step-by-step JSON logs and screenshots (if `--debug-path` is set)
-- **Video**: `session.mp4` recording (if `--record-video` is enabled)
+### Key Features
+- **Model Comparison**: Test control vs target models with statistical validity
+- **Concurrent Execution**: Run multiple agents simultaneously with configurable limits
+- **Persona Sampling**: Randomly assign personas from the dataset (with or without replacement)
+- **Isolated Environments**: Each agent gets its own debug directory and browser profile
+- **Real-time Monitoring**: Live status updates for all running agents
+- **Comprehensive Logging**: Separate log files for each agent with error handling
 
-## Key Features
+### Usage
 
-- **Task Decomposition**: Automatically breaks high-level shopping goals into smaller sub-tasks using an LLM.
-- **Visual Product Selection**: Captures screenshots of search results and lets a multimodal LLM decide which listing to open next.
-- **In-Depth Product Analysis**: Scrolls through product pages, extracts text & images, and asks the LLM to summarise pros, cons, and a short description.
-- **Long-Term Memory**: Stores analysed products and search queries to avoid duplicates and provide context for future decisions.
-- **Final Recommendation**: After exploring, the agent uses its memory to output a JSON purchase recommendation.
-- **Rich Debug Artefacts**: Saves JSON logs and annotated/plain screenshots for every step to the folder specified by `--debug-path`.
-- **Screen Recording (optional)**: Record the entire browser session to MP4 with `--record-video` (requires ffmpeg).
-- **Interactive Mode**: Add `--manual` to pause after every action so you can inspect what the agent is doing.
+#### All Parameters
 
-### Prerequisites for Screen Recording
+| Parameter | Default | Description |
+|-----------|---------|-------------|
+| `--task` | "toddler-sized driving wheel toy" | Shopping task for all agents |
+| `--n-agents` | 4 | Total agents to run (half control, half target) |
+| `--personas-dir` | "../data/personas" | Directory with JSON persona files |
+| `--seed` | *None* | Random seed for persona selection |
+| `--control-model`| "gpt-4o-mini" | Model name for the control group |
+| `--target-model`| "gpt-4o-mini" | Model name for the target group |
+| `--max-steps` | 10 | Maximum number of steps per agent |
+| `--headless` | True | Run browsers in headless mode |
+| `--concurrency` | 4 | Max number of agents to run concurrently |
+| `--debug-root` | "debug_run_ab" | Root directory for per-agent debug folders |
+| `--width` | 1920 | Browser viewport width |
+| `--height` | 1080 | Browser viewport height |
+| `--control-final-decision-model` | "gpt-4o" | Final decision model for control group |
+| `--target-final-decision-model` | "gpt-4o" | Final decision model for target group |
+| `--temperature` | 0.7 | LLM sampling temperature |
+| `--record-video` | False | Record video of the entire test session |
 
-The `--record-video` flag relies on **[ffmpeg](https://ffmpeg.org/)** being installed and available in your `PATH`. On macOS you can install it with Homebrew:
+#### Examples
 
+**Basic A/B test**:
 ```bash
-brew install ffmpeg
+python ab_testing.py --n-agents 4 --control-model "gpt-4o-mini" --target-model "gpt-4o"
 ```
 
-⚠️  `--record-video` and `--headless` cannot be used together – the script will exit with an error if both flags are supplied.
+**Large-scale comparison**:
+```bash
+python ab_testing.py --n-agents 12 --concurrency 6 --control-model "gpt-4o-mini" --target-model "o3-mini"
+```
 
-## Using a JSON Config File
+**Controlled experiment with seed**:
+```bash
+python ab_testing.py --n-agents 8 --seed 42 --max-steps 15
+```
 
-Passing large persona descriptions via the command line can get messy. Instead, place the shopping `intent` and `persona` in a small JSON file:
+---
 
+## Memory System (`memory.py`)
+
+The memory module provides persistent storage for product analysis and search history. It prevents duplicate analysis and enables informed decision-making.
+
+### Classes
+
+#### `ProductMemory`
+Stores information about analyzed products:
+- `product_name`: Name of the product
+- `url`: Product page URL
+- `price`: Product price (float or None)
+- `pros`: List of positive aspects
+- `cons`: List of negative aspects  
+- `summary`: Brief analysis summary
+- `semantic_score`: Relevance rating ("HIGHLY RELEVANT", "SOMEWHAT RELEVANT", "NOT RELEVANT")
+
+#### `MemoryModule`
+Manages collections of products and search queries:
+- `add_product()`: Add product to memory (prevents duplicates)
+- `add_search_query()`: Track search queries
+- `get_product_by_url()`: Retrieve product by URL
+- `is_product_in_memory()`: Check if product exists
+- `save_to_json()`: Persist memory to file
+
+---
+
+## Prompts (`prompts.py`)
+
+Contains the LLM prompts used for product analysis and decision-making.
+
+### `PRODUCT_ANALYSIS_PROMPT`
+Analyzes individual product pages and returns structured JSON with:
+- Pros and cons relative to the persona and search query
+- Price extraction
+- Summary of analysis
+- Semantic relevance score
+
+### `FINAL_DECISION_PROMPT`
+Makes final purchase recommendations based on analyzed products:
+- Compares all relevant products
+- Provides reasoning for recommendations
+- Calculates total cost
+
+---
+
+## Feature Suggestion (`feature_suggestion.py`)
+
+A utility script that suggests new features for e-commerce websites to boost sales. Currently configured to analyze a sample Etsy page and generate feature recommendations using an LLM.
+
+### Usage
+```bash
+python feature_suggestion.py
+```
+
+**Note**: This script currently references a hardcoded HTML file path that may not exist. Update the `webpage_html` path to point to a valid HTML file before running.
+
+---
+
+## Configuration
+
+### API Keys
+Create the API key file:
+```bash
+echo "your-api-key-here" > keys/litellm.key
+```
+
+### Supported Models
+The system tracks costs for these models:
+- `gpt-4o-mini`: $0.15/$0.60 per million input/output tokens
+- `gpt-4o`: $2.50/$10.00 per million input/output tokens
+- `o3-mini`: $1.10/$4.40 per million input/output tokens
+- `openai/o4-mini`: $1.10/$4.40 per million input/output tokens
+
+### JSON Config File Format
+For complex personas, use a JSON file:
 ```json
 {
-  "intent": "buy a pair of Jobst zipper compression socks for women.",
-  "persona": "Persona: Sophia\n\nBackground:\nSophia is a dedicated community college professor with a deep passion for education and empowering underserved students. She has spent the past two decades sharing her expertise and inspiring young minds to reach their full potential.\n\nDemographics:\nAge: 54\nGender: Female\nEducation: Master's degree in Education\nProfession: Community College Professor\nIncome: $65,000\n\nFinancial Situation:\nSophia's income as a community college professor provides her with a comfortable, yet modest, living. She is financially responsible and manages her budget carefully, prioritizing her personal and professional goals.\n\nShopping Habits:\nSophia is a practical shopper who focuses on finding high-quality, durable items that will serve her needs for the long term. She enjoys browsing local thrift stores and online marketplaces for unique finds, but she is also willing to invest in essential items that will last. Sophia values sustainability and often looks for eco-friendly or ethically sourced products.\n\nProfessional Life:\nAs a community college professor, Sophia takes great pride in her work and the impact she has on her students' lives. She is known for her engaging teaching style, her deep subject matter expertise, and her genuine care for the well-being and success of her students. Sophia is actively involved in curriculum development and mentoring programs, constantly seeking ways to improve the educational experience.\n\nPersonal Style:\nSophia's personal style reflects her practical and comfortable approach to life. She often wears classic pieces, such as button-down shirts, cardigans, and well-fitted trousers, that allow her to move freely and feel confident in the classroom. She also enjoys adding personal touches, like colorful scarves or statement jewelry, to express her own sense of style."
+  "intent": "buy a pair of compression socks for women",
+  "persona": "Persona: Sophia\n\nBackground:\nSophia is a dedicated community college professor..."
 }
 ```
 
-Run the agent with:
+---
 
-```bash
-python shopping_agent.py --config-file my_shopping_task.json
-```
+## How It Works
 
-The `intent` and `persona` values in the JSON file take precedence over the `--task` and `--persona` CLI flags. 
+1. **Task Interpretation**: The agent breaks down shopping tasks into specific search strategies
+2. **Product Discovery**: Searches Etsy and identifies relevant product listings
+3. **Visual Selection**: Uses screenshots and LLM to choose the most promising products
+4. **Product Analysis**: Scrolls through product pages and extracts detailed information
+5. **Memory Management**: Stores analysis results and avoids duplicate work
+6. **Decision Making**: Generates final purchase recommendations based on collected data
+
+## Prerequisites
+
+- **FFmpeg** (for video recording): Install via package manager
+  - macOS: `brew install ffmpeg`
+  - Ubuntu: `sudo apt install ffmpeg`
+  - Windows: Download from [ffmpeg.org](https://ffmpeg.org/)
+- **LiteLLM API Key**: Configure in `keys/litellm.key`
+- **Python Dependencies**: Install via `pip install -r ../requirements.txt` 
