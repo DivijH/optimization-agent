@@ -1,20 +1,86 @@
 # Data
 
-This directory contains data used by the shopping agent, primarily the virtual customer personas.
+This directory contains data used by the shopping agent, primarily the virtual customer personas that guide agent behavior and decision-making.
 
 ## Personas (`personas/`)
 
-The `personas/` directory contains JSON files, each representing a unique virtual customer persona. These personas are used by the shopping agent to inform its browsing and purchasing decisions, simulating a wide range of user behaviors and preferences.
+The `personas/` directory contains over 200 JSON files, each representing a unique virtual customer persona. These personas are used by the shopping agent to inform its browsing and purchasing decisions, simulating a wide range of user behaviors, preferences, and demographics.
 
 The personas were gathered from the paper [UXAgent: An LLM Agent-Based Usability Testing Framework for Web Design](https://arxiv.org/abs/2502.12561).
 
 ### Persona File Format
 
-Each JSON file in this directory defines a persona with a shopping `intent`. Here is an example:
+Each JSON file in this directory defines a comprehensive persona with shopping intent, demographic information, and suggested search queries. Here is the complete structure:
 
 ```json
 {
-  "intent": "buy a pair of Jobst zipper compression socks for women.",
-  "persona": "Persona: Sophia\n\nBackground:\nSophia is a dedicated community college professor with a deep passion for education and empowering underserved students. She has spent the past two decades sharing her expertise and inspiring young minds to reach their full potential.\n\nDemographics:\nAge: 54\nGender: Female\nEducation: Master's degree in Education\nProfession: Community College Professor\nIncome: $65,000\n\nFinancial Situation:\nSophia's income as a community college professor provides her with a comfortable, yet modest, living. She is financially responsible and manages her budget carefully, prioritizing her personal and professional goals.\n\nShopping Habits:\nSophia is a practical shopper who focuses on finding high-quality, durable items that will serve her needs for the long term. She enjoys browsing local thrift stores and online marketplaces for unique finds, but she is also willing to invest in essential items that will last. Sophia values sustainability and often looks for eco-friendly or ethically sourced products.\n\nProfessional Life:\nAs a community college professor, Sophia takes great pride in her work and the impact she has on her students' lives. She is known for her engaging teaching style, her deep subject matter expertise, and her genuine care for the well-being and success of her students. Sophia is actively involved in curriculum development and mentoring programs, constantly seeking ways to improve the educational experience.\n\nPersonal Style:\nSophia's personal style reflects her practical and comfortable approach to life. She often wears classic pieces, such as button-down shirts, cardigans, and well-fitted trousers, that allow her to move freely and feel confident in the classroom. She also enjoys adding personal touches, like colorful scarves or statement jewelry, to express her own sense of style."
+  "persona": "Detailed persona description with background, demographics, financial situation, shopping habits, and personal style",
+  "intent": "Specific shopping task or goal",
+  "age": 63,
+  "age_group": "55-64",
+  "gender": "male",
+  "income": [0, 30000],
+  "income_group": "0-30000",
+  "search_queries": [
+    "Suggested search query 1",
+    "Suggested search query 2",
+    "Suggested search query 3",
+    "Suggested search query 4",
+    "Suggested search query 5"
+  ]
 }
-``` 
+```
+
+### Field Descriptions
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `persona` | string | Detailed character description including background, demographics, financial situation, shopping habits, professional life, and personal style |
+| `intent` | string | Specific shopping task or product the persona wants to buy |
+| `age` | integer | Exact age of the persona |
+| `age_group` | string | Age range classification (e.g., "55-64", "25-34") |
+| `gender` | string | Gender identity ("male", "female", etc.) |
+| `income` | array | Income range as [min, max] in dollars |
+| `income_group` | string | Income bracket classification (e.g., "0-30000", "60000-100000") |
+| `search_queries` | array | List of 5 suggested search queries related to the intent |
+
+### Example Persona
+
+```json
+{
+  "persona": "Persona: Frank\n\nBackground:\nFrank is a retiree who spends his time pursuing his hobbies and taking care of his family. After working blue-collar jobs for most of his life, he's now enjoying his golden years with a modest income.\n\nDemographics:\nAge: 63\nGender: Male\nEducation: High school diploma\nProfession: Retired\nIncome: $25,000\n\nFinancial Situation:\nFrank lives on a fixed income from his pension and Social Security benefits. He is careful with his spending, prioritizing necessities and leaving little room for frivolous purchases.\n\nShopping Habits:\nFrank tends to be a cautious shopper, taking the time to research and compare prices before making a purchase. He values quality and durability over trends, preferring to invest in items that will last. Frank often shops at local thrift stores or discount retailers to stretch his budget.\n\nPersonal Life:\nIn his retirement, Frank enjoys spending time with his grandchildren, going for walks in the park, and working on DIY projects around the house. He takes pride in his ability to fix things and often shares his skills with his family and neighbors.",
+  "intent": "buy a Traxxas Slash body.",
+  "age": 63,
+  "age_group": "55-64",
+  "gender": "male",
+  "income": [0, 30000],
+  "income_group": "0-30000",
+  "search_queries": [
+    "Traxxas Slash body options",
+    "Traxxas Slash body prices", 
+    "where to find Traxxas Slash body",
+    "Traxxas Slash replacement body",
+    "Traxxas Slash body for sale"
+  ]
+}
+```
+
+### Usage in Shopping Agent
+
+The shopping agent uses these personas in two ways:
+
+1. **Single Agent Mode**: You can specify a custom persona via the `--persona` flag or use a JSON config file that references the `persona` and `intent` fields.
+
+2. **A/B Testing Mode**: The A/B testing framework randomly samples persona files from this directory, using both the persona description and intent to create diverse test scenarios.
+
+### Persona Diversity
+
+The persona dataset includes a wide range of:
+- **Ages**: From young adults to seniors across all age groups
+- **Incomes**: From low-income to high-income brackets  
+- **Genders**: Diverse gender representation
+- **Professions**: Students, professionals, retirees, entrepreneurs, etc.
+- **Shopping Intents**: Wide variety of products and shopping goals
+- **Personalities**: Different shopping behaviors, preferences, and constraints
+
+This diversity ensures that agent testing covers a comprehensive range of real-world user scenarios and behaviors. 
