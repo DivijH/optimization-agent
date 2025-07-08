@@ -46,6 +46,10 @@ MODEL_PRICING = {
     "openai/o4-mini": {"input": 1.10, "output": 4.40},
 }
 
+# Constants for token usage breakdown
+IMAGE_TOKEN_PERCENTAGE = 0.7806  # 78.06% of analysis tokens are from images
+TEXT_TOKEN_PERCENTAGE = 0.2194   # 21.94% of analysis tokens are from text
+
 # Default task and persona for the agent (Persona 21)
 DEFAULT_TASK = """
 indoor frisbee
@@ -127,7 +131,15 @@ class EtsyShoppingAgent:
         if not self.debug_path:
             return
 
-        total_session_cost = sum(usage.get("cost", 0.0) for usage in self.token_usage.values())
+        # Calculate total session cost by summing all model costs
+        total_session_cost = 0.0
+        for model_usage in self.token_usage.values():
+            # Add analysis costs
+            if "analysis" in model_usage:
+                total_session_cost += model_usage["analysis"]["total_cost"]
+            # Add final decision costs
+            if "final_decision" in model_usage:
+                total_session_cost += model_usage["final_decision"]["total_cost"]
 
         token_usage_path = os.path.join(self.debug_path, "_token_usage.json")
         token_usage_data = {
@@ -160,8 +172,14 @@ class EtsyShoppingAgent:
             else:
                 print(message)
 
-    async def _update_token_usage(self, model_name: str, usage_metadata: Optional[Dict[str, Any]]):
-        """Updates the token usage count for a given model."""
+    async def _update_token_usage(self, model_name: str, usage_metadata: Optional[Dict[str, Any]], usage_type: str = "analysis"):
+        """Updates the token usage count for a given model.
+        
+        Args:
+            model_name: The name of the model used
+            usage_metadata: The usage metadata from the model response
+            usage_type: Type of usage - either 'analysis' or 'final_decision'
+        """
         if not usage_metadata:
             return
 
@@ -172,39 +190,92 @@ class EtsyShoppingAgent:
         if not total_tokens:
             return
 
-        # Calculate cost for this specific call
-        cost = 0.0
-        if model_name in MODEL_PRICING:
-            price_per_million = MODEL_PRICING[model_name]
-            input_cost = (input_tokens / 1_000_000) * price_per_million["input"]
-            output_cost = (output_tokens / 1_000_000) * price_per_million["output"]
-            cost = input_cost + output_cost
-
+        # Initialize model usage stats if not exists
         if model_name not in self.token_usage:
             self.token_usage[model_name] = {
-                "input_tokens": 0,
-                "output_tokens": 0,
-                "total_tokens": 0,
-                "cost": 0.0,
+                "analysis": {
+                    "input_tokens": 0,
+                    "output_tokens": 0,
+                    "total_tokens": 0,
+                    "image_tokens": 0,
+                    "text_tokens": 0,
+                    "input_text_cost": 0.0,
+                    "input_image_cost": 0.0,
+                    "input_total_cost": 0.0,
+                    "output_cost": 0.0,
+                    "total_cost": 0.0
+                },
+                "final_decision": {
+                    "input_tokens": 0,
+                    "output_tokens": 0,
+                    "total_tokens": 0,
+                    "input_cost": 0.0,
+                    "output_cost": 0.0,
+                    "total_cost": 0.0
+                }
             }
 
-        self.token_usage[model_name]["input_tokens"] += input_tokens
-        self.token_usage[model_name]["output_tokens"] += output_tokens
-        self.token_usage[model_name]["total_tokens"] += total_tokens
-        self.token_usage[model_name]["cost"] += cost
+        # Update the appropriate usage type
+        usage_data = self.token_usage[model_name][usage_type]
+        usage_data["input_tokens"] += input_tokens
+        usage_data["output_tokens"] += output_tokens
+        usage_data["total_tokens"] += total_tokens
 
-        cost_log = f" (Cost: ${cost:.6f})" if cost > 0 else ""
-        self._log(
-            f"   - Token usage for {model_name}: "
-            f"Input={input_tokens}, Output={output_tokens}, Total={total_tokens}{cost_log}"
-        )
+        # Calculate costs
+        if model_name in MODEL_PRICING:
+            price_per_million = MODEL_PRICING[model_name]
+            
+            if usage_type == "analysis":
+                # Calculate image and text tokens
+                image_tokens = int(input_tokens * IMAGE_TOKEN_PERCENTAGE)
+                text_tokens = int(input_tokens * TEXT_TOKEN_PERCENTAGE)
+                usage_data["image_tokens"] = image_tokens
+                usage_data["text_tokens"] = text_tokens
+                
+                # Calculate input costs (text and image)
+                input_text_cost = (text_tokens / 1_000_000) * price_per_million["input"]
+                input_image_cost = (image_tokens / 1_000_000) * price_per_million["input"]
+                output_cost = (output_tokens / 1_000_000) * price_per_million["output"]
+                
+                usage_data["input_text_cost"] += input_text_cost
+                usage_data["input_image_cost"] += input_image_cost
+                usage_data["input_total_cost"] = usage_data["input_text_cost"] + usage_data["input_image_cost"]
+                usage_data["output_cost"] += output_cost
+                usage_data["total_cost"] = usage_data["input_total_cost"] + usage_data["output_cost"]
+            else:  # final_decision
+                input_cost = (input_tokens / 1_000_000) * price_per_million["input"]
+                output_cost = (output_tokens / 1_000_000) * price_per_million["output"]
+                
+                usage_data["input_cost"] += input_cost
+                usage_data["output_cost"] += output_cost
+                usage_data["total_cost"] = usage_data["input_cost"] + usage_data["output_cost"]
 
-        cumulative_cost = self.token_usage[model_name]["cost"]
-        cumulative_cost_log = f" (Cumulative Cost: ${cumulative_cost:.6f})" if cumulative_cost > 0 else ""
-        self._log(
-            f"   - Cumulative token usage for {model_name}: "
-            f"Total={self.token_usage[model_name]['total_tokens']}{cumulative_cost_log}"
-        )
+        # Log the usage details
+        if usage_type == "analysis":
+            self._log(
+                f"   - Token usage for {model_name} (analysis): "
+                f"Input={input_tokens} (Image={usage_data['image_tokens']}, Text={usage_data['text_tokens']}), "
+                f"Output={output_tokens}, Total={total_tokens}"
+            )
+            self._log(
+                f"   - Cost breakdown for {model_name} (analysis):"
+                f"\n     Input Text: ${usage_data['input_text_cost']:.6f}"
+                f"\n     Input Image: ${usage_data['input_image_cost']:.6f}"
+                f"\n     Input Total: ${usage_data['input_total_cost']:.6f}"
+                f"\n     Output: ${usage_data['output_cost']:.6f}"
+                f"\n     Total: ${usage_data['total_cost']:.6f}"
+            )
+        else:  # final_decision
+            self._log(
+                f"   - Token usage for {model_name} (final_decision): "
+                f"Input={input_tokens}, Output={output_tokens}, Total={total_tokens}"
+            )
+            self._log(
+                f"   - Cost breakdown for {model_name} (final_decision):"
+                f"\n     Input: ${usage_data['input_cost']:.6f}"
+                f"\n     Output: ${usage_data['output_cost']:.6f}"
+                f"\n     Total: ${usage_data['total_cost']:.6f}"
+            )
 
         # Save token usage to file in real-time
         await self._save_token_usage()
@@ -427,6 +498,7 @@ class EtsyShoppingAgent:
             return None
 
         _, screenshots_b64 = await self._scroll_and_collect(max_scrolls=15, stop_at_bottom=True, delay=0.3)
+        screenshots_b64 = screenshots_b64[:3] # cap at first 3 images
         parser = JsonOutputParser()
 
         system_prompt = PRODUCT_ANALYSIS_PROMPT
@@ -436,7 +508,7 @@ class EtsyShoppingAgent:
                 "type": "image_url",
                 "image_url": {"url": f"data:image/png;base64,{b64}"}
             }
-            for b64 in screenshots_b64[:10]  # cap at first 10 images
+            for b64 in screenshots_b64
         ]
 
         messages = [
@@ -447,7 +519,7 @@ class EtsyShoppingAgent:
         try:
             ai_message = await self.llm.ainvoke(messages)
             if hasattr(ai_message, 'usage_metadata') and ai_message.usage_metadata:
-                await self._update_token_usage(self.llm.model_name, ai_message.usage_metadata)
+                await self._update_token_usage(self.llm.model_name, ai_message.usage_metadata, usage_type="analysis")
             analysis_response = parser.parse(ai_message.content)
             
             product_memory = ProductMemory(
@@ -690,7 +762,7 @@ Here are the products that have been analyzed:
         try:
             ai_message = await self.final_decision_llm.ainvoke(messages)
             if hasattr(ai_message, 'usage_metadata') and ai_message.usage_metadata:
-                await self._update_token_usage(self.final_decision_llm.model_name, ai_message.usage_metadata)
+                await self._update_token_usage(self.final_decision_llm.model_name, ai_message.usage_metadata, usage_type="final_decision")
             response_content = ai_message.content.strip()
             try:
                 decision_json = json.loads(response_content)
@@ -1058,15 +1130,49 @@ Here are the products that have been analyzed:
         if self.debug_path:
             self._log("📊 Final token usage:")
             total_session_cost = 0.0
-            for model, usage in self.token_usage.items():
-                cost = usage.get("cost", 0.0)
-                total_session_cost += cost
+            
+            for model, usages in self.token_usage.items():
+                model_total_cost = 0.0
+                self._log(f"\n   Model: {model}")
+                
+                # Analysis stats
+                analysis = usages["analysis"]
+                analysis_total = analysis["total_cost"]
+                model_total_cost += analysis_total
                 self._log(
-                    f"   - {model}: "
-                    f"Input={usage['input_tokens']}, Output={usage['output_tokens']}, "
-                    f"Total={usage['total_tokens']}, Cost=${cost:.6f}"
+                    f"   - Analysis:"
+                    f"\n     Tokens:"
+                    f"\n       Input: {analysis['input_tokens']} (Image={analysis['image_tokens']}, Text={analysis['text_tokens']})"
+                    f"\n       Output: {analysis['output_tokens']}"
+                    f"\n       Total: {analysis['total_tokens']}"
+                    f"\n     Costs:"
+                    f"\n       Input Text: ${analysis['input_text_cost']:.6f}"
+                    f"\n       Input Image: ${analysis['input_image_cost']:.6f}"
+                    f"\n       Input Total: ${analysis['input_total_cost']:.6f}"
+                    f"\n       Output: ${analysis['output_cost']:.6f}"
+                    f"\n       Total: ${analysis_total:.6f}"
                 )
-            self._log(f"   - Total session cost: ${total_session_cost:.6f}")
+                
+                # Final decision stats
+                final = usages["final_decision"]
+                final_total = final["total_cost"]
+                model_total_cost += final_total
+                self._log(
+                    f"   - Final Decision:"
+                    f"\n     Tokens:"
+                    f"\n       Input: {final['input_tokens']}"
+                    f"\n       Output: {final['output_tokens']}"
+                    f"\n       Total: {final['total_tokens']}"
+                    f"\n     Costs:"
+                    f"\n       Input: ${final['input_cost']:.6f}"
+                    f"\n       Output: ${final['output_cost']:.6f}"
+                    f"\n       Total: ${final_total:.6f}"
+                )
+                
+                self._log(f"   - Model Total Cost: ${model_total_cost:.6f}")
+                total_session_cost += model_total_cost
+            
+            self._log(f"\n   💰 Total Session Cost: ${total_session_cost:.6f}")
 
             # Token usage is saved in real-time. The final version is already on disk.
             self._log(f"   - Token usage saved to {os.path.join(self.debug_path, '_token_usage.json')}")
@@ -1102,8 +1208,8 @@ async def async_main(agent: EtsyShoppingAgent):
 @click.option("--debug-path", type=click.Path(), default="debug_run", help="Path to save debug artifacts, such as screenshots.")
 @click.option("--width", default=3024, help="The width of the browser viewport.")
 @click.option("--height", default=1964, help="The height of the browser viewport.")
-@click.option("--model", "model_name", default="gpt-4o-mini", help="Model name to use (e.g. gpt-4o, gpt-4o-mini).")
-@click.option("--final-decision-model", "final_decision_model_name", default="gpt-4o", help="Model name for the final decision. Defaults to the main model.")
+@click.option("--model", "model_name", default="openai/o4-mini", help="Model name to use (e.g. gpt-4o, gpt-4o-mini).")
+@click.option("--final-decision-model", "final_decision_model_name", default=None, help="Model name for the final decision. Defaults to the main model.")
 @click.option("--temperature", default=0.7, type=float, help="Sampling temperature for the language model (0-2).")
 @click.option("--record-video", is_flag=True, help="Record the agent's browser session and save it to the debug path.")
 @click.option("--user-data-dir", type=click.Path(), help="Path to user data directory for the browser.")

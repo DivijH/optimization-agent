@@ -100,6 +100,31 @@ python shopping_agent.py --config-file my_shopping_task.json
 ```
 
 ---
+
+## Semantic Relevance Match (`semantic_relevance_match.py`)
+
+This script is a utility to analyze the semantic relevance scores assigned by the shopping agent. It reads the `_memory.json` file from a debug run, and for each product, it calls a live semantic relevance model to compare the agent's score with a fresh prediction.
+
+This is useful for evaluating the agent's understanding of product relevance for a given query.
+
+### How it Works
+
+1.  **Reads Memory**: Loads the `_memory.json` file from `debug_run/_memory.json`.
+2.  **Calls Model**: For each product in the memory, it calls a semantic relevance model endpoint.
+3.  **Compares Scores**: It compares the `semantic_score` stored by the agent with the live model's classification.
+4.  **Saves Results**: Saves a detailed comparison for each product in `debug_run/_semantic_comparison_results.json`.
+
+### Quick Start
+
+First, ensure you have a `debug_run` directory with a `_memory.json` file from a previous `shopping_agent.py` run. Then:
+
+```bash
+python semantic_relevance_match.py
+```
+
+The script will print a summary of matches and mismatches to the console.
+
+---
 ## How It Works
 
 1. **Task Breakdown**: Breaks your shopping task into specific search queries
