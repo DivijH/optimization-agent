@@ -51,16 +51,16 @@ python shopping_agent.py --task "large, inflatable spider decoration for hallowe
 │   ├── personas/             # Virtual customer personas for agents
 │   │   ├── virtual customer 0.json
 │   │   ├── virtual customer 1.json
-│   │   └── ...
+│   │   └── ... (200+ persona files)
 │   └── README.md             # Information about the data
 ├── src/
-│   ├── ab_testing.py         # Script for A/B testing
+│   ├── ab_testing.py         # Script for A/B testing different models
 │   ├── shopping_agent.py     # Core logic for the shopping agent
 │   ├── feature_suggestion.py # Code for suggesting new features for products
 │   ├── memory.py             # Agent's memory implementation
 │   ├── prompts.py            # Prompts used by LLM
 │   ├── keys/                 # Directory for API keys
-│   │   └── litellm.key
+│   │   └── litellm.key       # LiteLLM API key (create this file)
 │   └── README.md             # Core components documentation
 ├── requirements.txt          # Project dependencies
 └── README.md                 # This file
