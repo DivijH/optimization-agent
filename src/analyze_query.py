@@ -13,12 +13,25 @@ import subprocess
 import os
 
 CURRENT_DIR = Path(__file__).resolve().parent
-if str(CURRENT_DIR) not in sys.path:
-    sys.path.append(str(CURRENT_DIR))
+project_root = str(CURRENT_DIR.parent)
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
 
-from shopping_agent import EtsyShoppingAgent
+# Set up OpenAI credentials
+try:
+    key_path = CURRENT_DIR / "keys" / "litellm.key"
+    os.environ["OPENAI_API_KEY"] = key_path.read_text().strip()
+except FileNotFoundError:
+    raise Exception(
+        "litellm.key file not found. It is expected in optimization-agent/src/keys/litellm.key"
+    )
+os.environ["OPENAI_API_BASE"] = "https://litellm.litellm.kn.ml-platform.etsy-mlinfra-dev.etsycloud.com"
 
-DEFAULT_TASK = "toddler-sized driving wheel toy" # from persona 257
+
+from src.shopping_agent.agent import EtsyShoppingAgent
+from src.processing_results import process_agent_results
+
+DEFAULT_TASK = "Dunlap pocket knife"
 
 print_lock = asyncio.Lock()
 
@@ -39,17 +52,17 @@ class StatusDisplay:
                 sys.stdout.write(f"\x1b[{self._num_lines}A")
 
             # Print all statuses
-            for spec_id, group, _, _, _ in self.agent_specs:
+            for spec_id, _, _, _ in self.agent_specs:
                 # \x1b[2K clears the entire line before writing
-                sys.stdout.write(f"\x1b[2K[Agent {spec_id} | {group:^7}] {self.statuses[spec_id]}\n")
+                sys.stdout.write(f"\x1b[2K[Agent {spec_id}] {self.statuses[spec_id]}\n")
             
             sys.stdout.flush()
 
     async def print_initial_statuses(self):
         """Prints the initial waiting status for all agents."""
         async with print_lock:
-            for agent_id, group, _, _, _ in self.agent_specs:
-                 sys.stdout.write(f"[Agent {agent_id} | {group:^7}] {self.statuses[agent_id]}\n")
+            for agent_id, _, _, _ in self.agent_specs:
+                 sys.stdout.write(f"[Agent {agent_id}] {self.statuses[agent_id]}\n")
             self._num_lines = len(self.agent_specs)
             sys.stdout.flush()
 
@@ -94,7 +107,6 @@ def _load_persona(file_path: Path) -> str:
 async def _run_single_agent(
     *,
     agent_id: int,
-    group: str,
     task: str,
     persona_file: Path,
     max_steps: int,
@@ -111,7 +123,7 @@ async def _run_single_agent(
 
     persona = _load_persona(persona_file)
 
-    debug_path = debug_root / f"{group}_agent_{agent_id}"
+    debug_path = debug_root / f"agent_{agent_id}"
     debug_path.mkdir(parents=True, exist_ok=True)
     log_file = debug_path / "agent.log"
     logger = _setup_file_logger(f"agent_{agent_id}", log_file)
@@ -165,8 +177,8 @@ async def _run_single_agent(
 def _start_main_recording(
     debug_root: Path, width: int, height: int
 ) -> Optional[subprocess.Popen]:
-    """Spawn an ffmpeg process to capture the entire primary display for the A/B test."""
-    output_path = debug_root / "ab_test_session.mp4"
+    """Spawn an ffmpeg process to capture the entire primary display for the run."""
+    output_path = debug_root / "main_session.mp4"
 
     # Build ffmpeg command depending on OS
     if sys.platform == "darwin":
@@ -227,7 +239,7 @@ def _stop_main_recording(proc: Optional[subprocess.Popen]):
     type=int,
     default=4,
     show_default=True,
-    help="Total number of agents to spawn. Half will be assigned to the control group and half to the target group.",
+    help="Total number of agents to spawn.",
 )
 @click.option(
     "--personas-dir",
@@ -243,23 +255,30 @@ def _stop_main_recording(proc: Optional[subprocess.Popen]):
     help="Random seed for persona selection. If provided, the same personas will be selected for each run with the same seed.",
 )
 @click.option(
-    "--control-model",
+    "--model-name",
     type=str,
-    default="gpt-4o-mini",
+    default="openai/o4-mini",
     show_default=True,
-    help="Model name to use for the *control* group.",
+    help="Model name to use for the agents.",
 )
 @click.option(
-    "--target-model",
+    "--final-decision-model",
     type=str,
-    default="gpt-4o-mini",
+    default=None,
     show_default=True,
-    help="Model name to use for the *target* group.",
+    help="Model name for the final decision in each agent. Defaults to the main model if not set.",
+)
+@click.option(
+    "--summary-model",
+    type=str,
+    default=None,
+    show_default=True,
+    help="Model name to use for generating summary. Defaults to the main model if not set.",
 )
 @click.option(
     "--max-steps",
     type=int,
-    default=10,
+    default=None,
     show_default=True,
     help="Maximum number of steps each agent is allowed to take.",
 )
@@ -276,20 +295,6 @@ def _stop_main_recording(proc: Optional[subprocess.Popen]):
     default=1080,
     show_default=True,
     help="The height of the browser viewport.",
-)
-@click.option(
-    "--control-final-decision-model",
-    type=str,
-    default="gpt-4o",
-    show_default=True,
-    help="Model name for the final decision in the *control* group. Defaults to the main control model if not set.",
-)
-@click.option(
-    "--target-final-decision-model",
-    type=str,
-    default="gpt-4o",
-    show_default=True,
-    help="Model name for the final decision in the *target* group. Defaults to the main target model if not set.",
 )
 @click.option(
     "--temperature",
@@ -314,14 +319,14 @@ def _stop_main_recording(proc: Optional[subprocess.Popen]):
 @click.option(
     "--concurrency",
     type=int,
-    default=4,
+    default=2,
     show_default=True,
     help="Maximum number of agents to run concurrently. Lower this if you run out of system resources.",
 )
 @click.option(
     "--debug-root",
     type=click.Path(file_okay=False, dir_okay=True, path_type=Path),
-    default=CURRENT_DIR / "debug_run_ab",
+    default=CURRENT_DIR / "debug_run",
     show_default=True,
     help="Root directory under which per-agent debug folders will be created.",
 )
@@ -330,25 +335,24 @@ def cli(
     n_agents: int,
     personas_dir: Path,
     seed: Optional[int],
-    control_model: str,
-    target_model: str,
+    model_name: str,
+    summary_model: Optional[str],
     max_steps: int,
     headless: bool,
     concurrency: int,
     debug_root: Path,
     width: int,
     height: int,
-    control_final_decision_model: Optional[str],
-    target_final_decision_model: Optional[str],
+    final_decision_model: Optional[str],
     temperature: float,
     record_video: bool,
 ):
-    """Run a simple A/B test by spawning multiple shopping agents.
+    """Run multiple shopping agents with different personas for the same query.
 
-    Half of the agents will be assigned to the *control* group and will use the
-    `--control-model`, while the other half will form the *target* group and
-    use the `--target-model`.  Persona JSON files are sampled randomly (without
-    replacement if possible) from *personas-dir*.
+    This script spawns N agents that will all perform the same shopping task,
+    but each will be assigned a different, randomly selected persona from the
+    `--personas-dir`. This is useful for evaluating how different personas
+    affect the agent's behavior for a single task.
     """
 
     # Silence all existing loggers to prevent library logs from flooding stdout.
@@ -401,15 +405,8 @@ def cli(
     # Prepare arguments for each agent
     agent_specs = []
     for idx, persona_file in enumerate(selected_personas):
-        group = "control" if idx < n_agents / 2 else "target"
-        model_name = control_model if group == "control" else target_model
-        final_decision_model = (
-            control_final_decision_model
-            if group == "control"
-            else target_final_decision_model
-        )
         agent_specs.append(
-            (idx, group, persona_file, model_name, final_decision_model)
+            (idx, persona_file, model_name, final_decision_model)
         )
 
     status_display = StatusDisplay(agent_specs)
@@ -422,7 +419,6 @@ def cli(
         async def _wrap(spec):
             (
                 agent_id,
-                group,
                 persona_path,
                 model_name_local,
                 final_decision_model_name_local,
@@ -436,7 +432,6 @@ def cli(
                 try:
                     final_status = await _run_single_agent(
                         agent_id=agent_id,
-                        group=group,
                         task=task,
                         persona_file=persona_path,
                         max_steps=max_steps,
@@ -465,6 +460,9 @@ def cli(
         # Ensure the main recording process is stopped when the test finishes.
         if recording_proc:
             _stop_main_recording(recording_proc)
+
+    summary_model = summary_model if summary_model else model_name
+    process_agent_results(debug_root, summary_model, temperature)
 
 
 if __name__ == "__main__":

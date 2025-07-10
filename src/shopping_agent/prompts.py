@@ -80,15 +80,15 @@ As a software engineer, Michael's workdays are filled with coding, collaborating
 Personal Style:
 Michael has a casual, yet stylish personal style. He favors comfortable, modern clothing that allows him to maintain a professional appearance while remaining at ease during his workday. Neutral colors and minimalist designs are his go-to choices, complemented by the occasional pop of color or trendy accessory.
   
-Searched Query: Chess Set
+Searched Query: House of Staunton Chess Set
 
 Current Date: June 13
 
 **OUTPUT:**
 {{
     "pros": ["Made of high-quality wood.", "Can be personalized with a name.", "Delivery time is June 15, 2 days from now."],
-    "cons": ["There are just 3 reviews for this product.", "The seller has a no return policy.", "The price is a bit high."],
-    "summary": "Since Micheal occasionaly likes to splurge money on his interests, the price is not a issue for him. The product also has a short delivery time, and can be personalized with a name. The biggest concern with this product is the lack of reviews, specially considering that Michael is data-driven and relies on reviews to make decisions.",
+    "cons": ["There are just 3 reviews for this product.", "The seller has a no return policy.", "The price is a bit high.", "The board is not from House of Staunton."],
+    "summary": "Since Micheal occasionally likes to splurge money on his interests, the price is not an issue for him. The product also has a short delivery time, and can be personalized with a name. The biggest concern with this product is the lack of reviews, specially considering that Michael is data-driven and relies on reviews to make decisions. Moreover, while it is a chess set, it is not from House of Staunton, which is NOT exactly what he searched for.",
     "price": 123.99,
     "semantic_score": "SOMEWHAT RELEVANT"
 }}
