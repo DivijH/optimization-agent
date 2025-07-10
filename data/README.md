@@ -67,11 +67,27 @@ Each JSON file in this directory defines a comprehensive persona with shopping i
 
 ### Usage in Shopping Agent
 
-The shopping agent uses these personas in two ways:
+The shopping agent uses these personas in several ways:
 
-1. **Single Agent Mode**: You can specify a custom persona via the `--persona` flag or use a JSON config file that references the `persona` and `intent` fields.
+1. **Single Agent Mode**: 
+   - Default persona: "Evelyn" (retired educator) - defined in `src/shopping_agent/config.py`
+   - Custom persona via `--persona` flag with full text
+   - JSON config file via `--config-file` that references the `persona` and `intent` fields
 
-2. **A/B Testing Mode**: The A/B testing framework randomly samples persona files from this directory, using both the persona description and intent to create diverse test scenarios.
+2. **A/B Testing Mode** (`src/analyze_query.py`):
+   - Default: Randomly samples 4 personas from this directory
+   - Configurable via `--n-agents` (default: 4)
+   - Random seed support via `--seed` for reproducible persona selection
+   - Falls back to sampling with replacement if fewer personas than agents
+
+### Default Persona
+
+When no persona is specified, the agent uses the default "Evelyn" persona:
+- **Age**: 64
+- **Profession**: Retired High School English Teacher
+- **Income**: $65,000
+- **Characteristics**: Values quality and longevity, environmentally conscious, enjoys thrift stores
+- **Default Task**: "silver, vintage-style metal belt buckle"
 
 ### Persona Diversity
 
@@ -83,4 +99,12 @@ The persona dataset includes a wide range of:
 - **Shopping Intents**: Wide variety of products and shopping goals
 - **Personalities**: Different shopping behaviors, preferences, and constraints
 
-This diversity ensures that agent testing covers a comprehensive range of real-world user scenarios and behaviors. 
+This diversity ensures that agent testing covers a comprehensive range of real-world user scenarios and behaviors.
+
+### Integration with A/B Testing
+
+The A/B testing framework (`src/analyze_query.py`) leverages this persona diversity:
+- Randomly selects personas without replacement when possible
+- Ensures each agent gets a unique persona for testing
+- Tracks which personas were used in the output data
+- Allows reproducible tests with the `--seed` parameter 

@@ -6,6 +6,25 @@ This repository contains an AI-powered shopping agent that can autonomously brow
 
 For more information, please see the overall project documentation: [Google Doc](https://docs.google.com/document/d/1ORWmq6GQMyoQZR7_b2S9Hs7l2A-e0Ce9f6EKy-pQ69Q/edit?tab=t.0#heading=h.4wbqtehjjc4)
 
+## Key Features
+
+- **Autonomous Shopping**: Browses e-commerce websites and analyzes products without human intervention
+- **Visual Analysis**: Uses screenshots and language models to understand product pages
+- **Memory Management**: Tracks analyzed products and avoids duplicates
+- **A/B Testing**: Run multiple agents with different personas for comparative analysis
+- **Cost Tracking**: Monitors token usage and API costs
+- **Decision Making**: Generates purchase recommendations based on persona preferences
+
+## Default Configuration
+
+The agent comes with sensible defaults:
+- **Task**: "silver, vintage-style metal belt buckle"
+- **Model**: "gpt-4o-mini" ($0.15/$0.60 per million tokens input/output)
+- **Viewport**: 1920x1080
+- **Temperature**: 0.7
+- **Storage**: Local and Google Cloud Storage
+
+For detailed default values for each component, see the individual README files in each directory.
 
 ### GCS Authentication
 
@@ -39,14 +58,20 @@ gcloud auth application-default login
 
 ## Quick Start
 
+### Single Agent Run
 ```bash
 python -m src.shopping_agent.main --task "large, inflatable spider decoration for halloween"
 ```
 
+### A/B Testing Multiple Agents
+```bash
+python src/analyze_query.py --task "winter jacket" --n-agents 4
+```
+
 ## Documentation
 
-- **[Core Components (`src/`)](./src/README.md)**: Detailed documentation on the shopping agent's core components and utilities.
-- **[Shopping Agent (`src/shopping_agent/`)](./src/shopping_agent/README.md)**: Documentation for the main shopping agent.
+- **[Core Components (`src/`)](./src/README.md)**: Detailed documentation on the shopping agent's core components, utilities, and default values.
+- **[Shopping Agent (`src/shopping_agent/`)](./src/shopping_agent/README.md)**: In-depth documentation for the main shopping agent including all configuration options.
 - **[Data (`data/`)](./data/README.md)**: Information about the virtual customer personas used by the agent.
 
 ## Directory Structure
@@ -55,24 +80,40 @@ python -m src.shopping_agent.main --task "large, inflatable spider decoration fo
 .
 ├── data/
 │   ├── personas/                    # Virtual customer personas for agents
-│   │   ├── ... (persona files)
-│   └── README.md                    # Information about the data
+│   │   ├── ... (200+ persona files)
+│   └── README.md                    # Persona documentation
 ├── src/
-│   ├── shopping_agent/              # Core logic for the shopping agent
-│   │   ├── main.py
-│   │   ├── agent.py
-│   │   ├── agent_actions.py
-│   │   ├── browser_utils.py
-│   │   ├── config.py
-│   │   ├── gcs_utils.py
-│   │   ├── memory.py
-│   │   ├── prompts.py
-│   │   └── token_utils.py
-│   ├── feature_suggestion.py        # Code for suggesting new query rewrites
-│   ├── semantic_relevance_match.py  # Semantic relevance analysis
-│   ├── keys/                        # Directory for API keys
-│   │   └── litellm.key              # LiteLLM API key (create this file)
+│   ├── shopping_agent/              # Core shopping agent logic
+│   │   ├── main.py                  # CLI entry point
+│   │   ├── agent.py                 # Main agent class
+│   │   ├── agent_actions.py         # Browser actions
+│   │   ├── browser_utils.py         # Browser utilities
+│   │   ├── config.py                # Configuration and defaults
+│   │   ├── gcs_utils.py             # Google Cloud Storage
+│   │   ├── memory.py                # Memory management
+│   │   ├── prompts.py               # LLM prompts
+│   │   ├── token_utils.py           # Token tracking
+│   │   └── README.md                # Agent documentation
+│   ├── analyze_query.py             # A/B testing framework
+│   ├── processing_results.py        # Results aggregation
+│   ├── feature_suggestion.py        # Query optimization
+│   ├── semantic_relevance_match.py  # Relevance validation
+│   ├── summary_prompt.txt           # Summary template
+│   ├── keys/                        # API keys directory
+│   │   └── litellm.key              # LiteLLM API key (create this)
 │   └── README.md                    # Core components documentation
 ├── requirements.txt                 # Project dependencies
 └── README.md                        # This file
 ```
+
+## Output Files
+
+Agent runs generate various output files:
+- **Debug Info**: Step-by-step execution details
+- **Screenshots**: Visual captures of browsed pages
+- **Memory**: Analyzed product information
+- **Decisions**: Purchase recommendations
+- **Token Usage**: API cost tracking
+- **Video Recording**: Optional screen capture
+
+See individual component READMEs for detailed output file descriptions.
