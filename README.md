@@ -8,23 +8,12 @@ For more information, please see the overall project documentation: [Google Doc]
 
 ## Key Features
 
-- **Autonomous Shopping**: Browses e-commerce websites and analyzes products without human intervention
+- **Autonomous Product Analysis**: Browses e-commerce websites and analyzes products without human intervention
 - **Visual Analysis**: Uses screenshots and language models to understand product pages
 - **Memory Management**: Tracks analyzed products and avoids duplicates
-- **A/B Testing**: Run multiple agents with different personas for comparative analysis
+- **Batch Testing**: Run multiple agents with different personas for comparative analysis
 - **Cost Tracking**: Monitors token usage and API costs
 - **Decision Making**: Generates purchase recommendations based on persona preferences
-
-## Default Configuration
-
-The agent comes with sensible defaults:
-- **Task**: "silver, vintage-style metal belt buckle"
-- **Model**: "gpt-4o-mini" ($0.15/$0.60 per million tokens input/output)
-- **Viewport**: 1920x1080
-- **Temperature**: 0.7
-- **Storage**: Local and Google Cloud Storage
-
-For detailed default values for each component, see the individual README files in each directory.
 
 ### GCS Authentication
 
@@ -63,7 +52,7 @@ gcloud auth application-default login
 python -m src.shopping_agent.main --task "large, inflatable spider decoration for halloween"
 ```
 
-### A/B Testing Multiple Agents
+### Batch Testing (Multiple Agents)
 ```bash
 python src/analyze_query.py --task "winter jacket" --n-agents 4
 ```
