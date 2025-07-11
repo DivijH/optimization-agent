@@ -83,11 +83,11 @@ python src/analyze_query.py --task "winter jacket" --n-agents 4
 │   │   ├── prompts.py               # LLM prompts
 │   │   ├── token_utils.py           # Token tracking
 │   │   └── README.md                # Agent documentation
-│   ├── analyze_query.py             # A/B testing framework
+│   ├── analyze_query.py             # Batch testing framework
 │   ├── processing_results.py        # Results aggregation
-│   ├── feature_suggestion.py        # Query optimization
+│   ├── feature_suggestion.py        # Query rewriting optimization
 │   ├── semantic_relevance_match.py  # Relevance validation
-│   ├── summary_prompt.txt           # Summary template
+│   ├── summary_prompt.txt           # LLM prompt for generating trends from all agents
 │   ├── keys/                        # API keys directory
 │   │   └── litellm.key              # LiteLLM API key (create this)
 │   └── README.md                    # Core components documentation
@@ -95,14 +95,5 @@ python src/analyze_query.py --task "winter jacket" --n-agents 4
 └── README.md                        # This file
 ```
 
-## Output Files
-
-Agent runs generate various output files:
-- **Debug Info**: Step-by-step execution details
-- **Screenshots**: Visual captures of browsed pages
-- **Memory**: Analyzed product information
-- **Decisions**: Purchase recommendations
-- **Token Usage**: API cost tracking
-- **Video Recording**: Optional screen capture
 
 See individual component READMEs for detailed output file descriptions.
