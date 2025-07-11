@@ -69,7 +69,7 @@ python src/analyze_query.py --task "winter jacket" --n-agents 4
 .
 ├── data/
 │   ├── personas/                    # Virtual customer personas for agents
-│   │   ├── ... (200+ persona files)
+│   │   ├── ... (1000 persona files)
 │   └── README.md                    # Persona documentation
 ├── src/
 │   ├── shopping_agent/              # Core shopping agent logic
