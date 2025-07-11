@@ -8,7 +8,7 @@ This directory contains the core logic for the Optimization Agent, including the
 Contains the main shopping agent implementation that can autonomously browse e-commerce websites and analyze products. For detailed information about each component, see the [Shopping Agent README](./shopping_agent/README.md).
 
 ### `analyze_query.py`
-A/B testing framework for running multiple shopping agents with different personas on the same query.
+Batch testing framework for running multiple shopping agents with different personas on the same query.
 
 **Default Values:**
 - `--task`: "Dunlap pocket knife"
@@ -107,7 +107,7 @@ python -m src.shopping_agent.main \
     --headless
 ```
 
-### A/B Testing Multiple Agents
+### Batch Testing Multiple Agents
 ```bash
 # Run 4 agents with random personas
 python src/analyze_query.py --task "winter jacket" --n-agents 4
