@@ -1,21 +1,19 @@
 import asyncio
 import base64
 import json
+import re
 import os
 from datetime import datetime
 from typing import TYPE_CHECKING, Any, Dict, List, Optional
 from urllib.parse import urljoin
-
 from browser_use.browser.views import BrowserStateSummary
-from browser_use.controller.views import (
-    OpenTabAction,
-    ScrollAction,
-    SwitchTabAction,
-)
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.output_parsers import JsonOutputParser
+
 from src.shopping_agent.memory import ProductMemory
 from src.shopping_agent.prompts import FINAL_DECISION_PROMPT, PRODUCT_ANALYSIS_PROMPT
+from src.shopping_agent.token_utils import update_token_usage
+from src.shopping_agent.agent_actions import save_and_upload_debug_info
 
 if TYPE_CHECKING:
     from src.shopping_agent.agent import EtsyShoppingAgent
@@ -40,8 +38,6 @@ def extract_product_name_from_url(href: str) -> Optional[str]:
     Example: /listing/719316991/giant-halloween-spider-photo-props
     """
     try:
-        import re
-
         # Pattern to match /listing/<number>/<product-name-part>
         match = re.search(r"/listing/\d+/([^/?]+)", href)
         if match:
@@ -140,7 +136,7 @@ async def analyze_product_page(
         return None
 
     _, screenshots_b64 = await scroll_and_collect(
-        agent, max_scrolls=15, stop_at_bottom=True, delay=0.3
+        agent, max_scrolls=3, stop_at_bottom=True, delay=0.3
     )
     screenshots_b64 = screenshots_b64[:3]  # cap at first 3 images
     parser = JsonOutputParser()
@@ -160,7 +156,6 @@ async def analyze_product_page(
     try:
         ai_message = await agent.llm.ainvoke(messages)
         if hasattr(ai_message, "usage_metadata") and ai_message.usage_metadata:
-            from src.shopping_agent.token_utils import update_token_usage
 
             await update_token_usage(
                 agent, agent.llm.model_name, ai_message.usage_metadata, usage_type="analysis"
@@ -233,87 +228,106 @@ async def analyze_product_page(
         agent._log(f"   - An error occurred during product analysis: {e}")
         return None
 
-
-async def choose_product_from_search(
-    agent: "EtsyShoppingAgent", state: BrowserStateSummary
-) -> Optional[Dict[str, Any]]:
+async def extract_all_listings_from_search(agent: "EtsyShoppingAgent") -> List[Dict[str, Any]]:
     """
-    Finds the next unvisited product on a search results page and returns an action to click it.
-    If no unvisited products are in the current viewport, it scrolls down.
+    Extracts all product listings from the search results page by parsing the HTML directly.
+    Returns a list of all available listings to be processed sequentially.
     """
-    product_listings = []
-    for index, element in state.selector_map.items():
-        attributes = element.attributes or {}
-        href = attributes.get("href", "")
-
-        is_product_listing = "data-listing-id" in attributes and "/listing/" in href
-
-        if is_product_listing:
-            listing_id = attributes.get("data-listing-id")
-            if not listing_id:
-                continue
-
-            product_name = extract_product_name_from_url(href)
-            if not product_name:
-                element_text = element.get_all_text_till_next_clickable_element()
-                title_candidates = [
-                    line.strip()
-                    for line in element_text.split("\n")
-                    if len(line.strip()) > 10
-                ]
-                product_name = (
-                    title_candidates[0] if title_candidates else element_text[:100]
-                )
-
-            if listing_id in agent.visited_listing_ids:
-                continue
-
-            element_text = element.get_all_text_till_next_clickable_element()
-            full_url = urljoin("https://www.etsy.com", href) if href.startswith("/") else href
-            if (
-                "ad from etsy seller" not in element_text.lower()
-                and "rtisement" not in element_text.lower()
-                and not agent.memory.get_product_by_url(full_url)
-            ):
-                product_listings.append(
-                    {
-                        "index": index,
-                        "text": element_text,
-                        "product_name": product_name,
-                        "href": href,
-                        "listing_id": listing_id,
-                    }
-                )
-
-    if product_listings:
-        chosen_listing = product_listings[0]
-        chosen_product_name = chosen_listing["product_name"]
-        chosen_listing_id = chosen_listing["listing_id"]
-
-        agent._log(
-            f"   - Found unvisited product: '{chosen_product_name}' (ID: {chosen_listing_id}). Opening it."
-        )
-        href = chosen_listing["href"]
-
-        agent.visited_listing_ids.add(chosen_listing_id)
-
-        if href.startswith("/"):
-            href = urljoin("https://www.etsy.com", href)
-
-        return {
-            "open_tab": OpenTabAction(url=href),
-            "switch_tab": SwitchTabAction(page_id=-1),
-            "product_name": chosen_product_name,
-            "listing_id": chosen_listing_id,
+    
+    all_listings = []
+    agent._log("🔍 Extracting all listings from search page HTML...")
+    
+    # Get the full HTML content of the page
+    if not agent.browser_session:
+        agent._log("   - No browser session available")
+        return []
+    
+    try:
+        page = await agent.browser_session.get_current_page()
+        html_content = await page.content()
+        agent._log(f"   - Retrieved HTML content: ({len(html_content)} characters)")
+    except Exception as e:
+        agent._log(f"   - Failed to get HTML content: {e}")
+        return []
+    
+    # Parse HTML to find all product listings
+    # Look for elements with data-listing-id and href containing /listing/
+    listing_pattern = r'<a[^>]*?data-listing-id="(\d+)"[^>]*?href="([^"]*?/listing/[^"]*?)"[^>]*?>(.*?)</a>'
+    matches = re.findall(listing_pattern, html_content, re.DOTALL)
+    
+    agent._log(f"   - Found {len(matches)} potential listings in HTML")
+    
+    for listing_id, href, inner_html in matches:
+        # Skip if href is empty or invalid
+        if not href or not href.strip():
+            continue
+            
+        # Skip if already visited
+        if listing_id in agent.visited_listing_ids:
+            continue
+            
+        # Skip if already in our collection
+        if any(listing["listing_id"] == listing_id for listing in all_listings):
+            continue
+            
+        # Build full URL
+        full_url = urljoin("https://www.etsy.com", href) if href.startswith("/") else href
+        
+        # Skip if already analyzed
+        if agent.memory.get_product_by_url(full_url):
+            continue
+            
+        # Extract product name from URL
+        product_name = extract_product_name_from_url(href)
+        if not product_name:
+            # Try to extract from title attribute or inner text
+            title_match = re.search(r'title="([^"]*)"', inner_html)
+            if title_match:
+                product_name = title_match.group(1).strip()
+            else:
+                # Extract text content from inner HTML
+                text_content = re.sub(r'<[^>]*>', '', inner_html)
+                text_content = re.sub(r'\s+', ' ', text_content).strip()
+                product_name = text_content[:100] if text_content else f"Product {listing_id}"
+        
+        # Check for ads
+        inner_html_lower = inner_html.lower()
+        if ("ad from etsy seller" in inner_html_lower or 
+            "ad by etsy seller" in inner_html_lower or
+            "advertisement" in inner_html_lower or
+            "sponsored" in inner_html_lower):
+            continue
+        
+        all_listings.append({
+            "product_name": product_name,
+            "href": href,
+            "listing_id": listing_id,
+            "full_url": full_url,
+        })
+    
+    # Save extraction debug information
+    if (agent.save_local or agent.save_gcs) and agent.debug_path:
+        
+        extraction_debug_info = {
+            "type": "html_listing_extraction",
+            "total_listings_found": len(all_listings),
+            "html_content_length": len(html_content),
+            "raw_matches_found": len(matches),
+            "listings_summary": [
+                {
+                    "listing_id": listing["listing_id"],
+                    "product_name": listing["product_name"],
+                    "href": listing["href"]
+                }
+                for listing in all_listings
+            ]
         }
-
-    if state.pixels_below and state.pixels_below > 0:
-        agent._log("   - No new products visible. Scrolling down to find more.")
-        scroll_amount = int(agent.viewport_height * 0.3)
-        return {"scroll_down": ScrollAction(amount=scroll_amount)}
-
-    agent._log("   - Reached end of search results page.")
-    return None
+        
+        await save_and_upload_debug_info(agent, extraction_debug_info, "_extracted_listings")
+        agent._log("   - 💾 Saved HTML extraction debug info")
+    
+    agent._log(f"✅ Extracted {len(all_listings)} total listings from HTML")
+    return all_listings
 
 
 async def make_final_purchase_decision(agent: "EtsyShoppingAgent"):
@@ -363,8 +377,6 @@ Here are the products that have been analyzed:
     try:
         ai_message = await agent.final_decision_llm.ainvoke(messages)
         if hasattr(ai_message, "usage_metadata") and ai_message.usage_metadata:
-            from src.shopping_agent.token_utils import update_token_usage
-
             await update_token_usage(
                 agent,
                 agent.final_decision_llm.model_name,
@@ -372,6 +384,18 @@ Here are the products that have been analyzed:
                 usage_type="final_decision",
             )
         response_content = ai_message.content.strip()
+        
+        # Strip markdown code blocks if present
+        if response_content.startswith("```json"):
+            response_content = response_content[7:]  # Remove "```json"
+        elif response_content.startswith("```"):
+            response_content = response_content[3:]   # Remove "```"
+        
+        if response_content.endswith("```"):
+            response_content = response_content[:-3]  # Remove trailing "```"
+        
+        response_content = response_content.strip()
+        
         try:
             decision_json = json.loads(response_content)
             if "total_cost" not in decision_json or not isinstance(

@@ -2,6 +2,7 @@ import json
 import re
 from pathlib import Path
 import click
+import sys
 from typing import List
 import os
 from collections import defaultdict
@@ -9,6 +10,11 @@ from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage
 
 CURRENT_DIR = Path(__file__).resolve().parent
+project_root = str(CURRENT_DIR.parent)
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
+from src.shopping_agent.config import VENDOR_DISCOUNT_GEMINI
 
 # Set up OpenAI credentials
 try:
@@ -89,7 +95,14 @@ def process_token_usage(agent_dirs: List[Path]):
     token_usage_data = {
         'models': {},
         'total_session_cost': 0.0,
+        'total_session_cost_after_discount': 0.0,
+        'vendor_discount_applied': 0.0,
+        'vendor_discount_percentage': '0%',
     }
+    
+    total_discount_applied = 0.0
+    agents_with_discount = 0
+    
     for agent_dir in agent_dirs:
         token_file = agent_dir / "_token_usage.json"
         if not token_file.exists():
@@ -99,6 +112,14 @@ def process_token_usage(agent_dirs: List[Path]):
             data = json.load(f)
 
         token_usage_data['total_session_cost'] += data['total_session_cost']
+        token_usage_data['total_session_cost_after_discount'] += data.get('total_session_cost_after_discount', data['total_session_cost'])
+        
+        # Track vendor discount
+        agent_discount = data.get('vendor_discount_applied', 0.0)
+        if agent_discount > 0:
+            total_discount_applied += agent_discount
+            agents_with_discount += 1
+        
         for model_name in data['models'].keys():
             if model_name not in token_usage_data['models']:
                 token_usage_data['models'][model_name] = data['models'][model_name]
@@ -120,7 +141,22 @@ def process_token_usage(agent_dirs: List[Path]):
                 token_usage_data['models'][model_name]['final_decision']['output_cost'] += data['models'][model_name]['final_decision']['output_cost']
                 token_usage_data['models'][model_name]['final_decision']['total_cost'] += data['models'][model_name]['final_decision']['total_cost']
 
+    # Calculate average costs
     token_usage_data['avg_total_cost'] = token_usage_data['total_session_cost'] / len(agent_dirs)
+    token_usage_data['avg_total_cost_after_discount'] = token_usage_data['total_session_cost_after_discount'] / len(agent_dirs)
+    
+    # Calculate vendor discount statistics
+    if agents_with_discount > 0:
+        token_usage_data['vendor_discount_applied'] = total_discount_applied / agents_with_discount
+        token_usage_data['vendor_discount_percentage'] = f"{token_usage_data['vendor_discount_applied'] * 100:.0f}%"
+    
+    # Add metadata about vendor discount
+    token_usage_data['vendor_discount_metadata'] = {
+        'agents_with_discount': agents_with_discount,
+        'total_agents': len(agent_dirs),
+        'discount_rate': VENDOR_DISCOUNT_GEMINI,
+        'total_savings': token_usage_data['total_session_cost'] - token_usage_data['total_session_cost_after_discount']
+    }
 
     output_file = agent_dirs[0].parent / "_token_usage.json"
     with open(output_file, 'w') as f:
@@ -461,7 +497,7 @@ def generate_summary(agent_dirs: List[Path], model_name: str = "openai/o4-mini",
 @click.option(
     "--model",
     "model_name",
-    default="openai/o4-mini",
+    default="global-gemini-2.5-flash",
     show_default=True,
     help="LLM model to use for generating summary.",
 )

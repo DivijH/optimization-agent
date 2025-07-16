@@ -5,12 +5,15 @@ MODEL_PRICING = {
     "gpt-4o": {"input": 2.50, "output": 10.00},
     "o3-mini": {"input": 1.10, "output": 4.40},
     "openai/o4-mini": {"input": 1.10, "output": 4.40},
+    "global-gemini-2.5-flash-lite-preview-06-17": {"input": 0.10, "output": 0.40},  ### The cheapest model (no thinking)
+    "global-gemini-2.5-flash": {"input": 0.30, "output": 2.50},  ### The cheapest model (with thinking)
+    # "search_vertex_ai/gemini-2.5-flash-preview-04-17": {"input": 0.15, "output": 0.60}
 }
 
 # Constants for token usage breakdown
-IMAGE_TOKEN_PERCENTAGE = 0.7806  # 78.06% of analysis tokens are from images
-TEXT_TOKEN_PERCENTAGE = 0.2194   # 21.94% of analysis tokens are from text
-
+IMAGE_TOKEN_PERCENTAGE = 0.25  # 25% of analysis tokens are from images
+TEXT_TOKEN_PERCENTAGE = 0.75   # 75% of analysis tokens are from text
+VENDOR_DISCOUNT_GEMINI = 0.35  # 35% discount on Gemini models
 
 # Default task and persona for the agent (Persona 316)
 DEFAULT_TASK = """

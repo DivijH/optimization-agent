@@ -3,7 +3,7 @@ import json
 import os
 from typing import TYPE_CHECKING, Any, Dict, Optional
 
-from src.shopping_agent.config import IMAGE_TOKEN_PERCENTAGE, MODEL_PRICING, TEXT_TOKEN_PERCENTAGE
+from src.shopping_agent.config import IMAGE_TOKEN_PERCENTAGE, MODEL_PRICING, TEXT_TOKEN_PERCENTAGE, VENDOR_DISCOUNT_GEMINI
 
 if TYPE_CHECKING:
     from src.shopping_agent.agent import EtsyShoppingAgent
@@ -24,9 +24,19 @@ async def save_token_usage(agent: "EtsyShoppingAgent"):
         if "final_decision" in model_usage:
             total_session_cost += model_usage["final_decision"]["total_cost"]
 
+    # Apply vendor discount for Gemini models
+    total_session_cost_after_discount = total_session_cost
+    vendor_discount_applied = 0.0
+    if 'gemini' in agent.model_name.lower():
+        total_session_cost_after_discount = total_session_cost * (1 - VENDOR_DISCOUNT_GEMINI)
+        vendor_discount_applied = VENDOR_DISCOUNT_GEMINI
+
     token_usage_data = {
         "models": agent.token_usage,
         "total_session_cost": total_session_cost,
+        "total_session_cost_after_discount": total_session_cost_after_discount,
+        "vendor_discount_applied": vendor_discount_applied,
+        "vendor_discount_percentage": f"{vendor_discount_applied * 100:.0f}%" if vendor_discount_applied > 0 else "0%",
     }
 
     # Save locally if enabled

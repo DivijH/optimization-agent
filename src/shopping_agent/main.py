@@ -57,6 +57,7 @@ async def async_main(agent: EtsyShoppingAgent):
 @click.command()
 @click.option("--config-file", type=click.Path(exists=True, dir_okay=False, readable=True), default=None, help="Path to a JSON file containing 'intent' and 'persona' keys. Overrides --task and --persona.")
 @click.option("--task", default=DEFAULT_TASK, help="The shopping task for the agent.")
+@click.option("--curr_query", default=None, help="The current query for the agent. Defaults to the task.")
 @click.option("--persona", default=DEFAULT_PERSONA, help="The persona for the agent.")
 @click.option("--manual", is_flag=True, help="Wait for user to press Enter after each agent action.")
 @click.option("--headless", is_flag=True, help="Run the browser in headless mode.")
@@ -64,7 +65,7 @@ async def async_main(agent: EtsyShoppingAgent):
 @click.option("--debug-path", type=click.Path(), default="debug_run", help="Path to save debug artifacts, such as screenshots.")
 @click.option("--width", default=1920, help="The width of the browser viewport.")
 @click.option("--height", default=1080, help="The height of the browser viewport.")
-@click.option("--model", "model_name", default="gpt-4o-mini", help="Model name to use.")
+@click.option("--model", "model_name", default="global-gemini-2.5-flash", help="Model name to use.")
 @click.option("--final-decision-model", "final_decision_model_name", default=None, help="Model name for the final decision. Defaults to the main model.")
 @click.option("--temperature", default=0.7, type=float, help="Sampling temperature for the language model (0-2).")
 @click.option("--record-video", is_flag=True, help="Record the agent's browser session and save it to the debug path.")
@@ -76,6 +77,7 @@ async def async_main(agent: EtsyShoppingAgent):
 def cli(
     config_file,
     task,
+    curr_query,
     persona,
     manual,
     headless,
@@ -107,6 +109,7 @@ def cli(
 
     agent = EtsyShoppingAgent(
         task=task,
+        curr_query=curr_query,
         persona=persona,
         manual=manual,
         headless=headless,

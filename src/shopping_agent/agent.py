@@ -1,3 +1,4 @@
+import asyncio
 import json
 import logging
 import os
@@ -15,9 +16,11 @@ from browser_use.browser.views import BrowserStateSummary
 from browser_use.controller.service import Controller
 from browser_use.controller.views import (
     CloseTabAction,
-    InputTextAction,
-    SendKeysAction,
+    # InputTextAction,
+    # SendKeysAction,
     GoToUrlAction,
+    OpenTabAction,
+    SwitchTabAction,
 )
 from langchain_core.language_models.chat_models import BaseChatModel
 from langchain_openai import ChatOpenAI
@@ -31,11 +34,11 @@ from src.shopping_agent.agent_actions import (
 )
 from src.shopping_agent.browser_utils import (
     analyze_product_page,
-    choose_product_from_search,
-    find_search_bar,
+    # find_search_bar,
     make_final_purchase_decision,
+    extract_all_listings_from_search,
 )
-from src.shopping_agent.config import DEFAULT_PERSONA, DEFAULT_TASK, MODEL_PRICING
+from src.shopping_agent.config import DEFAULT_PERSONA, DEFAULT_TASK, MODEL_PRICING, VENDOR_DISCOUNT_GEMINI
 from src.shopping_agent.gcs_utils import GCSManager
 
 
@@ -46,6 +49,7 @@ class EtsyShoppingAgent:
     """
 
     task: str = DEFAULT_TASK
+    curr_query: Optional[str] = None
     persona: str = DEFAULT_PERSONA
     manual: bool = False
     headless: bool = False
@@ -72,7 +76,7 @@ class EtsyShoppingAgent:
     gcs_prefix: str = "smu-agent-optimizer"
 
     # Internal state, not initialized by the user
-    history: List[str] = field(init=False, default_factory=list)
+    # history: List[str] = field(init=False, default_factory=list)
     browser_session: Optional[BrowserSession] = field(init=False, default=None)
     controller: Controller = field(init=False, default_factory=Controller)
     llm: BaseChatModel = field(init=False)
@@ -80,6 +84,9 @@ class EtsyShoppingAgent:
     memory: MemoryModule = field(init=False, default_factory=MemoryModule)
     current_product_name: Optional[str] = field(init=False, default=None)
     visited_listing_ids: set = field(init=False, default_factory=set)
+    listings_queue: List[Dict[str, Any]] = field(init=False, default_factory=list)
+    current_listing_index: int = field(init=False, default=0)
+    listings_extracted: bool = field(init=False, default=False)
     token_usage: Dict[str, Dict[str, Any]] = field(init=False, default_factory=dict)
     _record_proc: Optional[subprocess.Popen] = field(
         init=False, default=None, repr=False
@@ -88,11 +95,13 @@ class EtsyShoppingAgent:
 
     def __post_init__(self):
         """Initializes the agent, handling debug path setup."""
+        if not self.curr_query:
+            self.curr_query = self.task
+
         self._setup_llms()
         self._setup_debug_path()
         if self.save_gcs:
             self.gcs_manager = GCSManager(self)
-        self._log(f"Using task as the only search query: {self.task}")
 
     def _setup_llms(self):
         if self.model_name not in MODEL_PRICING:
@@ -160,55 +169,141 @@ class EtsyShoppingAgent:
         self, state: BrowserStateSummary, step: int
     ) -> Optional[Dict[str, Any]]:
         self._log("🤔 Thinking...")
-        self._log(f"   - Current URL: {state.url}")
-        self._log(f"   - Current Task: {self.task}")
+        
+        try:
+            self._log(f"   - Current URL: {state.url}")
 
-        if "etsy.com" not in state.url:
-            return self.navigate_to_etsy_search()
+            if "etsy.com" not in state.url:
+                return self.navigate_to_etsy_search()
 
-        if "etsy.com/search" in state.url:
-            return await choose_product_from_search(self, state)
+            if "etsy.com/search" in state.url:
+                return await self.handle_search_page(state)
 
-        elif "etsy.com/listing" in state.url:
-            return await self.handle_listing_page(state, step)
+            elif "etsy.com/listing" in state.url:
+                return await self.handle_listing_page(state, step)
 
-        if (
-            search_bar := find_search_bar(state)
-        ) and f"searched_{self.task}" not in self.history:
-            return self.perform_search(search_bar)
+            # if (
+            #     search_bar := find_search_bar(state)
+            # ) and f"searched_{self.curr_query}" not in self.history:
+            #     return self.perform_search(search_bar)
 
-        self._log("   - No specific action decided.")
-        return None
+            self._log("   - No specific action decided.")
+            return None
+            
+        except Exception as e:
+            self._log(f"   ❌ Error in _think method: {e}")
+            # Return a safe fallback action instead of crashing
+            if "etsy.com" not in state.url:
+                self._log("   - Falling back to Etsy navigation")
+                return self.navigate_to_etsy_search()
+            else:
+                self._log("   - No safe fallback action available")
+                return None
+
+    async def handle_search_page(self, state: BrowserStateSummary) -> Optional[Dict[str, Any]]:
+        """
+        Handles the search page by extracting all listings first, then processing them one by one.
+        """
+        try:
+            # If we haven't extracted listings yet, extract them all first
+            if not self.listings_extracted:
+                self.listings_queue = await extract_all_listings_from_search(self)
+                self.listings_extracted = True
+                self.current_listing_index = 0
+                
+                if not self.listings_queue:
+                    self._log("   - No listings found on search page.")
+                    return None
+                
+                self._log(f"   - Ready to process {len(self.listings_queue)} listings sequentially.")
+            
+            # Process the next listing in the queue
+            if self.current_listing_index < len(self.listings_queue):
+                listing = self.listings_queue[self.current_listing_index]
+                listing_id = listing["listing_id"]
+                product_name = listing["product_name"]
+                href = listing["href"]
+                
+                self._log(f"   - Processing listing {self.current_listing_index + 1}/{len(self.listings_queue)}: '{product_name}' (ID: {listing_id})")
+                
+                # Mark this listing as visited
+                self.visited_listing_ids.add(listing_id)
+                
+                # Move to next listing for next iteration
+                self.current_listing_index += 1
+                
+                # Build full URL
+                if href.startswith("/"):
+                    from urllib.parse import urljoin
+                    href = urljoin("https://www.etsy.com", href)
+                
+                return {
+                    "open_tab": OpenTabAction(url=href),
+                    "switch_tab": SwitchTabAction(page_id=-1),
+                    "product_name": product_name,
+                    "listing_id": listing_id,
+                }
+            
+            # All listings processed
+            self._log("   - All listings from search page have been processed.")
+            return None
+            
+        except Exception as e:
+            self._log(f"   ❌ Error handling search page: {e}")
+            # Try to continue with remaining listings if possible
+            if hasattr(self, 'current_listing_index') and hasattr(self, 'listings_queue'):
+                if self.current_listing_index < len(self.listings_queue):
+                    self.current_listing_index += 1
+                    self._log(f"   - Skipping to next listing ({self.current_listing_index}/{len(self.listings_queue)})")
+                    return await self.handle_search_page(state)
+            self._log("   - No recovery possible from search page error")
+            return None
 
     def navigate_to_etsy_search(self):
-        search_query_encoded = quote(self.task)
+        search_query_encoded = quote(self.curr_query)
         search_url = f"https://www.etsy.com/search?q={search_query_encoded}&application_behavior=default"
-        self._log(f"   - Initial navigation. Going to search page for '{self.task}'.")
+        self._log(f"   - Initial navigation. Going to search page for '{self.curr_query}'.")
         return {
             "go_to_url": GoToUrlAction(url=search_url),
-            "search_query": self.task,
+            "search_query": self.curr_query,
         }
 
     async def handle_listing_page(self, state, step):
-        if self.current_product_name:
-            self._log(f"   - Analyzing product: {self.current_product_name}")
-        await analyze_product_page(self, state, step, self.current_product_name)
+        try:
+            if self.current_product_name:
+                self._log(f"   - Analyzing product: {self.current_product_name}")
+            
+            await analyze_product_page(self, state, step, self.current_product_name)
 
-        current_tab_id = next(
-            (tab.page_id for tab in state.tabs if tab.url == state.url), None
-        )
+            current_tab_id = next(
+                (tab.page_id for tab in state.tabs if tab.url == state.url), None
+            )
 
-        if current_tab_id is not None and current_tab_id != 0:
-            return {"close_tab": CloseTabAction(page_id=current_tab_id)}
-        return None
+            if current_tab_id is not None and current_tab_id != 0:
+                return {"close_tab": CloseTabAction(page_id=current_tab_id)}
+            return None
+            
+        except Exception as e:
+            self._log(f"   ❌ Error handling listing page: {e}")
+            # Try to close the tab anyway to prevent browser from getting stuck
+            try:
+                current_tab_id = next(
+                    (tab.page_id for tab in state.tabs if tab.url == state.url), None
+                )
+                if current_tab_id is not None and current_tab_id != 0:
+                    self._log("   - Attempting to close tab despite error")
+                    return {"close_tab": CloseTabAction(page_id=current_tab_id)}
+            except Exception as close_error:
+                self._log(f"   - Could not close tab: {close_error}")
+            return None
 
-    def perform_search(self, search_bar_index: int):
-        self._log(f"   - Found search bar. Searching for '{self.task}'.")
-        return {
-            "input_text": InputTextAction(index=search_bar_index, text=self.task),
-            "send_keys": SendKeysAction(keys="Enter"),
-            "search_query": self.task,
-        }
+    # def perform_search(self, search_bar_index: int):
+    #     self._log(f"   - Found search bar. Searching for '{self.curr_query}'.")
+    #     return {
+    #         "input_text": InputTextAction(index=search_bar_index, text=self.curr_query),
+    #         "send_keys": SendKeysAction(keys="Enter"),
+    #         "search_query": self.curr_query,
+    #     }
 
     async def run(self):
         """Main agent workflow for online shopping on Etsy."""
@@ -219,23 +314,51 @@ class EtsyShoppingAgent:
             self._start_screen_recording()
 
         await self.start_browser_session()
+        
+        # Initial health check
+        await self._check_browser_session_health()
+        
         Action = self.controller.registry.create_action_model()
         step = 0
         while not self.max_steps or step < self.max_steps:
             step += 1
             self._log(f"\n--- Step {step}/{self.max_steps or '∞'} ---")
 
-            state = await self.browser_session.get_state_summary(
-                cache_clickable_elements_hashes=True
-            )
-            if "etsy.com/search" in state.url:
-                await save_and_upload_screenshots(self, state, step)
+            # Check browser session health before each step
+            is_healthy = await self._check_browser_session_health()
+            if not is_healthy:
+                self._log("   ⚠️ Browser session unhealthy, attempting restart...")
+                try:
+                    await self._restart_browser_session()
+                    is_healthy = await self._check_browser_session_health()
+                    if not is_healthy:
+                        self._log("   ❌ Browser session restart failed, ending agent run")
+                        break
+                except Exception as e:
+                    self._log(f"   ❌ Browser session restart failed: {e}")
+                    break
 
-            action_plan = await self._think(state, step)
+            try:
+                state = await self.browser_session.get_state_summary(
+                    cache_clickable_elements_hashes=True
+                )
+                if "etsy.com/search" in state.url:
+                    await save_and_upload_screenshots(self, step)
 
-            await self.execute_step(step, state, action_plan, Action)
-            if not action_plan:
-                break
+                action_plan = await self._think(state, step)
+
+                await self.execute_step(step, state, action_plan, Action)
+                if not action_plan:
+                    break
+                    
+            except Exception as e:
+                self._log(f"   ❌ Error in step {step}: {e}")
+                # Check if this is a browser-related error
+                if "browser" in str(e).lower() or "context" in str(e).lower():
+                    self._log("   ⚠️ Browser-related error detected, checking session health...")
+                    await self._check_browser_session_health()
+                # Continue with next step instead of crashing
+                continue
 
         self._log("\n✅ Shopping agent finished.")
 
@@ -286,6 +409,65 @@ class EtsyShoppingAgent:
         )
         await self.browser_session.start()
         self._log("✅ Browser session started.")
+
+    async def _restart_browser_session(self):
+        """Safely restart the browser session when the context becomes corrupted."""
+        self._log("🔄 Restarting browser session...")
+        
+        # First, try to safely shut down the current session
+        if self.browser_session:
+            try:
+                await self.browser_session.kill()
+                self._log("   - Old browser session terminated")
+            except Exception as e:
+                self._log(f"   - Warning: Error terminating old session: {e}")
+        
+        # Clear the session reference
+        self.browser_session = None
+        
+        # Add a small delay to let system resources free up
+        await asyncio.sleep(2.0)
+        
+        # Create a new session
+        try:
+            await self.start_browser_session()
+            self._log("   - New browser session started successfully")
+        except Exception as e:
+            self._log(f"   - Error starting new browser session: {e}")
+            self.browser_session = None
+            raise
+
+    async def _check_browser_session_health(self):
+        """Check the health of the browser session and log its state."""
+        if not self.browser_session:
+            self._log("   🔍 Browser session health: Session is None")
+            return False
+        
+        try:
+            # Check if browser context exists
+            if not hasattr(self.browser_session, 'browser_context'):
+                self._log("   🔍 Browser session health: No browser_context attribute")
+                return False
+            
+            if self.browser_session.browser_context is None:
+                self._log("   🔍 Browser session health: Browser context is None")
+                return False
+            
+            # Try to get current state with required parameter
+            state = await self.browser_session.get_state_summary(
+                cache_clickable_elements_hashes=True
+            )
+            if state:
+                active_tabs = len(state.tabs) if state.tabs else 0
+                self._log(f"   🔍 Browser session health: OK (URL: {state.url}, {active_tabs} tabs)")
+                return True
+            else:
+                self._log("   🔍 Browser session health: Could not get state summary")
+                return False
+                
+        except Exception as e:
+            self._log(f"   🔍 Browser session health: Error checking health - {e}")
+            return False
 
     async def execute_step(self, step, state, action_plan, Action):
         serializable_action_plan = create_debug_info(action_plan)
@@ -391,12 +573,55 @@ class EtsyShoppingAgent:
     async def shutdown(self):
         """Saves memory, makes final decision, and cleans up resources."""
         self._log("\n--- Shutting down and saving state ---")
+        
+        # Stop screen recording first
         if self._record_proc:
             self._stop_screen_recording()
+        
+        # Enhanced browser session cleanup
         if self.browser_session:
-            await self.browser_session.kill()
+            try:
+                self._log("🔄 Cleaning up browser session...")
+                
+                # First, try to close all tabs gracefully
+                try:
+                    state = await self.browser_session.get_state_summary(
+                        cache_clickable_elements_hashes=True
+                    )
+                    if state and state.tabs:
+                        for tab in state.tabs:
+                            if tab.page_id != 0:  # Don't close the main tab
+                                try:
+                                    await self.browser_session.close_tab(tab.page_id)
+                                except Exception as e:
+                                    self._log(f"   - Warning: Could not close tab {tab.page_id}: {e}")
+                except Exception as e:
+                    self._log(f"   - Warning: Could not get state for tab cleanup: {e}")
+                
+                # Kill the browser session
+                await self.browser_session.kill()
+                self._log("   - Browser session terminated successfully")
+                
+            except Exception as e:
+                self._log(f"   - Error during browser cleanup: {e}")
+                # Force cleanup if normal shutdown fails
+                try:
+                    if hasattr(self.browser_session, 'browser') and self.browser_session.browser:
+                        await self.browser_session.browser.close()
+                    self._log("   - Forced browser cleanup completed")
+                except Exception as force_error:
+                    self._log(f"   - Force cleanup also failed: {force_error}")
+            finally:
+                self.browser_session = None
+                self._log("   - Browser session reference cleared")
+        
+        # Save memory and scores
         await self.save_memory_and_scores()
+        
+        # Make final purchase decision
         await make_final_purchase_decision(self)
+        
+        # Log final token usage
         self.log_final_token_usage()
 
     async def save_memory_and_scores(self):
@@ -495,7 +720,12 @@ class EtsyShoppingAgent:
             self._log(f"   - Model Total Cost: ${model_total_cost:.6f}")
             total_session_cost += model_total_cost
 
-        self._log(f"\n   💰 Total Session Cost: ${total_session_cost:.6f}")
+        if 'gemini' in self.model_name.lower():
+            total_session_cost_after_discount = total_session_cost * (1 - VENDOR_DISCOUNT_GEMINI)
+            self._log(f"\n   💰 Total Session Cost (after discount): ${total_session_cost_after_discount:.6f}")
+        else:
+            self._log(f"\n   💰 Total Session Cost: ${total_session_cost:.6f}")
+        
         if self.debug_path:
             self._log(
                 f"   - Token usage saved to {os.path.join(self.debug_path, '_token_usage.json')}"

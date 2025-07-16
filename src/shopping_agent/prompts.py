@@ -133,6 +133,48 @@ Current Date: September 10
     "price": 100.0,
     "semantic_score": "HIGHLY RELEVANT"
 }}
+
+**EXAMPLE INPUT 4:**
+
+Persona: Jack
+
+Background:
+Jack is a successful entrepreneur and the founder of a fast-growing technology startup. He is passionate about developing innovative products that can disrupt existing industries and improve people's lives.
+
+Demographics:
+Age: 32
+Gender: Male
+Education: Bachelor's degree
+Profession: Entrepreneur, Startup Founder
+Income: $175,000
+
+Financial Situation:
+As the founder of a thriving startup, Jack has a high income that allows him to live comfortably. He is financially savvy and invests a significant portion of his earnings into his business and personal investments.
+
+Shopping Habits:
+Jack enjoys shopping for high-quality, fashionable items that reflect his personal style and status. He likes to stay up-to-date with the latest trends and is willing to invest in luxury brands and products. However, he also values efficiency and practicality in his shopping experiences.
+
+Professional Life:
+Jack's primary focus is on growing his startup and leading his team to success. He spends long hours working on strategic planning, product development, and securing funding. Despite his demanding schedule, he also makes time to network and attend industry events to stay connected with the entrepreneurial community.
+
+Personal Style:
+Jack has a refined, sophisticated personal style. He favors well-tailored suits, designer casual wear, and stylish accessories. He likes to project an image of professionalism and success, and he takes pride in his appearance.
+
+Jack loves to travel and often flies with American Airlines. He typically wakes up at 7 am every day to start his busy schedule.
+Jack lives in San Francisco.
+
+Searched Query: sweater
+
+Current Date: August 2
+
+**OUTPUT:**
+{{
+    "pros": ["The product is a sweater aligning with the searched query.", "The product is made of high-quality material.", "The product is stylish and fashionable.", "It is from a luxury brand."],
+    "cons": ["The product is a gift item, which is not mentioned in the searched query.", "The product is designed as a gift item for a female recipient."],
+    "summary": "The sweater is from a luxury brand, aligning with Jack's personal style and status. However, it is a gift item, which is not mentioned in the searched query. Moreover, it is designed as a gift item for a female recipient, which Jack is not looking for explicitly. This product is not a perfect fit for Jack",
+    "price": 100.0,
+    "semantic_score": "SOMEWHAT RELEVANT"
+}}
 """.strip()
 
 # Prompt for the final purchase decision

@@ -108,6 +108,7 @@ async def _run_single_agent(
     *,
     agent_id: int,
     task: str,
+    curr_query: Optional[str],
     persona_file: Path,
     max_steps: int,
     headless: bool,
@@ -118,6 +119,10 @@ async def _run_single_agent(
     final_decision_model_name: Optional[str],
     temperature: float,
     record_video: bool,
+    save_local: bool,
+    save_gcs: bool,
+    gcs_bucket: str,
+    gcs_prefix: str,
 ) -> str:
     """Create and execute a single `EtsyShoppingAgent` instance."""
 
@@ -132,6 +137,7 @@ async def _run_single_agent(
 
     agent = EtsyShoppingAgent(
         task=task,
+        curr_query=curr_query if curr_query is not None else task,
         persona=persona,
         headless=headless,
         max_steps=max_steps,
@@ -145,6 +151,10 @@ async def _run_single_agent(
         final_decision_model_name=final_decision_model_name,
         temperature=temperature,
         record_video=record_video,
+        save_local=save_local,
+        save_gcs=save_gcs,
+        gcs_bucket_name=gcs_bucket,
+        gcs_prefix=gcs_prefix,
     )
 
     try:
@@ -235,6 +245,12 @@ def _stop_main_recording(proc: Optional[subprocess.Popen]):
     help="The shopping task for all agents to perform.",
 )
 @click.option(
+    "--curr-query",
+    type=str,
+    default=None,
+    help="The current query for the agents to search. If not provided, defaults to the task value.",
+)
+@click.option(
     "--n-agents",
     type=int,
     default=4,
@@ -257,7 +273,7 @@ def _stop_main_recording(proc: Optional[subprocess.Popen]):
 @click.option(
     "--model-name",
     type=str,
-    default="openai/o4-mini",
+    default="global-gemini-2.5-flash",
     show_default=True,
     help="Model name to use for the agents.",
 )
@@ -311,6 +327,32 @@ def _stop_main_recording(proc: Optional[subprocess.Popen]):
     help="Record a video of each agent's session.",
 )
 @click.option(
+    "--save-local/--no-save-local",
+    default=True,
+    show_default=True,
+    help="Save data to local directory.",
+)
+@click.option(
+    "--save-gcs/--no-save-gcs",
+    default=True,
+    show_default=True,
+    help="Save data to Google Cloud Storage.",
+)
+@click.option(
+    "--gcs-bucket",
+    type=str,
+    default="training-dev-search-data-jtzn",
+    show_default=True,
+    help="GCS bucket name for data storage.",
+)
+@click.option(
+    "--gcs-prefix",
+    type=str,
+    default="smu-agent-optimizer",
+    show_default=True,
+    help="GCS prefix for data storage.",
+)
+@click.option(
     "--headless/--no-headless",
     default=True,
     show_default=True,
@@ -332,6 +374,7 @@ def _stop_main_recording(proc: Optional[subprocess.Popen]):
 )
 def cli(
     task: str,
+    curr_query: Optional[str],
     n_agents: int,
     personas_dir: Path,
     seed: Optional[int],
@@ -346,6 +389,10 @@ def cli(
     final_decision_model: Optional[str],
     temperature: float,
     record_video: bool,
+    save_local: bool,
+    save_gcs: bool,
+    gcs_bucket: str,
+    gcs_prefix: str,
 ):
     """Run multiple shopping agents with different personas for the same query.
 
@@ -433,6 +480,7 @@ def cli(
                     final_status = await _run_single_agent(
                         agent_id=agent_id,
                         task=task,
+                        curr_query=curr_query,  # Will default to task if None
                         persona_file=persona_path,
                         max_steps=max_steps,
                         headless=headless,
@@ -443,6 +491,10 @@ def cli(
                         final_decision_model_name=final_decision_model_name_local,
                         temperature=temperature,
                         record_video=False,  # Agents should not handle recording
+                        save_local=save_local,
+                        save_gcs=save_gcs,
+                        gcs_bucket=gcs_bucket,
+                        gcs_prefix=gcs_prefix,
                     )
                 except Exception as e:
                     final_status = f"⚠️  Failed: {str(e)}"
