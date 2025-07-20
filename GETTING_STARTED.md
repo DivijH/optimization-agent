@@ -16,18 +16,14 @@ The genetic algorithm automatically improves your Etsy search queries by:
 
 ### 1. Test the System
 
-First, verify everything works:
+First, verify everything works by running a quick optimization:
 
 ```bash
 cd optimization-agent
-python src/test_genetic_optimizer.py
+python src/genetic_query_optimizer.py --query "test" --population-size 2 --generations 1 --n-agents 1
 ```
 
-You should see:
-```
-🎉 All tests passed!
-✅ The genetic algorithm components are working correctly.
-```
+You should see the genetic algorithm start and complete successfully.
 
 ### 2. Run Your First Optimization
 
@@ -213,9 +209,9 @@ Copy your API key to `src/keys/litellm.key`
 
 ## 📚 Learn More
 
-- Read the [complete documentation](./GENETIC_ALGORITHM_README.md)
-- Run examples: `python src/example_optimization.py`
-- Test components: `python src/test_genetic_optimizer.py`
+- Read the [Core Components documentation](./src/README.md)
+- Check the [Shopping Agent documentation](./src/shopping_agent/README.md)
+- Explore optimization results with `python src/visualize_optimization.py`
 
 ## 🤝 Next Steps
 

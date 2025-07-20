@@ -12,6 +12,7 @@ For more information, please see the overall project documentation: [Google Doc]
 - **Visual Analysis**: Uses screenshots and language models to understand product pages
 - **Memory Management**: Tracks analyzed products and avoids duplicates
 - **Batch Testing**: Run multiple agents with different personas for comparative analysis
+- **Genetic Query Optimization**: Automatically evolve shopping queries to find better results using genetic algorithms
 - **Cost Tracking**: Monitors token usage and API costs
 - **Decision Making**: Generates purchase recommendations based on persona preferences
 
@@ -47,6 +48,8 @@ gcloud auth application-default login
 
 ## Quick Start
 
+For a comprehensive getting started guide, see [GETTING_STARTED.md](./GETTING_STARTED.md).
+
 ### Single Agent Run
 ```bash
 python -m src.shopping_agent.main --task "large, inflatable spider decoration for halloween"
@@ -55,6 +58,11 @@ python -m src.shopping_agent.main --task "large, inflatable spider decoration fo
 ### Batch Testing (Multiple Agents)
 ```bash
 python src/analyze_query.py --task "winter jacket" --n-agents 4
+```
+
+### Genetic Query Optimization
+```bash
+python src/genetic_query_optimizer.py --query "vintage jewelry"
 ```
 
 ## Documentation
@@ -71,6 +79,7 @@ python src/analyze_query.py --task "winter jacket" --n-agents 4
 │   ├── personas/                    # Virtual customer personas for agents
 │   │   ├── ... (1000 persona files)
 │   └── README.md                    # Persona documentation
+├── GETTING_STARTED.md               # Quick start guide for genetic optimization
 ├── src/
 │   ├── shopping_agent/              # Core shopping agent logic
 │   │   ├── main.py                  # CLI entry point
@@ -85,7 +94,9 @@ python src/analyze_query.py --task "winter jacket" --n-agents 4
 │   │   └── README.md                # Agent documentation
 │   ├── analyze_query.py             # Batch testing framework
 │   ├── processing_results.py        # Results aggregation
-│   ├── feature_suggestion.py        # Query rewriting optimization
+│   ├── genetic_query_optimizer.py   # Genetic algorithm for query optimization
+│   ├── visualize_optimization.py    # Analysis and visualization of optimization results
+│   ├── genetic_prompts.py           # Prompts for genetic algorithm
 │   ├── semantic_relevance_match.py  # Relevance validation
 │   ├── summary_prompt.txt           # LLM prompt for generating trends from all agents
 │   ├── keys/                        # API keys directory
