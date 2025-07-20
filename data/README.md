@@ -4,7 +4,7 @@ This directory contains data used by the shopping agent, primarily the virtual c
 
 ## Personas (`personas/`)
 
-The `personas/` directory contains over 200 JSON files, each representing a unique virtual customer persona. These personas are used by the shopping agent to inform its browsing and purchasing decisions, simulating a wide range of user behaviors, preferences, and demographics.
+The `personas/` directory contains 1000 JSON files, each representing a unique virtual customer persona. These personas are used by the shopping agent to inform its browsing and purchasing decisions, simulating a wide range of user behaviors, preferences, and demographics.
 
 The personas were gathered from the paper [UXAgent: An LLM Agent-Based Usability Testing Framework for Web Design](https://arxiv.org/abs/2502.12561).
 
