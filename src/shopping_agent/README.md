@@ -9,14 +9,13 @@ The main entry point for running the shopping agent from the command line.
 
 **Default Values:**
 - `--task`: "silver, vintage-style metal belt buckle"
-- `--persona`: Evelyn (retired educator persona - see config.py for full text)
+- `--model`: "global-gemini-2.5-flash"
 - `--manual`: False (automatic mode)
 - `--headless`: False (browser visible)
 - `--max-steps`: None (continues until no more products)
 - `--debug-path`: "debug_run"
 - `--width`: 1920
 - `--height`: 1080
-- `--model`: "gpt-4o-mini"
 - `--final-decision-model`: None (uses main model)
 - `--temperature`: 0.7
 - `--record-video`: False
@@ -60,14 +59,16 @@ Provides utility functions for browser interaction:
 Configuration and default values:
 
 **Model Pricing** (per million tokens):
+- `global-gemini-2.5-flash-lite-preview-06-17`: $0.10 input, $0.40 output
+- `global-gemini-2.5-flash`: $0.30 input, $2.50 output (default)
 - `gpt-4o-mini`: $0.15 input, $0.60 output
 - `gpt-4o`: $2.50 input, $10.00 output
 - `o3-mini`: $1.10 input, $4.40 output
 - `openai/o4-mini`: $1.10 input, $4.40 output
 
 **Token Analysis Breakdown:**
-- `IMAGE_TOKEN_PERCENTAGE`: 0.7806 (78.06% of analysis tokens)
-- `TEXT_TOKEN_PERCENTAGE`: 0.2194 (21.94% of analysis tokens)
+- `IMAGE_TOKEN_PERCENTAGE`: 0.25 (25% of analysis tokens)
+- `TEXT_TOKEN_PERCENTAGE`: 0.75 (75% of analysis tokens)
 
 **Default Task and Persona:**
 - Contains the default shopping task and Evelyn persona used when not specified
@@ -127,11 +128,6 @@ python -m src.shopping_agent.main \
     --max-steps 20 \
     --headless \
     --record-video
-```
-
-Using a config file:
-```bash
-python -m src.shopping_agent.main --config-file persona_config.json
 ```
 
 ## Output Structure

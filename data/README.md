@@ -4,7 +4,7 @@ This directory contains data used by the shopping agent, primarily the virtual c
 
 ## Personas (`personas/`)
 
-The `personas/` directory contains over 200 JSON files, each representing a unique virtual customer persona. These personas are used by the shopping agent to inform its browsing and purchasing decisions, simulating a wide range of user behaviors, preferences, and demographics.
+The `personas/` directory contains around 1,000 JSON files, each representing a unique virtual customer persona. These personas are used by the shopping agent to inform its browsing and purchasing decisions, simulating a wide range of user behaviors, preferences, and demographics.
 
 The personas were gathered from the paper [UXAgent: An LLM Agent-Based Usability Testing Framework for Web Design](https://arxiv.org/abs/2502.12561).
 
@@ -71,11 +71,9 @@ The shopping agent uses these personas in several ways:
 
 1. **Single Agent Mode**: 
    - Default persona: "Evelyn" (retired educator) - defined in `src/shopping_agent/config.py`
-   - Custom persona via `--persona` flag with full text
-   - JSON config file via `--config-file` that references the `persona` and `intent` fields
+   - To use a different persona, modify the `DEFAULT_TASK` or update the persona text directly in code.
 
 2. **Batch Testing Mode** (`src/analyze_query.py`):
-   - Default: Randomly samples 4 personas from this directory
-   - Configurable via `--n-agents` (default: 4)
-   - Random seed support via `--seed` for reproducible persona selection
-   - Falls back to sampling with replacement if fewer personas than agents
+   - By default, randomly samples the required number of personas from this directory
+   - Total agents controlled by the `--n-agents` flag (default: 4)
+   - If there are fewer personas than agents, sampling occurs with replacement

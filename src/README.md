@@ -13,9 +13,8 @@ Batch testing framework for running multiple shopping agents with different pers
 **Default Values:**
 - `--task`: "Dunlap pocket knife"
 - `--n-agents`: 4 (number of agents to spawn)
-- `--personas-dir`: `data/personas/`
-- `--seed`: None (random persona selection)
-- `--model-name`: "openai/o4-mini"
+- `--curr-query`: None (defaults to the task value)
+- `--model-name`: "global-gemini-2.5-flash"
 - `--final-decision-model`: None (uses main model)
 - `--summary-model`: None (uses main model)
 - `--max-steps`: None (unlimited)
@@ -99,7 +98,7 @@ echo "your-api-key-here" > src/keys/litellm.key
 # Basic usage
 python -m src.shopping_agent.main --task "vintage camera"
 
-# With custom persona and settings
+# With custom settings
 python -m src.shopping_agent.main \
     --task "camping tent" \
     --model gpt-4o \
@@ -117,7 +116,7 @@ python src/analyze_query.py \
     --task "coffee maker" \
     --n-agents 6 \
     --concurrency 3 \
-    --model gpt-4o-mini \
+    --model-name global-gemini-2.5-flash \
     --record-video
 ```
 
