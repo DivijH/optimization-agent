@@ -38,7 +38,7 @@ from src.shopping_agent.browser_utils import (
     make_final_purchase_decision,
     extract_all_listings_from_search,
 )
-from src.shopping_agent.config import DEFAULT_PERSONA, DEFAULT_TASK, MODEL_PRICING, VENDOR_DISCOUNT_GEMINI
+from src.shopping_agent.config import DEFAULT_TASK, MODEL_PRICING, VENDOR_DISCOUNT_GEMINI
 from src.shopping_agent.gcs_utils import GCSManager
 
 
@@ -50,7 +50,6 @@ class EtsyShoppingAgent:
 
     task: str = DEFAULT_TASK
     curr_query: Optional[str] = None
-    persona: str = DEFAULT_PERSONA
     manual: bool = False
     headless: bool = False
     max_steps: Optional[int] = None

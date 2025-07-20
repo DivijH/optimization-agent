@@ -9,7 +9,7 @@ genetic algorithm's performance and evolution patterns.
 import json
 import sys
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict
 import click
 
 # Add current directory to path for imports
@@ -30,6 +30,92 @@ def load_optimization_results(results_path: Path) -> Dict:
     except json.JSONDecodeError as e:
         print(f"❌ Error parsing results file: {e}")
         sys.exit(1)
+
+
+def show_original_query_context(results: Dict) -> None:
+    """Show the original query that was being optimized."""
+    print("🎯 Original Query Context")
+    print("=" * 50)
+    
+    generation_history = results.get("generation_history", [])
+    
+    if generation_history:
+        # Get the first generation (generation 0)
+        first_generation = generation_history[0]
+        
+        # Find individuals without parent queries (original queries)
+        original_individuals = [
+            ind for ind in first_generation 
+            if not ind.get("parent_queries") or len(ind.get("parent_queries", [])) == 0
+        ]
+        
+        if original_individuals:
+            if len(original_individuals) == 1:
+                original_query = original_individuals[0]["query"]
+                print(f"Original query: '{original_query}'")
+                print(f"This analysis shows how the genetic algorithm evolved from this starting point.")
+            else:
+                print(f"Found {len(original_individuals)} original queries in the initial population:")
+                for i, ind in enumerate(original_individuals, 1):
+                    print(f"  {i}. '{ind['query']}'")
+                print(f"This analysis shows how the genetic algorithm evolved from these starting points.")
+        else:
+            # Fallback: show all queries from first generation
+            print("Initial population queries:")
+            for i, ind in enumerate(first_generation, 1):
+                print(f"  {i}. '{ind['query']}'")
+            print(f"This analysis shows how the genetic algorithm evolved from these starting points.")
+    else:
+        print("❌ No generation history found in results.")
+    
+    print()
+
+
+def show_performance_metrics(results: Dict) -> None:
+    """Show timing, token usage, and cost information."""
+    print("⏱️  Performance Metrics")
+    print("=" * 50)
+    
+    config = results.get("optimization_config", {})
+    summary = results.get("summary", {})
+    
+    # Time information
+    total_time = summary.get("total_time_seconds")
+    if total_time:
+        minutes = int(total_time // 60)
+        seconds = int(total_time % 60)
+        print(f"Total optimization time: {minutes}m {seconds}s ({total_time:.2f}s)")
+    
+    # Token usage
+    token_usage = summary.get("token_usage", {})
+    if token_usage:
+        total_tokens = token_usage.get("total_tokens", 0)
+        input_tokens = token_usage.get("input_tokens", 0)
+        output_tokens = token_usage.get("output_tokens", 0)
+        
+        print(f"Token usage:")
+        print(f"  Total tokens: {total_tokens:,}")
+        print(f"  Input tokens: {input_tokens:,}")
+        print(f"  Output tokens: {output_tokens:,}")
+    
+    # Cost information
+    cost_info = summary.get("cost_info", {})
+    if cost_info:
+        total_cost = cost_info.get("total_cost", 0)
+        input_cost = cost_info.get("input_cost", 0)
+        output_cost = cost_info.get("output_cost", 0)
+        
+        print(f"Cost breakdown:")
+        print(f"  Total cost: ${total_cost:.4f}")
+        print(f"  Input cost: ${input_cost:.4f}")
+        print(f"  Output cost: ${output_cost:.4f}")
+    
+    # Performance per generation
+    avg_time_per_gen = summary.get("avg_time_per_generation")
+    if avg_time_per_gen:
+        print(f"Average time per generation: {avg_time_per_gen:.2f}s")
+    
+    print()
 
 
 def analyze_evolution_trends(results: Dict) -> None:
@@ -140,14 +226,15 @@ def analyze_genetic_operations(results: Dict) -> None:
 
 
 def analyze_semantic_performance(results: Dict) -> None:
-    """Analyze semantic relevance performance."""
+    """Analyze semantic relevance performance for both whole page and top 10."""
     print("🎯 Semantic Performance Analysis")
     print("=" * 50)
     
     generation_history = results.get("generation_history", [])
     
     for gen_num, generation in enumerate(generation_history):
-        semantic_scores = []
+        whole_page_scores = []
+        top10_scores = []
         purchase_scores = []
         
         for individual in generation:
@@ -155,11 +242,21 @@ def analyze_semantic_performance(results: Dict) -> None:
             purchase_stats = individual.get("purchase_stats", {})
             
             if semantic_rel:
-                page1 = semantic_rel.get("page1_products", {})
-                highly_relevant = page1.get("highly_relevant", 0)
-                total = page1.get("total", 1)
-                semantic_score = highly_relevant / max(total, 1)
-                semantic_scores.append(semantic_score)
+                # Whole page semantic relevance
+                whole_page = semantic_rel.get("whole_page", {})
+                if whole_page:
+                    highly_relevant = whole_page.get("highly_relevant", 0)
+                    total = whole_page.get("total", 1)
+                    whole_page_score = highly_relevant / max(total, 1)
+                    whole_page_scores.append(whole_page_score)
+                
+                # Top 10 semantic relevance
+                top10 = semantic_rel.get("top10_products", {})
+                if top10:
+                    highly_relevant = top10.get("highly_relevant", 0)
+                    total = top10.get("total", 1)
+                    top10_score = highly_relevant / max(total, 1)
+                    top10_scores.append(top10_score)
             
             if purchase_stats:
                 stats = purchase_stats.get("purchase_statistics", {})
@@ -168,19 +265,24 @@ def analyze_semantic_performance(results: Dict) -> None:
                 purchase_score = agents_purchased / max(total_agents, 1)
                 purchase_scores.append(purchase_score)
         
-        if semantic_scores:
-            avg_semantic = sum(semantic_scores) / len(semantic_scores)
-            print(f"Generation {gen_num} - Avg semantic relevance: {avg_semantic:.3f}")
+        print(f"Generation {gen_num}:")
+        if whole_page_scores:
+            avg_whole_page = sum(whole_page_scores) / len(whole_page_scores)
+            print(f"  Avg whole page semantic relevance: {avg_whole_page:.3f}")
+        
+        if top10_scores:
+            avg_top10 = sum(top10_scores) / len(top10_scores)
+            print(f"  Avg top 10 semantic relevance: {avg_top10:.3f}")
         
         if purchase_scores:
             avg_purchase = sum(purchase_scores) / len(purchase_scores)
-            print(f"Generation {gen_num} - Avg purchase rate: {avg_purchase:.3f}")
-    
-    print()
+            print(f"  Avg purchase rate: {avg_purchase:.3f}")
+        
+        print()
 
 
 def show_best_queries(results: Dict) -> None:
-    """Show the best performing queries."""
+    """Show the best performing queries with enhanced semantic relevance details."""
     print("🏆 Best Performing Queries")
     print("=" * 50)
     
@@ -190,15 +292,31 @@ def show_best_queries(results: Dict) -> None:
         print(f"Overall best query: '{best_individual['query']}'")
         print(f"Fitness score: {best_individual['fitness_score']:.3f}")
         print(f"Generation: {best_individual['generation']}")
+        print()
         
         semantic_rel = best_individual.get("semantic_relevance", {})
         if semantic_rel:
-            page1 = semantic_rel.get("page1_products", {})
-            print(f"Semantic performance:")
-            print(f"  Highly relevant: {page1.get('highly_relevant', 0)}")
-            print(f"  Somewhat relevant: {page1.get('somewhat_relevant', 0)}")
-            print(f"  Not relevant: {page1.get('not_relevant', 0)}")
-            print(f"  Total products: {page1.get('total', 0)}")
+            print("Semantic performance:")
+            
+            # Show whole page results
+            whole_page = semantic_rel.get("whole_page", {})
+            if whole_page:
+                print(f"  Whole page results:")
+                print(f"    Highly relevant: {whole_page.get('highly_relevant', 0)}")
+                print(f"    Somewhat relevant: {whole_page.get('somewhat_relevant', 0)}")
+                print(f"    Not relevant: {whole_page.get('not_relevant', 0)}")
+                print(f"    Total products: {whole_page.get('total', 0)}")
+                print()
+            
+            # Show top 10 results
+            top10 = semantic_rel.get("top10_products", {})
+            if top10:
+                print(f"  Top 10 results:")
+                print(f"    Highly relevant: {top10.get('highly_relevant', 0)}")
+                print(f"    Somewhat relevant: {top10.get('somewhat_relevant', 0)}")
+                print(f"    Not relevant: {top10.get('not_relevant', 0)}")
+                print(f"    Total products: {top10.get('total', 0)}")
+                print()
         
         purchase_stats = best_individual.get("purchase_stats", {})
         if purchase_stats:
@@ -207,7 +325,7 @@ def show_best_queries(results: Dict) -> None:
             print(f"  Agents who purchased: {stats.get('agents_who_purchased', 0)}")
             print(f"  Total agents: {purchase_stats.get('total_agents', 0)}")
             print(f"  Total purchases: {stats.get('total_purchases', 0)}")
-        print()
+            print()
     
     # Show top queries from final generation
     generation_history = results.get("generation_history", [])
@@ -234,7 +352,8 @@ def generate_summary_report(results: Dict) -> None:
     print(f"  Generations: {config.get('n_generations', 'N/A')}")
     print(f"  Mutation rate: {config.get('mutation_rate', 'N/A')}")
     print(f"  Crossover rate: {config.get('crossover_rate', 'N/A')}")
-    print(f"  Semantic weight: {config.get('semantic_weight', 'N/A')}")
+    print(f"  Whole page semantic weight: {config.get('whole_page_semantic_weight', 'N/A')}")
+    print(f"  Top10 semantic weight: {config.get('top10_semantic_weight', 'N/A')}")
     print(f"  Purchase weight: {config.get('purchase_weight', 'N/A')}")
     print()
     
@@ -252,7 +371,7 @@ def generate_summary_report(results: Dict) -> None:
 @click.option(
     "--results-path",
     type=click.Path(exists=True, path_type=Path),
-    default=CURRENT_DIR / "genetic_optimization" / "optimization_results.json",
+    default=CURRENT_DIR / "debug_ga" / "optimization_results.json",
     show_default=True,
     help="Path to the optimization results JSON file."
 )
@@ -278,7 +397,10 @@ def main(results_path: Path, analysis: str):
     
     results = load_optimization_results(results_path)
     
+    # Always show context and performance metrics first
     if analysis == "all":
+        show_original_query_context(results)
+        show_performance_metrics(results)
         generate_summary_report(results)
         analyze_evolution_trends(results)
         analyze_query_diversity(results)
@@ -286,6 +408,7 @@ def main(results_path: Path, analysis: str):
         analyze_semantic_performance(results)
         show_best_queries(results)
     elif analysis == "evolution":
+        show_original_query_context(results)
         analyze_evolution_trends(results)
     elif analysis == "diversity":
         analyze_query_diversity(results)
@@ -294,8 +417,11 @@ def main(results_path: Path, analysis: str):
     elif analysis == "semantic":
         analyze_semantic_performance(results)
     elif analysis == "best":
+        show_original_query_context(results)
         show_best_queries(results)
     elif analysis == "summary":
+        show_original_query_context(results)
+        show_performance_metrics(results)
         generate_summary_report(results)
     
     print("✨ Analysis complete!")

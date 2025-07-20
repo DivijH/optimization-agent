@@ -142,7 +142,7 @@ async def analyze_product_page(
     parser = JsonOutputParser()
 
     system_prompt = PRODUCT_ANALYSIS_PROMPT
-    user_prompt_text = f"{agent.persona}\nSearched Query: {agent.task}\nCurrent Date: {datetime.now().strftime('%B %d')}"
+    user_prompt_text = f"Searched Query: {agent.task}\nCurrent Date: {datetime.now().strftime('%B %d, %Y')}"
     image_payloads = [
         {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{b64}"}}
         for b64 in screenshots_b64
@@ -360,8 +360,6 @@ async def make_final_purchase_decision(agent: "EtsyShoppingAgent"):
         product_descriptions += desc + "\n\n"
 
     user_prompt_text = f"""
-{agent.persona}
-
 Searched Query: {agent.task}
 
 Here are the products that have been analyzed:

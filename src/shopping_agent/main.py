@@ -1,5 +1,4 @@
 import asyncio
-import json
 import signal
 import sys
 import os
@@ -20,7 +19,7 @@ except FileNotFoundError:
 os.environ["OPENAI_API_BASE"] = "https://litellm.litellm.kn.ml-platform.etsy-mlinfra-dev.etsycloud.com"
 
 from src.shopping_agent.agent import EtsyShoppingAgent
-from src.shopping_agent.config import DEFAULT_PERSONA, DEFAULT_TASK
+from src.shopping_agent.config import DEFAULT_TASK
 
 
 async def async_main(agent: EtsyShoppingAgent):
@@ -55,10 +54,8 @@ async def async_main(agent: EtsyShoppingAgent):
 
 
 @click.command()
-@click.option("--config-file", type=click.Path(exists=True, dir_okay=False, readable=True), default=None, help="Path to a JSON file containing 'intent' and 'persona' keys. Overrides --task and --persona.")
 @click.option("--task", default=DEFAULT_TASK, help="The shopping task for the agent.")
 @click.option("--curr_query", default=None, help="The current query for the agent. Defaults to the task.")
-@click.option("--persona", default=DEFAULT_PERSONA, help="The persona for the agent.")
 @click.option("--manual", is_flag=True, help="Wait for user to press Enter after each agent action.")
 @click.option("--headless", is_flag=True, help="Run the browser in headless mode.")
 @click.option("--max-steps", default=None, type=int, help="The maximum number of steps the agent will take. If not provided, the agent will continue until no more products are left to analyze.")
@@ -75,10 +72,8 @@ async def async_main(agent: EtsyShoppingAgent):
 @click.option("--gcs-bucket", default="training-dev-search-data-jtzn", help="GCS bucket name for data storage.")
 @click.option("--gcs-prefix", default="smu-agent-optimizer", help="GCS prefix for data storage.")
 def cli(
-    config_file,
     task,
     curr_query,
-    persona,
     manual,
     headless,
     max_steps,
@@ -97,20 +92,9 @@ def cli(
 ):
     """A command-line interface to run the EtsyShoppingAgent."""
 
-    if config_file:
-        try:
-            with open(config_file, "r") as f:
-                config_data = json.load(f)
-                task = config_data.get("task", task)
-                persona = config_data.get("persona", persona)
-        except (IOError, json.JSONDecodeError) as e:
-            print(f"Error reading config file '{config_file}': {e}", file=sys.stderr)
-            sys.exit(1)
-
     agent = EtsyShoppingAgent(
         task=task,
         curr_query=curr_query,
-        persona=persona,
         manual=manual,
         headless=headless,
         max_steps=max_steps,

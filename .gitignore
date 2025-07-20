@@ -7,4 +7,6 @@ etsy_pages*
 ab_test_results.json
 temp*
 keys/
+personas/
 _v1/
+_v2*

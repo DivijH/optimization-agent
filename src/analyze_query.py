@@ -1,6 +1,4 @@
 import asyncio
-import json
-import random
 import sys
 import shutil
 from pathlib import Path
@@ -52,7 +50,7 @@ class StatusDisplay:
                 sys.stdout.write(f"\x1b[{self._num_lines}A")
 
             # Print all statuses
-            for spec_id, _, _, _ in self.agent_specs:
+            for spec_id, _, _ in self.agent_specs:
                 # \x1b[2K clears the entire line before writing
                 sys.stdout.write(f"\x1b[2K[Agent {spec_id}] {self.statuses[spec_id]}\n")
             
@@ -61,7 +59,7 @@ class StatusDisplay:
     async def print_initial_statuses(self):
         """Prints the initial waiting status for all agents."""
         async with print_lock:
-            for agent_id, _, _, _ in self.agent_specs:
+            for agent_id, _, _ in self.agent_specs:
                  sys.stdout.write(f"[Agent {agent_id}] {self.statuses[agent_id]}\n")
             self._num_lines = len(self.agent_specs)
             sys.stdout.flush()
@@ -83,25 +81,6 @@ def _setup_file_logger(name: str, log_file: Path) -> logging.Logger:
     logger.addHandler(handler)
     return logger
 
-def _load_persona(file_path: Path) -> str:
-    """Load a single persona JSON file and return persona_text.
-    The expected schema is:
-        {
-            "persona": "<long persona text>",
-            ...
-        }
-    """
-    try:
-        with open(file_path, "r") as f:
-            data = json.load(f)
-    except Exception as e:
-        raise ValueError(f"Error loading persona file {file_path}: {e}")
-
-    persona_text = data.get("persona", None)
-    if persona_text:
-        return persona_text
-    else:
-        raise ValueError(f"Persona file {file_path} is missing a 'persona' field.")
 
 
 async def _run_single_agent(
@@ -109,7 +88,6 @@ async def _run_single_agent(
     agent_id: int,
     task: str,
     curr_query: Optional[str],
-    persona_file: Path,
     max_steps: int,
     headless: bool,
     model_name: str,
@@ -126,8 +104,6 @@ async def _run_single_agent(
 ) -> str:
     """Create and execute a single `EtsyShoppingAgent` instance."""
 
-    persona = _load_persona(persona_file)
-
     debug_path = debug_root / f"agent_{agent_id}"
     debug_path.mkdir(parents=True, exist_ok=True)
     log_file = debug_path / "agent.log"
@@ -138,7 +114,6 @@ async def _run_single_agent(
     agent = EtsyShoppingAgent(
         task=task,
         curr_query=curr_query if curr_query is not None else task,
-        persona=persona,
         headless=headless,
         max_steps=max_steps,
         model_name=model_name,
@@ -232,6 +207,125 @@ def _stop_main_recording(proc: Optional[subprocess.Popen]):
         proc = None
 
 
+async def run_analyze_query(
+    task: str,
+    curr_query: Optional[str],
+    n_agents: int,
+    model_name: str,
+    summary_model: Optional[str],
+    max_steps: Optional[int],
+    headless: bool,
+    concurrency: int,
+    debug_root: Path,
+    width: int,
+    height: int,
+    final_decision_model: Optional[str],
+    temperature: float,
+    record_video: bool,
+    save_local: bool,
+    save_gcs: bool,
+    gcs_bucket: str,
+    gcs_prefix: str,
+    skip_confirmation: bool = False,
+) -> None:
+    """
+    Run multiple shopping agents for the same query.
+    This function spawns N agents that will all perform the same shopping task.
+    """
+
+    # Silence all existing loggers to prevent library logs from flooding stdout.
+    # We will set up our own file-based loggers for each agent.
+    for handler in logging.root.handlers[:]:
+        logging.root.removeHandler(handler)
+    logging.root.setLevel(logging.CRITICAL + 1)
+
+    # Specifically target and silence the browser_use loggers which are the source of the noise
+    for logger_name in ['browser_use', 'browser_use.telemetry', 'browser_use.telemetry.service']:
+        logger = logging.getLogger(logger_name)
+        logger.setLevel(logging.CRITICAL + 1)
+        logger.propagate = False
+        logger.disabled = True
+        for handler in logger.handlers[:]:
+            logger.removeHandler(handler)
+
+    if debug_root.exists():
+        if not skip_confirmation:
+            if not click.confirm(f'Debug path {debug_root} already exists. Do you want to remove it and all its contents?'):
+                raise FileExistsError(f"Debug path {debug_root} already exists and user declined to remove it.")
+        shutil.rmtree(debug_root)
+    debug_root.mkdir(parents=True, exist_ok=True)
+
+    # If recording is enabled, start it for the whole duration of the test.
+    recording_proc = None
+    if record_video:
+        recording_proc = _start_main_recording(debug_root, width, height)
+
+    # Prepare arguments for each agent
+    agent_specs = []
+    for idx in range(n_agents):
+        agent_specs.append(
+            (idx, model_name, final_decision_model)
+        )
+
+    status_display = StatusDisplay(agent_specs)
+
+    async def _runner():
+        # Use a semaphore to limit the number of concurrent agents so we don't exhaust system resources
+        sem = asyncio.Semaphore(concurrency)
+        await status_display.print_initial_statuses()
+
+        async def _wrap(spec):
+            (
+                agent_id,
+                model_name_local,
+                final_decision_model_name_local,
+            ) = spec
+            async with sem:
+                # Update status to Running BEFORE starting the agent
+                await status_display.update(agent_id, "Running...")
+                # Small delay to allow status update to complete
+                await asyncio.sleep(0.1)
+                
+                try:
+                    final_status = await _run_single_agent(
+                        agent_id=agent_id,
+                        task=task,
+                        curr_query=curr_query,  # Will default to task if None
+                        max_steps=max_steps,
+                        headless=headless,
+                        model_name=model_name_local,
+                        debug_root=debug_root,
+                        width=width,
+                        height=height,
+                        final_decision_model_name=final_decision_model_name_local,
+                        temperature=temperature,
+                        record_video=False,  # Agents should not handle recording
+                        save_local=save_local,
+                        save_gcs=save_gcs,
+                        gcs_bucket=gcs_bucket,
+                        gcs_prefix=gcs_prefix,
+                    )
+                except Exception as e:
+                    final_status = f"⚠️  Failed: {str(e)}"
+                    
+                await status_display.update(agent_id, final_status)
+
+        tasks = []
+        for spec in agent_specs:
+            tasks.append(_wrap(spec))
+        await asyncio.gather(*tasks)
+
+    try:
+        await _runner()
+    finally:
+        # Ensure the main recording process is stopped when the test finishes.
+        if recording_proc:
+            _stop_main_recording(recording_proc)
+
+    summary_model = summary_model if summary_model else model_name
+    process_agent_results(debug_root, summary_model, temperature)
+
+
 ###############################################################################
 # CLI entry-point
 ###############################################################################
@@ -256,19 +350,6 @@ def _stop_main_recording(proc: Optional[subprocess.Popen]):
     default=4,
     show_default=True,
     help="Total number of agents to spawn.",
-)
-@click.option(
-    "--personas-dir",
-    type=click.Path(file_okay=False, dir_okay=True, path_type=Path),
-    default=CURRENT_DIR.parent / "data" / "personas",
-    show_default=True,
-    help="Directory containing JSON persona files.",
-)
-@click.option(
-    "--seed",
-    type=int,
-    default=None,
-    help="Random seed for persona selection. If provided, the same personas will be selected for each run with the same seed.",
 )
 @click.option(
     "--model-name",
@@ -376,8 +457,6 @@ def cli(
     task: str,
     curr_query: Optional[str],
     n_agents: int,
-    personas_dir: Path,
-    seed: Optional[int],
     model_name: str,
     summary_model: Optional[str],
     max_steps: int,
@@ -394,127 +473,39 @@ def cli(
     gcs_bucket: str,
     gcs_prefix: str,
 ):
-    """Run multiple shopping agents with different personas for the same query.
+    """Run multiple shopping agents for the same query.
 
-    This script spawns N agents that will all perform the same shopping task,
-    but each will be assigned a different, randomly selected persona from the
-    `--personas-dir`. This is useful for evaluating how different personas
-    affect the agent's behavior for a single task.
+    This script spawns N agents that will all perform the same shopping task
+    using analytical thinking and common sense to judge semantic relevance.
+    This is useful for evaluating agent behavior consistency across multiple runs.
     """
 
-    # Silence all existing loggers to prevent library logs from flooding stdout.
-    # We will set up our own file-based loggers for each agent.
-    for handler in logging.root.handlers[:]:
-        logging.root.removeHandler(handler)
-    logging.root.setLevel(logging.CRITICAL + 1)
-
-    # Specifically target and silence the browser_use loggers which are the source of the noise
-    for logger_name in ['browser_use', 'browser_use.telemetry', 'browser_use.telemetry.service']:
-        logger = logging.getLogger(logger_name)
-        logger.setLevel(logging.CRITICAL + 1)
-        logger.propagate = False
-        logger.disabled = True
-        for handler in logger.handlers[:]:
-            logger.removeHandler(handler)
-
-    if seed is not None:
-        random.seed(seed)
-
-    if n_agents < 2:
-        raise click.BadParameter("--n-agents must be greater than 2.")
-
-    if not personas_dir.exists() or not personas_dir.is_dir():
-        raise click.BadParameter(f"--personas-dir '{personas_dir}' does not exist or is not a directory.")
-
-    persona_files: List[Path] = sorted(personas_dir.glob("*.json"))
-    if not persona_files:
-        raise click.BadParameter(f"No .json persona files found in '{personas_dir}'.")
-
-    # Sample personas without replacement if there are enough; otherwise fall back to sampling with replacement
-    if len(persona_files) >= n_agents:
-        selected_personas = random.sample(persona_files, k=n_agents)
-    else:
-        selected_personas = [random.choice(persona_files) for _ in range(n_agents)]
-
-    if debug_root.exists():
-        if click.confirm(f'Debug path {debug_root} already exists. Do you want to remove it and all its contents?'):
-            shutil.rmtree(debug_root)
-        else:
-            print('Aborting.')
-            sys.exit(1)
-    debug_root.mkdir(parents=True, exist_ok=True)
-
-    # If recording is enabled, start it for the whole duration of the test.
-    recording_proc = None
-    if record_video:
-        recording_proc = _start_main_recording(debug_root, width, height)
-
-    # Prepare arguments for each agent
-    agent_specs = []
-    for idx, persona_file in enumerate(selected_personas):
-        agent_specs.append(
-            (idx, persona_file, model_name, final_decision_model)
-        )
-
-    status_display = StatusDisplay(agent_specs)
-
-    async def _runner():
-        # Use a semaphore to limit the number of concurrent agents so we don't exhaust system resources
-        sem = asyncio.Semaphore(concurrency)
-        await status_display.print_initial_statuses()
-
-        async def _wrap(spec):
-            (
-                agent_id,
-                persona_path,
-                model_name_local,
-                final_decision_model_name_local,
-            ) = spec
-            async with sem:
-                # Update status to Running BEFORE starting the agent
-                await status_display.update(agent_id, "Running...")
-                # Small delay to allow status update to complete
-                await asyncio.sleep(0.1)
-                
-                try:
-                    final_status = await _run_single_agent(
-                        agent_id=agent_id,
-                        task=task,
-                        curr_query=curr_query,  # Will default to task if None
-                        persona_file=persona_path,
-                        max_steps=max_steps,
-                        headless=headless,
-                        model_name=model_name_local,
-                        debug_root=debug_root,
-                        width=width,
-                        height=height,
-                        final_decision_model_name=final_decision_model_name_local,
-                        temperature=temperature,
-                        record_video=False,  # Agents should not handle recording
-                        save_local=save_local,
-                        save_gcs=save_gcs,
-                        gcs_bucket=gcs_bucket,
-                        gcs_prefix=gcs_prefix,
-                    )
-                except Exception as e:
-                    final_status = f"⚠️  Failed: {str(e)}"
-                    
-                await status_display.update(agent_id, final_status)
-
-        tasks = []
-        for spec in agent_specs:
-            tasks.append(_wrap(spec))
-        await asyncio.gather(*tasks)
 
     try:
-        asyncio.run(_runner())
-    finally:
-        # Ensure the main recording process is stopped when the test finishes.
-        if recording_proc:
-            _stop_main_recording(recording_proc)
-
-    summary_model = summary_model if summary_model else model_name
-    process_agent_results(debug_root, summary_model, temperature)
+        asyncio.run(run_analyze_query(
+            task=task,
+            curr_query=curr_query,
+            n_agents=n_agents,
+            model_name=model_name,
+            summary_model=summary_model,
+            max_steps=max_steps,
+            headless=headless,
+            concurrency=concurrency,
+            debug_root=debug_root,
+            width=width,
+            height=height,
+            final_decision_model=final_decision_model,
+            temperature=temperature,
+            record_video=record_video,
+            save_local=save_local,
+            save_gcs=save_gcs,
+            gcs_bucket=gcs_bucket,
+            gcs_prefix=gcs_prefix,
+            skip_confirmation=False,
+        ))
+    except FileExistsError:
+        print('Aborting.')
+        sys.exit(1)
 
 
 if __name__ == "__main__":
