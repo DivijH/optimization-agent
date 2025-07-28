@@ -3,7 +3,7 @@ import json
 import os
 from typing import TYPE_CHECKING, Any, Dict, Optional
 
-from src.shopping_agent.config import IMAGE_TOKEN_PERCENTAGE, MODEL_PRICING, TEXT_TOKEN_PERCENTAGE, VENDOR_DISCOUNT_GEMINI
+from src.shopping_agent.config import IMAGE_TOKEN_PERCENTAGE, MODEL_PRICING, VENDOR_DISCOUNT_GEMINI
 
 if TYPE_CHECKING:
     from src.shopping_agent.agent import EtsyShoppingAgent
@@ -121,35 +121,29 @@ async def update_token_usage(
         if usage_type == "analysis":
             # Calculate image and text tokens
             image_tokens = int(input_tokens * IMAGE_TOKEN_PERCENTAGE)
-            text_tokens = int(input_tokens * TEXT_TOKEN_PERCENTAGE)
-            usage_data["image_tokens"] = image_tokens
-            usage_data["text_tokens"] = text_tokens
+            text_tokens = input_tokens - image_tokens
+            usage_data["image_tokens"] += image_tokens
+            usage_data["text_tokens"] += text_tokens
 
             # Calculate input costs (text and image)
             input_text_cost = (text_tokens / 1_000_000) * price_per_million["input"]
-            input_image_cost = (
-                image_tokens / 1_000_000
-            ) * price_per_million["input"]
+            input_image_cost = (image_tokens / 1_000_000) * price_per_million["input"]
             output_cost = (output_tokens / 1_000_000) * price_per_million["output"]
 
+            # Accumulate costs
             usage_data["input_text_cost"] += input_text_cost
             usage_data["input_image_cost"] += input_image_cost
-            usage_data["input_total_cost"] = (
-                usage_data["input_text_cost"] + usage_data["input_image_cost"]
-            )
+            usage_data["input_total_cost"] += input_text_cost + input_image_cost
             usage_data["output_cost"] += output_cost
-            usage_data["total_cost"] = (
-                usage_data["input_total_cost"] + usage_data["output_cost"]
-            )
-        else:  # final_decision
+            usage_data["total_cost"] += input_text_cost + input_image_cost + output_cost
+        else:  # for final_decision
             input_cost = (input_tokens / 1_000_000) * price_per_million["input"]
             output_cost = (output_tokens / 1_000_000) * price_per_million["output"]
 
+            # Accumulate costs
             usage_data["input_cost"] += input_cost
             usage_data["output_cost"] += output_cost
-            usage_data["total_cost"] = (
-                usage_data["input_cost"] + usage_data["output_cost"]
-            )
+            usage_data["total_cost"] += input_cost + output_cost
 
     # Log the usage details
     if usage_type == "analysis":
@@ -166,7 +160,7 @@ async def update_token_usage(
             f"\n     Output: ${usage_data['output_cost']:.6f}"
             f"\n     Total: ${usage_data['total_cost']:.6f}"
         )
-    else:  # final_decision
+    else:  # for final_decision
         agent._log(
             f"   - Token usage for {model_name} (final_decision): "
             f"Input={input_tokens}, Output={output_tokens}, Total={total_tokens}"

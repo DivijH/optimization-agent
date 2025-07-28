@@ -66,8 +66,8 @@ Configuration and default values:
 - `openai/o4-mini`: $1.10 input, $4.40 output
 
 **Token Analysis Breakdown:**
-- `IMAGE_TOKEN_PERCENTAGE`: 0.7806 (78.06% of analysis tokens)
-- `TEXT_TOKEN_PERCENTAGE`: 0.2194 (21.94% of analysis tokens)
+- `IMAGE_TOKEN_PERCENTAGE`: 0.484 (48.4% of analysis tokens)
+- `TEXT_TOKEN_PERCENTAGE`: 0.516 (51.6% of analysis tokens)
 
 **Default Task and Persona:**
 - Contains the default shopping task and Evelyn persona used when not specified

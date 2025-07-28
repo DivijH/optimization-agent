@@ -8,8 +8,6 @@ class ProductMemory:
     product_name: str
     url: str
     price: Optional[float] = None
-    pros: List[str] = field(default_factory=list)
-    cons: List[str] = field(default_factory=list)
     summary: str = ""
     semantic_score: str = ""
 

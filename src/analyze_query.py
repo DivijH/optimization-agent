@@ -37,7 +37,7 @@ class StatusDisplay:
     """Manages a clean, updating multi-line status display in the terminal."""
     def __init__(self, agent_specs: List[Tuple]):
         self.agent_specs = agent_specs
-        self.statuses = {spec[0]: "Waiting to start..." for spec in agent_specs}
+        self.statuses = {spec[0]: f"Waiting to start... (temp={spec[3]:.3f})" for spec in agent_specs}
         self._num_lines = 0
 
     async def update(self, agent_id: int, status: str):
@@ -50,7 +50,7 @@ class StatusDisplay:
                 sys.stdout.write(f"\x1b[{self._num_lines}A")
 
             # Print all statuses
-            for spec_id, _, _ in self.agent_specs:
+            for spec_id, _, _, _ in self.agent_specs:
                 # \x1b[2K clears the entire line before writing
                 sys.stdout.write(f"\x1b[2K[Agent {spec_id}] {self.statuses[spec_id]}\n")
             
@@ -59,7 +59,7 @@ class StatusDisplay:
     async def print_initial_statuses(self):
         """Prints the initial waiting status for all agents."""
         async with print_lock:
-            for agent_id, _, _ in self.agent_specs:
+            for agent_id, _, _, _ in self.agent_specs:
                  sys.stdout.write(f"[Agent {agent_id}] {self.statuses[agent_id]}\n")
             self._num_lines = len(self.agent_specs)
             sys.stdout.flush()
@@ -101,6 +101,7 @@ async def _run_single_agent(
     save_gcs: bool,
     gcs_bucket: str,
     gcs_prefix: str,
+    gcs_project: str,
 ) -> str:
     """Create and execute a single `EtsyShoppingAgent` instance."""
 
@@ -130,6 +131,7 @@ async def _run_single_agent(
         save_gcs=save_gcs,
         gcs_bucket_name=gcs_bucket,
         gcs_prefix=gcs_prefix,
+        gcs_project=gcs_project,
     )
 
     try:
@@ -226,6 +228,7 @@ async def run_analyze_query(
     save_gcs: bool,
     gcs_bucket: str,
     gcs_prefix: str,
+    gcs_project: str,
     skip_confirmation: bool = False,
 ) -> None:
     """
@@ -260,11 +263,17 @@ async def run_analyze_query(
     if record_video:
         recording_proc = _start_main_recording(debug_root, width, height)
 
-    # Prepare arguments for each agent
+    # Prepare arguments for each agent with different temperatures
     agent_specs = []
     for idx in range(n_agents):
+        # Calculate temperature evenly distributed between 0 and 1
+        if n_agents == 1:
+            agent_temperature = 0.0
+        else:
+            agent_temperature = idx / (n_agents - 1)
+        
         agent_specs.append(
-            (idx, model_name, final_decision_model)
+            (idx, model_name, final_decision_model, agent_temperature)
         )
 
     status_display = StatusDisplay(agent_specs)
@@ -279,10 +288,11 @@ async def run_analyze_query(
                 agent_id,
                 model_name_local,
                 final_decision_model_name_local,
+                agent_temperature,
             ) = spec
             async with sem:
                 # Update status to Running BEFORE starting the agent
-                await status_display.update(agent_id, "Running...")
+                await status_display.update(agent_id, f"Running... (temp={agent_temperature:.3f})")
                 # Small delay to allow status update to complete
                 await asyncio.sleep(0.1)
                 
@@ -298,17 +308,18 @@ async def run_analyze_query(
                         width=width,
                         height=height,
                         final_decision_model_name=final_decision_model_name_local,
-                        temperature=temperature,
+                        temperature=agent_temperature,  # Use agent-specific temperature
                         record_video=False,  # Agents should not handle recording
                         save_local=save_local,
                         save_gcs=save_gcs,
                         gcs_bucket=gcs_bucket,
                         gcs_prefix=gcs_prefix,
+                        gcs_project=gcs_project,
                     )
                 except Exception as e:
                     final_status = f"⚠️  Failed: {str(e)}"
                     
-                await status_display.update(agent_id, final_status)
+                await status_display.update(agent_id, f"{final_status} (temp={agent_temperature:.3f})")
 
         tasks = []
         for spec in agent_specs:
@@ -434,6 +445,13 @@ async def run_analyze_query(
     help="GCS prefix for data storage.",
 )
 @click.option(
+    "--gcs-project",
+    type=str,
+    default="etsy-search-ml-dev",
+    show_default=True,
+    help="GCS project name for client initialization.",
+)
+@click.option(
     "--headless/--no-headless",
     default=True,
     show_default=True,
@@ -472,6 +490,7 @@ def cli(
     save_gcs: bool,
     gcs_bucket: str,
     gcs_prefix: str,
+    gcs_project: str,
 ):
     """Run multiple shopping agents for the same query.
 
@@ -501,6 +520,7 @@ def cli(
             save_gcs=save_gcs,
             gcs_bucket=gcs_bucket,
             gcs_prefix=gcs_prefix,
+            gcs_project=gcs_project,
             skip_confirmation=False,
         ))
     except FileExistsError:

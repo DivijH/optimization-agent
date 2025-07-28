@@ -51,12 +51,12 @@ Post-processing utility that analyzes results from multiple agent runs.
 ### `genetic_query_optimizer.py`
 Genetic algorithm implementation for automatically optimizing shopping queries.
 
-**Functionality:**
-- Creates variations of original queries using AI
-- Tests each variation with real shopping agents
-- Measures performance based on semantic relevance and purchase decisions
-- Evolves better queries over multiple generations
-- Returns the best performing query
+The genetic algorithm automatically improves the search queries by:
+1. Creating variations of your original query using AI
+2. Testing each variation with real shopping agents 
+3. Measuring performance based on semantic relevance and purchase decisions
+4. Evolving better queries over multiple generations
+5. Returning the best performing query
 
 **Default Values:**
 - `--population-size`: 8 (number of query variations per generation)
@@ -67,6 +67,24 @@ Genetic algorithm implementation for automatically optimizing shopping queries.
 - `--model`: "gpt-4o-mini"
 - `--debug-root`: "src/genetic_optimization"
 
+**Configuration Examples:**
+
+```bash
+python src/genetic_query_optimizer.py \
+    --query "wooden spoon" \
+    --population-size 4 \
+    --generations 2 \
+    --n-agents 2
+```
+
+**Understanding Results:**
+After optimization, you'll find:
+```
+src/genetic_optimization/
+├── genetic_algorithm.log          # Detailed progress
+├── optimization_results.json      # Complete results
+└── gen_*/                         # Per-generation data
+```
 ### `visualize_optimization.py`
 Analysis and visualization tool for genetic algorithm optimization results.
 
@@ -78,10 +96,19 @@ Analysis and visualization tool for genetic algorithm optimization results.
 - Generates comprehensive summaries
 
 **Usage Examples:**
-- `--analysis summary`: Quick overview of results
-- `--analysis evolution`: Evolution trends across generations
-- `--analysis best`: Best queries found
-- `--analysis all`: Complete analysis
+```bash
+# Quick Summary
+python src/visualize_optimization.py --analysis summary
+
+# Evolution Trends
+python src/visualize_optimization.py --analysis evolution
+
+# Best Queries Found
+python src/visualize_optimization.py --analysis best
+
+# Full Analysis
+python src/visualize_optimization.py --analysis all
+```
 
 ### `genetic_prompts.py`
 Contains prompts used by the genetic algorithm for generating query variations.

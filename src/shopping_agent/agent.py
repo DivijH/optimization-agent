@@ -5,6 +5,8 @@ import os
 import shutil
 import subprocess
 import sys
+import time
+from datetime import datetime
 from dataclasses import asdict, dataclass, field
 from typing import Any, Dict, List, Optional
 from urllib.parse import quote
@@ -15,12 +17,12 @@ from browser_use.browser.session import BrowserSession
 from browser_use.browser.views import BrowserStateSummary
 from browser_use.controller.service import Controller
 from browser_use.controller.views import (
-    CloseTabAction,
+    # CloseTabAction,  # No longer needed with direct URL navigation
     # InputTextAction,
     # SendKeysAction,
     GoToUrlAction,
-    OpenTabAction,
-    SwitchTabAction,
+    # OpenTabAction,  # No longer needed with direct URL navigation
+    # SwitchTabAction,  # No longer needed with direct URL navigation
 )
 from langchain_core.language_models.chat_models import BaseChatModel
 from langchain_openai import ChatOpenAI
@@ -30,7 +32,7 @@ from src.shopping_agent.agent_actions import (
     create_debug_info,
     handle_actions,
     save_and_upload_debug_info,
-    save_and_upload_screenshots,
+    # save_and_upload_screenshots,
 )
 from src.shopping_agent.browser_utils import (
     analyze_product_page,
@@ -73,6 +75,7 @@ class EtsyShoppingAgent:
     save_gcs: bool = True
     gcs_bucket_name: str = "training-dev-search-data-jtzn"
     gcs_prefix: str = "smu-agent-optimizer"
+    gcs_project: str = "etsy-search-ml-dev"
 
     # Internal state, not initialized by the user
     # history: List[str] = field(init=False, default_factory=list)
@@ -91,6 +94,9 @@ class EtsyShoppingAgent:
         init=False, default=None, repr=False
     )
     gcs_manager: Optional[GCSManager] = field(init=False, default=None, repr=False)
+    # Time tracking
+    _start_time: Optional[float] = field(init=False, default=None, repr=False)
+    _start_timestamp: Optional[str] = field(init=False, default=None, repr=False)
 
     def __post_init__(self):
         """Initializes the agent, handling debug path setup."""
@@ -100,7 +106,7 @@ class EtsyShoppingAgent:
         self._setup_llms()
         self._setup_debug_path()
         if self.save_gcs:
-            self.gcs_manager = GCSManager(self)
+            self.gcs_manager = GCSManager(self, project=self.gcs_project)
 
     def _setup_llms(self):
         if self.model_name not in MODEL_PRICING:
@@ -223,6 +229,12 @@ class EtsyShoppingAgent:
                 product_name = listing["product_name"]
                 href = listing["href"]
                 
+                # Skip if we've already visited this listing
+                if listing_id in self.visited_listing_ids:
+                    self._log(f"   - Skipping already visited listing {self.current_listing_index + 1}/{len(self.listings_queue)}: '{product_name}' (ID: {listing_id})")
+                    self.current_listing_index += 1
+                    return await self.handle_search_page(state)  # Try next listing
+                
                 self._log(f"   - Processing listing {self.current_listing_index + 1}/{len(self.listings_queue)}: '{product_name}' (ID: {listing_id})")
                 
                 # Mark this listing as visited
@@ -237,8 +249,7 @@ class EtsyShoppingAgent:
                     href = urljoin("https://www.etsy.com", href)
                 
                 return {
-                    "open_tab": OpenTabAction(url=href),
-                    "switch_tab": SwitchTabAction(page_id=-1),
+                    "go_to_url": GoToUrlAction(url=href),
                     "product_name": product_name,
                     "listing_id": listing_id,
                 }
@@ -274,26 +285,67 @@ class EtsyShoppingAgent:
             
             await analyze_product_page(self, state, step, self.current_product_name)
 
-            current_tab_id = next(
-                (tab.page_id for tab in state.tabs if tab.url == state.url), None
-            )
-
-            if current_tab_id is not None and current_tab_id != 0:
-                return {"close_tab": CloseTabAction(page_id=current_tab_id)}
+            # If there's another product in the queue, navigate directly to next product
+            if (self.current_listing_index < len(self.listings_queue) and 
+                self.listings_extracted):
+                
+                # Get the next listing
+                listing = self.listings_queue[self.current_listing_index]
+                listing_id = listing["listing_id"]
+                product_name = listing["product_name"]
+                href = listing["href"]
+                
+                self._log(f"   - Navigating directly to next product")
+                self._log(f"   - Next product {self.current_listing_index + 1}/{len(self.listings_queue)}: '{product_name}' (ID: {listing_id})")
+                
+                # Mark this listing as visited and increment counter
+                self.visited_listing_ids.add(listing_id)
+                self.current_listing_index += 1
+                
+                # Build full URL
+                if href.startswith("/"):
+                    from urllib.parse import urljoin
+                    href = urljoin("https://www.etsy.com", href)
+                
+                return {
+                    "go_to_url": GoToUrlAction(url=href),
+                    "product_name": product_name,
+                    "listing_id": listing_id,
+                }
+            
+            # No more products to process, we're done
+            self._log("   - No more products to analyze, analysis complete")
             return None
             
         except Exception as e:
             self._log(f"   ❌ Error handling listing page: {e}")
-            # Try to close the tab anyway to prevent browser from getting stuck
-            try:
-                current_tab_id = next(
-                    (tab.page_id for tab in state.tabs if tab.url == state.url), None
-                )
-                if current_tab_id is not None and current_tab_id != 0:
-                    self._log("   - Attempting to close tab despite error")
-                    return {"close_tab": CloseTabAction(page_id=current_tab_id)}
-            except Exception as close_error:
-                self._log(f"   - Could not close tab: {close_error}")
+            # If there's an error but we have more products, try to navigate to the next one
+            if (self.current_listing_index < len(self.listings_queue) and 
+                self.listings_extracted):
+                try:
+                    listing = self.listings_queue[self.current_listing_index]
+                    listing_id = listing["listing_id"]
+                    product_name = listing["product_name"]
+                    href = listing["href"]
+                    
+                    self._log(f"   - Error occurred, attempting to continue with next product: '{product_name}' (ID: {listing_id})")
+                    
+                    # Mark this listing as visited and increment counter
+                    self.visited_listing_ids.add(listing_id)
+                    self.current_listing_index += 1
+                    
+                    # Build full URL
+                    if href.startswith("/"):
+                        from urllib.parse import urljoin
+                        href = urljoin("https://www.etsy.com", href)
+                    
+                    return {
+                        "go_to_url": GoToUrlAction(url=href),
+                        "product_name": product_name,
+                        "listing_id": listing_id,
+                    }
+                except Exception as recovery_error:
+                    self._log(f"   - Recovery also failed: {recovery_error}")
             return None
 
     # def perform_search(self, search_bar_index: int):
@@ -307,6 +359,11 @@ class EtsyShoppingAgent:
     async def run(self):
         """Main agent workflow for online shopping on Etsy."""
         self._log("🚀 Starting Etsy shopping agent...")
+        
+        # Record start time for this agent run
+        self._start_time = time.time()
+        self._start_timestamp = datetime.now().isoformat()
+        
         self.patch_browser_session_scroll()
 
         if self.record_video:
@@ -319,30 +376,33 @@ class EtsyShoppingAgent:
         
         Action = self.controller.registry.create_action_model()
         step = 0
+        health_check_interval = 10  # Check health every 10 steps instead of every step
         while not self.max_steps or step < self.max_steps:
             step += 1
             self._log(f"\n--- Step {step}/{self.max_steps or '∞'} ---")
 
-            # Check browser session health before each step
-            is_healthy = await self._check_browser_session_health()
-            if not is_healthy:
-                self._log("   ⚠️ Browser session unhealthy, attempting restart...")
-                try:
-                    await self._restart_browser_session()
-                    is_healthy = await self._check_browser_session_health()
-                    if not is_healthy:
-                        self._log("   ❌ Browser session restart failed, ending agent run")
+            # Check browser session health periodically or after errors
+            should_check_health = (step % health_check_interval == 0) or (step == 1)
+            if should_check_health:
+                is_healthy = await self._check_browser_session_health()
+                if not is_healthy:
+                    self._log("   ⚠️ Browser session unhealthy, attempting restart...")
+                    try:
+                        await self._restart_browser_session()
+                        is_healthy = await self._check_browser_session_health()
+                        if not is_healthy:
+                            self._log("   ❌ Browser session restart failed, ending agent run")
+                            break
+                    except Exception as e:
+                        self._log(f"   ❌ Browser session restart failed: {e}")
                         break
-                except Exception as e:
-                    self._log(f"   ❌ Browser session restart failed: {e}")
-                    break
 
             try:
                 state = await self.browser_session.get_state_summary(
                     cache_clickable_elements_hashes=True
                 )
-                if "etsy.com/search" in state.url:
-                    await save_and_upload_screenshots(self, step)
+                # if "etsy.com/search" in state.url:
+                #     await save_and_upload_screenshots(self, step)
 
                 action_plan = await self._think(state, step)
 
@@ -399,15 +459,47 @@ class EtsyShoppingAgent:
             BrowserSession._smooth_scroll_patched = True
 
     async def start_browser_session(self):
+        # Browser optimization for speed (keeping JS enabled for functionality)
+        browser_args = [
+            '--no-sandbox',
+            '--disable-dev-shm-usage',
+            '--disable-blink-features=AutomationControlled',
+            '--disable-extensions',
+            '--disable-plugins',
+            '--disable-web-security',
+            '--disable-features=TranslateUI',
+            '--disable-background-networking',
+            '--disable-background-timer-throttling',
+            '--disable-client-side-phishing-detection',
+            '--disable-default-apps',
+            '--disable-hang-monitor',
+            '--disable-popup-blocking',
+            '--disable-prompt-on-repost',
+            '--disable-sync',
+            '--disable-domain-reliability',
+            '--no-first-run',
+            '--no-default-browser-check',
+            '--fast-start',
+            '--aggressive-cache-discard',
+            '--memory-pressure-off',
+            '--disable-background-media-suspend',
+            '--disable-backgrounding-occluded-windows',
+            '--disable-renderer-backgrounding',
+            '--disable-field-trial-config',
+            '--disable-back-forward-cache',
+            '--disable-ipc-flooding-protection'
+        ]
+        
         browser_profile = BrowserProfile(
             viewport={"width": self.viewport_width, "height": self.viewport_height},
             user_data_dir=self.user_data_dir,
+            browser_args=browser_args,  # Add optimization flags
         )
         self.browser_session = BrowserSession(
             keep_alive=True, headless=self.headless, browser_profile=browser_profile
         )
         await self.browser_session.start()
-        self._log("✅ Browser session started.")
+        self._log("✅ Browser session started with optimization flags.")
 
     async def _restart_browser_session(self):
         """Safely restart the browser session when the context becomes corrupted."""
@@ -425,7 +517,7 @@ class EtsyShoppingAgent:
         self.browser_session = None
         
         # Add a small delay to let system resources free up
-        await asyncio.sleep(2.0)
+        await asyncio.sleep(0.5)
         
         # Create a new session
         try:
@@ -570,7 +662,7 @@ class EtsyShoppingAgent:
             self._record_proc = None
 
     async def shutdown(self):
-        """Saves memory, makes final decision, and cleans up resources."""
+        """Saves memory, makes final decision, calculates timing, and cleans up resources."""
         self._log("\n--- Shutting down and saving state ---")
         
         # Stop screen recording first
@@ -622,6 +714,50 @@ class EtsyShoppingAgent:
         
         # Log final token usage
         self.log_final_token_usage()
+        
+        # Calculate and save timing data
+        await self._save_timing_data()
+
+    async def _save_timing_data(self):
+        """Calculate and save timing data to _time_taken.json"""
+        if not self._start_time or not self.debug_path:
+            return
+            
+        if not (self.save_local or self.save_gcs):
+            return
+
+        # Record end time and calculate duration
+        end_time = time.time()
+        end_timestamp = datetime.now().isoformat()
+        total_time_seconds = end_time - self._start_time
+        
+        # Create timing data
+        timing_data = {
+            "start_time": self._start_timestamp,
+            "end_time": end_timestamp,
+            "total_time_seconds": round(total_time_seconds, 2),
+            "total_time_formatted": f"{int(total_time_seconds // 3600):02d}:{int((total_time_seconds % 3600) // 60):02d}:{int(total_time_seconds % 60):02d}"
+        }
+        
+        # Save timing data to _time_taken.json
+        if self.save_local:
+            try:
+                time_file_path = os.path.join(self.debug_path, "_time_taken.json")
+                with open(time_file_path, "w") as f:
+                    json.dump(timing_data, f, indent=2)
+                self._log(f"⏱️  Total time taken: {timing_data['total_time_formatted']} ({timing_data['total_time_seconds']} seconds)")
+                self._log(f"📄 Timing data saved to _time_taken.json")
+            except Exception as e:
+                self._log(f"⚠️  Failed to save timing data: {e}", level="error")
+        
+        # Upload to GCS if enabled
+        if self.save_gcs and self.gcs_manager:
+            try:
+                await self.gcs_manager.upload_string_to_gcs(
+                    json.dumps(timing_data, indent=2), f"{self.debug_path}/_time_taken.json"
+                )
+            except Exception as e:
+                self._log(f"⚠️  Failed to upload timing data to GCS: {e}", level="error")
 
     async def save_memory_and_scores(self):
         if not self.save_local and not self.save_gcs:

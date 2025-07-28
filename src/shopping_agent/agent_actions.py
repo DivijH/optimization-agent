@@ -5,48 +5,48 @@ import os
 from dataclasses import asdict, is_dataclass
 from typing import TYPE_CHECKING, Any, Dict, Optional
 
-from browser_use.browser.views import BrowserStateSummary
+# from browser_use.browser.views import BrowserStateSummary
 
 if TYPE_CHECKING:
     from src.shopping_agent.agent import EtsyShoppingAgent
 
 
-async def save_and_upload_screenshots(agent: "EtsyShoppingAgent", step: int):
-    """Save and upload screenshots to local and GCS."""
-    if not agent.browser_session:
-        return
+# async def save_and_upload_screenshots(agent: "EtsyShoppingAgent", step: int):
+#     """Save and upload screenshots to local and GCS."""
+#     if not agent.browser_session:
+#         return
     
-    # Remove highlights to get a screenshot
-    try:
-        await agent.browser_session.remove_highlights()
-    except Exception:
-        pass
+#     # Remove highlights to get a screenshot
+#     try:
+#         await agent.browser_session.remove_highlights()
+#     except Exception:
+#         pass
     
-    plain_screenshot_b64 = await agent.browser_session.take_screenshot()
-    if (
-        (agent.save_local or agent.save_gcs)
-        and plain_screenshot_b64
-        and agent.debug_path
-    ):
-        if agent.save_local:
-            image_path = os.path.join(
-                agent.debug_path, f"screenshot_step_{step}.png"
-            )
-            try:
-                with open(image_path, "wb") as f:
-                    f.write(base64.b64decode(plain_screenshot_b64))
-                agent._log(f"   - Saved debug screenshot to {image_path}")
-            except Exception as e:
-                agent._log(f"   - Failed to save debug screenshot: {e}")
+#     plain_screenshot_b64 = await agent.browser_session.take_screenshot()
+#     if (
+#         (agent.save_local or agent.save_gcs)
+#         and plain_screenshot_b64
+#         and agent.debug_path
+#     ):
+#         if agent.save_local:
+#             image_path = os.path.join(
+#                 agent.debug_path, f"screenshot_step_{step}.png"
+#             )
+#             try:
+#                 with open(image_path, "wb") as f:
+#                     f.write(base64.b64decode(plain_screenshot_b64))
+#                 agent._log(f"   - Saved debug screenshot to {image_path}")
+#             except Exception as e:
+#                 agent._log(f"   - Failed to save debug screenshot: {e}")
 
-        # Upload plain screenshot
-        if agent.save_gcs and agent.gcs_manager:
-            gcs_image_path = f"{agent.debug_path}/screenshot_step_{step}.png"
-            await agent.gcs_manager.upload_string_to_gcs(
-                base64.b64decode(plain_screenshot_b64),
-                gcs_image_path,
-                content_type="image/png",
-            )
+#         # Upload plain screenshot
+#         if agent.save_gcs and agent.gcs_manager:
+#             gcs_image_path = f"{agent.debug_path}/screenshot_step_{step}.png"
+#             await agent.gcs_manager.upload_string_to_gcs(
+#                 base64.b64decode(plain_screenshot_b64),
+#                 gcs_image_path,
+#                 content_type="image/png",
+#             )
 
 
 def create_debug_info(action_plan: Optional[Dict[str, Any]]) -> Optional[dict]:
@@ -114,39 +114,47 @@ async def handle_actions(agent: "EtsyShoppingAgent", action_plan, Action):
         action = action_plan["send_keys"]
         actions_to_perform.append(Action(send_keys=action))
         agent._log(f"   - Pressing '{action.keys}'")
-    if "click_element_by_index" in action_plan:
-        action = action_plan["click_element_by_index"]
-        actions_to_perform.append(Action(click_element_by_index=action))
-        if "product_name" in action_plan:
-            # if "listing_id" in action_plan:
-            #     agent.history.append(f"clicked_listing_{action_plan['listing_id']}")
-            # else:
-            #     agent.history.append(f"clicked_product_{action_plan['product_name']}")
-            agent.current_product_name = action_plan["product_name"]
-        agent._log(f"   - Clicking element at index {action.index}")
-    if "open_tab" in action_plan:
-        action = action_plan["open_tab"]
-        actions_to_perform.append(Action(open_tab=action))
-        if "product_name" in action_plan:
-            # if "listing_id" in action_plan:
-            #     agent.history.append(f"opened_listing_{action_plan['listing_id']}")
-            # else:
-            #     agent.history.append(f"clicked_product_{action_plan['product_name']}")
-            agent.current_product_name = action_plan["product_name"]
-        agent._log(f"   - Opening new tab with {action.url}")
-    if "close_tab" in action_plan:
-        action = action_plan["close_tab"]
-        actions_to_perform.append(Action(close_tab=action))
-        agent.current_product_name = None
-        agent._log(f"   - Closing tab {action.page_id}")
-    if "switch_tab" in action_plan:
-        action = action_plan["switch_tab"]
-        actions_to_perform.append(Action(switch_tab=action))
-        agent._log(f"   - Switching to tab {action.page_id}")
-    if "scroll_down" in action_plan:
-        action = action_plan["scroll_down"]
-        actions_to_perform.append(Action(scroll_down=action))
-        agent._log("   - Scrolling down the page")
+    # if "click_element_by_index" in action_plan:
+    #     action = action_plan["click_element_by_index"]
+    #     actions_to_perform.append(Action(click_element_by_index=action))
+    #     if "product_name" in action_plan:
+    #         if "listing_id" in action_plan:
+    #             agent.history.append(f"clicked_listing_{action_plan['listing_id']}")
+    #         else:
+    #             agent.history.append(f"clicked_product_{action_plan['product_name']}")
+    #         agent.current_product_name = action_plan["product_name"]
+    #     agent._log(f"   - Clicking element at index {action.index}")
+    # Tab actions no longer needed with direct URL navigation optimization
+    # if "open_tab" in action_plan:
+    #     action = action_plan["open_tab"]
+    #     actions_to_perform.append(Action(open_tab=action))
+    #     if "product_name" in action_plan:
+    #         # if "listing_id" in action_plan:
+    #         #     agent.history.append(f"opened_listing_{action_plan['listing_id']}")
+    #         # else:
+    #         #     agent.history.append(f"clicked_product_{action_plan['product_name']}")
+    #         agent.current_product_name = action_plan["product_name"]
+    #     agent._log(f"   - Opening new tab with {action.url}")
+    # if "close_tab" in action_plan:
+    #     action = action_plan["close_tab"]
+    #     actions_to_perform.append(Action(close_tab=action))
+    #     # Only clear current_product_name if we're not opening another tab in the same action
+    #     # (which happens in the optimized flow when switching directly between products)
+    #     if "open_tab" not in action_plan:
+    #         agent.current_product_name = None
+    #     agent._log(f"   - Closing tab {action.page_id}")
+    # if "switch_tab" in action_plan:
+    #     action = action_plan["switch_tab"]
+    #     actions_to_perform.append(Action(switch_tab=action))
+    #     agent._log(f"   - Switching to tab {action.page_id}")
+    # 
+    # Handle product name setting for direct URL navigation
+    # if "product_name" in action_plan and "go_to_url" in action_plan:
+    #     agent.current_product_name = action_plan["product_name"]
+    # if "scroll_down" in action_plan:
+    #     action = action_plan["scroll_down"]
+    #     actions_to_perform.append(Action(scroll_down=action))
+    #     agent._log("   - Scrolling down the page")
 
     async def _execute_action_with_retry(action, max_retries=3):
         """Execute an action with retry logic for browser context errors."""
@@ -176,7 +184,7 @@ async def handle_actions(agent: "EtsyShoppingAgent", action_plan, Action):
                     agent._log(f"   ⚠️ Browser context error (attempt {attempt + 1}/{max_retries}): {error_msg}")
                     if attempt < max_retries - 1:
                         # Wait before retry
-                        await asyncio.sleep(1.0 * (attempt + 1))
+                        await asyncio.sleep(0.3)
                         # Try to restart the browser session
                         try:
                             await agent._restart_browser_session()
@@ -188,7 +196,7 @@ async def handle_actions(agent: "EtsyShoppingAgent", action_plan, Action):
                 else:
                     agent._log(f"   ❌ Action failed with unexpected error: {error_msg}")
                     if attempt < max_retries - 1:
-                        await asyncio.sleep(0.5 * (attempt + 1))
+                        await asyncio.sleep(0.2)
                     else:
                         agent._log(f"   ❌ Max retries reached for action error. Skipping action.")
                         return None
@@ -198,6 +206,6 @@ async def handle_actions(agent: "EtsyShoppingAgent", action_plan, Action):
     for action in actions_to_perform:
         result = await _execute_action_with_retry(action)
         if result is not None:
-            await asyncio.sleep(0.2)
+            await asyncio.sleep(0.05)
         else:
             agent._log(f"   ⚠️ Action failed after retries, continuing with next action") 

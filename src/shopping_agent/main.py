@@ -55,7 +55,7 @@ async def async_main(agent: EtsyShoppingAgent):
 
 @click.command()
 @click.option("--task", default=DEFAULT_TASK, help="The shopping task for the agent.")
-@click.option("--curr_query", default=None, help="The current query for the agent. Defaults to the task.")
+@click.option("--curr-query", default=None, help="The current query for the agent. Defaults to the task.")
 @click.option("--manual", is_flag=True, help="Wait for user to press Enter after each agent action.")
 @click.option("--headless", is_flag=True, help="Run the browser in headless mode.")
 @click.option("--max-steps", default=None, type=int, help="The maximum number of steps the agent will take. If not provided, the agent will continue until no more products are left to analyze.")
@@ -71,6 +71,7 @@ async def async_main(agent: EtsyShoppingAgent):
 @click.option("--save-gcs/--no-save-gcs", default=True, help="Save data to Google Cloud Storage (default: True).")
 @click.option("--gcs-bucket", default="training-dev-search-data-jtzn", help="GCS bucket name for data storage.")
 @click.option("--gcs-prefix", default="smu-agent-optimizer", help="GCS prefix for data storage.")
+@click.option("--gcs-project", default="etsy-search-ml-dev", help="GCS project name for client initialization.")
 def cli(
     task,
     curr_query,
@@ -89,6 +90,7 @@ def cli(
     save_gcs,
     gcs_bucket,
     gcs_prefix,
+    gcs_project,
 ):
     """A command-line interface to run the EtsyShoppingAgent."""
 
@@ -110,6 +112,7 @@ def cli(
         save_gcs=save_gcs,
         gcs_bucket_name=gcs_bucket,
         gcs_prefix=gcs_prefix,
+        gcs_project=gcs_project,
     )
     asyncio.run(async_main(agent))
 

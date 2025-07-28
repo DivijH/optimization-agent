@@ -8,8 +8,9 @@ if TYPE_CHECKING:
 
 
 class GCSManager:
-    def __init__(self, agent: "EtsyShoppingAgent"):
+    def __init__(self, agent: "EtsyShoppingAgent", project: Optional[str] = None):
         self.agent = agent
+        self.project = project or getattr(agent, 'gcs_project', 'etsy-search-ml-dev')
         self._gcs_client: Optional[storage.Client] = None
 
     def get_gcs_client(self) -> Optional[storage.Client]:
@@ -19,7 +20,7 @@ class GCSManager:
 
         if self._gcs_client is None:
             try:
-                self._gcs_client = storage.Client()
+                self._gcs_client = storage.Client(project=self.project)
             except Exception as e:
                 self.agent._log(f"Failed to initialize GCS client: {e}", level="error")
                 return None

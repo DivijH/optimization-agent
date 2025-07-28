@@ -48,7 +48,12 @@ gcloud auth application-default login
 
 ## Quick Start
 
-For a comprehensive getting started guide, see [GETTING_STARTED.md](./GETTING_STARTED.md).
+### Test the System
+First, verify everything works by running a quick optimization:
+```bash
+cd optimization-agent
+python src/genetic_query_optimizer.py --query "test" --population-size 2 --generations 1 --n-agents 1 --max-steps 2
+```
 
 ### Single Agent Run
 ```bash
@@ -65,6 +70,11 @@ python src/analyze_query.py --task "winter jacket" --n-agents 4
 python src/genetic_query_optimizer.py --query "vintage jewelry"
 ```
 
+### Analyze Results
+```bash
+python src/visualize_optimization.py --analysis summary
+```
+
 ## Documentation
 
 - **[Core Components (`src/`)](./src/README.md)**: Detailed documentation on the shopping agent's core components, utilities, and default values.
@@ -79,7 +89,6 @@ python src/genetic_query_optimizer.py --query "vintage jewelry"
 │   ├── personas/                    # Virtual customer personas for agents
 │   │   ├── ... (1000 persona files)
 │   └── README.md                    # Persona documentation
-├── GETTING_STARTED.md               # Quick start guide for genetic optimization
 ├── src/
 │   ├── shopping_agent/              # Core shopping agent logic
 │   │   ├── main.py                  # CLI entry point

@@ -6,6 +6,7 @@ import sys
 from typing import List
 import os
 from collections import defaultdict
+from datetime import datetime
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage
 
@@ -55,7 +56,7 @@ def score_to_numeric(semantic_score: str) -> int:
         return 0  # Default to 0 for unknown scores
 
 
-def process_agent_results(debug_root: Path, model_name: str = "openai/o4-mini", temperature: float = 0.7):
+def process_agent_results(debug_root: Path, model_name: str = "global-gemini-2.5-flash", temperature: float = 0.7):
     """
     Analyzes all agent runs in a directory, aggregates key metrics,
     and saves a summary CSV file.
@@ -83,6 +84,9 @@ def process_agent_results(debug_root: Path, model_name: str = "openai/o4-mini", 
 
     # Processing Listing Rankings
     process_listing_rankings(agent_dirs)
+
+    # Processing Timing Data
+    process_timing_data(agent_dirs)
 
     # Generate a sumamry from all the agents
     generate_summary(agent_dirs, model_name, temperature)
@@ -141,14 +145,22 @@ def process_token_usage(agent_dirs: List[Path]):
                 token_usage_data['models'][model_name]['final_decision']['output_cost'] += data['models'][model_name]['final_decision']['output_cost']
                 token_usage_data['models'][model_name]['final_decision']['total_cost'] += data['models'][model_name]['final_decision']['total_cost']
 
-    # Calculate average costs
-    token_usage_data['avg_total_cost'] = token_usage_data['total_session_cost'] / len(agent_dirs)
-    token_usage_data['avg_total_cost_after_discount'] = token_usage_data['total_session_cost_after_discount'] / len(agent_dirs)
+    # Calculate average costs (with safety check for division by zero)
+    num_agents = len(agent_dirs)
+    if num_agents > 0:
+        token_usage_data['avg_total_cost'] = token_usage_data['total_session_cost'] / num_agents
+        token_usage_data['avg_total_cost_after_discount'] = token_usage_data['total_session_cost_after_discount'] / num_agents
+    else:
+        token_usage_data['avg_total_cost'] = 0.0
+        token_usage_data['avg_total_cost_after_discount'] = 0.0
     
-    # Calculate vendor discount statistics
+    # Calculate vendor discount statistics (with safety check)
     if agents_with_discount > 0:
         token_usage_data['vendor_discount_applied'] = total_discount_applied / agents_with_discount
         token_usage_data['vendor_discount_percentage'] = f"{token_usage_data['vendor_discount_applied'] * 100:.0f}%"
+    else:
+        token_usage_data['vendor_discount_applied'] = 0.0
+        token_usage_data['vendor_discount_percentage'] = "0%"
     
     # Add metadata about vendor discount
     token_usage_data['vendor_discount_metadata'] = {
@@ -427,7 +439,129 @@ def process_listing_rankings(agent_dirs: List[Path]):
     print(f"  - Listing rankings processed and saved to: {output_file}")
 
 
-def generate_summary(agent_dirs: List[Path], model_name: str = "openai/o4-mini", temperature: float = 0.7):
+def process_timing_data(agent_dirs: List[Path]):
+    """
+    Process timing data from all agent directories, calculating total parallel execution time
+    and individual agent timing statistics.
+    """
+    print("  - Processing timing data...")
+    
+    timing_data = {
+        'metadata': {
+            'total_agents_processed': 0,
+            'agents_with_timing': [],
+            'agents_missing_timing': []
+        },
+        'parallel_execution': {
+            'earliest_start_time': None,
+            'latest_end_time': None,
+            'total_parallel_time_seconds': 0.0,
+            'total_parallel_time_formatted': '00:00:00'
+        },
+        'individual_execution': {
+            'total_agent_time_seconds': 0.0,
+            'average_agent_time_seconds': 0.0,
+            'min_agent_time_seconds': float('inf'),
+            'max_agent_time_seconds': 0.0,
+            'agent_times': []
+        }
+    }
+    
+    earliest_start_timestamp = None
+    latest_end_timestamp = None
+    individual_times = []
+    
+    for agent_dir in agent_dirs:
+        timing_file = agent_dir / "_time_taken.json"
+        if not timing_file.exists():
+            print(f"    - Skipping {agent_dir.name}: `_time_taken.json` not found.")
+            timing_data['metadata']['agents_missing_timing'].append(agent_dir.name)
+            continue
+            
+        try:
+            with open(timing_file, 'r') as f:
+                data = json.load(f)
+            
+            start_time = data.get('start_time')
+            end_time = data.get('end_time')
+            total_time_seconds = data.get('total_time_seconds', 0.0)
+            
+            if not start_time or not end_time:
+                print(f"    - Warning: {agent_dir.name} missing start_time or end_time")
+                timing_data['metadata']['agents_missing_timing'].append(agent_dir.name)
+                continue
+            
+            # Parse timestamps
+            start_timestamp = datetime.fromisoformat(start_time.replace('Z', '+00:00'))
+            end_timestamp = datetime.fromisoformat(end_time.replace('Z', '+00:00'))
+            
+            # Track earliest start and latest end
+            if earliest_start_timestamp is None or start_timestamp < earliest_start_timestamp:
+                earliest_start_timestamp = start_timestamp
+                timing_data['parallel_execution']['earliest_start_time'] = start_time
+            
+            if latest_end_timestamp is None or end_timestamp > latest_end_timestamp:
+                latest_end_timestamp = end_timestamp
+                timing_data['parallel_execution']['latest_end_time'] = end_time
+            
+            # Store individual agent timing
+            agent_timing_info = {
+                'agent': agent_dir.name,
+                'start_time': start_time,
+                'end_time': end_time,
+                'total_time_seconds': total_time_seconds,
+                'total_time_formatted': data.get('total_time_formatted', '00:00:00')
+            }
+            timing_data['individual_execution']['agent_times'].append(agent_timing_info)
+            individual_times.append(total_time_seconds)
+            
+            timing_data['metadata']['agents_with_timing'].append(agent_dir.name)
+            timing_data['metadata']['total_agents_processed'] += 1
+            
+        except (json.JSONDecodeError, ValueError) as e:
+            print(f"    - Error reading {agent_dir.name}: {e}")
+            timing_data['metadata']['agents_missing_timing'].append(agent_dir.name)
+        except Exception as e:
+            print(f"    - Unexpected error with {agent_dir.name}: {e}")
+            timing_data['metadata']['agents_missing_timing'].append(agent_dir.name)
+    
+    # Calculate parallel execution time
+    if earliest_start_timestamp and latest_end_timestamp:
+        parallel_time_seconds = (latest_end_timestamp - earliest_start_timestamp).total_seconds()
+        timing_data['parallel_execution']['total_parallel_time_seconds'] = round(parallel_time_seconds, 2)
+        
+        # Format parallel time as HH:MM:SS
+        hours = int(parallel_time_seconds // 3600)
+        minutes = int((parallel_time_seconds % 3600) // 60)
+        seconds = int(parallel_time_seconds % 60)
+        timing_data['parallel_execution']['total_parallel_time_formatted'] = f"{hours:02d}:{minutes:02d}:{seconds:02d}"
+    
+    # Calculate individual execution statistics
+    if individual_times:
+        total_individual_time = sum(individual_times)
+        timing_data['individual_execution']['total_agent_time_seconds'] = round(total_individual_time, 2)
+        timing_data['individual_execution']['average_agent_time_seconds'] = round(total_individual_time / len(individual_times), 2)
+        timing_data['individual_execution']['min_agent_time_seconds'] = round(min(individual_times), 2)
+        timing_data['individual_execution']['max_agent_time_seconds'] = round(max(individual_times), 2)
+        
+        # Calculate efficiency (how much parallel execution saved time)
+        parallel_time = timing_data['parallel_execution']['total_parallel_time_seconds']
+        if parallel_time > 0:
+            timing_data['efficiency'] = {
+                'time_saved_seconds': round(total_individual_time - parallel_time, 2),
+                'efficiency_percentage': round(((total_individual_time - parallel_time) / total_individual_time) * 100, 2) if total_individual_time > 0 else 0,
+                'parallelization_factor': round(total_individual_time / parallel_time, 2) if parallel_time > 0 else 0
+            }
+    
+    # Save timing data
+    output_file = agent_dirs[0].parent / "_timing_data.json"
+    with open(output_file, 'w') as f:
+        json.dump(timing_data, f, indent=4)
+    
+    print(f"  - Timing data processed and saved to: {output_file}")
+
+
+def generate_summary(agent_dirs: List[Path], model_name: str = "global-gemini-2.5-flash", temperature: float = 0.7):
     """
     Generate a summary from all the agents using LLM.
     """
@@ -436,9 +570,7 @@ def generate_summary(agent_dirs: List[Path], model_name: str = "openai/o4-mini",
     with open(agent_dirs[0].parent / "_final_purchase_decision.json", 'r') as f:
         final_purchase_decision_data = json.load(f)
     
-    feedbacks = []
-    for decision in final_purchase_decision_data['individual_decisions']:
-        feedbacks.append(decision['reasoning'])
+    feedbacks = final_purchase_decision_data['reasoning_themes']
 
     if not feedbacks:
         print("  - No feedbacks found. Skipping summary generation.")
@@ -456,7 +588,7 @@ def generate_summary(agent_dirs: List[Path], model_name: str = "openai/o4-mini",
     llm = ChatOpenAI(model=model_name, temperature=temperature)
     
     # Format feedbacks for the prompt
-    feedbacks_text = "\n\n".join([f"Agent Feedback {i+1}: {feedback}" for i, feedback in enumerate(feedbacks)])
+    feedbacks_text = "\n\n".join([f"Agent Feedback {i+1}:\n{feedback}" for i, feedback in enumerate(feedbacks)])
     
     system_message = SystemMessage(content=system_prompt)
     human_message = HumanMessage(content=f"Here are the feedbacks from {len(feedbacks)} shopping agents:\n\n{feedbacks_text}")

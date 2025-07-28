@@ -32,7 +32,7 @@ project_root = str(CURRENT_DIR.parent)
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
-from genetic_prompts import GENERATE_INITIAL_POPULATION_PROMPT
+from genetic_prompts import GENERATE_INITIAL_POPULATION_PROMPT, CROSSOVER_PROMPT, MUTATION_PROMPT
 from analyze_query import run_analyze_query
 from shopping_agent.config import MODEL_PRICING, VENDOR_DISCOUNT_GEMINI
 
@@ -100,6 +100,9 @@ class GeneticQueryOptimizer:
         self.token_usage: Dict[str, Dict[str, any]] = {}  # Track token usage for genetic algorithm LLM calls
         self.total_optimization_cost: float = 0.0
         self.fitness_evaluation_costs: List[Dict] = []  # Track costs from fitness evaluations
+        
+        # Deduplication: map query string to QueryIndividual with fitness
+        self.evaluated_queries: Dict[str, QueryIndividual] = {}
         
         # Set up logging
         self.setup_logging()
@@ -210,16 +213,16 @@ class GeneticQueryOptimizer:
                 cost_data["models"] = data.get("models", {})
                 return cost_data
         
-        # Fallback: aggregate from individual agent files
-        agent_dirs = [d for d in eval_debug_path.iterdir() if d.is_dir() and d.name.startswith('agent_')]
-        for agent_dir in agent_dirs:
-            token_file = agent_dir / "_token_usage.json"
-            if token_file.exists():
-                with open(token_file, 'r') as f:
-                    agent_data = json.load(f)
-                    cost_data["agent_costs"].append(agent_data)
-                    cost_data["total_cost"] += agent_data.get("total_session_cost", 0.0)
-                    cost_data["total_cost_after_discount"] += agent_data.get("total_session_cost_after_discount", 0.0)
+        # # Fallback: aggregate from individual agent files
+        # agent_dirs = [d for d in eval_debug_path.iterdir() if d.is_dir() and d.name.startswith('agent_')]
+        # for agent_dir in agent_dirs:
+        #     token_file = agent_dir / "_token_usage.json"
+        #     if token_file.exists():
+        #         with open(token_file, 'r') as f:
+        #             agent_data = json.load(f)
+        #             cost_data["agent_costs"].append(agent_data)
+        #             cost_data["total_cost"] += agent_data.get("total_session_cost", 0.0)
+        #             cost_data["total_cost_after_discount"] += agent_data.get("total_session_cost_after_discount", 0.0)
         
         return cost_data
     
@@ -327,7 +330,18 @@ Example format:
         return sanitized
     
     async def evaluate_fitness(self, individual: QueryIndividual, generation: int) -> QueryIndividual:
-        """Evaluate the fitness of a query individual."""
+        """Evaluate the fitness of an individual query. If already evaluated, reuse the result."""
+        # Deduplication: check if this query has already been evaluated
+        query_key = individual.query.strip()
+        if query_key in self.evaluated_queries:
+            # Reuse the previous QueryIndividual's fitness and info
+            prev = self.evaluated_queries[query_key]
+            individual.fitness_score = prev.fitness_score
+            individual.semantic_relevance = prev.semantic_relevance.copy()
+            individual.purchase_stats = prev.purchase_stats.copy()
+            individual.cost_info = prev.cost_info.copy()
+            return individual
+        
         self.logger.info(f"Evaluating query: '{individual.query}'")
         
         # Create unique debug directory for this evaluation
@@ -358,6 +372,7 @@ Example format:
                 save_gcs=True,
                 gcs_bucket="training-dev-search-data-jtzn",
                 gcs_prefix="smu-agent-optimizer",
+                gcs_project="etsy-search-ml-dev",
                 skip_confirmation=True,  # Skip confirmation for automated runs
             )
             
@@ -375,11 +390,15 @@ Example format:
             individual.fitness_score = fitness_score
             
             self.logger.info(f"Query '{individual.query}' fitness: {fitness_score:.3f}, cost: ${cost_data.get('total_cost_after_discount', 0.0):.4f}")
+            # After computing fitness:
+            self.evaluated_queries[query_key] = individual
             return individual
             
         except Exception as e:
             self.logger.error(f"Error evaluating query '{individual.query}': {e}")
             individual.fitness_score = 0.0
+            # After computing fitness:
+            self.evaluated_queries[query_key] = individual
             return individual
     
     def _parse_evaluation_results(self, debug_path: Path, individual: QueryIndividual) -> float:
@@ -475,16 +494,7 @@ Example format:
             return random.choice([parent1, parent2])
         
         # LLM-based crossover
-        system_prompt = """
-You are an expert at combining shopping queries to create new, potentially better variations.
-Given two parent queries, create a new query that combines the best aspects of both while maintaining search relevance.
-        
-Guidelines:
-- The result should be a natural, searchable query
-- Combine meaningful elements from both parents
-- Keep it concise (2-8 words typically)
-- Maintain the original search intent
-        """.strip()
+        system_prompt = CROSSOVER_PROMPT
         
         user_prompt = f"""
 Parent 1: "{parent1.query}"
@@ -531,26 +541,32 @@ Create a new query that combines elements from both parents. Return only the new
             parent_queries=[parent1.query, parent2.query]
         )
     
-    async def _mutate_query(self, query: str) -> str:
+    async def _mutate_query(self, query: str, generation: int) -> str:
         """Apply LLM-based mutations to a query."""
         if not query.strip():
             return query
         
-        # LLM-based mutation prompt
-        system_prompt = """
-You are an expert at creating subtle variations of shopping queries while maintaining their core meaning and search intent.
+        # Get the summary
+        summary_file = self.base_debug_path / f"gen_{generation}" / self._sanitize_query_for_path(query) / "_summary.json"
+        try:
+            with open(summary_file, 'r') as f:
+                summary_data = json.load(f)
+            feedback = summary_data['summary']
+        except Exception as e:
+            self.logger.warning(f"Error getting summary: {e}")
+            feedback = ""
         
-Guidelines:
-- Keep the same general length (don't make it significantly longer or shorter)
-- Maintain the original search intent
-- Make small but meaningful changes (synonyms, reordering, slight modifications)
-- The result should still be a natural, searchable query
-- Only output the revised query, nothing else
-        """.strip()
+        # LLM-based mutation prompt
+        system_prompt = MUTATION_PROMPT
         
         user_prompt = f"""
-Please revise the following query with no changes to its length and only output the revised version, the query is: 
-"{query}" 
+Please revise the following query with the summarized feedback:
+
+Query:
+{query} 
+
+Summarized feedback:
+{feedback}
         """.strip()
         
         try:
@@ -613,7 +629,7 @@ Please revise the following query with no changes to its length and only output 
             return individual
         
         # Mutate the query
-        mutated_query = await self._mutate_query(individual.query)
+        mutated_query = await self._mutate_query(individual.query, individual.generation)
         
         return QueryIndividual(
             query=mutated_query,

@@ -11,8 +11,8 @@ MODEL_PRICING = {
 }
 
 # Constants for token usage breakdown
-IMAGE_TOKEN_PERCENTAGE = 0.25  # 25% of analysis tokens are from images
-TEXT_TOKEN_PERCENTAGE = 0.75   # 75% of analysis tokens are from text
+IMAGE_TOKEN_PERCENTAGE = 0.5  # 50% of analysis tokens are from images
+# TEXT_TOKEN_PERCENTAGE = 0.5   # 50% of analysis tokens are from text
 VENDOR_DISCOUNT_GEMINI = 0.35  # 35% discount on Gemini models
 
 # Default task for the agent

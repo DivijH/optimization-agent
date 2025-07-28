@@ -4,73 +4,49 @@ Prompts for the Etsy Shopping Agent.
 
 # Prompt for analyzing a product page
 PRODUCT_ANALYSIS_PROMPT = """
-You are a product analyst for Etsy, an online shopping platform. Based on the provided images from the product page and the searched query, give me a detailed analysis of the product. Analyze the product using analytical thinking and common sense to determine its semantic relevance to the searched query.
+You are a product analyst for Etsy, an online shopping platform. Based on the provided product image, the searched query, product price, any available customer reviews, and shipping/delivery information, give me a detailed analysis of the product. Analyze the product using analytical thinking and common sense to determine its semantic relevance to the searched query.
+
+When product price is provided, consider the value proposition and the perceived value based on quality and features.
+
+When customer reviews are provided, use them to gain insights into product quality, user satisfaction, potential issues, and real-world usage experiences. Consider how the reviews support or contradict your visual analysis.
+
+When shipping and delivery information is provided, factor in delivery times, shipping costs, and availability in your analysis. Consider how these logistics aspects might affect the purchasing decision.
 
 Please provide your analysis in a JSON format with the following keys:
-- "pros": A list of reasons why this product is a good fit for the searched query. As many pros as you can find.
-- "cons": A list of reasons why this product might not be a good fit for the searched query. As many cons as you can find.
-- "summary": A brief summary of your overall opinion.
-- "price": The price of the product as a float. If the price is not available, return null.
+- "summary": A comprehensive summary of your overall analysis, including both positive and negative aspects of the product in relation to the searched query.
 - "semantic_score": Select either "HIGHLY RELEVANT", "SOMEWHAT RELEVANT", or "NOT RELEVANT" based on how well the product matches the searched query.
 
-**EXAMPLE INPUT 1:**
+**EXAMPLE INPUT 1**
 
 Searched Query: healthy energy drink
-
 Current Date: May 21
 
-**OUTPUT:**
+**OUTPUT 1**
 {{
-    "pros": ["The product is affordable at $1.00.", "The seller has a high rating with 1,470 reviews.", "Can be delivered on May 22, which is 1 day delivery."],
-    "cons": ["The product is a healthy snack not a drink."],
-    "summary": "While the product is affordable and has a high rating, it doesn't fully meet the specific search for a healthy energy drink. The product is a healthy snack not a drink, which is not what was searched for.",
-    "price": 1.0,
+    "summary": "This product has several positive aspects: it's affordable at $1.00, the seller has a high rating with 1,470 reviews, and it can be delivered on May 22 (1 day delivery). However, the critical issue is that the product is a healthy snack, not a drink, which completely misses the specific search for a healthy energy drink.",
     "semantic_score": "NOT RELEVANT"
 }}
 
-**EXAMPLE INPUT 2:**
+**EXAMPLE INPUT 2**
 
 Searched Query: House of Staunton Chess Set
-
 Current Date: June 13
 
-**OUTPUT:**
+**OUTPUT 2**
 {{
-    "pros": ["Made of high-quality wood.", "Can be personalized with a name.", "Delivery time is June 15, 2 days from now."],
-    "cons": ["There are just 3 reviews for this product.", "The seller has a no return policy.", "The price is a bit high.", "The board is not from House of Staunton."],
-    "summary": "The product is a high-quality wooden chess set that can be personalized, with reasonable delivery time. However, it has limited reviews, no return policy, a bit pricy, and most importantly, it is not from House of Staunton brand as specifically searched for. It is a chess set, but not exactly what was searched for.",
-    "price": 123.99,
+    "summary": "The product is a high-quality wooden chess set that can be personalized, with reasonable delivery time (June 15, 2 days from now). On the positive side, it's made of quality wood and offers customization. However, there are several drawbacks: only 3 total reviews providing limited social proof, the price is somewhat high for a chess set, and most importantly, it is not from the House of Staunton brand as specifically searched for. While it is a chess set, it doesn't match the brand requirement.",
     "semantic_score": "SOMEWHAT RELEVANT"
 }}
 
-**EXAMPLE INPUT 3:**
+**EXAMPLE INPUT 3**
 
 Searched Query: renaissance-style necklace
-
 Current Date: September 10
 
-**OUTPUT:**
+**OUTPUT 3**
 {{
-    "pros": ["The product has a high rating with 500 reviews.", "The necklace matches the renaissance style aesthetic."],
-    "cons": ["The shipping date is September 20, which is more than a week."],
-    "summary": "This is a high-quality renaissance-style necklace with excellent reviews and craftsmanship. The shipping time is longer than ideal, but the product strongly matches the searched query.", 
-    "price": 100.0,
+    "summary": "This is a high-quality renaissance-style necklace with excellent reviews (500 reviews with high rating) and craftsmanship that perfectly matches the searched query aesthetic. The only drawback is the shipping date of September 20, which is more than a week away. Despite the longer shipping time, the product strongly aligns with the searched renaissance-style necklace criteria.",
     "semantic_score": "HIGHLY RELEVANT"
-}}
-
-**EXAMPLE INPUT 4:**
-
-Searched Query: sweater
-
-Current Date: August 2
-
-**OUTPUT:**
-{{
-    "pros": ["The product is a sweater aligning with the searched query.", "The product is made of high-quality material.", "The product is stylish and fashionable.", "It is from a luxury brand."],
-    "cons": ["The product is marketed as a gift item, which wasn't specified in the search.", "The product is designed for a female recipient, which wasn't specified in the search."],
-    "summary": "The sweater is from a luxury brand with high-quality materials and fashionable design. However, it is specifically marketed as a gift item for women, which adds constraints not present in the generic sweater search.",
-    "price": 100.0,
-    "semantic_score": "SOMEWHAT RELEVANT"
 }}
 """.strip()
 
@@ -83,27 +59,21 @@ Inputs you will receive:
 - A list of products and their price and a short summary.
 
 Your job:
-1. Critically compare the products based on their semantic relevance to the searched query.
-2. Consider factors like price, quality, reviews, delivery time, and exact match to the search terms.
-3. Decide which product(s) (one or more) should be purchased based on analytical reasoning.
-4. Provide a short, logical justification for each recommended product.
+1. Critically compare the products based on their relevance to the searched query.
+2. Decide which product(s) (one or more) should be purchased based on your reasoning.
+3. Buy a reasonable number of products, depending on the price and the query. Act like a real customer.
+4. Provide a short, logical justification followed by the list of product names that you want to purchase.
 5. If none of the products should be purchased, explain why and return an empty list of recommendations.
-6. Finally, calculate the total cost of all recommended products.
 
-Return ONLY a valid JSON object with the following structure:
+Return ONLY a valid JSON object with the following structure. Do not include any other text or comments.
+
+**OUTPUT STRUCTURE**
 {
   "reasoning": "<explanation of why you chose or rejected the products>",
   "recommendations": [
-    {
-      "product_name": "<name_1>",
-      "reasoning": "<short logical explanation for product_1>"
-    },
-    {
-      "product_name": "<name_2>",
-      "reasoning": "<short logical explanation for product_2>"
-    },
+    "<product_name_1>",
+    "<product_name_2>",
     ...
-  ],
-  "total_cost": <total cost of all recommended products as a float>
+  ]
 }
 """.strip()

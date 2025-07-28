@@ -352,7 +352,7 @@ def generate_summary_report(results: Dict) -> None:
     print(f"  Generations: {config.get('n_generations', 'N/A')}")
     print(f"  Mutation rate: {config.get('mutation_rate', 'N/A')}")
     print(f"  Crossover rate: {config.get('crossover_rate', 'N/A')}")
-    print(f"  Whole page semantic weight: {config.get('whole_page_semantic_weight', 'N/A')}")
+    print(f"  Whole page semantic weight: {config.get('page1_semantic_weight', 'N/A')}")
     print(f"  Top10 semantic weight: {config.get('top10_semantic_weight', 'N/A')}")
     print(f"  Purchase weight: {config.get('purchase_weight', 'N/A')}")
     print()
