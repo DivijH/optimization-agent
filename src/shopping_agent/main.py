@@ -9,7 +9,11 @@ project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
-# Set up OpenAI credentials
+from src.shopping_agent.agent import EtsyShoppingAgent
+from src.shopping_agent.config import DEFAULT_TASK
+
+
+# Set up LiteLLM credentials
 try:
     os.environ["OPENAI_API_KEY"] = open("../keys/litellm.key").read().strip()
 except FileNotFoundError:
@@ -17,9 +21,6 @@ except FileNotFoundError:
         "litellm.key file not found. It is expected in optimization-agent/src/keys/litellm.key"
     )
 os.environ["OPENAI_API_BASE"] = "https://litellm.litellm.kn.ml-platform.etsy-mlinfra-dev.etsycloud.com"
-
-from src.shopping_agent.agent import EtsyShoppingAgent
-from src.shopping_agent.config import DEFAULT_TASK
 
 
 async def async_main(agent: EtsyShoppingAgent):

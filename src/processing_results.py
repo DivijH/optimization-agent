@@ -1,3 +1,4 @@
+import asyncio
 import json
 import re
 from pathlib import Path
@@ -16,8 +17,10 @@ if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
 from src.shopping_agent.config import VENDOR_DISCOUNT_GEMINI
+from src.shopping_agent.gcs_utils import upload_string_to_gcs
 
-# Set up OpenAI credentials
+
+# Set up LiteLLM credentials
 try:
     key_path = CURRENT_DIR / "keys" / "litellm.key"
     os.environ["OPENAI_API_KEY"] = key_path.read_text().strip()
@@ -26,6 +29,29 @@ except FileNotFoundError:
         "litellm.key file not found. It is expected in optimization-agent/src/keys/litellm.key"
     )
 os.environ["OPENAI_API_BASE"] = "https://litellm.litellm.kn.ml-platform.etsy-mlinfra-dev.etsycloud.com"
+
+# GCS Configuration
+GCS_BUCKET_NAME = "training-dev-search-data-jtzn"
+GCS_PREFIX = "smu-agent-optimizer"
+GCS_PROJECT = "etsy-search-ml-dev"
+
+
+async def upload_to_gcs_if_enabled(file_path: Path, enable_gcs: bool = False):
+    """Helper function to upload file to GCS if enabled."""
+    if enable_gcs:
+        try:
+            with open(file_path, 'r') as f:
+                content = f.read()
+            await upload_string_to_gcs(
+                content,
+                str(file_path),
+                GCS_BUCKET_NAME,
+                GCS_PREFIX,
+                GCS_PROJECT
+            )
+            print(f"   - Uploaded to GCS: {file_path.name}")
+        except Exception as e:
+            print(f"   - Failed to upload {file_path.name} to GCS: {e}")
 
 
 def extract_listing_id_from_url(url: str) -> str:
@@ -56,7 +82,7 @@ def score_to_numeric(semantic_score: str) -> int:
         return 0  # Default to 0 for unknown scores
 
 
-def process_agent_results(debug_root: Path, model_name: str = "global-gemini-2.5-flash", temperature: float = 0.7):
+async def process_agent_results(debug_root: Path, model_name: str = "global-gemini-2.5-flash", temperature: float = 0.7, save_gcs: bool = False):
     """
     Analyzes all agent runs in a directory, aggregates key metrics,
     and saves a summary CSV file.
@@ -74,25 +100,25 @@ def process_agent_results(debug_root: Path, model_name: str = "global-gemini-2.5
     print(f"Found {len(agent_dirs)} agent directories. Processing...")
 
     # Processing Token Usage
-    process_token_usage(agent_dirs)
+    await process_token_usage(agent_dirs, save_gcs)
 
     # Processing Semantic Scores
-    process_semantic_scores(agent_dirs)
+    await process_semantic_scores(agent_dirs, save_gcs)
 
     # Processing Final Decision
-    process_final_decision(agent_dirs)
+    await process_final_decision(agent_dirs, save_gcs)
 
     # Processing Listing Rankings
     process_listing_rankings(agent_dirs)
 
     # Processing Timing Data
-    process_timing_data(agent_dirs)
+    await process_timing_data(agent_dirs, save_gcs)
 
     # Generate a sumamry from all the agents
-    generate_summary(agent_dirs, model_name, temperature)
+    await generate_summary(agent_dirs, model_name, temperature, save_gcs)
 
 
-def process_token_usage(agent_dirs: List[Path]):
+async def process_token_usage(agent_dirs: List[Path], save_gcs: bool = False):
     """
     Process token usage data from all agent directories.
     """
@@ -174,9 +200,12 @@ def process_token_usage(agent_dirs: List[Path]):
     with open(output_file, 'w') as f:
         json.dump(token_usage_data, f, indent=4)
     print(f"  - Token usage aggregated and saved to: {output_file}")
+    
+    # Upload to GCS if enabled
+    await upload_to_gcs_if_enabled(output_file, save_gcs)
 
 
-def process_semantic_scores(agent_dirs: List[Path]):
+async def process_semantic_scores(agent_dirs: List[Path], save_gcs: bool = False):
     """
     Process semantic scores data from all agent directories.
     """
@@ -252,9 +281,12 @@ def process_semantic_scores(agent_dirs: List[Path]):
         json.dump(aggregated_scores, f, indent=4)
     
     print(f"  - Semantic scores aggregated and saved to: {output_file}")
+    
+    # Upload to GCS if enabled
+    await upload_to_gcs_if_enabled(output_file, save_gcs)
 
 
-def process_final_decision(agent_dirs: List[Path]):
+async def process_final_decision(agent_dirs: List[Path], save_gcs: bool = False):
     """
     Process final purchase decision data from all agent directories.
     """
@@ -333,6 +365,9 @@ def process_final_decision(agent_dirs: List[Path]):
         json.dump(aggregated_decisions, f, indent=4)
     
     print(f"  - Final purchase decisions aggregated and saved to: {output_file}")
+    
+    # Upload to GCS if enabled
+    await upload_to_gcs_if_enabled(output_file, save_gcs)
 
 
 def process_listing_rankings(agent_dirs: List[Path]):
@@ -439,7 +474,7 @@ def process_listing_rankings(agent_dirs: List[Path]):
     print(f"  - Listing rankings processed and saved to: {output_file}")
 
 
-def process_timing_data(agent_dirs: List[Path]):
+async def process_timing_data(agent_dirs: List[Path], save_gcs: bool = False):
     """
     Process timing data from all agent directories, calculating total parallel execution time
     and individual agent timing statistics.
@@ -559,9 +594,12 @@ def process_timing_data(agent_dirs: List[Path]):
         json.dump(timing_data, f, indent=4)
     
     print(f"  - Timing data processed and saved to: {output_file}")
+    
+    # Upload to GCS if enabled
+    await upload_to_gcs_if_enabled(output_file, save_gcs)
 
 
-def generate_summary(agent_dirs: List[Path], model_name: str = "global-gemini-2.5-flash", temperature: float = 0.7):
+async def generate_summary(agent_dirs: List[Path], model_name: str = "global-gemini-2.5-flash", temperature: float = 0.7, save_gcs: bool = False):
     """
     Generate a summary from all the agents using LLM.
     """
@@ -615,6 +653,9 @@ def generate_summary(agent_dirs: List[Path], model_name: str = "global-gemini-2.
     with open(summary_file, 'w') as f:
         json.dump(summary_data, f, indent=4)
     print(f"  - Summary generated and saved to: {summary_file}")
+    
+    # Upload to GCS if enabled
+    await upload_to_gcs_if_enabled(summary_file, save_gcs)
 
 
 @click.command()
@@ -640,7 +681,13 @@ def generate_summary(agent_dirs: List[Path], model_name: str = "global-gemini-2.
     show_default=True,
     help="Temperature for the LLM.",
 )
-def main(debug_root: Path, model_name: str, temperature: float):
+@click.option(
+    "--save-gcs/--no-save-gcs",
+    default=False,
+    show_default=True,
+    help="Upload results to Google Cloud Storage.",
+)
+def main(debug_root: Path, model_name: str, temperature: float, save_gcs: bool):
     """
     Process agent results from a specified debug directory.
     """
@@ -648,7 +695,7 @@ def main(debug_root: Path, model_name: str, temperature: float):
         click.echo(f"Error: Directory '{debug_root.resolve()}' does not exist.", err=True)
         return
 
-    process_agent_results(debug_root, model_name)
+    asyncio.run(process_agent_results(debug_root, model_name, temperature, save_gcs))
 
 
 if __name__ == "__main__":

@@ -26,13 +26,15 @@ async def extract_product_data(agent: "EtsyShoppingAgent") -> Dict[str, Any]:
         image_data = _extract_product_image(soup, agent)
         price_data = _extract_product_price(soup, agent)
         product_name = extract_product_name_from_html(soup, agent)
+        seller_name = _extract_seller_name(soup, agent)
         
         return {
             **review_data,
             **shipping_data,
             **image_data,
             **price_data,
-            "product_name": product_name
+            "product_name": product_name,
+            "seller_name": seller_name
         }
     
     except Exception as e:
@@ -44,7 +46,8 @@ async def extract_product_data(agent: "EtsyShoppingAgent") -> Dict[str, Any]:
             "shipping_policy": {},
             "product_image_url": None,
             "product_price": "N/A",
-            "product_name": "Unknown Product"
+            "product_name": "Unknown Product",
+            "seller_name": "Unknown Seller"
         }
 
 
@@ -242,3 +245,24 @@ def extract_product_name_from_html(soup: BeautifulSoup, agent: "EtsyShoppingAgen
     except Exception as e:
         agent._log(f"   - Failed to extract product name from HTML: {e}")
         return "Unknown Product" 
+
+
+def _extract_seller_name(soup: BeautifulSoup, agent: "EtsyShoppingAgent") -> str:
+    """Extracts the seller name from the soup."""
+    try:
+        seller_link = soup.find('a', href=lambda href: href and "ref=shop-header-name" in href)
+        
+        # Check if the link was found.
+        if seller_link:
+            # The seller's name is the text within the link.
+            # .strip() removes any leading/trailing whitespace.
+            seller_name = seller_link.get_text(strip=True)
+            agent._log(f"   - Successfully extracted seller name: {seller_name}")
+            return seller_name
+        
+        agent._log("   - No seller name found")
+        return "Unknown Seller"
+        
+    except Exception as e:
+        agent._log(f"   - Failed to extract seller name: {e}")
+        return "Unknown Seller" 

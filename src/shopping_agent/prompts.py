@@ -4,9 +4,11 @@ Prompts for the Etsy Shopping Agent.
 
 # Prompt for analyzing a product page
 PRODUCT_ANALYSIS_PROMPT = """
-You are a product analyst for Etsy, an online shopping platform. Based on the provided product image, the searched query, product price, any available customer reviews, and shipping/delivery information, give me a detailed analysis of the product. Analyze the product using analytical thinking and common sense to determine its semantic relevance to the searched query.
+You are a product analyst for Etsy, an online shopping platform. Based on the provided product image, the searched query, product price, seller information, any available customer reviews, and shipping/delivery information, give me a detailed analysis of the product. Analyze the product using analytical thinking and common sense to determine its semantic relevance to the searched query.
 
 When product price is provided, consider the value proposition and the perceived value based on quality and features.
+
+When seller information is provided, consider the seller's reputation and relevance to the searched query. Some searches may be looking for products from specific sellers or brands.
 
 When customer reviews are provided, use them to gain insights into product quality, user satisfaction, potential issues, and real-world usage experiences. Consider how the reviews support or contradict your visual analysis.
 

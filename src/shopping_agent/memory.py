@@ -40,14 +40,7 @@ class MemoryModule:
         summary_lines = []
         for product in self.products:
             summary_lines.append(f"- {product.product_name}")
-            # if product.pros:
-            #     summary_lines.append(f"  Pros: {', '.join(product.pros)}")
-            # if product.cons:
-            #     summary_lines.append(f"  Cons: {', '.join(product.cons)}")
-            # if product.summary:
-            #     summary_lines.append(f"  Summary: {product.summary}")
-            # if product.semantic_score:
-            #     summary_lines.append(f"  Semantic Score: {product.semantic_score}")
+
         return "\n".join(summary_lines)
 
     def get_search_history_summary(self) -> str:

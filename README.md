@@ -2,7 +2,7 @@
 
 [![GitHub repo](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/DivijH/optimization-agent)
 
-This repository contains an AI-powered shopping agent that can autonomously browse e-commerce websites like Etsy, analyze products, and make purchasing decisions based on a given task and persona.
+This repository contains an AI-powered shopping agent that can autonomously browse e-commerce websites like Etsy, analyze products, and make purchasing decisions based on a given task and persona. The system includes genetic algorithms to optimize shopping queries and comprehensive tools for batch testing and analysis.
 
 For more information, please see the overall project documentation: [Google Doc](https://docs.google.com/document/d/1ORWmq6GQMyoQZR7_b2S9Hs7l2A-e0Ce9f6EKy-pQ69Q/edit?tab=t.0#heading=h.4wbqtehjjc4)
 
@@ -13,20 +13,9 @@ For more information, please see the overall project documentation: [Google Doc]
 - **Memory Management**: Tracks analyzed products and avoids duplicates
 - **Batch Testing**: Run multiple agents with different personas for comparative analysis
 - **Genetic Query Optimization**: Automatically evolve shopping queries to find better results using genetic algorithms
+- **Batch Genetic Optimization**: Process large datasets of queries through genetic optimization
 - **Cost Tracking**: Monitors token usage and API costs
 - **Decision Making**: Generates purchase recommendations based on persona preferences
-
-### GCS Authentication
-
-The agent uses the Google Cloud Storage client library which automatically detects credentials from:
-1. Environment variable `GOOGLE_APPLICATION_CREDENTIALS` pointing to a service account key file
-2. Default service account credentials if running on Google Cloud Platform
-3. User credentials from `gcloud auth application-default login`
-
-For local development, run:
-```bash
-gcloud auth application-default login
-```
 
 ## Setup
 
@@ -46,33 +35,42 @@ gcloud auth application-default login
     echo "your-api-key-here" > src/keys/litellm.key
     ```
 
-## Quick Start
+## GCS Authentication
 
-### Test the System
-First, verify everything works by running a quick optimization:
+The agent uses the Google Cloud Storage client library which automatically detects credentials from:
+1. Environment variable `GOOGLE_APPLICATION_CREDENTIALS` pointing to a service account key file
+2. Default service account credentials if running on Google Cloud Platform
+3. User credentials from `gcloud auth application-default login`
+
+For local development, run:
 ```bash
-cd optimization-agent
-python src/genetic_query_optimizer.py --query "test" --population-size 2 --generations 1 --n-agents 1 --max-steps 2
+gcloud auth application-default login
 ```
 
-### Single Agent Run
+## Core Components
+
+### Single Agent Mode
+Test individual shopping scenarios with customizable personas:
 ```bash
 python -m src.shopping_agent.main --task "large, inflatable spider decoration for halloween"
 ```
 
 ### Batch Testing (Multiple Agents)
+Run multiple agents simultaneously with different personas to compare behaviors:
 ```bash
 python src/analyze_query.py --task "winter jacket" --n-agents 4
 ```
 
 ### Genetic Query Optimization
+Evolve individual queries using genetic algorithms to find the most effective search terms:
 ```bash
 python src/genetic_query_optimizer.py --query "vintage jewelry"
 ```
 
-### Analyze Results
+### Batch Genetic Query Optimization
+Process large datasets of queries through genetic optimization for comprehensive improvements:
 ```bash
-python src/visualize_optimization.py --analysis summary
+python src/batch_genetic_optimizer.py --start-index 0 --end-index 99 --population-size 5 --generations 3
 ```
 
 ## Documentation
@@ -86,8 +84,7 @@ python src/visualize_optimization.py --analysis summary
 ```
 .
 ├── data/
-│   ├── personas/                    # Virtual customer personas for agents
-│   │   ├── ... (1000 persona files)
+│   ├── final_queries.csv            # 1000 queries for evaluation
 │   └── README.md                    # Persona documentation
 ├── src/
 │   ├── shopping_agent/              # Core shopping agent logic

@@ -86,79 +86,6 @@ def extract_product_name_from_url(href: str) -> Optional[str]:
     except Exception:
         return None
 
-
-# async def scroll_and_collect(
-#     agent: "EtsyShoppingAgent",
-#     max_scrolls: int = 10,
-#     stop_at_bottom: bool = True,
-#     delay: float = 1.0,
-# ) -> tuple[str, List[str]]:
-#     """Scrolls the current page multiple times, concatenating *all* text and viewport screenshots.
-#     Only scrolls the main webpage, not embedded scrollable elements like product galleries.
-#     """
-#     if not agent.browser_session:
-#         raise RuntimeError("Browser session not initialised - call run() first.")
-
-#     screenshots: List[str] = []
-#     text_chunks: List[str] = []
-
-#     try:
-#         await agent.browser_session.remove_highlights()
-#     except Exception:
-#         pass
-
-#     page = await agent.browser_session.get_current_page()
-
-#     MAIN_PAGE_SCROLL_JS = """(dy) => {
-#         const scrollOptions = { top: dy, behavior: 'smooth' };
-#         if (document.scrollingElement) {
-#             document.scrollingElement.scrollBy(scrollOptions);
-#         } else {
-#             const mainElement = document.documentElement || document.body;
-#             mainElement.scrollBy(scrollOptions);
-#         }
-#     }"""
-
-#     for i in range(max_scrolls):
-#         try:
-#             screenshot_b64 = await agent.browser_session.take_screenshot(full_page=False)
-#             screenshots.append(screenshot_b64)
-#         except Exception as e:
-#             agent._log(f"   - Failed to take screenshot during scroll capture: {e}")
-
-#         try:
-#             inner_text: str = await agent.browser_session.execute_javascript(
-#                 "() => document.body.innerText"
-#             )
-#             if inner_text:
-#                 text_chunks.append(inner_text)
-#         except Exception as e:
-#             agent._log(f"   - Failed to capture text during scroll capture: {e}")
-
-#         try:
-#             _, pixels_below = await agent.browser_session.get_scroll_info(page)
-#         except Exception:
-#             pixels_below = 0
-
-#         if stop_at_bottom and pixels_below <= 0 and i > 0:
-#             break
-
-#         try:
-#             dy = int(agent.viewport_height * 0.9)
-#             await page.evaluate(MAIN_PAGE_SCROLL_JS, dy)
-#         except Exception as e:
-#             agent._log(f"   - Failed to perform smooth scroll: {e}")
-#             try:
-#                 await agent.browser_session._scroll_container(dy)
-#             except Exception:
-#                 pass
-
-#         await asyncio.sleep(delay)
-
-#     full_text = "\n".join(text_chunks)
-#     return full_text, screenshots
-
-
 async def analyze_product_page(
     agent: "EtsyShoppingAgent",
     state: BrowserStateSummary,
@@ -209,12 +136,17 @@ async def analyze_product_page(
 
     system_prompt = PRODUCT_ANALYSIS_PROMPT
     
-    # Include rating, reviews, price, and shipping in the user prompt if available
+    # Include rating, reviews, price, seller, and shipping in the user prompt if available
     product_info_text = ""
     
     # Price information section
     if product_data.get("product_price") != "N/A" and product_data.get("product_price"):
         product_info_text += f"Product Price: {product_data['product_price']}\n\n"
+    
+    # Seller information section
+    seller_name = product_data.get("seller_name")
+    if seller_name and seller_name != "Unknown Seller":
+        product_info_text += f"Seller: {seller_name}\n\n"
     
     # Rating and reviews section
     if product_data["total_rating"] != "N/A" or product_data["total_reviews"] != "N/A" or product_data["individual_reviews"]:

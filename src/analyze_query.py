@@ -15,7 +15,11 @@ project_root = str(CURRENT_DIR.parent)
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
-# Set up OpenAI credentials
+from src.shopping_agent.gcs_utils import upload_file_to_gcs
+from src.shopping_agent.agent import EtsyShoppingAgent
+from src.processing_results import process_agent_results
+
+# Set up LiteLLM credentials
 try:
     key_path = CURRENT_DIR / "keys" / "litellm.key"
     os.environ["OPENAI_API_KEY"] = key_path.read_text().strip()
@@ -25,9 +29,6 @@ except FileNotFoundError:
     )
 os.environ["OPENAI_API_BASE"] = "https://litellm.litellm.kn.ml-platform.etsy-mlinfra-dev.etsycloud.com"
 
-
-from src.shopping_agent.agent import EtsyShoppingAgent
-from src.processing_results import process_agent_results
 
 DEFAULT_TASK = "Dunlap pocket knife"
 
@@ -159,6 +160,19 @@ async def _run_single_agent(
         # Ensure that the agent's shutdown sequence (saving memory, closing browser etc.)
         # is always called, regardless of whether the run succeeded or failed.
         await agent.shutdown()
+        
+        # Upload agent log file to GCS if enabled
+        if save_gcs and log_file.exists():
+            try:
+                await upload_file_to_gcs(
+                    str(log_file),
+                    str(log_file),
+                    gcs_bucket,
+                    gcs_prefix,
+                    gcs_project
+                )
+            except Exception as e:
+                logger.error(f"Failed to upload agent log to GCS: {e}")
 
 
 def _start_main_recording(
@@ -334,7 +348,13 @@ async def run_analyze_query(
             _stop_main_recording(recording_proc)
 
     summary_model = summary_model if summary_model else model_name
-    process_agent_results(debug_root, summary_model, temperature)
+    
+    # Process results and generate summaries
+    try:
+        await process_agent_results(debug_root, summary_model, temperature, save_gcs)
+    except Exception as e:
+        print(f"❌ Failed to process agent results: {e}")
+        raise
 
 
 ###############################################################################

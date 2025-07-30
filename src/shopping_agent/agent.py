@@ -9,21 +9,14 @@ import time
 from datetime import datetime
 from dataclasses import asdict, dataclass, field
 from typing import Any, Dict, List, Optional
-from urllib.parse import quote
+from urllib.parse import quote, urljoin
 
 import click
 from browser_use.browser.profile import BrowserProfile
 from browser_use.browser.session import BrowserSession
 from browser_use.browser.views import BrowserStateSummary
 from browser_use.controller.service import Controller
-from browser_use.controller.views import (
-    # CloseTabAction,  # No longer needed with direct URL navigation
-    # InputTextAction,
-    # SendKeysAction,
-    GoToUrlAction,
-    # OpenTabAction,  # No longer needed with direct URL navigation
-    # SwitchTabAction,  # No longer needed with direct URL navigation
-)
+from browser_use.controller.views import GoToUrlAction
 from langchain_core.language_models.chat_models import BaseChatModel
 from langchain_openai import ChatOpenAI
 from src.shopping_agent.memory import MemoryModule, ProductMemory
@@ -32,11 +25,9 @@ from src.shopping_agent.agent_actions import (
     create_debug_info,
     handle_actions,
     save_and_upload_debug_info,
-    # save_and_upload_screenshots,
 )
 from src.shopping_agent.browser_utils import (
     analyze_product_page,
-    # find_search_bar,
     make_final_purchase_decision,
     extract_all_listings_from_search,
 )
@@ -78,7 +69,6 @@ class EtsyShoppingAgent:
     gcs_project: str = "etsy-search-ml-dev"
 
     # Internal state, not initialized by the user
-    # history: List[str] = field(init=False, default_factory=list)
     browser_session: Optional[BrowserSession] = field(init=False, default=None)
     controller: Controller = field(init=False, default_factory=Controller)
     llm: BaseChatModel = field(init=False)
@@ -187,11 +177,6 @@ class EtsyShoppingAgent:
             elif "etsy.com/listing" in state.url:
                 return await self.handle_listing_page(state, step)
 
-            # if (
-            #     search_bar := find_search_bar(state)
-            # ) and f"searched_{self.curr_query}" not in self.history:
-            #     return self.perform_search(search_bar)
-
             self._log("   - No specific action decided.")
             return None
             
@@ -245,7 +230,6 @@ class EtsyShoppingAgent:
                 
                 # Build full URL
                 if href.startswith("/"):
-                    from urllib.parse import urljoin
                     href = urljoin("https://www.etsy.com", href)
                 
                 return {
@@ -304,7 +288,6 @@ class EtsyShoppingAgent:
                 
                 # Build full URL
                 if href.startswith("/"):
-                    from urllib.parse import urljoin
                     href = urljoin("https://www.etsy.com", href)
                 
                 return {
@@ -336,7 +319,6 @@ class EtsyShoppingAgent:
                     
                     # Build full URL
                     if href.startswith("/"):
-                        from urllib.parse import urljoin
                         href = urljoin("https://www.etsy.com", href)
                     
                     return {
@@ -347,14 +329,6 @@ class EtsyShoppingAgent:
                 except Exception as recovery_error:
                     self._log(f"   - Recovery also failed: {recovery_error}")
             return None
-
-    # def perform_search(self, search_bar_index: int):
-    #     self._log(f"   - Found search bar. Searching for '{self.curr_query}'.")
-    #     return {
-    #         "input_text": InputTextAction(index=search_bar_index, text=self.curr_query),
-    #         "send_keys": SendKeysAction(keys="Enter"),
-    #         "search_query": self.curr_query,
-    #     }
 
     async def run(self):
         """Main agent workflow for online shopping on Etsy."""
@@ -401,8 +375,6 @@ class EtsyShoppingAgent:
                 state = await self.browser_session.get_state_summary(
                     cache_clickable_elements_hashes=True
                 )
-                # if "etsy.com/search" in state.url:
-                #     await save_and_upload_screenshots(self, step)
 
                 action_plan = await self._think(state, step)
 

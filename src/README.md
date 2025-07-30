@@ -1,8 +1,23 @@
 # Core Components
 
-This directory contains the core logic for the Optimization Agent, including the shopping agent, memory management, and analysis utilities.
+This directory contains the core logic for the Optimization Agent, including the shopping agent, genetic algorithms, batch processing, and analysis utilities.
 
-## Directory and File Descriptions
+## File Overview
+
+| File | Purpose | Entry Point |
+|------|---------|-------------|
+| [`shopping_agent/`](./shopping_agent/README.md) | Main shopping agent implementation | Yes (`main.py`) |
+| `analyze_query.py` | Batch testing with multiple agents | Yes |
+| `genetic_query_optimizer.py` | Single query genetic optimization | Yes |
+| `batch_genetic_optimizer.py` | Batch genetic optimization for CSV | Yes |
+| `processing_results.py` | Results aggregation and analysis | Yes |
+| `visualize_optimization.py` | Optimization results visualization | Yes |
+| `semantic_relevance_match.py` | Semantic scoring validation | Yes |
+| `genetic_prompts.py` | Prompts for genetic algorithm | No |
+| `summary_prompt.txt` | Template for agent summaries | No |
+| `keys/` | API keys directory | No |
+
+## Detailed File Descriptions
 
 ### `shopping_agent/`
 Contains the main shopping agent implementation that can autonomously browse e-commerce websites and analyze products. For detailed information about each component, see the [Shopping Agent README](./shopping_agent/README.md).
@@ -10,22 +25,31 @@ Contains the main shopping agent implementation that can autonomously browse e-c
 ### `analyze_query.py`
 Batch testing framework for running multiple shopping agents with different personas on the same query.
 
-**Default Values:**
-- `--task`: "Dunlap pocket knife"
-- `--n-agents`: 4 (number of agents to spawn)
-- `--personas-dir`: `data/personas/`
-- `--seed`: None (random persona selection)
-- `--model-name`: "openai/o4-mini"
-- `--final-decision-model`: None (uses main model)
-- `--summary-model`: None (uses main model)
-- `--max-steps`: None (unlimited)
-- `--width`: 1920
-- `--height`: 1080
-- `--temperature`: 0.7
-- `--record-video`: False
-- `--headless`: True (runs in background)
-- `--concurrency`: 2 (max parallel agents)
-- `--debug-root`: `src/debug_run`
+**Command Line Arguments:**
+
+| Argument | Type | Default | Description |
+|----------|------|---------|-------------|
+| `--task` | str | "Dunlap pocket knife" | Shopping task for agents |
+| `--curr-query` | str | None | Current query (defaults to task) |
+| `--n-agents` | int | 4 | Number of agents to spawn |
+| `--personas-dir` | Path | "data/personas/" | Directory with persona files |
+| `--seed` | int | None | Random seed for persona selection |
+| `--model-name` | str | "global-gemini-2.5-flash" | LLM model name |
+| `--final-decision-model` | str | None | Model for final decisions |
+| `--summary-model` | str | None | Model for summaries |
+| `--max-steps` | int | None | Max steps per agent (unlimited) |
+| `--width` | int | 1920 | Browser viewport width |
+| `--height` | int | 1080 | Browser viewport height |
+| `--temperature` | float | 0.7 | LLM sampling temperature |
+| `--record-video` | flag | False | Record browser sessions |
+| `--headless` | flag | True | Run browsers in headless mode |
+| `--concurrency` | int | 2 | Max parallel agents |
+| `--debug-root` | Path | "debug_run" | Debug output directory |
+| `--save-local` | flag | True | Save results locally |
+| `--save-gcs` | flag | True | Save results to GCS |
+| `--gcs-bucket` | str | "training-dev-search-data-jtzn" | GCS bucket name |
+| `--gcs-prefix` | str | "smu-agent-optimizer" | GCS prefix |
+| `--gcs-project` | str | "etsy-search-ml-dev" | GCS project |
 
 **Features:**
 - Runs multiple agents concurrently with different personas
@@ -33,8 +57,76 @@ Batch testing framework for running multiple shopping agents with different pers
 - Tracks token usage and costs per agent
 - Creates consolidated summary reports
 
+### `genetic_query_optimizer.py`
+Genetic algorithm implementation for automatically optimizing shopping queries.
+
+**Command Line Arguments:**
+
+| Argument | Type | Default | Description |
+|----------|------|---------|-------------|
+| `--query` | str | Required | The original query to optimize |
+| `--population-size` | int | 5 | Query variations per generation |
+| `--generations` | int | 4 | Number of evolution cycles |
+| `--mutation-rate` | float | 0.1 | Probability of mutation (0.0-1.0) |
+| `--crossover-rate` | float | 0.7 | Probability of crossover (0.0-1.0) |
+| `--n-agents` | int | 5 | Agents per query evaluation |
+| `--max-steps` | int | None | Max steps per agent (unlimited) |
+| `--debug-root` | Path | "debug_ga" | Debug output directory |
+| `--page1-semantic-weight` | float | 0.4 | Weight for page 1 semantic relevance |
+| `--top10-semantic-weight` | float | 0.5 | Weight for top 10 semantic relevance |
+| `--purchase-weight` | float | 0.1 | Weight for purchase decision rate |
+| `--headless` | flag | True | Run browsers in headless mode |
+| `--model-name` | str | "global-gemini-2.5-flash" | Model for genetic operations |
+| `--save-gcs` | flag | False | Upload results to GCS |
+| `--gcs-bucket-name` | str | "training-dev-search-data-jtzn" | GCS bucket name |
+| `--gcs-prefix` | str | "smu-agent-optimizer" | GCS prefix |
+| `--gcs-project` | str | "etsy-search-ml-dev" | GCS project |
+
+**Process:**
+1. Creates variations of your original query using AI
+2. Tests each variation with real shopping agents 
+3. Measures performance based on semantic relevance and purchase decisions
+4. Evolves better queries over multiple generations
+5. Returns the best performing query
+
+### `batch_genetic_optimizer.py`
+Batch wrapper for genetic optimization that processes queries from `final_queries.csv`.
+
+**Command Line Arguments:**
+
+| Argument | Type | Default | Description |
+|----------|------|---------|-------------|
+| `--start-index` | int | 0 | Starting CSV index (0-based, inclusive) |
+| `--end-index` | int | 999 | Ending CSV index (0-based, inclusive) |
+| `--population-size` | int | 5 | Population size per generation |
+| `--generations` | int | 4 | Number of generations |
+| `--n-agents` | int | 5 | Agents per query evaluation |
+| `--max-steps` | int | None | Max steps per agent (unlimited) |
+| `--csv-path` | Path | "data/final_queries.csv" | Path to query CSV file |
+| `--debug-root` | Path | "batch_run" | Debug output directory |
+| `--headless` | flag | True | Run browsers in headless mode |
+| `--save-gcs` | flag | True | Upload results to GCS |
+| `--gcs-bucket-name` | str | "training-dev-search-data-jtzn" | GCS bucket name |
+| `--gcs-prefix` | str | "smu-agent-optimizer" | GCS prefix |
+| `--gcs-project` | str | "etsy-search-ml-dev" | GCS project |
+
+**Features:**
+- Processes large datasets of queries systematically
+- Supports range selection (start-index to end-index)
+- Automatically uploads results to GCS
+- Generates comprehensive batch summary reports
+
 ### `processing_results.py`
 Post-processing utility that analyzes results from multiple agent runs.
+
+**Command Line Arguments:**
+
+| Argument | Type | Default | Description |
+|----------|------|---------|-------------|
+| `--debug-root` | Path | "debug_run" | Directory containing agent results |
+| `--save-gcs` | flag | True | Upload results to GCS |
+| `--gcs-bucket` | str | "training-dev-search-data-jtzn" | GCS bucket name |
+| `--gcs-prefix` | str | "smu-agent-optimizer" | GCS prefix |
 
 **Key Functions:**
 - Aggregates memory data from all agents
@@ -47,53 +139,24 @@ Post-processing utility that analyzes results from multiple agent runs.
 - `_summary.txt`: Consolidated analysis report
 - `_semantic_scores.json`: Aggregated relevance scores
 - `_final_purchase_decision.json`: Combined recommendations
-
-### `genetic_query_optimizer.py`
-Genetic algorithm implementation for automatically optimizing shopping queries.
-
-The genetic algorithm automatically improves the search queries by:
-1. Creating variations of your original query using AI
-2. Testing each variation with real shopping agents 
-3. Measuring performance based on semantic relevance and purchase decisions
-4. Evolving better queries over multiple generations
-5. Returning the best performing query
-
-**Default Values:**
-- `--population-size`: 8 (number of query variations per generation)
-- `--generations`: 5 (number of evolution cycles)
-- `--n-agents`: 2 (agents per query evaluation)
-- `--semantic-weight`: 0.8 (importance of finding relevant products)
-- `--purchase-weight`: 0.2 (importance of purchase decisions)
-- `--model`: "gpt-4o-mini"
-- `--debug-root`: "src/genetic_optimization"
-
-**Configuration Examples:**
-
-```bash
-python src/genetic_query_optimizer.py \
-    --query "wooden spoon" \
-    --population-size 4 \
-    --generations 2 \
-    --n-agents 2
-```
-
-**Understanding Results:**
-After optimization, you'll find:
-```
-src/genetic_optimization/
-├── genetic_algorithm.log          # Detailed progress
-├── optimization_results.json      # Complete results
-└── gen_*/                         # Per-generation data
-```
 ### `visualize_optimization.py`
 Analysis and visualization tool for genetic algorithm optimization results.
 
-**Functionality:**
-- Analyzes optimization results and performance trends
-- Shows evolution patterns across generations
-- Identifies best performing queries
-- Provides detailed fitness score breakdowns
-- Generates comprehensive summaries
+**Command Line Arguments:**
+
+| Argument | Type | Default | Description |
+|----------|------|---------|-------------|
+| `--results-path` | Path | "debug_ga/optimization_results.json" | Path to optimization results file |
+| `--analysis` | str | "all" | Analysis type: all, evolution, diversity, genetics, semantic, best, summary |
+
+**Analysis Types:**
+- `summary`: Quick overview of optimization results
+- `evolution`: Shows fitness trends across generations
+- `diversity`: Population diversity metrics
+- `genetics`: Crossover and mutation analysis
+- `semantic`: Semantic relevance breakdown
+- `best`: Top performing queries
+- `all`: Complete analysis report
 
 **Usage Examples:**
 ```bash
@@ -105,27 +168,33 @@ python src/visualize_optimization.py --analysis evolution
 
 # Best Queries Found
 python src/visualize_optimization.py --analysis best
-
-# Full Analysis
-python src/visualize_optimization.py --analysis all
 ```
 
-### `genetic_prompts.py`
-Contains prompts used by the genetic algorithm for generating query variations.
-
 ### `semantic_relevance_match.py`
-Utility to validate the agent's semantic relevance scoring.
+Utility to validate the agent's semantic relevance scoring against live semantic models.
+
+**Command Line Arguments:**
+
+| Argument | Type | Default | Description |
+|----------|------|---------|-------------|
+| `--debug-path` | Path | "debug_run" | Path to agent debug directory |
 
 **Purpose:**
 - Reads `_memory.json` from debug runs
 - Compares agent scores with live semantic model
 - Validates relevance assessment accuracy
-- Useful for quality assurance
+- Useful for quality assurance and model validation
 
 **Usage:**
 ```bash
 python src/semantic_relevance_match.py --debug-path debug_run/agent_0
 ```
+
+### `genetic_prompts.py`
+Contains prompts used by the genetic algorithm for generating query variations. This file defines the system prompts for:
+- Initial population generation
+- Crossover operations between queries
+- Mutation operations for query variation
 
 ### `summary_prompt.txt`
 Template file containing the prompt structure used for generating agent summaries. This template is used by `processing_results.py` to create consistent summary reports across different agent runs.
