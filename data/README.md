@@ -4,7 +4,7 @@ This directory contains data used by the optimization agent.
 
 ## Final Queries CSV (`final_queries.csv`)
 
-The `final_queries.csv` file contains 1000 carefully curated shopping queries used for testing and optimization. The queries are distributed across different categories and languages:
+The `final_queries.csv` file contains 1000 sampled shopping queries used by real users on Etsy for testing and optimization. These queries are reviewed manually to remove any personally identifiable information and unethical content. The queries are distributed across different categories and languages:
 
 - **250 head queries**: High-frequency, popular search terms 
 - **250 torso queries**: Medium-frequency search terms
@@ -17,7 +17,7 @@ The `final_queries.csv` file contains 1000 carefully curated shopping queries us
 | Column | Description |
 |--------|-------------|
 | `Query` | The search query text |
-| `Frequency` | Query frequency category (Head, Torso, Tail, Fandom, Multi-lingual) |
+| `Frequency` | Query frequency category (Head, Torso, Tail) |
 | `Language` | Query language (English or specific language for multi-lingual queries) |
 | `Fandom` | Associated fandom/franchise (for fandom queries) or N/A |
 
