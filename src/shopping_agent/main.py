@@ -71,7 +71,7 @@ async def async_main(agent: EtsyShoppingAgent):
 @click.option("--save-local/--no-save-local", default=True, help="Save data to local directory (default: True).")
 @click.option("--save-gcs/--no-save-gcs", default=True, help="Save data to Google Cloud Storage (default: True).")
 @click.option("--gcs-bucket", default="training-dev-search-data-jtzn", help="GCS bucket name for data storage.")
-@click.option("--gcs-prefix", default="smu-agent-optimizer", help="GCS prefix for data storage.")
+@click.option("--gcs-prefix", default="mission-understanding/optimization-agent", help="GCS prefix for data storage.")
 @click.option("--gcs-project", default="etsy-search-ml-dev", help="GCS project name for client initialization.")
 def cli(
     task,

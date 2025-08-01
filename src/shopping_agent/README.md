@@ -42,7 +42,7 @@ The main entry point for running the shopping agent from the command line.
 | `--save-local/--no-save-local` | flag | True | Save data locally |
 | `--save-gcs/--no-save-gcs` | flag | True | Save data to GCS |
 | `--gcs-bucket` | str | "training-dev-search-data-jtzn" | GCS bucket name |
-| `--gcs-prefix` | str | "smu-agent-optimizer" | GCS prefix |
+| `--gcs-prefix` | str | "mission-understanding/optimization-agent" | GCS prefix |
 | `--gcs-project` | str | "etsy-search-ml-dev" | GCS project name |
 
 **Usage Examples:**
