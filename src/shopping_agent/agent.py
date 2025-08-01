@@ -255,7 +255,7 @@ class EtsyShoppingAgent:
 
     def navigate_to_etsy_search(self):
         search_query_encoded = quote(self.curr_query)
-        search_url = f"https://www.etsy.com/search?q={search_query_encoded}&application_behavior=default"
+        search_url = f"https://www.etsy.com/search?q={search_query_encoded}"
         self._log(f"   - Initial navigation. Going to search page for '{self.curr_query}'.")
         return {
             "go_to_url": GoToUrlAction(url=search_url),
@@ -466,9 +466,13 @@ class EtsyShoppingAgent:
             viewport={"width": self.viewport_width, "height": self.viewport_height},
             user_data_dir=self.user_data_dir,
             browser_args=browser_args,  # Add optimization flags
+            user_agent="Mozilla/4.0 (compatible; Catchpoint)",
         )
         self.browser_session = BrowserSession(
-            keep_alive=True, headless=self.headless, browser_profile=browser_profile
+            keep_alive=True, 
+            chromium_sandbox=False,
+            headless=self.headless, 
+            browser_profile=browser_profile, 
         )
         await self.browser_session.start()
         self._log("✅ Browser session started with optimization flags.")

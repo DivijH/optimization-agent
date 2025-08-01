@@ -4,20 +4,24 @@ Simple batch wrapper for genetic_query_optimizer.py
 Reads queries from final_queries.csv and optimizes them sequentially.
 """
 
-import asyncio
 import argparse
-import sys
+import asyncio
 import json
-from pathlib import Path
+import os
 import pandas as pd
+import sys
 import traceback
 import logging
+from pathlib import Path
 
 # Add current directory to path for imports
 CURRENT_DIR = Path(__file__).resolve().parent
 project_root = str(CURRENT_DIR.parent)
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
+
+# Disable anonymized telemetry for this browser use
+os.environ["ANONYMIZED_TELEMETRY"] = "false"
 
 from genetic_query_optimizer import GeneticQueryOptimizer, GeneticAlgorithmConfig
 from shopping_agent.gcs_utils import upload_string_to_gcs, upload_file_to_gcs
@@ -166,6 +170,8 @@ async def main():
     
     print(f"🧬 Batch Genetic Optimizer - Processing {len(queries)} queries (indices {start_index}-{end_index})")
     print(f"📋 Detailed logs: {log_file}")
+    if args.save_gcs:
+        print(f"☁️  GCS uploads: gs://{args.gcs_bucket_name}/{args.gcs_prefix}/")
     logger.info(f"Batch Configuration:")
     logger.info(f"  Population size: {population_size}, Generations: {generations}")
     logger.info(f"  N-agents: {args.n_agents}, Max steps: {args.max_steps}")

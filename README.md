@@ -34,6 +34,16 @@ For more information, please see the overall project documentation: [Google Doc]
     echo "your-api-key-here" > src/keys/litellm.key
     ```
 
+## Docker Deployment
+
+To build and deploy the Docker image for AMD64 architecture:
+
+```bash
+docker build --platform linux/amd64 -t us-central1-docker.pkg.dev/etsy-mlinfra-dev/etsy-llm/optimization-agent:latest .
+
+docker push us-central1-docker.pkg.dev/etsy-mlinfra-dev/etsy-llm/optimization-agent:latest
+```
+
 ## GCS Authentication
 
 The agent uses the Google Cloud Storage client library which automatically detects credentials from:
