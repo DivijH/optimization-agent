@@ -2,7 +2,7 @@
 FROM mcr.microsoft.com/playwright/python:v1.52.0-noble
 
 # 2. Set working directory
-WORKDIR /app
+WORKDIR /optimzation-agent
 
 # 3. Upgrade pip and setuptools
 RUN pip install --upgrade pip setuptools wheel
