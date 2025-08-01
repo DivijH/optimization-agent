@@ -65,7 +65,7 @@ class EtsyShoppingAgent:
     save_local: bool = True
     save_gcs: bool = True
     gcs_bucket_name: str = "training-dev-search-data-jtzn"
-    gcs_prefix: str = "smu-agent-optimizer"
+    gcs_prefix: str = "mission-understanding/optimization-agent"
     gcs_project: str = "etsy-search-ml-dev"
 
     # Internal state, not initialized by the user

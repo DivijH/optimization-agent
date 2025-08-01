@@ -87,7 +87,7 @@ class GeneticAlgorithmConfig:
     model_name: str = "global-gemini-2.5-flash"  # Model name for genetic algorithm LLM operations
     save_gcs: bool = False  # Whether to upload results to GCS
     gcs_bucket_name: str = "training-dev-search-data-jtzn"  # GCS bucket name
-    gcs_prefix: str = "smu-agent-optimizer"  # GCS prefix for uploads
+    gcs_prefix: str = "mission-understanding/optimization-agent"  # GCS prefix for uploads
     gcs_project: str = "etsy-search-ml-dev"  # GCS project
 
 
@@ -971,7 +971,7 @@ Summarized feedback:
 @click.option("--model-name", type=str, default="global-gemini-2.5-flash", show_default=True, help="Model name to use for genetic algorithm LLM operations (population generation, crossover, mutation).")
 @click.option("--save-gcs/--no-save-gcs", default=False, show_default=True, help="Upload results to Google Cloud Storage.")
 @click.option("--gcs-bucket-name", type=str, default="training-dev-search-data-jtzn", show_default=True, help="GCS bucket name for uploads.")
-@click.option("--gcs-prefix", type=str, default="smu-agent-optimizer", show_default=True, help="GCS prefix for uploads.")
+@click.option("--gcs-prefix", type=str, default="mission-understanding/optimization-agent", show_default=True, help="GCS prefix for uploads.")
 @click.option("--gcs-project", type=str, default="etsy-search-ml-dev", show_default=True, help="GCS project for uploads.")
 def main(
     query: str,

@@ -42,7 +42,7 @@ Testing framework for running multiple shopping agents with different temperatur
 | `--save-local/--no-save-local` | flag | True | Save logs on local machine |
 | `--save-gcs/--no-save-gcs` | flag | True | Save logs in Google Cloud Storage |
 | `--gcs-bucket` | str | "training-dev-search-data-jtzn" | GCS bucket name |
-| `--gcs-prefix` | str | "smu-agent-optimizer" | GCS prefix |
+| `--gcs-prefix` | str | "mission-understanding/optimization-agent" | GCS prefix |
 | `--gcs-project` | str | "etsy-search-ml-dev" | GCS project |
 | `--headless/--no-headless` | flag | True | Run browsers in headless mode |
 | `--concurrency` | int | 2 | Max parallel agents |
@@ -76,7 +76,7 @@ Genetic algorithm implementation for automatically optimizing shopping queries.
 | `--model-name` | str | "global-gemini-2.5-flash" | Model for genetic operations |
 | `--save-gcs/--no-save-gcs` | flag | False | Upload results to GCS |
 | `--gcs-bucket-name` | str | "training-dev-search-data-jtzn" | GCS bucket name |
-| `--gcs-prefix` | str | "smu-agent-optimizer" | GCS prefix |
+| `--gcs-prefix` | str | "mission-understanding/optimization-agent" | GCS prefix |
 | `--gcs-project` | str | "etsy-search-ml-dev" | GCS project |
 
 **Process:**
@@ -104,7 +104,7 @@ Wrapper for genetic optimization that processes queries from [`final_queries.csv
 | `--headless` | flag | True | Run browsers in headless mode |
 | `--save-gcs` | flag | True | Upload results to GCS |
 | `--gcs-bucket-name` | str | "training-dev-search-data-jtzn" | GCS bucket name |
-| `--gcs-prefix` | str | "smu-agent-optimizer" | GCS prefix |
+| `--gcs-prefix` | str | "mission-understanding/optimization-agent" | GCS prefix |
 | `--gcs-project` | str | "etsy-search-ml-dev" | GCS project |
 
 **Features:**
@@ -123,7 +123,7 @@ Post-processing utility that analyzes results from multiple agent runs.
 | `--debug-root` | Path | "debug_run" | Directory containing agent results |
 | `--save-gcs` | flag | True | Upload results to GCS |
 | `--gcs-bucket` | str | "training-dev-search-data-jtzn" | GCS bucket name |
-| `--gcs-prefix` | str | "smu-agent-optimizer" | GCS prefix |
+| `--gcs-prefix` | str | "mission-understanding/optimization-agent" | GCS prefix |
 
 **Key Functions:**
 - Aggregates memory data from all agents

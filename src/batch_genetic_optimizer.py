@@ -118,7 +118,7 @@ async def main():
     parser.add_argument('--no-headless', action='store_false', dest='headless', help='Show browser UI (for debugging)')
     parser.add_argument('--no-save-gcs', action='store_false', dest='save_gcs', default=True, help='Disable GCS uploads (GCS is enabled by default)')
     parser.add_argument('--gcs-bucket-name', type=str, default='training-dev-search-data-jtzn', help='GCS bucket name for uploads')
-    parser.add_argument('--gcs-prefix', type=str, default='smu-agent-optimizer', help='GCS prefix for uploads')
+    parser.add_argument('--gcs-prefix', type=str, default='mission-understanding/optimization-agent', help='GCS prefix for uploads')
     parser.add_argument('--gcs-project', type=str, default='etsy-search-ml-dev', help='GCS project for uploads')
     
     args = parser.parse_args()

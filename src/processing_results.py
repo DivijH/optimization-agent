@@ -32,7 +32,7 @@ os.environ["OPENAI_API_BASE"] = "https://litellm.litellm.kn.ml-platform.etsy-mli
 
 # GCS Configuration
 GCS_BUCKET_NAME = "training-dev-search-data-jtzn"
-GCS_PREFIX = "smu-agent-optimizer"
+GCS_PREFIX = "mission-understanding/optimization-agent"
 GCS_PROJECT = "etsy-search-ml-dev"
 
 

@@ -460,7 +460,7 @@ async def run_analyze_query(
 @click.option(
     "--gcs-prefix",
     type=str,
-    default="smu-agent-optimizer",
+    default="mission-understanding/optimization-agent",
     show_default=True,
     help="GCS prefix for data storage.",
 )
