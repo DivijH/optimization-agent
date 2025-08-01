@@ -115,7 +115,7 @@ python src/batch_genetic_optimizer.py --start-index 0 --end-index 99 --populatio
 │   ├── genetic_prompts.py           # Prompts for genetic algorithm
 │   ├── batch_genetic_optimizer.py   # Wrapper for sequentially running optimization for all queries
 │   ├── summary_prompt.txt           # LLM prompt for generating trends from all agents (used in GA)
-│   ├── visualize_optimization.py    # Gathers all the results for an optimzation
+│   ├── visualize_optimization.py    # Gathers all the results for an optimization
 │   ├── keys/                        # API keys directory
 │   │   └── litellm.key              # LiteLLM API key (create this!)
 │   └── README.md                    # Core components documentation
