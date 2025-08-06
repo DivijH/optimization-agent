@@ -18,6 +18,7 @@ if project_root not in sys.path:
 from src.shopping_agent.gcs_utils import upload_file_to_gcs
 from src.shopping_agent.agent import EtsyShoppingAgent
 from src.processing_results import process_agent_results
+from realtime_gcs_logger import RealtimeGCSLogger, GCSLoggingConfig
 
 # Set up LiteLLM credentials
 try:
@@ -66,21 +67,43 @@ class StatusDisplay:
             sys.stdout.flush()
 
 
-def _setup_file_logger(name: str, log_file: Path) -> logging.Logger:
-    """Sets up a logger that writes to a file."""
-    logger = logging.getLogger(name)
-    # Prevent logger from propagating to the root logger
-    logger.propagate = False
-    logger.setLevel(logging.INFO)
-
-    # Remove any existing handlers to avoid duplicate logging
-    if logger.hasHandlers():
-        logger.handlers.clear()
+def _setup_file_logger(
+    name: str, 
+    log_file: Path, 
+    save_gcs: bool = False,
+    gcs_bucket: str = "",
+    gcs_prefix: str = "",
+    gcs_project: str = ""
+) -> tuple[logging.Logger, Optional[RealtimeGCSLogger]]:
+    """Sets up a logger that writes to a file and optionally uploads to GCS in real-time."""
+    
+    # Use real-time GCS logger if GCS is enabled
+    if save_gcs and gcs_bucket and gcs_prefix:
+        gcs_logging_config = GCSLoggingConfig(
+            bucket_name=gcs_bucket,
+            gcs_prefix=gcs_prefix,
+            project=gcs_project,
+            buffer_size=3,  # Small buffer for agent logs for faster uploads
+            flush_interval=10.0  # Flush every 10 seconds for agent logs
+        )
         
-    handler = logging.FileHandler(log_file)
-    handler.setFormatter(logging.Formatter('%(asctime)s - %(message)s'))
-    logger.addHandler(handler)
-    return logger
+        logger_context = RealtimeGCSLogger(name, log_file, gcs_logging_config)
+        logger = logger_context.__enter__()
+        return logger, logger_context
+    else:
+        # Fallback to regular file logging if GCS is disabled
+        logger = logging.getLogger(name)
+        logger.propagate = False
+        logger.setLevel(logging.INFO)
+
+        # Remove any existing handlers to avoid duplicate logging
+        if logger.hasHandlers():
+            logger.handlers.clear()
+            
+        handler = logging.FileHandler(log_file)
+        handler.setFormatter(logging.Formatter('%(asctime)s - %(message)s'))
+        logger.addHandler(handler)
+        return logger, None
 
 
 
@@ -109,7 +132,14 @@ async def _run_single_agent(
     debug_path = debug_root / f"agent_{agent_id}"
     debug_path.mkdir(parents=True, exist_ok=True)
     log_file = debug_path / "agent.log"
-    logger = _setup_file_logger(f"agent_{agent_id}", log_file)
+    logger, logger_context = _setup_file_logger(
+        f"agent_{agent_id}", 
+        log_file,
+        save_gcs=save_gcs,
+        gcs_bucket=gcs_bucket,
+        gcs_prefix=gcs_prefix,
+        gcs_project=gcs_project
+    )
 
     user_data_dir = debug_path / "browser_profile"
 
@@ -161,18 +191,10 @@ async def _run_single_agent(
         # is always called, regardless of whether the run succeeded or failed.
         await agent.shutdown()
         
-        # Upload agent log file to GCS if enabled
-        if save_gcs and log_file.exists():
-            try:
-                await upload_file_to_gcs(
-                    str(log_file),
-                    str(log_file),
-                    gcs_bucket,
-                    gcs_prefix,
-                    gcs_project
-                )
-            except Exception as e:
-                logger.error(f"Failed to upload agent log to GCS: {e}")
+        # Clean up logger context if using real-time GCS logging
+        # Note: Agent log is uploaded in real-time via RealtimeGCSLogHandler
+        if logger_context:
+            logger_context.__exit__(None, None, None)
 
 
 def _start_main_recording(

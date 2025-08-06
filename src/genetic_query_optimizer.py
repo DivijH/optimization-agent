@@ -37,6 +37,7 @@ from genetic_prompts import GENERATE_INITIAL_POPULATION_PROMPT, CROSSOVER_PROMPT
 from analyze_query import run_analyze_query
 from shopping_agent.config import MODEL_PRICING, VENDOR_DISCOUNT_GEMINI
 from shopping_agent.gcs_utils import upload_file_to_gcs
+from realtime_gcs_logger import RealtimeGCSLogger, GCSLoggingConfig
 
 # Set up LiteLLM credentials
 try:
@@ -110,6 +111,9 @@ class GeneticQueryOptimizer:
         # Deduplication: map query string to QueryIndividual with fitness
         self.evaluated_queries: Dict[str, QueryIndividual] = {}
         
+        # Logger context for cleanup
+        self.logger_context = None
+        
         # Set up logging
         self.setup_logging()
         
@@ -124,22 +128,40 @@ class GeneticQueryOptimizer:
         log_file = self.base_debug_path / "genetic_algorithm.log"
         self.base_debug_path.mkdir(parents=True, exist_ok=True)
         
-        self.logger = logging.getLogger("GeneticQueryOptimizer")
-        self.logger.setLevel(logging.INFO)
-        
-        # Remove existing handlers
-        if self.logger.hasHandlers():
-            self.logger.handlers.clear()
-        
-        # File handler
-        file_handler = logging.FileHandler(log_file)
-        file_handler.setFormatter(logging.Formatter(
-            '%(asctime)s - %(levelname)s - %(message)s'
-        ))
-        self.logger.addHandler(file_handler)
-        
-        # Prevent propagation to root logger (which would print to console)
-        self.logger.propagate = False
+        # Use real-time GCS logger if GCS is enabled
+        if self.config.save_gcs:
+            gcs_logging_config = GCSLoggingConfig(
+                bucket_name=self.config.gcs_bucket_name,
+                gcs_prefix=self.config.gcs_prefix,
+                project=self.config.gcs_project,
+                buffer_size=8,  # Buffer for genetic algorithm logs
+                flush_interval=20.0  # Flush every 20 seconds
+            )
+            
+            self.logger_context = RealtimeGCSLogger(
+                'GeneticQueryOptimizer', 
+                log_file, 
+                gcs_logging_config
+            )
+            self.logger = self.logger_context.__enter__()
+        else:
+            # Fallback to regular file logging if GCS is disabled
+            self.logger = logging.getLogger("GeneticQueryOptimizer")
+            self.logger.setLevel(logging.INFO)
+            
+            # Remove existing handlers
+            if self.logger.hasHandlers():
+                self.logger.handlers.clear()
+            
+            # File handler
+            file_handler = logging.FileHandler(log_file)
+            file_handler.setFormatter(logging.Formatter(
+                '%(asctime)s - %(levelname)s - %(message)s'
+            ))
+            self.logger.addHandler(file_handler)
+            
+            # Prevent propagation to root logger (which would print to console)
+            self.logger.propagate = False
     
     def _update_token_usage(self, model_name: str, usage_metadata: Dict, operation_type: str):
         """Update token usage tracking for genetic algorithm LLM calls."""
@@ -891,6 +913,11 @@ Summarized feedback:
         # Upload to GCS if enabled (await to ensure completion)
         if self.config.save_gcs:
             await self._upload_results_to_gcs(results_file, token_usage_file, results)
+        
+        # Clean up logger context if using real-time GCS logging
+        if self.logger_context:
+            self.logger_context.__exit__(None, None, None)
+            self.logger_context = None
     
     async def _upload_results_to_gcs(self, results_file: Path, token_usage_file: Path, results: Dict):
         """Upload optimization results to GCS."""
@@ -917,20 +944,6 @@ Summarized feedback:
             )
             self.logger.info(f"✅ Token usage summary uploaded to GCS")
             
-            # Upload genetic algorithm log file
-            log_file = self.base_debug_path / "genetic_algorithm.log"
-            if log_file.exists():
-                self.logger.info(f"📤 Uploading genetic algorithm log to GCS...")
-                await upload_file_to_gcs(
-                    str(log_file),
-                    str(log_file),
-                    self.config.gcs_bucket_name,
-                    self.config.gcs_prefix,
-                    self.config.gcs_project
-                )
-                self.logger.info(f"✅ Genetic algorithm log uploaded to GCS")
-            else:
-                self.logger.warning(f"⚠️  Genetic algorithm log file not found: {log_file}")
             
             self.logger.info("✅ All genetic optimization files uploaded to GCS successfully")
             

@@ -25,10 +25,11 @@ os.environ["ANONYMIZED_TELEMETRY"] = "false"
 
 from genetic_query_optimizer import GeneticQueryOptimizer, GeneticAlgorithmConfig
 from shopping_agent.gcs_utils import upload_string_to_gcs, upload_file_to_gcs
+from realtime_gcs_logger import RealtimeGCSLogger, GCSLoggingConfig
 
 
-START_INDEX = 0
-END_INDEX = 999
+START_INDEX = 250
+END_INDEX = 250
 POPULATION_SIZE = 5
 GENERATIONS = 4
 N_AGENTS = 5
@@ -82,22 +83,6 @@ async def save_batch_results(results, args, logger):
             logger.error(f"❌ Failed to upload batch results to GCS: {e}")
             print(f"❌ Failed to upload batch results to GCS: {e}")
         
-        # Also upload the batch optimization log file
-        log_file = args.debug_root / "batch_optimization.log"
-        if log_file.exists():
-            try:
-                await upload_file_to_gcs(
-                    str(log_file),
-                    str(log_file),
-                    args.gcs_bucket_name,
-                    args.gcs_prefix,
-                    args.gcs_project
-                )
-                logger.info("✅ Batch optimization log uploaded to GCS successfully")
-                print("📋 Batch optimization log uploaded to GCS")
-            except Exception as e:
-                logger.error(f"❌ Failed to upload batch optimization log to GCS: {e}")
-                print(f"❌ Failed to upload batch optimization log to GCS: {e}")
 
 
 async def main():
@@ -149,24 +134,37 @@ async def main():
         noisy_logger.propagate = False
         noisy_logger.disabled = True
     
-    # Create a file logger for batch processing  
-    logger = logging.getLogger('batch_optimizer')
-    logger.setLevel(logging.INFO)
-    
-    # Remove any existing handlers to avoid duplicate logging
-    if logger.hasHandlers():
-        logger.handlers.clear()
-    
-    # Create file handler for detailed logging
+    # Create real-time GCS logger for batch processing
     log_file = args.debug_root / "batch_optimization.log"
     args.debug_root.mkdir(parents=True, exist_ok=True)
-    file_handler = logging.FileHandler(log_file)
-    file_handler.setLevel(logging.INFO)
-    file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
-    logger.addHandler(file_handler)
     
-    # Prevent propagation to root logger (which would print to console)
-    logger.propagate = False
+    # Create GCS logging config
+    gcs_logging_config = GCSLoggingConfig(
+        bucket_name=args.gcs_bucket_name,
+        gcs_prefix=args.gcs_prefix,
+        project=args.gcs_project,
+        buffer_size=5,  # Smaller buffer for more frequent uploads
+        flush_interval=15.0  # Flush every 15 seconds
+    ) if args.save_gcs else None
+    
+    # Use real-time GCS logger if GCS is enabled, otherwise use regular file logger
+    if args.save_gcs and gcs_logging_config:
+        logger_context = RealtimeGCSLogger('batch_optimizer', log_file, gcs_logging_config)
+        logger = logger_context.__enter__()
+    else:
+        # Fallback to regular file logging if GCS is disabled
+        logger = logging.getLogger('batch_optimizer')
+        logger.setLevel(logging.INFO)
+        
+        if logger.hasHandlers():
+            logger.handlers.clear()
+        
+        file_handler = logging.FileHandler(log_file)
+        file_handler.setLevel(logging.INFO)
+        file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+        logger.addHandler(file_handler)
+        logger.propagate = False
+        logger_context = None
     
     print(f"🧬 Batch Genetic Optimizer - Processing {len(queries)} queries (indices {start_index}-{end_index})")
     print(f"📋 Detailed logs: {log_file}")
@@ -265,9 +263,13 @@ async def main():
     for handler in logger.handlers:
         handler.flush()
     
-    # Save batch results (including uploading log file to GCS)
+    # Save batch results
     await save_batch_results(results, args, logger)
     print(f"📁 Results saved to: {args.debug_root}")
+    
+    # Clean up the logger context if using real-time GCS logging
+    if args.save_gcs and 'logger_context' in locals() and logger_context:
+        logger_context.__exit__(None, None, None)
 
 
 if __name__ == "__main__":

@@ -268,6 +268,10 @@ class EtsyShoppingAgent:
                 self._log(f"   - Analyzing product: {self.current_product_name}")
             
             await analyze_product_page(self, state, step, self.current_product_name)
+            
+            # Save memory, scores, and timing data in real-time after each product analysis
+            await self._save_memory_and_scores_periodic()
+            await self._save_timing_data_periodic()
 
             # If there's another product in the queue, navigate directly to next product
             if (self.current_listing_index < len(self.listings_queue) and 
@@ -379,6 +383,11 @@ class EtsyShoppingAgent:
                 action_plan = await self._think(state, step)
 
                 await self.execute_step(step, state, action_plan, Action)
+                
+                # Save timing data periodically every 5 steps
+                if step % 5 == 0:
+                    await self._save_timing_data_periodic()
+                
                 if not action_plan:
                     break
                     
@@ -682,7 +691,7 @@ class EtsyShoppingAgent:
                 self.browser_session = None
                 self._log("   - Browser session reference cleared")
         
-        # Save memory and scores
+        # Save memory and scores (final save)
         await self.save_memory_and_scores()
         
         # Make final purchase decision
@@ -691,8 +700,104 @@ class EtsyShoppingAgent:
         # Log final token usage
         self.log_final_token_usage()
         
-        # Calculate and save timing data
+        # Calculate and save timing data (final save)
         await self._save_timing_data()
+
+    async def _save_memory_and_scores_periodic(self):
+        """Periodically save memory and scores during execution for real-time uploads."""
+        if not self.save_local and not self.save_gcs:
+            return
+        if not self.debug_path:
+            return
+
+        # Only save if we have analyzed products
+        if not self.memory.products:
+            return
+
+        memory_path = os.path.join(self.debug_path, "_memory.json")
+        scores_path = os.path.join(self.debug_path, "_semantic_scores.json")
+
+        if self.save_local:
+            try:
+                self.memory.save_to_json(memory_path)
+                self._log(f"🧠 Memory saved periodically to {memory_path}")
+            except Exception as e:
+                self._log(f"⚠️  Failed to save memory periodically: {e}", level="error")
+
+        if self.save_gcs and self.gcs_manager:
+            try:
+                memory_data = asdict(self.memory)
+                await self.gcs_manager.upload_string_to_gcs(
+                    json.dumps(memory_data, indent=2), f"{self.debug_path}/_memory.json"
+                )
+            except Exception as e:
+                self._log(f"⚠️  Failed to upload memory to GCS periodically: {e}", level="error")
+
+        # Calculate and save semantic scores
+        all_products = self.memory.products
+        top_10_products = all_products[:10]
+        semantic_scores_data = {
+            "page1_products": self.calculate_scores(all_products),
+            "top_10_products": self.calculate_scores(top_10_products),
+        }
+
+        if self.save_local:
+            try:
+                with open(scores_path, "w") as f:
+                    json.dump(semantic_scores_data, f, indent=2)
+                self._log(f"📊 Semantic scores saved periodically to {scores_path}")
+            except Exception as e:
+                self._log(f"⚠️  Failed to save semantic scores periodically: {e}", level="error")
+
+        if self.save_gcs and self.gcs_manager:
+            try:
+                await self.gcs_manager.upload_string_to_gcs(
+                    json.dumps(semantic_scores_data, indent=2),
+                    f"{self.debug_path}/_semantic_scores.json",
+                )
+            except Exception as e:
+                self._log(f"⚠️  Failed to upload semantic scores to GCS periodically: {e}", level="error")
+
+    async def _save_timing_data_periodic(self):
+        """Periodically save timing data during execution for real-time uploads."""
+        if not self._start_time or not self.debug_path:
+            return
+            
+        if not (self.save_local or self.save_gcs):
+            return
+
+        # Record current time and calculate duration so far
+        current_time = time.time()
+        current_timestamp = datetime.now().isoformat()
+        elapsed_time_seconds = current_time - self._start_time
+        
+        # Create timing data
+        timing_data = {
+            "start_time": self._start_timestamp,
+            "current_time": current_timestamp,
+            "elapsed_time_seconds": round(elapsed_time_seconds, 2),
+            "elapsed_time_formatted": f"{int(elapsed_time_seconds // 3600):02d}:{int((elapsed_time_seconds % 3600) // 60):02d}:{int(elapsed_time_seconds % 60):02d}",
+            "status": "in_progress"
+        }
+        
+        # Save timing data periodically
+        if self.save_local:
+            try:
+                time_file_path = os.path.join(self.debug_path, "_time_taken.json")
+                with open(time_file_path, "w") as f:
+                    json.dump(timing_data, f, indent=2)
+                self._log(f"⏱️  Timing data saved periodically: {timing_data['elapsed_time_formatted']} elapsed")
+            except Exception as e:
+                self._log(f"⚠️  Failed to save timing data periodically: {e}", level="error")
+        
+        # Upload to GCS if enabled
+        if self.save_gcs and self.gcs_manager:
+            try:
+                await self.gcs_manager.upload_string_to_gcs(
+                    json.dumps(timing_data, indent=2), f"{self.debug_path}/_time_taken.json"
+                )
+            except Exception as e:
+                self._log(f"⚠️  Failed to upload timing data to GCS periodically: {e}", level="error")
 
     async def _save_timing_data(self):
         """Calculate and save timing data to _time_taken.json"""
@@ -707,12 +812,13 @@ class EtsyShoppingAgent:
         end_timestamp = datetime.now().isoformat()
         total_time_seconds = end_time - self._start_time
         
-        # Create timing data
+        # Create final timing data
         timing_data = {
             "start_time": self._start_timestamp,
             "end_time": end_timestamp,
             "total_time_seconds": round(total_time_seconds, 2),
-            "total_time_formatted": f"{int(total_time_seconds // 3600):02d}:{int((total_time_seconds % 3600) // 60):02d}:{int(total_time_seconds % 60):02d}"
+            "total_time_formatted": f"{int(total_time_seconds // 3600):02d}:{int((total_time_seconds % 3600) // 60):02d}:{int(total_time_seconds % 60):02d}",
+            "status": "completed"
         }
         
         # Save timing data to _time_taken.json
